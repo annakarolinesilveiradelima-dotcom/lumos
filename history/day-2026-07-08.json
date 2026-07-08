@@ -1,0 +1,311 @@
+{
+  "label": "8 jul 2026",
+  "updated": "8 jul 2026, 19:33",
+  "kpi": {
+    "mentions": {
+      "v": "6,0 mil",
+      "d": 0,
+      "sub": "vs. ontem"
+    },
+    "sentiment": {
+      "v": "+0",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "77",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 0,
+    "neu": 100,
+    "neg": 0,
+    "tone": "Leitura heurística (sem análise semântica)"
+  },
+  "buzz7": [
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0
+  ],
+  "stack": [
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "TikTok",
+      "vol": 1000,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "X/Twitter",
+      "vol": 1000,
+      "senti": "neu",
+      "ang": -38,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "Instagram",
+      "vol": 1000,
+      "senti": "neu",
+      "ang": 16,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1000,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1000,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "O novo Harry Potter já está na HBO Max: Produção acabou de estrear no streaming - AdoroCinema",
+      "senti": "neu",
+      "pf": "X/Twitter",
+      "trend": "flat",
+      "growth": "coletado via RSS",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gam10X3IzNTkwYUlyUnF6NGRmY2pwZms1ZFVVY3lDNlVBVnRkaHJLNHF3ZEVEZURwUGw1R1phcFZVaFlWRlRjeGNSbGpzMzdVd0MzdGpzZE4yUno3eEZ5Y1dCU0dSOUhDUFU0VEppc1k?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série da HBO é renovada para segunda temporada - CNN Brasil",
+      "senti": "neu",
+      "pf": "X/Twitter",
+      "trend": "flat",
+      "growth": "coletado via RSS",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Série escala ator de Pirraça, personagem cortado nos filmes - Omelete",
+      "senti": "neu",
+      "pf": "X/Twitter",
+      "trend": "flat",
+      "growth": "coletado via RSS",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDdDcndMN2pVaEZWdEVYLVVQTFc5RjBhbFJ6NUdIT0Y0bkNYM2ZQZnlRcGxDN1JSUlQ0YkNVSnlXeGJGeTFvUWNPdkhhU3ZCNml4SUJQSTI2aklTaDE0TkNJRFNCSE9CUDBlYlowT3pCQmFHTGR6UFZaYkx3bFJiY193SnNnMXJmSFE5NURFb2pMc0d2VGtCVXk2czMxRmc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia - einerd.com",
+      "senti": "neu",
+      "pf": "X/Twitter",
+      "trend": "flat",
+      "growth": "coletado via RSS",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos - O TEMPO",
+      "senti": "neu",
+      "pf": "X/Twitter",
+      "trend": "flat",
+      "growth": "coletado via RSS",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gam10X3IzNTkwYUlyUnF6NGRmY2pwZms1ZFVVY3lDNlVBVnRkaHJLNHF3ZEVEZURwUGw1R1phcFZVaFlWRlRjeGNSbGpzMzdVd0MzdGpzZE4yUno3eEZ5Y1dCU0dSOUhDUFU0VEppc1k?oc=5",
+      "title": "O novo Harry Potter já está na HBO Max: Produção acabou de estrear no streaming - AdoroCinema",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5",
+      "title": "\"Harry Potter\": série da HBO é renovada para segunda temporada - CNN Brasil",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDdDcndMN2pVaEZWdEVYLVVQTFc5RjBhbFJ6NUdIT0Y0bkNYM2ZQZnlRcGxDN1JSUlQ0YkNVSnlXeGJGeTFvUWNPdkhhU3ZCNml4SUJQSTI2aklTaDE0TkNJRFNCSE9CUDBlYlowT3pCQmFHTGR6UFZaYkx3bFJiY193SnNnMXJmSFE5NURFb2pMc0d2VGtCVXk2czMxRmc?oc=5",
+      "title": "Harry Potter | Série escala ator de Pirraça, personagem cortado nos filmes - Omelete",
+      "cat": "nos",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5",
+      "title": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia - einerd.com",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos - O TEMPO",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "UOL",
+      "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaS1oTGhmNHA2WVFrbWVTS2pad2hMQzBLSmMwZzY3Q0JtQ0VISksxemZXMlZHWXI2eGNhZjJOZWU1M25WX2RsbU1hQlpyZkdkZG44d00yclkyelp1bnd1dDFZR2g2RmNUaUtCLVYxYm9yZDdZOW9OUjFiUFNRZW9uUDdVTTJKSUd5VlBRY05obUtoek5vMnVMSXJQcTJkOHdNZ3p6VWVnczdEaU82eklN0gG0AUFVX3lxTFBuSnUtSjFueUN2amlrbXpqYnlOTV9LTkVVQ05NYTV5QUVMSUV4ZXNqM0hnOVBCSWlDdl90QkFidkxXLTB4cXdoeTYzQjVqTjRJM09abWhtQ1MzRVNLTnJQTjlxTS1VLVM4TFMxTmdPa0YtWHcwV3RNcmFIdjFhQkwzdF9DNVVESkxEZDhLdmRza2M1YXZfRGVTcG9UVmhWQXZ5eHFSeTNXeDJfNHA4bGxjNFhsRQ?oc=5",
+      "title": "HBO divulga primeira imagem de série de Harry Potter - UOL",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O GLOBO",
+      "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5",
+      "title": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer - O GLOBO",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Rolling Stone Brasil",
+      "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUktoOGJyVWI4a3ZrNlhVQXZuNkNpaXJ4NngxaFVGSWx4aVJMV1RrMm9KSkpVTXZoTlBoNU9tbzFwTTBha1pubDFDR2xPZTNQWkN0OW1jcmJZU0JpRUp6bC04ZlhzNDd2a1NXUk11bmJCQkJKQjNGcUxnSVVHbU8tQzJ3OHJmREczQTZ1UDdnTVhRLXNlN3BVRTY4UmZMMGsxTW1RT294czRrU2VUMUh0eA?oc=5",
+      "title": "Série de ‘Harry Potter’ perde membro do elenco antes mesmo da estreia - Rolling Stone Brasil",
+      "cat": "neu",
+      "time": "hoje",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [],
+  "heroOpp": {
+    "title": "Oportunidade do dia",
+    "desc": "Leitura heurística (sem análise semântica)",
+    "facts": [
+      [
+        "Fonte",
+        "fallback"
+      ],
+      [
+        "Mercado",
+        "BR"
+      ],
+      [
+        "Atualizado",
+        "08/07 19:33"
+      ],
+      [
+        "Período",
+        "Diário"
+      ]
+    ]
+  },
+  "opps": [],
+  "ephem": [],
+  "_raw": {
+    "mentions": 6000,
+    "net": 0
+  }
+}
