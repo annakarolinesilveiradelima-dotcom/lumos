@@ -3,9 +3,10 @@ Lumos sources.py — coleta real de notícias via GNews.
 
 Regras:
 - Usa GNews API como fonte principal.
+- Tenta buscar desde o teaser: 25/03/2026.
+- Se o plano da GNews não permitir histórico, cai para busca recente.
 - Não usa RSS/Google News redirect.
 - Não inventa título, link, fonte, horário ou volume.
-- Se a API não retornar nada, volta vazio.
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ import requests
 import config
 
 TIMEOUT = 25
+TEASER_DATE_ISO = "2026-03-25T00:00:00Z"
 
 
 def _parse_dt(value):
@@ -78,7 +80,6 @@ def _dedupe(items):
         if not title or not url:
             continue
 
-        # Remove Google News redirect/intermediário
         if "news.google.com" in url:
             continue
 
@@ -93,15 +94,29 @@ def _dedupe(items):
     return out
 
 
-def collect_gnews():
-    """
-    Coleta notícias reais pela GNews API.
+def _request_gnews(query, api_key, use_teaser_date=True):
+    params = {
+        "q": query,
+        "max": 10,
+        "lang": "pt",
+        "country": "br",
+        "sortby": "publishedAt",
+        "apikey": api_key
+    }
 
-    Importante:
-    - .strip() remove espaço/quebra de linha do secret.
-    - Se a chave estiver inválida, o log vai mostrar status=401.
-    - Não printa a chave no log.
-    """
+    if use_teaser_date:
+        params["from"] = TEASER_DATE_ISO
+
+    response = requests.get(
+        "https://gnews.io/api/v4/search",
+        params=params,
+        timeout=TIMEOUT
+    )
+
+    return response
+
+
+def collect_gnews():
     api_key = os.environ.get("GNEWS_API_KEY", "").strip()
 
     if not api_key:
@@ -110,38 +125,34 @@ def collect_gnews():
 
     print("[coleta] usando GNews API com links diretos")
     print(f"[coleta] GNEWS_API_KEY detectada com {len(api_key)} caracteres")
+    print("[coleta] marco semanal configurado: teaser em 25/03/2026")
 
     queries = [
         "Harry Potter HBO",
-        "Harry Potter Max",
-        "Harry Potter série HBO",
         "Harry Potter HBO Max",
-        "Harry Potter elenco HBO",
-        "Harry Potter estreia HBO",
-        "nova série Harry Potter",
-        "série Harry Potter HBO Max"
+        "série Harry Potter HBO",
+        "nova série Harry Potter"
     ]
 
     items = []
 
     for query in queries:
         try:
-            params = {
-                "q": query,
-                "max": 10,
-                "lang": "pt",
-                "country": "br",
-                "sortby": "publishedAt",
-                "apikey": api_key
-            }
+            response = _request_gnews(query, api_key, use_teaser_date=True)
 
-            response = requests.get(
-                "https://gnews.io/api/v4/search",
-                params=params,
-                timeout=TIMEOUT
+            print(
+                f"[coleta] GNews query='{query}' from=2026-03-25 status={response.status_code}"
             )
 
-            print(f"[coleta] GNews query='{query}' status={response.status_code}")
+            if response.status_code != 200:
+                print("[coleta] resposta GNews com from:", response.text[:500])
+                print("[coleta] tentando novamente sem from, para plano/free recente...")
+
+                response = _request_gnews(query, api_key, use_teaser_date=False)
+
+                print(
+                    f"[coleta] GNews query='{query}' sem from status={response.status_code}"
+                )
 
             if response.status_code != 200:
                 print("[coleta] resposta GNews:", response.text[:800])
@@ -186,13 +197,7 @@ def collect_gnews():
 
 
 def collect_news():
-    """
-    Coleta notícias reais.
-    Se GNews não retornar nada, volta lista vazia.
-    Não usa RSS fallback para evitar links news.google.com.
-    """
     items = collect_gnews()
-
     items = _dedupe(items)
 
     print(f"[coleta] {len(items)} matérias reais finais para o data.json.")
@@ -239,10 +244,6 @@ def collect_social():
 
 
 def collect_all():
-    """
-    Função chamada pelo run_daily.py.
-    Não apagar.
-    """
     return {
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "news": collect_news(),
