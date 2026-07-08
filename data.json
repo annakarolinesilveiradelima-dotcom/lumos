@@ -1,5 +1,5 @@
 {
-  "generated_at": "8 jul 2026, 17:01",
+  "generated_at": "8 jul 2026, 17:07",
   "source": "backend automático",
   "titles": {
     "hp": {
@@ -9,17 +9,17 @@
       "days": {
         "d0": {
           "label": "8 jul 2026",
-          "updated": "8 jul 2026, 17:01",
+          "updated": "8 jul 2026, 17:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
-              "d": -60,
+              "d": 0,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
               "v": "+0",
               "suf": "/100",
-              "d": -16,
+              "d": 0,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,7 +31,7 @@
             "buzz": {
               "v": "45",
               "suf": "/100",
-              "d": -44,
+              "d": 0,
               "sub": "índice de buzz do dia"
             }
           },
@@ -45,9 +45,9 @@
             6.0,
             6.0,
             6.0,
-            6.0,
             50,
             60,
+            0,
             0
           ],
           "stack": [
@@ -72,13 +72,13 @@
               0
             ],
             [
-              0,
-              100,
+              17,
+              83,
               0
             ],
             [
-              17,
-              83,
+              0,
+              100,
               0
             ],
             [
@@ -133,17 +133,17 @@
       "weeks": {
         "w0": {
           "label": "8 jul 2026",
-          "updated": "8 jul 2026, 17:01",
+          "updated": "8 jul 2026, 17:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
-              "d": -60,
+              "d": 0,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
               "v": "+0",
               "suf": "/100",
-              "d": -16,
+              "d": 0,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -155,7 +155,7 @@
             "buzz": {
               "v": "45",
               "suf": "/100",
-              "d": -44,
+              "d": 0,
               "sub": "índice de buzz do dia"
             }
           },
@@ -169,9 +169,9 @@
             6.0,
             6.0,
             6.0,
-            6.0,
             50,
             60,
+            0,
             0
           ],
           "stack": [
@@ -196,13 +196,13 @@
               0
             ],
             [
-              0,
-              100,
+              17,
+              83,
               0
             ],
             [
-              17,
-              83,
+              0,
+              100,
               0
             ],
             [
