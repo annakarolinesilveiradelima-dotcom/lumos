@@ -1,8 +1,12 @@
 """
-Lumos sources.py — coleta real de notícias.
-Prioridade: GNews / NewsAPI / Bing News. RSS só como fallback.
-Nunca cria título, URL, horário ou fonte fictícia.
+Lumos sources.py — coleta real de notícias via GNews.
+
+Regra:
+- Usa apenas GNews API quando GNEWS_API_KEY existe.
+- Não usa RSS/Google News fallback para evitar links intermediários.
+- Nunca cria título, URL, horário ou fonte fictícia.
 """
+
 from __future__ import annotations
 
 import csv
@@ -11,13 +15,8 @@ import os
 import re
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
-from urllib.parse import quote
 
 import requests
-try:
-    import feedparser
-except ImportError:
-    feedparser = None
 
 import config
 
@@ -31,9 +30,11 @@ def _iso(dt):
 def _parse_dt(value):
     if not value:
         return ""
+
     try:
         if isinstance(value, str) and value.endswith("Z"):
             return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc).isoformat()
+
         return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
     except Exception:
         try:
@@ -42,157 +43,162 @@ def _parse_dt(value):
             return str(value)
 
 
-def _item(outlet, title, url, published="", summary="", source_type="news"):
+def _clean_title(title):
+    return re.sub(r"\s+", " ", (title or "")).strip()
+
+
+def _scope(outlet):
+    intl = getattr(config, "INTL_OUTLETS", [])
+
+    if outlet in intl:
+        return "Internacional"
+
+    return "Portal BR"
+
+
+def _item(outlet, title, url, published="", summary="", source_type="gnews"):
     return {
         "outlet": (outlet or "Imprensa").strip(),
-        "title": re.sub(r"\s+", " ", (title or "")).strip(),
+        "title": _clean_title(title),
         "url": (url or "").strip(),
         "published": _parse_dt(published),
         "summary": (summary or "")[:800],
-        "scope": "Internacional" if (outlet or "") in getattr(config, "INTL_OUTLETS", []) else "Portal BR",
-        "source_type": source_type,
+        "scope": _scope(outlet or ""),
+        "source_type": source_type
     }
 
 
 def _dedupe(items):
-    seen, out = set(), []
-    for it in items:
-        if not it.get("title") or not it.get("url"):
+    seen = set()
+    out = []
+
+    for item in items:
+        title = item.get("title")
+        url = item.get("url")
+
+        if not title or not url:
             continue
-        key = (it["url"].split("?")[0].lower() or it["title"].lower()[:90])
+
+        if "news.google.com" in url:
+            continue
+
+        key = url.split("?")[0].lower()
+
         if key in seen:
             continue
+
         seen.add(key)
-        out.append(it)
+        out.append(item)
+
     return out
 
 
-def collect_gnews():
-    key = os.environ.get("GNEWS_API_KEY") or getattr(config, "GNEWS_API_KEY", "")
-    if not key:
-        return []
-    print("[coleta] usando GNews API")
-    items = []
-    since = _iso(datetime.now(timezone.utc) - timedelta(days=7))
-    queries = getattr(config, "QUERIES", ["série Harry Potter HBO Max"])
-    for q in queries:
-        params = {
-            "q": q,
-            "lang": "pt",
-            "country": "br",
-            "max": 10,
-            "from": since,
-            "sortby": "publishedAt",
-            "apikey": key,
-        }
-        r = requests.get("https://gnews.io/api/v4/search", params=params, timeout=TIMEOUT)
-        r.raise_for_status()
-        for a in r.json().get("articles", []):
-            src = (a.get("source") or {}).get("name", "Imprensa")
-            items.append(_item(src, a.get("title"), a.get("url"), a.get("publishedAt"), a.get("description"), "gnews"))
-    return items
-
-
-def collect_newsapi():
-    key = os.environ.get("NEWSAPI_KEY") or getattr(config, "NEWSAPI_KEY", "")
-    if not key:
-        return []
-    print("[coleta] usando NewsAPI")
-    items = []
-    since = (datetime.now(timezone.utc) - timedelta(days=7)).date().isoformat()
-    queries = getattr(config, "QUERIES", ["série Harry Potter HBO Max"])
-    for q in queries:
-        params = {
-            "q": q,
-            "language": "pt",
-            "from": since,
-            "sortBy": "publishedAt",
-            "pageSize": 20,
-            "apiKey": key,
-        }
-        r = requests.get("https://newsapi.org/v2/everything", params=params, timeout=TIMEOUT)
-        r.raise_for_status()
-        for a in r.json().get("articles", []):
-            src = (a.get("source") or {}).get("name", "Imprensa")
-            items.append(_item(src, a.get("title"), a.get("url"), a.get("publishedAt"), a.get("description"), "newsapi"))
-    return items
-
-
-def collect_bing():
-    key = os.environ.get("BING_NEWS_API_KEY") or getattr(config, "BING_NEWS_API_KEY", "")
-    if not key:
-        return []
-    print("[coleta] usando Bing News API")
-    items = []
-    headers = {"Ocp-Apim-Subscription-Key": key}
-    queries = getattr(config, "QUERIES", ["série Harry Potter HBO Max"])
-    for q in queries:
-        params = {"q": q, "mkt": "pt-BR", "count": 20, "sortBy": "Date"}
-        r = requests.get("https://api.bing.microsoft.com/v7.0/news/search", params=params, headers=headers, timeout=TIMEOUT)
-        r.raise_for_status()
-        for a in r.json().get("value", []):
-            provider = (a.get("provider") or [{}])[0].get("name", "Imprensa")
-            items.append(_item(provider, a.get("name"), a.get("url"), a.get("datePublished"), a.get("description"), "bing"))
-    return items
-
-
-def collect_rss():
-    if feedparser is None:
-        print("[coleta] feedparser não instalado — pulando RSS")
-        return []
-    print("[coleta] usando RSS fallback")
-    feeds = getattr(config, "RSS_FEEDS", [])
-    items = []
-    for outlet, url in feeds:
-        try:
-            feed = feedparser.parse(url)
-            for e in feed.entries[:30]:
-                title = getattr(e, "title", "")
-                src = getattr(getattr(e, "source", None), "title", None) or outlet
-                if " - " in title and "Google News" in outlet:
-                    title, src = title.rsplit(" - ", 1)
-                items.append(_item(src, title, getattr(e, "link", ""), getattr(e, "published", ""), getattr(e, "summary", ""), "rss"))
-        except Exception as exc:
-            print(f"[coleta] falha RSS {outlet}: {exc}")
-    return items
-
-
 def collect_news():
+    """
+    Coleta notícias reais pela GNews API.
+    Se não houver chave ou se a API não retornar, volta vazio.
+    """
+    api_key = os.environ.get("GNEWS_API_KEY", "")
+
+    if not api_key:
+        print("[coleta] GNEWS_API_KEY não configurada — sem coleta real.")
+        return []
+
+    print("[coleta] usando GNews API com links diretos")
+
+    queries = getattr(config, "QUERIES", [
+        "série Harry Potter HBO Max",
+        "Harry Potter HBO série",
+        "Harry Potter HBO Max elenco"
+    ])
+
+    since = _iso(datetime.now(timezone.utc) - timedelta(days=14))
     items = []
-    # Não para no primeiro coletor: complementa e deduplica.
-    for fn in (collect_gnews, collect_newsapi, collect_bing, collect_rss):
+
+    for query in queries:
         try:
-            items.extend(fn())
+            params = {
+                "q": query,
+                "lang": "pt",
+                "country": "br",
+                "max": 10,
+                "from": since,
+                "sortby": "publishedAt",
+                "apikey": api_key
+            }
+
+            response = requests.get(
+                "https://gnews.io/api/v4/search",
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(f"[coleta] GNews query='{query}' status={response.status_code}")
+
+            response.raise_for_status()
+
+            data = response.json()
+
+            for article in data.get("articles", []):
+                source = article.get("source") or {}
+                outlet = source.get("name", "Imprensa")
+
+                item = _item(
+                    outlet=outlet,
+                    title=article.get("title", ""),
+                    url=article.get("url", ""),
+                    published=article.get("publishedAt", ""),
+                    summary=article.get("description", ""),
+                    source_type="gnews"
+                )
+
+                items.append(item)
+
         except Exception as exc:
-            print(f"[coleta] {fn.__name__} falhou: {exc}")
+            print(f"[coleta] GNews falhou para query '{query}': {exc}")
+
     items = _dedupe(items)
-    print(f"[coleta] {len(items)} notícias reais coletadas")
+
+    print(f"[coleta] {len(items)} matérias reais coletadas via GNews.")
+
     return items
 
 
 def collect_social():
+    """
+    Carrega dados sociais de export licenciado, se existir.
+    Sem export, retorna vazio e não inventa volumes.
+    """
     path = getattr(config, "SOCIAL_EXPORT_PATH", "")
+
     if not path or not os.path.exists(path):
-        print("[coleta] sem social listening — não vamos inventar volumes sociais")
+        print("[coleta] sem social listening — não vamos inventar volumes sociais.")
         return {}
+
     if path.endswith(".json"):
-        with open(path, encoding="utf-8") as f:
-            rows = json.load(f)
+        with open(path, encoding="utf-8") as file:
+            rows = json.load(file)
     else:
-        with open(path, encoding="utf-8") as f:
-            rows = list(csv.DictReader(f))
+        with open(path, encoding="utf-8") as file:
+            rows = list(csv.DictReader(file))
+
     social = {}
-    for r in rows:
-        platform = str(r.get("platform", "")).strip()
+
+    for row in rows:
+        platform = str(row.get("platform", "")).strip()
+
         if not platform:
             continue
+
         social[platform] = {
-            "mentions": int(float(r.get("mentions", 0) or 0)),
-            "pos": int(float(r.get("pos", 0) or 0)),
-            "neu": int(float(r.get("neu", 0) or 0)),
-            "neg": int(float(r.get("neg", 0) or 0)),
+            "mentions": int(float(row.get("mentions", 0) or 0)),
+            "pos": int(float(row.get("pos", 0) or 0)),
+            "neu": int(float(row.get("neu", 0) or 0)),
+            "neg": int(float(row.get("neg", 0) or 0))
         }
-    print(f"[coleta] social carregado: {len(social)} plataformas")
+
+    print(f"[coleta] social carregado: {len(social)} plataformas.")
+
     return social
 
 
@@ -200,5 +206,5 @@ def collect_all():
     return {
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "news": collect_news(),
-        "social": collect_social(),
+        "social": collect_social()
     }
