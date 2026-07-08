@@ -1,11 +1,11 @@
 """
-Lumos sources.py — coleta real de notícias.
+Lumos sources.py — coleta real de notícias via GNews.
 
 Regras:
 - Usa GNews API como fonte principal.
-- Usa NewsAPI como fallback opcional, se NEWSAPI_KEY existir.
 - Não usa RSS/Google News redirect.
 - Não inventa título, link, fonte, horário ou volume.
+- Se a API não retornar nada, volta vazio.
 """
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ import csv
 import json
 import os
 import re
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -22,10 +22,6 @@ import requests
 import config
 
 TIMEOUT = 25
-
-
-def _iso(dt):
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
 def _parse_dt(value):
@@ -59,7 +55,7 @@ def _scope(outlet):
     return "Portal BR"
 
 
-def _make_item(outlet, title, url, published="", summary="", source_type="api"):
+def _make_item(outlet, title, url, published="", summary="", source_type="gnews"):
     return {
         "outlet": (outlet or "Imprensa").strip(),
         "title": _clean_title(title),
@@ -82,6 +78,7 @@ def _dedupe(items):
         if not title or not url:
             continue
 
+        # Remove Google News redirect/intermediário
         if "news.google.com" in url:
             continue
 
@@ -107,14 +104,15 @@ def collect_gnews():
 
     queries = [
         "Harry Potter HBO",
-        "série Harry Potter HBO",
         "Harry Potter Max",
-        "Harry Potter série HBO Max",
-        "Harry Potter HBO elenco",
-        "Harry Potter HBO série estreia"
+        "Harry Potter série HBO",
+        "Harry Potter HBO Max",
+        "Harry Potter elenco HBO",
+        "Harry Potter estreia HBO",
+        "nova série Harry Potter",
+        "série Harry Potter HBO Max"
     ]
 
-    since = _iso(datetime.now(timezone.utc) - timedelta(days=30))
     items = []
 
     for query in queries:
@@ -122,7 +120,8 @@ def collect_gnews():
             params = {
                 "q": query,
                 "max": 10,
-                "from": since,
+                "lang": "pt",
+                "country": "br",
                 "sortby": "publishedAt",
                 "apikey": api_key
             }
@@ -135,6 +134,9 @@ def collect_gnews():
 
             print(f"[coleta] GNews query='{query}' status={response.status_code}")
 
+            if response.status_code != 200:
+                print("[coleta] resposta GNews:", response.text[:800])
+
             response.raise_for_status()
 
             data = response.json()
@@ -143,96 +145,43 @@ def collect_gnews():
                 source = article.get("source") or {}
                 outlet = source.get("name", "Imprensa")
 
-                items.append(
-                    _make_item(
-                        outlet=outlet,
-                        title=article.get("title", ""),
-                        url=article.get("url", ""),
-                        published=article.get("publishedAt", ""),
-                        summary=article.get("description", ""),
-                        source_type="gnews"
-                    )
+                url = article.get("url", "")
+
+                if not url or "news.google.com" in url:
+                    continue
+
+                item = _make_item(
+                    outlet=outlet,
+                    title=article.get("title", ""),
+                    url=url,
+                    published=article.get("publishedAt", ""),
+                    summary=article.get("description", ""),
+                    source_type="gnews"
                 )
+
+                items.append(item)
 
         except Exception as exc:
             print(f"[coleta] GNews falhou para query '{query}': {exc}")
 
-    return _dedupe(items)
+    items = _dedupe(items)
 
+    print(f"[coleta] {len(items)} matérias reais coletadas com link direto via GNews.")
 
-def collect_newsapi():
-    api_key = os.environ.get("NEWSAPI_KEY", "")
-
-    if not api_key:
-        print("[coleta] NEWSAPI_KEY não configurada.")
-        return []
-
-    print("[coleta] usando NewsAPI como fallback")
-
-    queries = [
-        "Harry Potter HBO",
-        "Harry Potter Max",
-        "série Harry Potter HBO"
-    ]
-
-    since = (datetime.now(timezone.utc) - timedelta(days=30)).date().isoformat()
-    items = []
-
-    for query in queries:
-        try:
-            params = {
-                "q": query,
-                "language": "pt",
-                "from": since,
-                "sortBy": "publishedAt",
-                "pageSize": 20,
-                "apiKey": api_key
-            }
-
-            response = requests.get(
-                "https://newsapi.org/v2/everything",
-                params=params,
-                timeout=TIMEOUT
-            )
-
-            print(f"[coleta] NewsAPI query='{query}' status={response.status_code}")
-
-            response.raise_for_status()
-
-            data = response.json()
-
-            for article in data.get("articles", []):
-                source = article.get("source") or {}
-                outlet = source.get("name", "Imprensa")
-
-                items.append(
-                    _make_item(
-                        outlet=outlet,
-                        title=article.get("title", ""),
-                        url=article.get("url", ""),
-                        published=article.get("publishedAt", ""),
-                        summary=article.get("description", ""),
-                        source_type="newsapi"
-                    )
-                )
-
-        except Exception as exc:
-            print(f"[coleta] NewsAPI falhou para query '{query}': {exc}")
-
-    return _dedupe(items)
+    return items
 
 
 def collect_news():
-    items = []
-
-    items.extend(collect_gnews())
-
-    if not items:
-        items.extend(collect_newsapi())
+    """
+    Coleta notícias reais.
+    Se GNews não retornar nada, volta lista vazia.
+    Não usa RSS fallback para evitar links news.google.com.
+    """
+    items = collect_gnews()
 
     items = _dedupe(items)
 
-    print(f"[coleta] {len(items)} matérias reais coletadas com link direto.")
+    print(f"[coleta] {len(items)} matérias reais finais para o data.json.")
 
     return items
 
