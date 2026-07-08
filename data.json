@@ -1,6 +1,8 @@
 {
-  "generated_at": "8 jul 2026, 17:29",
+  "generated_at": "8 jul 2026, 17:38",
   "source": "backend automático",
+  "tracking_start": "2026-03-25",
+  "tracking_label": "Desde o lançamento do teaser",
   "titles": {
     "hp": {
       "label": "Harry Potter (HBO)",
@@ -9,17 +11,17 @@
       "days": {
         "d0": {
           "label": "8 jul 2026",
-          "updated": "8 jul 2026, 17:29",
+          "updated": "8 jul 2026, 17:38",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
-              "d": 3,
+              "d": 0,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
               "v": "+100",
               "suf": "/100",
-              "d": 100,
+              "d": 0,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,7 +33,7 @@
             "buzz": {
               "v": "82",
               "suf": "/100",
-              "d": 37,
+              "d": 0,
               "sub": "índice de buzz do dia"
             }
           },
@@ -42,20 +44,15 @@
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            50,
             60,
             0,
             0,
             0,
             0,
+            3,
             3
           ],
           "stack": [
-            [
-              0,
-              100,
-              0
-            ],
             [
               17,
               83,
@@ -79,6 +76,11 @@
             [
               0,
               100,
+              0
+            ],
+            [
+              100,
+              0,
               0
             ],
             [
@@ -206,19 +208,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "8 jul 2026",
-          "updated": "8 jul 2026, 17:29",
+          "label": "8–8 jul 2026",
+          "updated": "8 jul 2026, 17:38",
           "kpi": {
             "mentions": {
-              "v": "3 matérias",
-              "d": 3,
-              "sub": "cobertura real coletada"
+              "v": "6 matérias",
+              "d": 0,
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
               "v": "+100",
               "suf": "/100",
-              "d": 100,
-              "sub": "índice líquido do dia"
+              "d": 0,
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -227,56 +229,56 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "82",
+              "v": "100",
               "suf": "/100",
-              "d": 37,
-              "sub": "índice de buzz do dia"
+              "d": 0,
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 100,
             "neu": 0,
             "neg": 0,
-            "tone": "Cobertura real coletada; social não conectado"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
-            50,
             60,
             0,
             0,
             0,
             0,
+            3,
             3
           ],
           "stack": [
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              17,
-              83,
+              100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
@@ -288,7 +290,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 3,
+              "vol": 6,
               "senti": "pos",
               "ang": -90,
               "s": {
@@ -299,6 +301,54 @@
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real coletada; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+                }
+              ]
+            },
+            {
+              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real coletada; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+                }
+              ]
+            },
+            {
+              "t": "Série escala ator de Pirraça, personagem inédito",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real coletada; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+                }
+              ]
+            },
             {
               "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
               "vol": 1,
@@ -372,29 +422,1883 @@
               "cat": "nos",
               "time": "15 jun, 17:30",
               "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "cat": "nos",
+              "time": "4 jul, 21:28",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "cat": "nos",
+              "time": "15 jun, 22:00",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+              "title": "Série escala ator de Pirraça, personagem inédito",
+              "cat": "nos",
+              "time": "15 jun, 17:30",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Acompanhar cobertura do dia",
-            "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–8 jul 2026.",
             "facts": [
               [
-                "Fonte",
-                "notícias reais"
+                "Janela",
+                "8–8 jul 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
               ],
               [
                 "Matérias",
-                "3"
-              ],
-              [
-                "Social",
-                "não conectado"
+                "6"
               ],
               [
                 "Dados fictícios",
                 "não"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-1": {
+          "label": "1–7 jul 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "1–7 jul 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-2": {
+          "label": "24–30 jun 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "24–30 jun 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-3": {
+          "label": "17–23 jun 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "17–23 jun 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-4": {
+          "label": "10–16 jun 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "10–16 jun 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-5": {
+          "label": "3–9 jun 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "3–9 jun 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-6": {
+          "label": "27 mai–2 jun 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "27 mai–2 jun 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-7": {
+          "label": "20–26 mai 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "20–26 mai 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-8": {
+          "label": "13–19 mai 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "13–19 mai 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-9": {
+          "label": "6–12 mai 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "6–12 mai 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-10": {
+          "label": "29 abr–5 mai 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "29 abr–5 mai 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-11": {
+          "label": "22–28 abr 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "22–28 abr 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-12": {
+          "label": "15–21 abr 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "15–21 abr 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-13": {
+          "label": "8–14 abr 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "8–14 abr 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-14": {
+          "label": "1–7 abr 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "1–7 abr 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        },
+        "w-15": {
+          "label": "25–31 mar 2026",
+          "updated": "8 jul 2026, 17:38",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "25–31 mar 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "aguardando cobertura"
               ]
             ]
           },
