@@ -1,10 +1,11 @@
 """
-Lumos sources.py — coleta real de notícias via GNews.
+Lumos sources.py — coleta real de notícias.
 
-Regra:
-- Usa apenas GNews API quando GNEWS_API_KEY existe.
-- Não usa RSS/Google News fallback para evitar links intermediários.
-- Nunca cria título, URL, horário ou fonte fictícia.
+Regras:
+- Usa GNews API como fonte principal.
+- Usa NewsAPI como fallback opcional, se NEWSAPI_KEY existir.
+- Não usa RSS/Google News redirect.
+- Não inventa título, link, fonte, horário ou volume.
 """
 
 from __future__ import annotations
@@ -33,7 +34,9 @@ def _parse_dt(value):
 
     try:
         if isinstance(value, str) and value.endswith("Z"):
-            return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc).isoformat()
+            return datetime.fromisoformat(
+                value.replace("Z", "+00:00")
+            ).astimezone(timezone.utc).isoformat()
 
         return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
     except Exception:
@@ -56,7 +59,7 @@ def _scope(outlet):
     return "Portal BR"
 
 
-def _item(outlet, title, url, published="", summary="", source_type="gnews"):
+def _make_item(outlet, title, url, published="", summary="", source_type="api"):
     return {
         "outlet": (outlet or "Imprensa").strip(),
         "title": _clean_title(title),
@@ -93,34 +96,31 @@ def _dedupe(items):
     return out
 
 
-def collect_news():
-    """
-    Coleta notícias reais pela GNews API.
-    Se não houver chave ou se a API não retornar, volta vazio.
-    """
+def collect_gnews():
     api_key = os.environ.get("GNEWS_API_KEY", "")
 
     if not api_key:
-        print("[coleta] GNEWS_API_KEY não configurada — sem coleta real.")
+        print("[coleta] GNEWS_API_KEY não configurada.")
         return []
 
     print("[coleta] usando GNews API com links diretos")
 
-    queries = getattr(config, "QUERIES", [
-        "série Harry Potter HBO Max",
-        "Harry Potter HBO série",
-        "Harry Potter HBO Max elenco"
-    ])
+    queries = [
+        "Harry Potter HBO",
+        "série Harry Potter HBO",
+        "Harry Potter Max",
+        "Harry Potter série HBO Max",
+        "Harry Potter HBO elenco",
+        "Harry Potter HBO série estreia"
+    ]
 
-    since = _iso(datetime.now(timezone.utc) - timedelta(days=14))
+    since = _iso(datetime.now(timezone.utc) - timedelta(days=30))
     items = []
 
     for query in queries:
         try:
             params = {
                 "q": query,
-                "lang": "pt",
-                "country": "br",
                 "max": 10,
                 "from": since,
                 "sortby": "publishedAt",
@@ -143,30 +143,103 @@ def collect_news():
                 source = article.get("source") or {}
                 outlet = source.get("name", "Imprensa")
 
-                item = _item(
-                    outlet=outlet,
-                    title=article.get("title", ""),
-                    url=article.get("url", ""),
-                    published=article.get("publishedAt", ""),
-                    summary=article.get("description", ""),
-                    source_type="gnews"
+                items.append(
+                    _make_item(
+                        outlet=outlet,
+                        title=article.get("title", ""),
+                        url=article.get("url", ""),
+                        published=article.get("publishedAt", ""),
+                        summary=article.get("description", ""),
+                        source_type="gnews"
+                    )
                 )
-
-                items.append(item)
 
         except Exception as exc:
             print(f"[coleta] GNews falhou para query '{query}': {exc}")
 
+    return _dedupe(items)
+
+
+def collect_newsapi():
+    api_key = os.environ.get("NEWSAPI_KEY", "")
+
+    if not api_key:
+        print("[coleta] NEWSAPI_KEY não configurada.")
+        return []
+
+    print("[coleta] usando NewsAPI como fallback")
+
+    queries = [
+        "Harry Potter HBO",
+        "Harry Potter Max",
+        "série Harry Potter HBO"
+    ]
+
+    since = (datetime.now(timezone.utc) - timedelta(days=30)).date().isoformat()
+    items = []
+
+    for query in queries:
+        try:
+            params = {
+                "q": query,
+                "language": "pt",
+                "from": since,
+                "sortBy": "publishedAt",
+                "pageSize": 20,
+                "apiKey": api_key
+            }
+
+            response = requests.get(
+                "https://newsapi.org/v2/everything",
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(f"[coleta] NewsAPI query='{query}' status={response.status_code}")
+
+            response.raise_for_status()
+
+            data = response.json()
+
+            for article in data.get("articles", []):
+                source = article.get("source") or {}
+                outlet = source.get("name", "Imprensa")
+
+                items.append(
+                    _make_item(
+                        outlet=outlet,
+                        title=article.get("title", ""),
+                        url=article.get("url", ""),
+                        published=article.get("publishedAt", ""),
+                        summary=article.get("description", ""),
+                        source_type="newsapi"
+                    )
+                )
+
+        except Exception as exc:
+            print(f"[coleta] NewsAPI falhou para query '{query}': {exc}")
+
+    return _dedupe(items)
+
+
+def collect_news():
+    items = []
+
+    items.extend(collect_gnews())
+
+    if not items:
+        items.extend(collect_newsapi())
+
     items = _dedupe(items)
 
-    print(f"[coleta] {len(items)} matérias reais coletadas via GNews.")
+    print(f"[coleta] {len(items)} matérias reais coletadas com link direto.")
 
     return items
 
 
 def collect_social():
     """
-    Carrega dados sociais de export licenciado, se existir.
+    Social listening só entra se houver export licenciado.
     Sem export, retorna vazio e não inventa volumes.
     """
     path = getattr(config, "SOCIAL_EXPORT_PATH", "")
