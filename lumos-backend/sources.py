@@ -35,23 +35,3 @@ def _parse_dt(value):
             ).astimezone(timezone.utc).isoformat()
 
         return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
-    except Exception:
-        try:
-            return datetime.fromisoformat(str(value)).astimezone(timezone.utc).isoformat()
-        except Exception:
-            return str(value)
-
-
-def _clean_title(title):
-    return re.sub(r"\s+", " ", (title or "")).strip()
-
-
-def _scope(outlet):
-    intl = getattr(config, "INTL_OUTLETS", [])
-
-    if outlet in intl:
-        return "Internacional"
-
-    return "Portal BR"
-
-
