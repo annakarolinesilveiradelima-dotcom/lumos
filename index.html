@@ -1157,7 +1157,7 @@ const sentiClass=s=>s;
 
 /* ---- Relógio: data/hora sempre atuais (a partir do navegador) ---- */
 const PT_M=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
-function todayLabel(dt=new Date()){ return dt.getDate()+" "+PT_M[dt.getMonth()]+" "+dt.getFullYear(); }
+ todayLabel(dt=new Date()){ return dt.getDate()+" "+PT_M[dt.getMonth()]+" "+dt.getFullYear(); }
 function nowStamp(dt=new Date()){ const hh=String(dt.getHours()).padStart(2,"0"), mm=String(dt.getMinutes()).padStart(2,"0"); return todayLabel(dt)+", "+hh+":"+mm; }
 function weekWindowLabel(dt=new Date()){ const s=new Date(dt); s.setDate(dt.getDate()-6); const a=s.getMonth()===dt.getMonth()? String(s.getDate()) : s.getDate()+" "+PT_M[s.getMonth()]; return a+"–"+dt.getDate()+" "+PT_M[dt.getMonth()]+" "+dt.getFullYear(); }
 function isCurrentEntry(){ const m=DATA[curTitle]; if(!m) return false; const daily=curPeriod==="day"&&!!m.days; return daily ? (m.days && curDay===Object.keys(m.days)[0]) : (m.weeks && curWeek===Object.keys(m.weeks)[0]); }
@@ -1182,21 +1182,36 @@ function articleUrl(title, homepage){
 
 function getData(){
   const t = DATA[curTitle];
-  if(t.partial || (!t.weeks && !t.days)) return t;
 
-  // Diário: sempre prioriza o dia mais recente gerado pelo backend.
-  if(curPeriod === "day" && t.days){
+  if(t.partial || (!t.weeks && !t.days)){
+    return t;
+  }
+
+  // MODO DIÁRIO
+  // Mostra o dia selecionado ou, se não existir, o dia mais recente.
+  if(curPeriod === "day" && t.days && Object.keys(t.days).length){
     return t.days[curDay] || t.days[Object.keys(t.days)[0]];
   }
 
-  // Semanal: usa weeks se tiver conteúdo real.
-  // Se a semana estiver vazia, cai para o diário real para não deixar o dashboard "morto".
+  // MODO SEMANAL
+  // Mostra SEMPRE a semana selecionada.
+  // Mesmo se a semana estiver vazia, ela aparece vazia de forma honesta.
+  // Isso evita cair automaticamente para o Diário.
   if(curPeriod === "week" && t.weeks && Object.keys(t.weeks).length){
-    const w = t.weeks[curWeek] || t.weeks[Object.keys(t.weeks)[0]];
-    const hasCoverage = w && Array.isArray(w.coverage) && w.coverage.length > 0;
-    const hasNarratives = w && Array.isArray(w.narratives) && w.narratives.length > 0;
-    if(hasCoverage || hasNarratives){
-      return w;
+    return t.weeks[curWeek] || t.weeks[Object.keys(t.weeks)[0]];
+  }
+
+  // Fallback final: se não tiver semanal, tenta diário.
+  if(t.days && Object.keys(t.days).length){
+    return t.days[curDay] || t.days[Object.keys(t.days)[0]];
+  }
+
+  if(t.weeks && Object.keys(t.weeks).length){
+    return t.weeks[curWeek] || t.weeks[Object.keys(t.weeks)[0]];
+  }
+
+  return t;
+
     }
   }
 
