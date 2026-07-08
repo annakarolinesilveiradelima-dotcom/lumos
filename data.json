@@ -1,0 +1,136 @@
+{
+  "generated_at": "aguardando primeira atualização automática",
+  "source": "placeholder inicial",
+  "titles": {
+    "hp": {
+      "label": "Harry Potter (HBO)",
+      "topTitle": "Harry Potter — Série HBO Max",
+      "topSub": "Daily Intelligence · mercado brasileiro",
+      "days": {
+        "d0": {
+          "label": "aguardando feed",
+          "updated": "aguardando backend",
+          "kpi": {
+            "mentions": {
+              "v": "—",
+              "d": 0,
+              "sub": "aguardando primeira coleta"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "aguardando análise"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer benchmark"
+            },
+            "buzz": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "aguardando histórico"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Aguardando primeira coleta real"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [],
+          "heroOpp": {
+            "title": "Aguardando dados reais",
+            "desc": "O painel será preenchido após a primeira execução do backend agendado.",
+            "facts": [
+              [
+                "Status",
+                "aguardando"
+              ],
+              [
+                "Fonte",
+                "backend"
+              ],
+              [
+                "Social",
+                "não conectado"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ]
+            ]
+          },
+          "opps": [],
+          "ephem": []
+        }
+      },
+      "weeks": {}
+    }
+  }
+}

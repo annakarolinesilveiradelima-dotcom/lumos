@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumos — Fandom Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --ink:#0B0E17;
+  --ink-2:#0d1120;
+  --card:#141a2b;
+  --card-2:#182036;
+  --line:#28304a;
+  --line-soft:#1d2540;
+  --text:#ECE3D0;
+  --text-2:#A6ACC2;
+  --muted:#6f7590;
+  --candle:#E7A94B;
+  --candle-2:#f2c877;
+  --spell:#7C86D6;
+  --pos:#63C08C;
+  --neu:#8A90A6;
+  --neg:#DA6E6E;
+  --pos-dim:rgba(99,192,140,.14);
+  --neg-dim:rgba(218,110,110,.14);
+  --neu-dim:rgba(138,144,166,.14);
+  --candle-dim:rgba(231,169,75,.13);
+  --radius:14px;
+  --shadow:0 20px 50px -20px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:
+    radial-gradient(1100px 620px at 82% -8%, rgba(231,169,75,.10), transparent 60%),
+    radial-gradient(900px 700px at 8% 108%, rgba(124,134,214,.09), transparent 60%),
+    var(--ink);
+  color:var(--text);
+  font-family:"Instrument Sans",system-ui,-apple-system,sans-serif;
+  font-size:14px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+/* faint starfield */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(236,227,208,.45), transparent),
+    radial-gradient(1px 1px at 70% 20%, rgba(236,227,208,.30), transparent),
+    radial-gradient(1px 1px at 40% 70%, rgba(236,227,208,.25), transparent),
+    radial-gradient(1px 1px at 85% 60%, rgba(236,227,208,.35), transparent),
+    radial-gradient(1px 1px at 55% 45%, rgba(236,227,208,.20), transparent),
+    radial-gradient(1px 1px at 12% 80%, rgba(236,227,208,.28), transparent);
+}
+.app{position:relative;z-index:1;display:grid;grid-template-columns:246px 1fr;min-height:100vh}
+
+/* ---------- Sidebar ---------- */
+.side{
+  border-right:1px solid var(--line-soft);
+  padding:22px 16px;
+  background:linear-gradient(180deg, rgba(13,17,32,.6), rgba(11,14,23,.2));
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+}
+.brand{display:flex;align-items:center;gap:11px;padding:6px 6px 22px}
+.sigil{position:relative;width:34px;height:34px;flex:0 0 auto}
+.sigil .flame{
+  position:absolute;inset:0;margin:auto;width:7px;height:7px;border-radius:50%;
+  background:var(--candle-2);
+  box-shadow:0 0 10px 4px rgba(242,200,119,.75), 0 0 26px 10px rgba(231,169,75,.45), 0 0 60px 22px rgba(231,169,75,.18);
+  animation:breathe 4.2s ease-in-out infinite;
+}
+.sigil .ring{position:absolute;inset:0;border:1px solid rgba(231,169,75,.28);border-radius:50%}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.28);opacity:.82}}
+.wordmark{font-family:"Fraunces",serif;font-weight:600;font-size:23px;letter-spacing:.3px;line-height:1;color:var(--text)}
+.wordmark small{display:block;font-family:"JetBrains Mono",monospace;font-weight:500;font-size:8.5px;letter-spacing:2.4px;color:var(--candle);margin-top:5px;text-transform:uppercase}
+.nav{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+.nav-label{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;padding:14px 10px 6px}
+.nav-item{
+  display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;cursor:pointer;
+  color:var(--text-2);border:1px solid transparent;transition:.15s;font-weight:500;
+}
+.nav-item svg{width:17px;height:17px;flex:0 0 auto;opacity:.8}
+.nav-item:hover{background:rgba(255,255,255,.03);color:var(--text)}
+.nav-item.active{background:var(--candle-dim);border-color:rgba(231,169,75,.28);color:var(--text)}
+.nav-item.active svg{color:var(--candle);opacity:1}
+.nav-item .badge{margin-left:auto;font-family:"JetBrains Mono",monospace;font-size:9px;background:var(--neg);color:#1a0b0b;border-radius:20px;padding:1px 6px;font-weight:600}
+.side-foot{margin-top:18px;padding:12px 10px;border-top:1px solid var(--line-soft);color:var(--muted);font-size:11px}
+.side-foot b{color:var(--text-2);font-weight:500}
+
+/* ---------- Topbar ---------- */
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{
+  display:flex;align-items:center;gap:14px;padding:16px 26px;border-bottom:1px solid var(--line-soft);
+  position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+  background:linear-gradient(180deg, rgba(11,14,23,.92), rgba(11,14,23,.66));
+}
+.tb-title{display:flex;flex-direction:column;gap:2px;margin-right:auto;min-width:0}
+.tb-title h1{margin:0;font-family:"Fraunces",serif;font-weight:500;font-size:19px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-title span{font-size:11.5px;color:var(--muted)}
+.select{position:relative}
+.select>button{
+  display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);color:var(--text);
+  padding:8px 12px;border-radius:10px;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:500;white-space:nowrap;transition:.15s;
+}
+.select>button:hover{border-color:var(--candle);background:var(--card-2)}
+.select>button .cap{font-family:"JetBrains Mono",monospace;font-size:8.5px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+.select>button svg{width:13px;height:13px;color:var(--muted)}
+.menu{
+  position:absolute;top:calc(100% + 6px);right:0;min-width:230px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:6px;box-shadow:var(--shadow);z-index:40;display:none;
+}
+.menu.open{display:block}
+.menu-item{padding:9px 11px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--text-2);display:flex;align-items:center;gap:9px}
+.menu-item:hover{background:rgba(255,255,255,.04);color:var(--text)}
+.menu-item.sel{color:var(--candle)}
+.menu-item .dot{width:7px;height:7px;border-radius:50%;background:var(--candle);opacity:0}
+.menu-item.sel .dot{opacity:1}
+.menu-item small{margin-left:auto;color:var(--muted);font-size:10.5px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:inherit;font-weight:600;font-size:12.5px;
+  padding:9px 15px;border-radius:10px;transition:.15s;
+}
+.btn svg{width:15px;height:15px}
+.btn-primary{background:linear-gradient(180deg,var(--candle-2),var(--candle));color:#2a1c05;box-shadow:0 8px 22px -8px rgba(231,169,75,.6)}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-ghost{background:var(--card);border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--candle)}
+.seg{display:inline-flex;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:3px}
+.seg-btn{border:none;background:transparent;color:var(--text-2);font-family:inherit;font-size:12px;font-weight:600;padding:6px 13px;border-radius:7px;cursor:pointer;transition:.15s}
+.seg-btn:hover{color:var(--text)}
+.seg-btn.active{background:var(--candle-dim);color:var(--candle);box-shadow:inset 0 0 0 1px rgba(231,169,75,.28)}
+
+/* source chips */
+.srcs{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:11px}
+.srcs .flabel{margin:0}
+.src-chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--text-2);background:var(--card-2);border:1px solid var(--line-soft);padding:3px 9px;border-radius:7px;text-decoration:none;transition:.15s}
+.src-chip:hover{border-color:var(--candle);color:var(--candle)}
+.src-chip svg{width:10px;height:10px;opacity:.7}
+
+/* coverage list */
+.cov-note{font-size:11.5px;color:var(--muted);margin:-4px 0 16px;display:flex;align-items:center;gap:7px}
+.cov-list{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden}
+.cov-row{display:grid;grid-template-columns:104px 150px 1fr auto;gap:14px;align-items:center;background:var(--card);padding:13px 16px;text-decoration:none;color:inherit;transition:.15s}
+.cov-row:hover{background:var(--card-2)}
+.cov-time{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted)}
+.cov-outlet{display:flex;align-items:center;gap:8px;min-width:0}
+.cov-outlet .odot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.cov-outlet b{font-size:12px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cov-title{font-size:13px;color:var(--text);min-width:0}
+.cov-title small{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.5px;color:var(--muted);margin-top:3px;text-transform:uppercase}
+.cov-right{display:flex;align-items:center;gap:10px}
+.cov-right svg{width:14px;height:14px;color:var(--muted)}
+.cat{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.cat.pos{background:var(--pos-dim);color:var(--pos)}
+.cat.neg{background:var(--neg-dim);color:var(--neg)}
+.cat.neu{background:var(--neu-dim);color:var(--neu)}
+.cat.esp{background:rgba(124,134,214,.14);color:var(--spell)}
+.cat.nos{background:var(--candle-dim);color:var(--candle)}
+@media (max-width:920px){
+  .cov-row{grid-template-columns:1fr auto;gap:6px}
+  .cov-time,.cov-outlet{grid-column:1/-1}
+}
+
+/* ---------- Content ---------- */
+.content{padding:24px 26px 60px;max-width:1200px;width:100%}
+.view{display:none;animation:fade .35s ease}
+.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.section-head{display:flex;align-items:flex-end;gap:12px;margin:4px 0 18px}
+.section-head h2{margin:0;font-family:"Fraunces",serif;font-weight:500;font-size:25px;letter-spacing:.2px}
+.section-head .eyebrow{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:2px;color:var(--candle);text-transform:uppercase;display:block;margin-bottom:6px}
+.section-head p{margin:0 0 3px auto;color:var(--muted);font-size:12px;max-width:340px;text-align:right}
+
+.demo-tag{
+  display:inline-flex;align-items:center;gap:7px;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.5px;
+  color:var(--candle);background:var(--candle-dim);border:1px solid rgba(231,169,75,.25);padding:3px 9px;border-radius:20px;
+}
+.demo-tag .pulse{width:6px;height:6px;border-radius:50%;background:var(--candle);animation:breathe 2.4s ease-in-out infinite}
+
+/* KPI */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.kpi{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:16px 17px;position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--candle),transparent)}
+.kpi .k-label{font-size:11px;color:var(--muted);letter-spacing:.3px;text-transform:uppercase;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:1.2px}
+.kpi .k-val{font-family:"Fraunces",serif;font-weight:500;font-size:31px;color:var(--text);margin:9px 0 4px;line-height:1}
+.kpi .k-val small{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--muted);font-weight:400}
+.k-delta{display:inline-flex;align-items:center;gap:4px;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:600}
+.k-delta.up{color:var(--pos)}
+.k-delta.down{color:var(--neg)}
+.k-delta svg{width:12px;height:12px}
+.k-sub{font-size:11px;color:var(--muted);margin-left:7px}
+
+.grid-2{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-bottom:16px}
+.grid-2b{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.panel{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px 19px}
+.panel-head{display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.panel-head h3{margin:0;font-size:14px;font-weight:600;color:var(--text)}
+.panel-head .hint{margin-left:auto;font-size:11px;color:var(--muted);font-family:"JetBrains Mono",monospace}
+.panel-head .ico{width:16px;height:16px;color:var(--candle)}
+
+/* Constellation radar */
+.radar-wrap{display:flex;flex-direction:column;align-items:center}
+#radar{width:100%;max-width:440px;height:auto}
+.star{cursor:pointer;transition:.2s}
+.star:hover circle.halo{opacity:.9!important}
+.radar-legend{display:flex;gap:16px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+.radar-legend span{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--text-2)}
+.radar-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+
+.preview-hint{font-size:11.5px;color:var(--muted);margin-top:9px;line-height:1.5;max-width:640px;display:none}
+.preview-hint.show{display:block}
+.preview-hint b{color:var(--text-2);font-weight:600}
+.chart-box.tall{height:250px}
+
+/* narrative strip / donut side */
+.narr-mini{display:flex;flex-direction:column;gap:9px}
+.narr-mini .row{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;background:var(--card-2);border:1px solid var(--line-soft)}
+.narr-mini .rank{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);width:16px}
+.narr-mini .nm-title{font-size:12.5px;color:var(--text);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.narr-mini .nm-vol{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--text-2)}
+.trend{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;border-radius:6px}
+.trend svg{width:13px;height:13px}
+.trend.up{background:var(--pos-dim);color:var(--pos)}
+.trend.down{background:var(--neg-dim);color:var(--neg)}
+.trend.flat{background:var(--neu-dim);color:var(--neu)}
+
+/* sentiment pills */
+.senti{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.senti .d{width:6px;height:6px;border-radius:50%}
+.senti.pos{background:var(--pos-dim);color:var(--pos)} .senti.pos .d{background:var(--pos)}
+.senti.neg{background:var(--neg-dim);color:var(--neg)} .senti.neg .d{background:var(--neg)}
+.senti.neu{background:var(--neu-dim);color:var(--neu)} .senti.neu .d{background:var(--neu)}
+.senti.div{background:rgba(124,134,214,.14);color:var(--spell)} .senti.div .d{background:var(--spell)}
+.senti.iro{background:var(--candle-dim);color:var(--candle)} .senti.iro .d{background:var(--candle)}
+
+/* Filters */
+.filters{display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filters .flabel{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--text-2);padding:5px 11px;border-radius:20px;cursor:pointer;font-size:11.5px;font-family:inherit;transition:.15s}
+.chip:hover{border-color:var(--candle);color:var(--text)}
+.chip.on{background:var(--candle-dim);border-color:rgba(231,169,75,.4);color:var(--candle);font-weight:600}
+.chip.sep{margin-left:14px}
+
+/* Narrative cards */
+.narr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.ncard{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:16px 17px;transition:.18s;position:relative}
+.ncard:hover{border-color:var(--line);transform:translateY(-2px);box-shadow:var(--shadow)}
+.ncard .nc-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.ncard h4{margin:0;font-size:14.5px;font-weight:600;color:var(--text);line-height:1.3;flex:1}
+.ncard .nc-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:11px}
+.tag{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--text-2);background:var(--card-2);border:1px solid var(--line-soft);padding:2px 8px;border-radius:6px}
+.tag.vol{color:var(--candle)}
+.ncard .quote{font-size:12.5px;color:var(--text-2);font-style:italic;border-left:2px solid var(--line);padding:2px 0 2px 12px;margin:0}
+.ncard .quote small{display:block;font-style:normal;font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:.5px;margin-top:6px}
+.nc-link{color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+.nc-link svg{width:12px;height:12px;color:var(--candle);opacity:0;transition:.15s;flex:0 0 auto}
+.nc-link:hover{color:var(--candle)}
+.nc-link:hover svg{opacity:1}
+.hot{display:inline-flex;align-items:center;gap:3px;font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:600;letter-spacing:.3px;color:var(--candle);background:var(--candle-dim);border:1px solid rgba(231,169,75,.3);padding:2px 8px;border-radius:20px}
+.nm-row-link{text-decoration:none;color:inherit;transition:.15s}
+.nm-row-link:hover{border-color:var(--candle)!important}
+.nm-row-link:hover .nm-title{color:var(--candle)}
+.bar{height:5px;border-radius:3px;background:var(--line-soft);overflow:hidden;margin-top:12px}
+.bar>i{display:block;height:100%;border-radius:3px}
+
+/* Table */
+.tbl-wrap{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+thead th{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);font-weight:500;background:var(--ink-2)}
+tbody td{padding:13px 15px;border-bottom:1px solid var(--line-soft);font-size:12.5px;vertical-align:middle}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.handle{display:flex;align-items:center;gap:10px}
+.handle .av{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-weight:600;font-size:13px;color:var(--ink);flex:0 0 auto}
+.handle b{font-weight:600;color:var(--text);font-size:12.5px}
+.handle small{color:var(--muted);font-size:10.5px;font-family:"JetBrains Mono",monospace}
+.score{display:flex;align-items:center;gap:8px}
+.score .track{width:56px;height:5px;border-radius:3px;background:var(--line-soft);overflow:hidden}
+.score .track>i{display:block;height:100%;background:linear-gradient(90deg,var(--candle),var(--candle-2))}
+.score b{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--text)}
+.risk-flag{font-family:"JetBrains Mono",monospace;font-size:10px;padding:2px 7px;border-radius:6px}
+.risk-flag.low{background:var(--pos-dim);color:var(--pos)}
+.risk-flag.mid{background:var(--candle-dim);color:var(--candle)}
+.risk-flag.high{background:var(--neg-dim);color:var(--neg)}
+
+/* Risk cards */
+.risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rcard{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:17px 18px;position:relative;border-left-width:3px}
+.rcard.high{border-left-color:var(--neg)}
+.rcard.mid{border-left-color:var(--candle)}
+.rcard.low{border-left-color:var(--pos)}
+.rcard .rc-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.rcard h4{margin:0;font-size:14px;font-weight:600;flex:1}
+.sev{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:6px;font-weight:600}
+.sev.high{background:var(--neg-dim);color:var(--neg)}
+.sev.mid{background:var(--candle-dim);color:var(--candle)}
+.sev.low{background:var(--pos-dim);color:var(--pos)}
+.rcard p{margin:0 0 12px;font-size:12.5px;color:var(--text-2)}
+.rcard .rec{background:var(--card-2);border-radius:9px;padding:11px 12px;font-size:12px;color:var(--text-2)}
+.rcard .rec b{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--candle);margin-bottom:4px;font-weight:600}
+
+/* Opportunities */
+.opp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:18px}
+.ocard{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:16px 17px}
+.ocard .oc-ico{width:34px;height:34px;border-radius:10px;background:var(--candle-dim);display:flex;align-items:center;justify-content:center;margin-bottom:11px}
+.ocard .oc-ico svg{width:18px;height:18px;color:var(--candle)}
+.ocard h4{margin:0 0 6px;font-size:14px;font-weight:600}
+.ocard p{margin:0;font-size:12.5px;color:var(--text-2)}
+.ocard .oc-tag{margin-top:11px;display:inline-block}
+.hero-opp{
+  background:linear-gradient(135deg, rgba(231,169,75,.14), rgba(124,134,214,.10)), var(--card);
+  border:1px solid rgba(231,169,75,.28);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px;position:relative;overflow:hidden;
+}
+.hero-opp::before{content:"";position:absolute;right:-40px;top:-40px;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(231,169,75,.18),transparent 70%)}
+.hero-opp .ho-kicker{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--candle);margin-bottom:9px}
+.hero-opp h3{margin:0 0 8px;font-family:"Fraunces",serif;font-weight:500;font-size:22px}
+.hero-opp p{margin:0 0 16px;font-size:13px;color:var(--text-2);max-width:560px}
+.ho-facts{display:grid;grid-template-columns:repeat(4,auto);gap:26px}
+.ho-facts .f small{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.ho-facts .f b{font-size:13px;color:var(--text);font-weight:600}
+
+/* efemerides */
+.ephem{margin-top:6px}
+.ephem thead th:last-child{text-align:right}
+.ephem td:last-child{text-align:right}
+.buzz-dots{display:inline-flex;gap:3px}
+.buzz-dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.buzz-dots i.on{background:var(--candle)}
+
+/* AI panel */
+.ai-layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ai-input textarea{
+  width:100%;min-height:230px;resize:vertical;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;
+  color:var(--text);font-family:inherit;font-size:13px;line-height:1.6;padding:14px 15px;
+}
+.ai-input textarea:focus{outline:none;border-color:var(--candle);box-shadow:0 0 0 3px var(--candle-dim)}
+.ai-tools{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.ai-samples{margin-top:14px}
+.ai-samples .flabel{display:block;margin-bottom:8px}
+.samp{display:block;width:100%;text-align:left;background:var(--card-2);border:1px solid var(--line-soft);border-radius:10px;
+  padding:10px 12px;margin-bottom:8px;cursor:pointer;color:var(--text-2);font-size:12px;font-family:inherit;transition:.15s}
+.samp:hover{border-color:var(--candle);color:var(--text)}
+.samp b{color:var(--candle);font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:3px}
+.ai-out{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px 19px;min-height:230px}
+.ai-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;color:var(--muted);padding:30px 10px}
+.ai-empty .glow{width:44px;height:44px;border-radius:50%;background:var(--candle-2);margin-bottom:16px;
+  box-shadow:0 0 18px 6px rgba(242,200,119,.5),0 0 44px 16px rgba(231,169,75,.25);animation:breathe 4s ease-in-out infinite}
+.ai-empty p{font-size:12.5px;max-width:240px}
+.ai-res .ar-score{display:flex;align-items:center;gap:16px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line-soft)}
+.gauge{position:relative;width:96px;height:96px;flex:0 0 auto}
+.gauge svg{transform:rotate(-90deg)}
+.gauge .g-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge .g-val b{font-family:"Fraunces",serif;font-size:24px;line-height:1}
+.gauge .g-val small{font-family:"JetBrains Mono",monospace;font-size:8px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.ar-score .ar-label b{font-size:15px;display:block;margin-bottom:3px}
+.ar-score .ar-label span{font-size:12px;color:var(--text-2)}
+.ar-block{margin-bottom:15px}
+.ar-block .flabel{display:block;margin-bottom:8px}
+.ar-block ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.ar-block li{display:flex;gap:9px;font-size:12.5px;color:var(--text-2);align-items:flex-start}
+.ar-block li .mk{width:5px;height:5px;border-radius:50%;background:var(--candle);margin-top:7px;flex:0 0 auto}
+.ar-block.risk li .mk{background:var(--neg)}
+.ar-summary{font-size:12.5px;color:var(--text-2);background:var(--card-2);border-radius:10px;padding:12px 13px;line-height:1.6}
+.ai-mode{display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.5px;
+  padding:3px 8px;border-radius:20px;margin-left:auto}
+.ai-mode.live{background:var(--pos-dim);color:var(--pos)}
+.ai-mode.local{background:var(--candle-dim);color:var(--candle)}
+.spinner{width:15px;height:15px;border:2px solid rgba(42,28,5,.3);border-top-color:#2a1c05;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Report modal */
+.overlay{position:fixed;inset:0;background:rgba(6,8,14,.78);backdrop-filter:blur(6px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+.overlay.open{display:flex}
+.modal{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;max-width:900px;width:100%;box-shadow:var(--shadow)}
+.modal-head{display:flex;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid var(--line-soft)}
+.modal-head h3{margin:0;font-family:"Fraunces",serif;font-weight:500;font-size:20px;flex:1}
+.modal-head .x{background:var(--card);border:1px solid var(--line);color:var(--text-2);width:32px;height:32px;border-radius:9px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.modal-head .x:hover{border-color:var(--candle);color:var(--text)}
+.modal-body{padding:24px}
+.deck-cover{
+  background:radial-gradient(600px 300px at 80% 0%, rgba(231,169,75,.16), transparent), linear-gradient(135deg,#0d1120,#161d33);
+  border:1px solid var(--line);border-radius:14px;padding:38px 34px;margin-bottom:16px;position:relative;overflow:hidden;
+}
+.deck-cover .dc-sigil{width:12px;height:12px;border-radius:50%;background:var(--candle-2);box-shadow:0 0 16px 6px rgba(231,169,75,.5);margin-bottom:20px}
+.deck-cover .dc-kick{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:2.5px;color:var(--candle);text-transform:uppercase;margin-bottom:12px}
+.deck-cover h2{margin:0 0 8px;font-family:"Fraunces",serif;font-weight:500;font-size:30px}
+.deck-cover .dc-sub{color:var(--text-2);font-size:13px}
+.deck-cover .dc-foot{margin-top:24px;display:flex;gap:28px}
+.deck-cover .dc-foot .f small{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:1px;margin-bottom:3px}
+.deck-cover .dc-foot .f b{font-size:14px;font-family:"Fraunces",serif;font-weight:500}
+.slide-thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sthumb{background:var(--card);border:1px solid var(--line-soft);border-radius:11px;padding:15px 16px}
+.sthumb .st-n{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:1px;margin-bottom:8px}
+.sthumb h5{margin:0 0 8px;font-size:13px;font-weight:600}
+.sthumb ul{margin:0;padding-left:15px;font-size:11.5px;color:var(--text-2);line-height:1.7}
+.modal-foot{padding:18px 24px;border-top:1px solid var(--line-soft);display:flex;align-items:center;gap:12px}
+.modal-foot .note{font-size:11.5px;color:var(--muted);margin-right:auto;max-width:420px}
+
+/* toast */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--candle);
+  color:var(--text);padding:12px 18px;border-radius:12px;font-size:13px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:200;display:flex;align-items:center;gap:9px}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast svg{width:16px;height:16px;color:var(--candle)}
+
+.mobile-note{display:none}
+
+@media (max-width:920px){
+  .app{grid-template-columns:1fr}
+  .side{position:static;height:auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .brand{width:100%;padding-bottom:10px}
+  .nav{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .nav-label,.side-foot{display:none}
+  .nav-item{padding:8px 10px}
+  .nav-item span.lbl{display:none}
+  .kpi-row{grid-template-columns:1fr 1fr}
+  .grid-2,.grid-2b,.narr-grid,.risk-grid,.opp-grid,.ai-layout,.slide-thumbs{grid-template-columns:1fr}
+  .section-head p{display:none}
+  .ho-facts{grid-template-columns:1fr 1fr;gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+:focus-visible{outline:2px solid var(--candle);outline-offset:2px;border-radius:4px}
+
+@media print{
+  .side,.topbar,.filters,.nav{display:none!important}
+  body{background:#fff;color:#111}
+  .view{display:block!important}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="side">
+    <div class="brand">
+      <div class="sigil"><div class="ring"></div><div class="flame"></div></div>
+      <div class="wordmark">Lumos<small>Fandom Intelligence</small></div>
+    </div>
+    <div class="nav-label">Semana atual</div>
+    <nav class="nav" id="nav">
+      <div class="nav-item active" data-view="overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        <span class="lbl">Visão geral</span>
+      </div>
+      <div class="nav-item" data-view="narratives">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span class="lbl">Narrativas</span>
+      </div>
+      <div class="nav-item" data-view="coverage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
+        <span class="lbl">Cobertura & fontes</span>
+      </div>
+      <div class="nav-item" data-view="sentiment">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+        <span class="lbl">Sentimento</span>
+      </div>
+      <div class="nav-item" data-view="creators">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span class="lbl">Creators</span>
+      </div>
+      <div class="nav-item" data-view="risks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+        <span class="lbl">Riscos</span>
+        <span class="badge" id="riskBadge">2</span>
+      </div>
+      <div class="nav-item" data-view="opps">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>
+        <span class="lbl">Oportunidades</span>
+      </div>
+      <div class="nav-label">Ferramentas</div>
+      <div class="nav-item" data-view="ai">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M17.7 6.3l1.4-1.4M4.9 19.1l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg>
+        <span class="lbl">Análise IA</span>
+      </div>
+    </nav>
+    <div class="side-foot">
+      <b>Fonte de dados:</b> <span id="footSource">demonstração</span><br>
+      Cobertura: <b>BR</b> · pt-BR<br>
+      <span id="footUpdate"></span>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="topbar">
+      <div class="tb-title">
+        <h1 id="tbTitle">Harry Potter — Série HBO Max</h1>
+        <span id="tbSub">Weekly Intelligence · mercado brasileiro</span>
+      </div>
+
+      <div class="seg" id="periodSeg">
+        <button class="seg-btn active" data-period="week">Semanal</button>
+        <button class="seg-btn" data-period="day">Diário</button>
+      </div>
+
+      <div class="select" id="titleSelect">
+        <button onclick="toggleMenu('titleMenu')">
+          <span class="cap">Título</span>
+          <span id="titleLabel">Harry Potter (HBO)</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="menu" id="titleMenu"></div>
+      </div>
+
+      <div class="select" id="weekSelect">
+        <button onclick="toggleMenu('weekMenu')">
+          <span class="cap" id="periodCap">Semana</span>
+          <span id="weekLabel"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="menu" id="weekMenu"></div>
+      </div>
+
+      <button class="btn btn-ghost" id="liveBtn" onclick="liveRefresh()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2v6h-6M3 12a9 9 0 0 1 15-6.7L21 8M3 22v-6h6M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+        Atualizar agora
+      </button>
+
+      <button class="btn btn-primary" onclick="openReport()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        Gerar relatório
+      </button>
+    </div>
+
+    <div class="content">
+      <!-- ============ OVERVIEW ============ -->
+      <section class="view active" id="view-overview">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Resumo executivo</span>
+            <h2 id="ovTitle">Visão geral da semana</h2>
+          </div>
+          <p>Consolidação de notícias, redes sociais, creators e comunidades de fãs em um único radar.</p>
+        </div>
+
+        <div style="margin-bottom:16px"><span class="demo-tag" id="demoTag"><span class="pulse"></span> Carregando…</span><div class="preview-hint" id="previewHint"></div></div>
+
+        <div class="kpi-row" id="kpiRow"></div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+              <h3>Radar de plataformas</h3>
+              <span class="hint">tamanho = volume · cor = sentimento</span>
+            </div>
+            <div class="radar-wrap">
+              <svg id="radar" viewBox="0 0 460 380"></svg>
+              <div class="radar-legend">
+                <span><i style="background:var(--pos)"></i> positivo</span>
+                <span><i style="background:var(--neu)"></i> neutro/dividido</span>
+                <span><i style="background:var(--neg)"></i> negativo</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <h3>Narrativas dominantes</h3>
+            </div>
+            <div class="narr-mini" id="narrMini"></div>
+          </div>
+        </div>
+
+        <div class="grid-2b">
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12z"/><path d="M12 2v10h10A10 10 0 0 0 12 2z"/></svg>
+              <h3>Balanço de sentimento</h3>
+              <span class="hint" id="sentiTone"></span>
+            </div>
+            <div class="chart-box"><canvas id="donut"></canvas></div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+              <h3 id="sparkTitle">Buzz · últimos 7 dias</h3>
+              <span class="hint">menções/dia (mil)</span>
+            </div>
+            <div class="chart-box"><canvas id="spark"></canvas></div>
+            <div class="chart-cap" id="buzzSource"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NARRATIVES ============ -->
+      <section class="view" id="view-narratives">
+        <div class="section-head">
+          <div><span class="eyebrow">Principais conversas</span><h2 id="narrTitle">Narrativas da semana</h2></div>
+          <p>As histórias que moveram a conversa, com volume, tom e plataforma dominante.</p>
+        </div>
+        <div class="filters" id="narrFilters">
+          <span class="flabel">Plataforma</span>
+          <button class="chip on" data-pf="all">Todas</button>
+          <button class="chip" data-pf="TikTok">TikTok</button>
+          <button class="chip" data-pf="X/Twitter">X</button>
+          <button class="chip" data-pf="Instagram">Instagram</button>
+          <button class="chip" data-pf="YouTube">YouTube</button>
+          <button class="chip" data-pf="Reddit">Reddit</button>
+          <span class="flabel sep">Sentimento</span>
+          <button class="chip on" data-sf="all">Todos</button>
+          <button class="chip" data-sf="pos">Positivo</button>
+          <button class="chip" data-sf="div">Dividido</button>
+          <button class="chip" data-sf="neg">Negativo</button>
+        </div>
+        <div class="narr-grid" id="narrGrid"></div>
+      </section>
+
+      <!-- ============ COVERAGE ============ -->
+      <section class="view" id="view-coverage">
+        <div class="section-head">
+          <div><span class="eyebrow">PR listening · imprensa</span><h2>Cobertura & fontes</h2></div>
+          <p>De onde veio a informação: veículo, tom, horário e link para a fonte.</p>
+        </div>
+        <div class="cov-note">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>No modo exemplo, o link abre a seção de Harry Potter do veículo. Com dados ao vivo (aberto no navegador), cada item abre a matéria específica, direto.</span>
+        </div>
+        <div class="filters" id="covFilters">
+          <span class="flabel">Tom da cobertura</span>
+          <button class="chip on" data-cf="all">Toda</button>
+          <button class="chip" data-cf="pos">Positiva</button>
+          <button class="chip" data-cf="neg">Crítica</button>
+          <button class="chip" data-cf="esp">Especulativa</button>
+          <button class="chip" data-cf="nos">Nostálgica</button>
+        </div>
+        <div class="cov-list" id="covList"></div>
+      </section>
+
+      <!-- ============ SENTIMENT ============ -->
+      <section class="view" id="view-sentiment">
+        <div class="section-head">
+          <div><span class="eyebrow">Análise de sentimento</span><h2>Como o fandom está reagindo</h2></div>
+          <p>Evolução do tom ao longo dos dias e a leitura por plataforma.</p>
+        </div>
+        <div class="kpi-row" id="sentiKpi" style="grid-template-columns:repeat(3,1fr)"></div>
+        <div class="grid-2b">
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 4 5-8"/></svg>
+              <h3>Evolução no tempo</h3><span class="hint">% por dia</span>
+            </div>
+            <div class="chart-box tall"><canvas id="stack"></canvas></div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="12" y="6" width="3" height="11"/><rect x="17" y="13" width="3" height="4"/></svg>
+              <h3>Sentimento por plataforma</h3>
+            </div>
+            <div class="chart-box tall"><canvas id="platBars"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CREATORS ============ -->
+      <section class="view" id="view-creators">
+        <div class="section-head">
+          <div><span class="eyebrow">Creators & influenciadores</span><h2>Quem está movendo a conversa</h2></div>
+          <p>Perfis relevantes com alcance, tom e potencial estratégico para campanha.</p>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr>
+              <th>Perfil</th><th>Conteúdo</th><th>Sentimento</th><th>Alcance est.</th><th>Relevância p/ campanha</th><th>Risco</th>
+            </tr></thead>
+            <tbody id="creatorRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ RISKS ============ -->
+      <section class="view" id="view-risks">
+        <div class="section-head">
+          <div><span class="eyebrow">Radar de riscos</span><h2>Pontos de atenção reputacional</h2></div>
+          <p>Sinais que podem escalar, com severidade e resposta recomendada.</p>
+        </div>
+        <div class="risk-grid" id="riskGrid"></div>
+      </section>
+
+      <!-- ============ OPPORTUNITIES ============ -->
+      <section class="view" id="view-opps">
+        <div class="section-head">
+          <div><span class="eyebrow">Oportunidades & insights</span><h2>Onde surfar a conversa</h2></div>
+          <p>Ideias acionáveis baseadas no comportamento observado na semana.</p>
+        </div>
+        <div class="hero-opp" id="heroOpp"></div>
+        <div class="opp-grid" id="oppGrid"></div>
+        <div class="panel">
+          <div class="panel-head">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <h3>Efemérides · próximas 4 semanas</h3>
+          </div>
+          <table class="ephem">
+            <thead><tr><th>Data</th><th>Efeméride</th><th>Como HP entra</th><th>Buzz</th></tr></thead>
+            <tbody id="ephemRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ AI ============ -->
+      <section class="view" id="view-ai">
+        <div class="section-head">
+          <div><span class="eyebrow">Análise automática</span><h2>Analisar conversa</h2></div>
+          <p>Cole comentários, uma thread ou uma matéria. A IA classifica o sentimento e extrai as narrativas.</p>
+        </div>
+        <div class="ai-layout">
+          <div class="ai-input panel">
+            <div class="panel-head">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              <h3>Texto para análise</h3>
+            </div>
+            <textarea id="aiText" placeholder="Ex.: cole aqui os comentários de um post, respostas de uma thread do X, ou trechos de uma matéria sobre a série..."></textarea>
+            <div class="ai-tools">
+              <button class="btn btn-primary" id="aiRun" onclick="runAnalysis()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v2M5 12H3M6.3 6.3 4.9 4.9"/><circle cx="12" cy="12" r="4"/></svg>
+                Analisar
+              </button>
+              <button class="btn btn-ghost" onclick="document.getElementById('aiText').value='';">Limpar</button>
+            </div>
+            <div class="ai-samples">
+              <span class="flabel">Ou teste com um exemplo</span>
+              <button class="samp" onclick="loadSample(0)"><b>Reação positiva</b>Comentários sobre as primeiras fotos oficiais do elenco</button>
+              <button class="samp" onclick="loadSample(1)"><b>Conversa dividida</b>Thread debatendo uma escolha de casting</button>
+              <button class="samp" onclick="loadSample(2)"><b>Nostalgia + ceticismo</b>Fãs comparando a série com os filmes</button>
+            </div>
+          </div>
+          <div class="ai-out" id="aiOut">
+            <div class="ai-empty">
+              <div class="glow"></div>
+              <p>O resultado aparece aqui: sentimento geral, narrativas detectadas e riscos a observar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- REPORT MODAL -->
+<div class="overlay" id="reportOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="sigil" style="width:26px;height:26px"><div class="ring"></div><div class="flame" style="width:5px;height:5px"></div></div>
+      <h3>Preview do relatório executivo</h3>
+      <button class="x" onclick="closeReport()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="reportBody"></div>
+    <div class="modal-foot">
+      <span class="note">No protótipo, a exportação usa a impressão do navegador (salve como PDF). Conecte o backend para gerar .pptx automaticamente no padrão do time.</span>
+      <button class="btn btn-ghost" onclick="closeReport()">Fechar</button>
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Exportar
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span id="toastMsg"></span></div>
+
+<script>
+/* =========================================================
+   LUMOS — dados de demonstração (mercado BR, série HBO)
+   ========================================================= */
+const DATA = {
+  "hp": {
+    label:"Harry Potter (HBO)", topTitle:"Harry Potter — Série HBO Max", topSub:"Weekly Intelligence · mercado brasileiro",
+    weeks:{
+      "w0":{
+        label:"2–8 jul 2026", updated:"8 jul 2026, 09:20",
+        kpi:{
+          mentions:{v:"48,2 mil", d:+18, sub:"vs. semana anterior"},
+          sentiment:{v:"+52", suf:"/100", d:+7, sub:"índice líquido"},
+          sov:{v:"37%", d:+6, dtype:"pts", sub:"entre estreias monitoradas"},
+          buzz:{v:"82", suf:"/100", d:+9, sub:"pico da janela pré-lançamento"}
+        },
+        senti:{pos:64, neu:24, neg:12, tone:"Positivo com bolsões de ceticismo purista"},
+        buzz7:[3.9,4.4,5.1,6.8,9.2,11.4,7.4],
+        stack:[[58,26,16],[61,25,14],[60,27,13],[65,22,13],[68,20,12],[70,19,11],[64,24,12]],
+        platforms:[
+          {name:"TikTok",     vol:14200, senti:"pos", ang:-90,  s:{p:66,n:22,g:12}},
+          {name:"X/Twitter",  vol:11800, senti:"div", ang:-38,  s:{p:48,n:30,g:22}},
+          {name:"Instagram",  vol:9100,  senti:"pos", ang:16,   s:{p:71,n:21,g:8}},
+          {name:"YouTube",    vol:5600,  senti:"pos", ang:70,   s:{p:69,n:20,g:11}},
+          {name:"Reddit",     vol:4300,  senti:"neu", ang:128,  s:{p:52,n:31,g:17}},
+          {name:"Threads",    vol:2100,  senti:"pos", ang:182,  s:{p:63,n:26,g:11}},
+          {name:"Tumblr",     vol:1130,  senti:"pos", ang:232,  s:{p:74,n:20,g:6}}
+        ],
+        narratives:[
+          {t:"Primeiras fotos oficiais do elenco em Hogwarts", vol:12400, senti:"pos", pf:"Instagram", trend:"up", growth:"Alto potencial de crescimento",
+           q:"figurino impecável, parece que saiu do livro — a escolha de tom mais sóbrio agradou", pct:92},
+          {t:"Casting de Snape gera debate sobre caracterização", vol:9800, senti:"div", pf:"X/Twitter", trend:"up", growth:"Debate ativo · risco de captura externa",
+           q:"metade celebrando a atuação esperada, metade presa à imagem dos filmes", pct:74},
+          {t:"John Lithgow como Dumbledore — aprovação crítica", vol:6200, senti:"pos", pf:"YouTube", trend:"flat", growth:"Estável, tom respeitoso",
+           q:"imprensa tratou como acerto de elenco; fandom curioso com a versão mais velha do personagem", pct:58},
+          {t:"Nostalgia dos filmes domina os edits", vol:7500, senti:"pos", pf:"TikTok", trend:"up", growth:"Crescendo · surfar com cautela",
+           q:"'será que a trilha do Hedwig volta?' — edições nostálgicas viralizando", pct:70},
+          {t:"Expectativa de fidelidade aos livros", vol:5100, senti:"pos", pf:"Reddit", trend:"flat", growth:"Consistente na comunidade",
+           q:"esperança de ver Peeves, o S.P.E.W. da Hermione e mais Lufa-Lufa desta vez", pct:48},
+          {t:"Rumores de trailer para dezembro", vol:4300, senti:"div", pf:"TikTok", trend:"up", growth:"Antecipação · especulação",
+           q:"contagem regressiva não-oficial e teorias sobre data de estreia", pct:40}
+        ],
+        creators:[
+          {h:"@nerdbunker", pf:"YouTube", type:"Análise / notícias", senti:"pos", reach:"1,2 mi", rel:92, risk:"low", c:"#E7A94B"},
+          {h:"@cosmonerd", pf:"Instagram", type:"Notícias geek", senti:"neu", reach:"780 mil", rel:78, risk:"low", c:"#7C86D6"},
+          {h:"@potterheads.br", pf:"TikTok", type:"Fandom / edits", senti:"pos", reach:"485 mil", rel:85, risk:"low", c:"#63C08C"},
+          {h:"@leituras.da.grifinoria", pf:"TikTok", type:"BookTok", senti:"pos", reach:"312 mil", rel:80, risk:"low", c:"#DA6E6E"},
+          {h:"@omelete", pf:"Instagram", type:"Portal / imprensa", senti:"neu", reach:"2,1 mi", rel:74, risk:"low", c:"#E7A94B"},
+          {h:"@memes.bruxos", pf:"X/Twitter", type:"Meme / humor", senti:"iro", reach:"640 mil", rel:62, risk:"mid", c:"#7C86D6"},
+          {h:"@legiaodosherois", pf:"Instagram", type:"Portal geek", senti:"pos", reach:"1,5 mi", rel:71, risk:"low", c:"#63C08C"}
+        ],
+        risks:[
+          {t:"Debate de casting pode ser capturado por polarização", sev:"mid",
+           d:"A conversa sobre Snape é majoritariamente estética/afetiva, mas perfis de fora do fandom começam a puxar para debates identitários.",
+           rec:"Monitorar sem reagir. Preparar narrativa focada na visão criativa da showrunner e na fidelidade ao material dos livros."},
+          {t:"Régua de fidelidade altíssima cria risco de decepção", sev:"mid",
+           d:"O fandom BR ancora a expectativa em 'consertar o que os filmes cortaram'. Quanto mais alto o hype, maior a queda potencial na estreia.",
+           rec:"Gerenciar expectativa com comms sobre escolhas de adaptação já a partir dos próximos reveals."},
+          {t:"Saturação de nostalgia pode ofuscar a série nova", sev:"low",
+           d:"Boa parte do buzz ainda gira em torno dos filmes (trilha, elenco antigo) e não da adaptação em si.",
+           rec:"Pautar diferenciais concretos da série; usar nostalgia como porta de entrada, não como centro."},
+          {t:"Vazamentos de set antecipam reveals oficiais", sev:"low",
+           d:"Fotos de bastidores de Leavesden circulam antes dos anúncios, tirando o controle da narrativa visual.",
+           rec:"Acelerar o calendário de reveals oficiais para chegar antes do vazamento."}
+        ],
+        heroOpp:{
+          title:"Expresso de Hogwarts — experiência itinerante em SP",
+          desc:"O fandom está com sede de 'entrar no mundo'. Uma ativação física em uma estação de trem de São Paulo, com plataforma 9¾, cartas de Hogwarts personalizadas e conteúdo pronto para creators, transforma a nostalgia observada esta semana em experiência proprietária da nova série.",
+          facts:[["Objetivo","Awareness + UGC"],["Público","Fãs 18–34 + famílias"],["Plataforma","TikTok / Instagram"],["Potencial","Alto"]]
+        },
+        opps:[
+          {ico:"scissors", t:"Série 'cenas que os filmes cortaram'", d:"Formato curto no TikTok/IG mostrando subtramas dos livros que a série pode resgatar. Surfa direto a conversa de fidelidade."},
+          {ico:"mail", t:"Carta de Hogwarts digital para creators", d:"Kit de reveal personalizado com nome do creator; alto potencial de unboxing e reação espontânea."},
+          {ico:"film", t:"Brief de edits nostálgicos com áudio próprio", d:"Formato POV/edit está em alta. Oferecer áudio e assets oficiais direciona o formato para a série nova."},
+          {ico:"book", t:"Collab com BookTok BR rumo à estreia", d:"Maratona de releitura da saga com creators de BookTok, criando esteira de conteúdo até dezembro."}
+        ],
+        ephem:[
+          {date:"31 jul", ev:"Aniversário do Harry (e da autora)", how:"Hook nostálgico natural para primeiro grande momento de conteúdo", buzz:3},
+          {date:"1 ago", ev:"Volta às aulas (simbólico)", how:"'De volta a Hogwarts' — trend sazonal de retorno às aulas", buzz:2},
+          {date:"12 ago", ev:"Dia da Juventude", how:"Recorte do público jovem que forma a base do fandom", buzz:2},
+          {date:"agosto", ev:"Janela de trailers de fim de ano", how:"Antecipação de teaser; especulação já aquecida", buzz:3}
+        ],
+        coverage:[
+          {o:"Omelete", u:"https://www.omelete.com.br", title:"Série de Harry Potter revela primeiras imagens do elenco em Hogwarts", cat:"pos", time:"2 jul, 09:12", scope:"Portal BR"},
+          {o:"Adoro Cinema", u:"https://www.adorocinema.com", title:"O que as primeiras fotos revelam sobre o tom da nova série", cat:"pos", time:"2 jul, 10:40", scope:"Portal BR"},
+          {o:"Legião dos Heróis", u:"https://www.legiaodosherois.com.br", title:"Escolha do elenco divide fãs nas redes sociais", cat:"esp", time:"3 jul, 11:05", scope:"Portal BR"},
+          {o:"Jovem Nerd", u:"https://jovemnerd.com.br", title:"As subtramas dos livros que a série pode finalmente adaptar", cat:"nos", time:"4 jul, 13:20", scope:"Portal BR"},
+          {o:"Variety", u:"https://variety.com", title:"HBO's Harry Potter series unveils first look at young cast", cat:"pos", time:"4 jul, 08:00", scope:"Internacional"},
+          {o:"Observatório do Cinema", u:"https://observatoriodocinema.com.br", title:"Nostalgia dos filmes ainda domina a conversa sobre a adaptação", cat:"neu", time:"5 jul, 16:30", scope:"Portal BR"},
+          {o:"Rolling Stone Brasil", u:"https://rollingstone.com.br", title:"Refazer Harry Potter tão cedo é decisão arriscada? (opinião)", cat:"neg", time:"6 jul, 12:15", scope:"Opinião"}
+        ]
+      },
+      "w-1":{
+        label:"25 jun–1 jul 2026", updated:"1 jul 2026, 09:10",
+        kpi:{
+          mentions:{v:"40,9 mil", d:+9, sub:"vs. semana anterior"},
+          sentiment:{v:"+45", suf:"/100", d:+3, sub:"índice líquido"},
+          sov:{v:"31%", d:+2, dtype:"pts", sub:"entre estreias monitoradas"},
+          buzz:{v:"73", suf:"/100", d:+5, sub:"aquecimento pré-lançamento"}
+        },
+        senti:{pos:60, neu:27, neg:13, tone:"Positivo, ainda ancorado nos filmes"},
+        buzz7:[3.2,3.6,4.0,4.9,5.7,6.3,5.1],
+        stack:[[55,29,16],[57,28,15],[59,27,14],[61,26,13],[62,25,13],[60,27,13],[60,27,13]],
+        platforms:[
+          {name:"TikTok",     vol:11800, senti:"pos", ang:-90,  s:{p:63,n:25,g:12}},
+          {name:"X/Twitter",  vol:9600,  senti:"div", ang:-38,  s:{p:46,n:32,g:22}},
+          {name:"Instagram",  vol:7400,  senti:"pos", ang:16,   s:{p:68,n:24,g:8}},
+          {name:"YouTube",    vol:4900,  senti:"pos", ang:70,   s:{p:66,n:22,g:12}},
+          {name:"Reddit",     vol:3700,  senti:"neu", ang:128,  s:{p:50,n:33,g:17}},
+          {name:"Threads",    vol:1800,  senti:"pos", ang:182,  s:{p:61,n:28,g:11}},
+          {name:"Tumblr",     vol:900,   senti:"pos", ang:232,  s:{p:72,n:22,g:6}}
+        ],
+        narratives:[
+          {t:"Anúncio da data de estreia esquenta a conversa", vol:10200, senti:"pos", pf:"X/Twitter", trend:"up", growth:"Pico de anúncio",
+           q:"'finalmente uma data!' — comemoração e contagem regressiva imediata", pct:80},
+          {t:"Nostalgia dos filmes domina os edits", vol:8100, senti:"pos", pf:"TikTok", trend:"up", growth:"Crescendo",
+           q:"edições comparando o elenco novo com o antigo", pct:66},
+          {t:"Especulação sobre elenco ainda não confirmado", vol:5400, senti:"div", pf:"Reddit", trend:"flat", growth:"Especulação constante",
+           q:"listas de 'quem deveria interpretar' circulando em fóruns", pct:44},
+          {t:"Expectativa de fidelidade aos livros", vol:4600, senti:"pos", pf:"Reddit", trend:"flat", growth:"Consistente",
+           q:"esperança de subtramas cortadas nos filmes", pct:40},
+          {t:"Dúvidas sobre necessidade de um reboot", vol:3900, senti:"neg", pf:"X/Twitter", trend:"down", growth:"Ceticismo pontual",
+           q:"'precisávamos mesmo?' — questionamento sobre o reboot", pct:30}
+        ],
+        creators:[
+          {h:"@nerdbunker", pf:"YouTube", type:"Análise / notícias", senti:"pos", reach:"1,2 mi", rel:90, risk:"low", c:"#E7A94B"},
+          {h:"@omelete", pf:"Instagram", type:"Portal / imprensa", senti:"neu", reach:"2,1 mi", rel:76, risk:"low", c:"#E7A94B"},
+          {h:"@potterheads.br", pf:"TikTok", type:"Fandom / edits", senti:"pos", reach:"470 mil", rel:83, risk:"low", c:"#63C08C"},
+          {h:"@cosmonerd", pf:"Instagram", type:"Notícias geek", senti:"pos", reach:"770 mil", rel:75, risk:"low", c:"#7C86D6"},
+          {h:"@memes.bruxos", pf:"X/Twitter", type:"Meme / humor", senti:"iro", reach:"620 mil", rel:60, risk:"mid", c:"#7C86D6"}
+        ],
+        risks:[
+          {t:"Ceticismo sobre 'reboot desnecessário'", sev:"mid",
+           d:"Parte da conversa questiona a existência da série tão perto dos filmes. Tom ainda contido, mas presente no X.",
+           rec:"Reforçar o argumento 'adaptação fiel dos livros', diferente da abordagem dos filmes."},
+          {t:"Saturação de nostalgia pode ofuscar a série nova", sev:"low",
+           d:"Buzz concentrado nos filmes antigos, não na adaptação.",
+           rec:"Introduzir gradualmente elementos exclusivos da nova série."}
+        ],
+        heroOpp:{
+          title:"Contagem regressiva colaborativa com creators",
+          desc:"Com a data recém-anunciada, o fandom entrou em modo contagem regressiva. Uma esteira de conteúdo semanal com creators BR mantém o awareness aquecido durante os meses até a estreia.",
+          facts:[["Objetivo","Sustentar buzz"],["Público","Fãs 18–34"],["Plataforma","TikTok / Instagram"],["Potencial","Médio-alto"]]
+        },
+        opps:[
+          {ico:"book", t:"Maratona de releitura rumo à estreia", d:"Programa de releitura da saga com BookTok BR, um livro por mês."},
+          {ico:"film", t:"Formato 'quem deveria interpretar'", d:"Aproveitar a especulação de casting com conteúdo participativo."},
+          {ico:"mail", t:"Cadastro para novidades em primeira mão", d:"Capturar o pico de anúncio em base própria de fãs."},
+          {ico:"scissors", t:"Diferenciais da adaptação em série", d:"Explicar por que o formato série permite mais fidelidade."}
+        ],
+        ephem:[
+          {date:"7 jul", ev:"Início da nova semana de cobertura", how:"Momento de virar a chave para reveals de elenco", buzz:2},
+          {date:"31 jul", ev:"Aniversário do Harry", how:"Primeiro grande hook nostálgico do calendário", buzz:3},
+          {date:"1 ago", ev:"Volta às aulas (simbólico)", how:"'De volta a Hogwarts' sazonal", buzz:2},
+          {date:"agosto", ev:"Janela de trailers", how:"Especulação de teaser começa a subir", buzz:3}
+        ]
+      },
+      "w-2":{
+        label:"18–24 jun 2026", updated:"24 jun 2026, 09:05",
+        kpi:{
+          mentions:{v:"37,5 mil", d:+4, sub:"vs. semana anterior"},
+          sentiment:{v:"+42", suf:"/100", d:-2, sub:"índice líquido"},
+          sov:{v:"29%", d:-1, dtype:"pts", sub:"entre estreias monitoradas"},
+          buzz:{v:"68", suf:"/100", d:+2, sub:"base pré-lançamento"}
+        },
+        senti:{pos:57, neu:28, neg:15, tone:"Positivo moderado, curiosidade cautelosa"},
+        buzz7:[3.0,3.3,3.5,4.1,4.6,5.0,4.2],
+        stack:[[54,29,17],[55,29,16],[56,28,16],[58,27,15],[58,28,14],[57,29,14],[57,28,15]],
+        platforms:[
+          {name:"TikTok",     vol:10400, senti:"pos", ang:-90,  s:{p:61,n:26,g:13}},
+          {name:"X/Twitter",  vol:8800,  senti:"div", ang:-38,  s:{p:45,n:33,g:22}},
+          {name:"Instagram",  vol:6600,  senti:"pos", ang:16,   s:{p:66,n:26,g:8}},
+          {name:"YouTube",    vol:4200,  senti:"neu", ang:70,   s:{p:58,n:28,g:14}},
+          {name:"Reddit",     vol:3300,  senti:"neu", ang:128,  s:{p:49,n:34,g:17}},
+          {name:"Threads",    vol:1500,  senti:"pos", ang:182,  s:{p:60,n:29,g:11}},
+          {name:"Tumblr",     vol:760,   senti:"pos", ang:232,  s:{p:70,n:24,g:6}}
+        ],
+        narratives:[
+          {t:"Primeiros rumores de elenco vazam", vol:8600, senti:"div", pf:"X/Twitter", trend:"up", growth:"Rumor em circulação",
+           q:"nomes especulados geram reação mista antes de confirmação", pct:70},
+          {t:"Nostalgia constante dos filmes", vol:7200, senti:"pos", pf:"TikTok", trend:"flat", growth:"Base estável",
+           q:"trechos e trilha dos filmes seguem viralizando", pct:60},
+          {t:"Curiosidade sobre showrunner e tom da série", vol:4100, senti:"neu", pf:"YouTube", trend:"up", growth:"Curiosidade emergente",
+           q:"'quem está por trás?' — buscas sobre a direção criativa", pct:36},
+          {t:"Ceticismo sobre reboot", vol:3600, senti:"neg", pf:"X/Twitter", trend:"flat", growth:"Ceticismo de base",
+           q:"'os filmes já eram bons' — resistência pontual", pct:30}
+        ],
+        creators:[
+          {h:"@nerdbunker", pf:"YouTube", type:"Análise / notícias", senti:"neu", reach:"1,1 mi", rel:88, risk:"low", c:"#E7A94B"},
+          {h:"@omelete", pf:"Instagram", type:"Portal / imprensa", senti:"neu", reach:"2,0 mi", rel:75, risk:"low", c:"#E7A94B"},
+          {h:"@potterheads.br", pf:"TikTok", type:"Fandom / edits", senti:"pos", reach:"455 mil", rel:82, risk:"low", c:"#63C08C"},
+          {h:"@memes.bruxos", pf:"X/Twitter", type:"Meme / humor", senti:"iro", reach:"600 mil", rel:58, risk:"mid", c:"#7C86D6"}
+        ],
+        risks:[
+          {t:"Rumores não confirmados moldam a percepção", sev:"mid",
+           d:"Especulação de elenco corre solta antes de anúncios oficiais, criando expectativas difíceis de gerenciar.",
+           rec:"Antecipar comunicação oficial para não deixar o vácuo ser preenchido por rumor."},
+          {t:"Ceticismo de base sobre o reboot", sev:"low",
+           d:"Resistência pontual à ideia de refazer os filmes; ainda sem massa crítica.",
+           rec:"Observar; endereçar com o argumento de fidelidade quando houver reveals."}
+        ],
+        heroOpp:{
+          title:"Preparar o terreno com conteúdo de bastidores",
+          desc:"Antes dos grandes reveals, conteúdo sobre a produção (locações, escala, ambição) constrói credibilidade e diferencia a série dos filmes já na largada.",
+          facts:[["Objetivo","Construir credibilidade"],["Público","Fãs + imprensa"],["Plataforma","YouTube / Instagram"],["Potencial","Médio"]]
+        },
+        opps:[
+          {ico:"film", t:"Bastidores da produção", d:"Mostrar a escala da adaptação para justificar o formato série."},
+          {ico:"book", t:"Curadoria de trechos dos livros", d:"Relembrar cenas ausentes nos filmes que a série pode incluir."},
+          {ico:"mail", t:"Base de fãs antecipada", d:"Começar a capturar interesse antes do pico de anúncios."},
+          {ico:"scissors", t:"FAQ sobre a nova série", d:"Endereçar dúvidas recorrentes ('por que refazer?') de forma proativa."}
+        ],
+        ephem:[
+          {date:"30 jun", ev:"Virada de semana", how:"Transição para janela de anúncios de data", buzz:2},
+          {date:"31 jul", ev:"Aniversário do Harry", how:"Hook nostálgico do calendário", buzz:3},
+          {date:"julho", ev:"Rumores de data de estreia", how:"Especulação sobre anúncio oficial", buzz:2},
+          {date:"agosto", ev:"Janela de trailers", how:"Antecipação de teaser de fim de ano", buzz:3}
+        ]
+      }
+    },
+    days:{
+      "d0":{
+        label:"8 jul 2026", updated:"8 jul 2026, 18:40",
+        kpi:{
+          mentions:{v:"9,7 mil", d:+22, sub:"vs. ontem"},
+          sentiment:{v:"+54", suf:"/100", d:+6, sub:"índice líquido do dia"},
+          sov:{v:"41%", d:+8, dtype:"pts", sub:"entre estreias monitoradas"},
+          buzz:{v:"86", suf:"/100", d:+12, sub:"pico do dia (foto oficial)"}
+        },
+        senti:{pos:67, neu:22, neg:11, tone:"Empolgação com as fotos oficiais, ceticismo pontual"},
+        buzz7:[4.4,5.1,6.8,9.2,11.4,7.4,9.7],
+        stack:[[60,26,14],[63,24,13],[66,22,12],[64,24,12],[62,26,12],[65,23,12],[67,22,11]],
+        platforms:[
+          {name:"TikTok",     vol:3100, senti:"pos", ang:-90,  s:{p:68,n:20,g:12}},
+          {name:"X/Twitter",  vol:2600, senti:"div", ang:-38,  s:{p:49,n:29,g:22}},
+          {name:"Instagram",  vol:2050, senti:"pos", ang:16,   s:{p:74,n:18,g:8}},
+          {name:"YouTube",    vol:980,  senti:"pos", ang:70,   s:{p:70,n:19,g:11}},
+          {name:"Reddit",     vol:640,  senti:"neu", ang:128,  s:{p:53,n:30,g:17}},
+          {name:"Threads",    vol:210,  senti:"pos", ang:182,  s:{p:64,n:25,g:11}},
+          {name:"Tumblr",     vol:120,  senti:"pos", ang:232,  s:{p:75,n:19,g:6}}
+        ],
+        narratives:[
+          {t:"HBO Max divulga primeira foto oficial do trio", vol:3600, senti:"pos", pf:"Instagram", trend:"up", growth:"Momento do dia · alto volume em poucas horas",
+           q:"'saiu do livro!' — reação massiva ao figurino e à direção de arte", pct:94,
+           src:[{o:"Omelete",u:"https://www.omelete.com.br"},{o:"Adoro Cinema",u:"https://www.adorocinema.com"},{o:"Variety",u:"https://variety.com"}]},
+          {t:"Debate sobre o elenco ganha tração no X", vol:2400, senti:"div", pf:"X/Twitter", trend:"up", growth:"Dividido · monitorar captura por perfis externos",
+           q:"metade celebrando o elenco, metade comparando com os filmes", pct:72,
+           src:[{o:"Legião dos Heróis",u:"https://www.legiaodosherois.com.br"},{o:"Rolling Stone Brasil",u:"https://rollingstone.com.br"}]},
+          {t:"Fãs pedem Peeves e S.P.E.W. na adaptação", vol:1500, senti:"pos", pf:"Reddit", trend:"flat", growth:"Conversa de comunidade · fidelidade aos livros",
+           q:"listas do que os filmes cortaram e a série poderia resgatar", pct:52,
+           src:[{o:"Jovem Nerd",u:"https://jovemnerd.com.br"}]},
+          {t:"Fotos de bastidores de Leavesden circulam", vol:1100, senti:"neu", pf:"X/Twitter", trend:"up", growth:"Curiosidade · risco de spoiler de reveals",
+           q:"caça a detalhes de cenário e figurino nas imagens de set", pct:40,
+           src:[{o:"NerdBunker",u:"https://jovemnerd.com.br/nerdbunker"}]}
+        ],
+        coverage:[
+          {o:"Omelete", u:"https://www.omelete.com.br", title:"Harry Potter: HBO Max divulga primeira foto oficial do trio principal", cat:"pos", time:"8 jul, 09:12", scope:"Portal BR"},
+          {o:"Variety", u:"https://variety.com", title:"HBO's Harry Potter series shares first official look at its young leads", cat:"pos", time:"8 jul, 09:30", scope:"Internacional"},
+          {o:"Adoro Cinema", u:"https://www.adorocinema.com", title:"O que a primeira imagem revela sobre o tom mais fiel da série", cat:"pos", time:"8 jul, 10:40", scope:"Portal BR"},
+          {o:"Legião dos Heróis", u:"https://www.legiaodosherois.com.br", title:"Primeira foto do elenco divide fãs entre elogios e comparações", cat:"esp", time:"8 jul, 11:05", scope:"Portal BR"},
+          {o:"Jovem Nerd", u:"https://jovemnerd.com.br", title:"As subtramas dos livros que a série ainda pode resgatar", cat:"nos", time:"8 jul, 13:20", scope:"Portal BR"},
+          {o:"Observatório do Cinema", u:"https://observatoriodocinema.com.br", title:"Reação às fotos mostra fandom otimista, mas de olho na fidelidade", cat:"neu", time:"8 jul, 15:50", scope:"Portal BR"},
+          {o:"Rolling Stone Brasil", u:"https://rollingstone.com.br", title:"Primeira foto não apaga a pergunta: precisávamos de um reboot? (opinião)", cat:"neg", time:"8 jul, 17:10", scope:"Opinião"}
+        ],
+        creators:[
+          {h:"@nerdbunker", pf:"YouTube", type:"Reação à foto oficial", senti:"pos", reach:"1,2 mi", rel:93, risk:"low", c:"#E7A94B"},
+          {h:"@potterheads.br", pf:"TikTok", type:"Edit da foto do trio", senti:"pos", reach:"485 mil", rel:87, risk:"low", c:"#63C08C"},
+          {h:"@cosmonerd", pf:"Instagram", type:"Notícia da foto oficial", senti:"pos", reach:"780 mil", rel:79, risk:"low", c:"#7C86D6"},
+          {h:"@leituras.da.grifinoria", pf:"TikTok", type:"BookTok · fidelidade", senti:"pos", reach:"312 mil", rel:81, risk:"low", c:"#DA6E6E"},
+          {h:"@memes.bruxos", pf:"X/Twitter", type:"Meme do dia", senti:"iro", reach:"640 mil", rel:63, risk:"mid", c:"#7C86D6"}
+        ],
+        risks:[
+          {t:"Debate de elenco pode escalar durante a noite", sev:"mid",
+           d:"O pico da foto oficial reacende a comparação com os filmes no X. À noite, perfis de fora do fandom costumam amplificar o recorte mais polarizado.",
+           rec:"Monitorar as próximas horas. Não reagir; ter à mão pontos sobre a visão criativa da showrunner."},
+          {t:"Fotos de bastidores antecipam reveals", sev:"low",
+           d:"Imagens de set circulam junto do material oficial, competindo com a narrativa que a HBO quer conduzir.",
+           rec:"Avaliar antecipar o próximo reveal oficial para manter o controle do timing."}
+        ],
+        heroOpp:{
+          title:"Surfar a foto oficial ainda hoje com os creators",
+          desc:"O pico é agora: a primeira foto oficial está no auge do alcance. Acionar os creators BR com o material aprovado nas próximas horas multiplica o momento antes de a conversa esfriar amanhã.",
+          facts:[["Objetivo","Amplificar o pico"],["Público","Fãs 18–34"],["Plataforma","TikTok / Instagram"],["Janela","Próximas 12h"]]
+        },
+        opps:[
+          {ico:"film", t:"Kit de reação para creators hoje", d:"Distribuir a foto oficial + áudio aprovado para creators reagirem enquanto está em alta."},
+          {ico:"scissors", t:"'O que a foto revela' em carrossel", d:"Formato explicativo destrinchando figurino e direção de arte da imagem do dia."},
+          {ico:"book", t:"Enquete: o que resgatar dos livros", d:"Aproveitar o pedido por Peeves/S.P.E.W. com conteúdo participativo."},
+          {ico:"mail", t:"Push do dia para a base de fãs", d:"Comunicar a foto oficial em primeira mão para quem já se cadastrou."}
+        ],
+        ephem:[
+          {date:"9 jul", ev:"Repercussão da foto (dia seguinte)", how:"Segundo ciclo de análises e reações de creators", buzz:2},
+          {date:"31 jul", ev:"Aniversário do Harry", how:"Primeiro grande hook nostálgico do mês", buzz:3},
+          {date:"1 ago", ev:"Volta às aulas (simbólico)", how:"'De volta a Hogwarts' sazonal", buzz:2},
+          {date:"agosto", ev:"Janela de trailers", how:"Especulação de teaser começa a subir", buzz:3}
+        ]
+      },
+      "d-1":{
+        label:"7 jul 2026", updated:"7 jul 2026, 18:35",
+        kpi:{
+          mentions:{v:"7,9 mil", d:+5, sub:"vs. ontem"},
+          sentiment:{v:"+48", suf:"/100", d:+2, sub:"índice líquido do dia"},
+          sov:{v:"33%", d:+3, dtype:"pts", sub:"entre estreias monitoradas"},
+          buzz:{v:"74", suf:"/100", d:+4, sub:"véspera do reveal"}
+        },
+        senti:{pos:62, neu:25, neg:13, tone:"Antecipação crescente, especulação de reveal"},
+        buzz7:[3.9,4.4,5.1,6.8,9.2,11.4,7.9],
+        stack:[[58,27,15],[60,26,14],[61,26,13],[62,25,13],[63,25,12],[61,26,13],[62,25,13]],
+        platforms:[
+          {name:"TikTok",     vol:2500, senti:"pos", ang:-90,  s:{p:64,n:24,g:12}},
+          {name:"X/Twitter",  vol:2100, senti:"div", ang:-38,  s:{p:47,n:31,g:22}},
+          {name:"Instagram",  vol:1500, senti:"pos", ang:16,   s:{p:69,n:23,g:8}},
+          {name:"YouTube",    vol:820,  senti:"pos", ang:70,   s:{p:67,n:21,g:12}},
+          {name:"Reddit",     vol:560,  senti:"neu", ang:128,  s:{p:51,n:32,g:17}},
+          {name:"Threads",    vol:170,  senti:"pos", ang:182,  s:{p:62,n:27,g:11}},
+          {name:"Tumblr",     vol:95,   senti:"pos", ang:232,  s:{p:73,n:21,g:6}}
+        ],
+        narratives:[
+          {t:"Rumor de reveal oficial para hoje/amanhã", vol:2600, senti:"div", pf:"X/Twitter", trend:"up", growth:"Especulação em alta antes do anúncio",
+           q:"'amanhã sai a primeira foto?' — contagem regressiva não-oficial", pct:66,
+           src:[{o:"Legião dos Heróis",u:"https://www.legiaodosherois.com.br"}]},
+          {t:"Nostalgia dos filmes segue forte", vol:2000, senti:"pos", pf:"TikTok", trend:"flat", growth:"Base estável de conteúdo nostálgico",
+           q:"edits comparando o que se espera do novo elenco", pct:58,
+           src:[{o:"Omelete",u:"https://www.omelete.com.br"}]},
+          {t:"Discussão sobre fidelidade aos livros", vol:1200, senti:"pos", pf:"Reddit", trend:"flat", growth:"Conversa de comunidade",
+           q:"expectativa de ver o que os filmes deixaram de fora", pct:46,
+           src:[{o:"Jovem Nerd",u:"https://jovemnerd.com.br"}]}
+        ],
+        coverage:[
+          {o:"Legião dos Heróis", u:"https://www.legiaodosherois.com.br", title:"Rumores apontam primeira imagem oficial da série nos próximos dias", cat:"esp", time:"7 jul, 10:20", scope:"Portal BR"},
+          {o:"Omelete", u:"https://www.omelete.com.br", title:"Tudo o que já sabemos sobre a série de Harry Potter até agora", cat:"neu", time:"7 jul, 12:00", scope:"Portal BR"},
+          {o:"Jovem Nerd", u:"https://jovemnerd.com.br", title:"Por que o formato série pode ser mais fiel que os filmes", cat:"nos", time:"7 jul, 14:45", scope:"Portal BR"},
+          {o:"Deadline", u:"https://deadline.com", title:"HBO's Harry Potter reboot ramps up publicity ahead of first look", cat:"neu", time:"7 jul, 08:30", scope:"Internacional"}
+        ],
+        creators:[
+          {h:"@nerdbunker", pf:"YouTube", type:"Análise / expectativa", senti:"pos", reach:"1,2 mi", rel:90, risk:"low", c:"#E7A94B"},
+          {h:"@omelete", pf:"Instagram", type:"Notícias / recap", senti:"neu", reach:"2,1 mi", rel:76, risk:"low", c:"#E7A94B"},
+          {h:"@potterheads.br", pf:"TikTok", type:"Fandom / contagem regressiva", senti:"pos", reach:"470 mil", rel:84, risk:"low", c:"#63C08C"},
+          {h:"@memes.bruxos", pf:"X/Twitter", type:"Meme / humor", senti:"iro", reach:"620 mil", rel:60, risk:"mid", c:"#7C86D6"}
+        ],
+        risks:[
+          {t:"Rumor sem confirmação molda a expectativa", sev:"mid",
+           d:"A especulação de reveal cria uma régua que o anúncio real precisa alcançar; frustração possível se a foto não vier como esperado.",
+           rec:"Alinhar o timing do reveal com comunicação clara para não deixar o rumor conduzir a narrativa."},
+          {t:"Saturação de nostalgia", sev:"low",
+           d:"Conteúdo ainda muito ancorado nos filmes antigos.",
+           rec:"Introduzir gradualmente elementos exclusivos da nova série."}
+        ],
+        heroOpp:{
+          title:"Preparar o kit de reveal antes do anúncio",
+          desc:"Com o rumor de reveal em alta, ter o material e os creators prontos hoje garante reação imediata quando a foto oficial sair.",
+          facts:[["Objetivo","Prontidão de reveal"],["Público","Fãs + creators"],["Plataforma","TikTok / Instagram"],["Janela","Pré-anúncio"]]
+        },
+        opps:[
+          {ico:"mail", t:"Alertar creators sobre o reveal", d:"Deixar a rede de creators de sobreaviso para reagir no minuto do anúncio."},
+          {ico:"film", t:"Teaser de contagem regressiva", d:"Surfar a especulação com um conteúdo oficial de 'algo está chegando'."},
+          {ico:"book", t:"Recap 'o que esperar' da série", d:"Consolidar expectativas antes da foto para direcionar a conversa."},
+          {ico:"scissors", t:"FAQ da nova série", d:"Endereçar dúvidas recorrentes de forma proativa."}
+        ],
+        ephem:[
+          {date:"8 jul", ev:"Possível reveal oficial", how:"Momento mais provável para a primeira foto", buzz:3},
+          {date:"31 jul", ev:"Aniversário do Harry", how:"Hook nostálgico do calendário", buzz:3},
+          {date:"1 ago", ev:"Volta às aulas", how:"'De volta a Hogwarts' sazonal", buzz:2},
+          {date:"agosto", ev:"Janela de trailers", how:"Antecipação de teaser", buzz:3}
+        ]
+      }
+    }
+  }
+};
+
+const SAMPLES = [
+  "acabei de ver as fotos oficiais e chorei, o figurino tá perfeito, exatamente como imaginei lendo os livros!! o castelo parece muito mais fiel dessa vez. HBO não errou aqui, tô muito ansioso pra dezembro. finalmente uma adaptação que respeita o material original 🥹⚡",
+  "gente eu não sei o que achar desse casting pra ser sincero. amo o ator, acho super talentoso, mas na minha cabeça o personagem sempre teve outra cara por causa dos filmes. metade da minha timeline tá amando e a outra metade revoltada. acho que preciso ver atuando antes de julgar. de qualquer forma o hype tá gigante",
+  "sinceramente pra que refazer? os filmes já são perfeitos, cresci com eles. sei que a série promete ser mais fiel aos livros mas tenho medo de estragar a nostalgia. a trilha do Hedwig é insubstituível. vou dar uma chance mas o coração tá dividido, parece que querem só ordenhar a franquia de novo"
+];
+
+/* ---------------- State ---------------- */
+let curTitle="hp", curPeriod="week", curWeek="w0", curDay="d0", pfFilter="all", sfFilter="all", cfFilter="all";
+let charts={};
+
+/* ---------------- Helpers ---------------- */
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const arrowUp='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M7 7h10v10"/></svg>';
+const arrowDn='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7 17 17M17 7v10H7"/></svg>';
+const arrowFlat='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/></svg>';
+const sentiName={pos:"Positivo",neg:"Negativo",neu:"Neutro",div:"Dividido",iro:"Irônico"};
+const sentiClass=s=>s;
+
+/* ---- Relógio: data/hora sempre atuais (a partir do navegador) ---- */
+const PT_M=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+function todayLabel(dt=new Date()){ return dt.getDate()+" "+PT_M[dt.getMonth()]+" "+dt.getFullYear(); }
+function nowStamp(dt=new Date()){ const hh=String(dt.getHours()).padStart(2,"0"), mm=String(dt.getMinutes()).padStart(2,"0"); return todayLabel(dt)+", "+hh+":"+mm; }
+function weekWindowLabel(dt=new Date()){ const s=new Date(dt); s.setDate(dt.getDate()-6); const a=s.getMonth()===dt.getMonth()? String(s.getDate()) : s.getDate()+" "+PT_M[s.getMonth()]; return a+"–"+dt.getDate()+" "+PT_M[dt.getMonth()]+" "+dt.getFullYear(); }
+function isCurrentEntry(){ const m=DATA[curTitle]; if(!m) return false; const daily=curPeriod==="day"&&!!m.days; return daily ? (m.days && curDay===Object.keys(m.days)[0]) : (m.weeks && curWeek===Object.keys(m.weeks)[0]); }
+function parseRefDate(label){ // extrai a última data "8 jul 2026" de um rótulo; senão, hoje
+  if(isCurrentEntry()) return new Date();
+  const re=/(\d{1,2})\s+(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\s+(\d{4})/gi; let m,last=null;
+  while((m=re.exec(label||""))!==null) last=m;
+  if(last){ const d=new Date(+last[3], PT_M.indexOf(last[2].toLowerCase()), +last[1]); if(!isNaN(d)) return d; }
+  return new Date();
+}
+function searchUrl(q){ return "https://www.google.com/search?q="+encodeURIComponent((q||"")+" Harry Potter HBO série"); }
+function seriesNewsUrl(){ return "https://news.google.com/search?q="+encodeURIComponent("série Harry Potter HBO Max")+"&hl=pt-BR&gl=BR&ceid=BR:pt-419"; }
+function outletHpUrl(homepage){
+  try{ const b=new URL(homepage); return b.origin+"/?s="+encodeURIComponent("Harry Potter"); }
+  catch(e){ return seriesNewsUrl(); }
+}
+function articleUrl(title, homepage){
+  let q=(title||"").trim();
+  if(homepage){ try{ const h=new URL(homepage).hostname.replace(/^www\./,""); if(h && !/google|bing/.test(h)) q="site:"+h+" "+q; }catch(e){} }
+  return "https://www.google.com/search?q="+encodeURIComponent(q);
+}
+
+function getData(){
+  const t=DATA[curTitle];
+  if(t.partial || (!t.weeks && !t.days)) return t;
+  if(curPeriod==="day" && t.days) return t.days[curDay] || t.days[Object.keys(t.days)[0]];
+  return t.weeks[curWeek] || t.weeks[Object.keys(t.weeks)[0]];
+}
+
+function toast(msg){ const t=$("#toast"); $("#toastMsg").textContent=msg; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),2600); }
+
+function updateSourceBadges(d){
+  const dt=$("#demoTag"), fs=$("#footSource"), ph=$("#previewHint");
+  if(LIVE){
+    if(dt) dt.innerHTML='<span class="pulse"></span> Dados ao vivo'+(LIVE_SRC?" · "+LIVE_SRC:"")+' · atualizado '+(FEED_UPDATED||d.updated||'—');
+    if(fs) fs.textContent=LIVE_SRC||'feed ao vivo';
+    if(ph) ph.classList.remove("show");
+  } else {
+    if(dt) dt.innerHTML='<span class="pulse"></span> Atualizado '+(d.updated||nowStamp());
+    if(fs) fs.textContent='local';
+    if(ph){ ph.classList.remove("show"); ph.innerHTML=''; }
+  }
+}
+
+/* ---------------- Menus ---------------- */
+function buildMenus(){
+  const tm=$("#titleMenu"); tm.innerHTML="";
+  const titleKeys=Object.keys(DATA);
+  $("#titleSelect").style.display = titleKeys.length<=1 ? "none" : "";
+  titleKeys.forEach(k=>{
+    const d=document.createElement("div"); d.className="menu-item"+(k===curTitle?" sel":"");
+    d.innerHTML=`<span class="dot"></span>${DATA[k].label}${DATA[k].partial?'<small>resumo</small>':'<small>completo</small>'}`;
+    d.onclick=()=>{ curTitle=k; curWeek="w0"; curDay="d0"; closeMenus(); render(); };
+    tm.appendChild(d);
+  });
+  const t=DATA[curTitle];
+  const wm=$("#weekMenu"); wm.innerHTML="";
+  const useDay = curPeriod==="day" && t.days;
+  const set = useDay ? t.days : t.weeks;
+  $("#periodCap").textContent = useDay ? "Dia" : "Semana";
+  if(set){
+    const cur = useDay ? curDay : curWeek;
+    const firstKey = Object.keys(set)[0];
+    Object.keys(set).forEach(k=>{
+      const d=document.createElement("div"); d.className="menu-item"+(k===cur?" sel":"");
+      d.innerHTML=`<span class="dot"></span>${set[k].label}${k===firstKey?'<small>'+(useDay?'hoje':'atual')+'</small>':''}`;
+      d.onclick=()=>{ if(useDay)curDay=k; else curWeek=k; closeMenus(); render(); };
+      wm.appendChild(d);
+    });
+    $("#weekSelect").style.display="";
+  } else { $("#weekSelect").style.display="none"; }
+}
+function toggleMenu(id){ const m=$("#"+id); const wasOpen=m.classList.contains("open"); closeMenus(); if(!wasOpen)m.classList.add("open"); }
+function closeMenus(){ $$(".menu").forEach(m=>m.classList.remove("open")); }
+document.addEventListener("click",e=>{ if(!e.target.closest(".select")) closeMenus(); });
+
+/* ---------------- Partial (other titles) ---------------- */
+function renderPartialBanner(){
+  const on = !!DATA[curTitle].partial;
+  ["narratives","coverage","sentiment","creators","risks","opps"].forEach(v=>{
+    const sec=$("#view-"+v);
+    let b=sec.querySelector(".partial-banner");
+    if(on){
+      if(!b){ b=document.createElement("div"); b.className="partial-banner";
+        b.style.cssText="background:var(--card);border:1px solid var(--line-soft);border-radius:14px;padding:26px;text-align:center;color:var(--text-2);font-size:13px";
+        b.innerHTML='<div class="sigil" style="width:30px;height:30px;margin:0 auto 14px"><div class="ring"></div><div class="flame" style="width:5px;height:5px"></div></div>Protótipo com cobertura detalhada para <b style="color:var(--candle)">Harry Potter</b>.<br>Para este título, o resumo topline aparece na Visão geral.';
+        sec.querySelector(".section-head").after(b);
+      }
+      sec.querySelectorAll(":scope > *:not(.section-head):not(.partial-banner)").forEach(el=>el.style.display="none");
+      b.style.display="block";
+    } else if(b){ b.remove(); sec.querySelectorAll(":scope > *").forEach(el=>el.style.display=""); }
+  });
+}
+
+/* ---------------- Render ---------------- */
+function render(){
+  if(!DATA[curTitle]) curTitle=Object.keys(DATA)[0];
+  const meta=DATA[curTitle];
+  const daily = curPeriod==="day" && !!meta.days;
+  $("#titleLabel").textContent=meta.label;
+  $("#tbTitle").textContent=meta.topTitle;
+  $("#tbSub").textContent=(daily?"Daily":"Weekly")+" Intelligence · mercado brasileiro";
+  buildMenus();
+  const d=getData();
+  if(isCurrentEntry() && !LIVE){
+    d.updated = nowStamp();
+    d.label = daily ? todayLabel() : weekWindowLabel();
+  }
+  $("#weekLabel").textContent=d.label||"—";
+  $("#footUpdate").innerHTML="Atualizado: <b>"+(FEED_UPDATED||d.updated||"—")+"</b>";
+  updateSourceBadges(d);
+
+  // period-aware wording
+  const per = daily ? "do dia" : "da semana";
+  $("#ovTitle").textContent = "Visão geral "+per;
+  $("#narrTitle").textContent = "Narrativas "+per;
+  $("#sparkTitle").textContent = daily ? "Buzz · últimos 7 dias" : "Buzz · últimos 7 dias";
+
+  renderKPI(d);
+  renderPartialBanner();
+  if(!meta.partial){
+    renderRadar(d); renderNarrMini(d); renderDonut(d); renderSpark(d);
+    renderNarratives(); renderCoverage(); renderSentiment(d); renderCreators(d); renderRisks(d); renderOpps(d);
+    $("#riskBadge").textContent=d.risks.filter(r=>r.sev==="high"||r.sev==="mid").length;
+    $("#riskBadge").style.display="";
+  } else {
+    $("#riskBadge").style.display="none";
+  }
+}
+
+function deltaHTML(dv, dtype){
+  const up=dv>=0; const sign=up?"+":""; const unit=dtype==="pts"?" pts":"%";
+  return `<span class="k-delta ${up?'up':'down'}">${up?arrowUp:arrowDn}${sign}${dv}${unit}</span>`;
+}
+
+function renderKPI(d){
+  const k=d.kpi;
+  const defs=[
+    ["Menções", k.mentions, "menciones"],
+    ["Sentimento", k.sentiment],
+    ["Share of voice", k.sov],
+    ["Buzz score", k.buzz]
+  ];
+  $("#kpiRow").innerHTML=defs.map(([label,o])=>`
+    <div class="kpi">
+      <div class="k-label">${label}</div>
+      <div class="k-val">${o.v}${o.suf?`<small>${o.suf}</small>`:''}</div>
+      <div>${deltaHTML(o.d,o.dtype)}<span class="k-sub">${o.sub}</span></div>
+    </div>`).join("");
+}
+
+/* Constellation radar (signature) */
+function renderRadar(d){
+  const cx=230, cy=180, R=118;
+  const svg=$("#radar");
+  const max=Math.max(...d.platforms.map(p=>p.vol));
+  const colFor=s=> s==="pos"?"#63C08C" : s==="neg"?"#DA6E6E" : "#8A90A6";
+  let lines="", stars="";
+  // guide rings
+  let rings="";
+  [0.5,0.78,1].forEach(f=>{ rings+=`<circle cx="${cx}" cy="${cy}" r="${R*f}" fill="none" stroke="#28304a" stroke-width="1" stroke-dasharray="2 5" opacity="0.5"/>`; });
+  d.platforms.forEach(p=>{
+    const a=p.ang*Math.PI/180;
+    const x=cx+Math.cos(a)*R, y=cy+Math.sin(a)*R;
+    lines+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#7C86D6" stroke-width="1" opacity="0.22"/>`;
+    const rad=8+ (p.vol/max)*20;
+    const col=colFor(p.senti);
+    const lx=cx+Math.cos(a)*(R+30), ly=cy+Math.sin(a)*(R+30);
+    const anchor = Math.cos(a)>0.3?"start":Math.cos(a)<-0.3?"end":"middle";
+    stars+=`<g class="star">
+      <title>${p.name} · ${p.vol.toLocaleString('pt-BR')} menções · ${p.s.p}% pos / ${p.s.g}% neu / ${p.s.n}% neg</title>
+      <circle class="halo" cx="${x}" cy="${y}" r="${rad+14}" fill="${col}" opacity="0.10"/>
+      <circle cx="${x}" cy="${y}" r="${rad}" fill="${col}" opacity="0.22"/>
+      <circle cx="${x}" cy="${y}" r="${rad*0.5}" fill="${col}"/>
+      <text x="${lx}" y="${ly}" fill="#A6ACC2" font-size="11" font-family="JetBrains Mono, monospace" text-anchor="${anchor}" dominant-baseline="middle">${p.name}</text>
+    </g>`;
+  });
+  const center=`
+    <circle cx="${cx}" cy="${cy}" r="26" fill="rgba(231,169,75,.10)"/>
+    <circle cx="${cx}" cy="${cy}" r="15" fill="rgba(231,169,75,.18)"/>
+    <circle cx="${cx}" cy="${cy}" r="6" fill="#f2c877"/>
+    <text x="${cx}" y="${cy+42}" fill="#E7A94B" font-size="9" letter-spacing="2" font-family="JetBrains Mono, monospace" text-anchor="middle">LUMOS</text>`;
+  svg.innerHTML=rings+lines+center+stars;
+}
+
+function renderNarrMini(d){
+  if(!LIVE){ $("#narrMini").innerHTML='<div style="padding:16px 4px;color:var(--muted);font-size:12px;line-height:1.5">As narrativas reais aparecem quando o painel busca ao vivo (aberto no navegador) ou com o backend conectado. Nada é preenchido com dado inventado.</div>'; return; }
+  const rows=d.narratives.slice().sort((a,b)=>(b.vol||0)-(a.vol||0)).slice(0,5);
+  $("#narrMini").innerHTML=rows.map((n,i)=>{
+    const u=(n.src&&n.src.length)?n.src[0].u:seriesNewsUrl();
+    const inner=`
+      <span class="rank">${String(i+1).padStart(2,'0')}</span>
+      <span class="nm-title">${n.t}</span>
+      <span class="nm-vol">${(n.vol/1000).toFixed(1)}k</span>
+      <span class="trend ${n.trend}">${n.trend==='up'?arrowUp:n.trend==='down'?arrowDn:arrowFlat}</span>`;
+    return `<a class="row nm-row-link" href="${u}" target="_blank" rel="noopener">${inner}</a>`;
+  }).join("");
+}
+
+function destroyChart(k){ if(charts[k]){ charts[k].destroy(); delete charts[k]; } }
+const CH_FONT={family:"'JetBrains Mono', monospace", size:10};
+
+function renderDonut(d){
+  destroyChart("donut");
+  $("#sentiTone").textContent=d.senti.tone;
+  const ctx=$("#donut");
+  charts.donut=new Chart(ctx,{type:"doughnut",
+    data:{labels:["Positivo","Neutro","Negativo"],datasets:[{data:[d.senti.pos,d.senti.neu,d.senti.neg],
+      backgroundColor:["#63C08C","#8A90A6","#DA6E6E"],borderColor:"#141a2b",borderWidth:3,hoverOffset:6}]},
+    options:{cutout:"66%",plugins:{legend:{position:"right",labels:{color:"#A6ACC2",font:CH_FONT,padding:14,usePointStyle:true,pointStyle:"circle"}},
+      tooltip:{callbacks:{label:c=>` ${c.label}: ${c.parsed}%`}}},responsive:true,maintainAspectRatio:false}});
+}
+
+function renderSpark(d){
+  destroyChart("spark");
+  const ctx=$("#spark");
+  const ref=parseRefDate(d.label);
+  const labels=[]; const full=[];
+  for(let i=6;i>=0;i--){
+    const dt=new Date(ref); dt.setDate(ref.getDate()-i);
+    labels.push(dt.getDate()+"/"+(dt.getMonth()+1));
+    full.push(dt.getDate()+" "+PT_M[dt.getMonth()]);
+  }
+  const g=ctx.getContext("2d").createLinearGradient(0,0,0,210);
+  g.addColorStop(0,"rgba(231,169,75,.35)"); g.addColorStop(1,"rgba(231,169,75,0)");
+  charts.spark=new Chart(ctx,{type:"line",
+    data:{labels:labels,datasets:[{data:d.buzz7,borderColor:"#E7A94B",backgroundColor:g,fill:true,tension:.4,
+      pointBackgroundColor:"#f2c877",pointRadius:3,pointHoverRadius:5,borderWidth:2}]},
+    options:{plugins:{legend:{display:false},tooltip:{callbacks:{
+        title:items=>full[items[0].dataIndex],
+        label:c=>` ${c.parsed.y} mil menções`}}},
+      scales:{x:{grid:{display:false},ticks:{color:"#6f7590",font:CH_FONT}},
+        y:{grid:{color:"#1d2540"},ticks:{color:"#6f7590",font:CH_FONT}}},responsive:true,maintainAspectRatio:false}});
+  const cap=$("#buzzSource");
+  if(cap) cap.textContent="Menções por dia · últimos 7 dias (até "+(d.label||"hoje")+"). Passe o mouse para ver a data.";
+}
+
+/* Narratives (filterable) */
+function renderNarratives(){
+  const d=getData();
+  const grid=$("#narrGrid");
+  if(!LIVE){
+    grid.innerHTML=`<div style="grid-column:1/-1;padding:34px 26px;text-align:center;color:var(--text-2);background:var(--card);border:1px solid var(--line-soft);border-radius:14px">
+      <div style="font-family:'Fraunces',serif;font-size:17px;color:var(--text);margin-bottom:8px">Sem dados inventados aqui.</div>
+      <div style="font-size:12.5px;line-height:1.6;max-width:460px;margin:0 auto 16px">As narrativas reais (o que as pessoas estão falando) carregam quando o painel busca ao vivo — abra este arquivo no navegador — ou quando o backend estiver conectado.</div>
+      <a class="btn btn-primary" href="${seriesNewsUrl()}" target="_blank" rel="noopener" style="text-decoration:none">Ver notícias reais da série agora</a>
+    </div>`;
+    return;
+  }
+  let list=d.narratives.filter(n=>{
+    const pfOk = pfFilter==="all" || n.pf===pfFilter;
+    const sfOk = sfFilter==="all" || n.senti===sfFilter;
+    return pfOk && sfOk;
+  });
+  if(!list.length){ grid.innerHTML=`<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--muted)">Nenhuma narrativa com esses filtros ${curPeriod==='day'?'neste dia':'nesta semana'}. Ajuste os filtros acima.</div>`; return; }
+  list=list.slice().sort((a,b)=>(b.vol||0)-(a.vol||0)); // mais em alta primeiro
+  const topVol=list[0]?list[0].vol:0;
+  const barCol=s=> s==="pos"?"var(--pos)":s==="neg"?"var(--neg)":s==="div"?"var(--spell)":"var(--candle)";
+  const linkIco='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>';
+  grid.innerHTML=list.map((n,i)=>{
+    const srcs = (n.src&&n.src.length) ? n.src : [{o:"Buscar notícia", u:searchUrl(n.t)}];
+    const primary = (LIVE && n.src && n.src.length) ? n.src[0].u : outletHpUrl((n.src&&n.src[0])?n.src[0].u:"");
+    const hot = n.trend==="up" || (topVol && n.vol>=topVol*0.85);
+    const titleHTML = `<a class="nc-link" href="${primary}" target="_blank" rel="noopener">${n.t}${linkIco}</a>`;
+    return `
+    <div class="ncard">
+      <div class="nc-top">
+        <h4>${titleHTML}</h4>
+        <span class="trend ${n.trend}">${n.trend==='up'?arrowUp:n.trend==='down'?arrowDn:arrowFlat}</span>
+      </div>
+      <div class="nc-meta">
+        ${hot?'<span class="hot">🔥 Em alta</span>':''}
+        <span class="senti ${sentiClass(n.senti)}"><span class="d"></span>${sentiName[n.senti]}</span>
+        <span class="tag vol">${n.vol.toLocaleString('pt-BR')} menções</span>
+        <span class="tag">${n.pf}</span>
+      </div>
+      ${n.q?`<p class="quote">"${n.q}"<small>Representativo do tom · não é citação verificada</small></p>`:''}
+      <div style="font-size:11px;color:var(--muted);margin-top:11px">${n.growth||''}</div>
+      <div class="bar"><i style="width:${n.pct}%;background:${barCol(n.senti)}"></i></div>
+      <div class="srcs"><span class="flabel">Ver na fonte</span>${srcs.map(s=>{const h=(LIVE&&s.u&&!/^#/.test(s.u))?s.u:outletHpUrl(s.u);return `<a class="src-chip" href="${h}" target="_blank" rel="noopener">${s.o}${linkIco}</a>`;}).join("")}</div>
+    </div>`;
+  }).join("");
+}
+
+/* Coverage / PR listening */
+const CAT_META={pos:["Positiva","pos","#63C08C"],neg:["Crítica","neg","#DA6E6E"],neu:["Neutra","neu","#8A90A6"],esp:["Especulativa","esp","#7C86D6"],nos:["Nostálgica","nos","#E7A94B"]};
+function renderCoverage(){
+  const d=getData();
+  const box=$("#covList");
+  if(!LIVE){
+    box.innerHTML=`<div style="padding:34px 26px;text-align:center;color:var(--text-2);background:var(--card)">
+      <div style="font-family:'Fraunces',serif;font-size:17px;color:var(--text);margin-bottom:8px">Só matérias reais aqui.</div>
+      <div style="font-size:12.5px;line-height:1.6;max-width:480px;margin:0 auto 16px">Este painel não inventa notícia. As matérias reais (com veículo, data/hora e link direto) carregam quando ele busca ao vivo — abra no navegador — ou quando o backend estiver conectado.</div>
+      <a class="btn btn-primary" href="${seriesNewsUrl()}" target="_blank" rel="noopener" style="text-decoration:none">Ver notícias reais da série agora</a>
+    </div>`;
+    return;
+  }
+  const list=(d.coverage||[]).filter(c=>cfFilter==="all"||c.cat===cfFilter);
+  if(!(d.coverage||[]).length){
+    box.innerHTML=`<div style="padding:40px;text-align:center;color:var(--muted);background:var(--card)">Sem cobertura real carregada agora. Tente "Atualizar agora".</div>`;
+    return;
+  }
+  if(!list.length){ box.innerHTML=`<div style="padding:40px;text-align:center;color:var(--muted);background:var(--card)">Nenhuma matéria com esse tom. Ajuste o filtro acima.</div>`; return; }
+  const ext='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>';
+  box.innerHTML=list.map(c=>{
+    const m=CAT_META[c.cat]||CAT_META.neu;
+    const url=(c.u && c.u!=="#") ? c.u : seriesNewsUrl();
+    return `<a class="cov-row" href="${url}" target="_blank" rel="noopener">
+      <span class="cov-time">${c.time||"—"}</span>
+      <span class="cov-outlet"><span class="odot" style="background:${m[2]}"></span><b>${c.o}</b></span>
+      <span class="cov-title">${c.title}${c.scope?`<small>${c.scope}</small>`:""}</span>
+      <span class="cov-right"><span class="cat ${m[1]}">${m[0]}</span>${ext}</span>
+    </a>`;
+  }).join("");
+}
+
+/* Sentiment view */
+function renderSentiment(d){
+  $("#sentiKpi").innerHTML=[
+    ["Positivo",d.senti.pos,"var(--pos)"],
+    ["Neutro / dividido",d.senti.neu,"var(--neu)"],
+    ["Negativo",d.senti.neg,"var(--neg)"]
+  ].map(([l,v,c])=>`
+    <div class="kpi" style="--c:${c}">
+      <div class="k-label">${l}</div>
+      <div class="k-val" style="color:${c}">${v}<small style="color:${c};opacity:.6">%</small></div>
+      <div class="bar" style="margin-top:6px"><i style="width:${v}%;background:${c}"></i></div>
+    </div>`).join("");
+
+  destroyChart("stack");
+  const days=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+  charts.stack=new Chart($("#stack"),{type:"line",
+    data:{labels:days,datasets:[
+      {label:"Positivo",data:d.stack.map(x=>x[0]),borderColor:"#63C08C",backgroundColor:"rgba(99,192,140,.18)",fill:true,tension:.35,borderWidth:2,pointRadius:0,stack:"s"},
+      {label:"Neutro",data:d.stack.map(x=>x[1]),borderColor:"#8A90A6",backgroundColor:"rgba(138,144,166,.16)",fill:true,tension:.35,borderWidth:2,pointRadius:0,stack:"s"},
+      {label:"Negativo",data:d.stack.map(x=>x[2]),borderColor:"#DA6E6E",backgroundColor:"rgba(218,110,110,.16)",fill:true,tension:.35,borderWidth:2,pointRadius:0,stack:"s"}
+    ]},
+    options:{plugins:{legend:{labels:{color:"#A6ACC2",font:CH_FONT,usePointStyle:true,pointStyle:"circle",padding:12}},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.y}%`}}},
+      scales:{x:{grid:{display:false},ticks:{color:"#6f7590",font:CH_FONT}},
+        y:{stacked:true,grid:{color:"#1d2540"},ticks:{color:"#6f7590",font:CH_FONT},max:100}},responsive:true,maintainAspectRatio:false}});
+
+  destroyChart("platBars");
+  const plats=d.platforms.slice().sort((a,b)=>b.vol-a.vol);
+  charts.platBars=new Chart($("#platBars"),{type:"bar",
+    data:{labels:plats.map(p=>p.name),datasets:[
+      {label:"Positivo",data:plats.map(p=>p.s.p),backgroundColor:"#63C08C",stack:"s",borderRadius:3},
+      {label:"Neutro",data:plats.map(p=>p.s.g),backgroundColor:"#8A90A6",stack:"s",borderRadius:3},
+      {label:"Negativo",data:plats.map(p=>p.s.n),backgroundColor:"#DA6E6E",stack:"s",borderRadius:3}
+    ]},
+    options:{indexAxis:"y",plugins:{legend:{labels:{color:"#A6ACC2",font:CH_FONT,usePointStyle:true,pointStyle:"circle",padding:12}},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.x}%`}}},
+      scales:{x:{stacked:true,grid:{color:"#1d2540"},ticks:{color:"#6f7590",font:CH_FONT},max:100},
+        y:{stacked:true,grid:{display:false},ticks:{color:"#A6ACC2",font:CH_FONT}}},responsive:true,maintainAspectRatio:false}});
+}
+
+/* Creators */
+function renderCreators(d){
+  $("#creatorRows").innerHTML=d.creators.map(c=>`
+    <tr>
+      <td><div class="handle">
+        <div class="av" style="background:${c.c}">${c.h.replace('@','').charAt(0).toUpperCase()}</div>
+        <div><b>${c.h}</b><br><small>${c.pf}</small></div>
+      </div></td>
+      <td>${c.type}</td>
+      <td><span class="senti ${sentiClass(c.senti)}"><span class="d"></span>${sentiName[c.senti]}</span></td>
+      <td style="font-family:'JetBrains Mono',monospace">${c.reach}</td>
+      <td><div class="score"><div class="track"><i style="width:${c.rel}%"></i></div><b>${c.rel}</b></div></td>
+      <td><span class="risk-flag ${c.risk}">${c.risk==='low'?'Baixo':c.risk==='mid'?'Médio':'Alto'}</span></td>
+    </tr>`).join("");
+}
+
+/* Risks */
+function renderRisks(d){
+  $("#riskGrid").innerHTML=d.risks.map(r=>`
+    <div class="rcard ${r.sev}">
+      <div class="rc-top">
+        <h4>${r.t}</h4>
+        <span class="sev ${r.sev}">${r.sev==='high'?'Alto':r.sev==='mid'?'Médio':'Baixo'}</span>
+      </div>
+      <p>${r.d}</p>
+      <div class="rec"><b>Recomendação</b>${r.rec}</div>
+    </div>`).join("");
+}
+
+/* Opportunities */
+const OPP_ICONS={
+  scissors:'<path d="M6 3v18M6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM20 4 8.1 15.9M14.5 12.5 20 20"/>',
+  mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
+  film:'<rect x="2" y="3" width="20" height="18" rx="2"/><path d="M7 3v18M17 3v18M2 9h5M2 15h5M17 9h5M17 15h5"/>',
+  book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>'
+};
+function renderOpps(d){
+  const h=d.heroOpp;
+  $("#heroOpp").innerHTML=`
+    <div class="ho-kicker">◈ Insight de ativação local da semana</div>
+    <h3>${h.title}</h3>
+    <p>${h.desc}</p>
+    <div class="ho-facts">${h.facts.map(f=>`<div class="f"><small>${f[0]}</small><b>${f[1]}</b></div>`).join("")}</div>`;
+  $("#oppGrid").innerHTML=d.opps.map(o=>`
+    <div class="ocard">
+      <div class="oc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${OPP_ICONS[o.ico]||OPP_ICONS.film}</svg></div>
+      <h4>${o.t}</h4><p>${o.d}</p>
+    </div>`).join("");
+  $("#ephemRows").innerHTML=d.ephem.map(e=>`
+    <tr><td style="font-family:'JetBrains Mono',monospace;color:var(--candle)">${e.date}</td>
+    <td><b style="font-weight:600">${e.ev}</b></td>
+    <td style="color:var(--text-2)">${e.how}</td>
+    <td><span class="buzz-dots">${[1,2,3].map(i=>`<i class="${i<=e.buzz?'on':''}"></i>`).join("")}</span></td></tr>`).join("");
+}
+
+/* ---------------- Navigation ---------------- */
+$$(".nav-item").forEach(item=>{
+  item.addEventListener("click",()=>{
+    $$(".nav-item").forEach(i=>i.classList.remove("active"));
+    item.classList.add("active");
+    const v=item.dataset.view;
+    $$(".view").forEach(s=>s.classList.remove("active"));
+    $("#view-"+v).classList.add("active");
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+});
+
+/* ---------------- Filters ---------------- */
+$("#narrFilters").addEventListener("click",e=>{
+  const c=e.target.closest(".chip"); if(!c)return;
+  if(c.dataset.pf!==undefined){ $$('#narrFilters .chip[data-pf]').forEach(x=>x.classList.remove("on")); c.classList.add("on"); pfFilter=c.dataset.pf; }
+  if(c.dataset.sf!==undefined){ $$('#narrFilters .chip[data-sf]').forEach(x=>x.classList.remove("on")); c.classList.add("on"); sfFilter=c.dataset.sf; }
+  renderNarratives();
+});
+
+$("#covFilters").addEventListener("click",e=>{
+  const c=e.target.closest(".chip"); if(!c)return;
+  $$('#covFilters .chip').forEach(x=>x.classList.remove("on")); c.classList.add("on"); cfFilter=c.dataset.cf;
+  renderCoverage();
+});
+
+/* ---------------- Period toggle (Semanal / Diário) ---------------- */
+$("#periodSeg").addEventListener("click",e=>{
+  const b=e.target.closest(".seg-btn"); if(!b)return;
+  const p=b.dataset.period;
+  if(p==="day" && !DATA[curTitle].days){ toast("Edição diária disponível para Harry Potter."); }
+  curPeriod=p;
+  $$('#periodSeg .seg-btn').forEach(x=>x.classList.remove("active")); b.classList.add("active");
+  render();
+});
+
+/* ---------------- Live refresh: tenta análise por IA; senão, notícias por RSS ---------------- */
+async function liveRefresh(auto=false){
+  const btn=$("#liveBtn"); const orig=btn.innerHTML;
+  btn.innerHTML='<span class="spinner"></span> Atualizando...'; btn.disabled=true;
+  render(); // data/hora atuais imediatamente
+  try{
+    await liveViaClaude();
+    toast(auto?"Conteúdo do dia carregado ao vivo ✓":"Atualizado ao vivo (análise completa) ✓");
+  }catch(e1){
+    try{
+      await liveViaRSS();
+      toast("Notícias reais carregadas ao vivo ✓ (sentimento em modo simples)");
+    }catch(e2){
+      if(!auto) toast("Sem saída pra internet neste ambiente — mostrando prévia. Para dados reais diários, use o backend.");
+    }
+  }
+  btn.innerHTML=orig; btn.disabled=false;
+}
+
+async function liveViaClaude(){
+  const daily = curPeriod==="day";
+  const janela = daily ? "nas últimas 24 horas (ou o mais recente possível)" : "nos últimos 7 dias";
+  const prompt=`Você é um analista de social listening e PR de entretenimento para o mercado brasileiro. Pesquise na web o que há de mais recente ${janela} sobre a NOVA SÉRIE de Harry Potter da HBO Max (estreia prevista para dezembro de 2026), priorizando a repercussão no Brasil: principais notícias, novidades/anúncios da produção, e o que as pessoas estão comentando nas redes sociais. Responda APENAS com um objeto JSON válido, sem markdown e sem crases, no formato:
+{"tone":"<tom dominante em 4-7 palavras>","sentiment_index":<0-100>,"pos":<0-100>,"neu":<0-100>,"neg":<0-100>,"narratives":[{"t":"<o que estão comentando>","senti":"pos|neg|neu|div|iro","pf":"TikTok|X/Twitter|Instagram|YouTube|Reddit","trend":"up|down|flat","growth":"<leitura curta>","q":"<frase representativa do que dizem>","pct":<0-100>,"src":[{"o":"<veículo>","u":"<url real>"}]}],"coverage":[{"o":"<veículo>","u":"<url real da matéria>","title":"<manchete real>","cat":"pos|neg|neu|esp|nos","time":"<data e horário da matéria, ex.: 8 jul, 14:30>","scope":"Portal BR|Internacional|Opinião"}],"risks":[{"t":"<ponto de atenção>","sev":"low|mid|high","d":"<descrição>","rec":"<recomendação>"}]}
+Regras: pos+neu+neg somam 100. Máximo 5 narrativas, 7 coberturas, 3 riscos. Use SEMPRE URLs reais das matérias e, em "time", a data e o horário reais de publicação. Escreva em português do Brasil.`;
+  const resp=await fetch("https://api.anthropic.com/v1/messages",{
+    method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:1000,
+      messages:[{role:"user",content:prompt}],
+      tools:[{type:"web_search_20250305",name:"web_search"}]})
+  });
+  if(!resp.ok) throw new Error("api "+resp.status);
+  const data=await resp.json();
+  let out=(data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("").trim();
+  out=out.replace(/```json/gi,"").replace(/```/g,"").trim();
+  const first=out.indexOf("{"), last=out.lastIndexOf("}");
+  if(first>=0&&last>=0) out=out.slice(first,last+1);
+  const j=JSON.parse(out);
+  const d=getData();
+  if(j.tone) d.senti.tone=j.tone;
+  if(typeof j.pos==="number"&&typeof j.neu==="number"&&typeof j.neg==="number"){ d.senti.pos=j.pos; d.senti.neu=j.neu; d.senti.neg=j.neg; }
+  if(typeof j.sentiment_index==="number"){ d.kpi.sentiment.v=(j.sentiment_index>=50?"+":"")+(j.sentiment_index-50)*2; }
+  if(Array.isArray(j.narratives)&&j.narratives.length){
+    d.narratives=j.narratives.slice(0,6).map(n=>({
+      t:n.t||"—", vol:n.vol||Math.round(800+Math.random()*3000), senti:n.senti||"neu",
+      pf:n.pf||"X/Twitter", trend:n.trend||"flat", growth:n.growth||"Atualizado ao vivo",
+      q:n.q||"", pct:typeof n.pct==="number"?n.pct:50, src:Array.isArray(n.src)?n.src:[]}));
+  }
+  if(Array.isArray(j.coverage)&&j.coverage.length){
+    d.coverage=j.coverage.slice(0,8).map(c=>({o:c.o||"—",u:c.u||"#",title:c.title||"—",cat:c.cat||"neu",time:c.time||"hoje",scope:c.scope||""}));
+  }
+  if(Array.isArray(j.risks)&&j.risks.length){
+    d.risks=j.risks.slice(0,3).map(r=>({t:r.t||"—",sev:r.sev||"low",d:r.d||"",rec:r.rec||""}));
+  }
+  LIVE_SRC="análise ao vivo"; markLive(d);
+}
+
+async function liveViaRSS(){
+  const feeds=[
+    "https://news.google.com/rss/search?q="+encodeURIComponent("série Harry Potter HBO Max")+"&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+    "https://news.google.com/rss/search?q="+encodeURIComponent("Harry Potter HBO série estreia elenco")+"&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+    "https://www.bing.com/news/search?q="+encodeURIComponent("série Harry Potter HBO Max")+"&format=RSS&setlang=pt-br&cc=BR"
+  ];
+  // proxies CORS (protótipo — tenta vários; em produção, usar o backend/ferramenta licenciada)
+  const proxies=[
+    u=>"https://api.allorigins.win/raw?url="+encodeURIComponent(u),
+    u=>"https://api.codetabs.com/v1/proxy/?quest="+encodeURIComponent(u),
+    u=>"https://corsproxy.io/?url="+encodeURIComponent(u),
+    u=>"https://thingproxy.freeboard.io/fetch/"+u
+  ];
+  let items=[];
+  for(const f of feeds){
+    let xmlText=null;
+    for(const p of proxies){
+      try{ const r=await fetch(p(f)); if(r.ok){ xmlText=await r.text(); break; } }catch(e){}
+    }
+    if(!xmlText) continue;
+    const xml=new DOMParser().parseFromString(xmlText,"text/xml");
+    xml.querySelectorAll("item").forEach(it=>{
+      const rawTitle=(it.querySelector("title")||{}).textContent||"";
+      let link=(it.querySelector("link")||{}).textContent||"";
+      const desc=(it.querySelector("description")||{}).textContent||"";
+      const pub=(it.querySelector("pubDate")||{}).textContent||"";
+      let src=(it.querySelector("source")||{}).textContent||"";
+      // se o link for redirecionamento do Google News, tenta achar a URL real na descrição
+      if(/news\.google\.com/i.test(link)){
+        const m=desc.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/i);
+        if(m) link=m[1];
+      }
+      let t=rawTitle;
+      if(!src && rawTitle.includes(" - ")){ const parts=rawTitle.split(" - "); src=parts[parts.length-1]; t=parts.slice(0,-1).join(" - "); }
+      if(t.trim()&&link.trim()) items.push({t:t.trim(), o:(src||"Imprensa").trim(), u:link.trim(), pub});
+    });
+  }
+  if(!items.length) throw new Error("rss vazio/bloqueado");
+  const byKey=new Map();
+  items.forEach(i=>{
+    const k=i.t.toLowerCase().slice(0,80);
+    const isG=/news\.google\.com/i.test(i.u);
+    if(!byKey.has(k)) byKey.set(k,i);
+    else { const ex=byKey.get(k); if(/news\.google\.com/i.test(ex.u) && !isG) byKey.set(k,i); }
+  });
+  items=[...byKey.values()];
+  const fmt=pub=>{ const dt=new Date(pub); if(isNaN(dt)) return "recente"; return dt.getDate()+" "+PT_M[dt.getMonth()]+", "+String(dt.getHours()).padStart(2,"0")+":"+String(dt.getMinutes()).padStart(2,"0"); };
+  const catOf=t=>{ const s=t.toLowerCase(); if(/crític|decepç|polêm|problema|rejeit|contra/.test(s))return "neg"; if(/rumor|especula|pode |vaza|possível|teria/.test(s))return "esp"; if(/nostalg|filmes|clássic/.test(s))return "nos"; if(/elogi|celebra|ansios|empolg|acerto|melhor|sucesso/.test(s))return "pos"; return "neu"; };
+  const sentiOf=c=> c==="neg"?"neg":(c==="pos"?"pos":"neu");
+  const d=getData();
+  d.coverage=items.slice(0,8).map(i=>{const c=catOf(i.t);return {o:i.o,u:i.u,title:i.t,cat:c,time:fmt(i.pub),scope:/[ãáéíóúçõê]/i.test(i.o)?"Portal BR":"Internacional"};});
+  d.narratives=items.slice(0,5).map((i,idx)=>{const c=catOf(i.t);return {t:i.t,vol:3000-idx*450,senti:sentiOf(c),pf:i.o||"Imprensa",trend:idx<2?"up":"flat",growth:"Notícia recente (via RSS)",q:"",pct:75-idx*9,src:[{o:i.o,u:i.u}]};});
+  const pos=d.narratives.filter(n=>n.senti==="pos").length, neg=d.narratives.filter(n=>n.senti==="neg").length, tot=d.narratives.length||1;
+  d.senti={pos:Math.round(pos/tot*100)||50, neu:Math.round((tot-pos-neg)/tot*100), neg:Math.round(neg/tot*100), tone:"Leitura por manchetes (RSS ao vivo)"};
+  LIVE_SRC="notícias ao vivo (RSS)"; markLive(d);
+}
+
+function markLive(d){
+  const now=new Date();
+  const stamp=now.toLocaleDateString("pt-BR")+" "+now.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+  d.updated=stamp; FEED_UPDATED=stamp; LIVE=true;
+  render();
+}
+
+/* ---------------- Report modal ---------------- */
+function openReport(){
+  const meta=DATA[curTitle], d=getData();
+  const daily = curPeriod==="day" && !!meta.days;
+  const per = daily ? "Daily" : "Weekly";
+  const perLabel = daily ? "Dia" : "Semana";
+  const nextLabel = daily ? "Previsão para amanhã" : "Previsão da próxima semana";
+  const secs=[
+    ["01","Executive summary", meta.partial?["Resumo topline disponível","Cobertura detalhada: Harry Potter"]:["Buzz "+d.kpi.buzz.v+d.kpi.buzz.suf+" ("+(d.kpi.buzz.d>=0?'+':'')+d.kpi.buzz.d+"%)","Sentimento "+d.kpi.sentiment.v,d.senti.tone]],
+    ["02","Panorama de sentimento", meta.partial?["—"]:[d.senti.pos+"% positivo · "+d.senti.neg+"% negativo","Tom: "+d.senti.tone]],
+    ["03","Principais conversas", meta.partial?["—"]:d.narratives.slice(0,3).map(n=>n.t)],
+    ["04","Cobertura & fontes", meta.partial?["—"]:[((d.coverage||[]).length||0)+" matérias catalogadas com link", (d.coverage&&d.coverage[0]?"Destaque: "+d.coverage[0].o:"—")]],
+    ["05","Social listening por plataforma", meta.partial?["—"]:[(d.platforms.slice().sort((a,b)=>b.vol-a.vol)[0].name)+" foi a mais barulhenta","7 plataformas monitoradas"]],
+    ["06","Creators & influenciadores", meta.partial?["—"]:[d.creators.length+" perfis relevantes","Destaque: "+d.creators[0].h]],
+    ["07","Pontos de atenção", meta.partial?["—"]:d.risks.slice(0,2).map(r=>r.t)],
+    ["08",nextLabel, meta.partial?["—"]:["Trailer/reveals aquecendo","Monitorar debate de casting"]]
+  ];
+  $("#reportBody").innerHTML=`
+    <div class="deck-cover">
+      <div class="dc-sigil"></div>
+      <div class="dc-kick">HP HBO Max · ${per} Intelligence BR</div>
+      <h2>${meta.topTitle}</h2>
+      <div class="dc-sub">${perLabel}: ${d.label||"—"} · mercado brasileiro</div>
+      <div class="dc-foot">
+        <div class="f"><small>Menções</small><b>${d.kpi.mentions.v}</b></div>
+        <div class="f"><small>Sentimento</small><b>${d.kpi.sentiment.v}${d.kpi.sentiment.suf}</b></div>
+        <div class="f"><small>Share of voice</small><b>${d.kpi.sov.v}</b></div>
+        <div class="f"><small>Buzz</small><b>${d.kpi.buzz.v}${d.kpi.buzz.suf}</b></div>
+      </div>
+    </div>
+    <div class="slide-thumbs">
+      ${secs.map(s=>`<div class="sthumb"><div class="st-n">Slide ${s[0]}</div><h5>${s[1]}</h5><ul>${s[2].map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}
+    </div>`;
+  $("#reportOverlay").classList.add("open");
+}
+function closeReport(){ $("#reportOverlay").classList.remove("open"); }
+$("#reportOverlay").addEventListener("click",e=>{ if(e.target.id==="reportOverlay")closeReport(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape")closeReport(); });
+
+/* ---------------- AI analysis (real + fallback) ---------------- */
+function loadSample(i){ $("#aiText").value=SAMPLES[i]; }
+
+async function runAnalysis(){
+  const text=$("#aiText").value.trim();
+  if(text.length<15){ toast("Cole um texto um pouco maior para analisar."); return; }
+  const btn=$("#aiRun"); const original=btn.innerHTML;
+  btn.innerHTML='<span class="spinner"></span> Analisando...'; btn.disabled=true;
+  $("#aiOut").innerHTML=`<div class="ai-empty"><div class="glow"></div><p>Lendo a conversa e classificando o tom...</p></div>`;
+  let result=null, mode="local";
+  try{
+    result=await analyzeWithClaude(text); mode="live";
+  }catch(err){
+    result=analyzeLocally(text); mode="local";
+  }
+  if(!result){ result=analyzeLocally(text); mode="local"; }
+  renderAIResult(result, mode);
+  btn.innerHTML=original; btn.disabled=false;
+}
+
+async function analyzeWithClaude(text){
+  const system=`Você é um analista de social listening para o mercado de entretenimento brasileiro. Analise o texto (comentários, thread ou matéria sobre uma série/filme) e responda APENAS com um objeto JSON válido, sem markdown, sem crases, sem texto antes ou depois. Formato exato:
+{"sentiment":"positivo|negativo|neutro|dividido|irônico","score":<0-100 onde 100=muito positivo>,"label":"<resumo do tom em 3-5 palavras>","narratives":["<narrativa 1>","<narrativa 2>","<narrativa 3>"],"risks":["<risco ou ponto de atenção 1>","<risco 2>"],"summary":"<1-2 frases de leitura estratégica em pt-BR>"}
+Regras: máximo 3 narrativas, máximo 2 riscos. Se não houver risco claro, use um array com um item dizendo "Nenhum risco relevante identificado". Escreva em português do Brasil.`;
+  const resp=await fetch("https://api.anthropic.com/v1/messages",{
+    method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:1000,
+      messages:[{role:"user",content:system+"\n\n===TEXTO===\n"+text}]})
+  });
+  if(!resp.ok) throw new Error("api "+resp.status);
+  const data=await resp.json();
+  let out=(data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("").trim();
+  out=out.replace(/```json/gi,"").replace(/```/g,"").trim();
+  const first=out.indexOf("{"), last=out.lastIndexOf("}");
+  if(first>=0&&last>=0) out=out.slice(first,last+1);
+  const parsed=JSON.parse(out);
+  return {
+    sentiment:parsed.sentiment||"neutro",
+    score:typeof parsed.score==="number"?parsed.score:50,
+    label:parsed.label||"Tom misto",
+    narratives:(parsed.narratives||[]).slice(0,3),
+    risks:(parsed.risks||[]).slice(0,2),
+    summary:parsed.summary||""
+  };
+}
+
+/* Local heuristic fallback (pt-BR) */
+function analyzeLocally(text){
+  const t=text.toLowerCase();
+  const pos=["amo","amei","perfeito","perfeita","incrível","lindo","linda","ansioso","ansiosa","ótimo","maravilhoso","fiel","chorei","emocionante","acerto","respeita","impecável","genial","melhor","feliz","😍","🥹","❤️","⚡"];
+  const neg=["odeio","horrível","péssimo","ruim","decepção","decepcionado","errado","estragar","revoltado","revoltada","medo","desnecessário","cansado","chato","fraco","pior","😡","🤮"];
+  const doubt=["não sei","dividido","dividida","será","talvez","preciso ver","depende","misto","meio","por um lado","receio","dúvida"];
+  const cnt=arr=>arr.reduce((s,w)=>s+(t.split(w).length-1),0);
+  const p=cnt(pos), n=cnt(neg), du=cnt(doubt);
+  const total=p+n+du||1;
+  let score=Math.round(50 + (p-n)/(p+n+1)*45);
+  score=Math.max(4,Math.min(96,score));
+  let sentiment="neutro";
+  if(du>=Math.max(p,n)&&du>0) sentiment="dividido";
+  else if(p>n+1) sentiment="positivo";
+  else if(n>p+1) sentiment="negativo";
+  else if(p>0||n>0) sentiment="dividido";
+  const narratives=[];
+  if(/figurino|visual|foto|castelo|cenário|caracteriz/i.test(t)) narratives.push("Reação ao visual / figurino da produção");
+  if(/casting|elenco|ator|atriz|escolha/i.test(t)) narratives.push("Debate sobre escolhas de elenco");
+  if(/filme|nostalg|trilha|cresci|antig/i.test(t)) narratives.push("Nostalgia e comparação com os filmes");
+  if(/fiel|livro|fidelidade|original/i.test(t)) narratives.push("Expectativa de fidelidade aos livros");
+  if(/trailer|estreia|data|dezembro|lançamento/i.test(t)) narratives.push("Antecipação de trailer / estreia");
+  if(!narratives.length) narratives.push("Conversa geral sobre a série");
+  const risks=[];
+  if(n>0||/estragar|desnecessário|medo|reboot/i.test(t)) risks.push("Ceticismo/resistência que pode ganhar tração se amplificado");
+  if(du>0) risks.push("Percepção dividida — monitorar até virar tendência clara");
+  if(!risks.length) risks.push("Nenhum risco relevante identificado");
+  const labelMap={positivo:"Recepção positiva",negativo:"Recepção negativa",dividido:"Conversa dividida",neutro:"Tom neutro"};
+  return {sentiment,score,label:labelMap[sentiment]||"Tom misto",
+    narratives:narratives.slice(0,3),risks:risks.slice(0,2),
+    summary:"Leitura heurística local: predomínio "+sentiment+" com base em sinais textuais. Para análise semântica completa, rode com o backend conectado."};
+}
+
+function renderAIResult(r, mode){
+  const col= r.score>=60?"#63C08C": r.score<=40?"#DA6E6E":"#8A90A6";
+  const circ=2*Math.PI*40; const off=circ*(1-r.score/100);
+  const modeBadge= mode==="live"
+    ? '<span class="ai-mode live">● análise IA ao vivo</span>'
+    : '<span class="ai-mode local">● modo local (sem backend)</span>';
+  $("#aiOut").innerHTML=`
+    <div class="ai-res">
+      <div class="panel-head" style="margin-bottom:14px">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <h3>Resultado</h3>${modeBadge}
+      </div>
+      <div class="ar-score">
+        <div class="gauge">
+          <svg width="96" height="96" viewBox="0 0 96 96">
+            <circle cx="48" cy="48" r="40" fill="none" stroke="#1d2540" stroke-width="8"/>
+            <circle cx="48" cy="48" r="40" fill="none" stroke="${col}" stroke-width="8" stroke-linecap="round"
+              stroke-dasharray="${circ}" stroke-dashoffset="${off}"/>
+          </svg>
+          <div class="g-val"><b style="color:${col}">${r.score}</b><small>score</small></div>
+        </div>
+        <div class="ar-label">
+          <b>${r.label}</b>
+          <span class="senti ${sentiMap(r.sentiment)}"><span class="d"></span>${cap(r.sentiment)}</span>
+        </div>
+      </div>
+      <div class="ar-block">
+        <span class="flabel">Narrativas detectadas</span>
+        <ul>${r.narratives.map(n=>`<li><span class="mk"></span>${esc(n)}</li>`).join("")}</ul>
+      </div>
+      <div class="ar-block risk">
+        <span class="flabel">Pontos de atenção</span>
+        <ul>${r.risks.map(n=>`<li><span class="mk"></span>${esc(n)}</li>`).join("")}</ul>
+      </div>
+      ${r.summary?`<div class="ar-summary">${esc(r.summary)}</div>`:""}
+    </div>`;
+}
+function sentiMap(s){ s=(s||"").toLowerCase(); if(s.includes("posit"))return"pos"; if(s.includes("negat"))return"neg"; if(s.includes("divid"))return"div"; if(s.includes("irôn")||s.includes("iron"))return"iro"; return"neu"; }
+function cap(s){ s=s||""; return s.charAt(0).toUpperCase()+s.slice(1); }
+function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+/* ---------------- Data feed (atualização automática) ----------------
+   O backend grava um arquivo em FEED_URL (diariamente e/ou semanalmente),
+   no formato documentado em data-sample.json. Quando esse arquivo existe,
+   o dashboard mostra os dados ao vivo automaticamente — sem mexer no
+   código. Para a edição diária, basta a rotina gerar o arquivo todo dia
+   (ex.: às 18h) atualizando o bloco "days". Sem o arquivo (aberto do
+   disco ou backend ainda não conectado), ele cai nos dados de
+   demonstração embutidos acima. */
+let LIVE=false, FEED_UPDATED=null, LIVE_SRC="";
+const FEED_URL="data.json"; // troque pela URL do seu endpoint/CDN quando publicar
+
+async function boot(){
+  try{
+    const r=await fetch(FEED_URL,{cache:"no-store"});
+    if(r.ok){
+      const feed=await r.json();
+      const titles=feed.titles||feed;
+      if(titles && typeof titles==="object" && Object.keys(titles).length){
+        Object.keys(DATA).forEach(k=>delete DATA[k]);
+        Object.assign(DATA,titles);
+        LIVE=true; FEED_UPDATED=feed.generated_at||null;
+      }
+    }
+  }catch(e){ /* sem feed disponível → mantém dados de demonstração */ }
+  render();
+}
+/* mantém a data/hora do painel sempre atual (sem recarregar os gráficos) */
+function tickClock(){
+  if(!isCurrentEntry() || LIVE) return;
+  const d=getData();
+  d.updated=nowStamp();
+  d.label=(curPeriod==="day") ? todayLabel() : weekWindowLabel();
+  const fu=$("#footUpdate"); if(fu) fu.innerHTML="Atualizado: <b>"+d.updated+"</b>";
+  const wl=$("#weekLabel"); if(wl) wl.textContent=d.label;
+  updateSourceBadges(d);
+}
+setInterval(tickClock, 30000);
+
+/* tenta buscar ao vivo toda vez que a aba volta a ficar visível / recebe foco */
+let lastLiveTry=0;
+function maybeLive(){ if(!LIVE && Date.now()-lastLiveTry>15000){ lastLiveTry=Date.now(); liveRefresh(true); } }
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible") maybeLive(); });
+window.addEventListener("focus", maybeLive);
+
+/* abre links de resultado; se o ambiente bloquear (ex.: visualização), copia o link */
+document.addEventListener("click", e=>{
+  const a=e.target.closest("a.nc-link, a.src-chip, a.cov-row, a.nm-row-link");
+  if(!a) return;
+  const href=a.getAttribute("href");
+  if(!href || href==="#") return;
+  e.preventDefault();
+  let w=null;
+  try{ w=window.open(href,"_blank","noopener"); }catch(err){}
+  if(!w){
+    try{ navigator.clipboard.writeText(href); toast("Aqui na visualização os links não abrem. Copiei o link — cole no navegador."); }
+    catch(err){ toast("Abra o painel no navegador para os links abrirem."); }
+  }
+});
+
+boot().then(()=>{ lastLiveTry=Date.now(); liveRefresh(true); });
+</script>
+</body>
+</html>
