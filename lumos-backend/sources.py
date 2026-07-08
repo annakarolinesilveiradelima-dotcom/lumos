@@ -94,10 +94,11 @@ def _dedupe(items):
 
 
 def collect_gnews():
-    api_key = os.environ.get("GNEWS_API_KEY", "")
+    # .strip() remove espaços, enter/quebra de linha e evita erro tipo %0A
+    api_key = os.environ.get("GNEWS_API_KEY", "").strip()
 
     if not api_key:
-        print("[coleta] GNEWS_API_KEY não configurada.")
+        print("[coleta] GNEWS_API_KEY não configurada ou vazia.")
         return []
 
     print("[coleta] usando GNews API com links diretos")
@@ -115,118 +116,3 @@ def collect_gnews():
 
     items = []
 
-    for query in queries:
-        try:
-            params = {
-                "q": query,
-                "max": 10,
-                "lang": "pt",
-                "country": "br",
-                "sortby": "publishedAt",
-                "apikey": api_key
-            }
-
-            response = requests.get(
-                "https://gnews.io/api/v4/search",
-                params=params,
-                timeout=TIMEOUT
-            )
-
-            print(f"[coleta] GNews query='{query}' status={response.status_code}")
-
-            if response.status_code != 200:
-                print("[coleta] resposta GNews:", response.text[:800])
-
-            response.raise_for_status()
-
-            data = response.json()
-
-            for article in data.get("articles", []):
-                source = article.get("source") or {}
-                outlet = source.get("name", "Imprensa")
-
-                url = article.get("url", "")
-
-                if not url or "news.google.com" in url:
-                    continue
-
-                item = _make_item(
-                    outlet=outlet,
-                    title=article.get("title", ""),
-                    url=url,
-                    published=article.get("publishedAt", ""),
-                    summary=article.get("description", ""),
-                    source_type="gnews"
-                )
-
-                items.append(item)
-
-        except Exception as exc:
-            print(f"[coleta] GNews falhou para query '{query}': {exc}")
-
-    items = _dedupe(items)
-
-    print(f"[coleta] {len(items)} matérias reais coletadas com link direto via GNews.")
-
-    return items
-
-
-def collect_news():
-    """
-    Coleta notícias reais.
-    Se GNews não retornar nada, volta lista vazia.
-    Não usa RSS fallback para evitar links news.google.com.
-    """
-    items = collect_gnews()
-
-    items = _dedupe(items)
-
-    print(f"[coleta] {len(items)} matérias reais finais para o data.json.")
-
-    return items
-
-
-def collect_social():
-    """
-    Social listening só entra se houver export licenciado.
-    Sem export, retorna vazio e não inventa volumes.
-    """
-    path = getattr(config, "SOCIAL_EXPORT_PATH", "")
-
-    if not path or not os.path.exists(path):
-        print("[coleta] sem social listening — não vamos inventar volumes sociais.")
-        return {}
-
-    if path.endswith(".json"):
-        with open(path, encoding="utf-8") as file:
-            rows = json.load(file)
-    else:
-        with open(path, encoding="utf-8") as file:
-            rows = list(csv.DictReader(file))
-
-    social = {}
-
-    for row in rows:
-        platform = str(row.get("platform", "")).strip()
-
-        if not platform:
-            continue
-
-        social[platform] = {
-            "mentions": int(float(row.get("mentions", 0) or 0)),
-            "pos": int(float(row.get("pos", 0) or 0)),
-            "neu": int(float(row.get("neu", 0) or 0)),
-            "neg": int(float(row.get("neg", 0) or 0))
-        }
-
-    print(f"[coleta] social carregado: {len(social)} plataformas.")
-
-    return social
-
-
-def collect_all():
-    return {
-        "collected_at": datetime.now(timezone.utc).isoformat(),
-        "news": collect_news(),
-        "social": collect_social()
-    }
