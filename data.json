@@ -1,5 +1,5 @@
 {
-  "generated_at": "8 jul 2026, 17:38",
+  "generated_at": "9 jul 2026, 05:56",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "8 jul 2026",
-          "updated": "8 jul 2026, 17:38",
+          "label": "9 jul 2026",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
-              "v": "3 matérias",
-              "d": 0,
+              "v": "5 matérias",
+              "d": 2,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+80",
               "suf": "/100",
-              "d": 0,
+              "d": -20,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,34 +31,29 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "82",
+              "v": "85",
               "suf": "/100",
-              "d": 0,
+              "d": 3,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 80,
+            "neu": 20,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            60,
             0,
             0,
             0,
             0,
             3,
-            3
+            3,
+            5
           ],
           "stack": [
             [
-              17,
-              83,
-              0
-            ],
-            [
               0,
               100,
               0
@@ -86,19 +81,24 @@
             [
               100,
               0,
+              0
+            ],
+            [
+              80,
+              20,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 3,
+              "vol": 5,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 80,
                 "n": 0,
-                "g": 0
+                "g": 20
               }
             }
           ],
@@ -150,6 +150,38 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
                 }
               ]
+            },
+            {
+              "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real coletada; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+                }
+              ]
+            },
+            {
+              "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real coletada; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -176,6 +208,22 @@
               "cat": "nos",
               "time": "15 jun, 17:30",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+              "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "cat": "nos",
+              "time": "16 jun, 16:15",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+              "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "cat": "neu",
+              "time": "15 jun, 19:55",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -190,7 +238,7 @@
               ],
               [
                 "Matérias",
-                "3"
+                "5"
               ],
               [
                 "Social",
@@ -208,16 +256,16 @@
       },
       "weeks": {
         "w0": {
-          "label": "8–8 jul 2026",
-          "updated": "8 jul 2026, 17:38",
+          "label": "8–9 jul 2026",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
-              "v": "6 matérias",
+              "v": "12 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+87",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -236,67 +284,67 @@
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 87,
+            "neu": 13,
             "neg": 0,
             "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
-            60,
             0,
             0,
             0,
             0,
             3,
-            3
+            3,
+            5
           ],
           "stack": [
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ],
             [
-              100,
-              0,
+              87,
+              13,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 6,
+              "vol": 12,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 87,
                 "n": 0,
-                "g": 0
+                "g": 13
               }
             }
           ],
@@ -446,17 +494,33 @@
               "cat": "nos",
               "time": "15 jun, 17:30",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+              "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "cat": "nos",
+              "time": "16 jun, 16:15",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+              "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "cat": "neu",
+              "time": "15 jun, 19:55",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–8 jul 2026.",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–9 jul 2026.",
             "facts": [
               [
                 "Janela",
-                "8–8 jul 2026"
+                "8–9 jul 2026"
               ],
               [
                 "Marco",
@@ -464,7 +528,7 @@
               ],
               [
                 "Matérias",
-                "6"
+                "12"
               ],
               [
                 "Dados fictícios",
@@ -477,7 +541,7 @@
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -599,7 +663,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -721,7 +785,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -843,7 +907,7 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -965,7 +1029,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1087,7 +1151,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1209,7 +1273,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1331,7 +1395,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1453,7 +1517,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1575,7 +1639,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1697,7 +1761,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1819,7 +1883,7 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1941,7 +2005,7 @@
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2063,7 +2127,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2185,7 +2249,7 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "8 jul 2026, 17:38",
+          "updated": "9 jul 2026, 05:56",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
