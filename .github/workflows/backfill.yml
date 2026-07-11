@@ -1,5 +1,7 @@
- Backspace
- name: lumos-backfill-teasername:_dispatch:
+name: lumos-backfill-teaser
+
+"on":
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -19,14 +21,14 @@ jobs:
 
       - name: Debug files
         run: |
+          echo "Current folder:"
+          pwd
           echo "Root files:"
           ls -la
-          echo ""
-          echo "Searching for backfill_teaser.py:"
-          find . -name "backfill_teaser.py" -print
-          echo ""
           echo "Backend files:"
-          ls -la lumos-backend || true
+          ls -la lumos-backend
+          echo "Backfill file:"
+          ls -la lumos-backend/backfill_teaser.py
 
       - name: Install dependencies
         run: |
@@ -35,21 +37,7 @@ jobs:
 
       - name: Check backfill script syntax
         run: |
-          SCRIPT_PATH=$(find . -name "backfill_teaser.py" | head -n 1)
-
-          if [ -z "$SCRIPT_PATH" ]; then
-            echo "ERRO: backfill_teaser.py não encontrado no repositório."
-            echo "Arquivos encontrados:"
-            find . -maxdepth 4 -type f
-            exit 1
-          fi
-
-          echo "Script encontrado em: $SCRIPT_PATH"
-          SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
-          SCRIPT_FILE=$(basename "$SCRIPT_PATH")
-
-          cd "$SCRIPT_DIR"
-          python -m py_compile "$SCRIPT_FILE"
+          python -m py_compile lumos-backend/backfill_teaser.py
 
       - name: Run teaser backfill
         env:
@@ -57,19 +45,8 @@ jobs:
           HISTORY_DIR: ${{ github.workspace }}/history
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: |
-          SCRIPT_PATH=$(find . -name "backfill_teaser.py" | head -n 1)
-
-          if [ -z "$SCRIPT_PATH" ]; then
-            echo "ERRO: backfill_teaser.py não encontrado no repositório."
-            exit 1
-          fi
-
-          echo "Rodando script em: $SCRIPT_PATH"
-          SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
-          SCRIPT_FILE=$(basename "$SCRIPT_PATH")
-
-          cd "$SCRIPT_DIR"
-          python "$SCRIPT_FILE"
+          cd lumos-backend
+          python backfill_teaser.py
 
       - name: Commit backfill data
         run: |
@@ -78,5 +55,4 @@ jobs:
           git add data.json history/
           git diff --cached --quiet || git commit -m "backfill lumos teaser weeks"
           git push
-
-on:
+``
