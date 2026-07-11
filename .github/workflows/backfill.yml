@@ -1,7 +1,5 @@
-name: lumos-backfill-teaser
-
-on:
-  workflow_dispatch:
+ Backspace
+ name: lumos-backfill-teasername:_dispatch:
 
 permissions:
   contents: write
@@ -23,8 +21,12 @@ jobs:
         run: |
           echo "Root files:"
           ls -la
+          echo ""
+          echo "Searching for backfill_teaser.py:"
+          find . -name "backfill_teaser.py" -print
+          echo ""
           echo "Backend files:"
-          ls -la lumos-backend
+          ls -la lumos-backend || true
 
       - name: Install dependencies
         run: |
@@ -32,16 +34,42 @@ jobs:
           pip install -r lumos-backend/requirements.txt
 
       - name: Check backfill script syntax
-        working-directory: lumos-backend
-        run: python -m py_compile backfill_teaser.py
+        run: |
+          SCRIPT_PATH=$(find . -name "backfill_teaser.py" | head -n 1)
+
+          if [ -z "$SCRIPT_PATH" ]; then
+            echo "ERRO: backfill_teaser.py não encontrado no repositório."
+            echo "Arquivos encontrados:"
+            find . -maxdepth 4 -type f
+            exit 1
+          fi
+
+          echo "Script encontrado em: $SCRIPT_PATH"
+          SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
+          SCRIPT_FILE=$(basename "$SCRIPT_PATH")
+
+          cd "$SCRIPT_DIR"
+          python -m py_compile "$SCRIPT_FILE"
 
       - name: Run teaser backfill
-        working-directory: lumos-backend
         env:
-          OUTPUT_DATA: ../data.json
-          HISTORY_DIR: ../history
+          OUTPUT_DATA: ${{ github.workspace }}/data.json
+          HISTORY_DIR: ${{ github.workspace }}/history
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
-        run: python backfill_teaser.py
+        run: |
+          SCRIPT_PATH=$(find . -name "backfill_teaser.py" | head -n 1)
+
+          if [ -z "$SCRIPT_PATH" ]; then
+            echo "ERRO: backfill_teaser.py não encontrado no repositório."
+            exit 1
+          fi
+
+          echo "Rodando script em: $SCRIPT_PATH"
+          SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
+          SCRIPT_FILE=$(basename "$SCRIPT_PATH")
+
+          cd "$SCRIPT_DIR"
+          python "$SCRIPT_FILE"
 
       - name: Commit backfill data
         run: |
@@ -50,3 +78,5 @@ jobs:
           git add data.json history/
           git diff --cached --quiet || git commit -m "backfill lumos teaser weeks"
           git push
+
+on:
