@@ -1,20 +1,16 @@
 """
 Lumos backfill_teaser.py
 
-Preenche histórico semanal desde o teaser de Harry Potter em 25/03/2026.
+Backfill histórico desde o teaser de Harry Potter em 25/03/2026.
 
 O que faz:
-- Busca notícias reais na GNews por semana.
-- Usa from/to para cada janela semanal.
+- Busca notícias reais via GNews semana a semana.
+- Usa from/to por janela semanal.
 - Não usa RSS.
-- Não usa Google News redirect.
-- Não inventa matérias.
-- Salva snapshots em history/day-YYYY-MM-DD.json.
-- Regenera data.json com weeks preenchido.
-
-IMPORTANTE:
-- Use com moderação para não bater limite da GNews.
-- Recomendado rodar manualmente, não em cron frequente.
+- Não usa links news.google.com.
+- Não inventa matéria, fonte, horário ou volume.
+- Salva snapshots em ../history/day-YYYY-MM-DD.json.
+- Regenera ../data.json com weeks preenchido.
 """
 
 from __future__ import annotations
@@ -22,6 +18,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
@@ -32,8 +29,8 @@ import config
 import build_data
 
 TIMEOUT = 25
-
 BR_TZ = ZoneInfo("America/Sao_Paulo")
+
 TEASER_DATE = datetime(2026, 3, 25, 0, 0, 0, tzinfo=BR_TZ)
 
 PT_MONTHS = [
@@ -55,7 +52,8 @@ def _label(dt):
 
 
 def _stamp(dt):
-    return f"{_label(dt)}, {dt:%H:%M}"
+    now = _now_br()
+    return f"{_label(now)}, {now:%H:%M}"
 
 
 def _range_label(start, end):
@@ -130,13 +128,13 @@ def _senti_from_cat(cat):
     }.get(cat, "neu")
 
 
-def _dedupe(items):
+def _dedupe_coverage(items):
     seen = set()
     out = []
 
     for item in items:
-        url = item.get("u") or item.get("url")
-        title = item.get("title")
+        url = item.get("u", "")
+        title = item.get("title", "")
 
         if not url or not title:
             continue
@@ -159,8 +157,8 @@ def _build_sentiment(coverage):
     if not coverage:
         return 0, 100, 0, 50
 
-    pos = sum(1 for c in coverage if c.get("cat") in ("pos", "nos"))
-    neg = sum(1 for c in coverage if c.get("cat") == "neg")
+    pos = sum(1 for item in coverage if item.get("cat") in ("pos", "nos"))
+    neg = sum(1 for item in coverage if item.get("cat") == "neg")
     total = len(coverage)
 
     p = round(pos / total * 100)
@@ -175,11 +173,11 @@ def _build_sentiment(coverage):
 def _narratives_from_coverage(coverage):
     narratives = []
 
-    for c in coverage[:6]:
+    for item in coverage[:6]:
         narratives.append({
-            "t": c.get("title", "Cobertura real coletada"),
+            "t": item.get("title", "Cobertura real coletada"),
             "vol": 1,
-            "senti": _senti_from_cat(c.get("cat", "neu")),
+            "senti": _senti_from_cat(item.get("cat", "neu")),
             "pf": "Imprensa",
             "trend": "flat",
             "growth": "Backfill histórico desde o teaser; social listening não conectado",
@@ -187,8 +185,8 @@ def _narratives_from_coverage(coverage):
             "pct": 50,
             "src": [
                 {
-                    "o": c.get("o", "Imprensa"),
-                    "u": c.get("u", "#")
+                    "o": item.get("o", "Imprensa"),
+                    "u": item.get("u", "#")
                 }
             ]
         })
@@ -198,7 +196,7 @@ def _narratives_from_coverage(coverage):
 
 def _gnews_request(api_key, start, end):
     """
-    Usa uma única query ampla por semana para economizar requests.
+    Usa uma query ampla por semana para economizar requests.
     """
     query = "Harry Potter HBO"
 
@@ -220,16 +218,13 @@ def _gnews_request(api_key, start, end):
     )
 
     print(
-        f"[backfill] GNews {start.date()} → {end.date()} "
-        f"status={response.status_code}"
+        f"[backfill] GNews {start.date()} -> {end.date()} status={response.status_code}"
     )
 
     if response.status_code != 200:
-        print("[backfill] resposta GNews:", response.text[:600])
+        print("[backfill] resposta GNews:", response.text[:800])
 
-    response.raise_for_status()
-
-    return response.json().get("articles", [])
+    return response
 
 
 def _coverage_from_articles(articles):
@@ -263,13 +258,13 @@ def _coverage_from_articles(articles):
             "scope": "Portal BR"
         })
 
-    return _dedupe(coverage)
+    return _dedupe_coverage(coverage)
 
 
 def _empty_snapshot(snapshot_date, week_label):
     return {
         "label": _label(snapshot_date),
-        "updated": _stamp(_now_br()),
+        "updated": _stamp(snapshot_date),
         "kpi": {
             "mentions": {
                 "v": "0 matérias",
@@ -365,7 +360,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
 
     return {
         "label": _label(snapshot_date),
-        "updated": _stamp(_now_br()),
+        "updated": _stamp(snapshot_date),
         "kpi": {
             "mentions": {
                 "v": f"{count} matéria" + ("" if count == 1 else "s"),
@@ -473,19 +468,22 @@ def _load_current_day_or_latest_snapshot():
 
         if current_day:
             return current_day
-    except Exception:
-        pass
 
-    files = sorted(
-        file for file in os.listdir(config.HISTORY_DIR)
-        if file.startswith("day-") and file.endswith(".json")
-    ) if os.path.exists(config.HISTORY_DIR) else []
+    except Exception as exc:
+        print(f"[backfill] não consegui ler d0 atual do data.json: {exc}")
 
-    if files:
-        latest = os.path.join(config.HISTORY_DIR, files[-1])
+    if os.path.exists(config.HISTORY_DIR):
+        files = sorted(
+            file_name
+            for file_name in os.listdir(config.HISTORY_DIR)
+            if file_name.startswith("day-") and file_name.endswith(".json")
+        )
 
-        with open(latest, encoding="utf-8") as file:
-            return json.load(file)
+        if files:
+            latest = os.path.join(config.HISTORY_DIR, files[-1])
+
+            with open(latest, encoding="utf-8") as file:
+                return json.load(file)
 
     return _empty_snapshot(_now_br(), "sem dados")
 
@@ -505,12 +503,15 @@ def main():
 
     now = _now_br()
 
-    start = TEASER_DATE
-    week_index = 0
-
     print("[backfill] início")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {now:%Y-%m-%d %H:%M}")
+    print(f"[backfill] API key detectada com {len(api_key)} caracteres")
+
+    start = TEASER_DATE
+    week_index = 1
+
+    hit_rate_limit = False
 
     while start <= now:
         end = start + timedelta(days=6, hours=23, minutes=59, seconds=59)
@@ -520,11 +521,28 @@ def main():
 
         week_label = _range_label(start, end)
 
-        print(f"[backfill] Semana {week_index + 1}: {week_label}")
+        print(f"[backfill] Semana {week_index}: {week_label}")
+
+        response = _gnews_request(api_key, start, end)
+
+        if response.status_code == 429:
+            print("[backfill] limite da GNews atingido: 429 Too Many Requests")
+            print("[backfill] parando backfill para preservar os dados já salvos.")
+            hit_rate_limit = True
+            break
+
+        if response.status_code in (401, 403):
+            raise RuntimeError(
+                f"GNews retornou {response.status_code}. Verifique GNEWS_API_KEY/plano."
+            )
 
         try:
-            articles = _gnews_request(api_key, start, end)
+            response.raise_for_status()
+            data = response.json()
+            articles = data.get("articles", [])
             coverage = _coverage_from_articles(articles)
+
+            print(f"[backfill] {len(coverage)} matérias reais na semana {week_label}")
 
             if coverage:
                 snapshot = _snapshot_from_coverage(end, week_label, coverage)
@@ -534,16 +552,21 @@ def main():
             _save_snapshot(end, snapshot)
 
         except Exception as exc:
-            print(f"[backfill] falha na semana {week_label}: {exc}")
+            print(f"[backfill] erro na semana {week_label}: {exc}")
             snapshot = _empty_snapshot(end, week_label)
             _save_snapshot(end, snapshot)
+
+        time.sleep(2)
 
         start = start + timedelta(days=7)
         week_index += 1
 
     regenerate_feed()
 
-    print("[backfill] concluído")
+    if hit_rate_limit:
+        print("[backfill] concluído parcialmente por limite da API.")
+    else:
+        print("[backfill] concluído")
 
 
 if __name__ == "__main__":
