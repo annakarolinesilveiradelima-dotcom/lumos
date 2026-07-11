@@ -1,0 +1,252 @@
+{
+  "label": "11 jul 2026",
+  "updated": "11 jul 2026, 03:27",
+  "kpi": {
+    "mentions": {
+      "v": "5 matérias",
+      "d": 2,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+80",
+      "suf": "/100",
+      "d": -20,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "85",
+      "suf": "/100",
+      "d": 3,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 80,
+    "neu": 20,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    5,
+    3,
+    3,
+    3,
+    3,
+    3,
+    5
+  ],
+  "stack": [
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 5,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 80,
+        "n": 0,
+        "g": 20
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+        }
+      ]
+    },
+    {
+      "t": "Série escala ator de Pirraça, personagem inédito",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 21:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "cat": "nos",
+      "time": "15 jun, 22:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+      "title": "Série escala ator de Pirraça, personagem inédito",
+      "cat": "nos",
+      "time": "15 jun, 17:30",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+      "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "cat": "nos",
+      "time": "16 jun, 16:15",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+      "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "cat": "neu",
+      "time": "15 jun, 19:55",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "5"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [],
+  "ephem": [],
+  "_raw": {
+    "base_count": 5,
+    "unit": "matérias",
+    "net": 80,
+    "buzz": 85,
+    "news_count": 5,
+    "social_mentions": 0
+  }
+}
