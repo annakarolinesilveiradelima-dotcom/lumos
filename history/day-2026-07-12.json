@@ -1,16 +1,16 @@
 {
   "label": "12 jul 2026",
-  "updated": "12 jul 2026, 12:39",
+  "updated": "12 jul 2026, 16:59",
   "kpi": {
     "mentions": {
-      "v": "3 matérias",
-      "d": 0,
+      "v": "5 matérias",
+      "d": 2,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+100",
+      "v": "+80",
       "suf": "/100",
-      "d": 0,
+      "d": -20,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,33 +20,28 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "82",
+      "v": "85",
       "suf": "/100",
-      "d": 0,
+      "d": 3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 100,
-    "neu": 0,
+    "pos": 80,
+    "neu": 20,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    3,
     5,
     3,
     3,
     3,
     3,
-    3
+    3,
+    5
   ],
   "stack": [
-    [
-      100,
-      0,
-      0
-    ],
     [
       80,
       20,
@@ -76,18 +71,23 @@
       100,
       0,
       0
+    ],
+    [
+      80,
+      20,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 3,
+      "vol": 5,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 100,
+        "p": 80,
         "n": 0,
-        "g": 0
+        "g": 20
       }
     }
   ],
@@ -139,6 +139,38 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
         }
       ]
+    },
+    {
+      "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -165,6 +197,22 @@
       "cat": "nos",
       "time": "15 jun, 17:30",
       "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+      "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "cat": "nos",
+      "time": "16 jun, 16:15",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+      "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "cat": "neu",
+      "time": "15 jun, 19:55",
+      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -179,7 +227,7 @@
       ],
       [
         "Matérias",
-        "3"
+        "5"
       ],
       [
         "Social",
@@ -194,11 +242,11 @@
   "opps": [],
   "ephem": [],
   "_raw": {
-    "base_count": 3,
+    "base_count": 5,
     "unit": "matérias",
-    "net": 100,
-    "buzz": 82,
-    "news_count": 3,
+    "net": 80,
+    "buzz": 85,
+    "news_count": 5,
     "social_mentions": 0
   }
 }
