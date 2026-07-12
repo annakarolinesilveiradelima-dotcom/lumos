@@ -1,0 +1,204 @@
+{
+  "label": "12 jul 2026",
+  "updated": "12 jul 2026, 04:34",
+  "kpi": {
+    "mentions": {
+      "v": "3 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "82",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 100,
+    "neu": 0,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    3,
+    5,
+    3,
+    5,
+    3,
+    3,
+    3
+  ],
+  "stack": [
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 3,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 100,
+        "n": 0,
+        "g": 0
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+        }
+      ]
+    },
+    {
+      "t": "Série escala ator de Pirraça, personagem inédito",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real coletada; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 21:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "cat": "nos",
+      "time": "15 jun, 22:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+      "title": "Série escala ator de Pirraça, personagem inédito",
+      "cat": "nos",
+      "time": "15 jun, 17:30",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "3"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [],
+  "ephem": [],
+  "_raw": {
+    "base_count": 3,
+    "unit": "matérias",
+    "net": 100,
+    "buzz": 82,
+    "news_count": 3,
+    "social_mentions": 0
+  }
+}

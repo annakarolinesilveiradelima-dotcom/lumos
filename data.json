@@ -1,5 +1,5 @@
 {
-  "generated_at": "11 jul 2026, 18:35",
+  "generated_at": "12 jul 2026, 04:34",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,8 +10,8 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "11 jul 2026",
-          "updated": "11 jul 2026, 18:35",
+          "label": "12 jul 2026",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -45,10 +45,10 @@
           },
           "buzz7": [
             3,
-            3,
             5,
             3,
             5,
+            3,
             3,
             3
           ],
@@ -59,11 +59,6 @@
               0
             ],
             [
-              100,
-              0,
-              0
-            ],
-            [
               80,
               20,
               0
@@ -76,6 +71,11 @@
             [
               80,
               20,
+              0
+            ],
+            [
+              100,
+              0,
               0
             ],
             [
@@ -208,8 +208,8 @@
       },
       "weeks": {
         "w0": {
-          "label": "8–11 jul 2026",
-          "updated": "11 jul 2026, 18:35",
+          "label": "8–12 jul 2026",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -243,10 +243,10 @@
           },
           "buzz7": [
             3,
-            3,
             5,
             3,
             5,
+            3,
             3,
             3
           ],
@@ -468,11 +468,11 @@
           "risks": [],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–11 jul 2026.",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–12 jul 2026.",
             "facts": [
               [
                 "Janela",
-                "8–11 jul 2026"
+                "8–12 jul 2026"
               ],
               [
                 "Marco",
@@ -493,7 +493,7 @@
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -615,7 +615,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -737,7 +737,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -859,7 +859,7 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -981,7 +981,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1103,7 +1103,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1225,7 +1225,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1347,7 +1347,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1469,7 +1469,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1591,7 +1591,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1713,7 +1713,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1835,7 +1835,7 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1957,7 +1957,7 @@
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2079,7 +2079,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2201,7 +2201,7 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "11 jul 2026, 18:35",
+          "updated": "12 jul 2026, 04:34",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
