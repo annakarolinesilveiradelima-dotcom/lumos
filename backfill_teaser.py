@@ -4,13 +4,14 @@ Lumos backfill_teaser.py
 Backfill histórico desde o teaser de Harry Potter em 25/03/2026.
 
 O que faz:
-- Busca notícias reais via GNews semana a semana.
+- Busca notícias reais via GNews, semana por semana.
 - Usa from/to por janela semanal.
+- Usa mais de uma query para melhorar o preenchimento das semanas antigas.
 - Não usa RSS.
 - Não usa links news.google.com.
 - Não inventa matéria, fonte, horário ou volume.
-- Salva snapshots em ../history/day-YYYY-MM-DD.json.
-- Regenera ../data.json com weeks preenchido.
+- Salva snapshots em history/day-YYYY-MM-DD.json.
+- Regenera data.json com weeks preenchido.
 """
 
 from __future__ import annotations
@@ -196,35 +197,101 @@ def _narratives_from_coverage(coverage):
 
 def _gnews_request(api_key, start, end):
     """
-    Usa uma query ampla por semana para economizar requests.
+    Busca notícias reais da semana usando diferentes queries.
+
+    Importante:
+    - Retorna um objeto compatível com response.status_code, response.json()
+      e response.raise_for_status().
+    - Se bater limite 429, salva o que já tiver sido encontrado.
     """
-    query = "Harry Potter HBO"
 
-    params = {
-        "q": query,
-        "max": 10,
-        "lang": "pt",
-        "country": "br",
-        "from": _iso_utc(start),
-        "to": _iso_utc(end),
-        "sortby": "publishedAt",
-        "apikey": api_key
-    }
+    class CombinedResponse:
+        def __init__(self, status_code, articles=None, text=""):
+            self.status_code = status_code
+            self._articles = articles or []
+            self.text = text
 
-    response = requests.get(
-        "https://gnews.io/api/v4/search",
-        params=params,
-        timeout=TIMEOUT
-    )
+        def json(self):
+            return {
+                "articles": self._articles
+            }
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise requests.HTTPError(self.text)
+
+    queries = [
+        "Harry Potter HBO",
+        "Harry Potter Max",
+        "série Harry Potter HBO",
+        "nova série Harry Potter"
+    ]
+
+    all_articles = []
+    last_status = 200
+    last_error_text = ""
+
+    for query in queries:
+        params = {
+            "q": query,
+            "max": 10,
+            "lang": "pt",
+            "country": "br",
+            "from": _iso_utc(start),
+            "to": _iso_utc(end),
+            "sortby": "publishedAt",
+            "apikey": api_key
+        }
+
+        response = requests.get(
+            "https://gnews.io/api/v4/search",
+            params=params,
+            timeout=TIMEOUT
+        )
+
+        print(
+            f"[backfill] GNews query='{query}' "
+            f"{start.date()} -> {end.date()} status={response.status_code}"
+        )
+
+        if response.status_code == 200:
+            data = response.json()
+            articles = data.get("articles", [])
+
+            print(
+                f"[backfill] query='{query}' retornou {len(articles)} artigos"
+            )
+
+            all_articles.extend(articles)
+
+            # Pausa curta para evitar limite da API.
+            time.sleep(1)
+            continue
+
+        last_status = response.status_code
+        last_error_text = response.text[:800]
+
+        print("[backfill] resposta GNews:", last_error_text)
+
+        # Se for chave/plano/limite, para para não gastar mais requests.
+        if response.status_code in (401, 403, 429):
+            if all_articles:
+                print(
+                    "[backfill] erro/limite após coletar alguns artigos; "
+                    "salvando o que já foi encontrado nesta semana."
+                )
+                return CombinedResponse(200, all_articles)
+
+            return CombinedResponse(response.status_code, [], last_error_text)
+
+        time.sleep(1)
 
     print(
-        f"[backfill] GNews {start.date()} -> {end.date()} status={response.status_code}"
+        f"[backfill] total combinado da semana "
+        f"{start.date()} -> {end.date()}: {len(all_articles)} artigos"
     )
 
-    if response.status_code != 200:
-        print("[backfill] resposta GNews:", response.text[:800])
-
-    return response
+    return CombinedResponse(last_status, all_articles, last_error_text)
 
 
 def _coverage_from_articles(articles):
@@ -322,7 +389,14 @@ def _empty_snapshot(snapshot_date, week_label):
         "narratives": [],
         "coverage": [],
         "creators": [],
-        "risks": [],
+        "risks": [
+            {
+                "t": "Janela sem cobertura real",
+                "sev": "low",
+                "d": "Não foram encontradas matérias reais nesta semana pela fonte conectada.",
+                "rec": "Manter monitoramento e validar se a API possui histórico suficiente para esta janela."
+            }
+        ],
         "heroOpp": {
             "title": "Sem oportunidade validada nesta semana",
             "desc": "Não houve cobertura real suficiente nesta janela semanal.",
@@ -333,7 +407,13 @@ def _empty_snapshot(snapshot_date, week_label):
                 ["Status", "sem cobertura real"]
             ]
         },
-        "opps": [],
+        "opps": [
+            {
+                "ico": "mail",
+                "t": "Monitorar próxima coleta",
+                "d": "A semana permanece sem dados reais até que a fonte de notícias retorne matérias para essa janela."
+            }
+        ],
         "ephem": [],
         "_raw": {
             "base_count": 0,
@@ -348,7 +428,7 @@ def _empty_snapshot(snapshot_date, week_label):
 
 
 def _snapshot_from_coverage(snapshot_date, week_label, coverage):
-    coverage = coverage[:8]
+    coverage = coverage[:12]
 
     pos, neu, neg, sentiment_index = _build_sentiment(coverage)
 
@@ -416,9 +496,16 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             }
         ],
         "narratives": narratives,
-        "coverage": coverage,
+        "coverage": coverage[:8],
         "creators": [],
-        "risks": [],
+        "risks": [
+            {
+                "t": "Comparação com filmes originais",
+                "sev": "mid",
+                "d": "Coberturas sobre nova adaptação podem reacender comparação com os filmes anteriores e expectativa de fidelidade aos livros.",
+                "rec": "Reforçar diferenciais da série e tratar nostalgia como ativo, não como competição direta."
+            }
+        ],
         "heroOpp": {
             "title": "Leitura semanal desde o teaser",
             "desc": f"Semana preenchida por backfill de matérias reais. Janela: {week_label}.",
@@ -429,7 +516,18 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
                 ["Dados fictícios", "não"]
             ]
         },
-        "opps": [],
+        "opps": [
+            {
+                "ico": "book",
+                "t": "Explorar fidelidade aos livros",
+                "d": "Quando a cobertura cita adaptação, elenco ou personagens, há oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+                "ico": "film",
+                "t": "Organizar narrativa de comparação",
+                "d": "Usar conteúdos editoriais para contextualizar que a série é uma nova leitura para streaming, com espaço para aprofundamento."
+            }
+        ],
         "ephem": [],
         "_raw": {
             "base_count": count,
@@ -456,10 +554,6 @@ def _save_snapshot(snapshot_date, snapshot):
 
 
 def _load_current_day_or_latest_snapshot():
-    """
-    Tenta preservar o d0 atual do data.json.
-    Se não existir, usa o snapshot mais recente do history.
-    """
     try:
         with open(config.OUTPUT_DATA, encoding="utf-8") as file:
             feed = json.load(file)
