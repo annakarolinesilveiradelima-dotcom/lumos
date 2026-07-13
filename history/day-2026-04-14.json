@@ -1,17 +1,17 @@
 {
   "label": "14 abr 2026",
-  "updated": "13 jul 2026, 15:42",
+  "updated": "13 jul 2026, 16:12",
   "kpi": {
     "mentions": {
-      "v": "11 items",
+      "v": "10 items",
       "d": 0,
-      "sub": "10 noticias - 1 videos YouTube - 0 posts Reddit - 8-14 abr 2026"
+      "sub": "10 noticias - 0 videos YouTube - 0 sinais Trends - 8-14 abr 2026"
     },
     "sentiment": {
-      "v": "+9",
+      "v": "+20",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -23,59 +23,59 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
-    "pos": 18,
-    "neu": 73,
-    "neg": 9,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "pos": 20,
+    "neu": 80,
+    "neg": 0,
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    11,
-    11,
-    11,
-    11,
-    11,
-    11,
-    11
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ],
     [
-      18,
-      73,
-      9
+      20,
+      80,
+      0
     ]
   ],
   "platforms": [
@@ -85,9 +85,9 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 18,
-        "n": 9,
-        "g": 73
+        "p": 20,
+        "n": 0,
+        "g": 80
       }
     },
     {
@@ -96,20 +96,20 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 18,
-        "n": 9,
-        "g": 73
+        "p": 20,
+        "n": 0,
+        "g": 80
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
       "senti": "neu",
       "ang": 128,
       "s": {
-        "p": 18,
-        "n": 9,
-        "g": 73
+        "p": 0,
+        "n": 0,
+        "g": 100
       }
     }
   ],
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -277,30 +277,18 @@
       "scope": "Google News RSS"
     }
   ],
-  "creators": [
-    {
-      "h": "3TopicsGamer",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neg",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=qa-T_dHb1x0"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
-      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
       "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 8-14 abr 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 8-14 abr 2026.",
     "facts": [
       [
         "Janela",
@@ -312,11 +300,11 @@
       ],
       [
         "Itens reais",
-        "11"
+        "10"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -324,24 +312,25 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 11,
-    "unit": "materias/videos/posts",
-    "net": 9,
+    "base_count": 10,
+    "unit": "itens",
+    "net": 20,
     "buzz": 100,
     "news_count": 10,
-    "youtube_count": 1,
-    "social_mentions": 0,
+    "youtube_count": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
-    "sentiment_index": 54
+    "sentiment_index": 60
   }
 }

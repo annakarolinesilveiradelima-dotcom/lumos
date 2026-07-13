@@ -1,17 +1,17 @@
 {
   "label": "26 mai 2026",
-  "updated": "13 jul 2026, 15:43",
+  "updated": "13 jul 2026, 16:14",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "3 noticias - 1 videos YouTube - 0 posts Reddit - 20-26 mai 2026"
+      "sub": "3 noticias - 0 videos YouTube - 0 sinais Trends - 20-26 mai 2026"
     },
     "sentiment": {
       "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -20,26 +20,26 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "52",
+      "v": "44",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    4,
-    4,
-    4,
-    4,
-    4,
-    4,
-    4
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44
   ],
   "stack": [
     [
@@ -102,7 +102,7 @@
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
       "senti": "neu",
       "ang": 128,
@@ -120,7 +120,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,29 +152,13 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "NSC Total",
           "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1B3MjYzMzRiRnhRTmwxX0tqOFU2eG1ibER2MFNUY3R5YmloMFhqNHhqMjdVWUFyWDFheGd0eldNaDVNcV9lSFlVR2Yzc0hLUUlmNm9uQnpXWnBxV2NpenRHOGNDMGtBdXZLcms5QmJiTjN2UTNIZWpFVGZkX05uXzByMUhpMndLN2tqRmlGbFB6LTJxR3NBWnhoVEtUbUZtNWlVcmFkNA?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Harry Potter HBO Updates ⚡️",
-          "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
         }
       ]
     }
@@ -203,40 +187,20 @@
       "cat": "neu",
       "time": "20 mai, 04:00",
       "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Harry Potter HBO Updates ⚡️",
-      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs",
-      "title": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
-      "cat": "neu",
-      "time": "26 mai, 21:00",
-      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [
-    {
-      "h": "Harry Potter HBO Updates ⚡️",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
-      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
       "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 20-26 mai 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 20-26 mai 2026.",
     "facts": [
       [
         "Janela",
@@ -248,11 +212,11 @@
       ],
       [
         "Itens reais",
-        "4"
+        "3"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -260,23 +224,24 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
-    "unit": "materias/videos/posts",
+    "base_count": 3,
+    "unit": "itens",
     "net": 0,
-    "buzz": 52,
+    "buzz": 44,
     "news_count": 3,
-    "youtube_count": 1,
-    "social_mentions": 0,
+    "youtube_count": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
     "sentiment_index": 50
   }

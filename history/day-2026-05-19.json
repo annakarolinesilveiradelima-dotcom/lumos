@@ -1,17 +1,17 @@
 {
   "label": "19 mai 2026",
-  "updated": "13 jul 2026, 15:43",
+  "updated": "13 jul 2026, 16:14",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 posts Reddit - 13-19 mai 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 sinais Trends - 13-19 mai 2026"
     },
     "sentiment": {
       "v": "+42",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -23,23 +23,23 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
     "pos": 42,
     "neu": 58,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    12,
-    12,
-    12,
-    12,
-    12,
-    12,
-    12
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
@@ -102,14 +102,14 @@
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
       "senti": "neu",
       "ang": 128,
       "s": {
-        "p": 42,
+        "p": 0,
         "n": 0,
-        "g": 58
+        "g": 100
       }
     }
   ],
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -282,19 +282,19 @@
     {
       "t": "Comparacao com os filmes originais",
       "sev": "mid",
-      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
     },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
-      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
       "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 13-19 mai 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 13-19 mai 2026.",
     "facts": [
       [
         "Janela",
@@ -309,8 +309,8 @@
         "12"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -318,23 +318,24 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
     "base_count": 12,
-    "unit": "materias/videos/posts",
+    "unit": "itens",
     "net": 42,
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "social_mentions": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
     "sentiment_index": 71
   }

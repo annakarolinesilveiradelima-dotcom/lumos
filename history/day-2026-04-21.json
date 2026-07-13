@@ -1,17 +1,17 @@
 {
   "label": "21 abr 2026",
-  "updated": "13 jul 2026, 15:42",
+  "updated": "13 jul 2026, 16:13",
   "kpi": {
     "mentions": {
-      "v": "5 items",
+      "v": "4 items",
       "d": 0,
-      "sub": "4 noticias - 1 videos YouTube - 0 posts Reddit - 15-21 abr 2026"
+      "sub": "4 noticias - 0 videos YouTube - 0 sinais Trends - 15-21 abr 2026"
     },
     "sentiment": {
-      "v": "+80",
+      "v": "+75",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "90",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
-    "pos": 80,
-    "neu": 20,
+    "pos": 75,
+    "neu": 25,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    5,
-    5,
-    5,
-    5,
-    5,
-    5,
-    5
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90
   ],
   "stack": [
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ],
     [
-      80,
-      20,
+      75,
+      25,
       0
     ]
   ],
@@ -85,9 +85,9 @@
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 80,
+        "p": 75,
         "n": 0,
-        "g": 20
+        "g": 25
       }
     },
     {
@@ -96,20 +96,20 @@
       "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 80,
+        "p": 75,
         "n": 0,
-        "g": 20
+        "g": 25
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
-      "senti": "pos",
+      "senti": "neu",
       "ang": 128,
       "s": {
-        "p": 80,
+        "p": 0,
         "n": 0,
-        "g": 20
+        "g": 100
       }
     }
   ],
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,29 +168,13 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "AdoroCinema",
           "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVNVZ3Vnh0dVhCZHh0S0RWOHNfZFNXZEVxelJ3UDBtQmF5STZDLVFuYko2Mk9QR1Q4VV82aUFNRG8wRjRQLVpUNXBFZlFQRHR5QkJla1VNS3BWS2xYRkJYejN6dkU5b1ZWM3FqQWxSNW_SAXZBVV95cUxQdUlqLXZtblFtY0t6aWlrSnRlMGJOcWx4M2lQNUlJVFpua0xEa3JmLVNkbkhVYUJsaVFqN25qMjVQenlrNVpkNlVTNUo2QU9BY0lva1kxTzRrOU5DMUhINno1UnV2dHBKLTNIWlN0YUlkamZwNXN3?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Narrative Notch",
-          "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
         }
       ]
     }
@@ -227,46 +211,26 @@
       "cat": "nos",
       "time": "19 abr, 04:00",
       "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Narrative Notch",
-      "u": "https://www.youtube.com/watch?v=ftic_jZLUZs",
-      "title": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
-      "cat": "nos",
-      "time": "21 abr, 20:00",
-      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [
-    {
-      "h": "Narrative Notch",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Comparacao com os filmes originais",
       "sev": "mid",
-      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
     },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
-      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
       "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 15-21 abr 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 15-21 abr 2026.",
     "facts": [
       [
         "Janela",
@@ -278,11 +242,11 @@
       ],
       [
         "Itens reais",
-        "5"
+        "4"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -290,24 +254,25 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 5,
-    "unit": "materias/videos/posts",
-    "net": 80,
-    "buzz": 100,
+    "base_count": 4,
+    "unit": "itens",
+    "net": 75,
+    "buzz": 90,
     "news_count": 4,
-    "youtube_count": 1,
-    "social_mentions": 0,
+    "youtube_count": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
-    "sentiment_index": 90
+    "sentiment_index": 88
   }
 }

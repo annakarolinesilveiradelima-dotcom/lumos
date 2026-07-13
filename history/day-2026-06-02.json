@@ -1,17 +1,17 @@
 {
   "label": "2 jun 2026",
-  "updated": "13 jul 2026, 15:44",
+  "updated": "13 jul 2026, 16:14",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "3 noticias - 1 videos YouTube - 0 posts Reddit - 27 mai-2 jun 2026"
+      "sub": "3 noticias - 0 videos YouTube - 0 sinais Trends - 27 mai-2 jun 2026"
     },
     "sentiment": {
       "v": "+100",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -20,26 +20,26 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "94",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
     "pos": 100,
     "neu": 0,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    4,
-    4,
-    4,
-    4,
-    4,
-    4,
-    4
+    94,
+    94,
+    94,
+    94,
+    94,
+    94,
+    94
   ],
   "stack": [
     [
@@ -102,14 +102,14 @@
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
-      "senti": "pos",
+      "senti": "neu",
       "ang": 128,
       "s": {
-        "p": 100,
+        "p": 0,
         "n": 0,
-        "g": 0
+        "g": 100
       }
     }
   ],
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,29 +152,13 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "CinePOP Cinema",
           "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV1NuUEpIX3llejZNZy1QTDg3WlkwX2xGY2ZRSmhjdi0wV0VxRVhDY1B4QU54U21Zc1VYbzRzOVFXMkRrYm44ZjVnUDlUWXRjWndCQzJEMVlIcUViOTdTV2U1NzhnUlVUYU1NelZfcTVtSXRpRDFHZWtLbnlKWTBpWG5GRldEN1BsSWg1SWIzeGhUZzBwUkJ4SWFVOFc0WnpfREtsd2pxRE0zRkd4NGNQZG1DV01HZVYyRTJCbDJkZ3htaENFdEJV?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "House of the Dragon Season 3 | Official Final Trailer | HBO Max #1m on movies Trending chart #dragon",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Banana Prompts AI",
-          "u": "https://www.youtube.com/watch?v=-YxolEXPTaM"
         }
       ]
     }
@@ -203,46 +187,20 @@
       "cat": "pos",
       "time": "27 mai, 04:00",
       "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Banana Prompts AI",
-      "u": "https://www.youtube.com/watch?v=-YxolEXPTaM",
-      "title": "House of the Dragon Season 3 | Official Final Trailer | HBO Max #1m on movies Trending chart #dragon",
-      "cat": "nos",
-      "time": "2 jun, 22:10",
-      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [
-    {
-      "h": "Banana Prompts AI",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=-YxolEXPTaM"
-    }
-  ],
+  "creators": [],
   "risks": [
-    {
-      "t": "Comparacao com os filmes originais",
-      "sev": "mid",
-      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
-    },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
-      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
       "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 27 mai-2 jun 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 27 mai-2 jun 2026.",
     "facts": [
       [
         "Janela",
@@ -254,11 +212,11 @@
       ],
       [
         "Itens reais",
-        "4"
+        "3"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -266,23 +224,24 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
-    "unit": "materias/videos/posts",
+    "base_count": 3,
+    "unit": "itens",
     "net": 100,
-    "buzz": 100,
+    "buzz": 94,
     "news_count": 3,
-    "youtube_count": 1,
-    "social_mentions": 0,
+    "youtube_count": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
     "sentiment_index": 100
   }

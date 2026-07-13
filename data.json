@@ -1,5 +1,5 @@
 {
-  "generated_at": "13 jul 2026, 15:45",
+  "generated_at": "13 jul 2026, 16:16",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,18 +11,18 @@
       "days": {
         "d0": {
           "label": "13 jul 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "1 item",
               "d": 0,
-              "sub": "1 noticias - 0 videos YouTube - 0 posts Reddit - 13 jul 2026"
+              "sub": "1 noticias - 0 videos YouTube - 0 sinais Trends - 13 jul 2026"
             },
             "sentiment": {
               "v": "+0",
               "suf": "/100",
               "d": 0,
-              "sub": "indice semanal por cobertura"
+              "sub": "indice semanal por cobertura/sinal"
             },
             "sov": {
               "v": "-",
@@ -34,23 +34,23 @@
               "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz semanal desde o teaser"
+              "sub": "buzz semanal com Google Trends 0/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
           ],
           "stack": [
             [
@@ -113,7 +113,7 @@
               }
             },
             {
-              "name": "Reddit",
+              "name": "Google Trends",
               "vol": 1,
               "senti": "neu",
               "ang": 128,
@@ -131,7 +131,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
               "q": "",
               "pct": 50,
               "src": [
@@ -155,15 +155,15 @@
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na janela",
+              "t": "Risco baixo na cobertura",
               "sev": "low",
-              "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+              "d": "A janela teve fonte real ou sinal de busca coletado, mas sem sinais criticos fortes.",
               "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
             }
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais. Janela: 13 jul 2026.",
+            "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 13 jul 2026.",
             "facts": [
               [
                 "Janela",
@@ -178,8 +178,8 @@
                 "1"
               ],
               [
-                "Dados ficticios",
-                "nao"
+                "Trends",
+                "Harry Potter HBO · 0/100"
               ]
             ]
           },
@@ -187,12 +187,12 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
               "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+              "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
             }
           ],
           "ephem": []
@@ -201,7 +201,7 @@
       "weeks": {
         "w0": {
           "label": "8–13 jul 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -336,7 +336,7 @@
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -502,7 +502,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -637,7 +637,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -772,7 +772,7 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -968,7 +968,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1103,7 +1103,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1238,7 +1238,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1373,7 +1373,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1508,7 +1508,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1643,7 +1643,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1778,7 +1778,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1913,18 +1913,18 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "0 matérias",
               "d": 0,
-              "sub": "semana desde o teaser"
+              "sub": "sem cobertura real nesta semana"
             },
             "sentiment": {
-              "v": "+100",
-              "suf": "/100",
+              "v": "—",
+              "suf": "",
               "d": 0,
-              "sub": "índice semanal"
+              "sub": "sem base suficiente"
             },
             "sov": {
               "v": "—",
@@ -1933,61 +1933,61 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "78",
+              "v": "0",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz semanal desde o teaser"
+              "sub": "sem cobertura real"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 0,
+            "neu": 100,
             "neg": 0,
-            "tone": "Consolidação semanal por data real das matérias"
+            "tone": "Sem cobertura real coletada nesta semana"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "stack": [
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ],
             [
-              100,
               0,
+              100,
               0
             ]
           ],
@@ -1995,55 +1995,29 @@
             {
               "name": "Imprensa",
               "vol": 1,
-              "senti": "pos",
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 0,
                 "n": 0,
-                "g": 0
+                "g": 100
               }
             }
           ],
-          "narratives": [
-            {
-              "t": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - Narrative Notch",
-                  "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "YouTube - Narrative Notch",
-              "u": "https://www.youtube.com/watch?v=ftic_jZLUZs",
-              "title": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
-              "cat": "nos",
-              "time": "21 abr, 20:00",
-              "scope": "Video/Creator - YouTube"
-            }
-          ],
+          "narratives": [],
+          "coverage": [],
           "creators": [],
           "risks": [
             {
-              "t": "Comparação com os filmes originais",
-              "sev": "mid",
-              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Não foram encontradas matérias reais para a janela 15–21 abr 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
             }
           ],
           "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 15–21 abr 2026.",
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
             "facts": [
               [
                 "Janela",
@@ -2051,35 +2025,30 @@
               ],
               [
                 "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Matérias",
-                "1"
+                "teaser 25/03/2026"
               ],
               [
                 "Dados fictícios",
                 "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparação",
-              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 15–21 abr 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
             }
           ],
           "ephem": []
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2214,7 +2183,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2349,7 +2318,7 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "13 jul 2026, 15:45",
+          "updated": "13 jul 2026, 16:16",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

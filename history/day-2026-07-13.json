@@ -1,17 +1,17 @@
 {
   "label": "13 jul 2026",
-  "updated": "13 jul 2026, 15:45",
+  "updated": "13 jul 2026, 16:16",
   "kpi": {
     "mentions": {
-      "v": "6 items",
+      "v": "5 items",
       "d": 0,
-      "sub": "5 noticias - 1 videos YouTube - 0 posts Reddit - 8-13 jul 2026"
+      "sub": "5 noticias - 0 videos YouTube - 0 sinais Trends - 8-13 jul 2026"
     },
     "sentiment": {
       "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
       "v": "-",
@@ -20,26 +20,26 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "68",
+      "v": "60",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    6,
-    6,
-    6,
-    6,
-    6,
-    6,
-    6
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60
   ],
   "stack": [
     [
@@ -102,7 +102,7 @@
       }
     },
     {
-      "name": "Reddit",
+      "name": "Google Trends",
       "vol": 1,
       "senti": "neu",
       "ang": 128,
@@ -115,28 +115,12 @@
   ],
   "narratives": [
     {
-      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O TEMPO",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5"
-        }
-      ]
-    },
-    {
       "t": "Harry Potter: série da HBO vai mudar a origem de Severus Snape?",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +136,23 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
       "q": "",
       "pct": 50,
       "src": [
@@ -193,39 +193,23 @@
           "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFNmo4N0xKQjVpQmRxVHplcURMM0pvdjdGdHQ1WFFEUlpLcF9uMDRXbmJfeHpIaHp5MjNpNW9ONDNJSFkxakl5MnhaRXR0al9zZFhoRWV1enJPWDlvTUgwTjFCWHQ?oc=5"
         }
       ]
-    },
-    {
-      "t": "Top 5 Harry Potter Characters Who Deserved Better 💔 #harrypotter #top5 #sirius",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Harry Explain",
-          "u": "https://www.youtube.com/watch?v=GUOq02sYb0Q"
-        }
-      ]
     }
   ],
   "coverage": [
-    {
-      "o": "O TEMPO",
-      "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5",
-      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "cat": "neu",
-      "time": "12 jul, 19:13",
-      "scope": "Google News RSS"
-    },
     {
       "o": "einerd.com",
       "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5STlJVaDhrcHg2b09YUndtZm5Yc1ZjQU0yRDRJNDRCb2I1N3VMNFc1WldnTmZmYlBEOGZicC1QZEo4bVUwa29qel9DcUpSdHh6Yzd4eC14M3EwNGZBejQ0Ymk4T0RIdTdBWHc0TlhPOXZpQkNLanc?oc=5",
       "title": "Harry Potter: série da HBO vai mudar a origem de Severus Snape?",
       "cat": "neu",
       "time": "10 jul, 14:30",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "cat": "neu",
+      "time": "12 jul, 19:13",
       "scope": "Google News RSS"
     },
     {
@@ -251,40 +235,20 @@
       "cat": "neu",
       "time": "13 jul, 06:15",
       "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Harry Explain",
-      "u": "https://www.youtube.com/watch?v=GUOq02sYb0Q",
-      "title": "Top 5 Harry Potter Characters Who Deserved Better 💔 #harrypotter #top5 #sirius",
-      "cat": "neu",
-      "time": "13 jul, 13:37",
-      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [
-    {
-      "h": "Harry Explain",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=GUOq02sYb0Q"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
-      "t": "Risco baixo na janela",
+      "t": "Risco baixo na cobertura",
       "sev": "low",
-      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+      "d": "A janela teve fonte real ou sinal de busca coletado, mas sem sinais criticos fortes.",
       "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais. Janela: 8-13 jul 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 8-13 jul 2026.",
     "facts": [
       [
         "Janela",
@@ -296,11 +260,11 @@
       ],
       [
         "Itens reais",
-        "6"
+        "5"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Trends",
+        "Harry Potter HBO · 0/100"
       ]
     ]
   },
@@ -308,23 +272,24 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
-    "unit": "materias/videos/posts",
+    "base_count": 5,
+    "unit": "itens",
     "net": 0,
-    "buzz": 68,
+    "buzz": 60,
     "news_count": 5,
-    "youtube_count": 1,
-    "social_mentions": 0,
+    "youtube_count": 0,
+    "trends_score": 0,
+    "trends_keyword": "Harry Potter HBO",
     "backfill": true,
     "sentiment_index": 50
   }
