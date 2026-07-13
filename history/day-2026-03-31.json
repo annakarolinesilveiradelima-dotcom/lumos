@@ -1,17 +1,17 @@
 {
   "label": "31 mar 2026",
-  "updated": "13 jul 2026, 13:10",
+  "updated": "13 jul 2026, 15:19",
   "kpi": {
     "mentions": {
-      "v": "0 materias/posts",
+      "v": "1 item",
       "d": 0,
-      "sub": "sem cobertura real nesta semana - 25-31 mar 2026"
+      "sub": "0 noticias - 1 videos YouTube - 0 posts Reddit - 25-31 mar 2026"
     },
     "sentiment": {
-      "v": "-",
-      "suf": "",
+      "v": "+0",
+      "suf": "/100",
       "d": 0,
-      "sub": "sem base suficiente"
+      "sub": "indice semanal por cobertura"
     },
     "sov": {
       "v": "-",
@@ -20,26 +20,26 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "0",
+      "v": "28",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em noticias, YouTube e Reddit reais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
   ],
   "stack": [
     [
@@ -80,7 +80,7 @@
   ],
   "platforms": [
     {
-      "name": "Imprensa/Reddit",
+      "name": "Imprensa",
       "vol": 1,
       "senti": "neu",
       "ang": -90,
@@ -89,22 +89,82 @@
         "n": 0,
         "g": 100
       }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
+  "narratives": [
+    {
+      "t": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Zod",
+          "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "YouTube - Zod",
+      "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4",
+      "title": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
+      "cat": "neu",
+      "time": "31 mar, 23:17",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Zod",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4"
+    }
+  ],
   "risks": [
     {
-      "t": "Semana sem cobertura social/editorial real",
+      "t": "Risco baixo na janela",
       "sev": "low",
-      "d": "Nao foram encontradas materias ou posts reais para a janela 25-31 mar 2026.",
-      "rec": "Manter monitoramento e ampliar fontes gratuitas como Google Trends e YouTube."
+      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 25-31 mar 2026.",
     "facts": [
       [
         "Janela",
@@ -112,33 +172,40 @@
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
+      ],
+      [
+        "Itens reais",
+        "1"
       ],
       [
         "Dados ficticios",
         "nao"
-      ],
-      [
-        "Status",
-        "sem cobertura real"
       ]
     ]
   },
   "opps": [
     {
-      "ico": "mail",
-      "t": "Monitorar proxima coleta",
-      "d": "A janela 25-31 mar 2026 ainda nao tem fonte real suficiente. Proximo passo: manter backfill/monitoramento."
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "materias/posts",
+    "base_count": 1,
+    "unit": "materias/videos/posts",
     "net": 0,
-    "buzz": 0,
+    "buzz": 28,
     "news_count": 0,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 50
   }
 }

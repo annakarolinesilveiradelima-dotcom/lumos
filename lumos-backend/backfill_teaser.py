@@ -18,6 +18,11 @@ try:
 except Exception:
     social_reddit = None
 
+try:
+    import social_youtube
+except Exception:
+    social_youtube = None
+
 
 TIMEOUT = 25
 BR_TZ = ZoneInfo("America/Sao_Paulo")
@@ -164,16 +169,23 @@ def _build_sentiment(coverage):
     return p, g, n, index
 
 
+def _platform_from_outlet(outlet):
+    outlet = str(outlet or "")
+
+    if outlet.startswith("Reddit"):
+        return "Reddit"
+
+    if outlet.startswith("YouTube"):
+        return "YouTube"
+
+    return "Imprensa"
+
+
 def _narratives_from_coverage(coverage):
     narratives = []
 
     for item in coverage[:6]:
-        outlet = str(item.get("o", "Fonte"))
-
-        if outlet.startswith("Reddit"):
-            platform = "Reddit"
-        else:
-            platform = "Imprensa"
+        platform = _platform_from_outlet(item.get("o", "Fonte"))
 
         narratives.append({
             "t": item.get("title", "Cobertura real coletada"),
@@ -327,7 +339,7 @@ def _risks_from_coverage(coverage, week_label):
             {
                 "t": "Semana sem cobertura social/editorial real",
                 "sev": "low",
-                "d": f"Nao foram encontradas materias ou posts reais para a janela {week_label}.",
+                "d": f"Nao foram encontradas materias, videos ou posts reais para a janela {week_label}.",
                 "rec": "Manter monitoramento e ampliar fontes gratuitas como Google Trends e YouTube."
             }
         ]
@@ -347,7 +359,7 @@ def _risks_from_coverage(coverage, week_label):
         risks.append({
             "t": "Sensibilidade em torno de elenco",
             "sev": "mid",
-            "d": "Materias ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+            "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
             "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
         })
 
@@ -381,7 +393,7 @@ def _opps_from_coverage(coverage, week_label):
         {
             "ico": "film",
             "t": "Organizar narrativa de comparacao",
-            "d": "Usar conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+            "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
         }
     ]
 
@@ -392,7 +404,7 @@ def _empty_snapshot(snapshot_date, week_label):
         "updated": _stamp(snapshot_date),
         "kpi": {
             "mentions": {
-                "v": "0 materias/posts",
+                "v": "0 materias/videos/posts",
                 "d": 0,
                 "sub": f"sem cobertura real nesta semana - {week_label}"
             },
@@ -433,7 +445,7 @@ def _empty_snapshot(snapshot_date, week_label):
         ],
         "platforms": [
             {
-                "name": "Imprensa/Reddit",
+                "name": "Imprensa/YouTube/Reddit",
                 "vol": 1,
                 "senti": "neu",
                 "ang": -90,
@@ -462,10 +474,11 @@ def _empty_snapshot(snapshot_date, week_label):
         "ephem": [],
         "_raw": {
             "base_count": 0,
-            "unit": "materias/posts",
+            "unit": "materias/videos/posts",
             "net": 0,
             "buzz": 0,
             "news_count": 0,
+            "youtube_count": 0,
             "social_mentions": 0,
             "backfill": True
         }
@@ -488,7 +501,66 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
         if str(item.get("o", "")).startswith("Reddit")
     )
 
-    press_count = count - reddit_count
+    youtube_count = sum(
+        1 for item in coverage
+        if str(item.get("o", "")).startswith("YouTube")
+    )
+
+    press_count = count - reddit_count - youtube_count
+
+    platforms = [
+        {
+            "name": "Imprensa",
+            "vol": max(press_count, 1),
+            "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
+            "ang": -90,
+            "s": {
+                "p": pos,
+                "n": neg,
+                "g": neu
+            }
+        },
+        {
+            "name": "YouTube",
+            "vol": max(youtube_count, 1),
+            "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
+            "ang": 70,
+            "s": {
+                "p": pos,
+                "n": neg,
+                "g": neu
+            }
+        },
+        {
+            "name": "Reddit",
+            "vol": max(reddit_count, 1),
+            "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
+            "ang": 128,
+            "s": {
+                "p": pos,
+                "n": neg,
+                "g": neu
+            }
+        }
+    ]
+
+    creators = []
+
+    for item in coverage:
+        outlet = str(item.get("o", ""))
+
+        if outlet.startswith("YouTube"):
+            creators.append({
+                "h": outlet.replace("YouTube - ", ""),
+                "pf": "YouTube",
+                "type": "Video sobre Harry Potter HBO",
+                "senti": _senti_from_cat(item.get("cat", "neu")),
+                "reach": "nao coletado",
+                "rel": 60,
+                "risk": "low",
+                "c": "#E7A94B",
+                "u": item.get("u", "#")
+            })
 
     return {
         "label": _label(snapshot_date),
@@ -497,7 +569,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             "mentions": {
                 "v": f"{count} item" + ("" if count == 1 else "s"),
                 "d": 0,
-                "sub": f"{press_count} noticias - {reddit_count} posts Reddit - {week_label}"
+                "sub": f"{press_count} noticias - {youtube_count} videos YouTube - {reddit_count} posts Reddit - {week_label}"
             },
             "sentiment": {
                 "v": ("+" if net >= 0 else "") + str(net),
@@ -522,7 +594,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em noticias e Reddit reais"
+            "tone": "Backfill semanal baseado em noticias, YouTube e Reddit reais"
         },
         "buzz7": [count, count, count, count, count, count, count],
         "stack": [
@@ -534,33 +606,10 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             [pos, neu, neg],
             [pos, neu, neg]
         ],
-        "platforms": [
-            {
-                "name": "Imprensa",
-                "vol": max(press_count, 1),
-                "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
-                "ang": -90,
-                "s": {
-                    "p": pos,
-                    "n": neg,
-                    "g": neu
-                }
-            },
-            {
-                "name": "Reddit",
-                "vol": max(reddit_count, 1),
-                "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
-                "ang": 128,
-                "s": {
-                    "p": pos,
-                    "n": neg,
-                    "g": neu
-                }
-            }
-        ],
+        "platforms": platforms,
         "narratives": narratives,
         "coverage": coverage[:8],
-        "creators": [],
+        "creators": creators[:8],
         "risks": _risks_from_coverage(coverage, week_label),
         "heroOpp": {
             "title": "Leitura semanal desde o teaser",
@@ -576,10 +625,11 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
         "ephem": [],
         "_raw": {
             "base_count": count,
-            "unit": "materias/posts",
+            "unit": "materias/videos/posts",
             "net": net,
             "buzz": buzz,
             "news_count": press_count,
+            "youtube_count": youtube_count,
             "social_mentions": reddit_count,
             "backfill": True,
             "sentiment_index": sentiment_index
@@ -636,11 +686,17 @@ def regenerate_feed():
 
 def main():
     api_key = os.environ.get("GNEWS_API_KEY", "").strip()
+    youtube_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
 
     if not api_key:
         print("[backfill] GNEWS_API_KEY nao configurada. Seguindo sem GNews.")
     else:
-        print(f"[backfill] API key detectada com {len(api_key)} caracteres")
+        print(f"[backfill] GNews key detectada com {len(api_key)} caracteres")
+
+    if not youtube_key:
+        print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
+    else:
+        print(f"[backfill] YouTube key detectada com {len(youtube_key)} caracteres")
 
     now = _now_br()
 
@@ -652,6 +708,11 @@ def main():
         print("[backfill] social_reddit nao disponivel. Reddit sera ignorado.")
     else:
         print("[backfill] social_reddit disponivel. Reddit sera incluido.")
+
+    if social_youtube is None:
+        print("[backfill] social_youtube nao disponivel. YouTube sera ignorado.")
+    else:
+        print("[backfill] social_youtube disponivel. YouTube sera incluido.")
 
     start = TEASER_DATE
     week_index = 1
@@ -685,6 +746,10 @@ def main():
                 data = response.json()
                 articles = data.get("articles", [])
                 coverage.extend(_coverage_from_articles(articles))
+
+            if social_youtube is not None and youtube_key:
+                youtube_coverage = social_youtube.collect_youtube_week(start, end, youtube_key)
+                coverage.extend(youtube_coverage)
 
             if social_reddit is not None:
                 reddit_coverage = social_reddit.collect_reddit_week(start, end)
