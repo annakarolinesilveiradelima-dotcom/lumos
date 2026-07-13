@@ -1,14 +1,14 @@
 {
   "label": "14 abr 2026",
-  "updated": "13 jul 2026, 16:12",
+  "updated": "13 jul 2026, 16:44",
   "kpi": {
     "mentions": {
-      "v": "10 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "10 noticias - 0 videos YouTube - 0 sinais Trends - 8-14 abr 2026"
+      "sub": "10 noticias - 2 videos YouTube - 0 sinais Trends - 8-14 abr 2026"
     },
     "sentiment": {
-      "v": "+20",
+      "v": "+17",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -27,8 +27,8 @@
     }
   },
   "senti": {
-    "pos": 20,
-    "neu": 80,
+    "pos": 17,
+    "neu": 83,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
@@ -43,38 +43,38 @@
   ],
   "stack": [
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ],
     [
-      20,
-      80,
+      17,
+      83,
       0
     ]
   ],
@@ -85,20 +85,20 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 20,
+        "p": 17,
         "n": 0,
-        "g": 80
+        "g": 83
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
+      "vol": 2,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 20,
+        "p": 17,
         "n": 0,
-        "g": 80
+        "g": 83
       }
     },
     {
@@ -277,7 +277,30 @@
       "scope": "Google News RSS"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "sagu",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=GjFsBODHYUc"
+    },
+    {
+      "h": "Potter head",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=EABZxAegaAo"
+    }
+  ],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
@@ -300,11 +323,11 @@
       ],
       [
         "Itens reais",
-        "10"
+        "12"
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -322,15 +345,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 10,
+    "base_count": 12,
     "unit": "itens",
-    "net": 20,
+    "net": 17,
     "buzz": 100,
     "news_count": 10,
-    "youtube_count": 0,
+    "youtube_count": 2,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
-    "sentiment_index": 60
+    "sentiment_index": 58
   }
 }

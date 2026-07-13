@@ -1,14 +1,14 @@
 {
   "label": "21 abr 2026",
-  "updated": "13 jul 2026, 16:13",
+  "updated": "13 jul 2026, 16:44",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "4 noticias - 0 videos YouTube - 0 sinais Trends - 15-21 abr 2026"
+      "sub": "4 noticias - 8 videos YouTube - 0 sinais Trends - 15-21 abr 2026"
     },
     "sentiment": {
-      "v": "+75",
+      "v": "+42",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "90",
+      "v": "100",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
-    "pos": 75,
-    "neu": 25,
+    "pos": 42,
+    "neu": 58,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    90,
-    90,
-    90,
-    90,
-    90,
-    90,
-    90
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ],
     [
-      75,
-      25,
+      42,
+      58,
       0
     ]
   ],
@@ -82,23 +82,23 @@
     {
       "name": "Imprensa",
       "vol": 4,
-      "senti": "pos",
+      "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 75,
+        "p": 42,
         "n": 0,
-        "g": 25
+        "g": 58
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
-      "senti": "pos",
+      "vol": 8,
+      "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 75,
+        "p": 42,
         "n": 0,
-        "g": 25
+        "g": 58
       }
     },
     {
@@ -177,6 +177,38 @@
           "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVNVZ3Vnh0dVhCZHh0S0RWOHNfZFNXZEVxelJ3UDBtQmF5STZDLVFuYko2Mk9QR1Q4VV82aUFNRG8wRjRQLVpUNXBFZlFQRHR5QkJla1VNS3BWS2xYRkJYejN6dkU5b1ZWM3FqQWxSNW_SAXZBVV95cUxQdUlqLXZtblFtY0t6aWlrSnRlMGJOcWx4M2lQNUlJVFpua0xEa3JmLVNkbkhVYUJsaVFqN25qMjVQenlrNVpkNlVTNUo2QU9BY0lva1kxTzRrOU5DMUhINno1UnV2dHBKLTNIWlN0YUlkamZwNXN3?oc=5"
         }
       ]
+    },
+    {
+      "t": "Por qué NO me gusta el nuevo Snape para la serie de Harry Potter #PaapaEssiedu #Snape #Potterhead",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Hather Delge",
+          "u": "https://www.youtube.com/watch?v=dQFlOOMk7xw"
+        }
+      ]
+    },
+    {
+      "t": "The actors in Harry Potter actually took some pretty strange things home",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Cine Trivia Lab",
+          "u": "https://www.youtube.com/watch?v=GU4JMeBfdow"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -211,9 +243,130 @@
       "cat": "nos",
       "time": "19 abr, 04:00",
       "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Hather Delge",
+      "u": "https://www.youtube.com/watch?v=dQFlOOMk7xw",
+      "title": "Por qué NO me gusta el nuevo Snape para la serie de Harry Potter #PaapaEssiedu #Snape #Potterhead",
+      "cat": "neu",
+      "time": "21 abr, 23:15",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Cine Trivia Lab",
+      "u": "https://www.youtube.com/watch?v=GU4JMeBfdow",
+      "title": "The actors in Harry Potter actually took some pretty strange things home",
+      "cat": "neu",
+      "time": "21 abr, 22:27",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Por aí ",
+      "u": "https://www.youtube.com/watch?v=tPGvlnhz4rk",
+      "title": "SALÁRIOS CHOCANTES do novo elenco de Harry Potter 💰",
+      "cat": "pos",
+      "time": "21 abr, 20:01",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - TheYorkshirePud",
+      "u": "https://www.youtube.com/watch?v=_-kbwQO9q9g",
+      "title": "The Harry Potter Reboot Is A Mess- And It Starts With SNAPE.",
+      "cat": "nos",
+      "time": "21 abr, 17:30",
+      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "Hather Delge",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=dQFlOOMk7xw"
+    },
+    {
+      "h": "Cine Trivia Lab",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=GU4JMeBfdow"
+    },
+    {
+      "h": "Por aí ",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=tPGvlnhz4rk"
+    },
+    {
+      "h": "TheYorkshirePud",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=_-kbwQO9q9g"
+    },
+    {
+      "h": "wondatell",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=_EHGbo5_ArU"
+    },
+    {
+      "h": "Rewind MomentsTV",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=RXz4LdImA5Q"
+    },
+    {
+      "h": "FruitDrama",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "div",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=XVuis7llg2k"
+    },
+    {
+      "h": "Tyler Murphy",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=DjU_pw--VUQ"
+    }
+  ],
   "risks": [
     {
       "t": "Comparacao com os filmes originais",
@@ -242,11 +395,11 @@
       ],
       [
         "Itens reais",
-        "4"
+        "12"
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -264,15 +417,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
+    "base_count": 12,
     "unit": "itens",
-    "net": 75,
-    "buzz": 90,
+    "net": 42,
+    "buzz": 100,
     "news_count": 4,
-    "youtube_count": 0,
+    "youtube_count": 8,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
-    "sentiment_index": 88
+    "sentiment_index": 71
   }
 }

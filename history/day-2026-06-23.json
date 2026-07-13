@@ -1,6 +1,6 @@
 {
   "label": "23 jun 2026",
-  "updated": "13 jul 2026, 16:15",
+  "updated": "13 jul 2026, 16:46",
   "kpi": {
     "mentions": {
       "v": "4 items",
@@ -240,7 +240,7 @@
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -265,7 +265,7 @@
     "news_count": 4,
     "youtube_count": 0,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
     "sentiment_index": 62
   }

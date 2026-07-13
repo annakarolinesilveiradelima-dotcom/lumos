@@ -45,11 +45,12 @@ SEARCH_QUERIES = [
 ]
 
 TRENDS_KEYWORDS = [
+    "Harry Potter",
     "Harry Potter HBO",
     "Harry Potter Max",
     "Harry Potter series",
-    "Harry Potter HBO series",
-    "Dominic McLaughlin",
+    "HBO Harry Potter",
+    "nova serie Harry Potter",
     "John Lithgow Harry Potter",
     "Paapa Essiedu Harry Potter"
 ]
@@ -169,11 +170,13 @@ def _google_news_url(query):
 
 
 def _trends_url(query):
+    encoded = quote_plus(query)
+
     return (
         "https://trends.google.com/trends/explore"
-        f"?date=2026-03-25%202026-07-13"
-        f"&geo=BR"
-        f"&q={quote_plus(query)}"
+        "?date=2026-03-25%202026-07-13"
+        "&geo=BR"
+        f"&q={encoded}"
     )
 
 
@@ -393,11 +396,99 @@ def collect_youtube_week(start, end, api_key):
     return results
 
 
-def collect_google_trends_week(start, end):
+def _chunk_keywords(keywords, size=5):
+    for i in range(0, len(keywords), size):
+        yield keywords[i:i + size]
+
+
+def collect_google_trends_period(global_start, global_end):
     try:
         from pytrends.request import TrendReq
     except Exception as exc:
         print(f"[trends] pytrends nao instalado/disponivel: {exc}")
+        return {}
+
+    timeframe = f"{global_start:%Y-%m-%d} {global_end:%Y-%m-%d}"
+
+    for geo in ["BR", ""]:
+        print(f"[trends] coletando periodo completo timeframe='{timeframe}' geo='{geo or 'GLOBAL'}'")
+
+        geo_scores = {}
+
+        try:
+            pytrends = TrendReq(
+                hl="pt-BR",
+                tz=180,
+                timeout=(10, 25),
+                retries=2,
+                backoff_factor=0.3
+            )
+
+            for chunk in _chunk_keywords(TRENDS_KEYWORDS, 5):
+                try:
+                    pytrends.build_payload(
+                        chunk,
+                        cat=0,
+                        timeframe=timeframe,
+                        geo=geo,
+                        gprop=""
+                    )
+
+                    df = pytrends.interest_over_time()
+
+                    if df is None or df.empty:
+                        print(f"[trends] dataframe vazio para chunk={chunk}")
+                        continue
+
+                    if "isPartial" in df.columns:
+                        df = df.drop(columns=["isPartial"])
+
+                    for date_index, row in df.iterrows():
+                        try:
+                            date_key = date_index.to_pydatetime().date().isoformat()
+                        except Exception:
+                            date_key = str(date_index)[:10]
+
+                        if date_key not in geo_scores:
+                            geo_scores[date_key] = {}
+
+                        for keyword in chunk:
+                            if keyword in row:
+                                try:
+                                    value = int(row[keyword])
+                                except Exception:
+                                    value = 0
+
+                                geo_scores[date_key][keyword] = value
+
+                    print(f"[trends] chunk={chunk} linhas={len(df)}")
+
+                    time.sleep(2)
+
+                except Exception as exc:
+                    print(f"[trends] falha chunk={chunk}: {exc}")
+
+        except Exception as exc:
+            print(f"[trends] falha geral geo='{geo}': {exc}")
+
+        max_value = 0
+
+        for date_scores in geo_scores.values():
+            if date_scores:
+                max_value = max(max_value, max(date_scores.values()))
+
+        print(f"[trends] geo='{geo or 'GLOBAL'}' max_value={max_value}")
+
+        if max_value > 0:
+            print(f"[trends] datas coletadas={len(geo_scores)}")
+            return geo_scores
+
+    print("[trends] nenhum dado valido coletado")
+    return {}
+
+
+def score_google_trends_week(start, end, trends_period_scores):
+    if not trends_period_scores:
         return {
             "score": 0,
             "top_keyword": "",
@@ -405,54 +496,32 @@ def collect_google_trends_week(start, end):
             "coverage": []
         }
 
-    scores = {}
+    start_date = start.date()
+    end_date = end.date()
+    bucket = {}
 
-    try:
-        pytrends = TrendReq(
-            hl="pt-BR",
-            tz=180,
-            timeout=(10, 25),
-            retries=2,
-            backoff_factor=0.2
-        )
+    for date_key, keyword_scores in trends_period_scores.items():
+        try:
+            current_date = datetime.fromisoformat(date_key).date()
+        except Exception:
+            continue
 
-        timeframe = f"{start:%Y-%m-%d} {end:%Y-%m-%d}"
+        if not (start_date <= current_date <= end_date):
+            continue
 
-        for keyword in TRENDS_KEYWORDS:
-            try:
-                pytrends.build_payload(
-                    [keyword],
-                    cat=0,
-                    timeframe=timeframe,
-                    geo="BR",
-                    gprop=""
-                )
+        for keyword, value in keyword_scores.items():
+            if keyword not in bucket:
+                bucket[keyword] = []
 
-                df = pytrends.interest_over_time()
+            bucket[keyword].append(int(value or 0))
 
-                if df is None or df.empty or keyword not in df.columns:
-                    scores[keyword] = 0
-                    continue
+    averages = {}
 
-                values = [
-                    int(v)
-                    for v in df[keyword].fillna(0).tolist()
-                    if str(v).isdigit() or isinstance(v, (int, float))
-                ]
+    for keyword, values in bucket.items():
+        values = [int(v or 0) for v in values]
+        averages[keyword] = round(sum(values) / len(values)) if values else 0
 
-                score = round(sum(values) / len(values)) if values else 0
-                scores[keyword] = score
-
-                print(f"[trends] keyword='{keyword}' score={score}")
-
-                time.sleep(1)
-
-            except Exception as exc:
-                print(f"[trends] falha keyword='{keyword}': {exc}")
-                scores[keyword] = 0
-
-    except Exception as exc:
-        print(f"[trends] falha geral: {exc}")
+    if not averages:
         return {
             "score": 0,
             "top_keyword": "",
@@ -460,16 +529,8 @@ def collect_google_trends_week(start, end):
             "coverage": []
         }
 
-    if not scores:
-        return {
-            "score": 0,
-            "top_keyword": "",
-            "keywords": {},
-            "coverage": []
-        }
-
-    top_keyword = max(scores, key=scores.get)
-    top_score = int(scores.get(top_keyword, 0) or 0)
+    top_keyword = max(averages, key=averages.get)
+    top_score = int(averages.get(top_keyword, 0) or 0)
 
     coverage = []
 
@@ -483,12 +544,12 @@ def collect_google_trends_week(start, end):
             "scope": f"Google Trends - interesse {top_score}/100"
         })
 
-    print(f"[trends] score final da semana={top_score} top_keyword='{top_keyword}'")
+    print(f"[trends] semana {start.date()} to {end.date()} score={top_score} top_keyword='{top_keyword}'")
 
     return {
         "score": top_score,
         "top_keyword": top_keyword,
-        "keywords": scores,
+        "keywords": averages,
         "coverage": coverage
     }
 
@@ -517,9 +578,6 @@ def _platform_from_source(source):
 
     if source.startswith("Google Trends"):
         return "Google Trends"
-
-    if source.startswith("Reddit"):
-        return "Reddit"
 
     return "Imprensa"
 
@@ -836,7 +894,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, trends):
                 ["Janela", week_label],
                 ["Marco", "25/03/2026"],
                 ["Itens reais", str(count)],
-                ["Trends", f"{trends_keyword} · {trends_score}/100"]
+                ["Trends", f"{trends_keyword or 'sem sinal'} · {trends_score}/100"]
             ]
         },
         "opps": _opps_from_coverage(coverage, week_label),
@@ -856,7 +914,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, trends):
     }
 
 
-def _collect_sources_for_range(start, end, youtube_key):
+def _collect_sources_for_range(start, end, youtube_key, trends_period_scores):
     coverage = []
 
     google_news_coverage = collect_google_news_week(start, end)
@@ -865,7 +923,7 @@ def _collect_sources_for_range(start, end, youtube_key):
     youtube_coverage = collect_youtube_week(start, end, youtube_key)
     coverage.extend(youtube_coverage)
 
-    trends = collect_google_trends_week(start, end)
+    trends = score_google_trends_week(start, end, trends_period_scores)
 
     if not coverage and trends.get("coverage"):
         coverage.extend(trends.get("coverage", []))
@@ -884,13 +942,13 @@ def _save_snapshot(snapshot_date, snapshot):
     print(f"[backfill] snapshot salvo: {path}")
 
 
-def _build_current_day(youtube_key):
+def _build_current_day(youtube_key, trends_period_scores):
     now = _now_br()
     start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
     end = now
     label = _label(now)
 
-    coverage, trends = _collect_sources_for_range(start, end, youtube_key)
+    coverage, trends = _collect_sources_for_range(start, end, youtube_key, trends_period_scores)
 
     if coverage:
         snapshot = _snapshot_from_coverage(end, label, coverage, trends)
@@ -932,8 +990,10 @@ def main():
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
-    start = TEASER_DATE
     now = _now_br()
+    trends_period_scores = collect_google_trends_period(TEASER_DATE, now)
+
+    start = TEASER_DATE
     week_index = 1
 
     while start <= now:
@@ -947,7 +1007,7 @@ def main():
         print(f"[backfill] Semana {week_index}: {week_label}")
 
         try:
-            coverage, trends = _collect_sources_for_range(start, end, youtube_key)
+            coverage, trends = _collect_sources_for_range(start, end, youtube_key, trends_period_scores)
 
             print(f"[backfill] {len(coverage)} itens reais/sinais na semana {week_label}")
 
@@ -981,7 +1041,7 @@ def main():
         start = start + timedelta(days=7)
         week_index += 1
 
-    current_day = _build_current_day(youtube_key)
+    current_day = _build_current_day(youtube_key, trends_period_scores)
     regenerate_feed(current_day)
 
     print("[backfill] concluido")

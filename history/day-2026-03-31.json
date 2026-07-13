@@ -1,6 +1,6 @@
 {
   "label": "31 mar 2026",
-  "updated": "13 jul 2026, 16:12",
+  "updated": "13 jul 2026, 16:43",
   "kpi": {
     "mentions": {
       "v": "12 items",
@@ -269,11 +269,11 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "CNN Brasil",
-      "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSTB4eGdObmltNGJZZ1RNWUhBVVltekpRaUEtWS1Vc3cxQVhrLUl5X3poYUhxNHhpMnk0NHczaHlmUTZ1blR2cnpicVpQaWVtcTZpd0VCSVBoZDI1VkYyZDdzU2NTYnBuTWZ4ck9INzJvZEFycUh0ekhCUVBtcWh1TlBzNjhVVGVDcVlWRGtLV0VsVXNUb0ZmVEI3UjlXY2YxQWc?oc=5",
-      "title": "\"Harry Potter\": qual a relação de J. K. Rowling com nova série do bruxo",
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56NTN2UkkwTjJpMV9KTmpQWDVqUHc5SlRHd2htenc1aVB2Sk1sTmwtVFNwNXdTQkNxNEx5UktsWEVMcXhzMXRXSG9GeWktMFVjbHZDbmdiME1Hcm9tTWc0T0dwNFhhVDFhV3ZOY1Z2dWFyT2la?oc=5",
+      "title": "Harry Potter não vai seguir a fórmula do MCU, diz HBO",
       "cat": "neu",
-      "time": "26 mar, 04:00",
+      "time": "30 mar, 04:00",
       "scope": "Google News RSS"
     }
   ],
@@ -304,7 +304,7 @@
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -329,7 +329,7 @@
     "news_count": 12,
     "youtube_count": 0,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
     "sentiment_index": 54
   }

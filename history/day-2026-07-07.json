@@ -1,14 +1,14 @@
 {
   "label": "7 jul 2026",
-  "updated": "13 jul 2026, 16:15",
+  "updated": "13 jul 2026, 16:47",
   "kpi": {
     "mentions": {
-      "v": "9 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "9 noticias - 0 videos YouTube - 0 sinais Trends - 1-7 jul 2026"
+      "sub": "9 noticias - 3 videos YouTube - 0 sinais Trends - 1-7 jul 2026"
     },
     "sentiment": {
-      "v": "+11",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,62 +20,62 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "98",
+      "v": "100",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal com Google Trends 0/100"
     }
   },
   "senti": {
-    "pos": 11,
-    "neu": 89,
-    "neg": 0,
+    "pos": 8,
+    "neu": 84,
+    "neg": 8,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    98,
-    98,
-    98,
-    98,
-    98,
-    98,
-    98
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ],
     [
-      11,
-      89,
-      0
+      8,
+      84,
+      8
     ]
   ],
   "platforms": [
@@ -85,20 +85,20 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 11,
-        "n": 0,
-        "g": 89
+        "p": 8,
+        "n": 8,
+        "g": 84
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
+      "vol": 3,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 11,
-        "n": 0,
-        "g": 89
+        "p": 8,
+        "n": 8,
+        "g": 84
       }
     },
     {
@@ -131,22 +131,6 @@
       ]
     },
     {
-      "t": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "einerd.com",
-          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5"
-        }
-      ]
-    },
-    {
       "t": "Atriz deixa nova série de 'Harry Potter' por 'circunstâncias imprevistas'",
       "vol": 1,
       "senti": "neu",
@@ -159,6 +143,22 @@
         {
           "o": "Terra",
           "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnBqTU5KSUdhTURnQmN4MjZfZElpaDBnd2Zyd2RTNlk2N3RHLU9PbjgyOFR4Y09sZ002bjFza0pBSHZvZUVqRnR3TmNIc2lldS11STVKeENFYkxyNVd4cHVNaWZSUUVnU3ZDQ3JjMFpaY09HS0Y2V0Vza21uckZJRWpFRmg3amVMU0J2TnRkUGhkV2xDbWVIQkJUNnhtckZsd2kyTDlpZDJEbW5rYXhCQXMxR29palBob0JPcmRWZURmajFGa2VEYmVqZGJuZFdLd1piazNCeDB4SFhoX1NrQ3JlNWNPYTFaSFR2MEJHNVAxVkx3aVN4RXFlbnM?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5"
         }
       ]
     },
@@ -221,19 +221,19 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "einerd.com",
-      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5",
-      "title": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
-      "cat": "neu",
-      "time": "7 jul, 14:00",
-      "scope": "Google News RSS"
-    },
-    {
       "o": "Terra",
       "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnBqTU5KSUdhTURnQmN4MjZfZElpaDBnd2Zyd2RTNlk2N3RHLU9PbjgyOFR4Y09sZ002bjFza0pBSHZvZUVqRnR3TmNIc2lldS11STVKeENFYkxyNVd4cHVNaWZSUUVnU3ZDQ3JjMFpaY09HS0Y2V0Vza21uckZJRWpFRmg3amVMU0J2TnRkUGhkV2xDbWVIQkJUNnhtckZsd2kyTDlpZDJEbW5rYXhCQXMxR29palBob0JPcmRWZURmajFGa2VEYmVqZGJuZFdLd1piazNCeDB4SFhoX1NrQ3JlNWNPYTFaSFR2MEJHNVAxVkx3aVN4RXFlbnM?oc=5",
       "title": "Atriz deixa nova série de 'Harry Potter' por 'circunstâncias imprevistas'",
       "cat": "neu",
       "time": "6 jul, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5",
+      "title": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
+      "cat": "neu",
+      "time": "7 jul, 14:00",
       "scope": "Google News RSS"
     },
     {
@@ -277,7 +277,41 @@
       "scope": "Google News RSS"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "GREEN SCREEN ANIMATION",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neg",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=xdBQfjwXGg8"
+    },
+    {
+      "h": "Lumos Lore",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=i40-5C3oh9o"
+    },
+    {
+      "h": "Wizards Rest",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=ykn7z3s5b_k"
+    }
+  ],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
@@ -300,11 +334,11 @@
       ],
       [
         "Itens reais",
-        "9"
+        "12"
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -322,15 +356,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 9,
+    "base_count": 12,
     "unit": "itens",
-    "net": 11,
-    "buzz": 98,
+    "net": 0,
+    "buzz": 100,
     "news_count": 9,
-    "youtube_count": 0,
+    "youtube_count": 3,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
-    "sentiment_index": 56
+    "sentiment_index": 50
   }
 }

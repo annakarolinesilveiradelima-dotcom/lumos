@@ -1,14 +1,14 @@
 {
   "label": "28 abr 2026",
-  "updated": "13 jul 2026, 16:13",
+  "updated": "13 jul 2026, 16:44",
   "kpi": {
     "mentions": {
-      "v": "6 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "6 noticias - 0 videos YouTube - 0 sinais Trends - 22-28 abr 2026"
+      "sub": "6 noticias - 6 videos YouTube - 0 sinais Trends - 22-28 abr 2026"
     },
     "sentiment": {
-      "v": "+33",
+      "v": "+25",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,7 +20,7 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "84",
+      "v": "100",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal com Google Trends 0/100"
@@ -28,54 +28,54 @@
   },
   "senti": {
     "pos": 33,
-    "neu": 67,
-    "neg": 0,
+    "neu": 59,
+    "neg": 8,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
   },
   "buzz7": [
-    84,
-    84,
-    84,
-    84,
-    84,
-    84,
-    84
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ],
     [
       33,
-      67,
-      0
+      59,
+      8
     ]
   ],
   "platforms": [
@@ -86,19 +86,19 @@
       "ang": -90,
       "s": {
         "p": 33,
-        "n": 0,
-        "g": 67
+        "n": 8,
+        "g": 59
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
+      "vol": 6,
       "senti": "neu",
       "ang": 70,
       "s": {
         "p": 33,
-        "n": 0,
-        "g": 67
+        "n": 8,
+        "g": 59
       }
     },
     {
@@ -259,15 +259,104 @@
       "cat": "pos",
       "time": "23 abr, 04:00",
       "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Holly Flash ",
+      "u": "https://www.youtube.com/watch?v=yRo90HRlIvk",
+      "title": "Harry Potter Returns (2026) - First Look | HBO Max Reboot &amp; Podcast | Magic Begins Again",
+      "cat": "nos",
+      "time": "28 abr, 22:59",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Mixiverso",
+      "u": "https://www.youtube.com/watch?v=AhwEAyfHdiU",
+      "title": "Nueva serie de Harry Potter 🤯  #harrypotter #series #hbomax",
+      "cat": "neg",
+      "time": "28 abr, 22:30",
+      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "Holly Flash ",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=yRo90HRlIvk"
+    },
+    {
+      "h": "Mixiverso",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neg",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=AhwEAyfHdiU"
+    },
+    {
+      "h": "BOX TRAILERS WILD",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=6ESXyuO0Hyk"
+    },
+    {
+      "h": "Hamza Boujelouah",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=6SfRKm9-zfM"
+    },
+    {
+      "h": "Sowick",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "div",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
+    },
+    {
+      "h": "AdriScope",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=XJfZ4Z8_rU8"
+    }
+  ],
   "risks": [
     {
       "t": "Comparacao com os filmes originais",
       "sev": "mid",
       "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
@@ -284,11 +373,11 @@
       ],
       [
         "Itens reais",
-        "6"
+        "12"
       ],
       [
         "Trends",
-        "Harry Potter HBO · 0/100"
+        "sem sinal · 0/100"
       ]
     ]
   },
@@ -306,15 +395,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
+    "base_count": 12,
     "unit": "itens",
-    "net": 33,
-    "buzz": 84,
+    "net": 25,
+    "buzz": 100,
     "news_count": 6,
-    "youtube_count": 0,
+    "youtube_count": 6,
     "trends_score": 0,
-    "trends_keyword": "Harry Potter HBO",
+    "trends_keyword": "",
     "backfill": true,
-    "sentiment_index": 66
+    "sentiment_index": 62
   }
 }
