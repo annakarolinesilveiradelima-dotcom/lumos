@@ -21,12 +21,17 @@ jobs:
 
       - name: Show files
         run: |
-          echo "Root:"
-          ls -la
-          echo "Backend:"
-          ls -la lumos-backend
-          echo "Backfill script:"
-          ls -la lumos-backend/backfill_teaser.py
+          echo "Current folder:"
+          pwd
+          echo ""
+          echo "Root files:"
+          ls -la || true
+          echo ""
+          echo "Backend files:"
+          ls -la lumos-backend || true
+          echo ""
+          echo "Searching for backfill_teaser.py:"
+          find . -name "backfill_teaser.py" -print || true
 
       - name: Install dependencies
         run: |
@@ -35,21 +40,41 @@ jobs:
 
       - name: Check syntax
         run: |
-          python -m py_compile lumos-backend/backfill_teaser.py
+          SCRIPT_PATH=$(find . -name "backfill_teaser.py" | head -n 1)
+
+          if [ -z "$SCRIPT_PATH" ]; then
+            echo "ERRO: backfill_teaser.py não encontrado."
+            echo "Arquivos Python encontrados:"
+            find . -name "*.py" -print
+            exit 1
+   *      fi
+
+          echo "Script e*contrado em: $SCRIPT_PATH"
+       *  python -m py_compile "$SCRIPT_PA*H"
 
       - name: Run backfill
-        env:
-          OUTPUT_DATA: ${{ github.workspace }}/data.json
-          HISTORY_DIR: ${{ github.workspace }}/history
-          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
-        run: |
-          cd lumos-backend
-          python backfill_teaser.py
+   *    env:
+          OUTPUT_DATA: ${* github.workspace }}/data.json
+   *      HISTORY_DIR: ${{ github.work*pace }}/history
+          GNEWS_AP*_KEY: ${{ secrets.GNEWS_API_KEY }}*        run: |
+          SCRIPT_PA*H=$(find . -name "backfill_teaser.*y" | head -n 1)
 
-      - name: Commit results
+          if [ -z "$SCRIPT_PATH" ]; then
+           *echo "ERRO: backfill_teaser.py não*encontrado."
+            exit 1
+  *       fi
+
+          echo "Rodando*script em: $SCRIPT_PATH"
+         *SCRIPT_DIR=$(dirname "$SCRIPT_PATH*)
+          SCRIPT_FILE=$(basename*"$SCRIPT_PATH")
+
+          cd "$SC*IPT_DIR"
+          python "$SCRIPT*FILE"
+
+      - name: Commit result*
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json history/
-          git diff --cached --quiet || git commit -m "manual backfill teaser weeks"
-          git push
+          git conf*g user.name "github-actions[bot]"
+*         git config user.email "41*98282+github-actions[bot]@users.no*eply.github.com"
+          git add*data.json history/
+          git d*ff --cached --quiet || git commit *m "manual backfill teaser weeks"
+ *        git push
