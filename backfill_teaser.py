@@ -1,16 +1,3 @@
-"""
-Lumos backfill_teaser.py
-
-Backfill historico desde o teaser de Harry Potter em 25/03/2026.
-
-O que faz:
-- Busca noticias reais via GNews, semana por semana.
-- Busca posts publicos reais do Reddit, se social_reddit.py estiver disponivel.
-- Nao inventa materia, post, fonte, horario ou volume.
-- Salva snapshots em history/day-YYYY-MM-DD.json.
-- Regenera data.json com weeks preenchido.
-"""
-
 from __future__ import annotations
 
 import json
@@ -34,7 +21,6 @@ except Exception:
 
 TIMEOUT = 25
 BR_TZ = ZoneInfo("America/Sao_Paulo")
-
 TEASER_DATE = datetime(2026, 3, 25, 0, 0, 0, tzinfo=BR_TZ)
 
 PT_MONTHS = [
@@ -209,22 +195,23 @@ def _narratives_from_coverage(coverage):
     return narratives
 
 
+class CombinedResponse:
+    def __init__(self, status_code, articles=None, text=""):
+        self.status_code = status_code
+        self._articles = articles or []
+        self.text = text
+
+    def json(self):
+        return {
+            "articles": self._articles
+        }
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError(self.text)
+
+
 def _gnews_request(api_key, start, end):
-    class CombinedResponse:
-        def __init__(self, status_code, articles=None, text=""):
-            self.status_code = status_code
-            self._articles = articles or []
-            self.text = text
-
-        def json(self):
-            return {
-                "articles": self._articles
-            }
-
-        def raise_for_status(self):
-            if self.status_code >= 400:
-                raise requests.HTTPError(self.text)
-
     queries = [
         "Harry Potter HBO",
         "Harry Potter Max",
@@ -285,8 +272,8 @@ def _gnews_request(api_key, start, end):
 
         if response.status_code in (401, 403, 429):
             if all_articles:
-                print("[backfill] erro/limite apos coletar alguns artigos; salvando itens ja encontrados.")
-                return CombinedResponse(200, all_articles)
+                print("[backfill] limite/erro apos coletar alguns artigos; salvando itens ja encontrados.")
+                return CombinedResponse(200, all_articles, last_error_text)
 
             return CombinedResponse(response.status_code, [], last_error_text)
 
@@ -341,7 +328,7 @@ def _risks_from_coverage(coverage, week_label):
                 "t": "Semana sem cobertura social/editorial real",
                 "sev": "low",
                 "d": f"Nao foram encontradas materias ou posts reais para a janela {week_label}.",
-                "rec": "Manter monitoramento e ampliar fontes gratuitas como Reddit, YouTube e Google Trends."
+                "rec": "Manter monitoramento e ampliar fontes gratuitas como Google Trends e YouTube."
             }
         ]
 
@@ -577,7 +564,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
         "risks": _risks_from_coverage(coverage, week_label),
         "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": f"Semana preenchida por fontes reais: noticias + Reddit publico. Janela: {week_label}.",
+            "desc": f"Semana preenchida por fontes reais. Janela: {week_label}.",
             "facts": [
                 ["Janela", week_label],
                 ["Marco", "25/03/2026"],
@@ -651,14 +638,15 @@ def main():
     api_key = os.environ.get("GNEWS_API_KEY", "").strip()
 
     if not api_key:
-        raise RuntimeError("GNEWS_API_KEY nao configurada. Adicione em GitHub Secrets.")
+        print("[backfill] GNEWS_API_KEY nao configurada. Seguindo sem GNews.")
+    else:
+        print(f"[backfill] API key detectada com {len(api_key)} caracteres")
 
     now = _now_br()
 
     print("[backfill] inicio")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {now:%Y-%m-%d %H:%M}")
-    print(f"[backfill] API key detectada com {len(api_key)} caracteres")
 
     if social_reddit is None:
         print("[backfill] social_reddit nao disponivel. Reddit sera ignorado.")
@@ -679,22 +667,21 @@ def main():
 
         print(f"[backfill] Semana {week_index}: {week_label}")
 
-        response = _gnews_request(api_key, start, end)
-
-        if response.status_code == 429:
-            print("[backfill] limite da GNews atingido: 429 Too Many Requests")
-            print("[backfill] tentando salvar apenas Reddit, se houver.")
-
-        if response.status_code in (401, 403):
-            raise RuntimeError(
-                f"GNews retornou {response.status_code}. Verifique GNEWS_API_KEY/plano."
-            )
-
         coverage = []
+        response = CombinedResponse(200, [])
+
+        if api_key:
+            response = _gnews_request(api_key, start, end)
+
+            if response.status_code in (403, 429):
+                print("[backfill] limite/plano da GNews atingido. Salvando ate aqui e encerrando sem falhar.")
+
+            if response.status_code == 401:
+                print("[backfill] GNews retornou 401. Chave invalida. Encerrando sem falhar.")
+                hit_rate_limit = True
 
         try:
             if response.status_code == 200:
-                response.raise_for_status()
                 data = response.json()
                 articles = data.get("articles", [])
                 coverage.extend(_coverage_from_articles(articles))
@@ -719,7 +706,7 @@ def main():
             snapshot = _empty_snapshot(end, week_label)
             _save_snapshot(end, snapshot)
 
-        if response.status_code == 429:
+        if response.status_code in (401, 403, 429):
             hit_rate_limit = True
             break
 
@@ -731,7 +718,7 @@ def main():
     regenerate_feed()
 
     if hit_rate_limit:
-        print("[backfill] concluido parcialmente por limite da API.")
+        print("[backfill] concluido parcialmente por limite/plano da API.")
     else:
         print("[backfill] concluido")
 
