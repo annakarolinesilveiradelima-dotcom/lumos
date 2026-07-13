@@ -4,27 +4,28 @@ import json
 import os
 import re
 import time
-from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
-
-import requests
 
 import config
 import build_data
 
 try:
-    import social_reddit
+    import social_google_news
 except Exception:
-    social_reddit = None
+    social_google_news = None
 
 try:
     import social_youtube
 except Exception:
     social_youtube = None
 
+try:
+    import social_reddit
+except Exception:
+    social_reddit = None
 
-TIMEOUT = 25
+
 BR_TZ = ZoneInfo("America/Sao_Paulo")
 TEASER_DATE = datetime(2026, 3, 25, 0, 0, 0, tzinfo=BR_TZ)
 
@@ -38,15 +39,11 @@ def _now_br():
     return datetime.now(BR_TZ)
 
 
-def _iso_utc(dt):
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-
-
 def _label(dt):
     return f"{dt.day} {PT_MONTHS[dt.month - 1]} {dt.year}"
 
 
-def _stamp(dt):
+def _stamp():
     now = _now_br()
     return f"{_label(now)}, {now:%H:%M}"
 
@@ -59,42 +56,6 @@ def _range_label(start, end):
         f"{start.day} {PT_MONTHS[start.month - 1]}-"
         f"{end.day} {PT_MONTHS[end.month - 1]} {end.year}"
     )
-
-
-def _parse_dt(value):
-    if not value:
-        return ""
-
-    try:
-        if isinstance(value, str) and value.endswith("Z"):
-            return datetime.fromisoformat(
-                value.replace("Z", "+00:00")
-            ).astimezone(timezone.utc).isoformat()
-
-        return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
-
-    except Exception:
-        try:
-            return datetime.fromisoformat(str(value)).astimezone(timezone.utc).isoformat()
-        except Exception:
-            return str(value)
-
-
-def _format_time(value):
-    parsed = _parse_dt(value)
-
-    if not parsed:
-        return "sem horario disponivel"
-
-    try:
-        dt = datetime.fromisoformat(str(parsed).replace("Z", "+00:00")).astimezone(BR_TZ)
-        return f"{dt.day} {PT_MONTHS[dt.month - 1]}, {dt:%H:%M}"
-    except Exception:
-        return str(value)[:40]
-
-
-def _clean_title(title):
-    return re.sub(r"\s+", " ", (title or "")).strip()
 
 
 def _cat(text):
@@ -138,10 +99,7 @@ def _dedupe_coverage(items):
         if not url or not title:
             continue
 
-        if "news.google.com" in url:
-            continue
-
-        key = url.split("?")[0].lower()
+        key = (url.split("?")[0] + "|" + title).lower()
 
         if key in seen:
             continue
@@ -178,6 +136,9 @@ def _platform_from_outlet(outlet):
     if outlet.startswith("YouTube"):
         return "YouTube"
 
+    if outlet == "Google News" or "Google News" in outlet:
+        return "Imprensa"
+
     return "Imprensa"
 
 
@@ -205,132 +166,6 @@ def _narratives_from_coverage(coverage):
         })
 
     return narratives
-
-
-class CombinedResponse:
-    def __init__(self, status_code, articles=None, text=""):
-        self.status_code = status_code
-        self._articles = articles or []
-        self.text = text
-
-    def json(self):
-        return {
-            "articles": self._articles
-        }
-
-    def raise_for_status(self):
-        if self.status_code >= 400:
-            raise requests.HTTPError(self.text)
-
-
-def _gnews_request(api_key, start, end):
-    queries = [
-        "Harry Potter HBO",
-        "Harry Potter Max",
-        "serie Harry Potter HBO",
-        "nova serie Harry Potter",
-        "Harry Potter HBO series",
-        "Harry Potter cast HBO",
-        "Dominic McLaughlin Harry Potter",
-        "Arabella Stanton Harry Potter",
-        "Alastair Stout Harry Potter",
-        "Paapa Essiedu Harry Potter",
-        "John Lithgow Harry Potter"
-    ]
-
-    all_articles = []
-    last_status = 200
-    last_error_text = ""
-
-    for query in queries:
-        params = {
-            "q": query,
-            "max": 10,
-            "from": _iso_utc(start),
-            "to": _iso_utc(end),
-            "sortby": "publishedAt",
-            "apikey": api_key
-        }
-
-        response = requests.get(
-            "https://gnews.io/api/v4/search",
-            params=params,
-            timeout=TIMEOUT
-        )
-
-        print(
-            f"[backfill] GNews query='{query}' "
-            f"{start.date()} to {end.date()} status={response.status_code}"
-        )
-
-        if response.status_code == 200:
-            data = response.json()
-            articles = data.get("articles", [])
-
-            print(f"[backfill] query='{query}' retornou {len(articles)} artigos")
-
-            all_articles.extend(articles)
-
-            if len(all_articles) >= 10:
-                break
-
-            time.sleep(1)
-            continue
-
-        last_status = response.status_code
-        last_error_text = response.text[:800]
-
-        print("[backfill] resposta GNews:", last_error_text)
-
-        if response.status_code in (401, 403, 429):
-            if all_articles:
-                print("[backfill] limite/erro apos coletar alguns artigos; salvando itens ja encontrados.")
-                return CombinedResponse(200, all_articles, last_error_text)
-
-            return CombinedResponse(response.status_code, [], last_error_text)
-
-        time.sleep(1)
-
-    print(
-        f"[backfill] total combinado da semana "
-        f"{start.date()} to {end.date()}: {len(all_articles)} artigos"
-    )
-
-    return CombinedResponse(last_status, all_articles, last_error_text)
-
-
-def _coverage_from_articles(articles):
-    coverage = []
-
-    for article in articles:
-        source = article.get("source") or {}
-        outlet = source.get("name", "Imprensa")
-        url = article.get("url", "")
-
-        if not url:
-            continue
-
-        if "news.google.com" in url:
-            continue
-
-        title = _clean_title(article.get("title", ""))
-        summary = article.get("description", "")
-
-        if not title:
-            continue
-
-        cat = _cat(title + " " + summary)
-
-        coverage.append({
-            "o": outlet,
-            "u": url,
-            "title": title,
-            "cat": cat,
-            "time": _format_time(article.get("publishedAt", "")),
-            "scope": "Portal BR"
-        })
-
-    return _dedupe_coverage(coverage)
 
 
 def _risks_from_coverage(coverage, week_label):
@@ -401,7 +236,7 @@ def _opps_from_coverage(coverage, week_label):
 def _empty_snapshot(snapshot_date, week_label):
     return {
         "label": _label(snapshot_date),
-        "updated": _stamp(snapshot_date),
+        "updated": _stamp(),
         "kpi": {
             "mentions": {
                 "v": "0 materias/videos/posts",
@@ -564,7 +399,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
 
     return {
         "label": _label(snapshot_date),
-        "updated": _stamp(snapshot_date),
+        "updated": _stamp(),
         "kpi": {
             "mentions": {
                 "v": f"{count} item" + ("" if count == 1 else "s"),
@@ -594,7 +429,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em noticias, YouTube e Reddit reais"
+            "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
         },
         "buzz7": [count, count, count, count, count, count, count],
         "stack": [
@@ -648,75 +483,92 @@ def _save_snapshot(snapshot_date, snapshot):
     print(f"[backfill] snapshot salvo: {path}")
 
 
-def _load_current_day_or_latest_snapshot():
+def _collect_sources_for_range(start, end, youtube_key, enable_reddit):
+    coverage = []
+
+    if social_google_news is not None:
+        google_news_coverage = social_google_news.collect_google_news_week(start, end)
+        coverage.extend(google_news_coverage)
+    else:
+        print("[backfill] social_google_news nao disponivel.")
+
+    if social_youtube is not None and youtube_key:
+        youtube_coverage = social_youtube.collect_youtube_week(start, end, youtube_key)
+        coverage.extend(youtube_coverage)
+    else:
+        print("[backfill] YouTube ignorado nesta execucao.")
+
+    if enable_reddit and social_reddit is not None:
+        reddit_coverage = social_reddit.collect_reddit_week(start, end)
+        coverage.extend(reddit_coverage)
+    else:
+        print("[backfill] Reddit ignorado nesta execucao.")
+
+    return _dedupe_coverage(coverage)
+
+
+def _build_current_day(youtube_key, enable_reddit):
+    now = _now_br()
+    start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
+    end = now
+    label = _label(now)
+
+    coverage = _collect_sources_for_range(start, end, youtube_key, enable_reddit)
+
+    if coverage:
+        snapshot = _snapshot_from_coverage(end, label, coverage)
+        snapshot["label"] = label
+        return snapshot
+
+    return _empty_snapshot(end, label)
+
+
+def _load_current_day_fallback():
     try:
         with open(config.OUTPUT_DATA, encoding="utf-8") as file:
             feed = json.load(file)
 
         current_day = feed["titles"][config.TITLE_ID]["days"]["d0"]
 
-        if current_day:
+        if current_day and current_day.get("coverage"):
             return current_day
 
     except Exception as exc:
         print(f"[backfill] nao consegui ler d0 atual do data.json: {exc}")
 
-    if os.path.exists(config.HISTORY_DIR):
-        files = sorted(
-            file_name
-            for file_name in os.listdir(config.HISTORY_DIR)
-            if file_name.startswith("day-") and file_name.endswith(".json")
-        )
-
-        if files:
-            latest = os.path.join(config.HISTORY_DIR, files[-1])
-
-            with open(latest, encoding="utf-8") as file:
-                return json.load(file)
-
-    return _empty_snapshot(_now_br(), "sem dados")
+    return None
 
 
-def regenerate_feed():
-    current_day = _load_current_day_or_latest_snapshot()
+def regenerate_feed(current_day):
+    if not current_day:
+        current_day = _load_current_day_fallback()
+
+    if not current_day:
+        current_day = _empty_snapshot(_now_br(), _label(_now_br()))
+
     feed = build_data.build_feed(current_day)
     build_data.write_feed(feed)
-    print("[backfill] data.json regenerado com weeks desde o teaser.")
+
+    print("[backfill] data.json regenerado com Google News RSS.")
 
 
 def main():
-    api_key = os.environ.get("GNEWS_API_KEY", "").strip()
     youtube_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    enable_reddit = os.environ.get("ENABLE_REDDIT", "").lower() in ("1", "true", "yes")
 
-    if not api_key:
-        print("[backfill] GNEWS_API_KEY nao configurada. Seguindo sem GNews.")
-    else:
-        print(f"[backfill] GNews key detectada com {len(api_key)} caracteres")
-
-    if not youtube_key:
-        print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
-    else:
+    if youtube_key:
         print(f"[backfill] YouTube key detectada com {len(youtube_key)} caracteres")
-
-    now = _now_br()
+    else:
+        print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
 
     print("[backfill] inicio")
+    print("[backfill] fonte principal: Google News RSS")
     print("[backfill] marco: teaser em 25/03/2026")
-    print(f"[backfill] hoje: {now:%Y-%m-%d %H:%M}")
-
-    if social_reddit is None:
-        print("[backfill] social_reddit nao disponivel. Reddit sera ignorado.")
-    else:
-        print("[backfill] social_reddit disponivel. Reddit sera incluido.")
-
-    if social_youtube is None:
-        print("[backfill] social_youtube nao disponivel. YouTube sera ignorado.")
-    else:
-        print("[backfill] social_youtube disponivel. YouTube sera incluido.")
+    print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
     start = TEASER_DATE
+    now = _now_br()
     week_index = 1
-    hit_rate_limit = False
 
     while start <= now:
         end = start + timedelta(days=6, hours=23, minutes=59, seconds=59)
@@ -728,34 +580,8 @@ def main():
 
         print(f"[backfill] Semana {week_index}: {week_label}")
 
-        coverage = []
-        response = CombinedResponse(200, [])
-
-        if api_key:
-            response = _gnews_request(api_key, start, end)
-
-            if response.status_code in (403, 429):
-                print("[backfill] limite/plano da GNews atingido. Salvando ate aqui e encerrando sem falhar.")
-
-            if response.status_code == 401:
-                print("[backfill] GNews retornou 401. Chave invalida. Encerrando sem falhar.")
-                hit_rate_limit = True
-
         try:
-            if response.status_code == 200:
-                data = response.json()
-                articles = data.get("articles", [])
-                coverage.extend(_coverage_from_articles(articles))
-
-            if social_youtube is not None and youtube_key:
-                youtube_coverage = social_youtube.collect_youtube_week(start, end, youtube_key)
-                coverage.extend(youtube_coverage)
-
-            if social_reddit is not None:
-                reddit_coverage = social_reddit.collect_reddit_week(start, end)
-                coverage.extend(reddit_coverage)
-
-            coverage = _dedupe_coverage(coverage)
+            coverage = _collect_sources_for_range(start, end, youtube_key, enable_reddit)
 
             print(f"[backfill] {len(coverage)} itens reais na semana {week_label}")
 
@@ -771,21 +597,15 @@ def main():
             snapshot = _empty_snapshot(end, week_label)
             _save_snapshot(end, snapshot)
 
-        if response.status_code in (401, 403, 429):
-            hit_rate_limit = True
-            break
-
         time.sleep(2)
 
         start = start + timedelta(days=7)
         week_index += 1
 
-    regenerate_feed()
+    current_day = _build_current_day(youtube_key, enable_reddit)
+    regenerate_feed(current_day)
 
-    if hit_rate_limit:
-        print("[backfill] concluido parcialmente por limite/plano da API.")
-    else:
-        print("[backfill] concluido")
+    print("[backfill] concluido")
 
 
 if __name__ == "__main__":
