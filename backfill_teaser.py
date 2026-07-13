@@ -147,4 +147,79 @@ def _clean_title(title):
 
     if " - " in title:
         parts = title.rsplit(" - ", 1)
+        if len(parts[0]) > 10:
+            return parts[0].strip()
+
+    return title
+
+
+def _cat(text):
+    t = (text or "").lower()
+
+    if re.search(r"rumor|especula|supost|vaza|vazou|pode|possivel|teria|leak|leaked", t):
+        return "esp"
+
+    if re.search(r"nostalg|filmes|classic|classico|trilha|infancia|reboot|movies|original cast", t):
+        return "nos"
+
+    if re.search(r"critic|polem|decep|rejeit|problema|desnecess|medo|hate|worried|terrible|ruined", t):
+        return "neg"
+
+    if re.search(r"elogi|acerto|fiel|ansios|empolg|aprova|confirma|revela|estreia|elenco|excited|love|perfect|faithful|reaction|review", t):
+        return "pos"
+
+    return "neu"
+
+
+def _senti_from_cat(cat):
+    mapping = {
+        "pos": "pos",
+        "neg": "neg",
+        "esp": "div",
+        "nos": "pos",
+        "neu": "neu"
+    }
+
+    return mapping.get(cat, "neu")
+
+
+def _source_from_rss_item(item, raw_title):
+    source = item.findtext("source")
+
+    if source:
+        return source.strip()
+
+    if raw_title and " - " in raw_title:
+        return raw_title.rsplit(" - ", 1)[-1].strip()
+
+    return "Google News"
+
+
+def _google_news_url(query):
+    encoded = quote_plus(query)
+
+    return (
+        "https://news.google.com/rss/search"
+        f"?q={encoded}"
+        "&hl=pt-BR"
+        "&gl=BR"
+        "&ceid=BR:pt-419"
+    )
+
+
+def _trends_url(query):
+    encoded = quote_plus(query)
+
+    return (
+        "https://trends.google.com/trends/explore"
+        "?date=2026-03-25%202026-07-13"
+        "&geo=BR"
+        f"&q={encoded}"
+    )
+
+
+def _wiki_url(project, article):
+    safe_article = quote(article, safe="")
+    return f"https://{project}/wiki/{safe_article}"
+
 
