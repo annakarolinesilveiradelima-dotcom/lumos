@@ -1,12 +1,12 @@
-"""
+
 social_reddit.py
 
-Coleta gratuita de posts públicos do Reddit para complementar o Lumos.
+Coleta gratuita de posts publicos do Reddit para complementar o Lumos.
 
 Regras:
-- Usa endpoints públicos .json do Reddit.
-- Não precisa API key.
-- Não inventa posts.
+- Usa endpoints publicos .json do Reddit.
+- Nao precisa API key.
+- Nao inventa posts.
 - Filtra por data real do post.
 - Retorna no formato de coverage usado pelo Lumos.
 """
@@ -28,7 +28,7 @@ SUBREDDITS = [
     "harrypotter",
     "HarryPotteronHBO",
     "television",
-    "HBOMAX",
+    "HBOMAX"
 ]
 
 QUERIES = [
@@ -40,7 +40,7 @@ QUERIES = [
     "Arabella Stanton Harry Potter",
     "Alastair Stout Harry Potter",
     "Paapa Essiedu Harry Potter",
-    "John Lithgow Harry Potter",
+    "John Lithgow Harry Potter"
 ]
 
 USER_AGENT = "lumos-fandom-intelligence/1.0 by annakarolinesilveiradelima-dotcom"
@@ -60,7 +60,7 @@ def _dt_from_utc(ts):
 
 def _format_time_br(dt):
     if not dt:
-        return "sem horário disponível"
+        return "sem horario disponivel"
 
     try:
         br = dt.astimezone(BR_TZ)
@@ -72,28 +72,65 @@ def _format_time_br(dt):
 def _cat(text):
     t = (text or "").lower()
 
-    if any(w in t for w in [
-        "rumor", "leak", "leaked", "vazou", "vazamento",
-        "speculation", "especula", "suposto", "suposta"
-    ]):
+    speculation_words = [
+        "rumor",
+        "leak",
+        "leaked",
+        "vazou",
+        "vazamento",
+        "speculation",
+        "especula",
+        "suposto",
+        "suposta"
+    ]
+
+    nostalgia_words = [
+        "nostalgia",
+        "nostalgic",
+        "movies",
+        "filmes",
+        "original cast",
+        "reboot"
+    ]
+
+    negative_words = [
+        "bad",
+        "hate",
+        "worried",
+        "terrible",
+        "ruined",
+        "desnecessario",
+        "desnecessário",
+        "medo",
+        "critica",
+        "crítica",
+        "criticism"
+    ]
+
+    positive_words = [
+        "excited",
+        "love",
+        "great",
+        "perfect",
+        "faithful",
+        "ansioso",
+        "ansiosa",
+        "amo",
+        "amei",
+        "fiel",
+        "perfeito"
+    ]
+
+    if any(word in t for word in speculation_words):
         return "esp"
 
-    if any(w in t for w in [
-        "nostalgia", "nostalgic", "movies", "filmes",
-        "original cast", "reboot"
-    ]):
+    if any(word in t for word in nostalgia_words):
         return "nos"
 
-    if any(w in t for w in [
-        "bad", "hate", "worried", "terrible", "ruined",
-        "desnecessário", "medo", "crítica", "criticism"
-    ]):
+    if any(word in t for word in negative_words):
         return "neg"
 
-    if any(w in t for w in [
-        "excited", "love", "great", "perfect", "faithful",
-        "ansioso", "ansiosa", "amo", "amei", "fiel", "perfeito"
-    ]):
+    if any(word in t for word in positive_words):
         return "pos"
 
     return "neu"
@@ -153,11 +190,12 @@ def collect_reddit_week(start, end):
                 )
 
                 print(
-                    f"[reddit] r/{subreddit} query='{query}' status={response.status_code}"
+                    f"[reddit] r/{subreddit} query='{query}' "
+                    f"status={response.status_code}"
                 )
 
                 if response.status_code == 429:
-                    print("[reddit] limite temporário do Reddit. Parando coleta Reddit desta semana.")
+                    print("[reddit] limite temporario do Reddit. Parando coleta desta semana.")
                     return _dedupe(results)
 
                 if response.status_code != 200:
@@ -181,12 +219,13 @@ def collect_reddit_week(start, end):
                     permalink = post.get("permalink", "")
                     score = post.get("score", 0)
                     comments = post.get("num_comments", 0)
+                    selftext = post.get("selftext") or ""
 
                     if not title or not permalink:
                         continue
 
                     full_url = "https://www.reddit.com" + permalink
-                    cat = _cat(title + " " + (post.get("selftext") or ""))
+                    cat = _cat(title + " " + selftext)
 
                     results.append({
                         "o": f"Reddit · r/{subreddit}",
@@ -194,7 +233,7 @@ def collect_reddit_week(start, end):
                         "title": title,
                         "cat": cat,
                         "time": _format_time_br(created),
-                        "scope": f"Social · score {score} · {comments} comentários"
+                        "scope": f"Social · score {score} · {comments} comentarios"
                     })
 
                 time.sleep(1)
@@ -207,4 +246,3 @@ def collect_reddit_week(start, end):
     print(f"[reddit] {len(results)} posts reais coletados na semana")
 
     return results
-``
