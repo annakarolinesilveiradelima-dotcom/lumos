@@ -1,6 +1,6 @@
 name: lumos-backfill
 
-"on":
+on:
   workflow_dispatch:
 
 permissions:
@@ -33,6 +33,11 @@ jobs:
             cp backfill_teaser.py lumos-backend/backfill_teaser.py
           fi
 
+          if [ -f "backfill_teaser.py" ]; then
+            echo "Atualizando lumos-backend/backfill_teaser.py com a versão da raiz..."
+            cp backfill_teaser.py lumos-backend/backfill_teaser.py
+          fi
+
           echo ""
           echo "Backend files after:"
           ls -la lumos-backend
@@ -40,6 +45,10 @@ jobs:
           echo ""
           echo "Backfill script:"
           ls -la lumos-backend/backfill_teaser.py
+
+          echo ""
+          echo "Reddit module:"
+          ls -la lumos-backend/social_reddit.py || true
 
       - name: Install dependencies
         run: |
@@ -49,6 +58,7 @@ jobs:
       - name: Check syntax
         run: |
           python -m py_compile lumos-backend/backfill_teaser.py
+          python -m py_compile lumos-backend/social_reddit.py
 
       - name: Run backfill
         env:
@@ -63,6 +73,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json history/ lumos-backend/backfill_teaser.py || true
-          git diff --cached --quiet || git commit -m "backfill teaser weeks"
+          git add data.json history/ lumos-backend/backfill_teaser.py lumos-backend/social_reddit.py || true
+          git diff --cached --quiet || git commit -m "backfill teaser weeks with reddit"
           git push
