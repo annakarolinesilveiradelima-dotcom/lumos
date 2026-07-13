@@ -1,6 +1,6 @@
 name: lumos-backfill
 
-"on":
+on:
   workflow_dispatch:
 
 permissions:
@@ -41,18 +41,17 @@ jobs:
 
       - name: Run backfill
         env:
-          OUTPUT_DATA: ${{ github.workspace }}/data.json
-          HISTORY_DIR: ${{ github.workspace }}/history
+          OUTPUT_DATA: data.json
+          HISTORY_DIR: history
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: |
           cd lumos-backend
-          python backfill_teaser.py
+          OUTPUT_DATA=../data.json HISTORY_DIR=../history python backfill_teaser.py
 
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json history/
+          git add data.json history/ || true
           git diff --cached --quiet || git commit -m "backfill teaser weeks"
           git push
-`
