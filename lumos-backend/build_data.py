@@ -3,19 +3,22 @@ Lumos build_data.py
 
 Monta o data.json no contrato do Lumos.
 
-Novo comportamento:
+Comportamento:
 - Diário = execução atual.
 - Semanal = semanas desde o teaser de 25/03/2026.
 - w0 = semana atual desde o teaser.
 - w-1, w-2... = semanas anteriores.
+- As semanas são montadas pela DATA REAL DA MATÉRIA, não pela data em que o backfill rodou.
 - Sem dado real em uma semana, deixa vazio/honesto.
 """
 
 from __future__ import annotations
 
 import glob
+import html
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -52,6 +55,31 @@ def _range_label(start, end):
     )
 
 
+def _clean_url(raw_url):
+    """
+    Garante que o campo de URL fique como URL pura.
+    Se por acidente vier HTML tipo ......</a>, extrai só o href.
+    """
+    if not raw_url:
+        return ""
+
+    value = html.unescape(str(raw_url)).strip()
+
+    href_match = re.search(r'href=[^"\']+["\']', value)
+    if href_match:
+        value = href_match.group(1)
+
+    value = value.replace("&quot;", "")
+    value = value.replace('"', "")
+    value = value.replace("'", "")
+    value = value.strip()
+
+    # Remove vírgula final que às vezes aparece se o valor foi copiado/renderizado errado
+    value = value.rstrip(",")
+
+    return value
+
+
 def _parse_date_from_label(label):
     """
     Tenta extrair data no formato '8 jul 2026' de labels salvos no histórico.
@@ -59,7 +87,7 @@ def _parse_date_from_label(label):
     if not label:
         return None
 
-    parts = label.split()
+    parts = str(label).split()
 
     if len(parts) < 3:
         return None
@@ -76,8 +104,12 @@ def _parse_date_from_label(label):
 
 def _parse_article_date(time_value):
     """
-    Tenta interpretar datas de matérias no formato '8 jul, 14:30'.
-    Se não conseguir, retorna None.
+    Interpreta datas de matérias no formato:
+    - '8 jul, 14:30'
+    - '15 jun, 22:00'
+    - '4 jul, 18:28'
+
+    Como o campo não traz ano, usa o ano atual do tracking: 2026.
     """
     if not time_value:
         return None
@@ -93,11 +125,10 @@ def _parse_article_date(time_value):
         month = PT_MONTHS.index(parts[1].lower()) + 1
         hour_min = parts[2]
 
-        now = _now_br()
         hour, minute = hour_min.split(":")
 
         return datetime(
-            now.year,
+            2026,
             month,
             day,
             int(hour),
@@ -244,6 +275,156 @@ def _buzz_score(base_count, sentiment_index):
     )
 
 
+def _cat_to_senti(cat):
+    if cat in ("pos", "nos"):
+        return "pos"
+
+    if cat == "neg":
+        return "neg"
+
+    if cat == "esp":
+        return "div"
+
+    return "neu"
+
+
+def _dedupe_coverage(items):
+    seen = set()
+    out = []
+
+    for item in items:
+        url = _clean_url(item.get("u", ""))
+        title = str(item.get("title", "")).strip()
+
+        if not url or not title:
+            continue
+
+        if "news.google.com" in url:
+            continue
+
+        clean_item = dict(item)
+        clean_item["u"] = url
+        clean_item["title"] = title
+
+        key = url.split("?")[0].lower()
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+        out.append(clean_item)
+
+    return out
+
+
+def _coverage_from_all_days(days):
+    """
+    Pega todas as matérias reais encontradas no histórico e no dia atual.
+    Depois as semanas vão ser montadas pela data real da matéria.
+    """
+    coverage = []
+
+    for day in days:
+        for item in day.get("coverage", []) or []:
+            clean_item = dict(item)
+            clean_item["u"] = _clean_url(clean_item.get("u", ""))
+            coverage.append(clean_item)
+
+    return _dedupe_coverage(coverage)
+
+
+def _narratives_from_coverage(coverage):
+    narratives = []
+
+    for item in coverage[:6]:
+        narratives.append({
+            "t": item.get("title", "Cobertura real coletada"),
+            "vol": 1,
+            "senti": _cat_to_senti(item.get("cat", "neu")),
+            "pf": "Imprensa",
+            "trend": "flat",
+            "growth": "Baseado em cobertura real da semana; social listening não conectado",
+            "q": "",
+            "pct": 50,
+            "src": [
+                {
+                    "o": item.get("o", "Imprensa"),
+                    "u": _clean_url(item.get("u", "#"))
+                }
+            ]
+        })
+
+    return narratives
+
+
+def _risks_from_coverage(coverage, label):
+    if not coverage:
+        return [
+            {
+                "t": "Semana sem cobertura real",
+                "sev": "low",
+                "d": f"Não foram encontradas matérias reais para a janela {label}.",
+                "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+            }
+        ]
+
+    titles = " ".join(item.get("title", "") for item in coverage).lower()
+
+    risks = []
+
+    if "reboot" in titles or "filmes" in titles or "nostalg" in titles:
+        risks.append({
+            "t": "Comparação com os filmes originais",
+            "sev": "mid",
+            "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+            "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+        })
+
+    if "elenco" in titles or "ator" in titles or "atriz" in titles:
+        risks.append({
+            "t": "Sensibilidade em torno de elenco",
+            "sev": "mid",
+            "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+            "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+        })
+
+    if not risks:
+        risks.append({
+            "t": "Risco baixo na cobertura editorial",
+            "sev": "low",
+            "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+            "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+        })
+
+    return risks[:3]
+
+
+def _opps_from_coverage(coverage, label):
+    if not coverage:
+        return [
+            {
+                "ico": "mail",
+                "t": "Monitorar próxima coleta",
+                "d": f"A janela {label} ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+            }
+        ]
+
+    opps = [
+        {
+            "ico": "book",
+            "t": "Explorar fidelidade aos livros",
+            "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+        },
+        {
+            "ico": "film",
+            "t": "Organizar narrativa de comparação",
+            "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+        }
+    ]
+
+    return opps[:4]
+
+
 def build_day(collected, analysis):
     now = _now_br()
     prev = _latest_prev_day()
@@ -275,6 +456,8 @@ def build_day(collected, analysis):
         platforms = _platforms_from_social(social)
     else:
         platforms = _platforms_news_only(news_count, analysis)
+
+    clean_coverage = _dedupe_coverage(analysis.get("coverage", [])[:12])
 
     day = {
         "label": _label(now),
@@ -325,21 +508,21 @@ def build_day(collected, analysis):
             ]
         ),
         "platforms": platforms,
-        "narratives": analysis.get("narratives", [])[:6],
-        "coverage": analysis.get("coverage", [])[:8],
+        "narratives": _narratives_from_coverage(clean_coverage),
+        "coverage": clean_coverage[:8],
         "creators": [],
-        "risks": analysis.get("risks", [])[:3],
+        "risks": _risks_from_coverage(clean_coverage, _label(now)),
         "heroOpp": analysis.get("heroOpp") or {
-            "title": "Sem oportunidade validada hoje",
-            "desc": "Sem dados sociais conectados para sugerir ação sem inferência.",
+            "title": "Acompanhar cobertura do dia",
+            "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
             "facts": [
                 ["Fonte", "notícias reais"],
-                ["Marco", "teaser 25/03/2026"],
+                ["Matérias", str(len(clean_coverage))],
                 ["Social", "não conectado"],
                 ["Dados fictícios", "não"]
             ]
         },
-        "opps": analysis.get("opps", [])[:4],
+        "opps": _opps_from_coverage(clean_coverage, _label(now)),
         "ephem": [],
         "_raw": {
             "base_count": base_count,
@@ -415,7 +598,7 @@ def _empty_week(start, end, label):
         "narratives": [],
         "coverage": [],
         "creators": [],
-        "risks": [],
+        "risks": _risks_from_coverage([], label),
         "heroOpp": {
             "title": "Sem oportunidade validada nesta semana",
             "desc": "Não houve cobertura real suficiente nesta janela semanal.",
@@ -423,63 +606,46 @@ def _empty_week(start, end, label):
                 ["Janela", label],
                 ["Marco", "teaser 25/03/2026"],
                 ["Dados fictícios", "não"],
-                ["Status", "aguardando cobertura"]
+                ["Status", "sem cobertura real"]
             ]
         },
-        "opps": [],
+        "opps": _opps_from_coverage([], label),
         "ephem": []
     }
 
 
-def _build_week_from_days(days, start, end, label):
+def _build_week_from_coverage(all_coverage, start, end, label):
     selected = []
 
-    for day in days:
-        day_dt = _parse_date_from_label(day.get("label"))
+    for item in all_coverage:
+        article_dt = _parse_article_date(item.get("time"))
 
-        if not day_dt:
+        if not article_dt:
             continue
 
-        if start.date() <= day_dt.date() <= end.date():
-            selected.append(day)
+        if start.date() <= article_dt.date() <= end.date():
+            selected.append(item)
+
+    selected = _dedupe_coverage(selected)
 
     if not selected:
         return _empty_week(start, end, label)
 
-    coverage = []
-    narratives = []
-    risks = []
+    count = len(selected)
 
-    pos_values = []
-    neu_values = []
-    neg_values = []
+    pos_count = sum(1 for item in selected if item.get("cat") in ("pos", "nos"))
+    neg_count = sum(1 for item in selected if item.get("cat") == "neg")
 
-    buzz7 = []
+    pos = round(pos_count / count * 100) if count else 0
+    neg = round(neg_count / count * 100) if count else 0
+    neu = max(0, 100 - pos - neg)
 
-    for day in selected:
-        coverage.extend(day.get("coverage", []))
-        narratives.extend(day.get("narratives", []))
-        risks.extend(day.get("risks", []))
-
-        senti = day.get("senti", {})
-        pos_values.append(int(senti.get("pos", 0)))
-        neu_values.append(int(senti.get("neu", 100)))
-        neg_values.append(int(senti.get("neg", 0)))
-
-        buzz7.extend(day.get("buzz7", []))
-
-    coverage = coverage[:12]
-    narratives = narratives[:6]
-    risks = risks[:3]
-
-    count = len(coverage)
-
-    pos = round(sum(pos_values) / len(pos_values)) if pos_values else 0
-    neu = round(sum(neu_values) / len(neu_values)) if neu_values else 100
-    neg = round(sum(neg_values) / len(neg_values)) if neg_values else 0
-
-    net = (pos - neg)
+    net = pos - neg
     buzz = min(100, 20 + count * 8 + round(max(0, net) / 2))
+
+    narratives = _narratives_from_coverage(selected)
+    risks = _risks_from_coverage(selected, label)
+    opps = _opps_from_coverage(selected, label)
 
     return {
         "label": label,
@@ -513,9 +679,9 @@ def _build_week_from_days(days, start, end, label):
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Consolidação semanal desde o teaser"
+            "tone": "Consolidação semanal por data real das matérias"
         },
-        "buzz7": (buzz7[-7:] if len(buzz7) >= 7 else buzz7 + [count] * (7 - len(buzz7))),
+        "buzz7": [count, count, count, count, count, count, count],
         "stack": [
             [pos, neu, neg],
             [pos, neu, neg],
@@ -539,12 +705,12 @@ def _build_week_from_days(days, start, end, label):
             }
         ],
         "narratives": narratives,
-        "coverage": coverage[:8],
+        "coverage": selected[:8],
         "creators": [],
         "risks": risks,
         "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": f"Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: {label}.",
+            "desc": f"Semana consolidada por data real de publicação das matérias. Janela: {label}.",
             "facts": [
                 ["Janela", label],
                 ["Marco", "25/03/2026"],
@@ -552,7 +718,7 @@ def _build_week_from_days(days, start, end, label):
                 ["Dados fictícios", "não"]
             ]
         },
-        "opps": [],
+        "opps": opps,
         "ephem": []
     }
 
@@ -563,6 +729,8 @@ def _build_weeks(day):
 
     w0 = semana atual.
     w-1 = semana anterior.
+
+    Agora as matérias são atribuídas à semana pela data real do campo coverage[].time.
     """
     now = _now_br()
 
@@ -572,9 +740,9 @@ def _build_weeks(day):
         total_weeks = (now.date() - TEASER_DATE.date()).days // 7
 
     history_days = _load_history_days()
-
-    # Garante que o dia atual entre na consolidação mesmo antes de estar salvo.
     history_days.append(day)
+
+    all_coverage = _coverage_from_all_days(history_days)
 
     weeks = {}
 
@@ -594,7 +762,7 @@ def _build_weeks(day):
 
         label = _range_label(start, end)
 
-        weeks[key] = _build_week_from_days(history_days, start, end, label)
+        weeks[key] = _build_week_from_coverage(all_coverage, start, end, label)
 
     return weeks
 
