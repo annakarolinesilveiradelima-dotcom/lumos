@@ -1,131 +1,307 @@
 {
   "label": "23 jun 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:44",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "5 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 17–23 jun 2026"
+      "sub": "4 noticias - 1 videos YouTube - 0 posts Reddit - 17-23 jun 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+20",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "70",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 20,
+    "neu": 80,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
   ],
   "stack": [
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ],
     [
-      0,
-      100,
+      20,
+      80,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 4,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 20,
         "n": 0,
-        "g": 100
+        "g": 80
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 20,
+        "n": 0,
+        "g": 80
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 20,
+        "n": 0,
+        "g": 80
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "Série de Harry Potter corrige erro do passado: HBO escala astro da Marvel e Star Wars para personagem cortado dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9wanM3SUtQLXpVeFhBbjQxQlE3VDRDY1JsX0NzOXlDZzlidW1jbTdvNjVwZDZmem5kX21jYnR1ZV9IX0lLakFYMTRVT25fbEU3Q3VnLVNxTzU1ZndVeW9aTzFXd2dqVHpmcFpoMEZQVkTSAXZBVV95cUxPQlhuS1NCNG5wTXJHSHA0Q3FMN1gtR1htVWk3czNtUjk5d1NrMmJ1YzNsVHZwUFd1REMxNXBqUVVNUnNnRUVjeWg3dEVoRXo1dUMwSTBBU2dhYzRJY0g1cUJ4QnBJSk5NT213dDRQUk9QNzlNWm93?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Nick Frost desabafa sobre ser o Hagrid em série de Harry Potter: ‘Como ganhar na loteria’",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Recreio",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcjVkdmM0THlUMWJIWExSY2JFdzA5R2hCYXNkNDhQbWdGMDlPTXZxNXBRYVRFWkJiT19rbm9LY1JyUlhDcW9tb2xEVXpLdGxUcUM3LU85b3h0M0l3TlhwblJ4NUcxeWotLWNYZjFXdzdWNnkxZlhLWnY3TmRBOE94Y01VbjFqOFR3MlJGR3hRQjVwRTRyUW1kcXR1aldnaFc3cERvOFE5bDEtaUNPaGo1U1RXN2dQOW05OExoLW1DV09OaVAyelhGSHl1Smd4N2VKRVVXOG9R?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Saiba quem viverá o poltergeist Pirraça na 1ª temporada de ‘Harry Potter’!",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmxjZEs5TFE4N0FvZlpxMVV1ckpjb2o1TjNmM29nMG02STBIc3pWeUhOUDJtQkUzaGczWEJfRUNyclg4Sm9tbGpTS2oxd1FWYlFDV19za1VwQ0tiVlpwZWI3TmUzazhvUXdjdXVIRnZSUExOZ1d3QTJnT0Rva19HTDN1Q0FSSEQyV3JmYW9JMWhnamJURWlndnowQkI1ME4zNVZEdQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Fãs podem não gostar do novo Hagrid, diz Nick Frost",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Vício",
+          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdHBId0FPcmNtMDhmX2ZGREdFOHlHT0V2S0c3UVNTSUdJaHhoNG0wZW9IZ2RSUUMxVUUySnpPN3k3d2luLXN4MXc1clVXQlFoNHpwNml0QzZHd2J2Vkd1a3NrMlpmLWxJMGI3eGVBc1BnaFBjZGV2cmJxTmtzNktkbjBGREZ4Wk04MF9FZ1NKRdIBlAFBVV95cUxOMEJSQ3hTWHFzdjFkZzFWSl9rWkROTTRZNmtURkMxcGs2dC03cmFzNHFfVGlGMS1OTTZ3ZXk2SVVTTjBUR3lYUk1WMkZpcUNyWWtqUGg4TExLNEdGUkc0NHpZbVJ1ZTduakxDY3B0TXhXNHNKcXJXWFdMRlRaVlZvRlk3S1lvV1JpTWd1WXJ3TS1yMm9i?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "isn&#39;t this a trend 🤪 #harrypotter #jamespotter #dracomalfoy #hogwarts#viral #fypシ゚viral #fyp #potter",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Potter Owns Me <3",
+          "u": "https://www.youtube.com/watch?v=OLneGvVTzxE"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9wanM3SUtQLXpVeFhBbjQxQlE3VDRDY1JsX0NzOXlDZzlidW1jbTdvNjVwZDZmem5kX21jYnR1ZV9IX0lLakFYMTRVT25fbEU3Q3VnLVNxTzU1ZndVeW9aTzFXd2dqVHpmcFpoMEZQVkTSAXZBVV95cUxPQlhuS1NCNG5wTXJHSHA0Q3FMN1gtR1htVWk3czNtUjk5d1NrMmJ1YzNsVHZwUFd1REMxNXBqUVVNUnNnRUVjeWg3dEVoRXo1dUMwSTBBU2dhYzRJY0g1cUJ4QnBJSk5NT213dDRQUk9QNzlNWm93?oc=5",
+      "title": "Série de Harry Potter corrige erro do passado: HBO escala astro da Marvel e Star Wars para personagem cortado dos filmes",
+      "cat": "nos",
+      "time": "17 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Recreio",
+      "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcjVkdmM0THlUMWJIWExSY2JFdzA5R2hCYXNkNDhQbWdGMDlPTXZxNXBRYVRFWkJiT19rbm9LY1JyUlhDcW9tb2xEVXpLdGxUcUM3LU85b3h0M0l3TlhwblJ4NUcxeWotLWNYZjFXdzdWNnkxZlhLWnY3TmRBOE94Y01VbjFqOFR3MlJGR3hRQjVwRTRyUW1kcXR1aldnaFc3cERvOFE5bDEtaUNPaGo1U1RXN2dQOW05OExoLW1DV09OaVAyelhGSHl1Smd4N2VKRVVXOG9R?oc=5",
+      "title": "Nick Frost desabafa sobre ser o Hagrid em série de Harry Potter: ‘Como ganhar na loteria’",
+      "cat": "esp",
+      "time": "22 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmxjZEs5TFE4N0FvZlpxMVV1ckpjb2o1TjNmM29nMG02STBIc3pWeUhOUDJtQkUzaGczWEJfRUNyclg4Sm9tbGpTS2oxd1FWYlFDV19za1VwQ0tiVlpwZWI3TmUzazhvUXdjdXVIRnZSUExOZ1d3QTJnT0Rva19HTDN1Q0FSSEQyV3JmYW9JMWhnamJURWlndnowQkI1ME4zNVZEdQ?oc=5",
+      "title": "Saiba quem viverá o poltergeist Pirraça na 1ª temporada de ‘Harry Potter’!",
+      "cat": "neu",
+      "time": "17 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O Vício",
+      "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdHBId0FPcmNtMDhmX2ZGREdFOHlHT0V2S0c3UVNTSUdJaHhoNG0wZW9IZ2RSUUMxVUUySnpPN3k3d2luLXN4MXc1clVXQlFoNHpwNml0QzZHd2J2Vkd1a3NrMlpmLWxJMGI3eGVBc1BnaFBjZGV2cmJxTmtzNktkbjBGREZ4Wk04MF9FZ1NKRdIBlAFBVV95cUxOMEJSQ3hTWHFzdjFkZzFWSl9rWkROTTRZNmtURkMxcGs2dC03cmFzNHFfVGlGMS1OTTZ3ZXk2SVVTTjBUR3lYUk1WMkZpcUNyWWtqUGg4TExLNEdGUkc0NHpZbVJ1ZTduakxDY3B0TXhXNHNKcXJXWFdMRlRaVlZvRlk3S1lvV1JpTWd1WXJ3TS1yMm9i?oc=5",
+      "title": "Harry Potter: Fãs podem não gostar do novo Hagrid, diz Nick Frost",
+      "cat": "esp",
+      "time": "22 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Potter Owns Me <3",
+      "u": "https://www.youtube.com/watch?v=OLneGvVTzxE",
+      "title": "isn&#39;t this a trend 🤪 #harrypotter #jamespotter #dracomalfoy #hogwarts#viral #fypシ゚viral #fyp #potter",
+      "cat": "neu",
+      "time": "23 jun, 08:12",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Potter Owns Me <3",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=OLneGvVTzxE"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 17-23 jun 2026.",
     "facts": [
       [
         "Janela",
-        "17–23 jun 2026"
+        "17-23 jun 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "5"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 5,
+    "unit": "materias/videos/posts",
+    "net": 20,
+    "buzz": 70,
+    "news_count": 4,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 60
   }
 }

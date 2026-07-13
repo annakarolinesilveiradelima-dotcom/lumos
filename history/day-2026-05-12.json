@@ -1,131 +1,335 @@
 {
   "label": "12 mai 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:43",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "12 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 6–12 mai 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 posts Reddit - 6-12 mai 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+33",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
   ],
   "stack": [
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 12,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 33,
         "n": 0,
-        "g": 100
+        "g": 67
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 33,
+        "n": 0,
+        "g": 67
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 33,
+        "n": 0,
+        "g": 67
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
+  "narratives": [
+    {
+      "t": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO renova série de 'Harry Potter' para 2ª temporada antes mesmo de estreia",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Exame",
+          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGJmWHVXVlhGak9MS1QxeF9LUWJ1ZExWNTd6dHJyRzZPd2JicVN3LVhoZGF5QnlWbG5LMmE3bXVYajIzUTlhaHZpbHFyVHp1VTVYVWwxRjc4aDh3OWpzSFVzdW5UTGQ1MURkMl91eHZyb2RYdmRJeGJGeHF0SU5IaWNndDlDdC1ldWVWaFd3dGlQa0ZUVmozYVlHaEs?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO renova série de Harry Potter para uma segunda temporada antes mesmo da estreia da primeira",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "VEJA",
+          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbTlnLUVTQm1HRVpQS29qZjJtRG96ZzFHNlkzNnZERkVQZWNjRG5TdHJoR2ZUQW5fYXFNaVJsejZBUllQQ1hXTWJZV1cwOGRWenp4cVQxV3NGdXpHeHlOVDNXbGdkMnJsMVBUWmdraFlZYlRzaDRITHBuUk5CdFlIY2FYcUpFaE5hYnNBcnlfZmUzNW5nVlNhaHMyOXlKTjRxNXpjcWRFWHdQN3VqS2JfcnFnV05maXExbmZxUnYzem5vZm5HV3Nicg?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Série da HBO é renovada para 2ª temporada, Câmara Secre",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd1ZfQUhRMm1IQkVndTNYbzlodXJvOW1wRklkZzgtc1A5Nk05alFfQlhONmtIMnZwMkRJMFJoWkVlUHJwZVFLb0NFa0MzRDJreHkya1lkYnlMdm5VOXJ2UUNGdnJ5XzN0S2xsT2pSMzV2YVpUeWNacV9vc0EzZE1qX0ZWVHRKTDAwclNSRDdfZUNRMXJ2MkVZTlEyYw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: HBO traz uma ótima notícia para quem vai assistir a série em live-action",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "TudoCelular.com",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeVc4bUtMdUMxa00yRzhuUk1abVhUMkk4Z09nNnpuNm1oUV9CVWgzQ1hyaWtsVTV1RDBCQ1dSNVVVcVMwU2puNTVFUElEclRJZUI0VTR6c3REcGtLMENWdEdQbEVUdWhtWXpxQm9lcEZYMTA0dTIxSjA1MFZqbWM4cHFFZi16djB0WG04ZXBLUXNHSFh3Zk1BcTBaU205MmVOWUpCcWtrREw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Novas produções de Harry Potter confirmadas: Série da HBO nem estreou, mas já se protege de críticas feitas à Netflix",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zeTc0bEprMFA0VDAtbTA1TmF6Z0gtRFNCWlNGT281Z0xJcVNfVy0yOEpRSlo2RnNwWkJpVFVJOVA1UlRjUC0tVFFPbkhiYjdwVDM1S0VOWnk5Tk5WekhCZDh1MkRZM1ZGOF9wODFLMmTSAXZBVV95cUxPVmlIR3RESm9xdU55TW9UZ3ZSV2JtUFNPQms4Ty1XQnlwaUpxdDhfOXhOZkc1TDlQM0dwV1VIb2dtQVN3Z2FaUV91eFFGVjRXV3NNQkEtNXlNTEc1Vlc0UVdkcDF3RzU4aGg5eGNINFFHcnY5VFpB?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5",
+      "title": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
+      "cat": "neu",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Exame",
+      "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGJmWHVXVlhGak9MS1QxeF9LUWJ1ZExWNTd6dHJyRzZPd2JicVN3LVhoZGF5QnlWbG5LMmE3bXVYajIzUTlhaHZpbHFyVHp1VTVYVWwxRjc4aDh3OWpzSFVzdW5UTGQ1MURkMl91eHZyb2RYdmRJeGJGeHF0SU5IaWNndDlDdC1ldWVWaFd3dGlQa0ZUVmozYVlHaEs?oc=5",
+      "title": "HBO renova série de 'Harry Potter' para 2ª temporada antes mesmo de estreia",
+      "cat": "pos",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "VEJA",
+      "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbTlnLUVTQm1HRVpQS29qZjJtRG96ZzFHNlkzNnZERkVQZWNjRG5TdHJoR2ZUQW5fYXFNaVJsejZBUllQQ1hXTWJZV1cwOGRWenp4cVQxV3NGdXpHeHlOVDNXbGdkMnJsMVBUWmdraFlZYlRzaDRITHBuUk5CdFlIY2FYcUpFaE5hYnNBcnlfZmUzNW5nVlNhaHMyOXlKTjRxNXpjcWRFWHdQN3VqS2JfcnFnV05maXExbmZxUnYzem5vZm5HV3Nicg?oc=5",
+      "title": "HBO renova série de Harry Potter para uma segunda temporada antes mesmo da estreia da primeira",
+      "cat": "pos",
+      "time": "8 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd1ZfQUhRMm1IQkVndTNYbzlodXJvOW1wRklkZzgtc1A5Nk05alFfQlhONmtIMnZwMkRJMFJoWkVlUHJwZVFLb0NFa0MzRDJreHkya1lkYnlMdm5VOXJ2UUNGdnJ5XzN0S2xsT2pSMzV2YVpUeWNacV9vc0EzZE1qX0ZWVHRKTDAwclNSRDdfZUNRMXJ2MkVZTlEyYw?oc=5",
+      "title": "Harry Potter | Série da HBO é renovada para 2ª temporada, Câmara Secre",
+      "cat": "neu",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "TudoCelular.com",
+      "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeVc4bUtMdUMxa00yRzhuUk1abVhUMkk4Z09nNnpuNm1oUV9CVWgzQ1hyaWtsVTV1RDBCQ1dSNVVVcVMwU2puNTVFUElEclRJZUI0VTR6c3REcGtLMENWdEdQbEVUdWhtWXpxQm9lcEZYMTA0dTIxSjA1MFZqbWM4cHFFZi16djB0WG04ZXBLUXNHSFh3Zk1BcTBaU205MmVOWUpCcWtrREw?oc=5",
+      "title": "Harry Potter: HBO traz uma ótima notícia para quem vai assistir a série em live-action",
+      "cat": "neu",
+      "time": "7 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zeTc0bEprMFA0VDAtbTA1TmF6Z0gtRFNCWlNGT281Z0xJcVNfVy0yOEpRSlo2RnNwWkJpVFVJOVA1UlRjUC0tVFFPbkhiYjdwVDM1S0VOWnk5Tk5WekhCZDh1MkRZM1ZGOF9wODFLMmTSAXZBVV95cUxPVmlIR3RESm9xdU55TW9UZ3ZSV2JtUFNPQms4Ty1XQnlwaUpxdDhfOXhOZkc1TDlQM0dwV1VIb2dtQVN3Z2FaUV91eFFGVjRXV3NNQkEtNXlNTEc1Vlc0UVdkcDF3RzU4aGg5eGNINFFHcnY5VFpB?oc=5",
+      "title": "Novas produções de Harry Potter confirmadas: Série da HBO nem estreou, mas já se protege de críticas feitas à Netflix",
+      "cat": "pos",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rádio Mix FM",
+      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRXFpbHFJN2h3T1VpdUFtNUhyMkhYYzcxeE0tbTJ4VUdUYVY4Mk1zQ05RdGxveE9FOXBVTHJQSVZoeXhnMVBDb3VOcXlJekVITW83MTZ6YnJzVXg5VlhCNmczZjBLcnhqNzBtNUNXSHhIQWhoLUdmemFlUnJWX0xMR1Z0Z2tLOUt3ZFdkeThpYjZ3eHc?oc=5",
+      "title": "Série “Harry Potter” é oficialmente renovada para a 2ª temporada",
+      "cat": "neu",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "GZH",
+      "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNOVhVeDd4TFFLNUNTeDAtZnc1eHRGcjZFdjNONHhIaERoX20zbEZ1T1V6dGpjSXhnNW1lUWNrdGlKZlRzYUY3bzAxWVZKRHEyNjZZM3NkelEtS3p2YnVrUERqbnRQME1ab05FTUhBQ0Z3bkZhRWJBWnBZWXFJUFFzWlZzQi12SnZEZlFZZE9aLXJqaUg4XzBnUTJ0b1Vic1l2OHNUQ0dYenJwSmFYMkJxM3hhZlU0My05amZvZmFjd2xKM2owR0VGTGpLWnc2SGRlSUZuX3lOUkN3THRMaVIyaUVsMEdmXzdkOUpXSXRJaGpHVmZ4MHdoRA?oc=5",
+      "title": "Série \"Harry Potter\" é renovada para a segunda temporada pela HBO Max",
+      "cat": "neu",
+      "time": "6 mai, 04:00",
+      "scope": "Google News RSS"
+    }
+  ],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Risco baixo na janela",
+      "sev": "low",
+      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 6-12 mai 2026.",
     "facts": [
       [
         "Janela",
-        "6–12 mai 2026"
+        "6-12 mai 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "12"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 12,
+    "unit": "materias/videos/posts",
+    "net": 33,
+    "buzz": 100,
+    "news_count": 12,
+    "youtube_count": 0,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 66
   }
 }

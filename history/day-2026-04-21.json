@@ -1,131 +1,313 @@
 {
   "label": "21 abr 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:42",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "5 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 15–21 abr 2026"
+      "sub": "4 noticias - 1 videos YouTube - 0 posts Reddit - 15-21 abr 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+80",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 80,
+    "neu": 20,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
   ],
   "stack": [
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ],
     [
-      0,
-      100,
+      80,
+      20,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
-      "senti": "neu",
+      "vol": 4,
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 80,
         "n": 0,
-        "g": 100
+        "g": 20
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "pos",
+      "ang": 70,
+      "s": {
+        "p": 80,
+        "n": 0,
+        "g": 20
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "pos",
+      "ang": 128,
+      "s": {
+        "p": 80,
+        "n": 0,
+        "g": 20
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "Paapa Essiedu Says He’s Received Death Threats Since Being Cast as Severus Snape in HBO ‘Harry Potter’ Reboot",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oWlNtblhwdjJLRmNrZThsZTBpME1nN0UwRllycHFWUnljdU9JbF9udW5wdDQtNzhkX0prZ2kzU0NMYUdoUTc0cmMyYm5ER0Y5aHc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter e Game of Thrones trocam seus destinos após polêmicas e sucessos",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "UOL",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Quantos anos têm os atores da série de Harry Potter? Eles são mais velhos/novos do que o trio original dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tMEJXTTloRWFsY1NNUk4yU1ZrNVloTlVlanEyX3hhSFZVRWNiWlE5aUhSN1dCVnRfMFdCUU00Vl9YTVJ4R3VtMHluMjVxQUc4UVRaaG9FQzBBbS1TX3dzUTctMmtpZ3dFME9CMWstQlDSAXZBVV95cUxQM2swUF9uM2hnWGdJYkxMOHR1Vk1FSFEwUnVHdGk5Y3lQakFyNFlHUllWeEE5N1VWU2dpRW5pQ0JLTmQwenFKRTVpUEZRWGQ2RldrOXIwR0RfaWJDYklFdVdzdUZvZl9kaUpBVG9fOUNhaUZ5cUxn?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Este detalhe sobre Severus Snape será mais fiel aos livros na série do que nos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVNVZ3Vnh0dVhCZHh0S0RWOHNfZFNXZEVxelJ3UDBtQmF5STZDLVFuYko2Mk9QR1Q4VV82aUFNRG8wRjRQLVpUNXBFZlFQRHR5QkJla1VNS3BWS2xYRkJYejN6dkU5b1ZWM3FqQWxSNW_SAXZBVV95cUxQdUlqLXZtblFtY0t6aWlrSnRlMGJOcWx4M2lQNUlJVFpua0xEa3JmLVNkbkhVYUJsaVFqN25qMjVQenlrNVpkNlVTNUo2QU9BY0lva1kxTzRrOU5DMUhINno1UnV2dHBKLTNIWlN0YUlkamZwNXN3?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Narrative Notch",
+          "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oWlNtblhwdjJLRmNrZThsZTBpME1nN0UwRllycHFWUnljdU9JbF9udW5wdDQtNzhkX0prZ2kzU0NMYUdoUTc0cmMyYm5ER0Y5aHc?oc=5",
+      "title": "Paapa Essiedu Says He’s Received Death Threats Since Being Cast as Severus Snape in HBO ‘Harry Potter’ Reboot",
+      "cat": "nos",
+      "time": "21 abr, 14:58",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "UOL",
+      "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5",
+      "title": "Harry Potter e Game of Thrones trocam seus destinos após polêmicas e sucessos",
+      "cat": "neu",
+      "time": "16 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tMEJXTTloRWFsY1NNUk4yU1ZrNVloTlVlanEyX3hhSFZVRWNiWlE5aUhSN1dCVnRfMFdCUU00Vl9YTVJ4R3VtMHluMjVxQUc4UVRaaG9FQzBBbS1TX3dzUTctMmtpZ3dFME9CMWstQlDSAXZBVV95cUxQM2swUF9uM2hnWGdJYkxMOHR1Vk1FSFEwUnVHdGk5Y3lQakFyNFlHUllWeEE5N1VWU2dpRW5pQ0JLTmQwenFKRTVpUEZRWGQ2RldrOXIwR0RfaWJDYklFdVdzdUZvZl9kaUpBVG9fOUNhaUZ5cUxn?oc=5",
+      "title": "Quantos anos têm os atores da série de Harry Potter? Eles são mais velhos/novos do que o trio original dos filmes",
+      "cat": "nos",
+      "time": "18 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVNVZ3Vnh0dVhCZHh0S0RWOHNfZFNXZEVxelJ3UDBtQmF5STZDLVFuYko2Mk9QR1Q4VV82aUFNRG8wRjRQLVpUNXBFZlFQRHR5QkJla1VNS3BWS2xYRkJYejN6dkU5b1ZWM3FqQWxSNW_SAXZBVV95cUxQdUlqLXZtblFtY0t6aWlrSnRlMGJOcWx4M2lQNUlJVFpua0xEa3JmLVNkbkhVYUJsaVFqN25qMjVQenlrNVpkNlVTNUo2QU9BY0lva1kxTzRrOU5DMUhINno1UnV2dHBKLTNIWlN0YUlkamZwNXN3?oc=5",
+      "title": "Harry Potter: Este detalhe sobre Severus Snape será mais fiel aos livros na série do que nos filmes",
+      "cat": "nos",
+      "time": "19 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Narrative Notch",
+      "u": "https://www.youtube.com/watch?v=ftic_jZLUZs",
+      "title": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
+      "cat": "nos",
+      "time": "21 abr, 20:00",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Narrative Notch",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 15-21 abr 2026.",
     "facts": [
       [
         "Janela",
-        "15–21 abr 2026"
+        "15-21 abr 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "5"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 5,
+    "unit": "materias/videos/posts",
+    "net": 80,
+    "buzz": 100,
+    "news_count": 4,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 90
   }
 }

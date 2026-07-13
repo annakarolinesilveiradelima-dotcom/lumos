@@ -1,158 +1,335 @@
 {
   "label": "7 jul 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:45",
   "kpi": {
     "mentions": {
-      "v": "1 matéria",
+      "v": "9 items",
       "d": 0,
-      "sub": "backfill semanal · 1–7 jul 2026"
+      "sub": "9 noticias - 0 videos YouTube - 0 posts Reddit - 1-7 jul 2026"
     },
     "sentiment": {
-      "v": "+100",
+      "v": "+11",
       "suf": "/100",
       "d": 0,
-      "sub": "índice semanal por cobertura"
+      "sub": "indice semanal por cobertura"
     },
     "sov": {
-      "v": "—",
+      "v": "-",
       "d": 0,
       "dtype": "pts",
-      "sub": "requer base multi-título"
+      "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "78",
+      "v": "98",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 100,
-    "neu": 0,
+    "pos": 11,
+    "neu": 89,
     "neg": 0,
-    "tone": "Backfill semanal baseado em notícias reais"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
   ],
   "stack": [
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ],
     [
-      100,
-      0,
+      11,
+      89,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
-      "senti": "pos",
+      "vol": 9,
+      "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 100,
+        "p": 11,
         "n": 0,
-        "g": 0
+        "g": 89
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 11,
+        "n": 0,
+        "g": 89
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 11,
+        "n": 0,
+        "g": 89
       }
     }
   ],
   "narratives": [
     {
-      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "t": "Más notícias para os fãs de Harry Potter: Atriz deixa série da HBO e será substituída na 2ª temporada",
       "vol": 1,
-      "senti": "pos",
+      "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill histórico desde o teaser; social listening não conectado",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+          "o": "Terra",
+          "u": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOeFU1Mm5GQUNjaUZ5LWlaT3htb0paM2lDYnUtQW5pOVVzeDVuc0M0TFRFMko3ZUNHc2JTMlpCV3lSX1Y2TVE2dEN0aktyS0FfbjFGQXFhTDNkdW5QNUw0RjZCZ1R0U08za2lCeENJN1gtUExyQXJzeS14dXprR2JRR09oTE05TmMyQjBBemdUWndDNnVsODVnY1RiemNaSzdwQTVtSldzUmo0UTNpWDhzU2hLa0diUzVZUWZWdkZuNm9lamo3UUdPNGxscU95QmQ3NnVQNldYR2FTcXFtUjNZWnpESC1HQnVYS3h4ckRWdWlMYTJWbzRBZnJjZUpjUWtheDhHVXI1OGZlLTM1cUZTbUllNXJQeVBVeUQw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Atriz deixa nova série de 'Harry Potter' por 'circunstâncias imprevistas'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Terra",
+          "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnBqTU5KSUdhTURnQmN4MjZfZElpaDBnd2Zyd2RTNlk2N3RHLU9PbjgyOFR4Y09sZ002bjFza0pBSHZvZUVqRnR3TmNIc2lldS11STVKeENFYkxyNVd4cHVNaWZSUUVnU3ZDQ3JjMFpaY09HS0Y2V0Vza21uckZJRWpFRmg3amVMU0J2TnRkUGhkV2xDbWVIQkJUNnhtckZsd2kyTDlpZDJEbW5rYXhCQXMxR29palBob0JPcmRWZURmajFGa2VEYmVqZGJuZFdLd1piazNCeDB4SFhoX1NrQ3JlNWNPYTFaSFR2MEJHNVAxVkx3aVN4RXFlbnM?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: série da HBO busca atriz para personagem importante",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JMGhxWDMwSHFOWm5xU09HbUdZaHV6emQ3WkVuRzRGS0VsN085dTFxdE52RVZnc1ltSGRRV3B2Q0FQSGRwNDBuZVBGRzgxbVZlZVJab1BEdWRVbzRJYjh2cFVDWnRYWm5UUGFObEtKblQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Observatório do Cinema",
+          "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMGZua2w4Z3lMQV9VaDZha1ltbUs2ZXpRc0pCMVMwRjhiNE40cF9WZEl2TDNWcldOVm55Ri00X2FJb1AwUFA1UE5HX0hKZ2c1NmFhbjlSUDRYLWRxMFh4V3dXRGIxcWZRZ25ldnZyYThVVEZVZFE4YUo4NzVMVllGSzJxOWgwdkNsUXdHbUljSHdaRUNkMjFSR18yOHYyV3JpVUtqaHdmZlRQWlhEc0ZlVDJpTWc2b1FtUWZn0gHAAUFVX3lxTE5JbjJVWjVQeVV0X1NyNUJISE0yMU9yMTlQUmlsb2s3NDF6X3AwS1FnSEZscFdxRm9pbzc3N1BSY3M3a3JPcWprR3NUUXdIb3JRcjltSUkzeDhPT21Pc095cG1aZzRGdkRVMjl4UDY0YndkdzFhTjJENWVnc2pLNVd6R3R6MUxIVWY1UVVfTmJOSWpMWmhBVGp6U3ZISjdzWFU5MDVjYU5acXk3VDZJNGl4NlZZRVB3VFN6SE43eWtyMw?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "o": "Terra",
+      "u": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOeFU1Mm5GQUNjaUZ5LWlaT3htb0paM2lDYnUtQW5pOVVzeDVuc0M0TFRFMko3ZUNHc2JTMlpCV3lSX1Y2TVE2dEN0aktyS0FfbjFGQXFhTDNkdW5QNUw0RjZCZ1R0U08za2lCeENJN1gtUExyQXJzeS14dXprR2JRR09oTE05TmMyQjBBemdUWndDNnVsODVnY1RiemNaSzdwQTVtSldzUmo0UTNpWDhzU2hLa0diUzVZUWZWdkZuNm9lamo3UUdPNGxscU95QmQ3NnVQNldYR2FTcXFtUjNZWnpESC1HQnVYS3h4ckRWdWlMYTJWbzRBZnJjZUpjUWtheDhHVXI1OGZlLTM1cUZTbUllNXJQeVBVeUQw?oc=5",
+      "title": "Más notícias para os fãs de Harry Potter: Atriz deixa série da HBO e será substituída na 2ª temporada",
+      "cat": "neu",
+      "time": "6 jul, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5",
+      "title": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
+      "cat": "neu",
+      "time": "7 jul, 14:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Terra",
+      "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnBqTU5KSUdhTURnQmN4MjZfZElpaDBnd2Zyd2RTNlk2N3RHLU9PbjgyOFR4Y09sZ002bjFza0pBSHZvZUVqRnR3TmNIc2lldS11STVKeENFYkxyNVd4cHVNaWZSUUVnU3ZDQ3JjMFpaY09HS0Y2V0Vza21uckZJRWpFRmg3amVMU0J2TnRkUGhkV2xDbWVIQkJUNnhtckZsd2kyTDlpZDJEbW5rYXhCQXMxR29palBob0JPcmRWZURmajFGa2VEYmVqZGJuZFdLd1piazNCeDB4SFhoX1NrQ3JlNWNPYTFaSFR2MEJHNVAxVkx3aVN4RXFlbnM?oc=5",
+      "title": "Atriz deixa nova série de 'Harry Potter' por 'circunstâncias imprevistas'",
+      "cat": "neu",
+      "time": "6 jul, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5",
       "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "cat": "nos",
+      "cat": "neu",
       "time": "4 jul, 18:28",
-      "scope": "Portal BR"
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JMGhxWDMwSHFOWm5xU09HbUdZaHV6emQ3WkVuRzRGS0VsN085dTFxdE52RVZnc1ltSGRRV3B2Q0FQSGRwNDBuZVBGRzgxbVZlZVJab1BEdWRVbzRJYjh2cFVDWnRYWm5UUGFObEtKblQ?oc=5",
+      "title": "Harry Potter: série da HBO busca atriz para personagem importante",
+      "cat": "neu",
+      "time": "2 jul, 13:30",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Observatório do Cinema",
+      "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMGZua2w4Z3lMQV9VaDZha1ltbUs2ZXpRc0pCMVMwRjhiNE40cF9WZEl2TDNWcldOVm55Ri00X2FJb1AwUFA1UE5HX0hKZ2c1NmFhbjlSUDRYLWRxMFh4V3dXRGIxcWZRZ25ldnZyYThVVEZVZFE4YUo4NzVMVllGSzJxOWgwdkNsUXdHbUljSHdaRUNkMjFSR18yOHYyV3JpVUtqaHdmZlRQWlhEc0ZlVDJpTWc2b1FtUWZn0gHAAUFVX3lxTE5JbjJVWjVQeVV0X1NyNUJISE0yMU9yMTlQUmlsb2s3NDF6X3AwS1FnSEZscFdxRm9pbzc3N1BSY3M3a3JPcWprR3NUUXdIb3JRcjltSUkzeDhPT21Pc095cG1aZzRGdkRVMjl4UDY0YndkdzFhTjJENWVnc2pLNVd6R3R6MUxIVWY1UVVfTmJOSWpMWmhBVGp6U3ZISjdzWFU5MDVjYU5acXk3VDZJNGl4NlZZRVB3VFN6SE43eWtyMw?oc=5",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "neu",
+      "time": "4 jul, 18:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O Vício",
+      "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaW9oT0xNbnlERlpQMnE4cG9GMy1lQ2pfaDFPTzhsdFE3V2w5OWRiWnU4TTNoWFoxa24wemRlQzVRM3hEVEc0a1dGVmNiYUk2OUg0aUxPZFFxZlpDalh2VzdZS2FhVDAzdUl2UWdpeGkxdWo0dUVBc25UeW16eDcxSFFYYkFNYnYzQ3plTnR4Q2stUDlnVGgxQ2FfUmtLSXJKNklvY3FNYW82d9IBrwFBVV95cUxNNHhfcnZrYUs4dVZWMjlINkZKZHdyaV8yWlZXOWV4bHIzSVZPRUtXRTcwMjBmZlZ4QURUMjNhaGhVZEdvbVBUbnhESUFGdmIxWkdNTnR2UUdxS0xmRmxuQVBDWHo3bmlWT0VONzlxMlEybWZCREc1UWxNWDJvSldxV3BhbWotZmxXYTZQT05UYW5rRWhsdEhHYWR6cEx6SXhpaXhIcEpGLXplVXhkdzhZ?oc=5",
+      "title": "Série de Harry Potter inicia busca por nova atriz de Gina Weasley para 2ª temporada",
+      "cat": "neu",
+      "time": "3 jul, 09:57",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "ScreenRant",
+      "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TF9lbUE4WXpiak9NOGxSTG5DTW43MVZaYUxvYkFwaS15b2FzV3BnODhqUkFKdUpfRGhVVkxPU3NpWHZJZWVNLVducXFJR1lKd3lBOExGOWh0dnV3RFB3c1FzdE5PN0FKNk9zNWJSaXZ2OUFaOWdUaGtPSQ?oc=5",
+      "title": "HBO’s Harry Potter Season 2 Is Officially Casting One Of The Most Important Characters Yet",
+      "cat": "neu",
+      "time": "2 jul, 04:00",
+      "scope": "Google News RSS"
     }
   ],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por backfill de matérias reais. Janela: 1–7 jul 2026.",
+    "desc": "Semana preenchida por fontes reais. Janela: 1-7 jul 2026.",
     "facts": [
       [
         "Janela",
-        "1–7 jul 2026"
+        "1-7 jul 2026"
       ],
       [
         "Marco",
         "25/03/2026"
       ],
       [
-        "Matérias reais",
-        "1"
+        "Itens reais",
+        "9"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 1,
-    "unit": "matérias",
-    "net": 100,
-    "buzz": 78,
-    "news_count": 1,
+    "base_count": 9,
+    "unit": "materias/videos/posts",
+    "net": 11,
+    "buzz": 98,
+    "news_count": 9,
+    "youtube_count": 0,
     "social_mentions": 0,
     "backfill": true,
-    "sentiment_index": 100
+    "sentiment_index": 56
   }
 }

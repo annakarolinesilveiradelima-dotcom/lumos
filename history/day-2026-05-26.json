@@ -1,45 +1,45 @@
 {
   "label": "26 mai 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:43",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "4 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 20–26 mai 2026"
+      "sub": "3 noticias - 1 videos YouTube - 0 posts Reddit - 20-26 mai 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "52",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
   ],
   "stack": [
     [
@@ -81,7 +81,7 @@
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 3,
       "senti": "neu",
       "ang": -90,
       "s": {
@@ -89,43 +89,195 @@
         "n": 0,
         "g": 100
       }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘Harry Potter’ se prepara para grandes AVENTURAS nas cenas inéditas da série da HBO; Confira!",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQazZwTDVBcEJlR2YweHMzX0hCOEY0WkVpaUVWM3pOaDFmMENZV0ppeW5ZS3kzenV2aDBBM0lhQ05sanNwOXkzOWRxVnBGbzJXZ3FuNDMxZ2NtNDZ0eWxkenh1ZzhweklkTXdoMEhYeDFnZVdxM0UxclJzM2VPVDlaVmJZX1Z0eWJZY2ttUDB0T0VBSGlwbjJCektNbHZBSDJ0WTFhbXFISzFLYnhyaC1Wd2ZlZG9USjVYdnNfLQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Família incompleta: atriz abandona nova série de Harry Potter na HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "NSC Total",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1B3MjYzMzRiRnhRTmwxX0tqOFU2eG1ibER2MFNUY3R5YmloMFhqNHhqMjdVWUFyWDFheGd0eldNaDVNcV9lSFlVR2Yzc0hLUUlmNm9uQnpXWnBxV2NpenRHOGNDMGtBdXZLcms5QmJiTjN2UTNIZWpFVGZkX05uXzByMUhpMndLN2tqRmlGbFB6LTJxR3NBWnhoVEtUbUZtNWlVcmFkNA?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Harry Potter HBO Updates ⚡️",
+          "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5",
+      "title": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+      "cat": "neu",
+      "time": "24 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQazZwTDVBcEJlR2YweHMzX0hCOEY0WkVpaUVWM3pOaDFmMENZV0ppeW5ZS3kzenV2aDBBM0lhQ05sanNwOXkzOWRxVnBGbzJXZ3FuNDMxZ2NtNDZ0eWxkenh1ZzhweklkTXdoMEhYeDFnZVdxM0UxclJzM2VPVDlaVmJZX1Z0eWJZY2ttUDB0T0VBSGlwbjJCektNbHZBSDJ0WTFhbXFISzFLYnhyaC1Wd2ZlZG9USjVYdnNfLQ?oc=5",
+      "title": "‘Harry Potter’ se prepara para grandes AVENTURAS nas cenas inéditas da série da HBO; Confira!",
+      "cat": "neu",
+      "time": "24 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "NSC Total",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1B3MjYzMzRiRnhRTmwxX0tqOFU2eG1ibER2MFNUY3R5YmloMFhqNHhqMjdVWUFyWDFheGd0eldNaDVNcV9lSFlVR2Yzc0hLUUlmNm9uQnpXWnBxV2NpenRHOGNDMGtBdXZLcms5QmJiTjN2UTNIZWpFVGZkX05uXzByMUhpMndLN2tqRmlGbFB6LTJxR3NBWnhoVEtUbUZtNWlVcmFkNA?oc=5",
+      "title": "Família incompleta: atriz abandona nova série de Harry Potter na HBO",
+      "cat": "neu",
+      "time": "20 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Harry Potter HBO Updates ⚡️",
+      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs",
+      "title": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
+      "cat": "neu",
+      "time": "26 mai, 21:00",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Harry Potter HBO Updates ⚡️",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 20-26 mai 2026.",
     "facts": [
       [
         "Janela",
-        "20–26 mai 2026"
+        "20-26 mai 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "4"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
+    "base_count": 4,
+    "unit": "materias/videos/posts",
     "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "buzz": 52,
+    "news_count": 3,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 50
   }
 }

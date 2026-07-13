@@ -1,14 +1,14 @@
 {
   "label": "31 mar 2026",
-  "updated": "13 jul 2026, 15:19",
+  "updated": "13 jul 2026, 15:41",
   "kpi": {
     "mentions": {
-      "v": "1 item",
+      "v": "12 items",
       "d": 0,
-      "sub": "0 noticias - 1 videos YouTube - 0 posts Reddit - 25-31 mar 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 posts Reddit - 25-31 mar 2026"
     },
     "sentiment": {
-      "v": "+0",
+      "v": "+8",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura"
@@ -20,74 +20,74 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "28",
+      "v": "100",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 8,
+    "neu": 92,
     "neg": 0,
-    "tone": "Backfill semanal baseado em noticias, YouTube e Reddit reais"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
   ],
   "stack": [
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 12,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 8,
         "n": 0,
-        "g": 100
+        "g": 92
       }
     },
     {
@@ -96,9 +96,9 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 0,
+        "p": 8,
         "n": 0,
-        "g": 100
+        "g": 92
       }
     },
     {
@@ -107,59 +107,183 @@
       "senti": "neu",
       "ang": 128,
       "s": {
-        "p": 0,
+        "p": 8,
         "n": 0,
-        "g": 100
+        "g": 92
       }
     }
   ],
   "narratives": [
     {
-      "t": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
+      "t": "Série de 'Harry Potter' para TV tem trailer divulgado: o que já se sabe sobre ela",
       "vol": 1,
       "senti": "neu",
-      "pf": "YouTube",
+      "pf": "Imprensa",
       "trend": "flat",
       "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "YouTube - Zod",
-          "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4"
+          "o": "BBC",
+          "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNy1nY2dwaGRSaDZvemh5NnhrdjhrYjZzYVlyU21Hcm95ajhWSTNPTjN1SHgtS1RmUjVsT2ZpSEticEY0bkpnc0tycUxQczhFYkR1QVVSRXlrNHU2dkZ1OWxB?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "'Harry Potter': tudo o que se sabe sobre a série da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Exame",
+          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS2JWaHhPaUgweUNVbUtSWThUNmkzTk9ZU3pwQ0tjS1RCWHRzZWVEel9YVE90X3J2Wi1fUzB3VjBtUG52MERsa0xtelEwa1dtNm5XOElIRndMTW43YktJUU04elRwYk1JaHV0M3d1X2ZSb05QTXQ1SzViaWRyZ3BSdw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Quando estreia a nova série de \"Harry Potter\"?",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkcwSE9OSDNWdV93em9RT3NsYXZmdzl2am1IS0JlcVMtN3Q2Y01zZmFHQ25pTTVMLWZNWEk0MHQtSTdUdGI5MUw4R01KS0lTUUZCNVQwMl9wVG1vZHgwTi16X1lhY0RFZXZnbW9VQk1XZWQ2eDlqT1E4Si1zUzZZMVNPRQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": veja fotos da 1ª temporada da série",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO divulga primeiro teaser oficial da nova série de \"Harry Potter\"; veja",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNHZCWklkRFJZNDA2OURVYmVhWWhxbGVHXzFuUUp2akdxMGh1YVVPdFQwZmkyVHBzalplM2FlSVVib3NsN29JLThFbVBhYkRqWlMyREVmVkFpbHhfemtKSjFZR0s2WmlEcjl0ZUNRcXVLRWNMU3dNYnhUbVVyVU4zUFZBbUVDSXRoZkNkb3pCU3VGZ1VWcDRxWmpTX2lNbXRVR001X2tyUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Trailer da série de ‘Harry Potter’ bate 277 milhões de views e se torna o mais assistido da história da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O GLOBO",
+          "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSUtqVW8yWGkwWVo1aUFac1RzSGRGWHNVdUtpMzVuamNCTlhoWXY4OXRNN0NqVFlJNzdSTWJ3WXJKakpLWHZIQXhYeXFkWHVYRDVaTjRyTk5jYUk2WW1YbXk0MHNOQUY3SVdiTDk0cWc4cl9xWTN0MktDbGhlV1VFWEZZZzN0NDNsckhhbVB5czNLVWZuMG1uUDZrbHkyWmgwV3pfMG1kQ2ZoR2VwdWNrSjlwc0pwOE1GaHBPajZjUmRXaTJ4Wm8xNlA0dWVWOFJVa0lQd1EyMzNJcXU4aTB5TENxT2lodHJwSno2Zk01QWVFY2JoS2lKczdDMUVROUFtckg40gGSAkFVX3lxTFBFaEd0b1R2TDJwV2dtSmJTbDhOd3F0NTFhUUFoalZDaXRhN21jSWo0ZVllT0x0TWVaTGpyNjAxNk95ME1iY1FTWVZ3QVJ4ZE9kRDhwT1ljNDhXSUp3aE16Y3pJdXV4WkwzX01OdnBSMFpmdU5RSmlxaWF1UWRpTGpFT0Z2M1VRaWk5UnRIcWF6Qmp0Q0xBWG43MjJ2ZGYzZ0s4dF9HaWxiWGNUNVV1cnhaVWpoUnlCd01UdFNoRkZMeGl5ajA0bWFOSEEtcVU3RDcyTEpRMnNzMU54Sno1RndXYVUxV3N6eFF5YXdJLTRQS251OW4wcDQ4OENNc3BxcnZnazhSaWNJNFdzU2Z3UkF4TXc?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "YouTube - Zod",
-      "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4",
-      "title": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
+      "o": "BBC",
+      "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNy1nY2dwaGRSaDZvemh5NnhrdjhrYjZzYVlyU21Hcm95ajhWSTNPTjN1SHgtS1RmUjVsT2ZpSEticEY0bkpnc0tycUxQczhFYkR1QVVSRXlrNHU2dkZ1OWxB?oc=5",
+      "title": "Série de 'Harry Potter' para TV tem trailer divulgado: o que já se sabe sobre ela",
       "cat": "neu",
-      "time": "31 mar, 23:17",
-      "scope": "Video/Creator - YouTube"
-    }
-  ],
-  "creators": [
+      "time": "26 mar, 04:00",
+      "scope": "Google News RSS"
+    },
     {
-      "h": "Zod",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4"
+      "o": "Exame",
+      "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS2JWaHhPaUgweUNVbUtSWThUNmkzTk9ZU3pwQ0tjS1RCWHRzZWVEel9YVE90X3J2Wi1fUzB3VjBtUG52MERsa0xtelEwa1dtNm5XOElIRndMTW43YktJUU04elRwYk1JaHV0M3d1X2ZSb05QTXQ1SzViaWRyZ3BSdw?oc=5",
+      "title": "'Harry Potter': tudo o que se sabe sobre a série da HBO",
+      "cat": "neu",
+      "time": "27 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkcwSE9OSDNWdV93em9RT3NsYXZmdzl2am1IS0JlcVMtN3Q2Y01zZmFHQ25pTTVMLWZNWEk0MHQtSTdUdGI5MUw4R01KS0lTUUZCNVQwMl9wVG1vZHgwTi16X1lhY0RFZXZnbW9VQk1XZWQ2eDlqT1E4Si1zUzZZMVNPRQ?oc=5",
+      "title": "Quando estreia a nova série de \"Harry Potter\"?",
+      "cat": "pos",
+      "time": "26 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5",
+      "title": "\"Harry Potter\": veja fotos da 1ª temporada da série",
+      "cat": "neu",
+      "time": "25 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNHZCWklkRFJZNDA2OURVYmVhWWhxbGVHXzFuUUp2akdxMGh1YVVPdFQwZmkyVHBzalplM2FlSVVib3NsN29JLThFbVBhYkRqWlMyREVmVkFpbHhfemtKSjFZR0s2WmlEcjl0ZUNRcXVLRWNMU3dNYnhUbVVyVU4zUFZBbUVDSXRoZkNkb3pCU3VGZ1VWcDRxWmpTX2lNbXRVR001X2tyUQ?oc=5",
+      "title": "HBO divulga primeiro teaser oficial da nova série de \"Harry Potter\"; veja",
+      "cat": "neu",
+      "time": "27 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O GLOBO",
+      "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSUtqVW8yWGkwWVo1aUFac1RzSGRGWHNVdUtpMzVuamNCTlhoWXY4OXRNN0NqVFlJNzdSTWJ3WXJKakpLWHZIQXhYeXFkWHVYRDVaTjRyTk5jYUk2WW1YbXk0MHNOQUY3SVdiTDk0cWc4cl9xWTN0MktDbGhlV1VFWEZZZzN0NDNsckhhbVB5czNLVWZuMG1uUDZrbHkyWmgwV3pfMG1kQ2ZoR2VwdWNrSjlwc0pwOE1GaHBPajZjUmRXaTJ4Wm8xNlA0dWVWOFJVa0lQd1EyMzNJcXU4aTB5TENxT2lodHJwSno2Zk01QWVFY2JoS2lKczdDMUVROUFtckg40gGSAkFVX3lxTFBFaEd0b1R2TDJwV2dtSmJTbDhOd3F0NTFhUUFoalZDaXRhN21jSWo0ZVllT0x0TWVaTGpyNjAxNk95ME1iY1FTWVZ3QVJ4ZE9kRDhwT1ljNDhXSUp3aE16Y3pJdXV4WkwzX01OdnBSMFpmdU5RSmlxaWF1UWRpTGpFT0Z2M1VRaWk5UnRIcWF6Qmp0Q0xBWG43MjJ2ZGYzZ0s4dF9HaWxiWGNUNVV1cnhaVWpoUnlCd01UdFNoRkZMeGl5ajA0bWFOSEEtcVU3RDcyTEpRMnNzMU54Sno1RndXYVUxV3N6eFF5YXdJLTRQS251OW4wcDQ4OENNc3BxcnZnazhSaWNJNFdzU2Z3UkF4TXc?oc=5",
+      "title": "Trailer da série de ‘Harry Potter’ bate 277 milhões de views e se torna o mais assistido da história da HBO",
+      "cat": "neu",
+      "time": "28 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Estadão",
+      "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQXl0UFhuY1FWdnlyQ0xhUWdibzJ5ZktDTkhLNzVwc0hfQXhJNWVfUDFJaUpHYUcwR1RGalZkYWFlczlTQ3pIamFGQXMtMVFpRnRQTFN3SnNQT3pnWTFJcGE5akE3TW9ONVpSeU5EZWx5ZkZEbU9tZW45aS1ndS1FRE5KRmVoa2NnWGdYblhBaGJVM0ZFcDBaYVljSEp0bngtdUV4R3lPcFhSb2dWTTJnYk5tUdIBuAFBVV95cUxPY2JoMVczYzIwa0RwVjBpNFVrTmhzWFRIb09jbXJLZ29zZ0hidVROOGI5cEdxZzJkQ29RVVY1ZlZpZW01bVhpdmlyUXJxSEI4QXJaN0txS29ESGdjaEoyZ1JkaERsbHNmZG51UTZFcjR3V2lCeWd4ZGQwMW5MVzVkR0dDeDAyUFNfVTBDZENVYjVzNk4wQWk3T21udTVJOUI5d1M1aWZURXYxNXZFaWZQSFJ2ZHBBeElN?oc=5",
+      "title": "Teaser da série ‘Harry Potter’ já é o mais visto da história da HBO; assista",
+      "cat": "neu",
+      "time": "28 mar, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSTB4eGdObmltNGJZZ1RNWUhBVVltekpRaUEtWS1Vc3cxQVhrLUl5X3poYUhxNHhpMnk0NHczaHlmUTZ1blR2cnpicVpQaWVtcTZpd0VCSVBoZDI1VkYyZDdzU2NTYnBuTWZ4ck9INzJvZEFycUh0ekhCUVBtcWh1TlBzNjhVVGVDcVlWRGtLV0VsVXNUb0ZmVEI3UjlXY2YxQWc?oc=5",
+      "title": "\"Harry Potter\": qual a relação de J. K. Rowling com nova série do bruxo",
+      "cat": "neu",
+      "time": "26 mar, 04:00",
+      "scope": "Google News RSS"
     }
   ],
+  "creators": [],
   "risks": [
     {
-      "t": "Risco baixo na janela",
-      "sev": "low",
-      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
-      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
@@ -176,7 +300,7 @@
       ],
       [
         "Itens reais",
-        "1"
+        "12"
       ],
       [
         "Dados ficticios",
@@ -198,14 +322,14 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 1,
+    "base_count": 12,
     "unit": "materias/videos/posts",
-    "net": 0,
-    "buzz": 28,
-    "news_count": 0,
-    "youtube_count": 1,
+    "net": 8,
+    "buzz": 100,
+    "news_count": 12,
+    "youtube_count": 0,
     "social_mentions": 0,
     "backfill": true,
-    "sentiment_index": 50
+    "sentiment_index": 54
   }
 }

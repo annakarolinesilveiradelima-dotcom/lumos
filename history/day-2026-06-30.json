@@ -1,45 +1,45 @@
 {
   "label": "30 jun 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:45",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "2 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 24–30 jun 2026"
+      "sub": "2 noticias - 0 videos YouTube - 0 posts Reddit - 24-30 jun 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "36",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
   ],
   "stack": [
     [
@@ -81,7 +81,7 @@
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 2,
       "senti": "neu",
       "ang": -90,
       "s": {
@@ -89,43 +89,135 @@
         "n": 0,
         "g": 100
       }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
     }
   ],
-  "narratives": [],
-  "coverage": [],
+  "narratives": [
+    {
+      "t": "HBO Reveals First Look at ‘Harry Potter’ TV Series, Trailer Coming Wednesday",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BWDhCRlI3Q1dmbGZIdWVkeGlVMFBURDRQRUs0N2gzWHMtcDQ2SkU5Yk9yaGxaVllwR010dFN5T3dLQ19RTWZUYWNYZlVWYlFWMEE?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: HBO Reveals First Official Image From TV Series",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03RTQxZDF4elZPcW9BaEFKY0h4aFJZWmxQN2gtOWRaRzZJSnh6dERCTzFuLS0xLXBFVXdQajltbERhTGdvWVd6TXJFbEU0VUtKU3c?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BWDhCRlI3Q1dmbGZIdWVkeGlVMFBURDRQRUs0N2gzWHMtcDQ2SkU5Yk9yaGxaVllwR010dFN5T3dLQ19RTWZUYWNYZlVWYlFWMEE?oc=5",
+      "title": "HBO Reveals First Look at ‘Harry Potter’ TV Series, Trailer Coming Wednesday",
+      "cat": "neu",
+      "time": "30 jun, 16:13",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03RTQxZDF4elZPcW9BaEFKY0h4aFJZWmxQN2gtOWRaRzZJSnh6dERCTzFuLS0xLXBFVXdQajltbERhTGdvWVd6TXJFbEU0VUtKU3c?oc=5",
+      "title": "Harry Potter: HBO Reveals First Official Image From TV Series",
+      "cat": "neu",
+      "time": "30 jun, 14:33",
+      "scope": "Google News RSS"
+    }
+  ],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Risco baixo na janela",
+      "sev": "low",
+      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 24-30 jun 2026.",
     "facts": [
       [
         "Janela",
-        "24–30 jun 2026"
+        "24-30 jun 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "2"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
+    "base_count": 2,
+    "unit": "materias/videos/posts",
     "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "buzz": 36,
+    "news_count": 2,
+    "youtube_count": 0,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 50
   }
 }

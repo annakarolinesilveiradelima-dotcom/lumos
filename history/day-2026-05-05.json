@@ -1,131 +1,341 @@
 {
   "label": "5 mai 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:42",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "12 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 29 abr–5 mai 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 posts Reddit - 29 abr-5 mai 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+50",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 50,
+    "neu": 50,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
   ],
   "stack": [
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ],
     [
-      0,
-      100,
+      50,
+      50,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 12,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 50,
         "n": 0,
-        "g": 100
+        "g": 50
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
+  "narratives": [
+    {
+      "t": "Harry Potter | HBO anuncia novo projeto com conexão com os filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMUVlZTltX2ZNYS1tUTZ3X2NaNk1ZdTFCc191NkRoekxzYVFaQ3VPamNjVUxZUGlBXzVNYnVFMEhzZy1ZcGRHZnUyUUh2a1VIdnhCTjNQMUxyNkNudFFYTEVibElNNlRDVV9aS1ZqWkt3cmJGUVE3c3UtMEVZQVk0M29fdw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter quebra tradição da HBO e escolha surpreende",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Legião dos Heróis",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVBveHBMeHEtdmo2YnRPSVhvMjJHVExKenJZeEtNbUNEeWhfMm9WTDdacEhMbU9SUmRDekxHdzR1VnRCeXM3SGtOY0lFUllIS1I1QkJoQ1VmSGV4MnF6bU5zclFvZFFzQjEzRElSeDFZaGwtcW1iSTNYR1BOQmRtTV9Yb2g0YXJ0UXJlaUtHa2dhVzRaLVc5V0pFOTRDNWJncXVr?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Antes da nova série, HBO lança podcast sobre os filmes de 'Harry Potter'",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Exame",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM2pxanBTejlLS0Q1S0REMkphNTF6VXBlbUdjcFNpdUJnOUVoUHVDV05xWkxYbjhMa21fUzB4VWM2X3Y5cUFTQ3d6NlQ2ZFlQT2JORktEakdjb2lVZUlheDBqYkd4cVlnUlVEM0ZaVGZqMzNRYjRORjI4aWdXYlN5dTRyOUJlbVdBdDhVMGNLSjJtcFB5bDVB?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Data de estreia da série é definida pela HBO (Saiba qual!)",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Universo Sagas",
+          "u": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuRS12R0MtVHdpMkVWMFJUZ1FMRnVBMGpkN29nekVvemtfSk9qTWtsamd0MkhLQWdJR3BCWElSNGw0bXUyZFdicG9MS1F4NV94ajdnQVZWSmlmeTMweGw3Sk9rU2prN2dYU0JkNlRWSDFWQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série vai acabar com tradição de 28 anos da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGZRWVc1VEVDQlRRb0N6TmpMTmFhQ3BhMW9FSG51WlFuTEpocXR0QjR6Z25mU0hIRmoyU1dnSWV3UUQwNHNYV0c0UlhOZng0YWphZXRiaTJzTGJKaF81NkJ5Q3JDSElfVU9aVklNMVQ5QnpMdmFZTENONTYta1YtQ1F6aWFqZzR5VHBnSlpoZWwzd3Vka09ya3FPSkN5ZFN4S2YwTk1SYm5FSXpjN1k1R2pLZ0tOdnlG0gG-AUFVX3lxTE1rNEI3dVhoVkxUamlnQVhzM2dod2dwSnk4eFYzVzRXdl95V3hvZFNIV0hrNHIyTjVYREhTYzQtcXhUZ2FrODFMX0w4bzNKTENsZHpxZmVmdWh1VXFGVDdPLWVXTnF3bXpFRTE0SkQwZ0RtbE55WUdweExSaEtNUk5HSXRQVTBSREs4Z1pFS2Fzb3BsUG4yaTJUVExlTXZscWQ4TkZHUUlEeGlscWhiTmd6STU3b2xOLXlHMkdENEE?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter terá projeto com 16 episódios antes da nova série",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Legião dos Heróis",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaExiV0Z4OUJobnY4NXNDSUtSazJUcjNCRk5odUZnM0JFbjBpY1hxSEd5RThRcjlBc3dSdVJ2QmowN1phdWh6SXpzYkltT2FKNUcwbW5WWGt1UlBram91NE9RNUJfWWwwYzJ0Rmg5TGIyNlpDM2o0dWxYdUJNLWk5LUtuU3dId3FPRXU3YXN2WS0xUkprX1kxNmlsQUFWbHRzZEVhT0pxS0ZBeTg?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMUVlZTltX2ZNYS1tUTZ3X2NaNk1ZdTFCc191NkRoekxzYVFaQ3VPamNjVUxZUGlBXzVNYnVFMEhzZy1ZcGRHZnUyUUh2a1VIdnhCTjNQMUxyNkNudFFYTEVibElNNlRDVV9aS1ZqWkt3cmJGUVE3c3UtMEVZQVk0M29fdw?oc=5",
+      "title": "Harry Potter | HBO anuncia novo projeto com conexão com os filmes",
+      "cat": "nos",
+      "time": "5 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Legião dos Heróis",
+      "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVBveHBMeHEtdmo2YnRPSVhvMjJHVExKenJZeEtNbUNEeWhfMm9WTDdacEhMbU9SUmRDekxHdzR1VnRCeXM3SGtOY0lFUllIS1I1QkJoQ1VmSGV4MnF6bU5zclFvZFFzQjEzRElSeDFZaGwtcW1iSTNYR1BOQmRtTV9Yb2g0YXJ0UXJlaUtHa2dhVzRaLVc5V0pFOTRDNWJncXVr?oc=5",
+      "title": "Harry Potter quebra tradição da HBO e escolha surpreende",
+      "cat": "neu",
+      "time": "3 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Exame",
+      "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM2pxanBTejlLS0Q1S0REMkphNTF6VXBlbUdjcFNpdUJnOUVoUHVDV05xWkxYbjhMa21fUzB4VWM2X3Y5cUFTQ3d6NlQ2ZFlQT2JORktEakdjb2lVZUlheDBqYkd4cVlnUlVEM0ZaVGZqMzNRYjRORjI4aWdXYlN5dTRyOUJlbVdBdDhVMGNLSjJtcFB5bDVB?oc=5",
+      "title": "Antes da nova série, HBO lança podcast sobre os filmes de 'Harry Potter'",
+      "cat": "nos",
+      "time": "5 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Universo Sagas",
+      "u": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuRS12R0MtVHdpMkVWMFJUZ1FMRnVBMGpkN29nekVvemtfSk9qTWtsamd0MkhLQWdJR3BCWElSNGw0bXUyZFdicG9MS1F4NV94ajdnQVZWSmlmeTMweGw3Sk9rU2prN2dYU0JkNlRWSDFWQQ?oc=5",
+      "title": "Harry Potter: Data de estreia da série é definida pela HBO (Saiba qual!)",
+      "cat": "pos",
+      "time": "30 abr, 04:24",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGZRWVc1VEVDQlRRb0N6TmpMTmFhQ3BhMW9FSG51WlFuTEpocXR0QjR6Z25mU0hIRmoyU1dnSWV3UUQwNHNYV0c0UlhOZng0YWphZXRiaTJzTGJKaF81NkJ5Q3JDSElfVU9aVklNMVQ5QnpMdmFZTENONTYta1YtQ1F6aWFqZzR5VHBnSlpoZWwzd3Vka09ya3FPSkN5ZFN4S2YwTk1SYm5FSXpjN1k1R2pLZ0tOdnlG0gG-AUFVX3lxTE1rNEI3dVhoVkxUamlnQVhzM2dod2dwSnk4eFYzVzRXdl95V3hvZFNIV0hrNHIyTjVYREhTYzQtcXhUZ2FrODFMX0w4bzNKTENsZHpxZmVmdWh1VXFGVDdPLWVXTnF3bXpFRTE0SkQwZ0RtbE55WUdweExSaEtNUk5HSXRQVTBSREs4Z1pFS2Fzb3BsUG4yaTJUVExlTXZscWQ4TkZHUUlEeGlscWhiTmd6STU3b2xOLXlHMkdENEE?oc=5",
+      "title": "Harry Potter: Série vai acabar com tradição de 28 anos da HBO",
+      "cat": "neu",
+      "time": "5 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Legião dos Heróis",
+      "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaExiV0Z4OUJobnY4NXNDSUtSazJUcjNCRk5odUZnM0JFbjBpY1hxSEd5RThRcjlBc3dSdVJ2QmowN1phdWh6SXpzYkltT2FKNUcwbW5WWGt1UlBram91NE9RNUJfWWwwYzJ0Rmg5TGIyNlpDM2o0dWxYdUJNLWk5LUtuU3dId3FPRXU3YXN2WS0xUkprX1kxNmlsQUFWbHRzZEVhT0pxS0ZBeTg?oc=5",
+      "title": "Harry Potter terá projeto com 16 episódios antes da nova série",
+      "cat": "neu",
+      "time": "5 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15TjhEamxMT2cwald2dEpBSVFKaXF3MUdBZEFJRl9kZW5xX1NXVmEyeDFUTHdjRktqV0hidVY5ck1kYWttZ1VkNmk2cHpXTU5falE?oc=5",
+      "title": "HBO’s Harry Potter Series Lead Cast Salaries Revealed: How They Compare To Daniel Radcliffe, Rupert Grint & Emma Watson",
+      "cat": "neu",
+      "time": "4 mai, 04:54",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O Vício",
+      "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNWxiQUx5R1FwdUVKN1lBRmdFNE9iWjdqQU1tcGZLYURSaW1rVDN4S3NRV0U0Tmxxc3praVg4NklKeF9NZDBXLUk2MkNYNE5yYzllY2FTMDMxdUFja29CVDhzS2lxN2JjUEs5STdaS1NySWJaa240Y1pkNmszUC1qMk9UN19WbEZU0gGOAUFVX3lxTE10UGJWSjFNdUdTNUQyRTg5SWJVN0Zybk55bDFYd0E0S1ZKQUN5MWluNWd5TU1ucFJvdU9Fc3R2WjNfOXlKOE5aWVRGZ0szanBZYWpFY1lwQUVKTFc1SlI3Q0lKLU82Q3Qta0dHbFNIWHh2OUJzcFhhMDY3UElDY3RLYUpqbWZWRlJMWTk5T1E?oc=5",
+      "title": "Harry Potter: Fotos do set revelam possível pai de Hermione",
+      "cat": "pos",
+      "time": "3 mai, 04:00",
+      "scope": "Google News RSS"
+    }
+  ],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 29 abr-5 mai 2026.",
     "facts": [
       [
         "Janela",
-        "29 abr–5 mai 2026"
+        "29 abr-5 mai 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "12"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 12,
+    "unit": "materias/videos/posts",
+    "net": 50,
+    "buzz": 100,
+    "news_count": 12,
+    "youtube_count": 0,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 75
   }
 }

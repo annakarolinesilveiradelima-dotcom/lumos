@@ -1,131 +1,335 @@
 {
   "label": "7 abr 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:41",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "12 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 1–7 abr 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 posts Reddit - 1-7 abr 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+33",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
   ],
   "stack": [
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ],
     [
-      0,
-      100,
+      33,
+      67,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 12,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 33,
         "n": 0,
-        "g": 100
+        "g": 67
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 33,
+        "n": 0,
+        "g": 67
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 33,
+        "n": 0,
+        "g": 67
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
+  "narratives": [
+    {
+      "t": "O novo Harry Potter já está na HBO Max: Produção acabou de estrear no streaming",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gam10X3IzNTkwYUlyUnF6NGRmY2pwZms1ZFVVY3lDNlVBVnRkaHJLNHF3ZEVEZURwUGw1R1phcFZVaFlWRlRjeGNSbGpzMzdVd0MzdGpzZE4yUno3eEZ5Y1dCU0dSOUhDUFU0VEppc1k?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO anuncia especial de 'Harry Potter' que mostrará os bastidores da série",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Exame",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWFhzZHhqbW1kX3ZYUDRPMDhucjQxTFNzeC1URTJnMzJyLWxja09yaFF6ZXZ6OG10bXkzelhFRmQ3YUJvRWd0NWs5NkVLai1RbjFqNE1uWEJpWFE1Zkp6T3l6YkxQeWN6dFRiMWgxTXJrUUsyMVFtWUIzMlF3V2Zyc3JQWnZKaXVpZjlQVVUtTXNlNk5hbndBQWtkVQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O GLOBO",
+          "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘À Procura de Harry’, especial sobre a série de ‘Harry Potter’, estreia na HBO Max",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rolling Stone Brasil",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONC0zM1NwT0RNNUJ3UjMxcUpRQkMzSEN5V3FVR2FlYmpvWFhwSjAycEtLQ1RhRFJPakRiN2t5V3J0djNwdXBNOXJmN3dHc0VNdU9xNS1fendCeHlndU9TU0wwd3Rua0g3emsxUWlXSVRuWG5jcC1qMV9Zc1hFVWRVblFUblVQd0FORVNUbVNOb196LVU3dUlwdWMycUtxeWptaktFWnYyZW1YbHBBS0R6cXd0V1lEWUVSdzNYOA?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série estreia especial com registro de bastidores",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX0FOMkthSWY1WXg3aW92SW9yVldWaEpFTlF0OTFBaDM1eTVfaHV1UnFKTDR2ZUlXVEZuMGxaM2d4LTZObkU5OGhQXzJlaU5mV3RSSFJTaE1PMWFXU3dGVHlLenZRNXhhbUhvVFNqTHJIWW1zUlJ0TWpuRDI3N1ZGTm9lbHhnbk9mWFlRbDRFZVRfOXNiSHVseGtPUm4?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rolling Stone Brasil",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gam10X3IzNTkwYUlyUnF6NGRmY2pwZms1ZFVVY3lDNlVBVnRkaHJLNHF3ZEVEZURwUGw1R1phcFZVaFlWRlRjeGNSbGpzMzdVd0MzdGpzZE4yUno3eEZ5Y1dCU0dSOUhDUFU0VEppc1k?oc=5",
+      "title": "O novo Harry Potter já está na HBO Max: Produção acabou de estrear no streaming",
+      "cat": "neu",
+      "time": "6 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Exame",
+      "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWFhzZHhqbW1kX3ZYUDRPMDhucjQxTFNzeC1URTJnMzJyLWxja09yaFF6ZXZ6OG10bXkzelhFRmQ3YUJvRWd0NWs5NkVLai1RbjFqNE1uWEJpWFE1Zkp6T3l6YkxQeWN6dFRiMWgxTXJrUUsyMVFtWUIzMlF3V2Zyc3JQWnZKaXVpZjlQVVUtTXNlNk5hbndBQWtkVQ?oc=5",
+      "title": "HBO anuncia especial de 'Harry Potter' que mostrará os bastidores da série",
+      "cat": "neu",
+      "time": "2 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O GLOBO",
+      "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5",
+      "title": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
+      "cat": "neu",
+      "time": "2 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rolling Stone Brasil",
+      "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONC0zM1NwT0RNNUJ3UjMxcUpRQkMzSEN5V3FVR2FlYmpvWFhwSjAycEtLQ1RhRFJPakRiN2t5V3J0djNwdXBNOXJmN3dHc0VNdU9xNS1fendCeHlndU9TU0wwd3Rua0g3emsxUWlXSVRuWG5jcC1qMV9Zc1hFVWRVblFUblVQd0FORVNUbVNOb196LVU3dUlwdWMycUtxeWptaktFWnYyZW1YbHBBS0R6cXd0V1lEWUVSdzNYOA?oc=5",
+      "title": "‘À Procura de Harry’, especial sobre a série de ‘Harry Potter’, estreia na HBO Max",
+      "cat": "pos",
+      "time": "5 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX0FOMkthSWY1WXg3aW92SW9yVldWaEpFTlF0OTFBaDM1eTVfaHV1UnFKTDR2ZUlXVEZuMGxaM2d4LTZObkU5OGhQXzJlaU5mV3RSSFJTaE1PMWFXU3dGVHlLenZRNXhhbUhvVFNqTHJIWW1zUlJ0TWpuRDI3N1ZGTm9lbHhnbk9mWFlRbDRFZVRfOXNiSHVseGtPUm4?oc=5",
+      "title": "\"Harry Potter\": série estreia especial com registro de bastidores",
+      "cat": "pos",
+      "time": "5 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rolling Stone Brasil",
+      "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
+      "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
+      "cat": "pos",
+      "time": "2 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Folha de S.Paulo",
+      "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRVdRTkw0ZVIzWjNiWjFoV25pVWxhVW5hTGdoNHlTcFphdl9ZWlA4ZlhYM3VSRVVTRThueE13U1EyRnpZajFEckpPaE1CVGNYYU1QQkU5MjBTd1NXdno2VVZfNW1jazhGSXF4Zi05d0ZXWnNuVXpsZW1vVDR5YUd1TVRkVGxmUU5abk1sdDNqRnlreWREcHV3X2Q4SC02emsycXZrYVNzVmNiaFMwc2l2ZXNCYkxFTGJ2bnVENEZPUUlBMjkybVZGeTYzUXBXczTSAdQBQVVfeXFMTTB1TVpUSnRSb3VIV3EtVS11MUFzczB4cWhka0NrQ2NOc0t1eml5NF84LWlObUVuSWVsZEtneWhMWlFVbEltRW5MYjVXX0NhcWY0VmRnUXA5MGtJVU5meTJ6WWZsRzJBUEh6ekI3aWZrNDZfekJqUEJScnJDSDZBSVhsazJjZ0RqMVVmSmV1T2stRnpERmhzZzJDdk8xQUtzbkFrcXlkR3dPb3Y5Y3JmZDI1bzgxaHFGZC1Gc1pqNnRjbFJDNzcxdzVCRm9nZERLYl8xaWM?oc=5",
+      "title": "Documentário sobre série de 'Harry Potter' chega à HBO Max no domingo; veja trailer",
+      "cat": "neu",
+      "time": "2 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOTRESWN1OXJidmlEY3BCSGJTZDZTdmNoaXhiVUJlR1dhODBJaDByVDh1S1gwekpURkN6TTRVUVY5bmpsdEVkeGppOXc3MjFsQzdHcmI3bkU4bURzMEN5LWVkVkdWeHFqeEctMUNFc3dJbVJWYmJuZ2NIQ1RaM3dMNUpvWlJWbTNJOFRhOXQwM3h6ZUk?oc=5",
+      "title": "Harry Potter | Série da HBO lança novo trailer anunciando especial",
+      "cat": "neu",
+      "time": "2 abr, 04:00",
+      "scope": "Google News RSS"
+    }
+  ],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Risco baixo na janela",
+      "sev": "low",
+      "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 1-7 abr 2026.",
     "facts": [
       [
         "Janela",
-        "1–7 abr 2026"
+        "1-7 abr 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "12"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 12,
+    "unit": "materias/videos/posts",
+    "net": 33,
+    "buzz": 100,
+    "news_count": 12,
+    "youtube_count": 0,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 66
   }
 }

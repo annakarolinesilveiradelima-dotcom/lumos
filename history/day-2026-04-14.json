@@ -1,131 +1,347 @@
 {
   "label": "14 abr 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:42",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "11 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 8–14 abr 2026"
+      "sub": "10 noticias - 1 videos YouTube - 0 posts Reddit - 8-14 abr 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+9",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
-    "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "pos": 18,
+    "neu": 73,
+    "neg": 9,
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
   ],
   "stack": [
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ],
     [
-      0,
-      100,
-      0
+      18,
+      73,
+      9
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 10,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
-        "n": 0,
-        "g": 100
+        "p": 18,
+        "n": 9,
+        "g": 73
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 18,
+        "n": 9,
+        "g": 73
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 18,
+        "n": 9,
+        "g": 73
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "O que o documentário da HBO revela sobre a nova série de 'Harry Potter'?",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Exame",
+          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVl9TOHdJN2FnS1JzZm40Uk90NzgtbmxCOXRtSHJESzh2NTVyZ0NxLXZGa1lHMGpvcnVLdEt6N2EzdEpDMG9sOVFjS1NoUWJjWlJNX2Vjb0lDZnA4TFBNdmpyaEFMWHVid18tMVdyc0Vnb0w4aC1kbGhtTWY2Q29RLXAzdHVqZw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: trailer da série está recebendo enxurrada de críticas negativas; veja o motivo",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "TudoCelular.com",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMkRuQnloT3BEalJVWnlkVW13VU9XV0tzdGJhX0dZa2VDR1F4bGhiMDBwTzNjdklnSmoxMzU4QTZWU0lpODhHTHhGSXZSY18wZ0FoMnpoQjBma0UyNFRwTHRCZHpBYXJrbHJ5ZmEza29kM3NuZk56UlQybFcwTENkSVBFNWlUbzNsdnloMUVlblJjc3hzcG40MC1hV2dGbDBub2NIbzREVG1rWmJhQkRn?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Trailer da série Harry Potter da HBO Max bombardeado no YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Eurogamer.pt",
+          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOb29VU2ZPcW9WdFRQTGlXcUcxdm05cUxLcS1jdVRHaF9DbEdiWmdJSzJ0X1Nhel8zZzRDYUhiN1R1LURIYnJkdFFadFpvTGhMT0hWMFppQ29UY3Jqd3A0MlRNS1hwd2JIOWwxVncwXzNpSmRBMFJhUEM5ZnVzLTVHdlhQbFpTNWk0SjdDaUdyeVFmZw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Documentário antecipa como será a nova série 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "UOL",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQk5ULWJ6QXNQWXRtdlpyU1ZzRlFialZmMGV2VVdWb2lfbXczMEVXMVIyczR5c2I4ckJNUXNEdzRLU0VMTVJNWENBcS1qS18xNzNFcFJTcmg1ZlBYRWVqRlZwN0ZrYm9sdVYyaml5aVNmXzdWTlliZTVFR0VOMFZZbDM4cGE3dW9HNjFzb1VaNzZLMU8tMGNtZmpLMUpiSlloNXFTQzBGRGFpZVNJMnFJbHNB?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Alastair Stout Wows as Ron Weasley in First ‘Harry Potter’ TV Show Trailer",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IMW5aZ0hYNjVKUmJsR0pnUUp4U2dmLU9Qckk3dTNCR2F6REJ4QzU2ODRhaDk0MUNuNlB2U0NOeEhvZ0c3RVVnNTNrYUtQelFaTXc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Dominic McLaughlin Brings Harry Potter to Life in HBO’s Spellbinding First Trailer – First Look Revealed",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yN1ZTZ1k3ejhJVkpQOEpGYVdDT2hJcXNXMFBHMHFGQ2d4NU9hQzRNbGtMbFRjUzdXMFNfRzYxNmJmUnhxUGpzbGRWeF84MHBkb1E?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Exame",
+      "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVl9TOHdJN2FnS1JzZm40Uk90NzgtbmxCOXRtSHJESzh2NTVyZ0NxLXZGa1lHMGpvcnVLdEt6N2EzdEpDMG9sOVFjS1NoUWJjWlJNX2Vjb0lDZnA4TFBNdmpyaEFMWHVid18tMVdyc0Vnb0w4aC1kbGhtTWY2Q29RLXAzdHVqZw?oc=5",
+      "title": "O que o documentário da HBO revela sobre a nova série de 'Harry Potter'?",
+      "cat": "pos",
+      "time": "8 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "TudoCelular.com",
+      "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMkRuQnloT3BEalJVWnlkVW13VU9XV0tzdGJhX0dZa2VDR1F4bGhiMDBwTzNjdklnSmoxMzU4QTZWU0lpODhHTHhGSXZSY18wZ0FoMnpoQjBma0UyNFRwTHRCZHpBYXJrbHJ5ZmEza29kM3NuZk56UlQybFcwTENkSVBFNWlUbzNsdnloMUVlblJjc3hzcG40MC1hV2dGbDBub2NIbzREVG1rWmJhQkRn?oc=5",
+      "title": "Harry Potter: trailer da série está recebendo enxurrada de críticas negativas; veja o motivo",
+      "cat": "neu",
+      "time": "10 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Eurogamer.pt",
+      "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOb29VU2ZPcW9WdFRQTGlXcUcxdm05cUxLcS1jdVRHaF9DbEdiWmdJSzJ0X1Nhel8zZzRDYUhiN1R1LURIYnJkdFFadFpvTGhMT0hWMFppQ29UY3Jqd3A0MlRNS1hwd2JIOWwxVncwXzNpSmRBMFJhUEM5ZnVzLTVHdlhQbFpTNWk0SjdDaUdyeVFmZw?oc=5",
+      "title": "Trailer da série Harry Potter da HBO Max bombardeado no YouTube",
+      "cat": "neu",
+      "time": "10 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "UOL",
+      "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQk5ULWJ6QXNQWXRtdlpyU1ZzRlFialZmMGV2VVdWb2lfbXczMEVXMVIyczR5c2I4ckJNUXNEdzRLU0VMTVJNWENBcS1qS18xNzNFcFJTcmg1ZlBYRWVqRlZwN0ZrYm9sdVYyaml5aVNmXzdWTlliZTVFR0VOMFZZbDM4cGE3dW9HNjFzb1VaNzZLMU8tMGNtZmpLMUpiSlloNXFTQzBGRGFpZVNJMnFJbHNB?oc=5",
+      "title": "Documentário antecipa como será a nova série 'Harry Potter'",
+      "cat": "neu",
+      "time": "10 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IMW5aZ0hYNjVKUmJsR0pnUUp4U2dmLU9Qckk3dTNCR2F6REJ4QzU2ODRhaDk0MUNuNlB2U0NOeEhvZ0c3RVVnNTNrYUtQelFaTXc?oc=5",
+      "title": "Alastair Stout Wows as Ron Weasley in First ‘Harry Potter’ TV Show Trailer",
+      "cat": "neu",
+      "time": "11 abr, 11:51",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yN1ZTZ1k3ejhJVkpQOEpGYVdDT2hJcXNXMFBHMHFGQ2d4NU9hQzRNbGtMbFRjUzdXMFNfRzYxNmJmUnhxUGpzbGRWeF84MHBkb1E?oc=5",
+      "title": "Dominic McLaughlin Brings Harry Potter to Life in HBO’s Spellbinding First Trailer – First Look Revealed",
+      "cat": "neu",
+      "time": "11 abr, 10:14",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUJQbDVoa1ZFNE5kTlNZZVowWkxTd2xzTGRkT3l6SXhLdk9sRVhkVHJMVXpfLU51TDlwQTc3LUI0YnJGVTBwOU5QVV9OVndXVDlmbVJ6RkZ6VzFXb2RBU19TWnJRZ2N4OHB2TVowOEFqaEpXaVFDUkViS2M0WUhJc1lMNXYzMFNud0dmUjNqZktiVV9ZcURJNHpWU3ZaRFhGNHBscmlNVzZDMlU?oc=5",
+      "title": "Ator de \"Harry Potter\" nega vontade de atuar em reprise e indica substituta",
+      "cat": "neu",
+      "time": "11 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWVBFcEQ0M2VxQWU5Q21PaVl5N2lqcGpHbThDd2ttckZEWDh5dTV0cm5scjBKdU41Yy1HNUNUT3VOVnFSQ2RVakNqSUttQ0wwQXhvWTd0VHdoS3otQnczOGx4eHl6RnByWURWbG5uMWtjVnQtTzJmdEt0WlhSTTFrVWtUWWthVTk1UXdOZUhFcWVId1VobHU3UVk3WnhWUllRWXJHZlN4OHpDTnM5Uk1uLVJmVEFUU2QxSEppbjE1aS1PZXljVndSdlRUTkVpYlJBQXlMTDV4OA?oc=5",
+      "title": "‘À Procura de Harry’, documentário sobre a série ‘Harry Potter’, estreia no TOP 5 de streaming; Saiba aonde assistir!",
+      "cat": "pos",
+      "time": "10 abr, 04:00",
+      "scope": "Google News RSS"
+    }
+  ],
+  "creators": [
+    {
+      "h": "3TopicsGamer",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neg",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=qa-T_dHb1x0"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 8-14 abr 2026.",
     "facts": [
       [
         "Janela",
-        "8–14 abr 2026"
+        "8-14 abr 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "11"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 11,
+    "unit": "materias/videos/posts",
+    "net": 9,
+    "buzz": 100,
+    "news_count": 10,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 54
   }
 }

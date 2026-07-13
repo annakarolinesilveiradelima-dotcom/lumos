@@ -1,131 +1,347 @@
 {
   "label": "9 jun 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:44",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "11 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 3–9 jun 2026"
+      "sub": "10 noticias - 1 videos YouTube - 0 posts Reddit - 3-9 jun 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+36",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 36,
+    "neu": 64,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
   ],
   "stack": [
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ],
     [
-      0,
-      100,
+      36,
+      64,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 10,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 36,
         "n": 0,
-        "g": 100
+        "g": 64
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 36,
+        "n": 0,
+        "g": 64
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 36,
+        "n": 0,
+        "g": 64
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "Harry Potter terá personagem icônico na 2ª temporada; veja quem",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPLVVRampCelJkTEVxV1BOUEhqUnlFa3lZOUpXLTgtODgwV1VHNGFCeVpNbXRGSmlnS0lzcUx2R3JLU3J4RVRkS2d0NGFKVUs4X21wWEpqT2ZYWjd3SUhxNmFMRVVGZ2VDdkQ2Y0tHVlNnYXU0UWpYX0NxaldLZXlsRDV1ejdDdmN0Z1B4TU9BYzROR3hjQlE?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: A série da HBO enfrenta dificuldades inesperadas nas filmagens de sua 1ª temporada",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSWh6bjdzTC00Ui1tXy1yLTFyV1I2T3RxWjZMR05QcWNKUU43MHNZakhYSTdJZmN5QlJ2b3I5RncyLXR2X3l6V2pSM1RJWFJ0UlZqbENlaGFMeEdVcEdweTRWMWVnRzFZVzFuVEVRSEjSAXZBVV95cUxPSTgtbkRMM3hDUk50LVZNLXJBUjRfR2dSZjVoLXVMc0ZDSVY1Ym1lRENvak1YeTk1V3dXNFBwYjAwS0U0NDFDSDN2c1RiX2ZWOGpoTEFaQmcxMVNDaWYySEhNREZmYTFVaGxFanhicU9jWW5UNE9B?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO revela 1ª imagem da nova série de Harry Potter e reacende a magia para 2027",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Jovem Pan",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDhuNmhSd0hOdnpXQXlNdHVHN0JnNDhBZmNnODdPaVdONUJ0TlpZMUVuN3JIeU9nMXQ1eWtNS2F3a1hfSXJhNW1RaURzUlZCcWF0UkhWb2w2N0NQT185RF94emJTWFliSDN2YzlGc0xuc2ZvZFBmQTFrY0NKc2hYSlZvc01wZXdmUmxGbjRSbzhickVFVHdYU1R1NGxHZFNsS0JuYkRlVUVUWWhpTWhYa3I2MGlIOHhEa3c5YVJuLTVqYmNvSlpndXRFZw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Novo personagem de Harry Potter é confirmado para a 2ª temporada da série; saiba quem",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rede Atlântida",
+          "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPbVh5WW9XTTAyVEhmalZXVTlrR0FrZjFWM1hoVWlxbzVFbDFhOHN5cXVSbGtQSFN6eE1TNXJOeDROQlFFeEJiczI4RVM1OUx4YWl3MDJMNExicGZNRVdVNGszbkN3LVllNEI0T2MyUnhER1Zvdk1wbU5Yd1UtdWZ0YkVMeU9rNlJaMXh3YVNaUnFkTXk2Y0pycS1RWUxyM3VoVFpOMk04MjRvMXRlN2lwU04tR1dIcGlyejlfVVduOGRNT3V0QXNLbmM1b2hiZjZ2dVh4WVBueGk2dFg2bUpOeXhEdWlONUREam1BZkhaVXo5VlNTU09qQi04bWFZWER5SVhB?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": HBO está em busca de ator para o personagem Colin Creevey",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rádio Mix FM",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxORnRTMGdqdnk4alV1YkpwNm9rTks3NG5VNk1PTnduU21SSndLMlhMUFBWeF8ycUFhQnBDVEw1NEF0R1lGZ0RSempyOGxPeDhFMzZvSXBFLWhDd2diajdBLWtvcE5nb2JNTjZqVlBadGRqcFhibWVVLVZyNmZJQjZfdmlGS3pzUGJFcEdCQzh4TlVMQnFlZmZfQTQ3UE5idw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Série Harry Potter: O que já sabemos sobre a produção?",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Jovem Pan",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX1VSMVlfbHNaXzFBQ0ZVQ0FkNFh5RmEyTkc1cVlxQVBfM09oRmYwWkNJdUZRNkNHQWFqendWM0oyT3ZOUmlTYkhoZ3N2NnhUS3RoT0JnMkNhZzdDVXVCNkJuRmdSakdvVUVScHNaQ08zU1hvOFh2NDJaR0kxaGtkWTZOeEtERjU1QnlpelJUaVJNTzJ5TkRXSnljMUlzbHlXdGFMeWJkQQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPLVVRampCelJkTEVxV1BOUEhqUnlFa3lZOUpXLTgtODgwV1VHNGFCeVpNbXRGSmlnS0lzcUx2R3JLU3J4RVRkS2d0NGFKVUs4X21wWEpqT2ZYWjd3SUhxNmFMRVVGZ2VDdkQ2Y0tHVlNnYXU0UWpYX0NxaldLZXlsRDV1ejdDdmN0Z1B4TU9BYzROR3hjQlE?oc=5",
+      "title": "Harry Potter terá personagem icônico na 2ª temporada; veja quem",
+      "cat": "neu",
+      "time": "5 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSWh6bjdzTC00Ui1tXy1yLTFyV1I2T3RxWjZMR05QcWNKUU43MHNZakhYSTdJZmN5QlJ2b3I5RncyLXR2X3l6V2pSM1RJWFJ0UlZqbENlaGFMeEdVcEdweTRWMWVnRzFZVzFuVEVRSEjSAXZBVV95cUxPSTgtbkRMM3hDUk50LVZNLXJBUjRfR2dSZjVoLXVMc0ZDSVY1Ym1lRENvak1YeTk1V3dXNFBwYjAwS0U0NDFDSDN2c1RiX2ZWOGpoTEFaQmcxMVNDaWYySEhNREZmYTFVaGxFanhicU9jWW5UNE9B?oc=5",
+      "title": "Harry Potter: A série da HBO enfrenta dificuldades inesperadas nas filmagens de sua 1ª temporada",
+      "cat": "neu",
+      "time": "7 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Jovem Pan",
+      "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDhuNmhSd0hOdnpXQXlNdHVHN0JnNDhBZmNnODdPaVdONUJ0TlpZMUVuN3JIeU9nMXQ1eWtNS2F3a1hfSXJhNW1RaURzUlZCcWF0UkhWb2w2N0NQT185RF94emJTWFliSDN2YzlGc0xuc2ZvZFBmQTFrY0NKc2hYSlZvc01wZXdmUmxGbjRSbzhickVFVHdYU1R1NGxHZFNsS0JuYkRlVUVUWWhpTWhYa3I2MGlIOHhEa3c5YVJuLTVqYmNvSlpndXRFZw?oc=5",
+      "title": "HBO revela 1ª imagem da nova série de Harry Potter e reacende a magia para 2027",
+      "cat": "pos",
+      "time": "6 jun, 06:47",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rede Atlântida",
+      "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPbVh5WW9XTTAyVEhmalZXVTlrR0FrZjFWM1hoVWlxbzVFbDFhOHN5cXVSbGtQSFN6eE1TNXJOeDROQlFFeEJiczI4RVM1OUx4YWl3MDJMNExicGZNRVdVNGszbkN3LVllNEI0T2MyUnhER1Zvdk1wbU5Yd1UtdWZ0YkVMeU9rNlJaMXh3YVNaUnFkTXk2Y0pycS1RWUxyM3VoVFpOMk04MjRvMXRlN2lwU04tR1dIcGlyejlfVVduOGRNT3V0QXNLbmM1b2hiZjZ2dVh4WVBueGk2dFg2bUpOeXhEdWlONUREam1BZkhaVXo5VlNTU09qQi04bWFZWER5SVhB?oc=5",
+      "title": "Novo personagem de Harry Potter é confirmado para a 2ª temporada da série; saiba quem",
+      "cat": "pos",
+      "time": "5 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rádio Mix FM",
+      "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxORnRTMGdqdnk4alV1YkpwNm9rTks3NG5VNk1PTnduU21SSndLMlhMUFBWeF8ycUFhQnBDVEw1NEF0R1lGZ0RSempyOGxPeDhFMzZvSXBFLWhDd2diajdBLWtvcE5nb2JNTjZqVlBadGRqcFhibWVVLVZyNmZJQjZfdmlGS3pzUGJFcEdCQzh4TlVMQnFlZmZfQTQ3UE5idw?oc=5",
+      "title": "\"Harry Potter\": HBO está em busca de ator para o personagem Colin Creevey",
+      "cat": "neu",
+      "time": "8 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Jovem Pan",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX1VSMVlfbHNaXzFBQ0ZVQ0FkNFh5RmEyTkc1cVlxQVBfM09oRmYwWkNJdUZRNkNHQWFqendWM0oyT3ZOUmlTYkhoZ3N2NnhUS3RoT0JnMkNhZzdDVXVCNkJuRmdSakdvVUVScHNaQ08zU1hvOFh2NDJaR0kxaGtkWTZOeEtERjU1QnlpelJUaVJNTzJ5TkRXSnljMUlzbHlXdGFMeWJkQQ?oc=5",
+      "title": "Série Harry Potter: O que já sabemos sobre a produção?",
+      "cat": "neu",
+      "time": "6 jun, 06:19",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Capricho",
+      "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYThLMXF0RFRWUHJsUHl0am9fTVh6U1lsVzlCU1RzdGpHLXhjdjlSSGlTa003TkVRRFRYZ1FGTmtUeWVKTU9GV29fMnRndjVGbklUTU1FbjR0N1pLLTgteGhSYnNDT1NYaFk4SnpxdmU0Rm5QQmtLV1lBMmxJek5fMEF2dkxYamNvZ0hLRjJLSTFMOEZ6MWtvUURlbG9QenRUYVBFdUVHZ3FCeklI?oc=5",
+      "title": "Série de Harry Potter ganha primeiro trailer e data de estreia",
+      "cat": "pos",
+      "time": "8 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O Vício",
+      "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQa3lUMkFvWWR1U0Flcy15UnYwU0JCUXFLREhLa1c1LXhyWENYY2N6azUtbENjVUdxTEZoNmdJQlVKU1c3YU5VMFFDM0d2UHI4RXZyTUZ3ODBKUHpqMFYyR0tiRmtuMXJ4YUQzb2NXdGR4Rzg3T1BnRC1yU1hUNEdiUzBtTDNmeDdXc19wU1NLVnRTWDhOTlM4YThwSWU5UmE3U3gzUjNR0gGrAUFVX3lxTE13MEJkTVh4V0JmRmJPclhYYVVkNlF1U1RaWEJRbjdWZkthQ1VIdnlvaUZpYzU0R2RjTlZtYnVCSjdUQ21NNW14VG95Z1RQdXl6a3dSMGV5b05jb1U2ZWdNNnBieERwUlR2eWM1bTJyQjNsQWMyQnNuZHl1a3l6QzZGdDRpMXhDM0p4UUxYNTZuY0F2aHFPS0gxLUtTNjBHeVFVSXJMYVY2czJOOA?oc=5",
+      "title": "Harry Potter: Série está à procura de ator para Colin Creevey para a 2ª temporada",
+      "cat": "neu",
+      "time": "5 jun, 04:00",
+      "scope": "Google News RSS"
+    }
+  ],
+  "creators": [
+    {
+      "h": "The Sorcerer Nerd",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=oqGkDPDeoWc"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 3-9 jun 2026.",
     "facts": [
       [
         "Janela",
-        "3–9 jun 2026"
+        "3-9 jun 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "11"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 11,
+    "unit": "materias/videos/posts",
+    "net": 36,
+    "buzz": 100,
+    "news_count": 10,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 68
   }
 }

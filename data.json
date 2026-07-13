@@ -1,5 +1,5 @@
 {
-  "generated_at": "13 jul 2026, 15:12",
+  "generated_at": "13 jul 2026, 15:45",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,37 +11,37 @@
       "days": {
         "d0": {
           "label": "13 jul 2026",
-          "updated": "13 jul 2026, 15:12",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
-              "d": -1,
-              "sub": "cobertura real coletada"
+              "v": "1 item",
+              "d": 0,
+              "sub": "1 noticias - 0 videos YouTube - 0 posts Reddit - 13 jul 2026"
             },
             "sentiment": {
               "v": "+0",
               "suf": "/100",
               "d": 0,
-              "sub": "índice líquido do dia"
+              "sub": "indice semanal por cobertura"
             },
             "sov": {
-              "v": "—",
+              "v": "-",
               "d": 0,
               "dtype": "pts",
-              "sub": "requer base multi-título"
+              "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "45",
+              "v": "28",
               "suf": "/100",
-              "d": 17,
-              "sub": "índice de buzz do dia"
+              "d": 0,
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada hoje"
+            "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
           },
           "buzz7": [
             1,
@@ -50,7 +50,7 @@
             1,
             1,
             1,
-            0
+            1
           ],
           "stack": [
             [
@@ -100,46 +100,99 @@
                 "n": 0,
                 "g": 100
               }
+            },
+            {
+              "name": "YouTube",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Reddit",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 128,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Bertie Carvel Finally Breaks Down His Take On Cornelius Fudge For HBO’s ‘Harry Potter’",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "IMDb",
+                  "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFNmo4N0xKQjVpQmRxVHplcURMM0pvdjdGdHQ1WFFEUlpLcF9uMDRXbmJfeHpIaHp5MjNpNW9ONDNJSFkxakl5MnhaRXR0al9zZFhoRWV1enJPWDlvTUgwTjFCWHQ?oc=5"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "IMDb",
+              "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFNmo4N0xKQjVpQmRxVHplcURMM0pvdjdGdHQ1WFFEUlpLcF9uMDRXbmJfeHpIaHp5MjNpNW9ONDNJSFkxakl5MnhaRXR0al9zZFhoRWV1enJPWDlvTUgwTjFCWHQ?oc=5",
+              "title": "Bertie Carvel Finally Breaks Down His Take On Cornelius Fudge For HBO’s ‘Harry Potter’",
+              "cat": "neu",
+              "time": "13 jul, 06:15",
+              "scope": "Google News RSS"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na janela",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 13 jul 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada hoje",
-            "desc": "Não houve cobertura real suficiente no feed atual para recomendar ação.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais. Janela: 13 jul 2026.",
             "facts": [
               [
-                "Fonte",
-                "sem cobertura"
+                "Janela",
+                "13 jul 2026"
               ],
               [
-                "Social",
-                "não conectado"
+                "Marco",
+                "25/03/2026"
               ],
               [
-                "Dados fictícios",
-                "não"
+                "Itens reais",
+                "1"
               ],
               [
-                "Ação",
-                "rodar novamente"
+                "Dados ficticios",
+                "nao"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
             }
           ],
           "ephem": []
@@ -148,7 +201,7 @@
       "weeks": {
         "w0": {
           "label": "8–13 jul 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -283,7 +336,7 @@
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -398,7 +451,7 @@
               "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
               "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
               "cat": "nos",
-              "time": "4 jul, 18:28",
+              "time": "4 jul, 21:28",
               "scope": "Portal BR"
             }
           ],
@@ -449,7 +502,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -584,7 +637,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -719,7 +772,7 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -850,7 +903,7 @@
               "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
               "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
               "cat": "nos",
-              "time": "15 jun, 19:00",
+              "time": "15 jun, 22:00",
               "scope": "Portal BR"
             },
             {
@@ -858,7 +911,7 @@
               "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
               "title": "Série escala ator de Pirraça, personagem inédito",
               "cat": "nos",
-              "time": "15 jun, 14:30",
+              "time": "15 jun, 17:30",
               "scope": "Portal BR"
             }
           ],
@@ -915,7 +968,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1050,7 +1103,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1185,7 +1238,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1320,7 +1373,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1455,7 +1508,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1590,7 +1643,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1725,7 +1778,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1860,18 +1913,18 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+100",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1880,61 +1933,61 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "78",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ]
           ],
@@ -1942,29 +1995,55 @@
             {
               "name": "Imprensa",
               "vol": 1,
-              "senti": "neu",
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 100,
                 "n": 0,
-                "g": 100
+                "g": 0
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "YouTube - Narrative Notch",
+                  "u": "https://www.youtube.com/watch?v=ftic_jZLUZs"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "YouTube - Narrative Notch",
+              "u": "https://www.youtube.com/watch?v=ftic_jZLUZs",
+              "title": "HBO’s Harry Potter Reboot Is Changing EVERYTHING (7 Major Fixes)",
+              "cat": "nos",
+              "time": "21 abr, 20:00",
+              "scope": "Video/Creator - YouTube"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 15–21 abr 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "t": "Comparação com os filmes originais",
+              "sev": "mid",
+              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 15–21 abr 2026.",
             "facts": [
               [
                 "Janela",
@@ -1972,30 +2051,35 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 15–21 abr 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2130,7 +2214,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2265,18 +2349,18 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "13 jul 2026, 15:19",
+          "updated": "13 jul 2026, 15:45",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "0 matérias",
               "d": 0,
-              "sub": "semana desde o teaser"
+              "sub": "sem cobertura real nesta semana"
             },
             "sentiment": {
-              "v": "+0",
-              "suf": "/100",
+              "v": "—",
+              "suf": "",
               "d": 0,
-              "sub": "índice semanal"
+              "sub": "sem base suficiente"
             },
             "sov": {
               "v": "—",
@@ -2285,26 +2369,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "28",
+              "v": "0",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz semanal desde o teaser"
+              "sub": "sem cobertura real"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Consolidação semanal por data real das matérias"
+            "tone": "Sem cobertura real coletada nesta semana"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "stack": [
             [
@@ -2356,46 +2440,20 @@
               }
             }
           ],
-          "narratives": [
-            {
-              "t": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - Zod",
-                  "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "YouTube - Zod",
-              "u": "https://www.youtube.com/watch?v=ms-FuYUSNt4",
-              "title": "Saiu o trailer da NOVA serie de Harry Potter! #harrypotter #hbo #series #polemica #polemicas",
-              "cat": "neu",
-              "time": "31 mar, 23:17",
-              "scope": "Video/Creator - YouTube"
-            }
-          ],
+          "narratives": [],
+          "coverage": [],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura editorial",
+              "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+              "d": "Não foram encontradas matérias reais para a janela 25–31 mar 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
             }
           ],
           "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 25–31 mar 2026.",
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
             "facts": [
               [
                 "Janela",
@@ -2403,28 +2461,23 @@
               ],
               [
                 "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Matérias",
-                "1"
+                "teaser 25/03/2026"
               ],
               [
                 "Dados fictícios",
                 "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparação",
-              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 25–31 mar 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
             }
           ],
           "ephem": []

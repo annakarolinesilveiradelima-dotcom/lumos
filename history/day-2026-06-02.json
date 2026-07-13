@@ -1,131 +1,289 @@
 {
   "label": "2 jun 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:44",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "4 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 27 mai–2 jun 2026"
+      "sub": "3 noticias - 1 videos YouTube - 0 posts Reddit - 27 mai-2 jun 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
   ],
   "stack": [
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
-      "senti": "neu",
+      "vol": 3,
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 100,
         "n": 0,
-        "g": 100
+        "g": 0
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "pos",
+      "ang": 70,
+      "s": {
+        "p": 100,
+        "n": 0,
+        "g": 0
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "pos",
+      "ang": 128,
+      "s": {
+        "p": 100,
+        "n": 0,
+        "g": 0
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "Harry Potter | Nova escalação para primeira temporada da série é revelada",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdDBGeExramNFNlBMNWxqMjVPZ2syZ0wxd3RvV1JveHF6QUNDMl9zX3FEVnE1Z3BER1ZUWFZ1M3BLbTVZOXhPcjlrb0xJY0ZCNHhQZWhmdlRBbHoyRmJfZzZER2h5LW4wTWVOR3hIUWRvY3VNWTRHZ1BtbnV6V0JqeVRRd0dzRmdxTWUtcS1YM0hmTVVxTUE?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": Zoe Colhoun entra para elenco da 1ª temporada da série",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rádio Mix FM",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYjBuZDRxT0lDY0VHRWN4aGx5WEM2MkJDS1RUdktFcDdUSTdDREh0VnFYOVNraVpYOWsydmJZSWd4cEJDUURPY09YSHdNWUhvT3ZSOExiOThpR3FVZTZmeFlLZXVRVE1PM2paSHRNcGhGNHZSdE5CNnhxZXNSbk5ickxtWEJYMndoOTNoVnF0ajAyX2VZb2Q1b0pR?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘Harry Potter’: Atriz se ENCANTA com elenco infantil da nova série e revela bastidores das gravações",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV1NuUEpIX3llejZNZy1QTDg3WlkwX2xGY2ZRSmhjdi0wV0VxRVhDY1B4QU54U21Zc1VYbzRzOVFXMkRrYm44ZjVnUDlUWXRjWndCQzJEMVlIcUViOTdTV2U1NzhnUlVUYU1NelZfcTVtSXRpRDFHZWtLbnlKWTBpWG5GRldEN1BsSWg1SWIzeGhUZzBwUkJ4SWFVOFc0WnpfREtsd2pxRE0zRkd4NGNQZG1DV01HZVYyRTJCbDJkZ3htaENFdEJV?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "House of the Dragon Season 3 | Official Final Trailer | HBO Max #1m on movies Trending chart #dragon",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Banana Prompts AI",
+          "u": "https://www.youtube.com/watch?v=-YxolEXPTaM"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdDBGeExramNFNlBMNWxqMjVPZ2syZ0wxd3RvV1JveHF6QUNDMl9zX3FEVnE1Z3BER1ZUWFZ1M3BLbTVZOXhPcjlrb0xJY0ZCNHhQZWhmdlRBbHoyRmJfZzZER2h5LW4wTWVOR3hIUWRvY3VNWTRHZ1BtbnV6V0JqeVRRd0dzRmdxTWUtcS1YM0hmTVVxTUE?oc=5",
+      "title": "Harry Potter | Nova escalação para primeira temporada da série é revelada",
+      "cat": "pos",
+      "time": "31 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Rádio Mix FM",
+      "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYjBuZDRxT0lDY0VHRWN4aGx5WEM2MkJDS1RUdktFcDdUSTdDREh0VnFYOVNraVpYOWsydmJZSWd4cEJDUURPY09YSHdNWUhvT3ZSOExiOThpR3FVZTZmeFlLZXVRVE1PM2paSHRNcGhGNHZSdE5CNnhxZXNSbk5ickxtWEJYMndoOTNoVnF0ajAyX2VZb2Q1b0pR?oc=5",
+      "title": "\"Harry Potter\": Zoe Colhoun entra para elenco da 1ª temporada da série",
+      "cat": "pos",
+      "time": "1 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV1NuUEpIX3llejZNZy1QTDg3WlkwX2xGY2ZRSmhjdi0wV0VxRVhDY1B4QU54U21Zc1VYbzRzOVFXMkRrYm44ZjVnUDlUWXRjWndCQzJEMVlIcUViOTdTV2U1NzhnUlVUYU1NelZfcTVtSXRpRDFHZWtLbnlKWTBpWG5GRldEN1BsSWg1SWIzeGhUZzBwUkJ4SWFVOFc0WnpfREtsd2pxRE0zRkd4NGNQZG1DV01HZVYyRTJCbDJkZ3htaENFdEJV?oc=5",
+      "title": "‘Harry Potter’: Atriz se ENCANTA com elenco infantil da nova série e revela bastidores das gravações",
+      "cat": "pos",
+      "time": "27 mai, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Banana Prompts AI",
+      "u": "https://www.youtube.com/watch?v=-YxolEXPTaM",
+      "title": "House of the Dragon Season 3 | Official Final Trailer | HBO Max #1m on movies Trending chart #dragon",
+      "cat": "nos",
+      "time": "2 jun, 22:10",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Banana Prompts AI",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=-YxolEXPTaM"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 27 mai-2 jun 2026.",
     "facts": [
       [
         "Janela",
-        "27 mai–2 jun 2026"
+        "27 mai-2 jun 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "4"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 4,
+    "unit": "materias/videos/posts",
+    "net": 100,
+    "buzz": 100,
+    "news_count": 3,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 100
   }
 }

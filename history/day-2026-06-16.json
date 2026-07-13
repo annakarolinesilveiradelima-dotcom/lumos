@@ -1,182 +1,353 @@
 {
   "label": "16 jun 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:44",
   "kpi": {
     "mentions": {
-      "v": "2 matérias",
+      "v": "10 items",
       "d": 0,
-      "sub": "backfill semanal · 10–16 jun 2026"
+      "sub": "9 noticias - 1 videos YouTube - 0 posts Reddit - 10-16 jun 2026"
     },
     "sentiment": {
-      "v": "+100",
+      "v": "+50",
       "suf": "/100",
       "d": 0,
-      "sub": "índice semanal por cobertura"
+      "sub": "indice semanal por cobertura"
     },
     "sov": {
-      "v": "—",
+      "v": "-",
       "d": 0,
       "dtype": "pts",
-      "sub": "requer base multi-título"
+      "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "86",
+      "v": "100",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 100,
-    "neu": 0,
+    "pos": 50,
+    "neu": 50,
     "neg": 0,
-    "tone": "Backfill semanal baseado em notícias reais"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
   ],
   "stack": [
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ],
     [
-      100,
-      0,
+      50,
+      50,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 2,
-      "senti": "pos",
+      "vol": 9,
+      "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 100,
+        "p": 50,
         "n": 0,
-        "g": 0
+        "g": 50
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
       }
     }
   ],
   "narratives": [
     {
-      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "t": "Harry Potter | Série escala ator de Pirraça, personagem cortado nos filmes",
       "vol": 1,
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Backfill histórico desde o teaser; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
-        }
-      ]
-    },
-    {
-      "t": "Série escala ator de Pirraça, personagem inédito",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Backfill histórico desde o teaser; social listening não conectado",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDdDcndMN2pVaEZWdEVYLVVQTFc5RjBhbFJ6NUdIT0Y0bkNYM2ZQZnlRcGxDN1JSUlQ0YkNVSnlXeGJGeTFvUWNPdkhhU3ZCNml4SUJQSTI2aklTaDE0TkNJRFNCSE9CUDBlYlowT3pCQmFHTGR6UFZaYkx3bFJiY193SnNnMXJmSFE5NURFb2pMc0d2VGtCVXk2czMxRmc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: HBO escala ator para personagem importante dos livros que não estava nos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "TudoCelular.com",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa1pWenFSQlJ2RGM4ZkxFbHhlRGhuckZtYUxCb21ZcmxEWlFSMkFGTEF6cFhIbWtOU2pxUVRlSWdmenRfdGsyOGIza2xZckVmTVZLLUFOMHBsVkNEMDRYTmtsUWo3ZjdPSXh6THNaVzREVk54YVloemFUdmg3TXVNVnBDQ1Z2TXVJYkRNd29HOEJNYVRRanc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaEJ3dGRmZExtS0dYRkJDSUJmNUpRWkdXa3BhRTFJdloxZXJ3dlhiM2FtdXhGc1VmWGFiaW9rTFVjQW5ZQ1RmWXFEeWxweXVxaGtSTlVVeWEtSG9EYzVUd3NhM2Jid0RkeXlOeXJkNTZjeVg1bFlEbi05Qzh6elh5b3AyWFB4dkVnYWhXMnhXWWw5S296VjIzSE40S2F2VnVFNGl3MDhYdlVzUXRlWW9WR2J3?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘Harry Potter’: Série da HBO corrige erro histórico dos filmes; Saiba qual!",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT0g3VXBRNTFlZ0MwSE1oWk5rUzBtMHUtVEpIdjBhQ1pFbDBVUm5zT3FRNVE4ME5yRUN5S2VuREpod2FkZklvQ21tUUxtcG9nUmx3R2JRdzV0NHY0ZDZmTjhlcFdTWnpERTVMSzdmS1ZMaHdmZmxkOXhsQ3dmVHVMM25uWWpnb2x6OXBUTHd2MG1TeE5Gdy1NZDlhekc1U1Q0eHhF?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: série da HBO será recordista em duração da história",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WTTRKNG1LTzN0dlZfYzZUMERscTR2Z25lN2NLb1Bnd1c1NEZhYjRWZGhjc2l3YzQ3dWZhdm9Kai1fNkJzcGtrWjJkd0o4cXZvYm5vTThfaXFmbm9CUDRxeFcxZ1dqb19XVFJCSVZLRQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "HBO anuncia Peter Serafinowicz no elenco de ‘HARRY POTTER’",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "RADAR DIGITAL BRASÍLIA",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRE1yT0hpR0oxN1pTdHlfOE9VejVDei10TDVhaXg4dU1IWWJSWS1USWY2ZlV5c3ZUSVRsNWtfZGxFeUtpQlQ4R25KUlBjWXRoRFBFZ05ZYmwwbldrWlpaT2NkNUJKRHpwWUVZWHRrM2g4Mm8wa21nWGR0aFVBTVE4eEd1RlpkSVVUTTYwZThIV29YR2JReTVYZUE0bFVZYWdNV2tzdDRmQQ?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
-      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDdDcndMN2pVaEZWdEVYLVVQTFc5RjBhbFJ6NUdIT0Y0bkNYM2ZQZnlRcGxDN1JSUlQ0YkNVSnlXeGJGeTFvUWNPdkhhU3ZCNml4SUJQSTI2aklTaDE0TkNJRFNCSE9CUDBlYlowT3pCQmFHTGR6UFZaYkx3bFJiY193SnNnMXJmSFE5NURFb2pMc0d2VGtCVXk2czMxRmc?oc=5",
+      "title": "Harry Potter | Série escala ator de Pirraça, personagem cortado nos filmes",
       "cat": "nos",
-      "time": "15 jun, 19:00",
-      "scope": "Portal BR"
+      "time": "15 jun, 04:00",
+      "scope": "Google News RSS"
     },
     {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
-      "title": "Série escala ator de Pirraça, personagem inédito",
+      "o": "TudoCelular.com",
+      "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa1pWenFSQlJ2RGM4ZkxFbHhlRGhuckZtYUxCb21ZcmxEWlFSMkFGTEF6cFhIbWtOU2pxUVRlSWdmenRfdGsyOGIza2xZckVmTVZLLUFOMHBsVkNEMDRYTmtsUWo3ZjdPSXh6THNaVzREVk54YVloemFUdmg3TXVNVnBDQ1Z2TXVJYkRNd29HOEJNYVRRanc?oc=5",
+      "title": "Harry Potter: HBO escala ator para personagem importante dos livros que não estava nos filmes",
       "cat": "nos",
-      "time": "15 jun, 14:30",
-      "scope": "Portal BR"
+      "time": "16 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaEJ3dGRmZExtS0dYRkJDSUJmNUpRWkdXa3BhRTFJdloxZXJ3dlhiM2FtdXhGc1VmWGFiaW9rTFVjQW5ZQ1RmWXFEeWxweXVxaGtSTlVVeWEtSG9EYzVUd3NhM2Jid0RkeXlOeXJkNTZjeVg1bFlEbi05Qzh6elh5b3AyWFB4dkVnYWhXMnhXWWw5S296VjIzSE40S2F2VnVFNGl3MDhYdlVzUXRlWW9WR2J3?oc=5",
+      "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "cat": "neu",
+      "time": "15 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT0g3VXBRNTFlZ0MwSE1oWk5rUzBtMHUtVEpIdjBhQ1pFbDBVUm5zT3FRNVE4ME5yRUN5S2VuREpod2FkZklvQ21tUUxtcG9nUmx3R2JRdzV0NHY0ZDZmTjhlcFdTWnpERTVMSzdmS1ZMaHdmZmxkOXhsQ3dmVHVMM25uWWpnb2x6OXBUTHd2MG1TeE5Gdy1NZDlhekc1U1Q0eHhF?oc=5",
+      "title": "‘Harry Potter’: Série da HBO corrige erro histórico dos filmes; Saiba qual!",
+      "cat": "nos",
+      "time": "16 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WTTRKNG1LTzN0dlZfYzZUMERscTR2Z25lN2NLb1Bnd1c1NEZhYjRWZGhjc2l3YzQ3dWZhdm9Kai1fNkJzcGtrWjJkd0o4cXZvYm5vTThfaXFmbm9CUDRxeFcxZ1dqb19XVFJCSVZLRQ?oc=5",
+      "title": "Harry Potter: série da HBO será recordista em duração da história",
+      "cat": "neu",
+      "time": "12 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "RADAR DIGITAL BRASÍLIA",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRE1yT0hpR0oxN1pTdHlfOE9VejVDei10TDVhaXg4dU1IWWJSWS1USWY2ZlV5c3ZUSVRsNWtfZGxFeUtpQlQ4R25KUlBjWXRoRFBFZ05ZYmwwbldrWlpaT2NkNUJKRHpwWUVZWHRrM2g4Mm8wa21nWGR0aFVBTVE4eEd1RlpkSVVUTTYwZThIV29YR2JReTVYZUE0bFVZYWdNV2tzdDRmQQ?oc=5",
+      "title": "HBO anuncia Peter Serafinowicz no elenco de ‘HARRY POTTER’",
+      "cat": "pos",
+      "time": "15 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O Vício",
+      "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQzJLTGQyUGxzc01NVTVrNFZGNUZnZE9GWlJPc24wamJjZk00bHoxTTJOcTlWZ2s4OWU4alAwQ3hOdk9kU1ltR3kyWktpS1Zlci1YeFdtNVVId1JST3VudjVDX1Q0TUxBeTJuTWhzNnJMVFBhclVRbl93T0RRa2loWElBTnpzZ9IBiwFBVV95cUxPOXpDUDJaRnRQc1Z3MEkySkRxUzZ1SVdDcDNEZTUxelh4OHRsWGlxTXVjbE80Q1ZHcXRqLTFvQjR4X1ROM2Ywam1PaVZOTTR3U2RxaU80alVTUUZVZFV3d2hKU2tSMEtNRmJ4YjB3VG5TWnBsWFNxdnVzVnFBQlIwSmFtZmMwV1NpV0pj?oc=5",
+      "title": "Harry Potter: Série da HBO escala ator para viver Pirraça",
+      "cat": "neu",
+      "time": "15 jun, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Observatório da TV",
+      "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUzdlb3g1N3QwR0dqS2FRNGtWQlhSMFFEdE5nV2VCWFRPdUJrRnNTblI0NzFwZlprOWQwcE5rSzdVaE1YTmJZNkRMZmRmdFM4LUhvVWZZOHR0bEJDbDBDN2o4Z1ZHVGN4OGJpOXRsMGsxZUxaZTZ6OFY3bG9rZEphNktaT0xRV05HMlhxVFV0U2UyMVhlNWo5U0tnYXlac3hpbGIzM3NkTDlFU2M4YndaQzNyYkxkMFZ1TlhxSDBsRnNJRV9hWm5iWmNrc2k2NXB1MHd3dFdjOU9NMl9RbWRLenZqWlFUS0pETzZSbzJB?oc=5",
+      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "cat": "nos",
+      "time": "15 jun, 04:00",
+      "scope": "Google News RSS"
     }
   ],
-  "creators": [],
-  "risks": [],
+  "creators": [
+    {
+      "h": "Cine Trivia Lab",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=Vr7Kt_LzO4I"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+    }
+  ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por backfill de matérias reais. Janela: 10–16 jun 2026.",
+    "desc": "Semana preenchida por fontes reais. Janela: 10-16 jun 2026.",
     "facts": [
       [
         "Janela",
-        "10–16 jun 2026"
+        "10-16 jun 2026"
       ],
       [
         "Marco",
         "25/03/2026"
       ],
       [
-        "Matérias reais",
-        "2"
+        "Itens reais",
+        "10"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 2,
-    "unit": "matérias",
-    "net": 100,
-    "buzz": 86,
-    "news_count": 2,
+    "base_count": 10,
+    "unit": "materias/videos/posts",
+    "net": 50,
+    "buzz": 100,
+    "news_count": 9,
+    "youtube_count": 1,
     "social_mentions": 0,
     "backfill": true,
-    "sentiment_index": 100
+    "sentiment_index": 75
   }
 }

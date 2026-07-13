@@ -1,131 +1,339 @@
 {
   "label": "28 abr 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:42",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "7 items",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 22–28 abr 2026"
+      "sub": "6 noticias - 1 videos YouTube - 0 posts Reddit - 22-28 abr 2026"
     },
     "sentiment": {
-      "v": "—",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
-    },
-    "sov": {
-      "v": "—",
-      "d": 0,
-      "dtype": "pts",
-      "sub": "requer base multi-título"
-    },
-    "buzz": {
-      "v": "0",
+      "v": "+29",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura real"
+      "sub": "indice semanal por cobertura"
+    },
+    "sov": {
+      "v": "-",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-titulo"
+    },
+    "buzz": {
+      "v": "90",
+      "suf": "/100",
+      "d": 0,
+      "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 29,
+    "neu": 71,
     "neg": 0,
-    "tone": "Sem cobertura real coletada nesta semana"
+    "tone": "Backfill semanal baseado em Google News, YouTube e Reddit opcionais"
   },
   "buzz7": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
   ],
   "stack": [
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ],
     [
-      0,
-      100,
+      29,
+      71,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 6,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 29,
         "n": 0,
-        "g": 100
+        "g": 71
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 29,
+        "n": 0,
+        "g": 71
+      }
+    },
+    {
+      "name": "Reddit",
+      "vol": 1,
+      "senti": "neu",
+      "ang": 128,
+      "s": {
+        "p": 29,
+        "n": 0,
+        "g": 71
       }
     }
   ],
-  "narratives": [],
-  "coverage": [],
-  "creators": [],
-  "risks": [],
+  "narratives": [
+    {
+      "t": "A série de Harry Potter confirma oficialmente sua maior mudança: É assim que ela será diferente dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqY2dickVSVko4NTlsa29hVVZKcHpBMUN0cXFWSnNYRjhnTkZmN3ZGWjlieldqanZDdE5YUmdiTjBvbDEzMjItNXJCUjkxVWJsZ2JlQWNfQVE2dXdhLXVsVnYyOHoyeDFfR0dlcW9SNmnSAXZBVV95cUxPdlpvRFNYZmpTcmQwN1hyRzRjZkh0dlVfWFE4cHRGcGlTcnpmNm5VWnJ6YlVST2M4cFNoa2wyZ1l0OEFWUHgtNlVFNG9TUTQ2ZGRjUGItcThveUFZUTllTU5iakRockRNWHZfRFdTRW9nLS1HNjBR?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter na HBO: Quantos episódios terá a 1ª temporadas da série?",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Universo Sagas",
+          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTzFlRDNPV3VzRTBmelQwclZJT00taEZsQThzS1NPZE1FUER2VEZhcmktaVFCQmVLOW9taDlqS2UwZGF5S09uZmF0bEpDeE9qYVpuMUoya01qRm1LdU5VbzY1S2lFZkJHU0laRFNIT1RDSzY5bUpieHRwS0pUOEE3MHVyVHRSZw?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "O novo filme de Harry Potter está à frente da série e é um sucesso estrondoso na HBO Max: Já é o número 1 na plataforma em 24 países",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "AdoroCinema",
+          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rUVVrLVNraFgzMUF6UG1FaF9Vc29wS1k1MkdNMUl4UGJwNDBqQXBSdHVSazRpeTdtcXg3S0U5b0N5VktPSGR6dUNZZk5PN2lRRVJtcGczMEN1UWJhc2NnOTVxWjhnUEJCYWg3d2dWcHrSAXZBVV95cUxPdS1mTVpzTW8xeWR3dUVIX1FRaTBMdnhPSUZrbHRpbVU0QUF3NWk1bENhaFRhcWdjeDA1cFIyaWxGd2hxMk96d1lDdnZBNzJhd0FMRk1fb1otX2FxOGJNYUZfR1VyczVheXNqQXF6RDlNWlBRcFV3?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Em 8 meses, HBO Max pode nunca mais ser a mesma",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "UOL",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOak90eXBncXFqZTJzOWt6SHV2WXlzNXR2dlRZT3VVc0E1NlhKdVh1bDZrdFRoU1V2YkNmeDZuMl9xUUxMdllFT3IzdDhmdjdBNkxKbUF3cUpHNC13YnJuRE11WTJPNFhyNUt3SzJfYTFHM1RiRUV5SlU2VFJTUmI5MjlSSVRBV0JjeWhheGtTZnBWTkJ6?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘Tyrant’: Paapa Essiedu é escalado para o novo THRILLER culinário estrelado por Charlize Theron",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbm1lay1uakphTVREMTA5UXRDQmJwYnRMMi1idDFMamUyaklQWWFxWkZwYWZIX1lpSWNsZ0MxLXZrRXQ2dEVUZTBVZ2tsTFpGZV9Yc3AtREpKY1JzZkRzc3NVd0VYTWtlWjhVTTIwOHZXWWNxb1dOOXV6SXhCNmh4ZG9qVUF2TGFSQmc3cWJHcnVJV1dBeXlkRUYzakRrbkpoTnVLY0o0SFVvQ2xtNXRtc1BYRmtQNU1Ib21Oa29IbzQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "‘Harry Potter’: Daniel Radcliffe revela seu filme FAVORITO da franquia",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CinePOP Cinema",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWS1ycE9Qd1ZXREpBM3o0ZDRlcC1FOHMxc1Nxc0FwaVhrblZNclpaNUpnb19PenhXV2ZFY3lGOHhpazNWZi1GZk9yS2RLMldwbElUNWxjNlZDVXk4SlF2cEtaT20yX0IzamxZdlpIQWlFRGRUNUlSSDl6RGRIQ1NrOGp0Zm5LSGNMWlZzN21pUnpkYjUzT2Vwcm9OQVdySkE?oc=5"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqY2dickVSVko4NTlsa29hVVZKcHpBMUN0cXFWSnNYRjhnTkZmN3ZGWjlieldqanZDdE5YUmdiTjBvbDEzMjItNXJCUjkxVWJsZ2JlQWNfQVE2dXdhLXVsVnYyOHoyeDFfR0dlcW9SNmnSAXZBVV95cUxPdlpvRFNYZmpTcmQwN1hyRzRjZkh0dlVfWFE4cHRGcGlTcnpmNm5VWnJ6YlVST2M4cFNoa2wyZ1l0OEFWUHgtNlVFNG9TUTQ2ZGRjUGItcThveUFZUTllTU5iakRockRNWHZfRFdTRW9nLS1HNjBR?oc=5",
+      "title": "A série de Harry Potter confirma oficialmente sua maior mudança: É assim que ela será diferente dos filmes",
+      "cat": "nos",
+      "time": "22 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Universo Sagas",
+      "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTzFlRDNPV3VzRTBmelQwclZJT00taEZsQThzS1NPZE1FUER2VEZhcmktaVFCQmVLOW9taDlqS2UwZGF5S09uZmF0bEpDeE9qYVpuMUoya01qRm1LdU5VbzY1S2lFZkJHU0laRFNIT1RDSzY5bUpieHRwS0pUOEE3MHVyVHRSZw?oc=5",
+      "title": "Harry Potter na HBO: Quantos episódios terá a 1ª temporadas da série?",
+      "cat": "neu",
+      "time": "28 abr, 18:17",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "AdoroCinema",
+      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rUVVrLVNraFgzMUF6UG1FaF9Vc29wS1k1MkdNMUl4UGJwNDBqQXBSdHVSazRpeTdtcXg3S0U5b0N5VktPSGR6dUNZZk5PN2lRRVJtcGczMEN1UWJhc2NnOTVxWjhnUEJCYWg3d2dWcHrSAXZBVV95cUxPdS1mTVpzTW8xeWR3dUVIX1FRaTBMdnhPSUZrbHRpbVU0QUF3NWk1bENhaFRhcWdjeDA1cFIyaWxGd2hxMk96d1lDdnZBNzJhd0FMRk1fb1otX2FxOGJNYUZfR1VyczVheXNqQXF6RDlNWlBRcFV3?oc=5",
+      "title": "O novo filme de Harry Potter está à frente da série e é um sucesso estrondoso na HBO Max: Já é o número 1 na plataforma em 24 países",
+      "cat": "neu",
+      "time": "23 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "UOL",
+      "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOak90eXBncXFqZTJzOWt6SHV2WXlzNXR2dlRZT3VVc0E1NlhKdVh1bDZrdFRoU1V2YkNmeDZuMl9xUUxMdllFT3IzdDhmdjdBNkxKbUF3cUpHNC13YnJuRE11WTJPNFhyNUt3SzJfYTFHM1RiRUV5SlU2VFJTUmI5MjlSSVRBV0JjeWhheGtTZnBWTkJ6?oc=5",
+      "title": "Em 8 meses, HBO Max pode nunca mais ser a mesma",
+      "cat": "esp",
+      "time": "23 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbm1lay1uakphTVREMTA5UXRDQmJwYnRMMi1idDFMamUyaklQWWFxWkZwYWZIX1lpSWNsZ0MxLXZrRXQ2dEVUZTBVZ2tsTFpGZV9Yc3AtREpKY1JzZkRzc3NVd0VYTWtlWjhVTTIwOHZXWWNxb1dOOXV6SXhCNmh4ZG9qVUF2TGFSQmc3cWJHcnVJV1dBeXlkRUYzakRrbkpoTnVLY0o0SFVvQ2xtNXRtc1BYRmtQNU1Ib21Oa29IbzQ?oc=5",
+      "title": "‘Tyrant’: Paapa Essiedu é escalado para o novo THRILLER culinário estrelado por Charlize Theron",
+      "cat": "neu",
+      "time": "27 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "CinePOP Cinema",
+      "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWS1ycE9Qd1ZXREpBM3o0ZDRlcC1FOHMxc1Nxc0FwaVhrblZNclpaNUpnb19PenhXV2ZFY3lGOHhpazNWZi1GZk9yS2RLMldwbElUNWxjNlZDVXk4SlF2cEtaT20yX0IzamxZdlpIQWlFRGRUNUlSSDl6RGRIQ1NrOGp0Zm5LSGNMWlZzN21pUnpkYjUzT2Vwcm9OQVdySkE?oc=5",
+      "title": "‘Harry Potter’: Daniel Radcliffe revela seu filme FAVORITO da franquia",
+      "cat": "pos",
+      "time": "23 abr, 04:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Lewis Spears",
+      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs",
+      "title": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
+      "cat": "neu",
+      "time": "28 abr, 23:18",
+      "scope": "Video/Creator - YouTube"
+    }
+  ],
+  "creators": [
+    {
+      "h": "Lewis Spears",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    }
+  ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais. Janela: 22-28 abr 2026.",
     "facts": [
       [
         "Janela",
-        "22–28 abr 2026"
+        "22-28 abr 2026"
       ],
       [
         "Marco",
-        "teaser 25/03/2026"
+        "25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Itens reais",
+        "7"
       ],
       [
-        "Status",
-        "sem cobertura real"
+        "Dados ficticios",
+        "nao"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 0,
-    "unit": "matérias",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
+    "base_count": 7,
+    "unit": "materias/videos/posts",
+    "net": 29,
+    "buzz": 90,
+    "news_count": 6,
+    "youtube_count": 1,
     "social_mentions": 0,
-    "backfill": true
+    "backfill": true,
+    "sentiment_index": 64
   }
 }
