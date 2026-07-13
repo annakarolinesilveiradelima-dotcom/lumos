@@ -1,16 +1,3 @@
-
-social_reddit.py
-
-Coleta gratuita de posts publicos do Reddit para complementar o Lumos.
-
-Regras:
-- Usa endpoints publicos .json do Reddit.
-- Nao precisa API key.
-- Nao inventa posts.
-- Filtra por data real do post.
-- Retorna no formato de coverage usado pelo Lumos.
-"""
-
 from __future__ import annotations
 
 import time
@@ -20,8 +7,8 @@ from urllib.parse import quote_plus
 
 import requests
 
-TIMEOUT = 25
 
+TIMEOUT = 25
 BR_TZ = ZoneInfo("America/Sao_Paulo")
 
 SUBREDDITS = [
@@ -159,12 +146,6 @@ def _dedupe(items):
 
 
 def collect_reddit_week(start, end):
-    """
-    Coleta posts de Reddit publicados entre start e end.
-
-    start/end devem ser datetime com timezone.
-    """
-
     headers = {
         "User-Agent": USER_AGENT
     }
@@ -228,12 +209,12 @@ def collect_reddit_week(start, end):
                     cat = _cat(title + " " + selftext)
 
                     results.append({
-                        "o": f"Reddit · r/{subreddit}",
+                        "o": f"Reddit - r/{subreddit}",
                         "u": full_url,
                         "title": title,
                         "cat": cat,
                         "time": _format_time_br(created),
-                        "scope": f"Social · score {score} · {comments} comentarios"
+                        "scope": f"Social - score {score} - {comments} comentarios"
                     })
 
                 time.sleep(1)
