@@ -233,7 +233,7 @@
       "weeks": {
         "w0": {
           "label": "8–13 jul 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -241,7 +241,7 @@
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+93",
+              "v": "+82",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -260,8 +260,8 @@
             }
           },
           "senti": {
-            "pos": 93,
-            "neu": 7,
+            "pos": 82,
+            "neu": 18,
             "neg": 0,
             "tone": "Consolidação semanal desde o teaser"
           },
@@ -276,38 +276,38 @@
           ],
           "stack": [
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ],
             [
-              93,
-              7,
+              82,
+              18,
               0
             ]
           ],
@@ -318,9 +318,9 @@
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 93,
+                "p": 82,
                 "n": 0,
-                "g": 7
+                "g": 18
               }
             }
           ],
@@ -517,18 +517,18 @@
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+100",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -537,61 +537,61 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "78",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ]
           ],
@@ -599,22 +599,48 @@
             {
               "name": "Imprensa",
               "vol": 1,
-              "senti": "neu",
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 100,
                 "n": 0,
-                "g": 100
+                "g": 0
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Backfill histórico desde o teaser; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "cat": "nos",
+              "time": "4 jul, 18:28",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 1–7 jul 2026.",
             "facts": [
               [
                 "Janela",
@@ -622,15 +648,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -639,18 +665,18 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -659,17 +685,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -735,8 +761,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 24–30 jun 2026.",
             "facts": [
               [
                 "Janela",
@@ -744,15 +770,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -761,18 +787,18 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -781,17 +807,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -857,8 +883,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 17–23 jun 2026.",
             "facts": [
               [
                 "Janela",
@@ -866,15 +892,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -883,18 +909,18 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "2 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+100",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -903,84 +929,134 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "86",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
-              "senti": "neu",
+              "vol": 2,
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 100,
                 "n": 0,
-                "g": 100
+                "g": 0
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Backfill histórico desde o teaser; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+                }
+              ]
+            },
+            {
+              "t": "Série escala ator de Pirraça, personagem inédito",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Backfill histórico desde o teaser; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "cat": "nos",
+              "time": "15 jun, 19:00",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+              "title": "Série escala ator de Pirraça, personagem inédito",
+              "cat": "nos",
+              "time": "15 jun, 14:30",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 10–16 jun 2026.",
             "facts": [
               [
                 "Janela",
@@ -988,15 +1064,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "2"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1005,18 +1081,18 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1025,17 +1101,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1101,8 +1177,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 3–9 jun 2026.",
             "facts": [
               [
                 "Janela",
@@ -1110,15 +1186,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1127,18 +1203,18 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1147,17 +1223,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1223,8 +1299,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 27 mai–2 jun 2026.",
             "facts": [
               [
                 "Janela",
@@ -1232,15 +1308,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1249,18 +1325,18 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1269,17 +1345,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1345,8 +1421,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 20–26 mai 2026.",
             "facts": [
               [
                 "Janela",
@@ -1354,15 +1430,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1371,18 +1447,18 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1391,17 +1467,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1467,8 +1543,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 13–19 mai 2026.",
             "facts": [
               [
                 "Janela",
@@ -1476,15 +1552,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1493,18 +1569,18 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1513,17 +1589,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1589,8 +1665,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 6–12 mai 2026.",
             "facts": [
               [
                 "Janela",
@@ -1598,15 +1674,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1615,18 +1691,18 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1635,17 +1711,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1711,8 +1787,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 29 abr–5 mai 2026.",
             "facts": [
               [
                 "Janela",
@@ -1720,15 +1796,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1737,18 +1813,18 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1757,17 +1833,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1833,8 +1909,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 22–28 abr 2026.",
             "facts": [
               [
                 "Janela",
@@ -1842,15 +1918,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1859,18 +1935,18 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -1879,17 +1955,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -1955,8 +2031,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 15–21 abr 2026.",
             "facts": [
               [
                 "Janela",
@@ -1964,15 +2040,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -1981,18 +2057,18 @@
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -2001,17 +2077,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -2077,8 +2153,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 8–14 abr 2026.",
             "facts": [
               [
                 "Janela",
@@ -2086,15 +2162,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -2103,18 +2179,18 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -2123,17 +2199,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -2199,8 +2275,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 1–7 abr 2026.",
             "facts": [
               [
                 "Janela",
@@ -2208,15 +2284,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },
@@ -2225,18 +2301,18 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 10:32",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -2245,17 +2321,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "20",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal desde o teaser"
           },
           "buzz7": [
             0,
@@ -2321,8 +2397,8 @@
           "creators": [],
           "risks": [],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada a partir do marco de lançamento do teaser em 25/03/2026. Janela: 25–31 mar 2026.",
             "facts": [
               [
                 "Janela",
@@ -2330,15 +2406,15 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "0"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "aguardando cobertura"
               ]
             ]
           },

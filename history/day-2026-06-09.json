@@ -1,0 +1,131 @@
+{
+  "label": "9 jun 2026",
+  "updated": "13 jul 2026, 10:32",
+  "kpi": {
+    "mentions": {
+      "v": "0 matérias",
+      "d": 0,
+      "sub": "sem cobertura real nesta semana · 3–9 jun 2026"
+    },
+    "sentiment": {
+      "v": "—",
+      "suf": "",
+      "d": 0,
+      "sub": "sem base suficiente"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "0",
+      "suf": "/100",
+      "d": 0,
+      "sub": "sem cobertura real"
+    }
+  },
+  "senti": {
+    "pos": 0,
+    "neu": 100,
+    "neg": 0,
+    "tone": "Sem cobertura real coletada nesta semana"
+  },
+  "buzz7": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stack": [
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 1,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    }
+  ],
+  "narratives": [],
+  "coverage": [],
+  "creators": [],
+  "risks": [],
+  "heroOpp": {
+    "title": "Sem oportunidade validada nesta semana",
+    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "facts": [
+      [
+        "Janela",
+        "3–9 jun 2026"
+      ],
+      [
+        "Marco",
+        "teaser 25/03/2026"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ],
+      [
+        "Status",
+        "sem cobertura real"
+      ]
+    ]
+  },
+  "opps": [],
+  "ephem": [],
+  "_raw": {
+    "base_count": 0,
+    "unit": "matérias",
+    "net": 0,
+    "buzz": 0,
+    "news_count": 0,
+    "social_mentions": 0,
+    "backfill": true
+  }
+}

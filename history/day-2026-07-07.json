@@ -1,14 +1,14 @@
 {
-  "label": "13 jul 2026",
+  "label": "7 jul 2026",
   "updated": "13 jul 2026, 10:32",
   "kpi": {
     "mentions": {
       "v": "1 matéria",
       "d": 0,
-      "sub": "backfill semanal · 8–13 jul 2026"
+      "sub": "backfill semanal · 1–7 jul 2026"
     },
     "sentiment": {
-      "v": "+0",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
       "sub": "índice semanal por cobertura"
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "28",
+      "v": "78",
       "suf": "/100",
       "d": 0,
       "sub": "buzz semanal desde o teaser"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
     "tone": "Backfill semanal baseado em notícias reais"
   },
@@ -43,38 +43,38 @@
   ],
   "stack": [
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ],
     [
-      0,
       100,
+      0,
       0
     ]
   ],
@@ -82,20 +82,20 @@
     {
       "name": "Imprensa",
       "vol": 1,
-      "senti": "neu",
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 100,
         "n": 0,
-        "g": 100
+        "g": 0
       }
     }
   ],
   "narratives": [
     {
-      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
       "vol": 1,
-      "senti": "neu",
+      "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
       "growth": "Backfill histórico desde o teaser; social listening não conectado",
@@ -104,7 +104,7 @@
       "src": [
         {
           "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
         }
       ]
     }
@@ -112,10 +112,10 @@
   "coverage": [
     {
       "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
-      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "cat": "neu",
-      "time": "12 jul, 19:13",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 18:28",
       "scope": "Portal BR"
     }
   ],
@@ -123,11 +123,11 @@
   "risks": [],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por backfill de matérias reais. Janela: 8–13 jul 2026.",
+    "desc": "Semana preenchida por backfill de matérias reais. Janela: 1–7 jul 2026.",
     "facts": [
       [
         "Janela",
-        "8–13 jul 2026"
+        "1–7 jul 2026"
       ],
       [
         "Marco",
@@ -148,11 +148,11 @@
   "_raw": {
     "base_count": 1,
     "unit": "matérias",
-    "net": 0,
-    "buzz": 28,
+    "net": 100,
+    "buzz": 78,
     "news_count": 1,
     "social_mentions": 0,
     "backfill": true,
-    "sentiment_index": 50
+    "sentiment_index": 100
   }
 }
