@@ -1,5 +1,5 @@
 {
-  "generated_at": "13 jul 2026, 07:42",
+  "generated_at": "13 jul 2026, 15:12",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "13 jul 2026",
-          "updated": "13 jul 2026, 07:42",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
-              "v": "4 matérias",
-              "d": 1,
+              "v": "0 matérias",
+              "d": -1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+76",
+              "v": "+0",
               "suf": "/100",
-              "d": -24,
+              "d": 0,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,239 +31,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "80",
+              "v": "45",
               "suf": "/100",
-              "d": -2,
+              "d": 17,
               "sub": "índice de buzz do dia"
-            }
-          },
-          "senti": {
-            "pos": 75,
-            "neu": 25,
-            "neg": 0,
-            "tone": "Cobertura real coletada; social não conectado"
-          },
-          "buzz7": [
-            3,
-            3,
-            3,
-            3,
-            5,
-            3,
-            4
-          ],
-          "stack": [
-            [
-              100,
-              0,
-              0
-            ],
-            [
-              100,
-              0,
-              0
-            ],
-            [
-              100,
-              0,
-              0
-            ],
-            [
-              100,
-              0,
-              0
-            ],
-            [
-              80,
-              20,
-              0
-            ],
-            [
-              100,
-              0,
-              0
-            ],
-            [
-              75,
-              25,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 4,
-              "senti": "pos",
-              "ang": -90,
-              "s": {
-                "p": 75,
-                "n": 0,
-                "g": 25
-              }
-            }
-          ],
-          "narratives": [
-            {
-              "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real coletada; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
-                }
-              ]
-            },
-            {
-              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real coletada; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
-                }
-              ]
-            },
-            {
-              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real coletada; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
-                }
-              ]
-            },
-            {
-              "t": "Série escala ator de Pirraça, personagem inédito",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real coletada; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
-              "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-              "cat": "neu",
-              "time": "12 jul, 22:13",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
-              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-              "cat": "nos",
-              "time": "4 jul, 21:28",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
-              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-              "cat": "nos",
-              "time": "15 jun, 22:00",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
-              "title": "Série escala ator de Pirraça, personagem inédito",
-              "cat": "nos",
-              "time": "15 jun, 17:30",
-              "scope": "Portal BR"
-            }
-          ],
-          "creators": [],
-          "risks": [],
-          "heroOpp": {
-            "title": "Acompanhar cobertura do dia",
-            "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
-            "facts": [
-              [
-                "Fonte",
-                "notícias reais"
-              ],
-              [
-                "Matérias",
-                "4"
-              ],
-              [
-                "Social",
-                "não conectado"
-              ],
-              [
-                "Dados fictícios",
-                "não"
-              ]
-            ]
-          },
-          "opps": [],
-          "ephem": []
-        }
-      },
-      "weeks": {
-        "w0": {
-          "label": "8–13 jul 2026",
-          "updated": "13 jul 2026, 13:10",
-          "kpi": {
-            "mentions": {
-              "v": "1 matéria",
-              "d": 0,
-              "sub": "semana desde o teaser"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "índice semanal"
-            },
-            "sov": {
-              "v": "—",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-título"
-            },
-            "buzz": {
-              "v": "28",
-              "suf": "/100",
-              "d": 0,
-              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Consolidação semanal por data real das matérias"
+            "tone": "Sem cobertura real coletada hoje"
           },
           "buzz7": [
             1,
@@ -272,7 +50,7 @@
             1,
             1,
             1,
-            1
+            0
           ],
           "stack": [
             [
@@ -324,46 +102,157 @@
               }
             }
           ],
-          "narratives": [
-            {
-              "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
-              "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-              "cat": "neu",
-              "time": "12 jul, 19:13",
-              "scope": "Portal BR"
-            }
-          ],
+          "narratives": [],
+          "coverage": [],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura editorial",
+              "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+              "d": "Não foram encontradas matérias reais para a janela 13 jul 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
             }
           ],
           "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 8–13 jul 2026.",
+            "title": "Sem oportunidade validada hoje",
+            "desc": "Não houve cobertura real suficiente no feed atual para recomendar ação.",
+            "facts": [
+              [
+                "Fonte",
+                "sem cobertura"
+              ],
+              [
+                "Social",
+                "não conectado"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Ação",
+                "rodar novamente"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+            }
+          ],
+          "ephem": []
+        }
+      },
+      "weeks": {
+        "w0": {
+          "label": "8–13 jul 2026",
+          "updated": "13 jul 2026, 15:12",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Não foram encontradas matérias reais para a janela 8–13 jul 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+            }
+          ],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
             "facts": [
               [
                 "Janela",
@@ -371,35 +260,30 @@
               ],
               [
                 "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Matérias",
-                "1"
+                "teaser 25/03/2026"
               ],
               [
                 "Dados fictícios",
                 "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparação",
-              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 8–13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -565,7 +449,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -700,7 +584,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -835,7 +719,7 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1031,7 +915,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1166,7 +1050,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1301,7 +1185,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1436,7 +1320,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1571,7 +1455,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1706,7 +1590,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1841,7 +1725,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1976,7 +1860,7 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2111,7 +1995,7 @@
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2246,7 +2130,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2381,7 +2265,7 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "13 jul 2026, 13:10",
+          "updated": "13 jul 2026, 15:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

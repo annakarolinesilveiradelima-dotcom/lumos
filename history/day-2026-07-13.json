@@ -1,17 +1,17 @@
 {
   "label": "13 jul 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 15:12",
   "kpi": {
     "mentions": {
-      "v": "1 matéria",
-      "d": 0,
-      "sub": "backfill semanal · 8–13 jul 2026"
+      "v": "0 matérias",
+      "d": -1,
+      "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "índice semanal por cobertura"
+      "sub": "índice líquido do dia"
     },
     "sov": {
       "v": "—",
@@ -20,17 +20,17 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "28",
+      "v": "45",
       "suf": "/100",
-      "d": 0,
-      "sub": "buzz semanal desde o teaser"
+      "d": 17,
+      "sub": "índice de buzz do dia"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em notícias reais"
+    "tone": "Sem cobertura real coletada hoje"
   },
   "buzz7": [
     1,
@@ -39,7 +39,7 @@
     1,
     1,
     1,
-    1
+    0
   ],
   "stack": [
     [
@@ -91,68 +91,53 @@
       }
     }
   ],
-  "narratives": [
-    {
-      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Backfill histórico desde o teaser; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
-        }
-      ]
-    }
-  ],
-  "coverage": [
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
-      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "cat": "neu",
-      "time": "12 jul, 19:13",
-      "scope": "Portal BR"
-    }
-  ],
+  "narratives": [],
+  "coverage": [],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Semana sem cobertura real",
+      "sev": "low",
+      "d": "Não foram encontradas matérias reais para a janela 13 jul 2026.",
+      "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+    }
+  ],
   "heroOpp": {
-    "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por backfill de matérias reais. Janela: 8–13 jul 2026.",
+    "title": "Sem oportunidade validada hoje",
+    "desc": "Não houve cobertura real suficiente no feed atual para recomendar ação.",
     "facts": [
       [
-        "Janela",
-        "8–13 jul 2026"
+        "Fonte",
+        "sem cobertura"
       ],
       [
-        "Marco",
-        "25/03/2026"
-      ],
-      [
-        "Matérias reais",
-        "1"
+        "Social",
+        "não conectado"
       ],
       [
         "Dados fictícios",
         "não"
+      ],
+      [
+        "Ação",
+        "rodar novamente"
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "mail",
+      "t": "Monitorar próxima coleta",
+      "d": "A janela 13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+    }
+  ],
   "ephem": [],
   "_raw": {
-    "base_count": 1,
+    "base_count": 0,
     "unit": "matérias",
     "net": 0,
-    "buzz": 28,
-    "news_count": 1,
-    "social_mentions": 0,
-    "backfill": true,
-    "sentiment_index": 50
+    "buzz": 45,
+    "news_count": 0,
+    "social_mentions": 0
   }
 }
