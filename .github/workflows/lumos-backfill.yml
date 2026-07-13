@@ -28,13 +28,8 @@ jobs:
           echo "Backend files before:"
           ls -la lumos-backend || true
 
-          if [ ! -f "lumos-backend/backfill_teaser.py" ] && [ -f "backfill_teaser.py" ]; then
-            echo "Copiando backfill_teaser.py da raiz para lumos-backend..."
-            cp backfill_teaser.py lumos-backend/backfill_teaser.py
-          fi
-
           if [ -f "backfill_teaser.py" ]; then
-            echo "Atualizando lumos-backend/backfill_teaser.py com a versão da raiz..."
+            echo "Atualizando lumos-backend/backfill_teaser.py com versao da raiz..."
             cp backfill_teaser.py lumos-backend/backfill_teaser.py
           fi
 
@@ -47,8 +42,9 @@ jobs:
           ls -la lumos-backend/backfill_teaser.py
 
           echo ""
-          echo "Reddit module:"
+          echo "Social modules:"
           ls -la lumos-backend/social_reddit.py || true
+          ls -la lumos-backend/social_youtube.py || true
 
       - name: Install dependencies
         run: |
@@ -58,13 +54,15 @@ jobs:
       - name: Check syntax
         run: |
           python -m py_compile lumos-backend/backfill_teaser.py
-          python -m py_compile lumos-backend/social_reddit.py
+          python -m py_compile lumos-backend/social_reddit.py || true
+          python -m py_compile lumos-backend/social_youtube.py || true
 
       - name: Run backfill
         env:
           OUTPUT_DATA: ${{ github.workspace }}/data.json
           HISTORY_DIR: ${{ github.workspace }}/history
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           cd lumos-backend
           python backfill_teaser.py
@@ -73,6 +71,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json history/ lumos-backend/backfill_teaser.py lumos-backend/social_reddit.py || true
-          git diff --cached --quiet || git commit -m "backfill teaser weeks with reddit"
+          git add data.json history/ lumos-backend/backfill_teaser.py lumos-backend/social_reddit.py lumos-backend/social_youtube.py || true
+          git diff --cached --quiet || git commit -m "backfill teaser weeks with youtube"
           git push
