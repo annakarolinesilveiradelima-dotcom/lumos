@@ -1,18 +1,3 @@
-"""
-Lumos backfill_teaser.py
-
-Backfill histórico desde o teaser de Harry Potter em 25/03/2026.
-
-O que faz:
-- Busca notícias reais via GNews semana a semana.
-- Usa from/to por janela semanal.
-- Não usa RSS.
-- Não usa links news.google.com.
-- Não inventa matéria, fonte, horário ou volume.
-- Salva snapshots em ../history/day-YYYY-MM-DD.json.
-- Regenera ../data.json com weeks preenchido.
-"""
-
 from __future__ import annotations
 
 import json
@@ -28,9 +13,14 @@ import requests
 import config
 import build_data
 
+try:
+    import social_reddit
+except Exception:
+    social_reddit = None
+
+
 TIMEOUT = 25
 BR_TZ = ZoneInfo("America/Sao_Paulo")
-
 TEASER_DATE = datetime(2026, 3, 25, 0, 0, 0, tzinfo=BR_TZ)
 
 PT_MONTHS = [
@@ -58,10 +48,10 @@ def _stamp(dt):
 
 def _range_label(start, end):
     if start.month == end.month:
-        return f"{start.day}–{end.day} {PT_MONTHS[end.month - 1]} {end.year}"
+        return f"{start.day}-{end.day} {PT_MONTHS[end.month - 1]} {end.year}"
 
     return (
-        f"{start.day} {PT_MONTHS[start.month - 1]}–"
+        f"{start.day} {PT_MONTHS[start.month - 1]}-"
         f"{end.day} {PT_MONTHS[end.month - 1]} {end.year}"
     )
 
@@ -77,6 +67,7 @@ def _parse_dt(value):
             ).astimezone(timezone.utc).isoformat()
 
         return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
+
     except Exception:
         try:
             return datetime.fromisoformat(str(value)).astimezone(timezone.utc).isoformat()
@@ -88,7 +79,7 @@ def _format_time(value):
     parsed = _parse_dt(value)
 
     if not parsed:
-        return "sem horário disponível"
+        return "sem horario disponivel"
 
     try:
         dt = datetime.fromisoformat(str(parsed).replace("Z", "+00:00")).astimezone(BR_TZ)
@@ -104,28 +95,31 @@ def _clean_title(title):
 def _cat(text):
     t = (text or "").lower()
 
-    if re.search(r"rumor|especula|supost|vaza|vazou|pode|possível|teria", t):
+    if re.search(r"rumor|especula|supost|vaza|vazou|pode|possivel|teria|leak|leaked", t):
         return "esp"
 
-    if re.search(r"nostalg|filmes|clássic|trilha|infância|reboot", t):
+    if re.search(r"nostalg|filmes|classic|classico|trilha|infancia|reboot|movies|original cast", t):
         return "nos"
 
-    if re.search(r"crític|polêmic|decep|rejeit|problema|desnecess|medo", t):
+    if re.search(r"critic|polem|decep|rejeit|problema|desnecess|medo|hate|worried|terrible|ruined", t):
         return "neg"
 
-    if re.search(r"elogi|acerto|fiel|ansios|empolg|aprova|confirma|revela|estreia|elenco", t):
+    if re.search(r"elogi|acerto|fiel|ansios|empolg|aprova|confirma|revela|estreia|elenco|excited|love|perfect|faithful", t):
         return "pos"
 
     return "neu"
 
 
 def _senti_from_cat(cat):
-    return {
+    mapping = {
         "pos": "pos",
         "neg": "neg",
         "esp": "div",
-        "nos": "pos"
-    }.get(cat, "neu")
+        "nos": "pos",
+        "neu": "neu"
+    }
+
+    return mapping.get(cat, "neu")
 
 
 def _dedupe_coverage(items):
@@ -174,18 +168,25 @@ def _narratives_from_coverage(coverage):
     narratives = []
 
     for item in coverage[:6]:
+        outlet = str(item.get("o", "Fonte"))
+
+        if outlet.startswith("Reddit"):
+            platform = "Reddit"
+        else:
+            platform = "Imprensa"
+
         narratives.append({
             "t": item.get("title", "Cobertura real coletada"),
             "vol": 1,
             "senti": _senti_from_cat(item.get("cat", "neu")),
-            "pf": "Imprensa",
+            "pf": platform,
             "trend": "flat",
-            "growth": "Backfill histórico desde o teaser; social listening não conectado",
+            "growth": "Backfill historico desde o teaser; baseado em fonte real coletada",
             "q": "",
             "pct": 50,
             "src": [
                 {
-                    "o": item.get("o", "Imprensa"),
+                    "o": item.get("o", "Fonte"),
                     "u": item.get("u", "#")
                 }
             ]
@@ -194,37 +195,96 @@ def _narratives_from_coverage(coverage):
     return narratives
 
 
+class CombinedResponse:
+    def __init__(self, status_code, articles=None, text=""):
+        self.status_code = status_code
+        self._articles = articles or []
+        self.text = text
+
+    def json(self):
+        return {
+            "articles": self._articles
+        }
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError(self.text)
+
+
 def _gnews_request(api_key, start, end):
-    """
-    Usa uma query ampla por semana para economizar requests.
-    """
-    query = "Harry Potter HBO"
+    queries = [
+        "Harry Potter HBO",
+        "Harry Potter Max",
+        "serie Harry Potter HBO",
+        "nova serie Harry Potter",
+        "Harry Potter HBO series",
+        "Harry Potter cast HBO",
+        "Dominic McLaughlin Harry Potter",
+        "Arabella Stanton Harry Potter",
+        "Alastair Stout Harry Potter",
+        "Paapa Essiedu Harry Potter",
+        "John Lithgow Harry Potter"
+    ]
 
-    params = {
-        "q": query,
-        "max": 10,
-        "lang": "pt",
-        "country": "br",
-        "from": _iso_utc(start),
-        "to": _iso_utc(end),
-        "sortby": "publishedAt",
-        "apikey": api_key
-    }
+    all_articles = []
+    last_status = 200
+    last_error_text = ""
 
-    response = requests.get(
-        "https://gnews.io/api/v4/search",
-        params=params,
-        timeout=TIMEOUT
-    )
+    for query in queries:
+        params = {
+            "q": query,
+            "max": 10,
+            "from": _iso_utc(start),
+            "to": _iso_utc(end),
+            "sortby": "publishedAt",
+            "apikey": api_key
+        }
+
+        response = requests.get(
+            "https://gnews.io/api/v4/search",
+            params=params,
+            timeout=TIMEOUT
+        )
+
+        print(
+            f"[backfill] GNews query='{query}' "
+            f"{start.date()} to {end.date()} status={response.status_code}"
+        )
+
+        if response.status_code == 200:
+            data = response.json()
+            articles = data.get("articles", [])
+
+            print(f"[backfill] query='{query}' retornou {len(articles)} artigos")
+
+            all_articles.extend(articles)
+
+            if len(all_articles) >= 10:
+                break
+
+            time.sleep(1)
+            continue
+
+        last_status = response.status_code
+        last_error_text = response.text[:800]
+
+        print("[backfill] resposta GNews:", last_error_text)
+
+        if response.status_code in (401, 403, 429):
+            if all_articles:
+                print("[backfill] limite/erro apos coletar alguns artigos; salvando itens ja encontrados.")
+                return CombinedResponse(200, all_articles, last_error_text)
+
+            return CombinedResponse(response.status_code, [], last_error_text)
+
+        time.sleep(1)
 
     print(
-        f"[backfill] GNews {start.date()} -> {end.date()} status={response.status_code}"
+        f"[backfill] total combinado da semana "
+        f"{start.date()} to {end.date()}: {len(all_articles)} artigos"
     )
 
-    if response.status_code != 200:
-        print("[backfill] resposta GNews:", response.text[:800])
-
-    return response
+    return CombinedResponse(last_status, all_articles, last_error_text)
 
 
 def _coverage_from_articles(articles):
@@ -261,27 +321,92 @@ def _coverage_from_articles(articles):
     return _dedupe_coverage(coverage)
 
 
+def _risks_from_coverage(coverage, week_label):
+    if not coverage:
+        return [
+            {
+                "t": "Semana sem cobertura social/editorial real",
+                "sev": "low",
+                "d": f"Nao foram encontradas materias ou posts reais para a janela {week_label}.",
+                "rec": "Manter monitoramento e ampliar fontes gratuitas como Google Trends e YouTube."
+            }
+        ]
+
+    titles = " ".join(item.get("title", "") for item in coverage).lower()
+    risks = []
+
+    if any(w in titles for w in ["reboot", "filmes", "movies", "nostalg"]):
+        risks.append({
+            "t": "Comparacao com os filmes originais",
+            "sev": "mid",
+            "d": "A cobertura/conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+            "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+        })
+
+    if any(w in titles for w in ["cast", "casting", "elenco", "ator", "atriz"]):
+        risks.append({
+            "t": "Sensibilidade em torno de elenco",
+            "sev": "mid",
+            "d": "Materias ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+            "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+        })
+
+    if not risks:
+        risks.append({
+            "t": "Risco baixo na janela",
+            "sev": "low",
+            "d": "A semana teve fonte real coletada, mas sem sinais criticos fortes.",
+            "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+        })
+
+    return risks[:3]
+
+
+def _opps_from_coverage(coverage, week_label):
+    if not coverage:
+        return [
+            {
+                "ico": "mail",
+                "t": "Monitorar proxima coleta",
+                "d": f"A janela {week_label} ainda nao tem fonte real suficiente. Proximo passo: manter backfill/monitoramento."
+            }
+        ]
+
+    return [
+        {
+            "ico": "book",
+            "t": "Explorar fidelidade aos livros",
+            "d": "Quando a cobertura ou conversa cita adaptacao, personagens ou elenco, existe oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+        },
+        {
+            "ico": "film",
+            "t": "Organizar narrativa de comparacao",
+            "d": "Usar conteudos editoriais e discussoes de fandom para posicionar a serie como uma nova leitura para streaming."
+        }
+    ]
+
+
 def _empty_snapshot(snapshot_date, week_label):
     return {
         "label": _label(snapshot_date),
         "updated": _stamp(snapshot_date),
         "kpi": {
             "mentions": {
-                "v": "0 matérias",
+                "v": "0 materias/posts",
                 "d": 0,
-                "sub": f"sem cobertura real nesta semana · {week_label}"
+                "sub": f"sem cobertura real nesta semana - {week_label}"
             },
             "sentiment": {
-                "v": "—",
+                "v": "-",
                 "suf": "",
                 "d": 0,
                 "sub": "sem base suficiente"
             },
             "sov": {
-                "v": "—",
+                "v": "-",
                 "d": 0,
                 "dtype": "pts",
-                "sub": "requer base multi-título"
+                "sub": "requer base multi-titulo"
             },
             "buzz": {
                 "v": "0",
@@ -308,7 +433,7 @@ def _empty_snapshot(snapshot_date, week_label):
         ],
         "platforms": [
             {
-                "name": "Imprensa",
+                "name": "Imprensa/Reddit",
                 "vol": 1,
                 "senti": "neu",
                 "ang": -90,
@@ -322,22 +447,22 @@ def _empty_snapshot(snapshot_date, week_label):
         "narratives": [],
         "coverage": [],
         "creators": [],
-        "risks": [],
+        "risks": _risks_from_coverage([], week_label),
         "heroOpp": {
             "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
             "facts": [
                 ["Janela", week_label],
                 ["Marco", "teaser 25/03/2026"],
-                ["Dados fictícios", "não"],
+                ["Dados ficticios", "nao"],
                 ["Status", "sem cobertura real"]
             ]
         },
-        "opps": [],
+        "opps": _opps_from_coverage([], week_label),
         "ephem": [],
         "_raw": {
             "base_count": 0,
-            "unit": "matérias",
+            "unit": "materias/posts",
             "net": 0,
             "buzz": 0,
             "news_count": 0,
@@ -348,7 +473,7 @@ def _empty_snapshot(snapshot_date, week_label):
 
 
 def _snapshot_from_coverage(snapshot_date, week_label, coverage):
-    coverage = coverage[:8]
+    coverage = _dedupe_coverage(coverage)[:12]
 
     pos, neu, neg, sentiment_index = _build_sentiment(coverage)
 
@@ -358,26 +483,33 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
 
     narratives = _narratives_from_coverage(coverage)
 
+    reddit_count = sum(
+        1 for item in coverage
+        if str(item.get("o", "")).startswith("Reddit")
+    )
+
+    press_count = count - reddit_count
+
     return {
         "label": _label(snapshot_date),
         "updated": _stamp(snapshot_date),
         "kpi": {
             "mentions": {
-                "v": f"{count} matéria" + ("" if count == 1 else "s"),
+                "v": f"{count} item" + ("" if count == 1 else "s"),
                 "d": 0,
-                "sub": f"backfill semanal · {week_label}"
+                "sub": f"{press_count} noticias - {reddit_count} posts Reddit - {week_label}"
             },
             "sentiment": {
                 "v": ("+" if net >= 0 else "") + str(net),
                 "suf": "/100",
                 "d": 0,
-                "sub": "índice semanal por cobertura"
+                "sub": "indice semanal por cobertura"
             },
             "sov": {
-                "v": "—",
+                "v": "-",
                 "d": 0,
                 "dtype": "pts",
-                "sub": "requer base multi-título"
+                "sub": "requer base multi-titulo"
             },
             "buzz": {
                 "v": str(buzz),
@@ -390,7 +522,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em notícias reais"
+            "tone": "Backfill semanal baseado em noticias e Reddit reais"
         },
         "buzz7": [count, count, count, count, count, count, count],
         "stack": [
@@ -405,9 +537,20 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
         "platforms": [
             {
                 "name": "Imprensa",
-                "vol": max(count, 1),
+                "vol": max(press_count, 1),
                 "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
                 "ang": -90,
+                "s": {
+                    "p": pos,
+                    "n": neg,
+                    "g": neu
+                }
+            },
+            {
+                "name": "Reddit",
+                "vol": max(reddit_count, 1),
+                "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
+                "ang": 128,
                 "s": {
                     "p": pos,
                     "n": neg,
@@ -416,28 +559,28 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage):
             }
         ],
         "narratives": narratives,
-        "coverage": coverage,
+        "coverage": coverage[:8],
         "creators": [],
-        "risks": [],
+        "risks": _risks_from_coverage(coverage, week_label),
         "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": f"Semana preenchida por backfill de matérias reais. Janela: {week_label}.",
+            "desc": f"Semana preenchida por fontes reais. Janela: {week_label}.",
             "facts": [
                 ["Janela", week_label],
                 ["Marco", "25/03/2026"],
-                ["Matérias reais", str(count)],
-                ["Dados fictícios", "não"]
+                ["Itens reais", str(count)],
+                ["Dados ficticios", "nao"]
             ]
         },
-        "opps": [],
+        "opps": _opps_from_coverage(coverage, week_label),
         "ephem": [],
         "_raw": {
             "base_count": count,
-            "unit": "matérias",
+            "unit": "materias/posts",
             "net": net,
             "buzz": buzz,
-            "news_count": count,
-            "social_mentions": 0,
+            "news_count": press_count,
+            "social_mentions": reddit_count,
             "backfill": True,
             "sentiment_index": sentiment_index
         }
@@ -456,10 +599,6 @@ def _save_snapshot(snapshot_date, snapshot):
 
 
 def _load_current_day_or_latest_snapshot():
-    """
-    Tenta preservar o d0 atual do data.json.
-    Se não existir, usa o snapshot mais recente do history.
-    """
     try:
         with open(config.OUTPUT_DATA, encoding="utf-8") as file:
             feed = json.load(file)
@@ -470,7 +609,7 @@ def _load_current_day_or_latest_snapshot():
             return current_day
 
     except Exception as exc:
-        print(f"[backfill] não consegui ler d0 atual do data.json: {exc}")
+        print(f"[backfill] nao consegui ler d0 atual do data.json: {exc}")
 
     if os.path.exists(config.HISTORY_DIR):
         files = sorted(
@@ -499,18 +638,23 @@ def main():
     api_key = os.environ.get("GNEWS_API_KEY", "").strip()
 
     if not api_key:
-        raise RuntimeError("GNEWS_API_KEY não configurada. Adicione em GitHub Secrets.")
+        print("[backfill] GNEWS_API_KEY nao configurada. Seguindo sem GNews.")
+    else:
+        print(f"[backfill] API key detectada com {len(api_key)} caracteres")
 
     now = _now_br()
 
-    print("[backfill] início")
+    print("[backfill] inicio")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {now:%Y-%m-%d %H:%M}")
-    print(f"[backfill] API key detectada com {len(api_key)} caracteres")
+
+    if social_reddit is None:
+        print("[backfill] social_reddit nao disponivel. Reddit sera ignorado.")
+    else:
+        print("[backfill] social_reddit disponivel. Reddit sera incluido.")
 
     start = TEASER_DATE
     week_index = 1
-
     hit_rate_limit = False
 
     while start <= now:
@@ -523,26 +667,32 @@ def main():
 
         print(f"[backfill] Semana {week_index}: {week_label}")
 
-        response = _gnews_request(api_key, start, end)
+        coverage = []
+        response = CombinedResponse(200, [])
 
-        if response.status_code == 429:
-            print("[backfill] limite da GNews atingido: 429 Too Many Requests")
-            print("[backfill] parando backfill para preservar os dados já salvos.")
-            hit_rate_limit = True
-            break
+        if api_key:
+            response = _gnews_request(api_key, start, end)
 
-        if response.status_code in (401, 403):
-            raise RuntimeError(
-                f"GNews retornou {response.status_code}. Verifique GNEWS_API_KEY/plano."
-            )
+            if response.status_code in (403, 429):
+                print("[backfill] limite/plano da GNews atingido. Salvando ate aqui e encerrando sem falhar.")
+
+            if response.status_code == 401:
+                print("[backfill] GNews retornou 401. Chave invalida. Encerrando sem falhar.")
+                hit_rate_limit = True
 
         try:
-            response.raise_for_status()
-            data = response.json()
-            articles = data.get("articles", [])
-            coverage = _coverage_from_articles(articles)
+            if response.status_code == 200:
+                data = response.json()
+                articles = data.get("articles", [])
+                coverage.extend(_coverage_from_articles(articles))
 
-            print(f"[backfill] {len(coverage)} matérias reais na semana {week_label}")
+            if social_reddit is not None:
+                reddit_coverage = social_reddit.collect_reddit_week(start, end)
+                coverage.extend(reddit_coverage)
+
+            coverage = _dedupe_coverage(coverage)
+
+            print(f"[backfill] {len(coverage)} itens reais na semana {week_label}")
 
             if coverage:
                 snapshot = _snapshot_from_coverage(end, week_label, coverage)
@@ -556,6 +706,10 @@ def main():
             snapshot = _empty_snapshot(end, week_label)
             _save_snapshot(end, snapshot)
 
+        if response.status_code in (401, 403, 429):
+            hit_rate_limit = True
+            break
+
         time.sleep(2)
 
         start = start + timedelta(days=7)
@@ -564,9 +718,9 @@ def main():
     regenerate_feed()
 
     if hit_rate_limit:
-        print("[backfill] concluído parcialmente por limite da API.")
+        print("[backfill] concluido parcialmente por limite/plano da API.")
     else:
-        print("[backfill] concluído")
+        print("[backfill] concluido")
 
 
 if __name__ == "__main__":

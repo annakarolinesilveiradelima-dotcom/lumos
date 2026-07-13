@@ -1,23 +1,23 @@
 {
   "label": "31 mar 2026",
-  "updated": "13 jul 2026, 12:07",
+  "updated": "13 jul 2026, 13:10",
   "kpi": {
     "mentions": {
-      "v": "0 matérias",
+      "v": "0 materias/posts",
       "d": 0,
-      "sub": "sem cobertura real nesta semana · 25–31 mar 2026"
+      "sub": "sem cobertura real nesta semana - 25-31 mar 2026"
     },
     "sentiment": {
-      "v": "—",
+      "v": "-",
       "suf": "",
       "d": 0,
       "sub": "sem base suficiente"
     },
     "sov": {
-      "v": "—",
+      "v": "-",
       "d": 0,
       "dtype": "pts",
-      "sub": "requer base multi-título"
+      "sub": "requer base multi-titulo"
     },
     "buzz": {
       "v": "0",
@@ -80,7 +80,7 @@
   ],
   "platforms": [
     {
-      "name": "Imprensa",
+      "name": "Imprensa/Reddit",
       "vol": 1,
       "senti": "neu",
       "ang": -90,
@@ -94,22 +94,29 @@
   "narratives": [],
   "coverage": [],
   "creators": [],
-  "risks": [],
+  "risks": [
+    {
+      "t": "Semana sem cobertura social/editorial real",
+      "sev": "low",
+      "d": "Nao foram encontradas materias ou posts reais para a janela 25-31 mar 2026.",
+      "rec": "Manter monitoramento e ampliar fontes gratuitas como Google Trends e YouTube."
+    }
+  ],
   "heroOpp": {
     "title": "Sem oportunidade validada nesta semana",
-    "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+    "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
     "facts": [
       [
         "Janela",
-        "25–31 mar 2026"
+        "25-31 mar 2026"
       ],
       [
         "Marco",
         "teaser 25/03/2026"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Dados ficticios",
+        "nao"
       ],
       [
         "Status",
@@ -117,11 +124,17 @@
       ]
     ]
   },
-  "opps": [],
+  "opps": [
+    {
+      "ico": "mail",
+      "t": "Monitorar proxima coleta",
+      "d": "A janela 25-31 mar 2026 ainda nao tem fonte real suficiente. Proximo passo: manter backfill/monitoramento."
+    }
+  ],
   "ephem": [],
   "_raw": {
     "base_count": 0,
-    "unit": "matérias",
+    "unit": "materias/posts",
     "net": 0,
     "buzz": 0,
     "news_count": 0,
