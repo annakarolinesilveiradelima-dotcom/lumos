@@ -1820,7 +1820,7 @@ function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>'
    (ex.: às 18h) atualizando o bloco "days". Sem o arquivo (aberto do
    disco ou backend ainda não conectado), ele cai nos dados de
    demonstração embutidos acima. */
-let LIVE=false, FEED_UPDATED=null, LIVE_SRC="";
+let LIVE=true, FEED_UPDATED=null, LIVE_SRC="";
 const FEED_URL="data.json"; // arquivo gerado pelo backend/GitHub Actions
 function feedUrl(){
   return FEED_URL + "?v=" + Date.now();
@@ -1829,59 +1829,25 @@ function feedUrl(){
 async function boot(){
   try{
     const r=await fetch(feedUrl(),{cache:"no-store"});
+
     if(r.ok){
       const feed=await r.json();
       const titles=feed.titles||feed;
+
       if(titles && typeof titles==="object" && Object.keys(titles).length){
         Object.keys(DATA).forEach(k=>delete DATA[k]);
         Object.assign(DATA,titles);
-        LIVE=true; FEED_UPDATED=feed.generated_at||null;
+
+        LIVE=true;
+        FEED_UPDATED=feed.generated_at||null;
+        LIVE_SRC=feed.source||"backend";
       }
     }
-  }catch(e){ /* sem feed disponível → mantém dados de demonstração */ }
-  render();
-}
-/* mantém a data/hora do painel sempre atual (sem recarregar os gráficos) */
-function tickClock(){
-  if(!isCurrentEntry() || LIVE) return;
-  const d=getData();
-  d.updated=nowStamp();
-  d.label=(curPeriod==="day") ? todayLabel() : weekWindowLabel();
-  const fu=$("#footUpdate"); if(fu) fu.innerHTML="Atualizado: <b>"+d.updated+"</b>";
-  const wl=$("#weekLabel"); if(wl) wl.textContent=d.label;
-  updateSourceBadges(d);
-}
-setInterval(tickClock, 30000);
+  }catch(e){
+    console.log("Erro carregando feed:",e);
 
-/* tenta buscar ao vivo toda vez que a aba volta a ficar visível / recebe foco */
-let lastLiveTry=0;
-function maybeLive(){ if(!LIVE && Date.now()-lastLiveTry>15000){ lastLiveTry=Date.now(); liveRefresh(true); } }
-document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible") maybeLive(); });
-window.addEventListener("focus", maybeLive);
-
-/* abre links de resultado; se o ambiente bloquear (ex.: visualização), copia o link */
-document.addEventListener("click", e=>{
-  const a=e.target.closest("a.nc-link, a.src-chip, a.cov-row, a.nm-row-link");
-  if(!a) return;
-  const href=a.getAttribute("href");
-  if(!href || href==="#") return;
-  e.preventDefault();
-  let w=null;
-  try{ w=window.open(href,"_blank","noopener"); }catch(err){}
-  if(!w){
-    try{ navigator.clipboard.writeText(href); toast("Aqui na visualização os links não abrem. Copiei o link — cole no navegador."); }
-    catch(err){ toast("Abra o painel no navegador para os links abrirem."); }
+    LIVE=true;
   }
-});
 
-
-boot().then(() => {
-  curPeriod = "day";
-  document.querySelectorAll('#periodSeg .seg-btn').forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.period === "day");
-  });
   render();
-});
-</script>
-</body>
-</html>
+}
