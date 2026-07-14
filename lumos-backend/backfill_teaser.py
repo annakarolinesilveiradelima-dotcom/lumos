@@ -61,7 +61,9 @@ YOUTUBE_QUERIES = [
     "Harry Potter série elenco",
     "Harry Potter HBO Omelete",
     "nova série Harry Potter",
-    "nova serie Harry Potter"
+    "nova serie Harry Potter",
+    "série Harry Potter HBO Max",
+    "serie Harry Potter HBO Max"
 ]
 
 BR_CHANNELS = [
@@ -88,7 +90,10 @@ BR_CHANNELS = [
     "tecmundo",
     "adorocinema",
     "cinepop",
-    "coisa de nerd"
+    "coisa de nerd",
+    "manual do mundo",
+    "nerdbunker",
+    "jovemnerd"
 ]
 
 BR_TEXT_SIGNALS = [
@@ -116,7 +121,10 @@ BR_TEXT_SIGNALS = [
     "ei nerd",
     "pipocando",
     "observatório do cinema",
-    "observatorio do cinema"
+    "observatorio do cinema",
+    "hbo max",
+    "warner brasil",
+    "max brasil"
 ]
 
 BLOCKED_YOUTUBE_SIGNALS = [
@@ -132,7 +140,6 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "breakup",
     "sad",
     "slang",
-    "shorts",
     "youtubeshorts",
     "hogwarts nearly",
     "movies never told",
@@ -404,19 +411,65 @@ def collect_google_news_week(start, end):
     return results
 
 
+def _youtube_channel_countries(channel_ids, api_key):
+    if not channel_ids:
+        return {}
+
+    countries = {}
+
+    ids = list(sorted(set(channel_ids)))
+
+    for i in range(0, len(ids), 50):
+        chunk = ids[i:i + 50]
+
+        params = {
+            "part": "snippet",
+            "id": ",".join(chunk),
+            "key": api_key
+        }
+
+        try:
+            response = requests.get(
+                "https://www.googleapis.com/youtube/v3/channels",
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(f"[youtube_channels] status={response.status_code} canais={len(chunk)}")
+
+            if response.status_code != 200:
+                print("[youtube_channels] resposta:", response.text[:500])
+                continue
+
+            data = response.json()
+
+            for item in data.get("items", []):
+                channel_id = item.get("id", "")
+                snippet = item.get("snippet", {}) or {}
+                country = (snippet.get("country") or "").upper()
+
+                if channel_id:
+                    countries[channel_id] = country
+
+        except Exception as exc:
+            print(f"[youtube_channels] falha: {exc}")
+
+    return countries
+
+
 def collect_youtube_week(start, end, api_key):
     if not api_key:
         print("[youtube] YOUTUBE_API_KEY nao configurada. Pulando YouTube.")
         return []
 
-    results = []
+    raw_items = []
 
     for query in YOUTUBE_QUERIES:
         params = {
             "part": "snippet",
             "type": "video",
             "q": query,
-            "maxResults": 15,
+            "maxResults": 20,
             "order": "date",
             "publishedAfter": _iso_utc(start),
             "publishedBefore": _iso_utc(end),
@@ -447,71 +500,95 @@ def collect_youtube_week(start, end, api_key):
             print(f"[youtube] query='{query}' retornou {len(items)} videos")
 
             for item in items:
-                video_id = (item.get("id") or {}).get("videoId")
-                snippet = item.get("snippet") or {}
-
-                if not video_id:
-                    continue
-
-                title = (snippet.get("title") or "").strip()
-                description = snippet.get("description") or ""
-                channel = snippet.get("channelTitle") or "YouTube"
-                published = snippet.get("publishedAt") or ""
-
-                if not title:
-                    continue
-
-                title_lower = title.lower()
-                description_lower = description.lower()
-                channel_lower = channel.lower()
-                combined_text = f"{title_lower} {description_lower} {channel_lower}"
-
-                allowed_channel = any(
-                    br_channel in channel_lower
-                    for br_channel in BR_CHANNELS
-                )
-
-                has_br_signal = any(
-                    signal in combined_text
-                    for signal in BR_TEXT_SIGNALS
-                )
-
-                is_blocked = any(
-                    blocked in combined_text
-                    for blocked in BLOCKED_YOUTUBE_SIGNALS
-                )
-
-                # Entra se for canal brasileiro aprovado OU se tiver sinal forte de Brasil/português.
-                if not allowed_channel and not has_br_signal:
-                    continue
-
-                # Bloqueia global/ruído óbvio, exceto se for canal brasileiro aprovado.
-                if is_blocked and not allowed_channel:
-                    continue
-
-                pub_date = None
-
-                try:
-                    pub_date = datetime.fromisoformat(
-                        published.replace("Z", "+00:00")
-                    ).astimezone(timezone.utc)
-                except Exception:
-                    pub_date = None
-
-                url = f"https://www.youtube.com/watch?v={video_id}"
-                cat = _cat(title + " " + description)
-
-                results.append({
-                    "o": f"YouTube - {channel}",
-                    "u": url,
-                    "title": title,
-                    "cat": cat,
-                    "time": _format_time_br(pub_date),
-                    "scope": "Video/Creator - YouTube BR"
-                })
+                raw_items.append(item)
 
         except Exception as exc:
             print(f"[youtube] falha query='{query}': {exc}")
+
+    channel_ids = []
+
+    for item in raw_items:
+        snippet = item.get("snippet") or {}
+        channel_id = snippet.get("channelId") or ""
+
+        if channel_id:
+            channel_ids.append(channel_id)
+
+    channel_countries = _youtube_channel_countries(channel_ids, api_key)
+
+    results = []
+
+    for item in raw_items:
+        video_id = (item.get("id") or {}).get("videoId")
+        snippet = item.get("snippet") or {}
+
+        if not video_id:
+            continue
+
+        title = (snippet.get("title") or "").strip()
+        description = snippet.get("description") or ""
+        channel = snippet.get("channelTitle") or "YouTube"
+        channel_id = snippet.get("channelId") or ""
+        published = snippet.get("publishedAt") or ""
+
+        if not title:
+            continue
+
+        title_lower = title.lower()
+        description_lower = description.lower()
+        channel_lower = channel.lower()
+        combined_text = f"{title_lower} {description_lower} {channel_lower}"
+
+        channel_country = channel_countries.get(channel_id, "")
+
+        allowed_channel = any(
+            br_channel in channel_lower
+            for br_channel in BR_CHANNELS
+        )
+
+        channel_is_br = channel_country == "BR"
+
+        has_br_signal = any(
+            signal in combined_text
+            for signal in BR_TEXT_SIGNALS
+        )
+
+        is_blocked = any(
+            blocked in combined_text
+            for blocked in BLOCKED_YOUTUBE_SIGNALS
+        )
+
+        # Aceita se:
+        # 1) canal esta na whitelist BR, OU
+        # 2) YouTube informou country=BR, OU
+        # 3) texto tem sinal forte de Brasil/portugues.
+        if not allowed_channel and not channel_is_br and not has_br_signal:
+            continue
+
+        # Bloqueia ruido global obvio, exceto se o canal for BR confirmado/whitelist.
+        if is_blocked and not allowed_channel and not channel_is_br:
+            continue
+
+        pub_date = None
+
+        try:
+            pub_date = datetime.fromisoformat(
+                published.replace("Z", "+00:00")
+            ).astimezone(timezone.utc)
+        except Exception:
+            pub_date = None
+
+        url = f"https://www.youtube.com/watch?v={video_id}"
+        cat = _cat(title + " " + description)
+
+        results.append({
+            "o": f"YouTube - {channel}",
+            "u": url,
+            "title": title,
+            "cat": cat,
+            "time": _format_time_br(pub_date),
+            "scope": "Video/Creator - YouTube BR"
+        })
 
     results = _dedupe_coverage(results)
 

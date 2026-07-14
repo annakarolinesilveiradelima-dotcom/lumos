@@ -1,11 +1,11 @@
 {
   "label": "15-21 abr 2026",
-  "updated": "14 jul 2026, 12:06",
+  "updated": "14 jul 2026, 12:16",
   "kpi": {
     "mentions": {
-      "v": "2 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "2 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 15-21 abr 2026"
+      "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 15-21 abr 2026"
     },
     "sentiment": {
       "v": "+0",
@@ -20,10 +20,10 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "36",
+      "v": "95",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 0/100"
+      "sub": "buzz com Wikipedia 95/100"
     }
   },
   "senti": {
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    36,
-    36,
-    36,
-    36,
-    36,
-    36,
-    36
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95
   ],
   "stack": [
     [
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
+      "vol": 95,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -145,6 +145,22 @@
           "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
         }
       ]
+    },
+    {
+      "t": "Interesse enciclopedico por 'Harry Potter film series'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Wikipedia",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -163,6 +179,14 @@
       "cat": "neu",
       "time": "16 abr, 04:00",
       "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+      "title": "Interesse enciclopedico por 'Harry Potter film series'",
+      "cat": "neu",
+      "time": "15-21 abr 2026",
+      "scope": "Wikipedia Pageviews - 185.288 views na semana"
     }
   ],
   "creators": [],
@@ -188,11 +212,11 @@
       ],
       [
         "Itens reais/sinais",
-        "2"
+        "3"
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter film series - 185.288 views"
       ]
     ]
   },
@@ -210,15 +234,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 2,
+    "base_count": 3,
     "unit": "itens",
     "net": 0,
-    "buzz": 36,
+    "buzz": 95,
     "news_count": 2,
     "youtube_count": 0,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "wiki_score": 95,
+    "wiki_views": 185288,
+    "wiki_top_page": "Harry Potter film series",
     "backfill": true,
     "sentiment_index": 50
   }
