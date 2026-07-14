@@ -1,10 +1,166 @@
 {
-  "generated_at": "14 jul 2026, 14:32",
+  "generated_at": "14 jul 2026, 14:41",
   "window": {
-    "mode": "sem filtro de data, sem regionCode, sem relevanceLanguage",
-    "start": "not_used",
-    "end": "not_used"
+    "mode": "current only, sem filtro de data, sem regionCode, sem relevanceLanguage"
   },
   "raw_count": 0,
+  "queries": [
+    {
+      "query": "harry potter série brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter serie brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "série de harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "serie de harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova série harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova serie harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova série de harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova serie de harry potter brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter série português",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter serie portugues",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova série harry potter português",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "nova serie harry potter portugues",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter hbo brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter max brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter hbo max brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter série hbo brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter serie hbo brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter série max brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter serie max brasil",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter elenco série",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter elenco serie",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter elenco hbo",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter hbo elenco",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter hbo max elenco",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter nova série elenco",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    },
+    {
+      "query": "harry potter nova serie elenco",
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+    }
+  ],
   "sample": []
 }
