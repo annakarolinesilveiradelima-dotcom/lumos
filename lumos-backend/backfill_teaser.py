@@ -517,8 +517,8 @@ def _buzz_score(count, counts, wiki_score, trend_score, net):
 
     volume_component = min(35, count * 7)
     diversity_component = min(20, active_platforms * 5)
-    trend_component = min(20, round(trend_score * 0.20))
-    wiki_component = min(15, round(wiki_score * 0.15))
+    trend_component = min(25, round(trend_score * 0.25))
+    wiki_component = min(10, round(wiki_score * 0.10))
     sentiment_component = max(0, min(10, 5 + round(net / 12)))
 
     buzz = volume_component + diversity_component + trend_component + wiki_component + sentiment_component
@@ -539,7 +539,7 @@ def _buzz_score(count, counts, wiki_score, trend_score, net):
         "trend_component": trend_component,
         "wiki_component": wiki_component,
         "sentiment_component": sentiment_component,
-        "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
+        "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
     }
 
 
@@ -698,85 +698,126 @@ def collect_google_trends_series(start, end):
             "points": []
         }
 
-    debug = {
-        "status": "not_run",
-        "keywords": TRENDS_KEYWORDS,
-        "geo": "BR",
-        "timeframe": "",
-        "error": "",
-        "rows": 0
-    }
+    all_points_by_date = {}
+    keyword_debug = []
 
-    try:
-        pytrends = TrendReq(
-            hl="pt-BR",
-            tz=180,
-            timeout=(10, 25),
-            retries=2,
-            backoff_factor=0.2
-        )
+    timeframe = f"{start:%Y-%m-%d} {end:%Y-%m-%d}"
 
-        timeframe = f"{start:%Y-%m-%d} {end:%Y-%m-%d}"
-        debug["timeframe"] = timeframe
+    for keyword in TRENDS_KEYWORDS:
+        try:
+            pytrends = TrendReq(
+                hl="pt-BR",
+                tz=180,
+                timeout=(10, 25),
+                retries=2,
+                backoff_factor=0.2
+            )
 
-        pytrends.build_payload(
-            TRENDS_KEYWORDS,
-            cat=0,
-            timeframe=timeframe,
-            geo="BR",
-            gprop=""
-        )
+            pytrends.build_payload(
+                [keyword],
+                cat=0,
+                timeframe=timeframe,
+                geo="BR",
+                gprop=""
+            )
 
-        df = pytrends.interest_over_time()
+            df = pytrends.interest_over_time()
 
-        if df is None or df.empty:
-            debug["status"] = "empty"
-            return {
-                "debug": debug,
-                "points": []
-            }
-
-        if "isPartial" in df.columns:
-            df = df.drop(columns=["isPartial"])
-
-        points = []
-
-        for idx, row in df.iterrows():
-            try:
-                dt = idx.to_pydatetime().replace(tzinfo=BR_TZ)
-            except Exception:
+            if df is None or df.empty:
+                keyword_debug.append({
+                    "keyword": keyword,
+                    "status": "empty",
+                    "rows": 0,
+                    "avg_score": 0,
+                    "max_score": 0
+                })
+                time.sleep(1)
                 continue
 
-            values = {}
+            if "isPartial" in df.columns:
+                df = df.drop(columns=["isPartial"])
 
-            for kw in TRENDS_KEYWORDS:
+            values_for_keyword = []
+
+            for idx, row in df.iterrows():
                 try:
-                    values[kw] = int(row.get(kw, 0) or 0)
+                    dt = idx.to_pydatetime().replace(tzinfo=BR_TZ)
                 except Exception:
-                    values[kw] = 0
+                    continue
 
-            score = max(values.values()) if values else 0
-            top_keyword = max(values, key=values.get) if values else ""
+                date_key = dt.date().isoformat()
 
-            points.append({
-                "date": dt,
-                "score": score,
-                "top_keyword": top_keyword,
-                "values": values
+                try:
+                    score = int(row.get(keyword, 0) or 0)
+                except Exception:
+                    score = 0
+
+                values_for_keyword.append(score)
+
+                if date_key not in all_points_by_date:
+                    all_points_by_date[date_key] = {
+                        "date": dt,
+                        "values": {}
+                    }
+
+                all_points_by_date[date_key]["values"][keyword] = score
+
+            avg_score = round(sum(values_for_keyword) / len(values_for_keyword)) if values_for_keyword else 0
+            max_score = max(values_for_keyword) if values_for_keyword else 0
+
+            keyword_debug.append({
+                "keyword": keyword,
+                "status": "ok",
+                "rows": len(values_for_keyword),
+                "avg_score": avg_score,
+                "max_score": max_score
             })
 
-        debug["status"] = "ok"
-        debug["rows"] = len(points)
+            print(f"[trends] keyword='{keyword}' rows={len(values_for_keyword)} avg={avg_score} max={max_score}")
 
+            time.sleep(1)
+
+        except Exception as exc:
+            keyword_debug.append({
+                "keyword": keyword,
+                "status": "error",
+                "rows": 0,
+                "avg_score": 0,
+                "max_score": 0,
+                "error": str(exc)
+            })
+            print(f"[trends] falha keyword='{keyword}': {exc}")
+            time.sleep(1)
+
+    points = []
+
+    for _, item in sorted(all_points_by_date.items()):
+        values = item.get("values", {}) or {}
+
+        if not values:
+            continue
+
+        score = max(values.values()) if values else 0
+        top_keyword = max(values, key=values.get) if values else ""
+
+        points.append({
+            "date": item["date"],
+            "score": score,
+            "top_keyword": top_keyword,
+            "values": values
+        })
+
+    try:
         debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "trends_debug.json")
 
         with open(debug_path, "w", encoding="utf-8") as file:
             json.dump({
                 "generated_at": _stamp(),
-                "status": debug["status"],
-                "keywords": TRENDS_KEYWORDS,
+                "status": "ok" if points else "empty",
+                "method": "keywords_individuais_combinadas_por_data",
                 "geo": "BR",
                 "timeframe": timeframe,
+                "keywords": keyword_debug,
                 "rows": len(points),
                 "sample": [
                     {
@@ -785,41 +826,26 @@ def collect_google_trends_series(start, end):
                         "top_keyword": point["top_keyword"],
                         "values": point["values"]
                     }
-                    for point in points[-20:]
+                    for point in points[-30:]
                 ]
             }, file, ensure_ascii=False, indent=2)
 
-        print(f"[trends] {len(points)} pontos coletados para Google Trends BR")
-
-        return {
-            "debug": debug,
-            "points": points
-        }
+        print(f"[trends] debug salvo em {debug_path}")
 
     except Exception as exc:
-        debug["status"] = "error"
-        debug["error"] = str(exc)
-        print(f"[trends] falha Google Trends: {exc}")
+        print(f"[trends] nao consegui salvar debug: {exc}")
 
-        try:
-            debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "trends_debug.json")
+    print(f"[trends] {len(points)} pontos combinados para Google Trends BR")
 
-            with open(debug_path, "w", encoding="utf-8") as file:
-                json.dump({
-                    "generated_at": _stamp(),
-                    "status": "error",
-                    "error": str(exc),
-                    "keywords": TRENDS_KEYWORDS,
-                    "geo": "BR"
-                }, file, ensure_ascii=False, indent=2)
-
-        except Exception:
-            pass
-
-        return {
-            "debug": debug,
-            "points": []
-        }
+    return {
+        "debug": {
+            "status": "ok" if points else "empty",
+            "method": "keywords_individuais",
+            "keywords": keyword_debug,
+            "rows": len(points)
+        },
+        "points": points
+    }
 
 
 def _trend_for_range(trends_data, start, end):
@@ -852,7 +878,11 @@ def _trend_for_range(trends_data, start, end):
             "coverage": []
         }
 
-    avg_score = round(sum(point.get("score", 0) for point in selected) / len(selected))
+    scores = [int(point.get("score", 0) or 0) for point in selected]
+    avg_score = round(sum(scores) / len(scores)) if scores else 0
+    max_score = max(scores) if scores else 0
+
+    combined_score = round((avg_score * 0.6) + (max_score * 0.4))
 
     keyword_totals = {}
 
@@ -869,20 +899,22 @@ def _trend_for_range(trends_data, start, end):
 
     coverage = []
 
-    if avg_score > 0:
+    if combined_score > 0:
         coverage.append({
             "o": "Google Trends BR",
             "u": "https://trends.google.com/trends/",
             "title": f"Interesse de busca BR: {top_keyword or 'Harry Potter série'}",
             "cat": "neu",
             "time": _range_label(start, end),
-            "scope": f"Google Trends BR - score medio {avg_score}/100"
+            "scope": f"Google Trends BR - score combinado {combined_score}/100; media {avg_score}; pico {max_score}"
         })
 
     return {
-        "score": avg_score,
+        "score": combined_score,
         "top_keyword": top_keyword,
         "values": avg_values,
+        "avg_score": avg_score,
+        "max_score": max_score,
         "coverage": coverage
     }
 
@@ -1592,6 +1624,8 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki, trend_inf
             "trends_score": trend_score,
             "trends_top_keyword": trend_top_keyword,
             "trends_values": trend_values,
+            "trends_avg_score": trend_info.get("avg_score", 0),
+            "trends_max_score": trend_info.get("max_score", 0),
             "wiki_score": wiki_score,
             "wiki_views": wiki_views,
             "wiki_top_page": wiki_top_page,
@@ -1814,6 +1848,7 @@ def main():
     print("[backfill] inicio")
     print("[backfill] fonte historica: Google News RSS BR + Google Trends BR + Wikipedia Pageviews")
     print("[backfill] fonte diaria: Google News RSS BR + Google Trends BR + YouTube PT-BR + X + Wikipedia Pageviews")
+    print("[backfill] Google Trends: keywords individuais combinadas por data")
     print("[backfill] current: ultimos 7 dias com fallback para ultima semana com dados")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")

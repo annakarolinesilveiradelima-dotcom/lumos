@@ -1,13 +1,51 @@
 {
-  "generated_at": "14 jul 2026, 15:44",
-  "status": "error",
-  "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'",
+  "generated_at": "14 jul 2026, 16:01",
+  "status": "empty",
+  "method": "keywords_individuais_combinadas_por_data",
+  "geo": "BR",
+  "timeframe": "2026-03-25 2026-07-14",
   "keywords": [
-    "Harry Potter série",
-    "Harry Potter HBO",
-    "Harry Potter Max",
-    "Harry Potter HBO Max",
-    "nova série Harry Potter"
+    {
+      "keyword": "Harry Potter série",
+      "status": "error",
+      "rows": 0,
+      "avg_score": 0,
+      "max_score": 0,
+      "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'"
+    },
+    {
+      "keyword": "Harry Potter HBO",
+      "status": "error",
+      "rows": 0,
+      "avg_score": 0,
+      "max_score": 0,
+      "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'"
+    },
+    {
+      "keyword": "Harry Potter Max",
+      "status": "error",
+      "rows": 0,
+      "avg_score": 0,
+      "max_score": 0,
+      "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'"
+    },
+    {
+      "keyword": "Harry Potter HBO Max",
+      "status": "error",
+      "rows": 0,
+      "avg_score": 0,
+      "max_score": 0,
+      "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'"
+    },
+    {
+      "keyword": "nova série Harry Potter",
+      "status": "error",
+      "rows": 0,
+      "avg_score": 0,
+      "max_score": 0,
+      "error": "Retry.__init__() got an unexpected keyword argument 'method_whitelist'"
+    }
   ],
-  "geo": "BR"
+  "rows": 0,
+  "sample": []
 }

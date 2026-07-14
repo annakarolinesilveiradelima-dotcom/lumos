@@ -1,6 +1,6 @@
 {
   "label": "15-21 abr 2026",
-  "updated": "14 jul 2026, 15:44",
+  "updated": "14 jul 2026, 16:02",
   "kpi": {
     "mentions": {
       "v": "3 sinals",
@@ -21,7 +21,7 @@
       "sub": "proxy: Imprensa possui 67% dos sinais coletados"
     },
     "buzz": {
-      "v": "50",
+      "v": "46",
       "suf": "/100",
       "d": 0,
       "sub": "volume + plataformas + Trends 0/100 + Wiki 95/100"
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    0
+    31
   ],
   "stack": [
     [
@@ -231,7 +231,7 @@
       "title": "Interesse enciclopedico por 'Harry Potter film series'",
       "cat": "neu",
       "time": "15-21 abr 2026",
-      "scope": "Wikipedia Pageviews - 182.277 views na semana"
+      "scope": "Wikipedia Pageviews - 185.288 views na semana"
     }
   ],
   "creators": [],
@@ -273,7 +273,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter film series - 182.277 views"
+        "Harry Potter film series - 185.288 views"
       ],
       [
         "SOV proxy",
@@ -281,7 +281,7 @@
       ],
       [
         "Buzz Score",
-        "50/100"
+        "46/100"
       ]
     ]
   },
@@ -324,15 +324,17 @@
     "base_count": 3,
     "unit": "sinais",
     "net": 0,
-    "buzz": 50,
+    "buzz": 46,
     "news_count": 2,
     "youtube_count": 0,
     "x_count": 0,
     "trends_score": 0,
     "trends_top_keyword": "",
     "trends_values": {},
+    "trends_avg_score": 0,
+    "trends_max_score": 0,
     "wiki_score": 95,
-    "wiki_views": 182277,
+    "wiki_views": 185288,
     "wiki_top_page": "Harry Potter film series",
     "platform_counts": {
       "Imprensa": 2,
@@ -354,9 +356,9 @@
       "volume_component": 21,
       "diversity_component": 10,
       "trend_component": 0,
-      "wiki_component": 14,
+      "wiki_component": 10,
       "sentiment_component": 5,
-      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
+      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
     },
     "sources": [
       {

@@ -1,35 +1,35 @@
 {
   "label": "13-19 mai 2026",
-  "updated": "14 jul 2026, 15:44",
+  "updated": "14 jul 2026, 16:02",
   "kpi": {
     "mentions": {
-      "v": "1 sinal",
+      "v": "3 sinals",
       "d": 0,
-      "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
+      "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
     },
     "sentiment": {
-      "v": "+100",
+      "v": "+67",
       "suf": "/100",
       "d": 0,
       "sub": "baseado em categorizacao dos itens coletados"
     },
     "sov": {
-      "v": "100",
+      "v": "67",
       "suf": "%",
       "d": 0,
       "dtype": "pts",
-      "sub": "proxy: Imprensa possui 100% dos sinais coletados"
+      "sub": "proxy: Imprensa possui 67% dos sinais coletados"
     },
     "buzz": {
-      "v": "22",
+      "v": "50",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
+      "sub": "volume + plataformas + Trends 0/100 + Wiki 94/100"
     }
   },
   "senti": {
-    "pos": 100,
-    "neu": 0,
+    "pos": 67,
+    "neu": 33,
     "neg": 0,
     "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
   },
@@ -40,56 +40,56 @@
     82,
     82,
     45,
-    0
+    31
   ],
   "stack": [
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
-      "share": 100,
+      "vol": 2,
+      "share": 67,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 100,
+        "p": 67,
         "n": 0,
-        "g": 0
+        "g": 33
       },
       "source": "coverage[].o / coverage[].scope",
       "method": "Contagem de itens/sinais coletados por plataforma"
@@ -138,27 +138,43 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
+      "vol": 1,
+      "share": 33,
+      "senti": "pos",
       "ang": 200,
       "s": {
-        "p": 0,
+        "p": 67,
         "n": 0,
-        "g": 100
+        "g": 33
       },
       "source": "coverage[].o / coverage[].scope",
       "method": "Contagem de itens/sinais coletados por plataforma"
     }
   ],
   "platform_share": {
-    "Imprensa": 100,
+    "Imprensa": 67,
     "YouTube PT-BR": 0,
     "X": 0,
     "Google Trends BR": 0,
-    "Wikipedia": 0
+    "Wikipedia": 33
   },
   "narratives": [
+    {
+      "t": "Série de ‘Harry Potter’ perde membro do elenco antes mesmo da estreia",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rolling Stone Brasil",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUktoOGJyVWI4a3ZrNlhVQXZuNkNpaXJ4NngxaFVGSWx4aVJMV1RrMm9KSkpVTXZoTlBoNU9tbzFwTTBha1pubDFDR2xPZTNQWkN0OW1jcmJZU0JpRUp6bC04ZlhzNDd2a1NXUk11bmJCQkJKQjNGcUxnSVVHbU8tQzJ3OHJmREczQTZ1UDdnTVhRLXNlN3BVRTY4UmZMMGsxTW1RT294czRrU2VUMUh0eA?oc=5"
+        }
+      ]
+    },
     {
       "t": "Atriz deixa elenco da série de \"Harry Potter\"; saiba o motivo",
       "vol": 1,
@@ -174,9 +190,33 @@
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
         }
       ]
+    },
+    {
+      "t": "Interesse enciclopedico por 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Wikipedia",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+        }
+      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Rolling Stone Brasil",
+      "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUktoOGJyVWI4a3ZrNlhVQXZuNkNpaXJ4NngxaFVGSWx4aVJMV1RrMm9KSkpVTXZoTlBoNU9tbzFwTTBha1pubDFDR2xPZTNQWkN0OW1jcmJZU0JpRUp6bC04ZlhzNDd2a1NXUk11bmJCQkJKQjNGcUxnSVVHbU8tQzJ3OHJmREczQTZ1UDdnTVhRLXNlN3BVRTY4UmZMMGsxTW1RT294czRrU2VUMUh0eA?oc=5",
+      "title": "Série de ‘Harry Potter’ perde membro do elenco antes mesmo da estreia",
+      "cat": "pos",
+      "time": "18 mai, 04:00",
+      "scope": "Google News RSS BR"
+    },
     {
       "o": "CNN Brasil",
       "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5",
@@ -184,6 +224,14 @@
       "cat": "pos",
       "time": "19 mai, 04:00",
       "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
+      "cat": "neu",
+      "time": "13-19 mai 2026",
+      "scope": "Wikipedia Pageviews - 166.953 views na semana"
     }
   ],
   "creators": [],
@@ -197,7 +245,7 @@
   ],
   "heroOpp": {
     "title": "Leitura por sinais reais",
-    "desc": "Janela 13-19 mai 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+    "desc": "Janela 13-19 mai 2026: 3 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
     "facts": [
       [
         "Janela",
@@ -205,11 +253,11 @@
       ],
       [
         "Itens reais/sinais",
-        "1"
+        "3"
       ],
       [
         "Imprensa",
-        "1"
+        "2"
       ],
       [
         "X",
@@ -225,15 +273,15 @@
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter - 166.953 views"
       ],
       [
         "SOV proxy",
-        "Imprensa: 100%"
+        "Imprensa: 67%"
       ],
       [
         "Buzz Score",
-        "22/100"
+        "50/100"
       ]
     ]
   },
@@ -273,42 +321,44 @@
     }
   ],
   "_raw": {
-    "base_count": 1,
+    "base_count": 3,
     "unit": "sinais",
-    "net": 100,
-    "buzz": 22,
-    "news_count": 1,
+    "net": 67,
+    "buzz": 50,
+    "news_count": 2,
     "youtube_count": 0,
     "x_count": 0,
     "trends_score": 0,
     "trends_top_keyword": "",
     "trends_values": {},
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "trends_avg_score": 0,
+    "trends_max_score": 0,
+    "wiki_score": 94,
+    "wiki_views": 166953,
+    "wiki_top_page": "Harry Potter",
     "platform_counts": {
-      "Imprensa": 1,
+      "Imprensa": 2,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 0
+      "Wikipedia": 1
     },
     "platform_share": {
-      "Imprensa": 100,
+      "Imprensa": 67,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 0
+      "Wikipedia": 33
     },
     "sov_proxy_top_platform": "Imprensa",
-    "sov_proxy_top_share": 100,
+    "sov_proxy_top_share": 67,
     "buzz_components": {
-      "volume_component": 7,
-      "diversity_component": 5,
+      "volume_component": 21,
+      "diversity_component": 10,
       "trend_component": 0,
-      "wiki_component": 0,
+      "wiki_component": 9,
       "sentiment_component": 10,
-      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
+      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
     },
     "sources": [
       {
@@ -333,6 +383,6 @@
       }
     ],
     "backfill": true,
-    "sentiment_index": 100
+    "sentiment_index": 84
   }
 }

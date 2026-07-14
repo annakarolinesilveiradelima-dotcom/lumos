@@ -1,6 +1,6 @@
 {
   "label": "20-26 mai 2026",
-  "updated": "14 jul 2026, 15:45",
+  "updated": "14 jul 2026, 16:02",
   "kpi": {
     "mentions": {
       "v": "2 sinals",
@@ -21,10 +21,10 @@
       "sub": "proxy: Imprensa possui 50% dos sinais coletados"
     },
     "buzz": {
-      "v": "43",
+      "v": "38",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + plataformas + Trends 0/100 + Wiki 94/100"
+      "sub": "volume + plataformas + Trends 0/100 + Wiki 90/100"
     }
   },
   "senti": {
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    0
+    31
   ],
   "stack": [
     [
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "t": "Interesse enciclopedico por 'Paapa Essiedu'",
+      "t": "Interesse enciclopedico por 'Harry Potter'",
       "vol": 1,
       "senti": "neu",
       "pf": "Wikipedia",
@@ -187,7 +187,7 @@
       "src": [
         {
           "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
         }
       ]
     }
@@ -203,11 +203,11 @@
     },
     {
       "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
-      "title": "Interesse enciclopedico por 'Paapa Essiedu'",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
       "cat": "neu",
       "time": "20-26 mai 2026",
-      "scope": "Wikipedia Pageviews - 159.548 views na semana"
+      "scope": "Wikipedia Pageviews - 100.101 views na semana"
     }
   ],
   "creators": [],
@@ -249,7 +249,7 @@
       ],
       [
         "Wikipedia",
-        "Paapa Essiedu - 159.548 views"
+        "Harry Potter - 100.101 views"
       ],
       [
         "SOV proxy",
@@ -257,7 +257,7 @@
       ],
       [
         "Buzz Score",
-        "43/100"
+        "38/100"
       ]
     ]
   },
@@ -300,16 +300,18 @@
     "base_count": 2,
     "unit": "sinais",
     "net": 0,
-    "buzz": 43,
+    "buzz": 38,
     "news_count": 1,
     "youtube_count": 0,
     "x_count": 0,
     "trends_score": 0,
     "trends_top_keyword": "",
     "trends_values": {},
-    "wiki_score": 94,
-    "wiki_views": 159548,
-    "wiki_top_page": "Paapa Essiedu",
+    "trends_avg_score": 0,
+    "trends_max_score": 0,
+    "wiki_score": 90,
+    "wiki_views": 100101,
+    "wiki_top_page": "Harry Potter",
     "platform_counts": {
       "Imprensa": 1,
       "YouTube PT-BR": 0,
@@ -330,9 +332,9 @@
       "volume_component": 14,
       "diversity_component": 10,
       "trend_component": 0,
-      "wiki_component": 14,
+      "wiki_component": 9,
       "sentiment_component": 5,
-      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
+      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
     },
     "sources": [
       {

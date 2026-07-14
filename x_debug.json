@@ -1,5 +1,5 @@
 {
-  "generated_at": "14 jul 2026, 15:46",
+  "generated_at": "14 jul 2026, 16:03",
   "queries": [
     {
       "query": "((\"harry potter\" \"série\") OR (\"harry potter\" \"serie\") OR (\"harry potter\" \"hbo\") OR (\"harry potter\" \"max\")) lang:pt -is:retweet",
