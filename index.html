@@ -1,193 +1,857 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lumos — Fandom Intelligence</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
   <style>
-    :root{
-      --bg:#080b14;--bg2:#0d1221;--side:#0f1424;--card:#141b2e;--card2:#192138;--line:#28324f;
-      --text:#efe6d3;--muted:#9ba3bb;--muted2:#69718e;--gold:#e7a94b;--gold2:#f4ca78;
-      --pos:#63c08c;--neu:#8a90a6;--neg:#da6e6e;--spell:#7c86d6;--radius:16px;
+    :root {
+      --bg: #070A12;
+      --panel: #0E1424;
+      --panel-2: #121A2B;
+      --card: #121A2B;
+      --line: rgba(255,255,255,0.09);
+      --text: #F5F7FB;
+      --muted: #9AA6BD;
+      --soft: #D8DEEC;
+      --gold: #E7A94B;
+      --blue: #4BA3FF;
+      --cyan: #4BD7D0;
+      --green: #63D471;
+      --red: #FF6B6B;
+      --purple: #B38CFF;
+      --white: #FFFFFF;
+      --shadow: 0 18px 60px rgba(0,0,0,0.35);
+      --radius: 22px;
     }
-    *{box-sizing:border-box} html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:"Instrument Sans",system-ui,sans-serif;font-size:14px}
-    body{background:radial-gradient(900px 600px at 85% -10%,rgba(231,169,75,.12),transparent),radial-gradient(900px 700px at 10% 105%,rgba(124,134,214,.10),transparent),var(--bg)}
-    a{color:inherit}.app{display:grid;grid-template-columns:290px 1fr;min-height:100vh}.side{background:linear-gradient(180deg,#101629,#0b0f1b);border-right:1px solid #202942;padding:26px 18px;position:sticky;top:0;height:100vh;overflow:auto}
-    .brand{display:flex;gap:14px;align-items:center;margin-bottom:32px}.orb{width:36px;height:36px;border-radius:50%;background:#a56d22;box-shadow:0 0 18px 7px rgba(231,169,75,.35),inset 0 0 0 1px rgba(255,255,255,.2)}
-    .brand b{font-family:Fraunces,serif;font-size:27px}.brand span{display:block;font-family:"JetBrains Mono";font-size:9px;color:var(--gold);letter-spacing:2.6px;margin-top:2px}.navlabel{font-family:"JetBrains Mono";font-size:10px;letter-spacing:2px;color:var(--muted2);text-transform:uppercase;margin:18px 9px 8px}
-    .navitem{display:flex;align-items:center;gap:11px;color:var(--muted);padding:11px 13px;border-radius:11px;cursor:pointer;border:1px solid transparent;font-weight:650}.navitem:hover{background:#151d32;color:var(--text)}.navitem.active{background:rgba(231,169,75,.14);border-color:rgba(231,169,75,.35);color:var(--text)}.navitem .badge{margin-left:auto;background:var(--neg);color:#1b0b0b;border-radius:99px;padding:1px 7px;font-size:11px}.sidefoot{border-top:1px solid #202942;margin-top:28px;padding:16px 10px;color:var(--muted2);font-size:12px}.sidefoot b{color:var(--muted)}
-    .main{min-width:0}.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;padding:18px 26px;border-bottom:1px solid #202942;background:rgba(8,11,20,.88);backdrop-filter:blur(10px)}.title{margin-right:auto}.title h1{margin:0;font-family:Fraunces,serif;font-size:23px}.title span{color:var(--muted2);font-size:12px}
-    .seg{display:flex;border:1px solid var(--line);background:#0c1120;border-radius:12px;padding:3px}.seg button,.select button,.btn{font-family:inherit;border:0;cursor:pointer}.seg button{background:transparent;color:var(--muted);font-weight:700;padding:8px 18px;border-radius:9px}.seg button.active{background:rgba(231,169,75,.17);color:var(--gold)}.select{position:relative}.select button,.btn{background:var(--card);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:10px 14px;font-weight:700}.btn.gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#251704;border-color:transparent}.cap{font-family:"JetBrains Mono";font-size:9px;color:var(--muted2);letter-spacing:1.5px;text-transform:uppercase;margin-right:8px}.menu{display:none;position:absolute;right:0;top:calc(100% + 7px);min-width:260px;max-height:380px;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:7px;box-shadow:0 20px 50px rgba(0,0,0,.45);z-index:20}.menu.open{display:block}.mi{padding:10px 12px;border-radius:10px;color:var(--muted);cursor:pointer}.mi:hover,.mi.sel{background:#1a233a;color:var(--gold)}
-    .content{padding:26px;max-width:1250px}.view{display:none}.view.active{display:block}.eyebrow{font-family:"JetBrains Mono";font-size:10px;color:var(--gold);letter-spacing:2px;text-transform:uppercase}.head{display:flex;align-items:end;gap:20px;margin:0 0 20px}.head h2{font-family:Fraunces,serif;font-size:30px;margin:4px 0 0}.head p{margin-left:auto;max-width:420px;color:var(--muted2);text-align:right}.tagline{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(231,169,75,.35);background:rgba(231,169,75,.12);border-radius:999px;padding:5px 12px;color:var(--gold);font-family:"JetBrains Mono";font-size:11px}.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.kpi{background:var(--card);border:1px solid #202942;border-radius:var(--radius);padding:17px}.kpi small{font-family:"JetBrains Mono";color:var(--muted2);letter-spacing:1px;text-transform:uppercase}.kpi strong{display:block;font-family:Fraunces,serif;font-size:31px;margin:8px 0 4px}.delta{font-family:"JetBrains Mono";font-size:12px}.up{color:var(--pos)}.down{color:var(--neg)}.grid2{display:grid;grid-template-columns:1.2fr .9fr;gap:16px;margin-top:16px}.grid2b{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.panel{background:var(--card);border:1px solid #202942;border-radius:var(--radius);padding:18px}.panel h3{margin:0 0 16px;font-size:16px}.canvasbox{height:285px}.empty{padding:26px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;background:#11182a}.smallnote{color:var(--muted2);font-size:12px;margin-top:8px}.list{display:flex;flex-direction:column;gap:11px}.row{display:flex;gap:12px;align-items:flex-start;background:var(--card2);border:1px solid #222c49;border-radius:13px;padding:13px;text-decoration:none}.row:hover{border-color:var(--gold)}.row b{display:block}.row small{display:block;color:var(--muted2);margin-top:3px}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:3px 9px;font-family:"JetBrains Mono";font-size:10px}.pill.pos{background:rgba(99,192,140,.15);color:var(--pos)}.pill.neg{background:rgba(218,110,110,.15);color:var(--neg)}.pill.neu{background:rgba(138,144,166,.15);color:var(--neu)}.pill.div,.pill.esp{background:rgba(124,134,214,.15);color:var(--spell)}.pill.nos{background:rgba(231,169,75,.15);color:var(--gold)}
-    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.chip{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:99px;padding:7px 12px;cursor:pointer}.chip.on{color:var(--gold);border-color:rgba(231,169,75,.45);background:rgba(231,169,75,.12)}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:var(--card);border:1px solid #202942;border-radius:var(--radius);padding:17px}.card h4{margin:0 0 10px;font-size:16px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.coverage .row{display:grid;grid-template-columns:110px 150px 1fr auto;align-items:center}.time{font-family:"JetBrains Mono";color:var(--muted2);font-size:12px}.outlet{font-weight:700}.riskgrid,.oppgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.hero{background:linear-gradient(135deg,rgba(231,169,75,.14),rgba(124,134,214,.11)),var(--card);border:1px solid rgba(231,169,75,.3);border-radius:var(--radius);padding:22px;margin-bottom:16px}.facts{display:flex;flex-wrap:wrap;gap:22px}.facts small{display:block;font-family:"JetBrains Mono";font-size:10px;color:var(--muted2);text-transform:uppercase}.facts b{display:block;margin-top:3px}.table{width:100%;border-collapse:collapse;background:var(--card);border-radius:var(--radius);overflow:hidden}.table th,.table td{padding:13px;border-bottom:1px solid #202942;text-align:left}.table th{font-family:"JetBrains Mono";font-size:10px;color:var(--muted2);text-transform:uppercase;background:#0f1627}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--card);border:1px solid var(--gold);border-radius:12px;padding:12px 18px;display:none;z-index:100}.toast.show{display:block}
-    @media(max-width:950px){.app{grid-template-columns:1fr}.side{position:relative;height:auto}.top{flex-wrap:wrap}.kpis,.grid2,.grid2b,.cards,.riskgrid,.oppgrid{grid-template-columns:1fr}.coverage .row{grid-template-columns:1fr}.head p{display:none}}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(75,163,255,0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(231,169,75,0.12), transparent 28%),
+        linear-gradient(180deg, #070A12 0%, #0B1020 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .app {
+      width: min(1440px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--gold), #8A5CF6);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      font-weight: 900;
+      color: #08101D;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+      border-radius: 999px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(99,212,113,0.12);
+    }
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(231,169,75,0.18), transparent 44%),
+        linear-gradient(135deg, rgba(75,163,255,0.12), transparent 65%),
+        var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 54px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero p {
+      color: var(--soft);
+      line-height: 1.55;
+      margin: 16px 0 0;
+      max-width: 780px;
+    }
+
+    .hero-meta {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .pill span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .pill strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .kpis {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: rgba(18,26,43,0.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.22);
+      overflow: hidden;
+    }
+
+    .card h3 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 9px;
+    }
+
+    .kpi-value {
+      font-size: 36px;
+      font-weight: 850;
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .kpi-value small {
+      color: var(--muted);
+      font-size: 15px;
+      margin-left: 4px;
+      letter-spacing: 0;
+    }
+
+    .kpi-sub {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .main-grid {
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .platform-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .platform-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 70px;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .platform-name {
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    .bar {
+      width: 100%;
+      height: 12px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold), var(--blue));
+      width: 0%;
+      transition: width 0.8s ease;
+    }
+
+    .platform-number {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .buzz-wrap {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .gauge {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        conic-gradient(var(--gold) var(--buzzDeg), rgba(255,255,255,0.08) 0);
+      position: relative;
+    }
+
+    .gauge::before {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .gauge strong {
+      position: relative;
+      font-size: 36px;
+      letter-spacing: -0.06em;
+    }
+
+    .component-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .component {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 8px;
+    }
+
+    .component strong {
+      color: var(--text);
+    }
+
+    .wide-grid {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 18px;
+    }
+
+    .buzz7 {
+      display: flex;
+      align-items: end;
+      gap: 10px;
+      height: 150px;
+      padding-top: 10px;
+    }
+
+    .buzz-col {
+      flex: 1;
+      min-width: 18px;
+      background: linear-gradient(180deg, var(--cyan), var(--blue));
+      border-radius: 10px 10px 4px 4px;
+      height: 4px;
+      position: relative;
+    }
+
+    .buzz-col span {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .coverage-list,
+    .narrative-list,
+    .risk-list,
+    .source-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .item {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      background: rgba(255,255,255,0.035);
+    }
+
+    .item-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .item-meta {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--soft);
+      font-size: 11px;
+      padding: 4px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      background: rgba(255,255,255,0.045);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .error {
+      background: rgba(255,107,107,0.12);
+      border: 1px solid rgba(255,107,107,0.26);
+      color: #FFD6D6;
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 1024px) {
+      .hero,
+      .main-grid,
+      .wide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .kpis {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .app {
+        width: min(100% - 24px, 1440px);
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .kpis {
+        grid-template-columns: 1fr;
+      }
+
+      .buzz-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .platform-row {
+        grid-template-columns: 1fr;
+      }
+
+      .platform-number {
+        text-align: left;
+      }
+    }
   </style>
 </head>
+
 <body>
-<div class="app">
-  <aside class="side">
-    <div class="brand"><div class="orb"></div><div><b>Lumos</b><span>FANDOM INTELLIGENCE</span></div></div>
-    <div class="navlabel">Semana atual</div>
-    <nav id="nav">
-      <div class="navitem active" data-view="overview">▦ Visão geral</div>
-      <div class="navitem" data-view="narratives">▤ Narrativas</div>
-      <div class="navitem" data-view="coverage">▧ Cobertura & fontes</div>
-      <div class="navitem" data-view="sentiment">⌁ Sentimento</div>
-      <div class="navitem" data-view="creators">◌ Creators</div>
-      <div class="navitem" data-view="risks">△ Riscos <span class="badge" id="riskBadge">0</span></div>
-      <div class="navitem" data-view="opps">♢ Oportunidades</div>
-    </nav>
-    <div class="sidefoot"><b>Fonte de dados:</b> <span id="sourceState">carregando</span><br>Atualizado: <b id="sideUpdated">—</b><br>Cobertura: <b>BR · pt-BR</b></div>
-  </aside>
-  <main class="main">
-    <div class="top">
-      <div class="title"><h1 id="topTitle">Harry Potter — Série HBO Max</h1><span id="topSub">Daily Intelligence · mercado brasileiro</span></div>
-      <div class="seg"><button data-period="week">Semanal</button><button class="active" data-period="day">Diário</button></div>
-      <div class="select"><button id="titleBtn"><span class="cap">Título</span><span id="titleLabel">Harry Potter (HBO)</span> ▾</button><div id="titleMenu" class="menu"></div></div>
-      <div class="select"><button id="weekBtn"><span class="cap" id="periodCap">Dia</span><span id="weekLabel">—</span> ▾</button><div id="weekMenu" class="menu"></div></div>
-      <button class="btn" id="reloadBtn">↻ Recarregar feed</button>
-      <button class="btn gold" id="reportBtn">▤ Gerar relatório</button>
-    </div>
-    <div class="content">
-      <section id="view-overview" class="view active"><div class="head"><div><span class="eyebrow">Resumo executivo</span><h2 id="pageTitle">Visão geral</h2></div><p>Consolidação de notícias reais, sinais de busca/social quando conectados e leitura executiva.</p></div><span class="tagline"><span class="dot"></span><span id="liveTag">Carregando feed…</span></span><div class="kpis" id="kpis"></div><div class="grid2"><div class="panel"><h3>Radar de plataformas</h3><div class="canvasbox"><canvas id="platformChart"></canvas></div></div><div class="panel"><h3>Narrativas dominantes</h3><div id="miniNarr" class="list"></div></div></div><div class="grid2b"><div class="panel"><h3>Balanço de sentimento</h3><div class="canvasbox"><canvas id="donutChart"></canvas></div></div><div class="panel"><h3>Buzz · últimos 7 pontos</h3><div class="canvasbox"><canvas id="buzzChart"></canvas></div><div class="smallnote" id="buzzNote"></div></div></div></section>
-      <section id="view-narratives" class="view"><div class="head"><div><span class="eyebrow">Principais conversas</span><h2>Narrativas</h2></div><p>Temas reais derivados das matérias e dados conectados.</p></div><div class="filters" id="narrFilters"><button class="chip on" data-pf="all">Todas</button><button class="chip" data-pf="Imprensa">Imprensa</button><button class="chip" data-pf="TikTok">TikTok</button><button class="chip" data-pf="X/Twitter">X</button><button class="chip" data-pf="YouTube">YouTube</button><button class="chip" data-pf="Reddit">Reddit</button></div><div class="cards" id="narrCards"></div></section>
-      <section id="view-coverage" class="view"><div class="head"><div><span class="eyebrow">PR Listening</span><h2>Cobertura & fontes</h2></div><p>Matérias reais por semana/dia, com veículo, horário e link.</p></div><div class="filters" id="covFilters"><button class="chip on" data-cat="all">Toda</button><button class="chip" data-cat="pos">Positiva</button><button class="chip" data-cat="neu">Neutra</button><button class="chip" data-cat="nos">Nostálgica</button><button class="chip" data-cat="esp">Especulativa</button><button class="chip" data-cat="neg">Crítica</button></div><div class="coverage list" id="coverageList"></div></section>
-      <section id="view-sentiment" class="view"><div class="head"><div><span class="eyebrow">Sentimento</span><h2>Como a conversa está reagindo</h2></div><p>Percentual positivo/neutro/negativo com base no dado real disponível.</p></div><div class="kpis" id="sentKpis" style="grid-template-columns:repeat(3,1fr)"></div><div class="grid2b"><div class="panel"><h3>Evolução</h3><div class="canvasbox"><canvas id="stackChart"></canvas></div></div><div class="panel"><h3>Por plataforma</h3><div class="canvasbox"><canvas id="platformBars"></canvas></div></div></div></section>
-      <section id="view-creators" class="view"><div class="head"><div><span class="eyebrow">Creators</span><h2>Perfis em alta</h2></div><p>Somente aparece com YouTube/API/export social conectado. Sem inventar creators.</p></div><table class="table"><thead><tr><th>Perfil</th><th>Conteúdo</th><th>Sentimento</th><th>Alcance</th><th>Relevância</th><th>Risco</th></tr></thead><tbody id="creatorRows"></tbody></table></section>
-      <section id="view-risks" class="view"><div class="head"><div><span class="eyebrow">Radar de riscos</span><h2>Pontos de atenção</h2></div><p>Riscos e recomendações derivados da cobertura real da janela.</p></div><div class="riskgrid" id="riskGrid"></div></section>
-      <section id="view-opps" class="view"><div class="head"><div><span class="eyebrow">Oportunidades</span><h2>Onde surfar a conversa</h2></div><p>Temas editoriais e pontos de ação com base no dado real disponível.</p></div><div id="heroOpp" class="hero"></div><div class="oppgrid" id="oppGrid"></div></section>
-    </div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>
+          <h1>Lumos</h1>
+          <p>Fandom Intelligence · mercado brasileiro</p>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="dot"></span>
+        <span id="statusText">Carregando dados...</span>
+      </div>
+    </header>
+
+    <section id="root"></section>
+
+    <footer class="footer">
+      Lumos · dados atualizados automaticamente via GitHub Actions.
+    </footer>
   </main>
-</div>
-<div class="toast" id="toast"></div>
-<script>
-const FEED_URL = 'data.json';
-const PT_MONTHS = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
-let DATA = {};
-let LIVE = false;
-let FEED_UPDATED = null;
-let LIVE_SRC = '';
-let curTitle = 'hp';
-let curPeriod = 'day';
-let curWeek = 'w0';
-let curDay = 'd0';
-let pfFilter = 'all';
-let cfFilter = 'all';
-let charts = {};
 
-const $ = (s)=>document.querySelector(s);
-const $$ = (s)=>Array.from(document.querySelectorAll(s));
+  <script>
+    const TITLE_ID = "hp";
 
-function nowBR(){ return new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'})); }
-function stampBR(){ const d=nowBR(); return `${d.getDate()} ${PT_MONTHS[d.getMonth()]} ${d.getFullYear()}, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
-function feedUrl(){ return `${FEED_URL}?v=${Date.now()}`; }
-function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2600); }
-function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function cleanUrl(raw){
-  if(!raw) return '#';
-  let s = String(raw).replaceAll('&quot;','"').trim();
-  const m = s.match(/href=["']([^"']+)/i);
-  if(m) s = m[1];
-  s = s.replace(/<[^>]*>/g,'').replace(/["']/g,'').trim().replace(/,$/,'');
-  if(!/^https?:\/\//i.test(s)) return '#';
-  return s;
-}
-function catLabel(cat){ return {pos:'Positiva',neg:'Crítica',neu:'Neutra',esp:'Especulativa',nos:'Nostálgica',div:'Dividida',iro:'Irônica'}[cat] || 'Neutra'; }
-function sentiLabel(s){ return {pos:'Positivo',neg:'Negativo',neu:'Neutro',div:'Dividido',iro:'Irônico',esp:'Especulativo',nos:'Nostálgico'}[s] || 'Neutro'; }
-function humanDelta(d, dtype){ const n=Number(d||0); const cls=n>=0?'up':'down'; const sign=n>0?'+':''; const unit=dtype==='pts'?' pts':'%'; return `<span class="delta ${cls}">${sign}${n}${unit}</span>`; }
-function safeArr(v){ return Array.isArray(v) ? v : []; }
-function currentMeta(){ return DATA[curTitle] || DATA[Object.keys(DATA)[0]] || {}; }
-function currentSet(){ const m=currentMeta(); return curPeriod==='day' ? (m.days||{}) : (m.weeks||{}); }
-function currentData(){
-  const m=currentMeta();
-  if(curPeriod==='day' && m.days){ return m.days[curDay] || m.days[Object.keys(m.days)[0]] || {}; }
-  if(curPeriod==='week' && m.weeks){ return m.weeks[curWeek] || m.weeks[Object.keys(m.weeks)[0]] || {}; }
-  return m.days?.[Object.keys(m.days||{})[0]] || m.weeks?.[Object.keys(m.weeks||{})[0]] || {};
-}
-function destroy(name){ if(charts[name]){ charts[name].destroy(); delete charts[name]; } }
+    function safeNumber(value, fallback = 0) {
+      if (value === null || value === undefined) return fallback;
+      const cleaned = String(value).replace("/100", "").replace("%", "").replace("+", "").trim();
+      const n = Number(cleaned);
+      return Number.isFinite(n) ? n : fallback;
+    }
 
-function makeEmptyFeed(){
-  const empty = emptyBlock('Sem dados reais carregados');
-  return { hp:{ label:'Harry Potter (HBO)', topTitle:'Harry Potter — Série HBO Max', topSub:'Daily Intelligence · mercado brasileiro', days:{d0:empty}, weeks:{w0:empty} } };
-}
-function emptyBlock(label){ return { label, updated:stampBR(), kpi:{mentions:{v:'0 matérias',d:0,sub:'sem feed'}, sentiment:{v:'—',suf:'',d:0,sub:'sem base'}, sov:{v:'—',d:0,dtype:'pts',sub:'requer base'}, buzz:{v:'0',suf:'/100',d:0,sub:'sem cobertura'}}, senti:{pos:0,neu:100,neg:0,tone:'Sem dados reais carregados'}, buzz7:[0,0,0,0,0,0,0], stack:[[0,100,0],[0,100,0],[0,100,0],[0,100,0],[0,100,0],[0,100,0],[0,100,0]], platforms:[{name:'Imprensa',vol:1,senti:'neu',ang:-90,s:{p:0,n:0,g:100}}], narratives:[], coverage:[], creators:[], risks:[{t:'Sem feed carregado',sev:'low',d:'O painel ainda não conseguiu ler data.json.',rec:'Clique em Recarregar feed ou rode o workflow do backend.'}], heroOpp:{title:'Aguardando feed',desc:'Sem dados reais carregados ainda.',facts:[['Fonte','data.json'],['Status','aguardando'],['Dados fictícios','não'],['Horário',stampBR()]]}, opps:[{ico:'mail',t:'Recarregar feed',d:'Clique em Recarregar feed após o GitHub Actions concluir.'}], ephem:[]}; }
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
 
-async function loadFeed(showToast=false){
-  $('#liveTag').textContent = 'Carregando feed…';
-  try{
-    const r = await fetch(feedUrl(), {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const feed = await r.json();
-    DATA = feed.titles || feed;
-    LIVE = true;
-    FEED_UPDATED = feed.generated_at || stampBR();
-    LIVE_SRC = feed.source || 'backend automático';
-    if(!DATA[curTitle]) curTitle = Object.keys(DATA)[0] || 'hp';
-    $('#sourceState').textContent = LIVE_SRC;
-    $('#liveTag').textContent = `${LIVE_SRC} · atualizado ${FEED_UPDATED}`;
-    if(showToast) toast('Feed recarregado ✓');
-  }catch(err){
-    console.error('Erro carregando data.json:', err);
-    if(!Object.keys(DATA).length) DATA = makeEmptyFeed();
-    LIVE = false;
-    FEED_UPDATED = stampBR();
-    LIVE_SRC = 'sem feed';
-    $('#sourceState').textContent = 'sem feed';
-    $('#liveTag').textContent = 'Não consegui carregar data.json';
-    if(showToast) toast('Não consegui carregar data.json. Veja Console/F12.');
-  }
-  render();
-}
+    function getTitle(feed) {
+      return feed?.titles?.[TITLE_ID] || Object.values(feed?.titles || {})[0] || null;
+    }
 
-function buildMenus(){
-  const m=currentMeta();
-  $('#titleLabel').textContent = m.label || curTitle;
-  $('#topTitle').textContent = m.topTitle || 'Lumos';
-  $('#topSub').textContent = (curPeriod==='day'?'Daily':'Weekly')+' Intelligence · mercado brasileiro';
-  const tm=$('#titleMenu'); tm.innerHTML=''; Object.keys(DATA).forEach(k=>{ const div=document.createElement('div'); div.className='mi '+(k===curTitle?'sel':''); div.textContent=DATA[k].label||k; div.onclick=()=>{curTitle=k;curDay='d0';curWeek='w0';closeMenus();render();}; tm.appendChild(div); });
-  const set=currentSet(); const wm=$('#weekMenu'); wm.innerHTML=''; $('#periodCap').textContent = curPeriod==='day'?'Dia':'Semana'; const cur=curPeriod==='day'?curDay:curWeek;
-  Object.keys(set).forEach(k=>{ const div=document.createElement('div'); div.className='mi '+(k===cur?'sel':''); div.textContent=set[k].label || k; div.onclick=()=>{ if(curPeriod==='day')curDay=k; else curWeek=k; closeMenus(); render(); }; wm.appendChild(div); });
-}
-function closeMenus(){ $$('.menu').forEach(m=>m.classList.remove('open')); }
+    function getCurrentSnapshot(feed) {
+      const title = getTitle(feed);
+      if (!title) return null;
 
-function render(){
-  buildMenus();
-  const d=currentData(); const m=currentMeta();
-  $('#weekLabel').textContent = d.label || '—';
-  $('#sideUpdated').textContent = FEED_UPDATED || d.updated || stampBR();
-  $('#pageTitle').textContent = curPeriod==='day' ? 'Visão geral do dia' : 'Visão geral da semana';
-  $('#riskBadge').textContent = safeArr(d.risks).filter(r=>['mid','high'].includes(r.sev)).length;
-  renderKpis(d); renderOverview(d); renderNarratives(d); renderCoverage(d); renderSentiment(d); renderCreators(d); renderRisks(d); renderOpps(d);
-}
-function renderKpis(d){ const k=d.kpi||emptyBlock('').kpi; const defs=[['Matérias / Menções',k.mentions],['Sentimento',k.sentiment],['Share of voice',k.sov],['Buzz score',k.buzz]]; $('#kpis').innerHTML=defs.map(([l,o])=>`<div class="kpi"><small>${esc(l)}</small><strong>${esc(o?.v||'—')}${o?.suf?`<span style="font-size:15px;color:var(--muted)">${esc(o.suf)}</span>`:''}</strong>${humanDelta(o?.d,o?.dtype)} <span class="smallnote">${esc(o?.sub||'')}</span></div>`).join(''); }
-function renderOverview(d){ renderPlatformChart(d); renderDonut(d); renderBuzz(d); const ns=safeArr(d.narratives).slice(0,5); $('#miniNarr').innerHTML = ns.length ? ns.map(n=>`<a class="row" href="${cleanUrl(n.src?.[0]?.u)}" target="_blank"><div><b>${esc(n.t)}</b><small>${esc(n.pf||'Imprensa')} · ${esc(sentiLabel(n.senti))} · ${esc(String(n.vol||1))} item</small></div></a>`).join('') : `<div class="empty">Sem narrativas reais nesta janela.<div class="smallnote">Se houver cobertura, rode o backfill/recarregue o feed.</div></div>`; }
-function renderPlatformChart(d){ destroy('platform'); const ps=safeArr(d.platforms); charts.platform=new Chart($('#platformChart'),{type:'bar',data:{labels:ps.map(p=>p.name),datasets:[{label:'Volume',data:ps.map(p=>p.vol||0),backgroundColor:'#e7a94b',borderRadius:8}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#9ba3bb'},grid:{display:false}},y:{ticks:{color:'#69718e'},grid:{color:'#202942'}}}}}); }
-function renderDonut(d){ destroy('donut'); const s=d.senti||{}; charts.donut=new Chart($('#donutChart'),{type:'doughnut',data:{labels:['Positivo','Neutro','Negativo'],datasets:[{data:[s.pos||0,s.neu||0,s.neg||0],backgroundColor:['#63c08c','#8a90a6','#da6e6e'],borderColor:'#141b2e',borderWidth:3}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:{position:'right',labels:{color:'#9ba3bb'}}}}}); }
-function renderBuzz(d){ destroy('buzz'); const arr=safeArr(d.buzz7); charts.buzz=new Chart($('#buzzChart'),{type:'line',data:{labels:arr.map((_,i)=>String(i+1)),datasets:[{data:arr,borderColor:'#e7a94b',backgroundColor:'rgba(231,169,75,.18)',fill:true,tension:.35}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#9ba3bb'},grid:{display:false}},y:{ticks:{color:'#69718e'},grid:{color:'#202942'}}}}}); $('#buzzNote').textContent = curPeriod==='week' ? 'Série semanal baseada em matérias reais da janela selecionada.' : 'Série dos últimos pontos de coleta do backend.'; }
-function renderNarratives(d){ let list=safeArr(d.narratives); if(pfFilter!=='all') list=list.filter(n=>n.pf===pfFilter); $('#narrCards').innerHTML = list.length ? list.map(n=>`<div class="card"><h4><a href="${cleanUrl(n.src?.[0]?.u)}" target="_blank">${esc(n.t)}</a></h4><div class="meta"><span class="pill ${esc(n.senti||'neu')}">${esc(sentiLabel(n.senti))}</span><span class="pill neu">${esc(n.pf||'Imprensa')}</span><span class="pill nos">${esc(String(n.vol||1))} item</span></div><p>${esc(n.growth||'Baseado em dados reais disponíveis.')}</p>${n.src?.length?`<div class="smallnote">Fonte: ${n.src.map(s=>esc(s.o)).join(', ')}</div>`:''}</div>`).join('') : `<div class="empty" style="grid-column:1/-1">Sem narrativas reais nessa janela.<div class="smallnote">Não inventamos tweets, posts ou creators. Quando houver dado real, aparece aqui.</div></div>`; }
-function renderCoverage(d){ let list=safeArr(d.coverage); if(cfFilter!=='all') list=list.filter(c=>c.cat===cfFilter); $('#coverageList').innerHTML = list.length ? list.map(c=>`<a class="row" href="${cleanUrl(c.u)}" target="_blank"><span class="time">${esc(c.time||'—')}</span><span class="outlet">${esc(c.o||'Fonte')}</span><span><b>${esc(c.title||'Sem título')}</b><small>${esc(c.scope||'')} · ${esc(catLabel(c.cat))}</small></span><span class="pill ${esc(c.cat||'neu')}">${esc(catLabel(c.cat))}</span></a>`).join('') : `<div class="empty">Sem cobertura real nesta janela.<div class="smallnote">Essa semana existe, mas a fonte conectada não retornou matéria/post real para esse período.</div></div>`; }
-function renderSentiment(d){ const s=d.senti||{pos:0,neu:100,neg:0}; $('#sentKpis').innerHTML=[['Positivo',s.pos,'pos'],['Neutro',s.neu,'neu'],['Negativo',s.neg,'neg']].map(([l,v,c])=>`<div class="kpi"><small>${l}</small><strong class="${c}">${v}%</strong><div class="smallnote">${esc(s.tone||'')}</div></div>`).join(''); destroy('stack'); charts.stack=new Chart($('#stackChart'),{type:'line',data:{labels:['1','2','3','4','5','6','7'],datasets:[{label:'Positivo',data:safeArr(d.stack).map(x=>x[0]||0),borderColor:'#63c08c',backgroundColor:'rgba(99,192,140,.12)',fill:true},{label:'Neutro',data:safeArr(d.stack).map(x=>x[1]||0),borderColor:'#8a90a6',backgroundColor:'rgba(138,144,166,.10)',fill:true},{label:'Negativo',data:safeArr(d.stack).map(x=>x[2]||0),borderColor:'#da6e6e',backgroundColor:'rgba(218,110,110,.10)',fill:true}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#9ba3bb'}}},scales:{x:{ticks:{color:'#9ba3bb'}},y:{max:100,ticks:{color:'#69718e'},grid:{color:'#202942'}}}}}); destroy('pbars'); const ps=safeArr(d.platforms); charts.pbars=new Chart($('#platformBars'),{type:'bar',data:{labels:ps.map(p=>p.name),datasets:[{label:'Pos',data:ps.map(p=>p.s?.p||0),backgroundColor:'#63c08c'},{label:'Neu',data:ps.map(p=>p.s?.g||0),backgroundColor:'#8a90a6'},{label:'Neg',data:ps.map(p=>p.s?.n||0),backgroundColor:'#da6e6e'}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#9ba3bb'}}},scales:{x:{stacked:true,max:100,ticks:{color:'#69718e'}},y:{stacked:true,ticks:{color:'#9ba3bb'}}}}}); }
-function renderCreators(d){ const cs=safeArr(d.creators); $('#creatorRows').innerHTML = cs.length ? cs.map(c=>`<tr><td>${esc(c.h||c.name||'—')}</td><td>${esc(c.type||'—')}</td><td><span class="pill ${esc(c.senti||'neu')}">${esc(sentiLabel(c.senti))}</span></td><td>${esc(c.reach||'—')}</td><td>${esc(String(c.rel||'—'))}</td><td>${esc(c.risk||'—')}</td></tr>`).join('') : `<tr><td colspan="6"><div class="empty">Creators/social listening ainda não conectado.<div class="smallnote">Para preencher com tweets, Instagram, TikTok ou creators reais, conecte YouTube API, Reddit API ou export CSV de social listening.</div></div></td></tr>`; }
-function renderRisks(d){ const rs=safeArr(d.risks); $('#riskGrid').innerHTML = rs.length ? rs.map(r=>`<div class="card"><div class="meta"><span class="pill ${r.sev==='high'?'neg':r.sev==='mid'?'nos':'pos'}">${esc(r.sev||'low')}</span></div><h4>${esc(r.t)}</h4><p>${esc(r.d)}</p><div class="smallnote"><b>Recomendação:</b> ${esc(r.rec)}</div></div>`).join('') : `<div class="empty" style="grid-column:1/-1">Sem riscos identificados nesta janela.</div>`; }
-function renderOpps(d){ const h=d.heroOpp||{}; $('#heroOpp').innerHTML=`<span class="eyebrow">Insight aplicável</span><h2 style="font-family:Fraunces,serif;margin:8px 0">${esc(h.title||'Sem oportunidade validada')}</h2><p>${esc(h.desc||'Sem cobertura suficiente para recomendação acionável.')}</p><div class="facts">${safeArr(h.facts).map(f=>`<div><small>${esc(f[0])}</small><b>${esc(f[1])}</b></div>`).join('')}</div>`; const os=safeArr(d.opps); $('#oppGrid').innerHTML = os.length ? os.map(o=>`<div class="card"><h4>${esc(o.t)}</h4><p>${esc(o.d)}</p></div>`).join('') : `<div class="empty" style="grid-column:1/-1">Sem oportunidade acionável nesta janela.</div>`; }
+      return (
+        title.days?.d0 ||
+        title.weeks?.w0 ||
+        Object.values(title.weeks || {})[0] ||
+        null
+      );
+    }
 
-$('#titleBtn').onclick=()=>$('#titleMenu').classList.toggle('open');
-$('#weekBtn').onclick=()=>$('#weekMenu').classList.toggle('open');
-document.addEventListener('click',e=>{ if(!e.target.closest('.select')) closeMenus(); });
-$$('.seg button').forEach(b=>b.onclick=()=>{ curPeriod=b.dataset.period; $$('.seg button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); render(); });
-$$('.navitem').forEach(n=>n.onclick=()=>{ $$('.navitem').forEach(x=>x.classList.remove('active')); n.classList.add('active'); $$('.view').forEach(v=>v.classList.remove('active')); $('#view-'+n.dataset.view).classList.add('active'); window.scrollTo({top:0,behavior:'smooth'}); });
-$('#reloadBtn').onclick=()=>loadFeed(true);
-$('#reportBtn').onclick=()=>window.print();
-$('#narrFilters').onclick=e=>{ const c=e.target.closest('.chip'); if(!c)return; $$('#narrFilters .chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); pfFilter=c.dataset.pf; renderNarratives(currentData()); };
-$('#covFilters').onclick=e=>{ const c=e.target.closest('.chip'); if(!c)return; $$('#covFilters .chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); cfFilter=c.dataset.cat; renderCoverage(currentData()); };
+    function getRaw(snapshot) {
+      return snapshot?._raw || {};
+    }
 
-loadFeed(false);
-setInterval(()=>{ if(LIVE){ $('#sideUpdated').textContent = FEED_UPDATED || stampBR(); } },30000);
-</script>
+    function getPlatformCounts(snapshot) {
+      const raw = getRaw(snapshot);
+
+      return raw.platform_counts || {
+        "Imprensa": 0,
+        "YouTube PT-BR": 0,
+        "X": 0,
+        "Google Trends BR": 0,
+        "Wikipedia": 0
+      };
+    }
+
+    function getPlatformShare(snapshot) {
+      const raw = getRaw(snapshot);
+
+      return raw.platform_share || snapshot?.platform_share || {
+        "Imprensa": 0,
+        "YouTube PT-BR": 0,
+        "X": 0,
+        "Google Trends BR": 0,
+        "Wikipedia": 0
+      };
+    }
+
+    function getBuzz(snapshot) {
+      const raw = getRaw(snapshot);
+      return safeNumber(raw.buzz ?? snapshot?.kpi?.buzz?.v, 0);
+    }
+
+    function getKpi(snapshot, key, fallback = "-") {
+      return snapshot?.kpi?.[key] || { v: fallback, suf: "", sub: "" };
+    }
+
+    function getBuzz7(snapshot) {
+      const values = Array.isArray(snapshot?.buzz7) ? snapshot.buzz7 : [];
+      const clean = values.map(v => safeNumber(v, 0)).slice(-7);
+
+      while (clean.length < 7) clean.unshift(0);
+
+      return clean;
+    }
+
+    function renderKpi(label, kpi) {
+      return `
+        <article class="card">
+          <div class="kpi-label">${escapeHtml(label)}</div>
+          <div class="kpi-value">
+            ${escapeHtml(kpi.v ?? "-")}<small>${escapeHtml(kpi.suf ?? "")}</small>
+          </div>
+          <div class="kpi-sub">${escapeHtml(kpi.sub ?? "")}</div>
+        </article>
+      `;
+    }
+
+    function renderPlatforms(snapshot) {
+      const counts = getPlatformCounts(snapshot);
+      const shares = getPlatformShare(snapshot);
+
+      const order = ["Imprensa", "X", "YouTube PT-BR", "Google Trends BR", "Wikipedia"];
+
+      const rows = order.map(name => {
+        const count = safeNumber(counts[name], 0);
+        const share = safeNumber(shares[name], 0);
+
+        return `
+          <div class="platform-row">
+            <div class="platform-name">${escapeHtml(name)}</div>
+            <div class="bar">
+              <div class="bar-fill" style="width:${Math.max(0, Math.min(100, share))}%"></div>
+            </div>
+            <div class="platform-number">${count} · ${share}%</div>
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <section class="card">
+          <h3>Radar de plataformas</h3>
+          <div class="platform-list">
+            ${rows}
+          </div>
+          <div class="kpi-sub" style="margin-top:14px;">
+            Fonte: <strong>_raw.platform_counts</strong> e <strong>_raw.platform_share</strong>.
+          </div>
+        </section>
+      `;
+    }
+
+    function renderBuzz(snapshot) {
+      const raw = getRaw(snapshot);
+      const buzz = getBuzz(snapshot);
+      const components = raw.buzz_components || {};
+
+      const deg = `${Math.max(0, Math.min(100, buzz))}%`;
+
+      return `
+        <section class="card">
+          <h3>Buzz Score</h3>
+          <div class="buzz-wrap">
+            <div class="gauge" style="--buzzDeg:${deg}">
+              <strong>${buzz}</strong>
+            </div>
+
+            <div class="component-list">
+              <div class="component"><span>Volume</span><strong>${safeNumber(components.volume_component, 0)}</strong></div>
+              <div class="component"><span>Diversidade</span><strong>${safeNumber(components.diversity_component, 0)}</strong></div>
+              <div class="component"><span>Google Trends</span><strong>${safeNumber(components.trend_component, 0)}</strong></div>
+              <div class="component"><span>Wikipedia</span><strong>${safeNumber(components.wiki_component, 0)}</strong></div>
+              <div class="component"><span>Sentimento</span><strong>${safeNumber(components.sentiment_component, 0)}</strong></div>
+            </div>
+          </div>
+
+          <div class="kpi-sub" style="margin-top:16px;">
+            Trends: ${safeNumber(raw.trends_score, 0)}/100 · Wiki: ${safeNumber(raw.wiki_score, 0)}/100 · Base: ${safeNumber(raw.base_count, 0)} sinais.
+          </div>
+        </section>
+      `;
+    }
+
+    function renderBuzz7(snapshot) {
+      const values = getBuzz7(snapshot);
+      const max = Math.max(1, ...values);
+
+      const cols = values.map(v => {
+        const h = Math.max(4, Math.round((v / max) * 130));
+        return `<div class="buzz-col" style="height:${h}px"><span>${v}</span></div>`;
+      }).join("");
+
+      return `
+        <section class="card">
+          <h3>Buzz nos últimos 7 pontos</h3>
+          <div class="buzz7">${cols}</div>
+          <div class="kpi-sub">Fonte: <strong>snapshot.buzz7</strong> / histórico semanal.</div>
+        </section>
+      `;
+    }
+
+    function renderCoverage(snapshot) {
+      const items = Array.isArray(snapshot?.coverage) ? snapshot.coverage : [];
+
+      const html = items.length
+        ? items.map(item => `
+          ${escapeHtml(item.u || 
+            <div class="item-title">${escapeHtml(item.title || "Fonte coletada")}</div>
+            <div class="item-meta">
+              <span class="tag">${escapeHtml(item.o || "Fonte")}</span>
+              <span class="tag">${escapeHtml(item.scope || "Escopo")}</span>
+              <span class="tag">${escapeHtml(item.time || "")}</span>
+            </div>
+          </a>
+        `).join("")
+        : `<div class="item"><div class="item-title">Sem coverage disponível para este snapshot.</div></div>`;
+
+      return `
+        <section class="card">
+          <h3>Coverage e sinais coletados</h3>
+          <div class="coverage-list">${html}</div>
+        </section>
+      `;
+    }
+
+    function renderNarratives(snapshot) {
+      const items = Array.isArray(snapshot?.narratives) ? snapshot.narratives : [];
+
+      const html = items.length
+        ? items.map(item => `
+          <div class="item">
+            <div class="item-title">${escapeHtml(item.t || "Narrativa")}</div>
+            <div class="item-meta">
+              <span class="tag">${escapeHtml(item.pf || "Plataforma")}</span>
+              <span class="tag">${escapeHtml(item.senti || "neu")}</span>
+              ${escapeHtml(item.growth || "")}
+            </div>
+          </div>
+        `).join("")
+        : `<div class="item"><div class="item-title">Sem narrativas disponíveis.</div></div>`;
+
+      return `
+        <section class="card">
+          <h3>Narrativas principais</h3>
+          <div class="narrative-list">${html}</div>
+        </section>
+      `;
+    }
+
+    function renderRisks(snapshot) {
+      const items = Array.isArray(snapshot?.risks) ? snapshot.risks : [];
+
+      const html = items.length
+        ? items.map(item => `
+          <div class="item">
+            <div class="item-title">${escapeHtml(item.t || "Risco")}</div>
+            <div class="item-meta">
+              <span class="tag">${escapeHtml(item.sev || "low")}</span>
+              ${escapeHtml(item.d || "")}
+              <br><br>
+              <strong>Recomendação:</strong> ${escapeHtml(item.rec || "")}
+            </div>
+          </div>
+        `).join("")
+        : `<div class="item"><div class="item-title">Sem riscos disponíveis.</div></div>`;
+
+      return `
+        <section class="card">
+          <h3>Riscos e recomendações</h3>
+          <div class="risk-list">${html}</div>
+        </section>
+      `;
+    }
+
+    function renderSources(snapshot) {
+      const sources = Array.isArray(snapshot?.metricSources)
+        ? snapshot.metricSources
+        : Array.isArray(snapshot?._raw?.sources)
+          ? snapshot._raw.sources
+          : [];
+
+      const html = sources.length
+        ? sources.map(item => `
+          <div class="item">
+            <div class="item-title">${escapeHtml(item.metric || "Métrica")}</div>
+            <div class="item-meta">
+              <strong>Fonte:</strong> ${escapeHtml(item.source || "")}
+              <br>
+              <strong>Método:</strong> ${escapeHtml(item.method || "")}
+            </div>
+          </div>
+        `).join("")
+        : `<div class="item"><div class="item-title">Sem fontes/metodologia disponíveis.</div></div>`;
+
+      return `
+        <section class="card">
+          <h3>Fontes e metodologia</h3>
+          <div class="source-list">${html}</div>
+        </section>
+      `;
+    }
+
+    function renderApp(feed) {
+      const title = getTitle(feed);
+      const snapshot = getCurrentSnapshot(feed);
+
+      if (!title || !snapshot) {
+        throw new Error("Não encontrei title/snapshot no data.json.");
+      }
+
+      const raw = getRaw(snapshot);
+      const mentions = getKpi(snapshot, "mentions", "0");
+      const sentiment = getKpi(snapshot, "sentiment", "-");
+      const sov = getKpi(snapshot, "sov", "0");
+      const buzz = getKpi(snapshot, "buzz", "0");
+
+      const currentWindow = raw.current_window || "sem current_window";
+      const trendKeyword = raw.trends_top_keyword || "sem keyword";
+      const updated = snapshot.updated || feed.generated_at || "sem data";
+
+      document.getElementById("statusText").textContent = `Atualizado: ${updated}`;
+
+      document.getElementById("root").innerHTML = `
+        <section class="hero">
+          <div>
+            <h2>${escapeHtml(title.topTitle || title.label || "Harry Potter — Série HBO Max")}</h2>
+            <p>
+              ${escapeHtml(title.topSub || "Daily Intelligence · mercado brasileiro")}
+              <br>
+              Snapshot ativo: <strong>${escapeHtml(snapshot.label || "current")}</strong>.
+              Janela: <strong>${escapeHtml(currentWindow)}</strong>.
+            </p>
+          </div>
+
+          <div class="hero-meta">
+            <div class="pill">
+              <span>Tracking</span>
+              <strong>${escapeHtml(feed.tracking_label || "Desde o teaser")}</strong>
+            </div>
+            <div class="pill">
+              <span>Top keyword Google Trends</span>
+              <strong>${escapeHtml(trendKeyword)}</strong>
+            </div>
+            <div class="pill">
+              <span>Fonte ativa</span>
+              <strong>${escapeHtml(feed.source || "backend automático")}</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid kpis">
+          ${renderKpi("Menções / sinais", mentions)}
+          ${renderKpi("Sentimento", sentiment)}
+          ${renderKpi("Share of Voice", sov)}
+          ${renderKpi("Buzz Score", buzz)}
+        </section>
+
+        <section class="grid main-grid">
+          ${renderPlatforms(snapshot)}
+          ${renderBuzz(snapshot)}
+        </section>
+
+        <section class="grid wide-grid">
+          ${renderBuzz7(snapshot)}
+          ${renderNarratives(snapshot)}
+        </section>
+
+        <section class="grid wide-grid">
+          ${renderCoverage(snapshot)}
+          ${renderRisks(snapshot)}
+        </section>
+
+        ${renderSources(snapshot)}
+      `;
+    }
+
+    async function loadData() {
+      const url = `./data.json?v=${Date.now()}`;
+
+      const response = await fetch(url, {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw new Error(`Falha ao carregar data.json: ${response.status} ${response.statusText}`);
+      }
+
+      return response.json();
+    }
+
+    async function init() {
+      try {
+        const feed = await loadData();
+        renderApp(feed);
+      } catch (error) {
+        console.error(error);
+        document.getElementById("statusText").textContent = "Erro ao carregar";
+        document.getElementById("root").innerHTML = `
+          <div class="error">
+            Erro ao carregar o Lumos.
+
+            ${escapeHtml(error.message || error)}
+          </div>
+        `;
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>
