@@ -29,6 +29,7 @@ PT_MONTHS = [
     "jul", "ago", "set", "out", "nov", "dez"
 ]
 
+
 NEWS_QUERIES = [
     "Harry Potter HBO Brasil",
     "Harry Potter Max Brasil",
@@ -43,6 +44,7 @@ NEWS_QUERIES = [
     "Dominic McLaughlin Harry Potter Brasil",
     "Arabella Stanton Harry Potter Brasil"
 ]
+
 
 YOUTUBE_QUERIES = [
     "harry potter série brasil",
@@ -69,11 +71,10 @@ YOUTUBE_QUERIES = [
     "harry potter elenco hbo",
     "harry potter hbo elenco",
     "harry potter hbo max elenco",
-    "harry potter série max português",
-    "harry potter serie max portugues",
     "harry potter nova série elenco",
     "harry potter nova serie elenco"
 ]
+
 
 BR_CHANNELS = [
     "omelete",
@@ -104,10 +105,12 @@ BR_CHANNELS = [
     "coisa de nerd"
 ]
 
+
 HARRY_POTTER_SIGNALS = [
     "harry potter",
     "potter"
 ]
+
 
 SERIES_SIGNALS = [
     "série",
@@ -134,6 +137,7 @@ SERIES_SIGNALS = [
     "gravacoes",
     "temporada"
 ]
+
 
 PORTUGUESE_SIGNALS = [
     "série",
@@ -178,6 +182,7 @@ PORTUGUESE_SIGNALS = [
     "observatorio do cinema"
 ]
 
+
 BLOCKED_YOUTUBE_SIGNALS = [
     "portugal",
     "india",
@@ -203,6 +208,7 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "status",
     "whatsapp status"
 ]
+
 
 WIKI_PAGES = [
     {"project": "pt.wikipedia.org", "article": "Harry_Potter", "label": "Harry Potter PT"},
@@ -441,20 +447,21 @@ def collect_google_news_week(start, end):
     return results
 
 
-def collect_youtube_week(start, end, api_key):
+def collect_youtube_current(api_key):
     if not api_key:
         print("[youtube] YOUTUBE_API_KEY nao configurada. Pulando YouTube.")
         return []
 
     raw_items = []
     debug_rows = []
+    query_logs = []
 
     for query in YOUTUBE_QUERIES:
         params = {
             "part": "snippet",
             "type": "video",
             "q": query,
-            "maxResults": 50,
+            "maxResults": 10,
             "order": "relevance",
             "key": api_key
         }
@@ -466,17 +473,29 @@ def collect_youtube_week(start, end, api_key):
                 timeout=TIMEOUT
             )
 
+            query_log = {
+                "query": query,
+                "status": response.status_code,
+                "returned": 0,
+                "error": ""
+            }
+
             print(
                 f"[youtube] query='{query}' "
-                f"sem region/relevanceLanguage/data status={response.status_code}"
+                f"current-only sem data/region/lang status={response.status_code}"
             )
 
             if response.status_code != 200:
+                query_log["error"] = response.text[:500]
+                query_logs.append(query_log)
                 print("[youtube] resposta:", response.text[:500])
                 continue
 
             data = response.json()
             items = data.get("items", [])
+
+            query_log["returned"] = len(items)
+            query_logs.append(query_log)
 
             print(f"[youtube] query='{query}' retornou {len(items)} videos brutos")
 
@@ -492,7 +511,15 @@ def collect_youtube_week(start, end, api_key):
                     "description": (snippet.get("description", "") or "")[:220]
                 })
 
+            time.sleep(0.2)
+
         except Exception as exc:
+            query_logs.append({
+                "query": query,
+                "status": "exception",
+                "returned": 0,
+                "error": str(exc)
+            })
             print(f"[youtube] falha query='{query}': {exc}")
 
     try:
@@ -502,11 +529,10 @@ def collect_youtube_week(start, end, api_key):
             json.dump({
                 "generated_at": _stamp(),
                 "window": {
-                    "mode": "sem filtro de data, sem regionCode, sem relevanceLanguage",
-                    "start": "not_used",
-                    "end": "not_used"
+                    "mode": "current only, sem filtro de data, sem regionCode, sem relevanceLanguage"
                 },
                 "raw_count": len(raw_items),
+                "queries": query_logs,
                 "sample": debug_rows[:80]
             }, file, ensure_ascii=False, indent=2)
 
@@ -594,7 +620,7 @@ def collect_youtube_week(start, end, api_key):
 
     results = _dedupe_coverage(results)
 
-    print(f"[youtube] {len(results)} videos em portugues sobre a serie coletados")
+    print(f"[youtube] {len(results)} videos em portugues sobre a serie coletados no current")
 
     return results
 
@@ -1034,14 +1060,17 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
     }
 
 
-def _collect_sources_for_range(start, end, youtube_key):
+def _collect_sources_for_range(start, end, youtube_key, include_youtube=False):
     coverage = []
 
     google_news_coverage = collect_google_news_week(start, end)
     coverage.extend(google_news_coverage)
 
-    youtube_coverage = collect_youtube_week(start, end, youtube_key)
-    coverage.extend(youtube_coverage)
+    if include_youtube:
+        youtube_coverage = collect_youtube_current(youtube_key)
+        coverage.extend(youtube_coverage)
+    else:
+        print("[youtube] pulando YouTube no backfill historico para economizar quota")
 
     wiki = collect_wikipedia_pageviews_week(start, end)
 
@@ -1065,11 +1094,11 @@ def _save_snapshot(snapshot_date, snapshot):
 def _build_current_day(youtube_key):
     now = _now_br()
 
-    start = now - timedelta(days=30)
+    start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
     end = now
     label = _label(now)
 
-    coverage, wiki = _collect_sources_for_range(start, end, youtube_key)
+    coverage, wiki = _collect_sources_for_range(start, end, youtube_key, include_youtube=True)
 
     if coverage:
         snapshot = _snapshot_from_coverage(end, label, coverage, wiki)
@@ -1156,7 +1185,8 @@ def main():
         print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
 
     print("[backfill] inicio")
-    print("[backfill] fonte principal: Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews")
+    print("[backfill] fonte historica: Google News RSS BR + Wikipedia Pageviews")
+    print("[backfill] fonte diaria: Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
@@ -1176,7 +1206,7 @@ def main():
         print(f"[backfill] Semana {week_index}: {week_label}")
 
         try:
-            coverage, wiki = _collect_sources_for_range(start, end, youtube_key)
+            coverage, wiki = _collect_sources_for_range(start, end, youtube_key, include_youtube=False)
 
             print(f"[backfill] {len(coverage)} itens reais/sinais na semana {week_label}")
 
