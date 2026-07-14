@@ -12,7 +12,6 @@ from urllib.parse import quote, quote_plus
 from zoneinfo import ZoneInfo
 
 import requests
-
 import config
 
 
@@ -450,8 +449,6 @@ def collect_youtube_week(start, end, api_key):
             "q": query,
             "maxResults": 50,
             "order": "relevance",
-            "publishedAfter": _iso_utc(start),
-            "publishedBefore": _iso_utc(end),
             "regionCode": "BR",
             "relevanceLanguage": "pt",
             "key": api_key
@@ -466,7 +463,7 @@ def collect_youtube_week(start, end, api_key):
 
             print(
                 f"[youtube] query='{query}' "
-                f"{start.date()} to {end.date()} status={response.status_code}"
+                f"sem filtro de data status={response.status_code}"
             )
 
             if response.status_code != 200:
@@ -500,8 +497,9 @@ def collect_youtube_week(start, end, api_key):
             json.dump({
                 "generated_at": _stamp(),
                 "window": {
-                    "start": _iso_utc(start),
-                    "end": _iso_utc(end)
+                    "mode": "sem filtro de data",
+                    "start": "not_used",
+                    "end": "not_used"
                 },
                 "raw_count": len(raw_items),
                 "sample": debug_rows[:80]
@@ -558,9 +556,6 @@ def collect_youtube_week(start, end, api_key):
             for blocked in BLOCKED_YOUTUBE_SIGNALS
         )
 
-        # Regra principal:
-        # Se for canal da whitelist, precisa falar de HP + série/HBO/Max.
-        # Se não for whitelist, precisa falar de HP + série/HBO/Max + sinal de português/BR.
         if allowed_channel:
             if not (has_hp_signal and has_series_signal):
                 continue
@@ -594,7 +589,7 @@ def collect_youtube_week(start, end, api_key):
 
     results = _dedupe_coverage(results)
 
-    print(f"[youtube] {len(results)} videos em portugues sobre a serie coletados na semana")
+    print(f"[youtube] {len(results)} videos em portugues sobre a serie coletados")
 
     return results
 
@@ -623,11 +618,7 @@ def collect_wikipedia_pageviews_week(start, end):
         url = _wiki_api_url(project, article, start, end)
 
         try:
-            response = requests.get(
-                url,
-                headers=headers,
-                timeout=TIMEOUT
-            )
+            response = requests.get(url, headers=headers, timeout=TIMEOUT)
 
             print(
                 f"[wiki] project='{project}' article='{article}' "
@@ -917,16 +908,8 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
     buzz_from_coverage = 20 + count * 8 + round(max(0, net) / 2) if count else 0
     buzz = min(100, max(buzz_from_coverage, wiki_score))
 
-    youtube_count = sum(
-        1 for item in coverage
-        if str(item.get("o", "")).startswith("YouTube")
-    )
-
-    wiki_count = sum(
-        1 for item in coverage
-        if str(item.get("o", "")).startswith("Wikipedia")
-    )
-
+    youtube_count = sum(1 for item in coverage if str(item.get("o", "")).startswith("YouTube"))
+    wiki_count = sum(1 for item in coverage if str(item.get("o", "")).startswith("Wikipedia"))
     press_count = count - youtube_count - wiki_count
 
     creators = []
@@ -997,33 +980,21 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
                 "vol": max(press_count, 1),
                 "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
                 "ang": -90,
-                "s": {
-                    "p": pos,
-                    "n": neg,
-                    "g": neu
-                }
+                "s": {"p": pos, "n": neg, "g": neu}
             },
             {
                 "name": "YouTube PT-BR",
                 "vol": max(youtube_count, 1),
                 "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
                 "ang": 70,
-                "s": {
-                    "p": pos,
-                    "n": neg,
-                    "g": neu
-                }
+                "s": {"p": pos, "n": neg, "g": neu}
             },
             {
                 "name": "Wikipedia",
                 "vol": max(wiki_score, 1),
                 "senti": "neu",
                 "ang": 160,
-                "s": {
-                    "p": 0,
-                    "n": 0,
-                    "g": 100
-                }
+                "s": {"p": 0, "n": 0, "g": 100}
             }
         ],
         "narratives": _narratives_from_coverage(coverage),
@@ -1089,7 +1060,6 @@ def _save_snapshot(snapshot_date, snapshot):
 def _build_current_day(youtube_key):
     now = _now_br()
 
-    # Diário busca últimos 30 dias para achar vídeos em português.
     start = now - timedelta(days=30)
     end = now
     label = _label(now)
@@ -1160,9 +1130,7 @@ def regenerate_feed(current_day):
                 "label": "Harry Potter (HBO)",
                 "topTitle": "Harry Potter — Série HBO Max",
                 "topSub": "Daily Intelligence · mercado brasileiro",
-                "days": {
-                    "d0": current_day
-                },
+                "days": {"d0": current_day},
                 "weeks": weeks
             }
         }
