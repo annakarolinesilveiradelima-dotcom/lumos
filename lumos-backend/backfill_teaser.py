@@ -46,12 +46,12 @@ NEWS_QUERIES = [
 YOUTUBE_QUERIES = [
     "Harry Potter HBO Brasil",
     "Harry Potter HBO Max Brasil",
-    "Serie Harry Potter HBO Brasil",
+    "Harry Potter série HBO Brasil",
+    "Harry Potter série Max Brasil",
     "Harry Potter HBO Omelete",
     "Harry Potter HBO elenco Brasil",
-    "Harry Potter HBO Max PT-BR",
-    "Harry Potter série HBO Brasil",
-    "Harry Potter série Max Brasil"
+    "Harry Potter Max Brasil elenco",
+    "Harry Potter HBO Brasil Omelete"
 ]
 
 BR_CHANNELS = [
@@ -72,7 +72,13 @@ BR_CHANNELS = [
     "refúgio cult",
     "refugio cult",
     "heróis e mais",
-    "herois e mais"
+    "herois e mais",
+    "nerd rabugento",
+    "canaltech",
+    "tecmundo",
+    "adorocinema",
+    "cinepop",
+    "coisa de nerd"
 ]
 
 BLOCKED_YOUTUBE_SIGNALS = [
@@ -88,28 +94,15 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "breakup",
     "sad",
     "slang",
+    "shorts",
+    "youtubeshorts",
     "hogwarts nearly",
-    "movies never told"
-]
-
-BR_TEXT_SIGNALS = [
-    "brasil",
-    "br",
-    "pt-br",
-    "português",
-    "portugues",
-    "hbo brasil",
-    "max brasil",
-    "série",
-    "serie",
-    "elenco",
-    "estreia",
-    "omelete",
-    "jovem nerd",
-    "ei nerd",
-    "pipocando",
-    "observatório",
-    "observatorio"
+    "movies never told",
+    "cursed child subscribe",
+    "draco owns me",
+    "flash_viral",
+    "rave kishorre",
+    "harrypotter_portugal"
 ]
 
 WIKI_PAGES = [
@@ -473,24 +466,17 @@ def collect_youtube_week(start, end, api_key):
                     for br_channel in BR_CHANNELS
                 )
 
-                has_br_signal = any(
-                    keyword in title_lower
-                    or keyword in description_lower
-                    or keyword in channel_lower
-                    for keyword in BR_TEXT_SIGNALS
-                )
-
-                is_probably_not_br = any(
+                is_blocked = any(
                     blocked in title_lower
                     or blocked in description_lower
                     or blocked in channel_lower
                     for blocked in BLOCKED_YOUTUBE_SIGNALS
                 )
 
-                if not allowed_channel and not has_br_signal:
+                if not allowed_channel:
                     continue
 
-                if is_probably_not_br and not allowed_channel:
+                if is_blocked:
                     continue
 
                 pub_date = None

@@ -1,6 +1,6 @@
 {
   "label": "1-7 abr 2026",
-  "updated": "14 jul 2026, 11:26",
+  "updated": "14 jul 2026, 11:45",
   "kpi": {
     "mentions": {
       "v": "12 items",
@@ -23,7 +23,7 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 94/100"
+      "sub": "buzz com Wikipedia 97/100"
     }
   },
   "senti": {
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 94,
+      "vol": 97,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -304,7 +304,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter TV series - 158.373 views"
+        "Harry Potter TV series - 242.970 views"
       ]
     ]
   },
@@ -328,8 +328,8 @@
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "wiki_score": 94,
-    "wiki_views": 158373,
+    "wiki_score": 97,
+    "wiki_views": 242970,
     "wiki_top_page": "Harry Potter TV series",
     "backfill": true,
     "sentiment_index": 66

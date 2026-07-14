@@ -1,14 +1,14 @@
 {
   "label": "27 mai-2 jun 2026",
-  "updated": "14 jul 2026, 11:27",
+  "updated": "14 jul 2026, 11:46",
   "kpi": {
     "mentions": {
-      "v": "8 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "0 noticias - 8 videos YouTube BR - 0 sinais Wikipedia - 27 mai-2 jun 2026"
+      "sub": "0 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 27 mai-2 jun 2026"
     },
     "sentiment": {
-      "v": "+12",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "90",
+      "v": "93",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 0/100"
+      "sub": "buzz com Wikipedia 93/100"
     }
   },
   "senti": {
-    "pos": 12,
-    "neu": 88,
+    "pos": 0,
+    "neu": 100,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    90,
-    90,
-    90,
-    90,
-    90,
-    90,
-    90
+    93,
+    93,
+    93,
+    93,
+    93,
+    93,
+    93
   ],
   "stack": [
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ],
     [
-      12,
-      88,
+      0,
+      100,
       0
     ]
   ],
@@ -85,25 +85,25 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 12,
+        "p": 0,
         "n": 0,
-        "g": 88
+        "g": 100
       }
     },
     {
       "name": "YouTube BR",
-      "vol": 8,
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 12,
+        "p": 0,
         "n": 0,
-        "g": 88
+        "g": 100
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
+      "vol": 93,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -115,264 +115,39 @@
   ],
   "narratives": [
     {
-      "t": "Harry Potter and the Philosopher&#39;s Stone First Look at the New Series",
+      "t": "Interesse enciclopedico por 'Harry Potter'",
       "vol": 1,
       "senti": "neu",
-      "pf": "YouTube",
+      "pf": "Wikipedia",
       "trend": "flat",
       "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "YouTube - Movie Raze",
-          "u": "https://www.youtube.com/watch?v=I56b1cWjkWE"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter HBO Series: Gary Oldman Talks Series - Slytherin Actor at Studio Tour",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Wizards Rest",
-          "u": "https://www.youtube.com/watch?v=MaNwDPtrOJs"
-        }
-      ]
-    },
-    {
-      "t": "You Missed This in the Harry Potter HBO Trailer… Full Breakdown",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Content Movies",
-          "u": "https://www.youtube.com/watch?v=S6QhIbGR4v8"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter HBO Series: Zoe Colhoun to portray Morgana Le Fey",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Wizards Rest",
-          "u": "https://www.youtube.com/watch?v=oihUR5MtnOg"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter HBO Series Season 2 Update #harrypotter #hbomax #youtubeshorts",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Rave Kishorre Talks ",
-          "u": "https://www.youtube.com/watch?v=-RWBkElpTLE"
-        }
-      ]
-    },
-    {
-      "t": "La serie de Harry Potter en HBO: secretos y polémicas antes del estreno",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Planeta Famosos",
-          "u": "https://www.youtube.com/watch?v=1n3UduD6Om4"
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "YouTube - Movie Raze",
-      "u": "https://www.youtube.com/watch?v=I56b1cWjkWE",
-      "title": "Harry Potter and the Philosopher&#39;s Stone First Look at the New Series",
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
       "cat": "neu",
-      "time": "2 jun, 15:03",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Wizards Rest",
-      "u": "https://www.youtube.com/watch?v=MaNwDPtrOJs",
-      "title": "Harry Potter HBO Series: Gary Oldman Talks Series - Slytherin Actor at Studio Tour",
-      "cat": "neu",
-      "time": "2 jun, 11:41",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Content Movies",
-      "u": "https://www.youtube.com/watch?v=S6QhIbGR4v8",
-      "title": "You Missed This in the Harry Potter HBO Trailer… Full Breakdown",
-      "cat": "neu",
-      "time": "2 jun, 08:25",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Wizards Rest",
-      "u": "https://www.youtube.com/watch?v=oihUR5MtnOg",
-      "title": "Harry Potter HBO Series: Zoe Colhoun to portray Morgana Le Fey",
-      "cat": "neu",
-      "time": "1 jun, 10:09",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Rave Kishorre Talks ",
-      "u": "https://www.youtube.com/watch?v=-RWBkElpTLE",
-      "title": "Harry Potter HBO Series Season 2 Update #harrypotter #hbomax #youtubeshorts",
-      "cat": "neu",
-      "time": "1 jun, 06:30",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Planeta Famosos",
-      "u": "https://www.youtube.com/watch?v=1n3UduD6Om4",
-      "title": "La serie de Harry Potter en HBO: secretos y polémicas antes del estreno",
-      "cat": "pos",
-      "time": "1 jun, 06:19",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Answer It!",
-      "u": "https://www.youtube.com/watch?v=HL6il48vAPc",
-      "title": "Would You Watch This? 👀 #HarryPotter",
-      "cat": "neu",
-      "time": "31 mai, 14:30",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Red Wand",
-      "u": "https://www.youtube.com/watch?v=Lhr5If87mnY",
-      "title": "This HBO’s Sirius Black Casting Could Change Everything",
-      "cat": "neu",
-      "time": "31 mai, 12:00",
-      "scope": "Video/Creator - YouTube BR"
+      "time": "27 mai-2 jun 2026",
+      "scope": "Wikipedia Pageviews - 138.924 views na semana"
     }
   ],
-  "creators": [
-    {
-      "h": "Movie Raze",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=I56b1cWjkWE"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=MaNwDPtrOJs"
-    },
-    {
-      "h": "Content Movies",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=S6QhIbGR4v8"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=oihUR5MtnOg"
-    },
-    {
-      "h": "Rave Kishorre Talks ",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=-RWBkElpTLE"
-    },
-    {
-      "h": "Planeta Famosos",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=1n3UduD6Om4"
-    },
-    {
-      "h": "Answer It!",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=HL6il48vAPc"
-    },
-    {
-      "h": "Red Wand",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=Lhr5If87mnY"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
@@ -389,11 +164,11 @@
       ],
       [
         "Itens reais/sinais",
-        "8"
+        "1"
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter - 138.924 views"
       ]
     ]
   },
@@ -411,16 +186,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 8,
+    "base_count": 1,
     "unit": "itens",
-    "net": 12,
-    "buzz": 90,
+    "net": 0,
+    "buzz": 93,
     "news_count": 0,
-    "youtube_count": 8,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "youtube_count": 0,
+    "wiki_score": 93,
+    "wiki_views": 138924,
+    "wiki_top_page": "Harry Potter",
     "backfill": true,
-    "sentiment_index": 56
+    "sentiment_index": 50
   }
 }

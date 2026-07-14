@@ -1,14 +1,14 @@
 {
   "label": "22-28 abr 2026",
-  "updated": "14 jul 2026, 11:26",
+  "updated": "14 jul 2026, 11:45",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "2 items",
       "d": 0,
-      "sub": "2 noticias - 10 videos YouTube BR - 0 sinais Wikipedia - 22-28 abr 2026"
+      "sub": "2 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 22-28 abr 2026"
     },
     "sentiment": {
-      "v": "+17",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "36",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 17,
-    "neu": 83,
+    "pos": 0,
+    "neu": 100,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
   ],
   "stack": [
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ],
     [
-      17,
-      83,
+      0,
+      100,
       0
     ]
   ],
@@ -85,20 +85,20 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 17,
+        "p": 0,
         "n": 0,
-        "g": 83
+        "g": 100
       }
     },
     {
       "name": "YouTube BR",
-      "vol": 10,
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 17,
+        "p": 0,
         "n": 0,
-        "g": 83
+        "g": 100
       }
     },
     {
@@ -145,70 +145,6 @@
           "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
         }
       ]
-    },
-    {
-      "t": "100 Cosas Raras en Harry Potter (serie HBO) ⚡",
-      "vol": 1,
-      "senti": "div",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Sowick",
-          "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
-        }
-      ]
-    },
-    {
-      "t": "Why HBO&#39;s Harry Potter Will Be BETTER Than the Movies",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Narrative Notch",
-          "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
-        }
-      ]
-    },
-    {
-      "t": "HBO&#39;s Harry Potter: New Scenes or Book Betrayal? #shorts",
-      "vol": 1,
-      "senti": "div",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - The Spellbook Chronicles",
-          "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA"
-        }
-      ]
-    },
-    {
-      "t": "¿Esta Intentando Apartar la Serie de Harry Potter a Rowling de Ella?",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Rotia",
-          "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -227,158 +163,15 @@
       "cat": "neu",
       "time": "27 abr, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "YouTube - Sowick",
-      "u": "https://www.youtube.com/watch?v=0wClsrHi6VE",
-      "title": "100 Cosas Raras en Harry Potter (serie HBO) ⚡",
-      "cat": "esp",
-      "time": "28 abr, 16:43",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Narrative Notch",
-      "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0",
-      "title": "Why HBO&#39;s Harry Potter Will Be BETTER Than the Movies",
-      "cat": "nos",
-      "time": "28 abr, 16:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - The Spellbook Chronicles",
-      "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA",
-      "title": "HBO&#39;s Harry Potter: New Scenes or Book Betrayal? #shorts",
-      "cat": "esp",
-      "time": "28 abr, 13:02",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Rotia",
-      "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo",
-      "title": "¿Esta Intentando Apartar la Serie de Harry Potter a Rowling de Ella?",
-      "cat": "neu",
-      "time": "26 abr, 13:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Radio Mike",
-      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM",
-      "title": "Why Tilda Swinton WON&#39;T BE Voldemort in HBO&#39;s Harry Potter",
-      "cat": "neu",
-      "time": "26 abr, 10:45",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Hogwarts Theory",
-      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc",
-      "title": "Why HBO’s New Voldemort Is Finally Book Accurate #harrypotter",
-      "cat": "nos",
-      "time": "26 abr, 10:00",
-      "scope": "Video/Creator - YouTube BR"
     }
   ],
-  "creators": [
-    {
-      "h": "Sowick",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
-    },
-    {
-      "h": "Narrative Notch",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
-    },
-    {
-      "h": "The Spellbook Chronicles",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA"
-    },
-    {
-      "h": "Rotia",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo"
-    },
-    {
-      "h": "Radio Mike",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM"
-    },
-    {
-      "h": "Hogwarts Theory",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc"
-    },
-    {
-      "h": "BBC News Brasil",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=mi3VLUssWn4"
-    },
-    {
-      "h": "Lewis Spears",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
-      "t": "Comparacao com os filmes originais",
-      "sev": "mid",
-      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
-    },
-    {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
@@ -395,7 +188,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "2"
       ],
       [
         "Wikipedia",
@@ -417,16 +210,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 2,
     "unit": "itens",
-    "net": 17,
-    "buzz": 100,
+    "net": 0,
+    "buzz": 36,
     "news_count": 2,
-    "youtube_count": 10,
+    "youtube_count": 0,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 58
+    "sentiment_index": 50
   }
 }

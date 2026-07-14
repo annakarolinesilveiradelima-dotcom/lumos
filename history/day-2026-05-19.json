@@ -1,14 +1,14 @@
 {
   "label": "13-19 mai 2026",
-  "updated": "14 jul 2026, 11:27",
+  "updated": "14 jul 2026, 11:45",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "2 items",
       "d": 0,
-      "sub": "2 noticias - 10 videos YouTube BR - 0 sinais Wikipedia - 13-19 mai 2026"
+      "sub": "2 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 13-19 mai 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "86",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 94/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    86,
+    86,
+    86,
+    86,
+    86,
+    86,
+    86
   ],
   "stack": [
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ],
     [
-      25,
-      75,
+      100,
+      0,
       0
     ]
   ],
@@ -82,28 +82,28 @@
     {
       "name": "Imprensa",
       "vol": 2,
-      "senti": "neu",
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 100,
         "n": 0,
-        "g": 75
+        "g": 0
       }
     },
     {
       "name": "YouTube BR",
-      "vol": 10,
-      "senti": "neu",
+      "vol": 1,
+      "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 100,
         "n": 0,
-        "g": 75
+        "g": 0
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 94,
+      "vol": 1,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -145,70 +145,6 @@
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
         }
       ]
-    },
-    {
-      "t": "Harry Potter Series Leaning into &#39;Power of Nature&#39;  #harrypotter #harrypotterhbo",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Harry Potter HBO Updates ⚡️",
-          "u": "https://www.youtube.com/watch?v=gPHpcc9KTqM"
-        }
-      ]
-    },
-    {
-      "t": "how are we feeling about the new Harry Potter HBO series everyone? #hbomax #harrypotter  #hogwarts",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Sam Van Fossen (SammyV)",
-          "u": "https://www.youtube.com/watch?v=HRsT6PBUVgk"
-        }
-      ]
-    },
-    {
-      "t": "No te encariñes con la Ginny de la serie 💔👉🏻 #harrypotter",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - PotterWatch Podcast",
-          "u": "https://www.youtube.com/watch?v=gfskMVxxKVQ"
-        }
-      ]
-    },
-    {
-      "t": "HBO Harry Potter Recasts Ginny Weasley Before Season 2",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Celebrity News Time",
-          "u": "https://www.youtube.com/watch?v=_AtqFUqWB4k"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -227,146 +163,9 @@
       "cat": "pos",
       "time": "19 mai, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "YouTube - Harry Potter HBO Updates ⚡️",
-      "u": "https://www.youtube.com/watch?v=gPHpcc9KTqM",
-      "title": "Harry Potter Series Leaning into &#39;Power of Nature&#39;  #harrypotter #harrypotterhbo",
-      "cat": "neu",
-      "time": "19 mai, 21:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Sam Van Fossen (SammyV)",
-      "u": "https://www.youtube.com/watch?v=HRsT6PBUVgk",
-      "title": "how are we feeling about the new Harry Potter HBO series everyone? #hbomax #harrypotter  #hogwarts",
-      "cat": "neu",
-      "time": "19 mai, 20:49",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - PotterWatch Podcast",
-      "u": "https://www.youtube.com/watch?v=gfskMVxxKVQ",
-      "title": "No te encariñes con la Ginny de la serie 💔👉🏻 #harrypotter",
-      "cat": "neu",
-      "time": "19 mai, 18:46",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Celebrity News Time",
-      "u": "https://www.youtube.com/watch?v=_AtqFUqWB4k",
-      "title": "HBO Harry Potter Recasts Ginny Weasley Before Season 2",
-      "cat": "neu",
-      "time": "19 mai, 17:25",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Wizarding Bruno",
-      "u": "https://www.youtube.com/watch?v=YBlS05yd2z8",
-      "title": "O MOTIVO POR TRÁS DA SAÍDA DE GRACIE COCHRANE (GINA WEASLEY) DA SÉRIE DE HARRY POTTER!",
-      "cat": "neu",
-      "time": "19 mai, 15:59",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - jaredgarciagr",
-      "u": "https://www.youtube.com/watch?v=MzXM0EGNCHU",
-      "title": "Se va de la serie 😞  #harrypotter #hbo #ginnywealey #shorts #short",
-      "cat": "neu",
-      "time": "19 mai, 15:42",
-      "scope": "Video/Creator - YouTube BR"
     }
   ],
-  "creators": [
-    {
-      "h": "Harry Potter HBO Updates ⚡️",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=gPHpcc9KTqM"
-    },
-    {
-      "h": "Sam Van Fossen (SammyV)",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=HRsT6PBUVgk"
-    },
-    {
-      "h": "PotterWatch Podcast",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=gfskMVxxKVQ"
-    },
-    {
-      "h": "Celebrity News Time",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=_AtqFUqWB4k"
-    },
-    {
-      "h": "Wizarding Bruno",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=YBlS05yd2z8"
-    },
-    {
-      "h": "jaredgarciagr",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=MzXM0EGNCHU"
-    },
-    {
-      "h": "HBO Max Brasil",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=a2Upq3wsBpk"
-    },
-    {
-      "h": "Le Chicaneur",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=a6EkyFN9CN4"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
@@ -389,11 +188,11 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "2"
       ],
       [
         "Wikipedia",
-        "Harry Potter - 164.444 views"
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -411,16 +210,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 2,
     "unit": "itens",
-    "net": 25,
-    "buzz": 100,
+    "net": 100,
+    "buzz": 86,
     "news_count": 2,
-    "youtube_count": 10,
-    "wiki_score": 94,
-    "wiki_views": 164444,
-    "wiki_top_page": "Harry Potter",
+    "youtube_count": 0,
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 100
   }
 }

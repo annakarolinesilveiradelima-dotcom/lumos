@@ -1,14 +1,14 @@
 {
   "label": "3-9 jun 2026",
-  "updated": "14 jul 2026, 11:27",
+  "updated": "14 jul 2026, 11:46",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "0 noticias - 4 videos YouTube BR - 0 sinais Wikipedia - 3-9 jun 2026"
+      "sub": "0 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 3-9 jun 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "64",
+      "v": "90",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 0/100"
+      "sub": "buzz com Wikipedia 90/100"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 0,
+    "neu": 100,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    64,
-    64,
-    64,
-    64,
-    64,
-    64,
-    64
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90
   ],
   "stack": [
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ]
   ],
@@ -85,25 +85,25 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 0,
         "n": 0,
-        "g": 75
+        "g": 100
       }
     },
     {
       "name": "YouTube BR",
-      "vol": 4,
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 0,
         "n": 0,
-        "g": 75
+        "g": 100
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
+      "vol": 90,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -115,150 +115,33 @@
   ],
   "narratives": [
     {
-      "t": "Only 199 days to go until the new Harry Potter HBOMAX series is out. #returntohogwarts",
+      "t": "Interesse enciclopedico por 'Harry Potter film series'",
       "vol": 1,
       "senti": "neu",
-      "pf": "YouTube",
+      "pf": "Wikipedia",
       "trend": "flat",
       "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "YouTube - Hufflepuff For Life",
-          "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U"
-        }
-      ]
-    },
-    {
-      "t": "Nicolas Flamel es el personaje MÁS IMPORTANTE en Harry Potter... y tengo pruebas",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - El Aquelarre de Dany",
-          "u": "https://www.youtube.com/watch?v=pTrgihP9gSM"
-        }
-      ]
-    },
-    {
-      "t": "HBO&#39;s Harry Potter: John Lithgow on &#39;Thrilling&#39; New Series and Meeting OG Star Daniel Radcliffe",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Entertainment Tonight",
-          "u": "https://www.youtube.com/watch?v=gQO3x1mazO0"
-        }
-      ]
-    },
-    {
-      "t": "Nuevos Uniformes | Nuevas Minifiguras | LEGO Harry Potter",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - memo.bricks",
-          "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0"
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "YouTube - Hufflepuff For Life",
-      "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U",
-      "title": "Only 199 days to go until the new Harry Potter HBOMAX series is out. #returntohogwarts",
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+      "title": "Interesse enciclopedico por 'Harry Potter film series'",
       "cat": "neu",
-      "time": "9 jun, 13:24",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - El Aquelarre de Dany",
-      "u": "https://www.youtube.com/watch?v=pTrgihP9gSM",
-      "title": "Nicolas Flamel es el personaje MÁS IMPORTANTE en Harry Potter... y tengo pruebas",
-      "cat": "pos",
-      "time": "8 jun, 15:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Entertainment Tonight",
-      "u": "https://www.youtube.com/watch?v=gQO3x1mazO0",
-      "title": "HBO&#39;s Harry Potter: John Lithgow on &#39;Thrilling&#39; New Series and Meeting OG Star Daniel Radcliffe",
-      "cat": "neu",
-      "time": "8 jun, 13:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - memo.bricks",
-      "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0",
-      "title": "Nuevos Uniformes | Nuevas Minifiguras | LEGO Harry Potter",
-      "cat": "neu",
-      "time": "8 jun, 12:00",
-      "scope": "Video/Creator - YouTube BR"
+      "time": "3-9 jun 2026",
+      "scope": "Wikipedia Pageviews - 93.952 views na semana"
     }
   ],
-  "creators": [
-    {
-      "h": "Hufflepuff For Life",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U"
-    },
-    {
-      "h": "El Aquelarre de Dany",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=pTrgihP9gSM"
-    },
-    {
-      "h": "Entertainment Tonight",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=gQO3x1mazO0"
-    },
-    {
-      "h": "memo.bricks",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Risco baixo na cobertura",
@@ -281,11 +164,11 @@
       ],
       [
         "Itens reais/sinais",
-        "4"
+        "1"
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter film series - 93.952 views"
       ]
     ]
   },
@@ -303,16 +186,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
+    "base_count": 1,
     "unit": "itens",
-    "net": 25,
-    "buzz": 64,
+    "net": 0,
+    "buzz": 90,
     "news_count": 0,
-    "youtube_count": 4,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "youtube_count": 0,
+    "wiki_score": 90,
+    "wiki_views": 93952,
+    "wiki_top_page": "Harry Potter film series",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 50
   }
 }

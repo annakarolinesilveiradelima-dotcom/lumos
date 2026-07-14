@@ -1,11 +1,11 @@
 {
   "label": "6-12 mai 2026",
-  "updated": "14 jul 2026, 11:26",
+  "updated": "14 jul 2026, 11:45",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "3 noticias - 9 videos YouTube BR - 0 sinais Wikipedia - 6-12 mai 2026"
+      "sub": "3 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 6-12 mai 2026"
     },
     "sentiment": {
       "v": "+0",
@@ -20,7 +20,7 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "44",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44
   ],
   "stack": [
     [
@@ -92,7 +92,7 @@
     },
     {
       "name": "YouTube BR",
-      "vol": 9,
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
@@ -161,54 +161,6 @@
           "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMDdYTy0xY0xWV0x5Wk84RV9rRTZPSmg3SUtTY3ZfZnRXWHlIRFhHOU9oZXV4ZGVpVGVjRUJWSnFvYklHWmNDTWFXaWRBWW10VElLanJ6N0RuZDFIQktEVnBqQkNSbFYwMXhsVkotM2M3SnlfLXhVOTBGU2l0OUhZNDhPOG9YRWN2bXBaSmZjOFlfNXFFdTJzbGdZN29fTFpvaTFKa1Q0c1ItUQ?oc=5"
         }
       ]
-    },
-    {
-      "t": "HBO is confident in Harry Potter",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Pop Culture Brain",
-          "u": "https://www.youtube.com/watch?v=ivJ0_sfQ374"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter HBO Series is already Renewed for Season 2!! ⚡️#harrypotter #harrypotterhbo",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Sahil Tanna",
-          "u": "https://www.youtube.com/watch?v=5D6WqWK2q0Q"
-        }
-      ]
-    },
-    {
-      "t": "La serie de HARRY POTTER tendrá segunda TEMPORADA… #harrypotter #hbo #harrypotterseries #slytherin",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Jonathan Gzz",
-          "u": "https://www.youtube.com/watch?v=r7p20LAx6Us"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -235,144 +187,15 @@
       "cat": "neu",
       "time": "11 mai, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "YouTube - Pop Culture Brain",
-      "u": "https://www.youtube.com/watch?v=ivJ0_sfQ374",
-      "title": "HBO is confident in Harry Potter",
-      "cat": "neu",
-      "time": "12 mai, 10:09",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Sahil Tanna",
-      "u": "https://www.youtube.com/watch?v=5D6WqWK2q0Q",
-      "title": "Harry Potter HBO Series is already Renewed for Season 2!! ⚡️#harrypotter #harrypotterhbo",
-      "cat": "neu",
-      "time": "11 mai, 22:57",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Jonathan Gzz",
-      "u": "https://www.youtube.com/watch?v=r7p20LAx6Us",
-      "title": "La serie de HARRY POTTER tendrá segunda TEMPORADA… #harrypotter #hbo #harrypotterseries #slytherin",
-      "cat": "neu",
-      "time": "11 mai, 20:46",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Wizards Rest",
-      "u": "https://www.youtube.com/watch?v=kGIwF2yWIQE",
-      "title": "Harry Potter HBO Series: Kevin McKidd Rumored for Arthur Weasley Role?!",
-      "cat": "esp",
-      "time": "11 mai, 03:09",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - EXCELSIOR",
-      "u": "https://www.youtube.com/watch?v=4B_YHLB4nuU",
-      "title": "¡Se roban las varitas de la nueva serie de Harry Potter!",
-      "cat": "neu",
-      "time": "10 mai, 19:49",
-      "scope": "Video/Creator - YouTube BR"
     }
   ],
-  "creators": [
-    {
-      "h": "Pop Culture Brain",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=ivJ0_sfQ374"
-    },
-    {
-      "h": "Sahil Tanna",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=5D6WqWK2q0Q"
-    },
-    {
-      "h": "Jonathan Gzz",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=r7p20LAx6Us"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=kGIwF2yWIQE"
-    },
-    {
-      "h": "EXCELSIOR",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=4B_YHLB4nuU"
-    },
-    {
-      "h": "Mr Trailers",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=0dhcP8CuqyY"
-    },
-    {
-      "h": "Red Talk",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=cC0bXQxPsGA"
-    },
-    {
-      "h": "Harry Potter HBO Updates ⚡️",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=TVJJoeSjy9k"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
@@ -389,7 +212,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "3"
       ],
       [
         "Wikipedia",
@@ -411,12 +234,12 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 3,
     "unit": "itens",
     "net": 0,
-    "buzz": 100,
+    "buzz": 44,
     "news_count": 3,
-    "youtube_count": 9,
+    "youtube_count": 0,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
