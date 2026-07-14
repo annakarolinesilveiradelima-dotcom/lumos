@@ -700,7 +700,6 @@ def collect_google_trends_series(start, end):
 
     all_points_by_date = {}
     keyword_debug = []
-
     timeframe = f"{start:%Y-%m-%d} {end:%Y-%m-%d}"
 
     for keyword in TRENDS_KEYWORDS:
@@ -1805,7 +1804,14 @@ def regenerate_feed(current_day):
     if not current_day:
         current_day = _empty_snapshot(_now_br(), _label(_now_br()))
 
-    weeks = _load_week_snapshots_from_history()
+    history_weeks = _load_week_snapshots_from_history()
+
+    weeks = {
+        "w0": current_day
+    }
+
+    for index, snapshot in enumerate(history_weeks.values(), start=1):
+        weeks[f"w-{index}"] = snapshot
 
     feed = {
         "generated_at": _stamp(),
@@ -1817,7 +1823,9 @@ def regenerate_feed(current_day):
                 "label": "Harry Potter (HBO)",
                 "topTitle": "Harry Potter — Série HBO Max",
                 "topSub": "Daily Intelligence · mercado brasileiro",
-                "days": {"d0": current_day},
+                "days": {
+                    "d0": current_day
+                },
                 "weeks": weeks
             }
         }
@@ -1828,7 +1836,7 @@ def regenerate_feed(current_day):
     with open(OUTPUT_DATA, "w", encoding="utf-8") as file:
         json.dump(feed, file, ensure_ascii=False, indent=2)
 
-    print("[backfill] data.json regenerado diretamente com days + weeks do history.")
+    print("[backfill] data.json regenerado com days.d0 e weeks.w0 apontando para o current.")
 
 
 def main():
@@ -1850,6 +1858,7 @@ def main():
     print("[backfill] fonte diaria: Google News RSS BR + Google Trends BR + YouTube PT-BR + X + Wikipedia Pageviews")
     print("[backfill] Google Trends: keywords individuais combinadas por data")
     print("[backfill] current: ultimos 7 dias com fallback para ultima semana com dados")
+    print("[backfill] weeks.w0: current")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
