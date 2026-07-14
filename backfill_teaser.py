@@ -294,42 +294,8 @@ def _dedupe_coverage(items):
     return out
 
 
-def _has_real_coverage(snapshot):
-    if not snapshot:
-        return False
-
-    coverage = snapshot.get("coverage", [])
-
-    return isinstance(coverage, list) and len(coverage) > 0
-
-
 def _history_path(snapshot_date):
     return os.path.join(HISTORY_DIR, f"day-{snapshot_date:%Y-%m-%d}.json")
-
-
-def _load_existing_snapshot(snapshot_date):
-    path = _history_path(snapshot_date)
-
-    if not os.path.exists(path):
-        return None
-
-    try:
-        with open(path, encoding="utf-8") as file:
-            return json.load(file)
-    except Exception as exc:
-        print(f"[backfill] nao consegui ler snapshot existente {path}: {exc}")
-        return None
-
-
-def _load_existing_current_day():
-    try:
-        with open(OUTPUT_DATA, encoding="utf-8") as file:
-            feed = json.load(file)
-
-        return feed["titles"][TITLE_ID]["days"]["d0"]
-    except Exception as exc:
-        print(f"[backfill] nao consegui ler d0 existente: {exc}")
-        return None
 
 
 def collect_google_news_week(start, end):
@@ -473,6 +439,7 @@ def collect_youtube_week(start, end, api_key):
                     for blocked in BLOCKED_YOUTUBE_SIGNALS
                 )
 
+                # Filtro BR radical: só entra canal brasileiro aprovado.
                 if not allowed_channel:
                     continue
 
@@ -1014,12 +981,6 @@ def _build_current_day(youtube_key):
         snapshot["label"] = label
         return snapshot
 
-    existing = _load_existing_current_day()
-
-    if _has_real_coverage(existing):
-        print("[backfill] d0 atual veio vazio. Mantendo d0 anterior com cobertura.")
-        return existing
-
     return _empty_snapshot(end, label)
 
 
@@ -1064,9 +1025,6 @@ def _load_week_snapshots_from_history():
 
 
 def regenerate_feed(current_day):
-    if not current_day:
-        current_day = _load_existing_current_day()
-
     if not current_day:
         current_day = _empty_snapshot(_now_br(), _label(_now_br()))
 
@@ -1133,26 +1091,14 @@ def main():
                 snapshot = _snapshot_from_coverage(end, week_label, coverage, wiki)
                 _save_snapshot(end, snapshot)
             else:
-                existing = _load_existing_snapshot(end)
-
-                if _has_real_coverage(existing):
-                    print("[backfill] semana veio vazia. Mantendo snapshot anterior com cobertura.")
-                    _save_snapshot(end, existing)
-                else:
-                    snapshot = _empty_snapshot(end, week_label)
-                    _save_snapshot(end, snapshot)
+                snapshot = _empty_snapshot(end, week_label)
+                _save_snapshot(end, snapshot)
 
         except Exception as exc:
             print(f"[backfill] erro na semana {week_label}: {exc}")
 
-            existing = _load_existing_snapshot(end)
-
-            if _has_real_coverage(existing):
-                print("[backfill] erro na semana, mas existe snapshot anterior com cobertura. Mantendo.")
-                _save_snapshot(end, existing)
-            else:
-                snapshot = _empty_snapshot(end, week_label)
-                _save_snapshot(end, snapshot)
+            snapshot = _empty_snapshot(end, week_label)
+            _save_snapshot(end, snapshot)
 
         time.sleep(1)
 
