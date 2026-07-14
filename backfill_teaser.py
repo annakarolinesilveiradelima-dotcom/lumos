@@ -425,6 +425,127 @@ def collect_youtube_week(start, end, api_key):
                 if not title:
                     continue
 
+                title_lower = title.lower()
+                description_lower = description.lower()
+                channel_lower = channel.lower()
+
+                allowed_channel = any(
+                    br_channel in channel_lower
+                    for br_channel in BR_CHANNELS
+                )
+
+                has_br_signal = any(
+                    keyword in title_lower
+                    or keyword in description_lower
+                    or keyword in channel_lower
+                    for keyword in [
+                        "brasil",
+                        "br",
+                        "pt-br",
+                        "português",
+                        "portugues",
+                        "hbo brasil",
+                        "max brasil",
+                        "série",
+                        "serie",
+                        "elenco",
+                        "estreia",
+                        "omelete",
+                        "jovem nerd",
+                        "ei nerd",
+                        "pipocando"
+                    ]
+                )
+
+                is_probably_not_br = any(
+                    blocked in channel_lower
+                    or blocked in title_lower
+                    for blocked in [
+                        "portugal",
+                        "india",
+                        "pakistan",
+                        "pakistani",
+                        "hindi",
+                        "ki new update",
+                        "subscribe this channel",
+                        "viral",
+                        "fyp",
+                        "shorts"
+                    ]
+                )
+
+                if not allowed_channel and not has_br_signal:
+                    continue
+
+                if is_probably_not_br and not allowed_channel:
+                    continue
+
+                pub_date = None
+
+                try:
+                    pub_date = datetime.fromisoformat(
+                        published.replace("Z", "+00:00")
+                    ).astimezone(timezone.utc)
+                except Exception:
+                    pub_date = None
+
+                url = f"https://www.youtube.com/watch?v={video_id}"
+                cat = _cat(title + " " + description)
+
+                results.append({
+                    "o": f"YouTube - {channel}",
+                    "u": url,
+                    "title": title,
+                    "cat": cat,
+                    "time": _format_time_br(pub_date),
+                    "scope": "Video/Creator - YouTube BR"
+                }
+
+        except Exception as exc:
+            print(f"[youtube] falha query='{query}': {exc}")
+
+    results = _dedupe_coverage(results)
+
+    print(f"[youtube] {len(results)} videos BR coletados na semana")
+
+    return results
+
+        try:
+            response = requests.get(
+                "https://www.googleapis.com/youtube/v3/search",
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(
+                f"[youtube] query='{query}' "
+                f"{start.date()} to {end.date()} status={response.status_code}"
+            )
+
+            if response.status_code != 200:
+                print("[youtube] resposta:", response.text[:500])
+                continue
+
+            data = response.json()
+            items = data.get("items", [])
+
+            print(f"[youtube] query='{query}' retornou {len(items)} videos")
+
+            for item in items:
+                video_id = (item.get("id") or {}).get("videoId")
+                snippet = item.get("snippet") or {}
+
+                if not video_id:
+                    continue
+
+                title = (snippet.get("title") or "").strip()
+                description = snippet.get("description") or ""
+                channel = snippet.get("channelTitle") or "YouTube"
+                published = snippet.get("publishedAt") or ""
+
+                if not title:
+                    continue
+
                 pub_date = None
 
                 try:
