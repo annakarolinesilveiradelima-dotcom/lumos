@@ -1,5 +1,5 @@
 {
-  "generated_at": "14 jul 2026, 16:12",
+  "generated_at": "14 jul 2026, 16:26",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,37 +11,37 @@
       "days": {
         "d0": {
           "label": "14 jul 2026 · últimos 7 dias",
-          "updated": "14 jul 2026, 16:12",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
-              "v": "9 sinals",
+              "v": "4 sinals",
               "d": 0,
-              "sub": "0 imprensa - 0 X - 9 YouTube - 0 Trends - 0 Wikipedia"
+              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 2 Wikipedia"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-              "v": "100",
+              "v": "50",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: YouTube PT-BR possui 100% dos sinais coletados"
+              "sub": "proxy: Imprensa possui 50% dos sinais coletados"
             },
             "buzz": {
-              "v": "45",
+              "v": "47",
               "suf": "/100",
               "d": 0,
               "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
             }
           },
           "senti": {
-            "pos": 11,
-            "neu": 78,
-            "neg": 11,
+            "pos": 50,
+            "neu": 50,
+            "neg": 0,
             "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
           },
           "buzz7": [
@@ -51,70 +51,70 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 0,
-              "share": 0,
+              "vol": 2,
+              "share": 50,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
             },
             {
               "name": "YouTube PT-BR",
-              "vol": 9,
-              "share": 100,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 25,
               "s": {
-                "p": 11,
-                "n": 11,
-                "g": 78
+                "p": 0,
+                "n": 0,
+                "g": 100
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
@@ -149,310 +149,152 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 0,
-              "share": 0,
+              "vol": 2,
+              "share": 50,
               "senti": "neu",
               "ang": 200,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
             }
           ],
           "platform_share": {
-            "Imprensa": 0,
-            "YouTube PT-BR": 100,
+            "Imprensa": 50,
+            "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 0
+            "Wikipedia": 50
           },
           "narratives": [
             {
-              "t": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
+              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
               "vol": 1,
               "senti": "pos",
-              "pf": "YouTube PT-BR",
+              "pf": "Imprensa",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - HBO Max Brasil",
-                  "u": "https://www.youtube.com/watch?v=wYWggSuxwIo"
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
                 }
               ]
             },
             {
-              "t": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
+              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
               "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "senti": "pos",
+              "pf": "Imprensa",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Observatório Potter",
-                  "u": "https://www.youtube.com/watch?v=68lgMthPNhU"
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
                 }
               ]
             },
             {
-              "t": "GRAVAÇÕES COMEÇARAM! NOVA SÉRIE DE HARRY POTTER JÁ ESTÁ EM PRODUÇÃO!",
+              "t": "Interesse enciclopedico por 'Harry Potter'",
               "vol": 1,
               "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "pf": "Wikipedia",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Ei Nerd",
-                  "u": "https://www.youtube.com/watch?v=8CcoTt1icVA"
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             },
             {
-              "t": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
+              "t": "Interesse enciclopedico por 'Paapa Essiedu'",
               "vol": 1,
               "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "pf": "Wikipedia",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Harry Potter",
-                  "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E"
-                }
-              ]
-            },
-            {
-              "t": "EXCLUSIVO – VISITEI OS SETS DA NOVA SÉRIE DE HARRY POTTER DA HBO MAX",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - Caldeirão Furado",
-                  "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4"
-                }
-              ]
-            },
-            {
-              "t": "Após 15 anos do fim da saga, nova série de &quot;Harry Potter&quot; ganha trailer | CNN NOVO DIA",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - CNN Brasil",
-                  "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I"
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
                 }
               ]
             }
           ],
           "coverage": [
             {
-              "o": "YouTube - HBO Max Brasil",
-              "u": "https://www.youtube.com/watch?v=wYWggSuxwIo",
-              "title": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
-              "cat": "pos",
-              "time": "25 mar, 16:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "cat": "nos",
+              "time": "4 jul, 21:28",
+              "scope": "Portal BR · fallback histórico: 12 jul 2026",
+              "_fallback": true,
+              "_fallback_from": "12 jul 2026"
             },
             {
-              "o": "YouTube - Observatório Potter",
-              "u": "https://www.youtube.com/watch?v=68lgMthPNhU",
-              "title": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "cat": "nos",
+              "time": "15 jun, 22:00",
+              "scope": "Portal BR · fallback histórico: 12 jul 2026",
+              "_fallback": true,
+              "_fallback_from": "12 jul 2026"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
               "cat": "neu",
-              "time": "17 fev, 17:20",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "time": "27 mai-2 jun 2026",
+              "scope": "Wikipedia Pageviews - 91.057 views na semana · fallback histórico: 27 mai-2 jun 2026",
+              "_fallback": true,
+              "_fallback_from": "27 mai-2 jun 2026"
             },
             {
-              "o": "YouTube - Ei Nerd",
-              "u": "https://www.youtube.com/watch?v=8CcoTt1icVA",
-              "title": "GRAVAÇÕES COMEÇARAM! NOVA SÉRIE DE HARRY POTTER JÁ ESTÁ EM PRODUÇÃO!",
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
+              "title": "Interesse enciclopedico por 'Paapa Essiedu'",
               "cat": "neu",
-              "time": "16 jul, 12:30",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Harry Potter",
-              "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E",
-              "title": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
-              "cat": "neu",
-              "time": "25 mar, 16:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Caldeirão Furado",
-              "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4",
-              "title": "EXCLUSIVO – VISITEI OS SETS DA NOVA SÉRIE DE HARRY POTTER DA HBO MAX",
-              "cat": "neu",
-              "time": "23 mar, 12:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - CNN Brasil",
-              "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I",
-              "title": "Após 15 anos do fim da saga, nova série de &quot;Harry Potter&quot; ganha trailer | CNN NOVO DIA",
-              "cat": "neu",
-              "time": "27 mar, 09:45",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - HBO Max Latinoamérica",
-              "u": "https://www.youtube.com/watch?v=_N7r5luRkbg",
-              "title": "Harry Potter y la Piedra Filosofal | Teaser Oficial | HBO Max",
-              "cat": "neu",
-              "time": "25 mar, 16:02",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Caldeirão Furado",
-              "u": "https://www.youtube.com/watch?v=rRfqmBO2ths",
-              "title": "REAGINDO AO TEASER DA SÉRIE HARRY POTTER DA HBO",
-              "cat": "neu",
-              "time": "25 mar, 17:21",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Wizarding Bruno",
-              "u": "https://www.youtube.com/watch?v=IYMzt0AaoGg",
-              "title": "HBO REVELA 21 ÓTIMAS ESCALAÇÕES PARA SÉRIE DE HARRY POTTER! MAS JÁ TEM GENTE CRIANDO PROBLEMA!",
-              "cat": "neg",
-              "time": "9 mar, 09:50",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "time": "20-26 mai 2026",
+              "scope": "Wikipedia Pageviews - 161.758 views na semana · fallback histórico: 20-26 mai 2026",
+              "_fallback": true,
+              "_fallback_from": "20-26 mai 2026"
             }
           ],
-          "creators": [
-            {
-              "h": "HBO Max Brasil",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "pos",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=wYWggSuxwIo"
-            },
-            {
-              "h": "Observatório Potter",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=68lgMthPNhU"
-            },
-            {
-              "h": "Ei Nerd",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=8CcoTt1icVA"
-            },
-            {
-              "h": "Harry Potter",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E"
-            },
-            {
-              "h": "Caldeirão Furado",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4"
-            },
-            {
-              "h": "CNN Brasil",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I"
-            },
-            {
-              "h": "HBO Max Latinoamérica",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=_N7r5luRkbg"
-            },
-            {
-              "h": "Caldeirão Furado",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=rRfqmBO2ths"
-            },
-            {
-              "h": "Wizarding Bruno",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neg",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=IYMzt0AaoGg"
-            }
-          ],
+          "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+              "t": "Comparacao com os filmes originais",
+              "sev": "mid",
+              "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+            },
+            {
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
             }
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 14 jul 2026 · últimos 7 dias: 9 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 14 jul 2026 · últimos 7 dias: 4 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
@@ -460,11 +302,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "9"
+                "4"
               ],
               [
                 "Imprensa",
-                "0"
+                "2"
               ],
               [
                 "X",
@@ -472,7 +314,7 @@
               ],
               [
                 "YouTube PT-BR",
-                "9"
+                "0"
               ],
               [
                 "Google Trends BR",
@@ -484,11 +326,11 @@
               ],
               [
                 "SOV proxy",
-                "YouTube PT-BR: 100%"
+                "Imprensa: 50%"
               ],
               [
                 "Buzz Score",
-                "45/100"
+                "47/100"
               ]
             ]
           },
@@ -528,12 +370,12 @@
             }
           ],
           "_raw": {
-            "base_count": 9,
+            "base_count": 4,
             "unit": "sinais",
-            "net": 0,
-            "buzz": 45,
-            "news_count": 0,
-            "youtube_count": 9,
+            "net": 50,
+            "buzz": 47,
+            "news_count": 2,
+            "youtube_count": 0,
             "x_count": 0,
             "trends_score": 0,
             "trends_top_keyword": "",
@@ -544,27 +386,27 @@
             "wiki_views": 0,
             "wiki_top_page": "",
             "platform_counts": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 9,
+              "Imprensa": 2,
+              "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 2
             },
             "platform_share": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 100,
+              "Imprensa": 50,
+              "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 50
             },
-            "sov_proxy_top_platform": "YouTube PT-BR",
-            "sov_proxy_top_share": 100,
+            "sov_proxy_top_platform": "Imprensa",
+            "sov_proxy_top_share": 50,
             "buzz_components": {
-              "volume_component": 35,
-              "diversity_component": 5,
+              "volume_component": 28,
+              "diversity_component": 10,
               "trend_component": 0,
               "wiki_component": 0,
-              "sentiment_component": 5,
+              "sentiment_component": 9,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
             "sources": [
@@ -590,45 +432,46 @@
               }
             ],
             "backfill": true,
-            "sentiment_index": 50,
-            "current_window": "ultimos_7_dias"
+            "sentiment_index": 75,
+            "current_window": "ultimos_7_dias",
+            "current_platform_fill": "fallback_historico_para_plataformas_ausentes"
           }
         }
       },
       "weeks": {
         "w0": {
           "label": "14 jul 2026 · últimos 7 dias",
-          "updated": "14 jul 2026, 16:12",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
-              "v": "9 sinals",
+              "v": "4 sinals",
               "d": 0,
-              "sub": "0 imprensa - 0 X - 9 YouTube - 0 Trends - 0 Wikipedia"
+              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 2 Wikipedia"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-              "v": "100",
+              "v": "50",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: YouTube PT-BR possui 100% dos sinais coletados"
+              "sub": "proxy: Imprensa possui 50% dos sinais coletados"
             },
             "buzz": {
-              "v": "45",
+              "v": "47",
               "suf": "/100",
               "d": 0,
               "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
             }
           },
           "senti": {
-            "pos": 11,
-            "neu": 78,
-            "neg": 11,
+            "pos": 50,
+            "neu": 50,
+            "neg": 0,
             "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
           },
           "buzz7": [
@@ -638,70 +481,70 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ],
             [
-              11,
-              78,
-              11
+              50,
+              50,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 0,
-              "share": 0,
+              "vol": 2,
+              "share": 50,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
             },
             {
               "name": "YouTube PT-BR",
-              "vol": 9,
-              "share": 100,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 25,
               "s": {
-                "p": 11,
-                "n": 11,
-                "g": 78
+                "p": 0,
+                "n": 0,
+                "g": 100
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
@@ -736,310 +579,152 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 0,
-              "share": 0,
+              "vol": 2,
+              "share": 50,
               "senti": "neu",
               "ang": 200,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
             }
           ],
           "platform_share": {
-            "Imprensa": 0,
-            "YouTube PT-BR": 100,
+            "Imprensa": 50,
+            "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 0
+            "Wikipedia": 50
           },
           "narratives": [
             {
-              "t": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
+              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
               "vol": 1,
               "senti": "pos",
-              "pf": "YouTube PT-BR",
+              "pf": "Imprensa",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - HBO Max Brasil",
-                  "u": "https://www.youtube.com/watch?v=wYWggSuxwIo"
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
                 }
               ]
             },
             {
-              "t": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
+              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
               "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "senti": "pos",
+              "pf": "Imprensa",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Observatório Potter",
-                  "u": "https://www.youtube.com/watch?v=68lgMthPNhU"
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
                 }
               ]
             },
             {
-              "t": "GRAVAÇÕES COMEÇARAM! NOVA SÉRIE DE HARRY POTTER JÁ ESTÁ EM PRODUÇÃO!",
+              "t": "Interesse enciclopedico por 'Harry Potter'",
               "vol": 1,
               "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "pf": "Wikipedia",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Ei Nerd",
-                  "u": "https://www.youtube.com/watch?v=8CcoTt1icVA"
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             },
             {
-              "t": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
+              "t": "Interesse enciclopedico por 'Paapa Essiedu'",
               "vol": 1,
               "senti": "neu",
-              "pf": "YouTube PT-BR",
+              "pf": "Wikipedia",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "YouTube - Harry Potter",
-                  "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E"
-                }
-              ]
-            },
-            {
-              "t": "EXCLUSIVO – VISITEI OS SETS DA NOVA SÉRIE DE HARRY POTTER DA HBO MAX",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - Caldeirão Furado",
-                  "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4"
-                }
-              ]
-            },
-            {
-              "t": "Após 15 anos do fim da saga, nova série de &quot;Harry Potter&quot; ganha trailer | CNN NOVO DIA",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "YouTube PT-BR",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "YouTube - CNN Brasil",
-                  "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I"
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
                 }
               ]
             }
           ],
           "coverage": [
             {
-              "o": "YouTube - HBO Max Brasil",
-              "u": "https://www.youtube.com/watch?v=wYWggSuxwIo",
-              "title": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
-              "cat": "pos",
-              "time": "25 mar, 16:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "cat": "nos",
+              "time": "4 jul, 21:28",
+              "scope": "Portal BR · fallback histórico: 12 jul 2026",
+              "_fallback": true,
+              "_fallback_from": "12 jul 2026"
             },
             {
-              "o": "YouTube - Observatório Potter",
-              "u": "https://www.youtube.com/watch?v=68lgMthPNhU",
-              "title": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "cat": "nos",
+              "time": "15 jun, 22:00",
+              "scope": "Portal BR · fallback histórico: 12 jul 2026",
+              "_fallback": true,
+              "_fallback_from": "12 jul 2026"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
               "cat": "neu",
-              "time": "17 fev, 17:20",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "time": "27 mai-2 jun 2026",
+              "scope": "Wikipedia Pageviews - 91.057 views na semana · fallback histórico: 27 mai-2 jun 2026",
+              "_fallback": true,
+              "_fallback_from": "27 mai-2 jun 2026"
             },
             {
-              "o": "YouTube - Ei Nerd",
-              "u": "https://www.youtube.com/watch?v=8CcoTt1icVA",
-              "title": "GRAVAÇÕES COMEÇARAM! NOVA SÉRIE DE HARRY POTTER JÁ ESTÁ EM PRODUÇÃO!",
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
+              "title": "Interesse enciclopedico por 'Paapa Essiedu'",
               "cat": "neu",
-              "time": "16 jul, 12:30",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Harry Potter",
-              "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E",
-              "title": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
-              "cat": "neu",
-              "time": "25 mar, 16:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Caldeirão Furado",
-              "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4",
-              "title": "EXCLUSIVO – VISITEI OS SETS DA NOVA SÉRIE DE HARRY POTTER DA HBO MAX",
-              "cat": "neu",
-              "time": "23 mar, 12:00",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - CNN Brasil",
-              "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I",
-              "title": "Após 15 anos do fim da saga, nova série de &quot;Harry Potter&quot; ganha trailer | CNN NOVO DIA",
-              "cat": "neu",
-              "time": "27 mar, 09:45",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - HBO Max Latinoamérica",
-              "u": "https://www.youtube.com/watch?v=_N7r5luRkbg",
-              "title": "Harry Potter y la Piedra Filosofal | Teaser Oficial | HBO Max",
-              "cat": "neu",
-              "time": "25 mar, 16:02",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Caldeirão Furado",
-              "u": "https://www.youtube.com/watch?v=rRfqmBO2ths",
-              "title": "REAGINDO AO TEASER DA SÉRIE HARRY POTTER DA HBO",
-              "cat": "neu",
-              "time": "25 mar, 17:21",
-              "scope": "Video/Creator - YouTube PT-BR Série"
-            },
-            {
-              "o": "YouTube - Wizarding Bruno",
-              "u": "https://www.youtube.com/watch?v=IYMzt0AaoGg",
-              "title": "HBO REVELA 21 ÓTIMAS ESCALAÇÕES PARA SÉRIE DE HARRY POTTER! MAS JÁ TEM GENTE CRIANDO PROBLEMA!",
-              "cat": "neg",
-              "time": "9 mar, 09:50",
-              "scope": "Video/Creator - YouTube PT-BR Série"
+              "time": "20-26 mai 2026",
+              "scope": "Wikipedia Pageviews - 161.758 views na semana · fallback histórico: 20-26 mai 2026",
+              "_fallback": true,
+              "_fallback_from": "20-26 mai 2026"
             }
           ],
-          "creators": [
-            {
-              "h": "HBO Max Brasil",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "pos",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=wYWggSuxwIo"
-            },
-            {
-              "h": "Observatório Potter",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=68lgMthPNhU"
-            },
-            {
-              "h": "Ei Nerd",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=8CcoTt1icVA"
-            },
-            {
-              "h": "Harry Potter",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=RIu4sFKGi6E"
-            },
-            {
-              "h": "Caldeirão Furado",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=9Jc2aW86vd4"
-            },
-            {
-              "h": "CNN Brasil",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=Rrmxd8B9E2I"
-            },
-            {
-              "h": "HBO Max Latinoamérica",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=_N7r5luRkbg"
-            },
-            {
-              "h": "Caldeirão Furado",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neu",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=rRfqmBO2ths"
-            },
-            {
-              "h": "Wizarding Bruno",
-              "pf": "YouTube",
-              "type": "Video em português sobre a série de Harry Potter",
-              "senti": "neg",
-              "reach": "nao coletado",
-              "rel": 75,
-              "risk": "low",
-              "c": "#E7A94B",
-              "u": "https://www.youtube.com/watch?v=IYMzt0AaoGg"
-            }
-          ],
+          "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+              "t": "Comparacao com os filmes originais",
+              "sev": "mid",
+              "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+            },
+            {
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
             }
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 14 jul 2026 · últimos 7 dias: 9 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 14 jul 2026 · últimos 7 dias: 4 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
@@ -1047,11 +732,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "9"
+                "4"
               ],
               [
                 "Imprensa",
-                "0"
+                "2"
               ],
               [
                 "X",
@@ -1059,7 +744,7 @@
               ],
               [
                 "YouTube PT-BR",
-                "9"
+                "0"
               ],
               [
                 "Google Trends BR",
@@ -1071,11 +756,11 @@
               ],
               [
                 "SOV proxy",
-                "YouTube PT-BR: 100%"
+                "Imprensa: 50%"
               ],
               [
                 "Buzz Score",
-                "45/100"
+                "47/100"
               ]
             ]
           },
@@ -1115,12 +800,12 @@
             }
           ],
           "_raw": {
-            "base_count": 9,
+            "base_count": 4,
             "unit": "sinais",
-            "net": 0,
-            "buzz": 45,
-            "news_count": 0,
-            "youtube_count": 9,
+            "net": 50,
+            "buzz": 47,
+            "news_count": 2,
+            "youtube_count": 0,
             "x_count": 0,
             "trends_score": 0,
             "trends_top_keyword": "",
@@ -1131,27 +816,27 @@
             "wiki_views": 0,
             "wiki_top_page": "",
             "platform_counts": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 9,
+              "Imprensa": 2,
+              "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 2
             },
             "platform_share": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 100,
+              "Imprensa": 50,
+              "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 50
             },
-            "sov_proxy_top_platform": "YouTube PT-BR",
-            "sov_proxy_top_share": 100,
+            "sov_proxy_top_platform": "Imprensa",
+            "sov_proxy_top_share": 50,
             "buzz_components": {
-              "volume_component": 35,
-              "diversity_component": 5,
+              "volume_component": 28,
+              "diversity_component": 10,
               "trend_component": 0,
               "wiki_component": 0,
-              "sentiment_component": 5,
+              "sentiment_component": 9,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
             "sources": [
@@ -1177,13 +862,14 @@
               }
             ],
             "backfill": true,
-            "sentiment_index": 50,
-            "current_window": "ultimos_7_dias"
+            "sentiment_index": 75,
+            "current_window": "ultimos_7_dias",
+            "current_platform_fill": "fallback_historico_para_plataformas_ausentes"
           }
         },
         "w-1": {
           "label": "8-14 jul 2026",
-          "updated": "14 jul 2026, 16:12",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
               "v": "0 itens",
@@ -1223,7 +909,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -1497,7 +1183,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -1640,7 +1326,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -1844,7 +1530,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -2048,7 +1734,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -2252,7 +1938,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -2456,7 +2142,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -2621,38 +2307,38 @@
         },
         "w-8": {
           "label": "1-7 jul 2026",
-          "updated": "14 jul 2026, 16:12",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
-              "v": "1 sinal",
+              "v": "0 itens",
               "d": 0,
-              "sub": "0 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+              "sub": "sem cobertura/sinal real nesta semana - 1-7 jul 2026"
             },
             "sentiment": {
-              "v": "+0",
-              "suf": "/100",
+              "v": "-",
+              "suf": "",
               "d": 0,
-              "sub": "baseado em categorizacao dos itens coletados"
+              "sub": "sem base suficiente"
             },
             "sov": {
-              "v": "100",
+              "v": "0",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: Wikipedia possui 100% dos sinais coletados"
+              "sub": "proxy por sinais coletados; sem base suficiente"
             },
             "buzz": {
-              "v": "26",
+              "v": "0",
               "suf": "/100",
               "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 89/100"
+              "sub": "sem cobertura, busca ou sinal real"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+            "tone": "Sem cobertura ou sinal real coletado nesta janela"
           },
           "buzz7": [
             82,
@@ -2661,7 +2347,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -2759,8 +2445,8 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
-              "share": 100,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 200,
               "s": {
@@ -2777,52 +2463,327 @@
             "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 100
+            "Wikipedia": 0
+          },
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 1-7 jul 2026.",
+              "rec": "Manter monitoramento e validar novas fontes historicas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "1-7 jul 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados ficticios",
+                "nao"
+              ],
+              [
+                "Status",
+                "sem cobertura/sinal real"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "mail",
+              "t": "Monitorar proxima coleta",
+              "d": "A janela 1-7 jul 2026 ainda nao tem fonte real suficiente."
+            }
+          ],
+          "ephem": [],
+          "metricSources": [
+            {
+              "metric": "Radar de plataformas",
+              "source": "coverage[].o, coverage[].scope",
+              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+            },
+            {
+              "metric": "Share of Voice",
+              "source": "coverage total por plataforma",
+              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+            },
+            {
+              "metric": "Buzz Score",
+              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+            },
+            {
+              "metric": "Buzz últimos 7 pontos",
+              "source": "history/day-*.json",
+              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+            }
+          ],
+          "_raw": {
+            "base_count": 0,
+            "unit": "sinais",
+            "net": 0,
+            "buzz": 0,
+            "news_count": 0,
+            "youtube_count": 0,
+            "x_count": 0,
+            "trends_score": 0,
+            "trends_top_keyword": "",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
+            "platform_counts": {
+              "Imprensa": 0,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 0
+            },
+            "platform_share": {
+              "Imprensa": 0,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 0
+            },
+            "sources": [
+              {
+                "metric": "Radar de plataformas",
+                "source": "coverage[].o, coverage[].scope",
+                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+              },
+              {
+                "metric": "Share of Voice",
+                "source": "coverage total por plataforma",
+                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+              },
+              {
+                "metric": "Buzz Score",
+                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+              },
+              {
+                "metric": "Buzz últimos 7 pontos",
+                "source": "history/day-*.json",
+                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+              }
+            ],
+            "backfill": true
+          }
+        },
+        "w-9": {
+          "label": "24-30 jun 2026",
+          "updated": "14 jul 2026, 16:26",
+          "kpi": {
+            "mentions": {
+              "v": "1 sinal",
+              "d": 0,
+              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "baseado em categorizacao dos itens coletados"
+            },
+            "sov": {
+              "v": "100",
+              "suf": "%",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "proxy: Imprensa possui 100% dos sinais coletados"
+            },
+            "buzz": {
+              "v": "17",
+              "suf": "/100",
+              "d": 0,
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            82,
+            82,
+            82,
+            82,
+            45,
+            0,
+            47
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "share": 100,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 25,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "X",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 85,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Google Trends BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 145,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 200,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            }
+          ],
+          "platform_share": {
+            "Imprensa": 100,
+            "YouTube PT-BR": 0,
+            "X": 0,
+            "Google Trends BR": 0,
+            "Wikipedia": 0
           },
           "narratives": [
             {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
               "vol": 1,
               "senti": "neu",
-              "pf": "Wikipedia",
+              "pf": "Imprensa",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
                 }
               ]
             }
           ],
           "coverage": [
             {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5",
+              "title": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
               "cat": "neu",
-              "time": "1-7 jul 2026",
-              "scope": "Wikipedia Pageviews - 85.911 views na semana"
+              "time": "30 jun, 04:00",
+              "scope": "Google News RSS BR"
             }
           ],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
             }
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 1-7 jul 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 24-30 jun 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
-                "1-7 jul 2026"
+                "24-30 jun 2026"
               ],
               [
                 "Itens reais/sinais",
@@ -2830,7 +2791,7 @@
               ],
               [
                 "Imprensa",
-                "0"
+                "1"
               ],
               [
                 "X",
@@ -2846,15 +2807,15 @@
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 85.911 views"
+                "sem sinal - 0 views"
               ],
               [
                 "SOV proxy",
-                "Wikipedia: 100%"
+                "Imprensa: 100%"
               ],
               [
                 "Buzz Score",
-                "26/100"
+                "17/100"
               ]
             ]
           },
@@ -2897,371 +2858,7 @@
             "base_count": 1,
             "unit": "sinais",
             "net": 0,
-            "buzz": 26,
-            "news_count": 0,
-            "youtube_count": 0,
-            "x_count": 0,
-            "trends_score": 0,
-            "trends_top_keyword": "",
-            "trends_values": {},
-            "trends_avg_score": 0,
-            "trends_max_score": 0,
-            "wiki_score": 89,
-            "wiki_views": 85911,
-            "wiki_top_page": "Harry Potter",
-            "platform_counts": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 1
-            },
-            "platform_share": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 100
-            },
-            "sov_proxy_top_platform": "Wikipedia",
-            "sov_proxy_top_share": 100,
-            "buzz_components": {
-              "volume_component": 7,
-              "diversity_component": 5,
-              "trend_component": 0,
-              "wiki_component": 9,
-              "sentiment_component": 5,
-              "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
-            },
-            "sources": [
-              {
-                "metric": "Radar de plataformas",
-                "source": "coverage[].o, coverage[].scope",
-                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-              },
-              {
-                "metric": "Share of Voice",
-                "source": "coverage total por plataforma",
-                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-              },
-              {
-                "metric": "Buzz Score",
-                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-              },
-              {
-                "metric": "Buzz últimos 7 pontos",
-                "source": "history/day-*.json",
-                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-              }
-            ],
-            "backfill": true,
-            "sentiment_index": 50
-          }
-        },
-        "w-9": {
-          "label": "24-30 jun 2026",
-          "updated": "14 jul 2026, 16:12",
-          "kpi": {
-            "mentions": {
-              "v": "2 sinals",
-              "d": 0,
-              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "baseado em categorizacao dos itens coletados"
-            },
-            "sov": {
-              "v": "50",
-              "suf": "%",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "proxy: Imprensa possui 50% dos sinais coletados"
-            },
-            "buzz": {
-              "v": "38",
-              "suf": "/100",
-              "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 91/100"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            82,
-            82,
-            82,
-            82,
-            45,
-            0,
-            45
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 1,
-              "share": 50,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 25,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "X",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 85,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Google Trends BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 145,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 1,
-              "share": 50,
-              "senti": "neu",
-              "ang": 200,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            }
-          ],
-          "platform_share": {
-            "Imprensa": 50,
-            "YouTube PT-BR": 0,
-            "X": 0,
-            "Google Trends BR": 0,
-            "Wikipedia": 50
-          },
-          "narratives": [
-            {
-              "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "CNN Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "CNN Brasil",
-              "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5",
-              "title": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
-              "cat": "neu",
-              "time": "30 jun, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "24-30 jun 2026",
-              "scope": "Wikipedia Pageviews - 113.844 views na semana"
-            }
-          ],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Sensibilidade em torno de elenco",
-              "sev": "mid",
-              "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
-            }
-          ],
-          "heroOpp": {
-            "title": "Leitura por sinais reais",
-            "desc": "Janela 24-30 jun 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
-            "facts": [
-              [
-                "Janela",
-                "24-30 jun 2026"
-              ],
-              [
-                "Itens reais/sinais",
-                "2"
-              ],
-              [
-                "Imprensa",
-                "1"
-              ],
-              [
-                "X",
-                "0"
-              ],
-              [
-                "YouTube PT-BR",
-                "0"
-              ],
-              [
-                "Google Trends BR",
-                "0/100 - sem keyword"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 113.844 views"
-              ],
-              [
-                "SOV proxy",
-                "Imprensa: 50%"
-              ],
-              [
-                "Buzz Score",
-                "38/100"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
-            }
-          ],
-          "ephem": [],
-          "metricSources": [
-            {
-              "metric": "Radar de plataformas",
-              "source": "coverage[].o, coverage[].scope",
-              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-            },
-            {
-              "metric": "Share of Voice",
-              "source": "coverage total por plataforma",
-              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-            },
-            {
-              "metric": "Buzz Score",
-              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-            },
-            {
-              "metric": "Buzz últimos 7 pontos",
-              "source": "history/day-*.json",
-              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-            }
-          ],
-          "_raw": {
-            "base_count": 2,
-            "unit": "sinais",
-            "net": 0,
-            "buzz": 38,
+            "buzz": 17,
             "news_count": 1,
             "youtube_count": 0,
             "x_count": 0,
@@ -3270,30 +2867,30 @@
             "trends_values": {},
             "trends_avg_score": 0,
             "trends_max_score": 0,
-            "wiki_score": 91,
-            "wiki_views": 113844,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "platform_counts": {
               "Imprensa": 1,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 1
+              "Wikipedia": 0
             },
             "platform_share": {
-              "Imprensa": 50,
+              "Imprensa": 100,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 50
+              "Wikipedia": 0
             },
             "sov_proxy_top_platform": "Imprensa",
-            "sov_proxy_top_share": 50,
+            "sov_proxy_top_share": 100,
             "buzz_components": {
-              "volume_component": 14,
-              "diversity_component": 10,
+              "volume_component": 7,
+              "diversity_component": 5,
               "trend_component": 0,
-              "wiki_component": 9,
+              "wiki_component": 0,
               "sentiment_component": 5,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
@@ -3325,38 +2922,38 @@
         },
         "w-10": {
           "label": "17-23 jun 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
-              "v": "1 sinal",
+              "v": "0 itens",
               "d": 0,
-              "sub": "0 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+              "sub": "sem cobertura/sinal real nesta semana - 17-23 jun 2026"
             },
             "sentiment": {
-              "v": "+0",
-              "suf": "/100",
+              "v": "-",
+              "suf": "",
               "d": 0,
-              "sub": "baseado em categorizacao dos itens coletados"
+              "sub": "sem base suficiente"
             },
             "sov": {
-              "v": "100",
+              "v": "0",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: Wikipedia possui 100% dos sinais coletados"
+              "sub": "proxy por sinais coletados; sem base suficiente"
             },
             "buzz": {
-              "v": "26",
+              "v": "0",
               "suf": "/100",
               "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 91/100"
+              "sub": "sem cobertura, busca ou sinal real"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+            "tone": "Sem cobertura ou sinal real coletado nesta janela"
           },
           "buzz7": [
             82,
@@ -3365,7 +2962,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -3463,8 +3060,8 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
-              "share": 100,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 200,
               "s": {
@@ -3481,97 +3078,46 @@
             "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 100
+            "Wikipedia": 0
           },
-          "narratives": [
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "17-23 jun 2026",
-              "scope": "Wikipedia Pageviews - 116.766 views na semana"
-            }
-          ],
+          "narratives": [],
+          "coverage": [],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura",
+              "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+              "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 17-23 jun 2026.",
+              "rec": "Manter monitoramento e validar novas fontes historicas."
             }
           ],
           "heroOpp": {
-            "title": "Leitura por sinais reais",
-            "desc": "Janela 17-23 jun 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
             "facts": [
               [
                 "Janela",
                 "17-23 jun 2026"
               ],
               [
-                "Itens reais/sinais",
-                "1"
+                "Marco",
+                "teaser 25/03/2026"
               ],
               [
-                "Imprensa",
-                "0"
+                "Dados ficticios",
+                "nao"
               ],
               [
-                "X",
-                "0"
-              ],
-              [
-                "YouTube PT-BR",
-                "0"
-              ],
-              [
-                "Google Trends BR",
-                "0/100 - sem keyword"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 116.766 views"
-              ],
-              [
-                "SOV proxy",
-                "Wikipedia: 100%"
-              ],
-              [
-                "Buzz Score",
-                "26/100"
+                "Status",
+                "sem cobertura/sinal real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+              "ico": "mail",
+              "t": "Monitorar proxima coleta",
+              "d": "A janela 17-23 jun 2026 ainda nao tem fonte real suficiente."
             }
           ],
           "ephem": [],
@@ -3598,44 +3144,31 @@
             }
           ],
           "_raw": {
-            "base_count": 1,
+            "base_count": 0,
             "unit": "sinais",
             "net": 0,
-            "buzz": 26,
+            "buzz": 0,
             "news_count": 0,
             "youtube_count": 0,
             "x_count": 0,
             "trends_score": 0,
             "trends_top_keyword": "",
-            "trends_values": {},
-            "trends_avg_score": 0,
-            "trends_max_score": 0,
-            "wiki_score": 91,
-            "wiki_views": 116766,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "platform_counts": {
               "Imprensa": 0,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 1
+              "Wikipedia": 0
             },
             "platform_share": {
               "Imprensa": 0,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 100
-            },
-            "sov_proxy_top_platform": "Wikipedia",
-            "sov_proxy_top_share": 100,
-            "buzz_components": {
-              "volume_component": 7,
-              "diversity_component": 5,
-              "trend_component": 0,
-              "wiki_component": 9,
-              "sentiment_component": 5,
-              "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
+              "Wikipedia": 0
             },
             "sources": [
               {
@@ -3659,13 +3192,12 @@
                 "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
               }
             ],
-            "backfill": true,
-            "sentiment_index": 50
+            "backfill": true
           }
         },
         "w-11": {
           "label": "10-16 jun 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
               "v": "3 sinals",
@@ -3705,7 +3237,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -4053,7 +3585,7 @@
         },
         "w-12": {
           "label": "3-9 jun 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
               "v": "0 itens",
@@ -4093,7 +3625,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -4328,38 +3860,38 @@
         },
         "w-13": {
           "label": "27 mai-2 jun 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:26",
           "kpi": {
             "mentions": {
-              "v": "0 itens",
+              "v": "1 sinal",
               "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 27 mai-2 jun 2026"
+              "sub": "0 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
             },
             "sentiment": {
-              "v": "-",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-              "v": "0",
+              "v": "100",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy por sinais coletados; sem base suficiente"
+              "sub": "proxy: Wikipedia possui 100% dos sinais coletados"
             },
             "buzz": {
-              "v": "0",
+              "v": "26",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura, busca ou sinal real"
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 89/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
+            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
           },
           "buzz7": [
             82,
@@ -4368,7 +3900,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -4466,8 +3998,8 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 0,
-              "share": 0,
+              "vol": 1,
+              "share": 100,
               "senti": "neu",
               "ang": 200,
               "s": {
@@ -4484,309 +4016,34 @@
             "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 0
-          },
-          "narratives": [],
-          "coverage": [],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 27 mai-2 jun 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
-            "facts": [
-              [
-                "Janela",
-                "27 mai-2 jun 2026"
-              ],
-              [
-                "Marco",
-                "teaser 25/03/2026"
-              ],
-              [
-                "Dados ficticios",
-                "nao"
-              ],
-              [
-                "Status",
-                "sem cobertura/sinal real"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 27 mai-2 jun 2026 ainda nao tem fonte real suficiente."
-            }
-          ],
-          "ephem": [],
-          "metricSources": [
-            {
-              "metric": "Radar de plataformas",
-              "source": "coverage[].o, coverage[].scope",
-              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-            },
-            {
-              "metric": "Share of Voice",
-              "source": "coverage total por plataforma",
-              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-            },
-            {
-              "metric": "Buzz Score",
-              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-            },
-            {
-              "metric": "Buzz últimos 7 pontos",
-              "source": "history/day-*.json",
-              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-            }
-          ],
-          "_raw": {
-            "base_count": 0,
-            "unit": "sinais",
-            "net": 0,
-            "buzz": 0,
-            "news_count": 0,
-            "youtube_count": 0,
-            "x_count": 0,
-            "trends_score": 0,
-            "trends_top_keyword": "",
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "platform_counts": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 0
-            },
-            "platform_share": {
-              "Imprensa": 0,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 0
-            },
-            "sources": [
-              {
-                "metric": "Radar de plataformas",
-                "source": "coverage[].o, coverage[].scope",
-                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-              },
-              {
-                "metric": "Share of Voice",
-                "source": "coverage total por plataforma",
-                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-              },
-              {
-                "metric": "Buzz Score",
-                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-              },
-              {
-                "metric": "Buzz últimos 7 pontos",
-                "source": "history/day-*.json",
-                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-              }
-            ],
-            "backfill": true
-          }
-        },
-        "w-14": {
-          "label": "20-26 mai 2026",
-          "updated": "14 jul 2026, 16:11",
-          "kpi": {
-            "mentions": {
-              "v": "1 sinal",
-              "d": 0,
-              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "baseado em categorizacao dos itens coletados"
-            },
-            "sov": {
-              "v": "100",
-              "suf": "%",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "proxy: Imprensa possui 100% dos sinais coletados"
-            },
-            "buzz": {
-              "v": "17",
-              "suf": "/100",
-              "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            82,
-            82,
-            82,
-            82,
-            45,
-            0,
-            45
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 1,
-              "share": 100,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 25,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "X",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 85,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Google Trends BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 145,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 200,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            }
-          ],
-          "platform_share": {
-            "Imprensa": 100,
-            "YouTube PT-BR": 0,
-            "X": 0,
-            "Google Trends BR": 0,
-            "Wikipedia": 0
+            "Wikipedia": 100
           },
           "narratives": [
             {
-              "t": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+              "t": "Interesse enciclopedico por 'Harry Potter'",
               "vol": 1,
               "senti": "neu",
-              "pf": "Imprensa",
+              "pf": "Wikipedia",
               "trend": "flat",
               "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
-                  "o": "CNN Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             }
           ],
           "coverage": [
             {
-              "o": "CNN Brasil",
-              "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5",
-              "title": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
               "cat": "neu",
-              "time": "24 mai, 04:00",
-              "scope": "Google News RSS BR"
+              "time": "27 mai-2 jun 2026",
+              "scope": "Wikipedia Pageviews - 91.057 views na semana"
             }
           ],
           "creators": [],
@@ -4800,11 +4057,11 @@
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 20-26 mai 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 27 mai-2 jun 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
-                "20-26 mai 2026"
+                "27 mai-2 jun 2026"
               ],
               [
                 "Itens reais/sinais",
@@ -4812,7 +4069,7 @@
               ],
               [
                 "Imprensa",
-                "1"
+                "0"
               ],
               [
                 "X",
@@ -4828,15 +4085,15 @@
               ],
               [
                 "Wikipedia",
-                "sem sinal - 0 views"
+                "Harry Potter - 91.057 views"
               ],
               [
                 "SOV proxy",
-                "Imprensa: 100%"
+                "Wikipedia: 100%"
               ],
               [
                 "Buzz Score",
-                "17/100"
+                "26/100"
               ]
             ]
           },
@@ -4879,7 +4136,371 @@
             "base_count": 1,
             "unit": "sinais",
             "net": 0,
-            "buzz": 17,
+            "buzz": 26,
+            "news_count": 0,
+            "youtube_count": 0,
+            "x_count": 0,
+            "trends_score": 0,
+            "trends_top_keyword": "",
+            "trends_values": {},
+            "trends_avg_score": 0,
+            "trends_max_score": 0,
+            "wiki_score": 89,
+            "wiki_views": 91057,
+            "wiki_top_page": "Harry Potter",
+            "platform_counts": {
+              "Imprensa": 0,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 1
+            },
+            "platform_share": {
+              "Imprensa": 0,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 100
+            },
+            "sov_proxy_top_platform": "Wikipedia",
+            "sov_proxy_top_share": 100,
+            "buzz_components": {
+              "volume_component": 7,
+              "diversity_component": 5,
+              "trend_component": 0,
+              "wiki_component": 9,
+              "sentiment_component": 5,
+              "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
+            },
+            "sources": [
+              {
+                "metric": "Radar de plataformas",
+                "source": "coverage[].o, coverage[].scope",
+                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+              },
+              {
+                "metric": "Share of Voice",
+                "source": "coverage total por plataforma",
+                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+              },
+              {
+                "metric": "Buzz Score",
+                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+              },
+              {
+                "metric": "Buzz últimos 7 pontos",
+                "source": "history/day-*.json",
+                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+              }
+            ],
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-14": {
+          "label": "20-26 mai 2026",
+          "updated": "14 jul 2026, 16:26",
+          "kpi": {
+            "mentions": {
+              "v": "2 sinals",
+              "d": 0,
+              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "baseado em categorizacao dos itens coletados"
+            },
+            "sov": {
+              "v": "50",
+              "suf": "%",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "proxy: Imprensa possui 50% dos sinais coletados"
+            },
+            "buzz": {
+              "v": "38",
+              "suf": "/100",
+              "d": 0,
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 94/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            82,
+            82,
+            82,
+            82,
+            45,
+            0,
+            47
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "share": 50,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 25,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "X",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 85,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Google Trends BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 145,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 1,
+              "share": 50,
+              "senti": "neu",
+              "ang": 200,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            }
+          ],
+          "platform_share": {
+            "Imprensa": 50,
+            "YouTube PT-BR": 0,
+            "X": 0,
+            "Google Trends BR": 0,
+            "Wikipedia": 50
+          },
+          "narratives": [
+            {
+              "t": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Paapa Essiedu'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5",
+              "title": "Com cenas de Quadribol, HBO Max divulga novo teaser série de Harry Potter",
+              "cat": "neu",
+              "time": "24 mai, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
+              "title": "Interesse enciclopedico por 'Paapa Essiedu'",
+              "cat": "neu",
+              "time": "20-26 mai 2026",
+              "scope": "Wikipedia Pageviews - 161.758 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura por sinais reais",
+            "desc": "Janela 20-26 mai 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "facts": [
+              [
+                "Janela",
+                "20-26 mai 2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "2"
+              ],
+              [
+                "Imprensa",
+                "1"
+              ],
+              [
+                "X",
+                "0"
+              ],
+              [
+                "YouTube PT-BR",
+                "0"
+              ],
+              [
+                "Google Trends BR",
+                "0/100 - sem keyword"
+              ],
+              [
+                "Wikipedia",
+                "Paapa Essiedu - 161.758 views"
+              ],
+              [
+                "SOV proxy",
+                "Imprensa: 50%"
+              ],
+              [
+                "Buzz Score",
+                "38/100"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "metricSources": [
+            {
+              "metric": "Radar de plataformas",
+              "source": "coverage[].o, coverage[].scope",
+              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+            },
+            {
+              "metric": "Share of Voice",
+              "source": "coverage total por plataforma",
+              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+            },
+            {
+              "metric": "Buzz Score",
+              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+            },
+            {
+              "metric": "Buzz últimos 7 pontos",
+              "source": "history/day-*.json",
+              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+            }
+          ],
+          "_raw": {
+            "base_count": 2,
+            "unit": "sinais",
+            "net": 0,
+            "buzz": 38,
             "news_count": 1,
             "youtube_count": 0,
             "x_count": 0,
@@ -4888,30 +4509,30 @@
             "trends_values": {},
             "trends_avg_score": 0,
             "trends_max_score": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
+            "wiki_score": 94,
+            "wiki_views": 161758,
+            "wiki_top_page": "Paapa Essiedu",
             "platform_counts": {
               "Imprensa": 1,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 1
             },
             "platform_share": {
-              "Imprensa": 100,
+              "Imprensa": 50,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 0
+              "Wikipedia": 50
             },
             "sov_proxy_top_platform": "Imprensa",
-            "sov_proxy_top_share": 100,
+            "sov_proxy_top_share": 50,
             "buzz_components": {
-              "volume_component": 7,
-              "diversity_component": 5,
+              "volume_component": 14,
+              "diversity_component": 10,
               "trend_component": 0,
-              "wiki_component": 0,
+              "wiki_component": 9,
               "sentiment_component": 5,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
@@ -4943,7 +4564,7 @@
         },
         "w-15": {
           "label": "13-19 mai 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
               "v": "1 sinal",
@@ -4983,7 +4604,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -5283,7 +4904,7 @@
         },
         "w-16": {
           "label": "6-12 mai 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
               "v": "2 sinals",
@@ -5323,7 +4944,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -5647,36 +5268,36 @@
         },
         "w-17": {
           "label": "29 abr-5 mai 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
-              "v": "2 sinals",
+              "v": "1 sinal",
               "d": 0,
-              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+              "sub": "1 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+100",
               "suf": "/100",
               "d": 0,
               "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-              "v": "50",
+              "v": "100",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: Imprensa possui 50% dos sinais coletados"
+              "sub": "proxy: Imprensa possui 100% dos sinais coletados"
             },
             "buzz": {
-              "v": "42",
+              "v": "22",
               "suf": "/100",
               "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 91/100"
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
             "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
           },
@@ -5687,42 +5308,42 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ],
             [
-              50,
-              50,
+              100,
+              0,
               0
             ]
           ],
@@ -5730,13 +5351,13 @@
             {
               "name": "Imprensa",
               "vol": 1,
-              "share": 50,
-              "senti": "neu",
+              "share": 100,
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 100,
                 "n": 0,
-                "g": 50
+                "g": 0
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
@@ -5785,25 +5406,25 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
-              "share": 50,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 200,
               "s": {
-                "p": 50,
+                "p": 0,
                 "n": 0,
-                "g": 50
+                "g": 100
               },
               "source": "coverage[].o / coverage[].scope",
               "method": "Contagem de itens/sinais coletados por plataforma"
             }
           ],
           "platform_share": {
-            "Imprensa": 50,
+            "Imprensa": 100,
             "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 50
+            "Wikipedia": 0
           },
           "narratives": [
             {
@@ -5821,22 +5442,6 @@
                   "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5"
                 }
               ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -5847,14 +5452,6 @@
               "cat": "pos",
               "time": "30 abr, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "29 abr-5 mai 2026",
-              "scope": "Wikipedia Pageviews - 111.138 views na semana"
             }
           ],
           "creators": [],
@@ -5868,7 +5465,7 @@
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 29 abr-5 mai 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 29 abr-5 mai 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
@@ -5876,7 +5473,7 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "1"
               ],
               [
                 "Imprensa",
@@ -5896,15 +5493,379 @@
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 111.138 views"
+                "sem sinal - 0 views"
               ],
               [
                 "SOV proxy",
-                "Imprensa: 50%"
+                "Imprensa: 100%"
               ],
               [
                 "Buzz Score",
-                "42/100"
+                "22/100"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "metricSources": [
+            {
+              "metric": "Radar de plataformas",
+              "source": "coverage[].o, coverage[].scope",
+              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+            },
+            {
+              "metric": "Share of Voice",
+              "source": "coverage total por plataforma",
+              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+            },
+            {
+              "metric": "Buzz Score",
+              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+            },
+            {
+              "metric": "Buzz últimos 7 pontos",
+              "source": "history/day-*.json",
+              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+            }
+          ],
+          "_raw": {
+            "base_count": 1,
+            "unit": "sinais",
+            "net": 100,
+            "buzz": 22,
+            "news_count": 1,
+            "youtube_count": 0,
+            "x_count": 0,
+            "trends_score": 0,
+            "trends_top_keyword": "",
+            "trends_values": {},
+            "trends_avg_score": 0,
+            "trends_max_score": 0,
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
+            "platform_counts": {
+              "Imprensa": 1,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 0
+            },
+            "platform_share": {
+              "Imprensa": 100,
+              "YouTube PT-BR": 0,
+              "X": 0,
+              "Google Trends BR": 0,
+              "Wikipedia": 0
+            },
+            "sov_proxy_top_platform": "Imprensa",
+            "sov_proxy_top_share": 100,
+            "buzz_components": {
+              "volume_component": 7,
+              "diversity_component": 5,
+              "trend_component": 0,
+              "wiki_component": 0,
+              "sentiment_component": 10,
+              "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
+            },
+            "sources": [
+              {
+                "metric": "Radar de plataformas",
+                "source": "coverage[].o, coverage[].scope",
+                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
+              },
+              {
+                "metric": "Share of Voice",
+                "source": "coverage total por plataforma",
+                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+              },
+              {
+                "metric": "Buzz Score",
+                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
+              },
+              {
+                "metric": "Buzz últimos 7 pontos",
+                "source": "history/day-*.json",
+                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+              }
+            ],
+            "backfill": true,
+            "sentiment_index": 100
+          }
+        },
+        "w-18": {
+          "label": "22-28 abr 2026",
+          "updated": "14 jul 2026, 16:25",
+          "kpi": {
+            "mentions": {
+              "v": "2 sinals",
+              "d": 0,
+              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "baseado em categorizacao dos itens coletados"
+            },
+            "sov": {
+              "v": "100",
+              "suf": "%",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "proxy: Imprensa possui 100% dos sinais coletados"
+            },
+            "buzz": {
+              "v": "24",
+              "suf": "/100",
+              "d": 0,
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            82,
+            82,
+            82,
+            82,
+            45,
+            0,
+            47
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 2,
+              "share": 100,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 25,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "X",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 85,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Google Trends BR",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 145,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 0,
+              "share": 0,
+              "senti": "neu",
+              "ang": 200,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              },
+              "source": "coverage[].o / coverage[].scope",
+              "method": "Contagem de itens/sinais coletados por plataforma"
+            }
+          ],
+          "platform_share": {
+            "Imprensa": 100,
+            "YouTube PT-BR": 0,
+            "X": 0,
+            "Google Trends BR": 0,
+            "Wikipedia": 0
+          },
+          "narratives": [
+            {
+              "t": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "TudoCelular.com",
+                  "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "TudoCelular.com",
+              "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5",
+              "title": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
+              "cat": "neu",
+              "time": "23 abr, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5",
+              "title": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
+              "cat": "neu",
+              "time": "27 abr, 04:00",
+              "scope": "Google News RSS BR"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura por sinais reais",
+            "desc": "Janela 22-28 abr 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "facts": [
+              [
+                "Janela",
+                "22-28 abr 2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "2"
+              ],
+              [
+                "Imprensa",
+                "2"
+              ],
+              [
+                "X",
+                "0"
+              ],
+              [
+                "YouTube PT-BR",
+                "0"
+              ],
+              [
+                "Google Trends BR",
+                "0/100 - sem keyword"
+              ],
+              [
+                "Wikipedia",
+                "sem sinal - 0 views"
+              ],
+              [
+                "SOV proxy",
+                "Imprensa: 100%"
+              ],
+              [
+                "Buzz Score",
+                "24/100"
               ]
             ]
           },
@@ -5946,396 +5907,8 @@
           "_raw": {
             "base_count": 2,
             "unit": "sinais",
-            "net": 50,
-            "buzz": 42,
-            "news_count": 1,
-            "youtube_count": 0,
-            "x_count": 0,
-            "trends_score": 0,
-            "trends_top_keyword": "",
-            "trends_values": {},
-            "trends_avg_score": 0,
-            "trends_max_score": 0,
-            "wiki_score": 91,
-            "wiki_views": 111138,
-            "wiki_top_page": "Harry Potter",
-            "platform_counts": {
-              "Imprensa": 1,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 1
-            },
-            "platform_share": {
-              "Imprensa": 50,
-              "YouTube PT-BR": 0,
-              "X": 0,
-              "Google Trends BR": 0,
-              "Wikipedia": 50
-            },
-            "sov_proxy_top_platform": "Imprensa",
-            "sov_proxy_top_share": 50,
-            "buzz_components": {
-              "volume_component": 14,
-              "diversity_component": 10,
-              "trend_component": 0,
-              "wiki_component": 9,
-              "sentiment_component": 9,
-              "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
-            },
-            "sources": [
-              {
-                "metric": "Radar de plataformas",
-                "source": "coverage[].o, coverage[].scope",
-                "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-              },
-              {
-                "metric": "Share of Voice",
-                "source": "coverage total por plataforma",
-                "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-              },
-              {
-                "metric": "Buzz Score",
-                "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-                "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-              },
-              {
-                "metric": "Buzz últimos 7 pontos",
-                "source": "history/day-*.json",
-                "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-              }
-            ],
-            "backfill": true,
-            "sentiment_index": 75
-          }
-        },
-        "w-18": {
-          "label": "22-28 abr 2026",
-          "updated": "14 jul 2026, 16:11",
-          "kpi": {
-            "mentions": {
-              "v": "3 sinals",
-              "d": 0,
-              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "baseado em categorizacao dos itens coletados"
-            },
-            "sov": {
-              "v": "67",
-              "suf": "%",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "proxy: Imprensa possui 67% dos sinais coletados"
-            },
-            "buzz": {
-              "v": "45",
-              "suf": "/100",
-              "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 93/100"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            82,
-            82,
-            82,
-            82,
-            45,
-            0,
-            45
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 2,
-              "share": 67,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 25,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "X",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 85,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Google Trends BR",
-              "vol": 0,
-              "share": 0,
-              "senti": "neu",
-              "ang": 145,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 1,
-              "share": 33,
-              "senti": "neu",
-              "ang": 200,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              },
-              "source": "coverage[].o / coverage[].scope",
-              "method": "Contagem de itens/sinais coletados por plataforma"
-            }
-          ],
-          "platform_share": {
-            "Imprensa": 67,
-            "YouTube PT-BR": 0,
-            "X": 0,
-            "Google Trends BR": 0,
-            "Wikipedia": 33
-          },
-          "narratives": [
-            {
-              "t": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "TudoCelular.com",
-                  "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "TudoCelular.com",
-              "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5",
-              "title": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
-              "cat": "neu",
-              "time": "23 abr, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5",
-              "title": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
-              "cat": "neu",
-              "time": "27 abr, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "22-28 abr 2026",
-              "scope": "Wikipedia Pageviews - 154.463 views na semana"
-            }
-          ],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Leitura por sinais reais",
-            "desc": "Janela 22-28 abr 2026: 3 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
-            "facts": [
-              [
-                "Janela",
-                "22-28 abr 2026"
-              ],
-              [
-                "Itens reais/sinais",
-                "3"
-              ],
-              [
-                "Imprensa",
-                "2"
-              ],
-              [
-                "X",
-                "0"
-              ],
-              [
-                "YouTube PT-BR",
-                "0"
-              ],
-              [
-                "Google Trends BR",
-                "0/100 - sem keyword"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 154.463 views"
-              ],
-              [
-                "SOV proxy",
-                "Imprensa: 67%"
-              ],
-              [
-                "Buzz Score",
-                "45/100"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
-            }
-          ],
-          "ephem": [],
-          "metricSources": [
-            {
-              "metric": "Radar de plataformas",
-              "source": "coverage[].o, coverage[].scope",
-              "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-            },
-            {
-              "metric": "Share of Voice",
-              "source": "coverage total por plataforma",
-              "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-            },
-            {
-              "metric": "Buzz Score",
-              "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-              "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-            },
-            {
-              "metric": "Buzz últimos 7 pontos",
-              "source": "history/day-*.json",
-              "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-            }
-          ],
-          "_raw": {
-            "base_count": 3,
-            "unit": "sinais",
             "net": 0,
-            "buzz": 45,
+            "buzz": 24,
             "news_count": 2,
             "youtube_count": 0,
             "x_count": 0,
@@ -6344,30 +5917,30 @@
             "trends_values": {},
             "trends_avg_score": 0,
             "trends_max_score": 0,
-            "wiki_score": 93,
-            "wiki_views": 154463,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "platform_counts": {
               "Imprensa": 2,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 1
+              "Wikipedia": 0
             },
             "platform_share": {
-              "Imprensa": 67,
+              "Imprensa": 100,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 33
+              "Wikipedia": 0
             },
             "sov_proxy_top_platform": "Imprensa",
-            "sov_proxy_top_share": 67,
+            "sov_proxy_top_share": 100,
             "buzz_components": {
-              "volume_component": 21,
-              "diversity_component": 10,
+              "volume_component": 14,
+              "diversity_component": 5,
               "trend_component": 0,
-              "wiki_component": 9,
+              "wiki_component": 0,
               "sentiment_component": 5,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
@@ -6399,12 +5972,12 @@
         },
         "w-19": {
           "label": "15-21 abr 2026",
-          "updated": "14 jul 2026, 16:11",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
-              "v": "3 sinals",
+              "v": "2 sinals",
               "d": 0,
-              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+              "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
             },
             "sentiment": {
               "v": "+0",
@@ -6413,17 +5986,17 @@
               "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-              "v": "67",
+              "v": "100",
               "suf": "%",
               "d": 0,
               "dtype": "pts",
-              "sub": "proxy: Imprensa possui 67% dos sinais coletados"
+              "sub": "proxy: Imprensa possui 100% dos sinais coletados"
             },
             "buzz": {
-              "v": "46",
+              "v": "24",
               "suf": "/100",
               "d": 0,
-              "sub": "volume + plataformas + Trends 0/100 + Wiki 95/100"
+              "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
             }
           },
           "senti": {
@@ -6439,7 +6012,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -6482,7 +6055,7 @@
             {
               "name": "Imprensa",
               "vol": 2,
-              "share": 67,
+              "share": 100,
               "senti": "neu",
               "ang": -90,
               "s": {
@@ -6537,8 +6110,8 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
-              "share": 33,
+              "vol": 0,
+              "share": 0,
               "senti": "neu",
               "ang": 200,
               "s": {
@@ -6551,11 +6124,11 @@
             }
           ],
           "platform_share": {
-            "Imprensa": 67,
+            "Imprensa": 100,
             "YouTube PT-BR": 0,
             "X": 0,
             "Google Trends BR": 0,
-            "Wikipedia": 33
+            "Wikipedia": 0
           },
           "narratives": [
             {
@@ -6589,22 +6162,6 @@
                   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
                 }
               ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter film series'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -6623,14 +6180,6 @@
               "cat": "neu",
               "time": "16 abr, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
-              "title": "Interesse enciclopedico por 'Harry Potter film series'",
-              "cat": "neu",
-              "time": "15-21 abr 2026",
-              "scope": "Wikipedia Pageviews - 185.288 views na semana"
             }
           ],
           "creators": [],
@@ -6644,7 +6193,7 @@
           ],
           "heroOpp": {
             "title": "Leitura por sinais reais",
-            "desc": "Janela 15-21 abr 2026: 3 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+            "desc": "Janela 15-21 abr 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
               [
                 "Janela",
@@ -6652,7 +6201,7 @@
               ],
               [
                 "Itens reais/sinais",
-                "3"
+                "2"
               ],
               [
                 "Imprensa",
@@ -6672,15 +6221,15 @@
               ],
               [
                 "Wikipedia",
-                "Harry Potter film series - 185.288 views"
+                "sem sinal - 0 views"
               ],
               [
                 "SOV proxy",
-                "Imprensa: 67%"
+                "Imprensa: 100%"
               ],
               [
                 "Buzz Score",
-                "46/100"
+                "24/100"
               ]
             ]
           },
@@ -6720,10 +6269,10 @@
             }
           ],
           "_raw": {
-            "base_count": 3,
+            "base_count": 2,
             "unit": "sinais",
             "net": 0,
-            "buzz": 46,
+            "buzz": 24,
             "news_count": 2,
             "youtube_count": 0,
             "x_count": 0,
@@ -6732,30 +6281,30 @@
             "trends_values": {},
             "trends_avg_score": 0,
             "trends_max_score": 0,
-            "wiki_score": 95,
-            "wiki_views": 185288,
-            "wiki_top_page": "Harry Potter film series",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "platform_counts": {
               "Imprensa": 2,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 1
+              "Wikipedia": 0
             },
             "platform_share": {
-              "Imprensa": 67,
+              "Imprensa": 100,
               "YouTube PT-BR": 0,
               "X": 0,
               "Google Trends BR": 0,
-              "Wikipedia": 33
+              "Wikipedia": 0
             },
             "sov_proxy_top_platform": "Imprensa",
-            "sov_proxy_top_share": 67,
+            "sov_proxy_top_share": 100,
             "buzz_components": {
-              "volume_component": 21,
-              "diversity_component": 10,
+              "volume_component": 14,
+              "diversity_component": 5,
               "trend_component": 0,
-              "wiki_component": 10,
+              "wiki_component": 0,
               "sentiment_component": 5,
               "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
             },
@@ -6787,7 +6336,7 @@
         },
         "w-20": {
           "label": "8-14 abr 2026",
-          "updated": "14 jul 2026, 16:10",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
               "v": "5 sinals",
@@ -6827,7 +6376,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -7223,7 +6772,7 @@
         },
         "w-21": {
           "label": "1-7 abr 2026",
-          "updated": "14 jul 2026, 16:10",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
               "v": "18 sinals",
@@ -7263,7 +6812,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [
@@ -7447,22 +6996,6 @@
               ]
             },
             {
-              "t": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Rolling Stone Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5"
-                }
-              ]
-            },
-            {
               "t": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
               "vol": 1,
               "senti": "neu",
@@ -7475,6 +7008,22 @@
                 {
                   "o": "O GLOBO",
                   "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "É possível separar a obra do autor? Série de Harry Potter reacende debate",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNWkyNzdYd3NpNFNxeU5qUGV6TGtkQ2lzWHJlUW5RMkpudXIyYmRFcUx3aDUwWFRVbHZDTVV0TDZTV0VZTTZCbllEcW5mS1JsSUVHQUw0LUh3d2pZQWlCUlhVY1F5cHA2QnFVNU5POTBCN2Y0LTV6Rmw0ODVrNG9kcVhtSTJmdElXaWVwaVJnTmVNeTR4UFZKbTRxMEFLNTJSaktnTURtN1FhNHY2SWlOa1dVd1pucVB1QWFOV1NR?oc=5"
                 }
               ]
             }
@@ -7510,14 +7059,6 @@
               "title": "Que horas estreia ‘À Procura de Harry’, especial sobre a série de ‘Harry Potter’?",
               "cat": "pos",
               "time": "5 abr, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Rolling Stone Brasil",
-              "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
-              "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
-              "cat": "pos",
-              "time": "2 abr, 04:00",
               "scope": "Google News RSS BR"
             },
             {
@@ -7557,6 +7098,14 @@
               "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVWxNU0tweks0a3JfS3JIT2tqa280Q0tSa2dHMElydzNBOEZXekJVb2llRVJPR0F0U2hjQkEtRkJBV3JQaUpCY3cwM09zMUhKaG1iWlVJem1yUkcycFQwc1dQLUdmVlFicU1vQmdmempJVHd5SWV0NlRtUlA0SXJvMmFqWk1lM25HcUxXOExxN1g1Q2FnQUE?oc=5",
               "title": "Série de \"Harry Potter\" lança trailer de novo especial, veja",
               "cat": "neu",
+              "time": "2 abr, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Rolling Stone Brasil",
+              "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
+              "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
+              "cat": "pos",
               "time": "2 abr, 04:00",
               "scope": "Google News RSS BR"
             }
@@ -7715,7 +7264,7 @@
         },
         "w-22": {
           "label": "25-31 mar 2026",
-          "updated": "14 jul 2026, 16:10",
+          "updated": "14 jul 2026, 16:25",
           "kpi": {
             "mentions": {
               "v": "18 sinals",
@@ -7755,7 +7304,7 @@
             82,
             45,
             0,
-            45
+            47
           ],
           "stack": [
             [

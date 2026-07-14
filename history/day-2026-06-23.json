@@ -1,37 +1,37 @@
 {
   "label": "17-23 jun 2026",
-  "updated": "14 jul 2026, 16:11",
+  "updated": "14 jul 2026, 16:26",
   "kpi": {
     "mentions": {
-      "v": "1 sinal",
+      "v": "0 itens",
       "d": 0,
-      "sub": "0 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+      "sub": "sem cobertura/sinal real nesta semana - 17-23 jun 2026"
     },
     "sentiment": {
-      "v": "+0",
-      "suf": "/100",
+      "v": "-",
+      "suf": "",
       "d": 0,
-      "sub": "baseado em categorizacao dos itens coletados"
+      "sub": "sem base suficiente"
     },
     "sov": {
-      "v": "100",
+      "v": "0",
       "suf": "%",
       "d": 0,
       "dtype": "pts",
-      "sub": "proxy: Wikipedia possui 100% dos sinais coletados"
+      "sub": "proxy por sinais coletados; sem base suficiente"
     },
     "buzz": {
-      "v": "26",
+      "v": "0",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + plataformas + Trends 0/100 + Wiki 91/100"
+      "sub": "sem cobertura, busca ou sinal real"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
+    "tone": "Sem cobertura ou sinal real coletado nesta janela"
   },
   "buzz7": [
     82,
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    25
+    0
   ],
   "stack": [
     [
@@ -138,8 +138,8 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
-      "share": 100,
+      "vol": 0,
+      "share": 0,
       "senti": "neu",
       "ang": 200,
       "s": {
@@ -156,97 +156,46 @@
     "YouTube PT-BR": 0,
     "X": 0,
     "Google Trends BR": 0,
-    "Wikipedia": 100
+    "Wikipedia": 0
   },
-  "narratives": [
-    {
-      "t": "Interesse enciclopedico por 'Harry Potter'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-        }
-      ]
-    }
-  ],
-  "coverage": [
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-      "title": "Interesse enciclopedico por 'Harry Potter'",
-      "cat": "neu",
-      "time": "17-23 jun 2026",
-      "scope": "Wikipedia Pageviews - 116.766 views na semana"
-    }
-  ],
+  "narratives": [],
+  "coverage": [],
   "creators": [],
   "risks": [
     {
-      "t": "Risco baixo na cobertura",
+      "t": "Semana sem cobertura real",
       "sev": "low",
-      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+      "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 17-23 jun 2026.",
+      "rec": "Manter monitoramento e validar novas fontes historicas."
     }
   ],
   "heroOpp": {
-    "title": "Leitura por sinais reais",
-    "desc": "Janela 17-23 jun 2026: 1 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+    "title": "Sem oportunidade validada nesta semana",
+    "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
     "facts": [
       [
         "Janela",
         "17-23 jun 2026"
       ],
       [
-        "Itens reais/sinais",
-        "1"
+        "Marco",
+        "teaser 25/03/2026"
       ],
       [
-        "Imprensa",
-        "0"
+        "Dados ficticios",
+        "nao"
       ],
       [
-        "X",
-        "0"
-      ],
-      [
-        "YouTube PT-BR",
-        "0"
-      ],
-      [
-        "Google Trends BR",
-        "0/100 - sem keyword"
-      ],
-      [
-        "Wikipedia",
-        "Harry Potter - 116.766 views"
-      ],
-      [
-        "SOV proxy",
-        "Wikipedia: 100%"
-      ],
-      [
-        "Buzz Score",
-        "26/100"
+        "Status",
+        "sem cobertura/sinal real"
       ]
     ]
   },
   "opps": [
     {
-      "ico": "book",
-      "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-    },
-    {
-      "ico": "film",
-      "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+      "ico": "mail",
+      "t": "Monitorar proxima coleta",
+      "d": "A janela 17-23 jun 2026 ainda nao tem fonte real suficiente."
     }
   ],
   "ephem": [],
@@ -273,44 +222,31 @@
     }
   ],
   "_raw": {
-    "base_count": 1,
+    "base_count": 0,
     "unit": "sinais",
     "net": 0,
-    "buzz": 26,
+    "buzz": 0,
     "news_count": 0,
     "youtube_count": 0,
     "x_count": 0,
     "trends_score": 0,
     "trends_top_keyword": "",
-    "trends_values": {},
-    "trends_avg_score": 0,
-    "trends_max_score": 0,
-    "wiki_score": 91,
-    "wiki_views": 116766,
-    "wiki_top_page": "Harry Potter",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "platform_counts": {
       "Imprensa": 0,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 1
+      "Wikipedia": 0
     },
     "platform_share": {
       "Imprensa": 0,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 100
-    },
-    "sov_proxy_top_platform": "Wikipedia",
-    "sov_proxy_top_share": 100,
-    "buzz_components": {
-      "volume_component": 7,
-      "diversity_component": 5,
-      "trend_component": 0,
-      "wiki_component": 9,
-      "sentiment_component": 5,
-      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
+      "Wikipedia": 0
     },
     "sources": [
       {
@@ -334,7 +270,6 @@
         "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
       }
     ],
-    "backfill": true,
-    "sentiment_index": 50
+    "backfill": true
   }
 }

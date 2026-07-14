@@ -87,20 +87,10 @@ BR_CHANNELS = [
     "observatório do cinema",
     "observatorio do cinema",
     "canal peewee",
-    "entre migas",
-    "super oito",
     "nerdland",
-    "cinematologia",
-    "refúgio cult",
-    "refugio cult",
-    "heróis e mais",
-    "herois e mais",
-    "nerd rabugento",
-    "canaltech",
-    "tecmundo",
     "adorocinema",
     "cinepop",
-    "coisa de nerd"
+    "canaltech"
 ]
 
 HARRY_POTTER_SIGNALS = [
@@ -143,8 +133,6 @@ PORTUGUESE_SIGNALS = [
     "adaptacao",
     "produção",
     "producao",
-    "gravações",
-    "gravacoes",
     "brasil",
     "brasileiro",
     "brasileira",
@@ -155,9 +143,7 @@ PORTUGUESE_SIGNALS = [
     "legendado",
     "o que",
     "por que",
-    "porque",
     "vai ser",
-    "vai ter",
     "foi confirmado",
     "confirmado",
     "entenda",
@@ -169,10 +155,7 @@ PORTUGUESE_SIGNALS = [
     "warner brasil",
     "omelete",
     "jovem nerd",
-    "ei nerd",
-    "pipocando",
-    "observatório do cinema",
-    "observatorio do cinema"
+    "ei nerd"
 ]
 
 BLOCKED_YOUTUBE_SIGNALS = [
@@ -626,6 +609,93 @@ def _latest_non_empty_week_snapshot():
     return None
 
 
+def _has_platform(coverage, platform_name):
+    for item in coverage or []:
+        platform = _platform_from_source(item.get("o", ""))
+
+        if platform == platform_name:
+            return True
+
+    return False
+
+
+def _latest_items_for_platform(platform_name, limit=2):
+    if not os.path.exists(HISTORY_DIR):
+        return []
+
+    files = []
+
+    for name in os.listdir(HISTORY_DIR):
+        if not name.startswith("day-") or not name.endswith(".json"):
+            continue
+
+        date_text = name.replace("day-", "").replace(".json", "")
+
+        try:
+            dt = datetime.fromisoformat(date_text).replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+
+        files.append((dt, os.path.join(HISTORY_DIR, name)))
+
+    files = sorted(files, key=lambda item: item[0], reverse=True)
+
+    picked = []
+
+    for _, path in files:
+        try:
+            with open(path, encoding="utf-8") as file:
+                snapshot = json.load(file)
+
+            coverage = snapshot.get("coverage", []) or []
+            label = snapshot.get("label", "semana histórica")
+
+            for item in coverage:
+                platform = _platform_from_source(item.get("o", ""))
+
+                if platform != platform_name:
+                    continue
+
+                cloned = dict(item)
+                cloned["scope"] = f"{cloned.get('scope', platform_name)} · fallback histórico: {label}"
+                cloned["_fallback"] = True
+                cloned["_fallback_from"] = label
+
+                picked.append(cloned)
+
+                if len(picked) >= limit:
+                    return picked
+
+        except Exception:
+            continue
+
+    return picked
+
+
+def _ensure_platforms_in_current_coverage(coverage):
+    coverage = list(coverage or [])
+
+    fallback_platforms = [
+        "Imprensa",
+        "Google Trends BR",
+        "Wikipedia"
+    ]
+
+    for platform in fallback_platforms:
+        if _has_platform(coverage, platform):
+            continue
+
+        fallback_items = _latest_items_for_platform(platform, limit=2)
+
+        if fallback_items:
+            print(f"[current] adicionando fallback historico para plataforma: {platform} ({len(fallback_items)} itens)")
+            coverage.extend(fallback_items)
+        else:
+            print(f"[current] sem fallback encontrado para plataforma: {platform}")
+
+    return _dedupe_coverage(coverage)
+
+
 def collect_google_news_week(start, end):
     results = []
 
@@ -880,7 +950,6 @@ def _trend_for_range(trends_data, start, end):
     scores = [int(point.get("score", 0) or 0) for point in selected]
     avg_score = round(sum(scores) / len(scores)) if scores else 0
     max_score = max(scores) if scores else 0
-
     combined_score = round((avg_score * 0.6) + (max_score * 0.4))
 
     keyword_totals = {}
@@ -1699,6 +1768,8 @@ def _build_current_day(youtube_key, x_token, trends_data):
         include_x=True
     )
 
+    coverage = _ensure_platforms_in_current_coverage(coverage)
+
     if coverage:
         snapshot = _snapshot_from_coverage(end, label, coverage, wiki, trend_info)
         snapshot["label"] = label
@@ -1707,6 +1778,7 @@ def _build_current_day(youtube_key, x_token, trends_data):
             snapshot["_raw"] = {}
 
         snapshot["_raw"]["current_window"] = "ultimos_7_dias"
+        snapshot["_raw"]["current_platform_fill"] = "fallback_historico_para_plataformas_ausentes"
 
         return snapshot
 
@@ -1856,8 +1928,7 @@ def main():
     print("[backfill] inicio")
     print("[backfill] fonte historica: Google News RSS BR + Google Trends BR + Wikipedia Pageviews")
     print("[backfill] fonte diaria: Google News RSS BR + Google Trends BR + YouTube PT-BR + X + Wikipedia Pageviews")
-    print("[backfill] Google Trends: keywords individuais combinadas por data")
-    print("[backfill] current: ultimos 7 dias com fallback para ultima semana com dados")
+    print("[backfill] current: ultimos 7 dias com fallback de plataforma")
     print("[backfill] weeks.w0: current")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
