@@ -1,46 +1,45 @@
 {
-  "label": "8-14 jul 2026",
-  "updated": "14 jul 2026, 16:50",
+  "label": "14 jul 2026",
+  "updated": "14 jul 2026, 17:43",
   "kpi": {
     "mentions": {
-      "v": "0 itens",
-      "d": 0,
-      "sub": "sem cobertura/sinal real nesta semana - 8-14 jul 2026"
+      "v": "4 matérias",
+      "d": 4,
+      "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "-",
-      "suf": "",
-      "d": 0,
-      "sub": "sem base suficiente"
+      "v": "+76",
+      "suf": "/100",
+      "d": 76,
+      "sub": "índice líquido do dia"
     },
     "sov": {
-      "v": "0",
-      "suf": "%",
+      "v": "—",
       "d": 0,
       "dtype": "pts",
-      "sub": "proxy por sinais coletados; sem base suficiente"
+      "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "0",
+      "v": "80",
       "suf": "/100",
-      "d": 0,
-      "sub": "sem cobertura, busca ou sinal real"
+      "d": 80,
+      "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 75,
+    "neu": 25,
     "neg": 0,
-    "tone": "Sem cobertura ou sinal real coletado nesta janela"
+    "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     82,
     82,
     82,
     82,
-    82,
     45,
-    0
+    0,
+    4
   ],
   "stack": [
     [
@@ -74,202 +73,180 @@
       0
     ],
     [
-      0,
-      100,
+      75,
+      25,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
+      "vol": 4,
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 75,
         "n": 0,
-        "g": 100
-      },
-      "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens/sinais coletados por plataforma"
-    },
-    {
-      "name": "YouTube PT-BR",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
-      "ang": 25,
-      "s": {
-        "p": 0,
-        "n": 0,
-        "g": 100
-      },
-      "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens/sinais coletados por plataforma"
-    },
-    {
-      "name": "X",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
-      "ang": 85,
-      "s": {
-        "p": 0,
-        "n": 0,
-        "g": 100
-      },
-      "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens/sinais coletados por plataforma"
-    },
-    {
-      "name": "Google Trends BR",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
-      "ang": 145,
-      "s": {
-        "p": 0,
-        "n": 0,
-        "g": 100
-      },
-      "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens/sinais coletados por plataforma"
-    },
-    {
-      "name": "Wikipedia",
-      "vol": 0,
-      "share": 0,
-      "senti": "neu",
-      "ang": 200,
-      "s": {
-        "p": 0,
-        "n": 0,
-        "g": 100
-      },
-      "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens/sinais coletados por plataforma"
+        "g": 25
+      }
     }
   ],
-  "platform_share": {
-    "Imprensa": 0,
-    "YouTube PT-BR": 0,
-    "X": 0,
-    "Google Trends BR": 0,
-    "Wikipedia": 0
-  },
-  "narratives": [],
-  "coverage": [],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+        }
+      ]
+    },
+    {
+      "t": "Série escala ator de Pirraça, personagem inédito",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "cat": "neu",
+      "time": "12 jul, 22:13",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 21:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "cat": "nos",
+      "time": "15 jun, 22:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+      "title": "Série escala ator de Pirraça, personagem inédito",
+      "cat": "nos",
+      "time": "15 jun, 17:30",
+      "scope": "Portal BR"
+    }
+  ],
   "creators": [],
   "risks": [
     {
-      "t": "Semana sem cobertura real",
-      "sev": "low",
-      "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 8-14 jul 2026.",
-      "rec": "Manter monitoramento e validar novas fontes historicas."
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
     }
   ],
   "heroOpp": {
-    "title": "Sem oportunidade validada nesta semana",
-    "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
     "facts": [
       [
-        "Janela",
-        "8-14 jul 2026"
+        "Fonte",
+        "notícias reais"
       ],
       [
-        "Marco",
-        "teaser 25/03/2026"
+        "Matérias",
+        "4"
       ],
       [
-        "Dados ficticios",
-        "nao"
+        "Social",
+        "não conectado"
       ],
       [
-        "Status",
-        "sem cobertura/sinal real"
+        "Dados fictícios",
+        "não"
       ]
     ]
   },
   "opps": [
     {
-      "ico": "mail",
-      "t": "Monitorar proxima coleta",
-      "d": "A janela 8-14 jul 2026 ainda nao tem fonte real suficiente."
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
     }
   ],
   "ephem": [],
-  "metricSources": [
-    {
-      "metric": "Radar de plataformas",
-      "source": "coverage[].o, coverage[].scope",
-      "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-    },
-    {
-      "metric": "Share of Voice",
-      "source": "coverage total por plataforma",
-      "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-    },
-    {
-      "metric": "Buzz Score",
-      "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-      "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-    },
-    {
-      "metric": "Buzz últimos 7 pontos",
-      "source": "history/day-*.json",
-      "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-    }
-  ],
   "_raw": {
-    "base_count": 0,
-    "unit": "sinais",
-    "net": 0,
-    "buzz": 0,
-    "news_count": 0,
-    "youtube_count": 0,
-    "x_count": 0,
-    "trends_score": 0,
-    "trends_top_keyword": "",
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
-    "platform_counts": {
-      "Imprensa": 0,
-      "YouTube PT-BR": 0,
-      "X": 0,
-      "Google Trends BR": 0,
-      "Wikipedia": 0
-    },
-    "platform_share": {
-      "Imprensa": 0,
-      "YouTube PT-BR": 0,
-      "X": 0,
-      "Google Trends BR": 0,
-      "Wikipedia": 0
-    },
-    "sources": [
-      {
-        "metric": "Radar de plataformas",
-        "source": "coverage[].o, coverage[].scope",
-        "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
-      },
-      {
-        "metric": "Share of Voice",
-        "source": "coverage total por plataforma",
-        "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
-      },
-      {
-        "metric": "Buzz Score",
-        "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
-        "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
-      },
-      {
-        "metric": "Buzz últimos 7 pontos",
-        "source": "history/day-*.json",
-        "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
-      }
-    ],
-    "backfill": true
+    "base_count": 4,
+    "unit": "matérias",
+    "net": 76,
+    "buzz": 80,
+    "news_count": 4,
+    "social_mentions": 0
   }
 }
