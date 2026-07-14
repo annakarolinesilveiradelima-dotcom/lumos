@@ -48,12 +48,10 @@ NEWS_QUERIES = [
 YOUTUBE_QUERIES = [
     "harry potter série",
     "harry potter serie",
-    "série harry potter",
-    "serie harry potter",
-    "nova série harry potter",
-    "nova serie harry potter",
     "série de harry potter",
     "serie de harry potter",
+    "nova série harry potter",
+    "nova serie harry potter",
     "nova série de harry potter",
     "nova serie de harry potter",
     "harry potter hbo",
@@ -63,14 +61,12 @@ YOUTUBE_QUERIES = [
     "harry potter serie hbo",
     "harry potter série max",
     "harry potter serie max",
+    "harry potter elenco",
     "harry potter elenco hbo",
     "harry potter hbo elenco",
-    "harry potter série elenco",
-    "harry potter serie elenco",
     "harry potter hbo brasil",
     "harry potter max brasil",
-    "série harry potter hbo max",
-    "serie harry potter hbo max"
+    "harry potter hbo max brasil"
 ]
 
 BR_CHANNELS = [
@@ -563,8 +559,8 @@ def collect_youtube_week(start, end, api_key):
         )
 
         # Regra principal:
-        # Só entra se falar de Harry Potter + série/HBO/Max/elenco + português/BR.
-        # Canais da whitelist BR também passam, desde que falem de Harry Potter e série/HBO/Max.
+        # Se for canal da whitelist, precisa falar de HP + série/HBO/Max.
+        # Se não for whitelist, precisa falar de HP + série/HBO/Max + sinal de português/BR.
         if allowed_channel:
             if not (has_hp_signal and has_series_signal):
                 continue
@@ -572,7 +568,6 @@ def collect_youtube_week(start, end, api_key):
             if not (has_hp_signal and has_series_signal and has_pt_signal):
                 continue
 
-        # Bloqueia ruído global/aleatório se não for canal BR aprovado.
         if is_blocked and not allowed_channel:
             continue
 
@@ -1094,7 +1089,7 @@ def _save_snapshot(snapshot_date, snapshot):
 def _build_current_day(youtube_key):
     now = _now_br()
 
-    # Diario busca ultimos 30 dias para achar videos em portugues.
+    # Diário busca últimos 30 dias para achar vídeos em português.
     start = now - timedelta(days=30)
     end = now
     label = _label(now)

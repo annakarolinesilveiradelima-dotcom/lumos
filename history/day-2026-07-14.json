@@ -1,6 +1,6 @@
 {
   "label": "8-14 jul 2026",
-  "updated": "14 jul 2026, 12:33",
+  "updated": "14 jul 2026, 12:43",
   "kpi": {
     "mentions": {
       "v": "1 item",
@@ -20,10 +20,10 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "91",
+      "v": "89",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 91/100"
+      "sub": "buzz com Wikipedia 89/100"
     }
   },
   "senti": {
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    91,
-    91,
-    91,
-    91,
-    91,
-    91,
-    91
+    89,
+    89,
+    89,
+    89,
+    89,
+    89,
+    89
   ],
   "stack": [
     [
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 91,
+      "vol": 89,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -138,7 +138,7 @@
       "title": "Interesse enciclopedico por 'Harry Potter film series'",
       "cat": "neu",
       "time": "8-14 jul 2026",
-      "scope": "Wikipedia Pageviews - 111.241 views na semana"
+      "scope": "Wikipedia Pageviews - 84.416 views na semana"
     }
   ],
   "creators": [],
@@ -168,7 +168,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter film series - 111.241 views"
+        "Harry Potter film series - 84.416 views"
       ]
     ]
   },
@@ -189,11 +189,11 @@
     "base_count": 1,
     "unit": "itens",
     "net": 0,
-    "buzz": 91,
+    "buzz": 89,
     "news_count": 0,
     "youtube_count": 0,
-    "wiki_score": 91,
-    "wiki_views": 111241,
+    "wiki_score": 89,
+    "wiki_views": 84416,
     "wiki_top_page": "Harry Potter film series",
     "backfill": true,
     "sentiment_index": 50
