@@ -586,6 +586,46 @@ def _load_buzz_history(limit=7):
     return values[-limit:]
 
 
+def _latest_non_empty_week_snapshot():
+    if not os.path.exists(HISTORY_DIR):
+        return None
+
+    files = []
+
+    for name in os.listdir(HISTORY_DIR):
+        if not name.startswith("day-") or not name.endswith(".json"):
+            continue
+
+        date_text = name.replace("day-", "").replace(".json", "")
+
+        try:
+            dt = datetime.fromisoformat(date_text).replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+
+        files.append((dt, os.path.join(HISTORY_DIR, name)))
+
+    files = sorted(files, key=lambda item: item[0], reverse=True)
+
+    for _, path in files:
+        try:
+            with open(path, encoding="utf-8") as file:
+                snapshot = json.load(file)
+
+            raw = snapshot.get("_raw", {}) or {}
+            coverage = snapshot.get("coverage", []) or []
+            base_count = int(raw.get("base_count", 0) or 0)
+            buzz = int(raw.get("buzz", 0) or 0)
+
+            if base_count > 0 or buzz > 0 or len(coverage) > 0:
+                return snapshot
+
+        except Exception:
+            continue
+
+    return None
+
+
 def collect_google_news_week(start, end):
     results = []
 
@@ -1612,9 +1652,9 @@ def _save_snapshot(snapshot_date, snapshot):
 def _build_current_day(youtube_key, x_token, trends_data):
     now = _now_br()
 
-    start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
+    start = now - timedelta(days=7)
     end = now
-    label = _label(now)
+    label = f"{_label(now)} · últimos 7 dias"
 
     coverage, wiki, trend_info = _collect_sources_for_range(
         start,
@@ -1629,7 +1669,27 @@ def _build_current_day(youtube_key, x_token, trends_data):
     if coverage:
         snapshot = _snapshot_from_coverage(end, label, coverage, wiki, trend_info)
         snapshot["label"] = label
+
+        if "_raw" not in snapshot:
+            snapshot["_raw"] = {}
+
+        snapshot["_raw"]["current_window"] = "ultimos_7_dias"
+
         return snapshot
+
+    fallback = _latest_non_empty_week_snapshot()
+
+    if fallback:
+        fallback["label"] = label
+        fallback["updated"] = _stamp()
+
+        if "_raw" not in fallback:
+            fallback["_raw"] = {}
+
+        fallback["_raw"]["current_window"] = "fallback_ultima_semana_com_dados"
+        fallback["_raw"]["fallback_reason"] = "current_7_dias_sem_cobertura"
+
+        return fallback
 
     return _empty_snapshot(end, label)
 
@@ -1754,6 +1814,7 @@ def main():
     print("[backfill] inicio")
     print("[backfill] fonte historica: Google News RSS BR + Google Trends BR + Wikipedia Pageviews")
     print("[backfill] fonte diaria: Google News RSS BR + Google Trends BR + YouTube PT-BR + X + Wikipedia Pageviews")
+    print("[backfill] current: ultimos 7 dias com fallback para ultima semana com dados")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
