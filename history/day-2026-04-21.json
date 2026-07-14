@@ -1,6 +1,6 @@
 {
   "label": "15-21 abr 2026",
-  "updated": "14 jul 2026, 15:27",
+  "updated": "14 jul 2026, 15:44",
   "kpi": {
     "mentions": {
       "v": "3 sinals",
@@ -21,10 +21,10 @@
       "sub": "proxy: Imprensa possui 67% dos sinais coletados"
     },
     "buzz": {
-      "v": "49",
+      "v": "50",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + plataformas + Trends 0/100 + Wiki 84/100"
+      "sub": "volume + plataformas + Trends 0/100 + Wiki 95/100"
     }
   },
   "senti": {
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    42
+    0
   ],
   "stack": [
     [
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "t": "Interesse enciclopedico por 'Harry Potter'",
+      "t": "Interesse enciclopedico por 'Harry Potter film series'",
       "vol": 1,
       "senti": "neu",
       "pf": "Wikipedia",
@@ -203,7 +203,7 @@
       "src": [
         {
           "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
         }
       ]
     }
@@ -227,11 +227,11 @@
     },
     {
       "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-      "title": "Interesse enciclopedico por 'Harry Potter'",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+      "title": "Interesse enciclopedico por 'Harry Potter film series'",
       "cat": "neu",
       "time": "15-21 abr 2026",
-      "scope": "Wikipedia Pageviews - 44.464 views na semana"
+      "scope": "Wikipedia Pageviews - 182.277 views na semana"
     }
   ],
   "creators": [],
@@ -273,7 +273,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter - 44.464 views"
+        "Harry Potter film series - 182.277 views"
       ],
       [
         "SOV proxy",
@@ -281,7 +281,7 @@
       ],
       [
         "Buzz Score",
-        "49/100"
+        "50/100"
       ]
     ]
   },
@@ -324,16 +324,16 @@
     "base_count": 3,
     "unit": "sinais",
     "net": 0,
-    "buzz": 49,
+    "buzz": 50,
     "news_count": 2,
     "youtube_count": 0,
     "x_count": 0,
     "trends_score": 0,
     "trends_top_keyword": "",
     "trends_values": {},
-    "wiki_score": 84,
-    "wiki_views": 44464,
-    "wiki_top_page": "Harry Potter",
+    "wiki_score": 95,
+    "wiki_views": 182277,
+    "wiki_top_page": "Harry Potter film series",
     "platform_counts": {
       "Imprensa": 2,
       "YouTube PT-BR": 0,
@@ -354,7 +354,7 @@
       "volume_component": 21,
       "diversity_component": 10,
       "trend_component": 0,
-      "wiki_component": 13,
+      "wiki_component": 14,
       "sentiment_component": 5,
       "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
     },

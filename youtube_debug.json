@@ -1,15 +1,15 @@
 {
-  "generated_at": "14 jul 2026, 15:29",
+  "generated_at": "14 jul 2026, 15:46",
   "window": {
     "mode": "current only, sem filtro de data, sem regionCode, sem relevanceLanguage"
   },
-  "raw_count": 10,
+  "raw_count": 0,
   "queries": [
     {
       "query": "harry potter série brasil",
-      "status": 200,
-      "returned": 10,
-      "error": ""
+      "status": 429,
+      "returned": 0,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
     },
     {
       "query": "harry potter serie brasil",
@@ -48,41 +48,5 @@
       "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
     }
   ],
-  "sample": [
-    {
-      "query": "harry potter série brasil",
-      "title": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
-      "channel": "HBO Max Brasil",
-      "publishedAt": "2026-03-25T19:00:57Z",
-      "description": "Começa uma nova era de Hogwarts. A série original da HBO, Harry Potter e a Pedra Filosofal, estreia neste Natal."
-    },
-    {
-      "query": "harry potter série brasil",
-      "title": "À Procura de Harry: A Arte Por Trás da Magia | Trailer Oficial | HBO Max",
-      "channel": "HBO Max Brasil",
-      "publishedAt": "2026-04-02T13:01:09Z",
-      "description": "Uma visita exclusiva aos bastidores da série original da HBO guiada pelos artistas que dão vida à obra. À procura de Harry: A ..."
-    },
-    {
-      "query": "harry potter série brasil",
-      "title": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
-      "channel": "Observatório Potter",
-      "publishedAt": "2026-02-17T20:20:35Z",
-      "description": "Finalmente recebemos uma das notícias mais esperadas da série de Harry Potter da HBO e no vídeo de hoje do Observatório ..."
-    },
-    {
-      "query": "harry potter série brasil",
-      "title": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
-      "channel": "Harry Potter",
-      "publishedAt": "2026-03-25T19:00:01Z",
-      "description": "A new era of Hogwarts begins. The HBO Original Series Harry Potter and the Philosopher's Stone premieres this Christmas on ..."
-    },
-    {
-      "query": "harry potter série brasil",
-      "title": "Após 15 anos do fim da saga, nova série de &quot;Harry Potter&quot; ganha trailer | CNN NOVO DIA",
-      "channel": "CNN Brasil",
-      "publishedAt": "2026-03-27T12:45:42Z",
-      "description": "A HBO Max divulgou na tarde desta quarta-feira (25) o teaser oficial da nova série de \"Harry Potter\". Com Dominic McLaughlin no ..."
-    }
-  ]
+  "sample": []
 }
