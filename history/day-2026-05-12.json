@@ -1,11 +1,11 @@
 {
   "label": "6-12 mai 2026",
-  "updated": "14 jul 2026, 16:02",
+  "updated": "14 jul 2026, 16:11",
   "kpi": {
     "mentions": {
-      "v": "3 sinals",
+      "v": "2 sinals",
       "d": 0,
-      "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
+      "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 0 Wikipedia"
     },
     "sentiment": {
       "v": "+0",
@@ -14,17 +14,17 @@
       "sub": "baseado em categorizacao dos itens coletados"
     },
     "sov": {
-      "v": "67",
+      "v": "100",
       "suf": "%",
       "d": 0,
       "dtype": "pts",
-      "sub": "proxy: Imprensa possui 67% dos sinais coletados"
+      "sub": "proxy: Imprensa possui 100% dos sinais coletados"
     },
     "buzz": {
-      "v": "44",
+      "v": "24",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + plataformas + Trends 0/100 + Wiki 83/100"
+      "sub": "volume + plataformas + Trends 0/100 + Wiki 0/100"
     }
   },
   "senti": {
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    31
+    25
   ],
   "stack": [
     [
@@ -83,7 +83,7 @@
     {
       "name": "Imprensa",
       "vol": 2,
-      "share": 67,
+      "share": 100,
       "senti": "neu",
       "ang": -90,
       "s": {
@@ -138,8 +138,8 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
-      "share": 33,
+      "vol": 0,
+      "share": 0,
       "senti": "neu",
       "ang": 200,
       "s": {
@@ -152,11 +152,11 @@
     }
   ],
   "platform_share": {
-    "Imprensa": 67,
+    "Imprensa": 100,
     "YouTube PT-BR": 0,
     "X": 0,
     "Google Trends BR": 0,
-    "Wikipedia": 33
+    "Wikipedia": 0
   },
   "narratives": [
     {
@@ -190,22 +190,6 @@
           "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWjJMZTJnOEx5cktSRUZyQmphWXFmc1c0eXcxb3hhbmE0WW9UY1RSMlZtbG5jVDJ3YnhMaGxwdURXb0dTcTBVOUYzUno5bm9wYld2N29Od3ZrYjRjMDBHczVEQy1pVkFtbVhjY19Vd01HdzFSaXZzX0F5Nl80VmhqT3hQdkVtU2dzWmMtNXRn?oc=5"
         }
       ]
-    },
-    {
-      "t": "Interesse enciclopedico por 'Harry Potter'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -224,14 +208,6 @@
       "cat": "neu",
       "time": "12 mai, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-      "title": "Interesse enciclopedico por 'Harry Potter'",
-      "cat": "neu",
-      "time": "6-12 mai 2026",
-      "scope": "Wikipedia Pageviews - 42.327 views na semana"
     }
   ],
   "creators": [],
@@ -245,7 +221,7 @@
   ],
   "heroOpp": {
     "title": "Leitura por sinais reais",
-    "desc": "Janela 6-12 mai 2026: 3 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
+    "desc": "Janela 6-12 mai 2026: 2 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
     "facts": [
       [
         "Janela",
@@ -253,7 +229,7 @@
       ],
       [
         "Itens reais/sinais",
-        "3"
+        "2"
       ],
       [
         "Imprensa",
@@ -273,15 +249,15 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter - 42.327 views"
+        "sem sinal - 0 views"
       ],
       [
         "SOV proxy",
-        "Imprensa: 67%"
+        "Imprensa: 100%"
       ],
       [
         "Buzz Score",
-        "44/100"
+        "24/100"
       ]
     ]
   },
@@ -321,10 +297,10 @@
     }
   ],
   "_raw": {
-    "base_count": 3,
+    "base_count": 2,
     "unit": "sinais",
     "net": 0,
-    "buzz": 44,
+    "buzz": 24,
     "news_count": 2,
     "youtube_count": 0,
     "x_count": 0,
@@ -333,30 +309,30 @@
     "trends_values": {},
     "trends_avg_score": 0,
     "trends_max_score": 0,
-    "wiki_score": 83,
-    "wiki_views": 42327,
-    "wiki_top_page": "Harry Potter",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "platform_counts": {
       "Imprensa": 2,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 1
+      "Wikipedia": 0
     },
     "platform_share": {
-      "Imprensa": 67,
+      "Imprensa": 100,
       "YouTube PT-BR": 0,
       "X": 0,
       "Google Trends BR": 0,
-      "Wikipedia": 33
+      "Wikipedia": 0
     },
     "sov_proxy_top_platform": "Imprensa",
-    "sov_proxy_top_share": 67,
+    "sov_proxy_top_share": 100,
     "buzz_components": {
-      "volume_component": 21,
-      "diversity_component": 10,
+      "volume_component": 14,
+      "diversity_component": 5,
       "trend_component": 0,
-      "wiki_component": 8,
+      "wiki_component": 0,
       "sentiment_component": 5,
       "formula": "min(35,itens*7)+min(20,plataformas*5)+min(25,trends*0.25)+min(10,wiki*0.10)+sentimento"
     },

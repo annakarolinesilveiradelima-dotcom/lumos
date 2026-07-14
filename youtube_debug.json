@@ -1,9 +1,9 @@
 {
-  "generated_at": "14 jul 2026, 16:03",
+  "generated_at": "14 jul 2026, 16:12",
   "window": {
     "mode": "current only, sem filtro de data, sem regionCode, sem relevanceLanguage"
   },
-  "raw_count": 0,
+  "raw_count": 10,
   "queries": [
     {
       "query": "harry potter série brasil",
@@ -13,9 +13,9 @@
     },
     {
       "query": "harry potter serie brasil",
-      "status": 429,
-      "returned": 0,
-      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
+      "status": 200,
+      "returned": 10,
+      "error": ""
     },
     {
       "query": "nova série harry potter brasil",
@@ -48,5 +48,41 @@
       "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:1090155835872'.\",\n        \"domain\": \"global\",\n        \"reason\": \"rateLimitExceeded\"\n      }\n"
     }
   ],
-  "sample": []
+  "sample": [
+    {
+      "query": "harry potter serie brasil",
+      "title": "Harry Potter e a Pedra Filosofal | Teaser Oficial | HBO Max",
+      "channel": "HBO Max Brasil",
+      "publishedAt": "2026-03-25T19:00:57Z",
+      "description": "Começa uma nova era de Hogwarts. A série original da HBO, Harry Potter e a Pedra Filosofal, estreia neste Natal."
+    },
+    {
+      "query": "harry potter serie brasil",
+      "title": "UMA NOTÍCIA QUE MUDA TUDO NA SÉRIE DE HARRY POTTER DA HBO!",
+      "channel": "Observatório Potter",
+      "publishedAt": "2026-02-17T20:20:35Z",
+      "description": "Finalmente recebemos uma das notícias mais esperadas da série de Harry Potter da HBO e no vídeo de hoje do Observatório ..."
+    },
+    {
+      "query": "harry potter serie brasil",
+      "title": "GRAVAÇÕES COMEÇARAM! NOVA SÉRIE DE HARRY POTTER JÁ ESTÁ EM PRODUÇÃO!",
+      "channel": "Ei Nerd",
+      "publishedAt": "2025-07-16T15:30:44Z",
+      "description": "As gravações da nova série de Harry Potter na HBO finalmente começaram, e a magia já está tomando forma nos estúdios onde ..."
+    },
+    {
+      "query": "harry potter serie brasil",
+      "title": "Harry Potter and the Philosopher&#39;s Stone | Official Teaser | HBO Max",
+      "channel": "Harry Potter",
+      "publishedAt": "2026-03-25T19:00:01Z",
+      "description": "A new era of Hogwarts begins. The HBO Original Series Harry Potter and the Philosopher's Stone premieres this Christmas on ..."
+    },
+    {
+      "query": "harry potter serie brasil",
+      "title": "EXCLUSIVO – VISITEI OS SETS DA NOVA SÉRIE DE HARRY POTTER DA HBO MAX",
+      "channel": "Caldeirão Furado",
+      "publishedAt": "2026-03-23T15:00:37Z",
+      "description": "A HBO Max me convidou para visitar o set da nova série de Harry Potter e foi a maior honra da minha vida. Este é o episódio ..."
+    }
+  ]
 }
