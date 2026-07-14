@@ -1,14 +1,14 @@
 {
   "label": "22-28 abr 2026",
-  "updated": "14 jul 2026, 12:16",
+  "updated": "14 jul 2026, 12:24",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "2 noticias - 10 videos YouTube BR - 0 sinais Wikipedia - 22-28 abr 2026"
+      "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 22-28 abr 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "91",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 91/100"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 0,
+    "neu": 100,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    91,
+    91,
+    91,
+    91,
+    91,
+    91,
+    91
   ],
   "stack": [
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ],
     [
-      25,
-      75,
+      0,
+      100,
       0
     ]
   ],
@@ -85,20 +85,20 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 0,
         "n": 0,
-        "g": 75
+        "g": 100
       }
     },
     {
       "name": "YouTube BR",
-      "vol": 10,
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 0,
         "n": 0,
-        "g": 75
+        "g": 100
       }
     },
     {
@@ -147,66 +147,18 @@
       ]
     },
     {
-      "t": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
+      "t": "Interesse enciclopedico por 'Harry Potter'",
       "vol": 1,
       "senti": "neu",
-      "pf": "YouTube",
+      "pf": "Wikipedia",
       "trend": "flat",
       "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "YouTube - Lewis Spears",
-          "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
-        }
-      ]
-    },
-    {
-      "t": "ARTHUR WEASLEY E LOCKHART! Novidades da 2 Temporada da Série de HARRY POTTER!",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Tarcísio Yamamoto",
-          "u": "https://www.youtube.com/watch?v=9np4NjqMp7E"
-        }
-      ]
-    },
-    {
-      "t": "COMPARANDO AS CENAS DO TEASER DA SÉRIE HARRY POTTER COM OS MOMENTOS EXATOS DO LIVRO.",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Caldeirão Furado",
-          "u": "https://www.youtube.com/watch?v=tT6Qpc3eVNQ"
-        }
-      ]
-    },
-    {
-      "t": "Why Tilda Swinton WON&#39;T BE Voldemort in HBO&#39;s Harry Potter",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Radio Mike",
-          "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM"
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
         }
       ]
     }
@@ -229,156 +181,21 @@
       "scope": "Google News RSS BR"
     },
     {
-      "o": "YouTube - Lewis Spears",
-      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs",
-      "title": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
       "cat": "neu",
-      "time": "28 abr, 23:18",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Tarcísio Yamamoto",
-      "u": "https://www.youtube.com/watch?v=9np4NjqMp7E",
-      "title": "ARTHUR WEASLEY E LOCKHART! Novidades da 2 Temporada da Série de HARRY POTTER!",
-      "cat": "neu",
-      "time": "27 abr, 18:50",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Caldeirão Furado",
-      "u": "https://www.youtube.com/watch?v=tT6Qpc3eVNQ",
-      "title": "COMPARANDO AS CENAS DO TEASER DA SÉRIE HARRY POTTER COM OS MOMENTOS EXATOS DO LIVRO.",
-      "cat": "neu",
-      "time": "26 abr, 18:03",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Radio Mike",
-      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM",
-      "title": "Why Tilda Swinton WON&#39;T BE Voldemort in HBO&#39;s Harry Potter",
-      "cat": "neu",
-      "time": "26 abr, 10:45",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - Hogwarts Theory",
-      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc",
-      "title": "Why HBO’s New Voldemort Is Finally Book Accurate #harrypotter",
-      "cat": "nos",
-      "time": "26 abr, 10:00",
-      "scope": "Video/Creator - YouTube BR"
-    },
-    {
-      "o": "YouTube - BBC News Brasil",
-      "u": "https://www.youtube.com/watch?v=mi3VLUssWn4",
-      "title": "Ator escalado como SNAPE em HARRY POTTER: &#39;Tiveram reações extremas&#39;",
-      "cat": "neu",
-      "time": "26 abr, 09:31",
-      "scope": "Video/Creator - YouTube BR"
+      "time": "22-28 abr 2026",
+      "scope": "Wikipedia Pageviews - 110.183 views na semana"
     }
   ],
-  "creators": [
-    {
-      "h": "Lewis Spears",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
-    },
-    {
-      "h": "Tarcísio Yamamoto",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=9np4NjqMp7E"
-    },
-    {
-      "h": "Caldeirão Furado",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=tT6Qpc3eVNQ"
-    },
-    {
-      "h": "Radio Mike",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM"
-    },
-    {
-      "h": "Hogwarts Theory",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc"
-    },
-    {
-      "h": "BBC News Brasil",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=mi3VLUssWn4"
-    },
-    {
-      "h": "Radio Mike",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=XLgcMrO1lKA"
-    },
-    {
-      "h": "Pavi Reads 📚",
-      "pf": "YouTube",
-      "type": "Video BR sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 70,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=vkrwb08IfM0"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
-      "t": "Comparacao com os filmes originais",
-      "sev": "mid",
-      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
-    },
-    {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
@@ -395,7 +212,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "3"
       ],
       [
         "Wikipedia",
@@ -417,16 +234,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 3,
     "unit": "itens",
-    "net": 25,
-    "buzz": 100,
+    "net": 0,
+    "buzz": 91,
     "news_count": 2,
-    "youtube_count": 10,
+    "youtube_count": 0,
     "wiki_score": 91,
     "wiki_views": 110183,
     "wiki_top_page": "Harry Potter",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 50
   }
 }

@@ -46,30 +46,33 @@ NEWS_QUERIES = [
 ]
 
 YOUTUBE_QUERIES = [
-    "Harry Potter série",
-    "Harry Potter serie",
-    "Harry Potter série HBO",
-    "Harry Potter serie HBO",
-    "Harry Potter série Max",
-    "Harry Potter serie Max",
-    "Harry Potter HBO Brasil",
-    "Harry Potter HBO Max Brasil",
-    "Harry Potter Max Brasil",
-    "Harry Potter série HBO Brasil",
-    "Harry Potter serie HBO Brasil",
-    "Harry Potter HBO elenco",
-    "Harry Potter série elenco",
-    "Harry Potter HBO Omelete",
-    "nova série Harry Potter",
-    "nova serie Harry Potter",
-    "série Harry Potter HBO Max",
-    "serie Harry Potter HBO Max"
+    "harry potter série",
+    "harry potter serie",
+    "série harry potter",
+    "serie harry potter",
+    "nova série harry potter",
+    "nova serie harry potter",
+    "harry potter hbo",
+    "harry potter max",
+    "harry potter hbo max",
+    "harry potter série hbo",
+    "harry potter serie hbo",
+    "harry potter série max",
+    "harry potter serie max",
+    "harry potter elenco hbo",
+    "harry potter hbo elenco",
+    "harry potter hbo brasil",
+    "harry potter max brasil",
+    "série harry potter hbo max",
+    "serie harry potter hbo max"
 ]
 
 BR_CHANNELS = [
     "omelete",
     "omeleteve",
     "jovem nerd",
+    "jovemnerd",
+    "nerdbunker",
     "ei nerd",
     "pipocando",
     "legião dos heróis",
@@ -90,10 +93,7 @@ BR_CHANNELS = [
     "tecmundo",
     "adorocinema",
     "cinepop",
-    "coisa de nerd",
-    "manual do mundo",
-    "nerdbunker",
-    "jovemnerd"
+    "coisa de nerd"
 ]
 
 BR_TEXT_SIGNALS = [
@@ -122,7 +122,6 @@ BR_TEXT_SIGNALS = [
     "pipocando",
     "observatório do cinema",
     "observatorio do cinema",
-    "hbo max",
     "warner brasil",
     "max brasil"
 ]
@@ -135,12 +134,9 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "hindi",
     "ki new update",
     "subscribe this channel",
-    "viral",
-    "fyp",
     "breakup",
     "sad",
     "slang",
-    "youtubeshorts",
     "hogwarts nearly",
     "movies never told",
     "cursed child subscribe",
@@ -151,36 +147,12 @@ BLOCKED_YOUTUBE_SIGNALS = [
 ]
 
 WIKI_PAGES = [
-    {
-        "project": "pt.wikipedia.org",
-        "article": "Harry_Potter",
-        "label": "Harry Potter PT"
-    },
-    {
-        "project": "en.wikipedia.org",
-        "article": "Harry_Potter",
-        "label": "Harry Potter"
-    },
-    {
-        "project": "en.wikipedia.org",
-        "article": "Harry_Potter_(TV_series)",
-        "label": "Harry Potter TV series"
-    },
-    {
-        "project": "en.wikipedia.org",
-        "article": "Harry_Potter_(film_series)",
-        "label": "Harry Potter film series"
-    },
-    {
-        "project": "en.wikipedia.org",
-        "article": "John_Lithgow",
-        "label": "John Lithgow"
-    },
-    {
-        "project": "en.wikipedia.org",
-        "article": "Paapa_Essiedu",
-        "label": "Paapa Essiedu"
-    }
+    {"project": "pt.wikipedia.org", "article": "Harry_Potter", "label": "Harry Potter PT"},
+    {"project": "en.wikipedia.org", "article": "Harry_Potter", "label": "Harry Potter"},
+    {"project": "en.wikipedia.org", "article": "Harry_Potter_(TV_series)", "label": "Harry Potter TV series"},
+    {"project": "en.wikipedia.org", "article": "Harry_Potter_(film_series)", "label": "Harry Potter film series"},
+    {"project": "en.wikipedia.org", "article": "John_Lithgow", "label": "John Lithgow"},
+    {"project": "en.wikipedia.org", "article": "Paapa_Essiedu", "label": "Paapa Essiedu"}
 ]
 
 
@@ -411,52 +383,6 @@ def collect_google_news_week(start, end):
     return results
 
 
-def _youtube_channel_countries(channel_ids, api_key):
-    if not channel_ids:
-        return {}
-
-    countries = {}
-
-    ids = list(sorted(set(channel_ids)))
-
-    for i in range(0, len(ids), 50):
-        chunk = ids[i:i + 50]
-
-        params = {
-            "part": "snippet",
-            "id": ",".join(chunk),
-            "key": api_key
-        }
-
-        try:
-            response = requests.get(
-                "https://www.googleapis.com/youtube/v3/channels",
-                params=params,
-                timeout=TIMEOUT
-            )
-
-            print(f"[youtube_channels] status={response.status_code} canais={len(chunk)}")
-
-            if response.status_code != 200:
-                print("[youtube_channels] resposta:", response.text[:500])
-                continue
-
-            data = response.json()
-
-            for item in data.get("items", []):
-                channel_id = item.get("id", "")
-                snippet = item.get("snippet", {}) or {}
-                country = (snippet.get("country") or "").upper()
-
-                if channel_id:
-                    countries[channel_id] = country
-
-        except Exception as exc:
-            print(f"[youtube_channels] falha: {exc}")
-
-    return countries
-
-
 def collect_youtube_week(start, end, api_key):
     if not api_key:
         print("[youtube] YOUTUBE_API_KEY nao configurada. Pulando YouTube.")
@@ -469,7 +395,7 @@ def collect_youtube_week(start, end, api_key):
             "part": "snippet",
             "type": "video",
             "q": query,
-            "maxResults": 20,
+            "maxResults": 50,
             "order": "date",
             "publishedAfter": _iso_utc(start),
             "publishedBefore": _iso_utc(end),
@@ -499,22 +425,10 @@ def collect_youtube_week(start, end, api_key):
 
             print(f"[youtube] query='{query}' retornou {len(items)} videos")
 
-            for item in items:
-                raw_items.append(item)
+            raw_items.extend(items)
 
         except Exception as exc:
             print(f"[youtube] falha query='{query}': {exc}")
-
-    channel_ids = []
-
-    for item in raw_items:
-        snippet = item.get("snippet") or {}
-        channel_id = snippet.get("channelId") or ""
-
-        if channel_id:
-            channel_ids.append(channel_id)
-
-    channel_countries = _youtube_channel_countries(channel_ids, api_key)
 
     results = []
 
@@ -528,7 +442,6 @@ def collect_youtube_week(start, end, api_key):
         title = (snippet.get("title") or "").strip()
         description = snippet.get("description") or ""
         channel = snippet.get("channelTitle") or "YouTube"
-        channel_id = snippet.get("channelId") or ""
         published = snippet.get("publishedAt") or ""
 
         if not title:
@@ -539,14 +452,10 @@ def collect_youtube_week(start, end, api_key):
         channel_lower = channel.lower()
         combined_text = f"{title_lower} {description_lower} {channel_lower}"
 
-        channel_country = channel_countries.get(channel_id, "")
-
         allowed_channel = any(
             br_channel in channel_lower
             for br_channel in BR_CHANNELS
         )
-
-        channel_is_br = channel_country == "BR"
 
         has_br_signal = any(
             signal in combined_text
@@ -558,15 +467,12 @@ def collect_youtube_week(start, end, api_key):
             for blocked in BLOCKED_YOUTUBE_SIGNALS
         )
 
-        # Aceita se:
-        # 1) canal esta na whitelist BR, OU
-        # 2) YouTube informou country=BR, OU
-        # 3) texto tem sinal forte de Brasil/portugues.
-        if not allowed_channel and not channel_is_br and not has_br_signal:
+        # Aceita canal brasileiro OU texto com sinal forte de português/BR.
+        if not allowed_channel and not has_br_signal:
             continue
 
-        # Bloqueia ruido global obvio, exceto se o canal for BR confirmado/whitelist.
-        if is_blocked and not allowed_channel and not channel_is_br:
+        # Bloqueia ruído óbvio, exceto whitelist.
+        if is_blocked and not allowed_channel:
             continue
 
         pub_date = None
@@ -1090,7 +996,9 @@ def _save_snapshot(snapshot_date, snapshot):
 
 def _build_current_day(youtube_key):
     now = _now_br()
-    start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
+
+    # Diario busca ultimos 7 dias para nao ficar vazio.
+    start = now - timedelta(days=7)
     end = now
     label = _label(now)
 

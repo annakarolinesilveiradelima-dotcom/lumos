@@ -1,14 +1,14 @@
 {
   "label": "13-19 mai 2026",
-  "updated": "14 jul 2026, 12:16",
+  "updated": "14 jul 2026, 12:24",
   "kpi": {
     "mentions": {
-      "v": "2 items",
+      "v": "3 items",
       "d": 0,
-      "sub": "2 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 13-19 mai 2026"
+      "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 13-19 mai 2026"
     },
     "sentiment": {
-      "v": "+100",
+      "v": "+67",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "86",
+      "v": "94",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 0/100"
+      "sub": "buzz com Wikipedia 94/100"
     }
   },
   "senti": {
-    "pos": 100,
-    "neu": 0,
+    "pos": 67,
+    "neu": 33,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    86,
-    86,
-    86,
-    86,
-    86,
-    86,
-    86
+    94,
+    94,
+    94,
+    94,
+    94,
+    94,
+    94
   ],
   "stack": [
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ],
     [
-      100,
-      0,
+      67,
+      33,
       0
     ]
   ],
@@ -85,9 +85,9 @@
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 100,
+        "p": 67,
         "n": 0,
-        "g": 0
+        "g": 33
       }
     },
     {
@@ -96,14 +96,14 @@
       "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 100,
+        "p": 67,
         "n": 0,
-        "g": 0
+        "g": 33
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
+      "vol": 94,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -145,6 +145,22 @@
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
         }
       ]
+    },
+    {
+      "t": "Interesse enciclopedico por 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Wikipedia",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -163,6 +179,14 @@
       "cat": "pos",
       "time": "19 mai, 04:00",
       "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
+      "cat": "neu",
+      "time": "13-19 mai 2026",
+      "scope": "Wikipedia Pageviews - 166.953 views na semana"
     }
   ],
   "creators": [],
@@ -188,11 +212,11 @@
       ],
       [
         "Itens reais/sinais",
-        "2"
+        "3"
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter - 166.953 views"
       ]
     ]
   },
@@ -210,16 +234,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 2,
+    "base_count": 3,
     "unit": "itens",
-    "net": 100,
-    "buzz": 86,
+    "net": 67,
+    "buzz": 94,
     "news_count": 2,
     "youtube_count": 0,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "wiki_score": 94,
+    "wiki_views": 166953,
+    "wiki_top_page": "Harry Potter",
     "backfill": true,
-    "sentiment_index": 100
+    "sentiment_index": 84
   }
 }
