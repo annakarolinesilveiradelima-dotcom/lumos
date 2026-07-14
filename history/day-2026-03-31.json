@@ -1,6 +1,6 @@
 {
   "label": "25-31 mar 2026",
-  "updated": "14 jul 2026, 12:40",
+  "updated": "14 jul 2026, 14:13",
   "kpi": {
     "mentions": {
       "v": "12 items",
@@ -8,7 +8,7 @@
       "sub": "12 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 25-31 mar 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+33",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -27,8 +27,8 @@
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
@@ -43,38 +43,38 @@
   ],
   "stack": [
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ],
     [
-      25,
-      75,
+      33,
+      67,
       0
     ]
   ],
@@ -85,9 +85,9 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 33,
         "n": 0,
-        "g": 75
+        "g": 67
       }
     },
     {
@@ -96,9 +96,9 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 33,
         "n": 0,
-        "g": 75
+        "g": 67
       }
     },
     {
@@ -324,7 +324,7 @@
   "_raw": {
     "base_count": 12,
     "unit": "itens",
-    "net": 25,
+    "net": 33,
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
@@ -332,6 +332,6 @@
     "wiki_views": 838236,
     "wiki_top_page": "Harry Potter TV series",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 66
   }
 }

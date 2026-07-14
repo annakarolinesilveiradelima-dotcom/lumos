@@ -1,14 +1,14 @@
 {
   "label": "8-14 abr 2026",
-  "updated": "14 jul 2026, 12:41",
+  "updated": "14 jul 2026, 14:13",
   "kpi": {
     "mentions": {
-      "v": "6 items",
+      "v": "5 items",
       "d": 0,
-      "sub": "5 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 8-14 abr 2026"
+      "sub": "5 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 8-14 abr 2026"
     },
     "sentiment": {
-      "v": "+17",
+      "v": "+20",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "95",
+      "v": "70",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 95/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 17,
-    "neu": 83,
+    "pos": 20,
+    "neu": 80,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    95,
-    95,
-    95,
-    95,
-    95,
-    95,
-    95
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70
   ],
   "stack": [
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ],
     [
-      17,
-      83,
+      20,
+      80,
       0
     ]
   ],
@@ -85,9 +85,9 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 17,
+        "p": 20,
         "n": 0,
-        "g": 83
+        "g": 80
       }
     },
     {
@@ -96,14 +96,14 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 17,
+        "p": 20,
         "n": 0,
-        "g": 83
+        "g": 80
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 95,
+      "vol": 1,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -193,22 +193,6 @@
           "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9GU0puSTdHUm1xcEVhNUpZVEk4Um9QenAzLXZrSWNuRHB0M3FLV3lDZ2ROaktHUWxGaWxvU1dtQTBMUVFiQ0pyQTc5TTRZdTk0eXhjLWNsdVFHb0R6X3BrSlRGdDNpTXJGWHl0Z2pnM2pyWWhU?oc=5"
         }
       ]
-    },
-    {
-      "t": "Interesse enciclopedico por 'Harry Potter film series'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -251,14 +235,6 @@
       "cat": "neu",
       "time": "12 abr, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
-      "title": "Interesse enciclopedico por 'Harry Potter film series'",
-      "cat": "neu",
-      "time": "8-14 abr 2026",
-      "scope": "Wikipedia Pageviews - 179.825 views na semana"
     }
   ],
   "creators": [],
@@ -284,11 +260,11 @@
       ],
       [
         "Itens reais/sinais",
-        "6"
+        "5"
       ],
       [
         "Wikipedia",
-        "Harry Potter film series - 179.825 views"
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -306,16 +282,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
+    "base_count": 5,
     "unit": "itens",
-    "net": 17,
-    "buzz": 95,
+    "net": 20,
+    "buzz": 70,
     "news_count": 5,
     "youtube_count": 0,
-    "wiki_score": 95,
-    "wiki_views": 179825,
-    "wiki_top_page": "Harry Potter film series",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 58
+    "sentiment_index": 60
   }
 }

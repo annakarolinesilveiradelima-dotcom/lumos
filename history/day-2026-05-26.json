@@ -1,11 +1,11 @@
 {
   "label": "20-26 mai 2026",
-  "updated": "14 jul 2026, 12:42",
+  "updated": "14 jul 2026, 14:14",
   "kpi": {
     "mentions": {
-      "v": "2 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 20-26 mai 2026"
+      "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 20-26 mai 2026"
     },
     "sentiment": {
       "v": "+0",
@@ -20,10 +20,10 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "94",
+      "v": "28",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 94/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    94,
-    94,
-    94,
-    94,
-    94,
-    94,
-    94
+    28,
+    28,
+    28,
+    28,
+    28,
+    28,
+    28
   ],
   "stack": [
     [
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 94,
+      "vol": 1,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -129,22 +129,6 @@
           "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
         }
       ]
-    },
-    {
-      "t": "Interesse enciclopedico por 'Paapa Essiedu'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -155,14 +139,6 @@
       "cat": "neu",
       "time": "24 mai, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
-      "title": "Interesse enciclopedico por 'Paapa Essiedu'",
-      "cat": "neu",
-      "time": "20-26 mai 2026",
-      "scope": "Wikipedia Pageviews - 161.758 views na semana"
     }
   ],
   "creators": [],
@@ -188,11 +164,11 @@
       ],
       [
         "Itens reais/sinais",
-        "2"
+        "1"
       ],
       [
         "Wikipedia",
-        "Paapa Essiedu - 161.758 views"
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -210,15 +186,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 2,
+    "base_count": 1,
     "unit": "itens",
     "net": 0,
-    "buzz": 94,
+    "buzz": 28,
     "news_count": 1,
     "youtube_count": 0,
-    "wiki_score": 94,
-    "wiki_views": 161758,
-    "wiki_top_page": "Paapa Essiedu",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
     "sentiment_index": 50
   }
