@@ -44,13 +44,33 @@ NEWS_QUERIES = [
 ]
 
 YOUTUBE_QUERIES = [
-    "Harry Potter HBO series",
-    "Harry Potter HBO reboot",
-    "Harry Potter Max series",
-    "Paapa Essiedu Harry Potter HBO",
-    "John Lithgow Harry Potter HBO",
-    "Dominic McLaughlin Harry Potter",
-    "Harry Potter new HBO series"
+    "Harry Potter HBO Brasil",
+    "Harry Potter HBO Max Brasil",
+    "Serie Harry Potter HBO Brasil",
+    "Harry Potter HBO Omelete",
+    "Harry Potter HBO elenco Brasil",
+    "Harry Potter HBO Max PT-BR",
+    "Harry Potter série HBO Brasil",
+    "Harry Potter série Max Brasil"
+]
+
+BR_CHANNELS = [
+    "omelete",
+    "omeleteve",
+    "jovem nerd",
+    "ei nerd",
+    "pipocando",
+    "legião dos heróis",
+    "legiao dos herois",
+    "observatório do cinema",
+    "observatorio do cinema",
+    "canal peewee",
+    "entre migas",
+    "super oito",
+    "nerdland",
+    "cinematologia",
+    "refúgio cult",
+    "refugio cult"
 ]
 
 WIKI_PAGES = [
