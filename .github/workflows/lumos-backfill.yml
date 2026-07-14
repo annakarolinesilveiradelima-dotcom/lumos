@@ -1,92 +1,53 @@
-name: lumos-backfill
+name: lum**-backfill
 
 on:
-  workflow_dispatch:
+  workflow_dispatc**
 
 permissions:
   contents: write
-
-jobs:
+**obs:
   backfill:
-    runs-on: ubuntu-latest
+    runs-on: ubu**u-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name**Checkout repository
+        uses:**ctions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name:**et up Python
+        uses: action**setup-python@v5
         with:
-          python-version: "3.11"
+   **     python-version: "3.11"
 
-      - name: Prepare files
-        run: |
-          echo "Root files:"
+    **- name: Prepare files
+        run**|
           ls -la
-          echo ""
-          echo "Backend before:"
-          ls -la lumos-backend || true
+          ls -** lumos-backend || true
+          ** backfill_teaser.py lumos-backend**ackfill_teaser.py
+          ls -l**lumos-backend
 
-          if [ -f "backfill_teaser.py" ]; then
-            echo "Copying root backfill_teaser.py to lumos-backend..."
-            cp backfill_teaser.py lumos-backend/backfill_teaser.py
-          fi
-
-          echo ""
-          echo "Backend after:"
-          ls -la lumos-backend
-
-      - name: Install dependencies
+      - name: Inst**l dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r lumos-backend/requirements.txt
-          pip install pytrends pandas
+   **     python -m pip install --upgr**e pip
+          pip install -r lu**s-backend/requirements.txt
+      **  pip install pytrends pandas
 
-      - name: Check syntax
-        run: |
-          python -m py_compile lumos-backend/backfill_teaser.py
+  **  - name: Check syntax
+        ru** |
+          python -m py_compile**umos-backend/backfill_teaser.py
 
-      - name: Run backfill
-        env:
-          OUTPUT_DATA: ${{ github.workspace }}/data.json
-          HISTORY_DIR: ${{ github.workspace }}/history
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-        run: |
-          cd lumos-backend
-          python backfill_teaser.py
+**    - name: Run backfill
+        **v:
+          OUTPUT_DATA: ${{ git**b.workspace }}/data.json
+        **HISTORY_DIR: ${{ github.workspace**}/history
+          YOUTUBE_API_K**: ${{ secrets.YOUTUBE_API_KEY }}
+**        X_BEARER_TOKEN: ${{ secre**.X_BEARER_TOKEN }}
+        run: |**         cd lumos-backend
+       ** python backfill_teaser.py
 
-      - name: Show generated files
-        run: |
-          echo "Root files after backfill:"
-          ls -la
-          echo ""
-          echo "History files:"
-          ls -la history || true
-
-          echo ""
-          echo "YouTube debug preview:"
-          if [ -f "youtube_debug.json" ]; then
-            head -120 youtube_debug.json
-          else
-            echo "youtube_debug.json not found"
-          fi
-
-          echo ""
-          echo "X debug preview:"
-          if [ -f "x_debug.json" ]; then
-            head -120 x_debug.json
-          else
-            echo "x_debug.json not found"
-          fi
-
-          echo ""
-          echo "Google Trends debug preview:"
-          if [ -f "trends_debug.json" ]; then
-            head -120 trends_debug.json
-          else
-            echo "trends_debug.json not found"
-          fi
-
-      - name: Commit results
-        run
+     ** name: Commit results
+        run**|
+          git config user.name **ithub-actions[bot]"
+          git**onfig user.email "41898282+github**ctions[bot]@users.noreply.github.**m"
+          git add data.json hi**ory/ youtube_debug.json x_debug.j**n trends_debug.json lumos-backend**ackfill_teaser.py || true
+       ** git diff --cached --quiet || git**ommit -m "update lumos backfill"
+**        git push
