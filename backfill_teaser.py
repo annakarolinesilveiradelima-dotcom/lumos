@@ -23,16 +23,9 @@ jobs:
         run: |
           echo "Root files:"
           ls -la
-          echo ""
           echo "Backend before:"
           ls -la lumos-backend || true
-
-          if [ -f "backfill_teaser.py" ]; then
-            echo "Copying root backfill_teaser.py to lumos-backend..."
-            cp backfill_teaser.py lumos-backend/backfill_teaser.py
-          fi
-
-          echo ""
+          cp backfill_teaser.py lumos-backend/backfill_teaser.py
           echo "Backend after:"
           ls -la lumos-backend
 
@@ -60,42 +53,19 @@ jobs:
         run: |
           echo "Root files after backfill:"
           ls -la
-          echo ""
-
           echo "History files:"
           ls -la history || true
-          echo ""
-
-          echo "YouTube debug preview:"
-          if [ -f "youtube_debug.json" ]; then
-            head -120 youtube_debug.json
-          else
-            echo "youtube_debug.json not found"
-          fi
-          echo ""
-
-          echo "X debug preview:"
-          if [ -f "x_debug.json" ]; then
-            head -120 x_debug.json
-          else
-            echo "x_debug.json not found"
-          fi
-          echo ""
-
-          echo "Google Trends debug preview:"
-          if [ -f "trends_debug.json" ]; then
-            head -120 trends_debug.json
-          else
-            echo "trends_debug.json not found"
-          fi
+          echo "YouTube debug:"
+          test -f youtube_debug.json && head -120 youtube_debug.json || echo "youtube_debug.json not found"
+          echo "X debug:"
+          test -f x_debug.json && head -120 x_debug.json || echo "x_debug.json not found"
+          echo "Trends debug:"
+          test -f trends_debug.json && head -120 trends_debug.json || echo "trends_debug.json not found"
 
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data.json history/ youtube_debug.json x_debug.json trends_debug.json lumos-backend/backfill_teaser.py || true
-
-          git diff --cached --quiet || git commit -m "update lumos backfill with social listening"
+          git diff --cached --quiet || git commit -m "update lumos backfill"
           git push
-``
