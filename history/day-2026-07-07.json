@@ -1,17 +1,17 @@
 {
-  "label": "7 jul 2026",
-  "updated": "14 jul 2026, 10:43",
+  "label": "1-7 jul 2026",
+  "updated": "14 jul 2026, 12:01",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "0 itens",
       "d": 0,
-      "sub": "7 noticias - 5 videos YouTube - 0 sinais Wikipedia - 1-7 jul 2026"
+      "sub": "sem cobertura/sinal real nesta semana - 1-7 jul 2026"
     },
     "sentiment": {
-      "v": "+8",
-      "suf": "/100",
+      "v": "-",
+      "suf": "",
       "d": 0,
-      "sub": "indice semanal por cobertura/sinal"
+      "sub": "sem base suficiente"
     },
     "sov": {
       "v": "-",
@@ -20,92 +20,70 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "0",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 91/100"
+      "sub": "sem cobertura ou sinal real"
     }
   },
   "senti": {
-    "pos": 8,
-    "neu": 92,
+    "pos": 0,
+    "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "tone": "Sem cobertura ou sinal real coletado nesta janela"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
   ],
   "stack": [
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ],
     [
-      8,
-      92,
+      0,
+      100,
       0
     ]
   ],
   "platforms": [
     {
-      "name": "Imprensa",
-      "vol": 7,
+      "name": "Imprensa/YouTube BR/Wikipedia",
+      "vol": 1,
       "senti": "neu",
       "ang": -90,
-      "s": {
-        "p": 8,
-        "n": 0,
-        "g": 92
-      }
-    },
-    {
-      "name": "YouTube",
-      "vol": 5,
-      "senti": "neu",
-      "ang": 70,
-      "s": {
-        "p": 8,
-        "n": 0,
-        "g": 92
-      }
-    },
-    {
-      "name": "Wikipedia",
-      "vol": 91,
-      "senti": "neu",
-      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -113,238 +91,20 @@
       }
     }
   ],
-  "narratives": [
-    {
-      "t": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "einerd.com",
-          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O TEMPO",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: série da HBO busca atriz para personagem importante",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "einerd.com",
-          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JMGhxWDMwSHFOWm5xU09HbUdZaHV6emQ3WkVuRzRGS0VsN085dTFxdE52RVZnc1ltSGRRV3B2Q0FQSGRwNDBuZVBGRzgxbVZlZVJab1BEdWRVbzRJYjh2cFVDWnRYWm5UUGFObEtKblQ?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Observatório do Cinema",
-          "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMGZua2w4Z3lMQV9VaDZha1ltbUs2ZXpRc0pCMVMwRjhiNE40cF9WZEl2TDNWcldOVm55Ri00X2FJb1AwUFA1UE5HX0hKZ2c1NmFhbjlSUDRYLWRxMFh4V3dXRGIxcWZRZ25ldnZyYThVVEZVZFE4YUo4NzVMVllGSzJxOWgwdkNsUXdHbUljSHdaRUNkMjFSR18yOHYyV3JpVUtqaHdmZlRQWlhEc0ZlVDJpTWc2b1FtUWZn0gHAAUFVX3lxTE5JbjJVWjVQeVV0X1NyNUJISE0yMU9yMTlQUmlsb2s3NDF6X3AwS1FnSEZscFdxRm9pbzc3N1BSY3M3a3JPcWprR3NUUXdIb3JRcjltSUkzeDhPT21Pc095cG1aZzRGdkRVMjl4UDY0YndkdzFhTjJENWVnc2pLNVd6R3R6MUxIVWY1UVVfTmJOSWpMWmhBVGp6U3ZISjdzWFU5MDVjYU5acXk3VDZJNGl4NlZZRVB3VFN6SE43eWtyMw?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Série de Harry Potter inicia busca por nova atriz de Gina Weasley para 2ª temporada",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Vício",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaW9oT0xNbnlERlpQMnE4cG9GMy1lQ2pfaDFPTzhsdFE3V2w5OWRiWnU4TTNoWFoxa24wemRlQzVRM3hEVEc0a1dGVmNiYUk2OUg0aUxPZFFxZlpDalh2VzdZS2FhVDAzdUl2UWdpeGkxdWo0dUVBc25UeW16eDcxSFFYYkFNYnYzQ3plTnR4Q2stUDlnVGgxQ2FfUmtLSXJKNklvY3FNYW82d9IBrwFBVV95cUxNNHhfcnZrYUs4dVZWMjlINkZKZHdyaV8yWlZXOWV4bHIzSVZPRUtXRTcwMjBmZlZ4QURUMjNhaGhVZEdvbVBUbnhESUFGdmIxWkdNTnR2UUdxS0xmRmxuQVBDWHo3bmlWT0VONzlxMlEybWZCREc1UWxNWDJvSldxV3BhbWotZmxXYTZQT05UYW5rRWhsdEhHYWR6cEx6SXhpaXhIcEpGLXplVXhkdzhZ?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "HBO’s Harry Potter Season 2 Is Officially Casting One Of The Most Important Characters Yet",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "ScreenRant",
-          "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TF9lbUE4WXpiak9NOGxSTG5DTW43MVZaYUxvYkFwaS15b2FzV3BnODhqUkFKdUpfRGhVVkxPU3NpWHZJZWVNLVducXFJR1lKd3lBOExGOWh0dnV3RFB3c1FzdE5PN0FKNk9zNWJSaXZ2OUFaOWdUaGtPSQ?oc=5"
-        }
-      ]
-    }
-  ],
-  "coverage": [
-    {
-      "o": "einerd.com",
-      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxaFRNLTZuYm96elZyZW5FZElLTW80Y2gyWGl3bk9YWlNuOUVHUEI5c3AwTFFGYU5lQ3kyUE8zZ2d2QzY3UnJHWTMxcWpNM0ExQW9Gd2VuTXFpOVdkejV4eEdnNVI3TG1RZW11bG5IaVZuUmMwb1E?oc=5",
-      "title": "Harry Potter: ator de série da HBO comenta papel de Ministro da Magia",
-      "cat": "neu",
-      "time": "7 jul, 14:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "O TEMPO",
-      "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZnBmb056dzZtblBTRlFPOEoxaERmWksxREk2MEs4RmZ5QzQwZ3NTcU9Nc2pBSVRETmVHVEhTaWZ6Um9iNDZDbXFwSURZYjZkcUVxd1Ytd1VmZjlIVzZJVzR6OEctTktEeXliSjBrVzFBcDJTLU1kZVRUQjhqWnp1SmlsVE1MUFN0VzdRTkVxc1hVRWlQemE1bnZiRnl1R1NWajdpMEFGaEZHeXdJTmhKOVYxVkV2QTZmTGp3ajhQVjJtcGhWMFIyT1NIdDPSAdIBQVVfeXFMTTJseF9Rc2xmQlc1UWJYT3FQanI3ZWNjVTdDTnhIdUdBUXNMbW5QLXh5cWIxR1JRTnAxYUVvZzVCaVpFVUkwZl92VTltOUpVS0FqYkxBaUxjbHRnSnp1OXpWQ3JiX1RCcFAwNFNZWXgtamI4NmU4V1pmSFVRN2pCQmU1NnBqdGg4SnlKZUJxWEk1R3ZraTk5MkdwTXI5N283MTE0WUNqN3dXa1BLYW52VU9TOHJpU25DTVFGblNrWHJmcnlnTjYxT25VM2M4MDlHT2Fn?oc=5",
-      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "cat": "neu",
-      "time": "4 jul, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "einerd.com",
-      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JMGhxWDMwSHFOWm5xU09HbUdZaHV6emQ3WkVuRzRGS0VsN085dTFxdE52RVZnc1ltSGRRV3B2Q0FQSGRwNDBuZVBGRzgxbVZlZVJab1BEdWRVbzRJYjh2cFVDWnRYWm5UUGFObEtKblQ?oc=5",
-      "title": "Harry Potter: série da HBO busca atriz para personagem importante",
-      "cat": "neu",
-      "time": "2 jul, 13:30",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Observatório do Cinema",
-      "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMGZua2w4Z3lMQV9VaDZha1ltbUs2ZXpRc0pCMVMwRjhiNE40cF9WZEl2TDNWcldOVm55Ri00X2FJb1AwUFA1UE5HX0hKZ2c1NmFhbjlSUDRYLWRxMFh4V3dXRGIxcWZRZ25ldnZyYThVVEZVZFE4YUo4NzVMVllGSzJxOWgwdkNsUXdHbUljSHdaRUNkMjFSR18yOHYyV3JpVUtqaHdmZlRQWlhEc0ZlVDJpTWc2b1FtUWZn0gHAAUFVX3lxTE5JbjJVWjVQeVV0X1NyNUJISE0yMU9yMTlQUmlsb2s3NDF6X3AwS1FnSEZscFdxRm9pbzc3N1BSY3M3a3JPcWprR3NUUXdIb3JRcjltSUkzeDhPT21Pc095cG1aZzRGdkRVMjl4UDY0YndkdzFhTjJENWVnc2pLNVd6R3R6MUxIVWY1UVVfTmJOSWpMWmhBVGp6U3ZISjdzWFU5MDVjYU5acXk3VDZJNGl4NlZZRVB3VFN6SE43eWtyMw?oc=5",
-      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "cat": "neu",
-      "time": "4 jul, 18:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "O Vício",
-      "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaW9oT0xNbnlERlpQMnE4cG9GMy1lQ2pfaDFPTzhsdFE3V2w5OWRiWnU4TTNoWFoxa24wemRlQzVRM3hEVEc0a1dGVmNiYUk2OUg0aUxPZFFxZlpDalh2VzdZS2FhVDAzdUl2UWdpeGkxdWo0dUVBc25UeW16eDcxSFFYYkFNYnYzQ3plTnR4Q2stUDlnVGgxQ2FfUmtLSXJKNklvY3FNYW82d9IBrwFBVV95cUxNNHhfcnZrYUs4dVZWMjlINkZKZHdyaV8yWlZXOWV4bHIzSVZPRUtXRTcwMjBmZlZ4QURUMjNhaGhVZEdvbVBUbnhESUFGdmIxWkdNTnR2UUdxS0xmRmxuQVBDWHo3bmlWT0VONzlxMlEybWZCREc1UWxNWDJvSldxV3BhbWotZmxXYTZQT05UYW5rRWhsdEhHYWR6cEx6SXhpaXhIcEpGLXplVXhkdzhZ?oc=5",
-      "title": "Série de Harry Potter inicia busca por nova atriz de Gina Weasley para 2ª temporada",
-      "cat": "neu",
-      "time": "3 jul, 09:57",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "ScreenRant",
-      "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TF9lbUE4WXpiak9NOGxSTG5DTW43MVZaYUxvYkFwaS15b2FzV3BnODhqUkFKdUpfRGhVVkxPU3NpWHZJZWVNLVducXFJR1lKd3lBOExGOWh0dnV3RFB3c1FzdE5PN0FKNk9zNWJSaXZ2OUFaOWdUaGtPSQ?oc=5",
-      "title": "HBO’s Harry Potter Season 2 Is Officially Casting One Of The Most Important Characters Yet",
-      "cat": "neu",
-      "time": "2 jul, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "culpadolag.com.br",
-      "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSEc1bXNBM2dORTg2Uy15cXpORWw5a09iWW5FRUJnQk5ybk5QX3c3eV9xc0ZTR3ItTGtpSDdCN2xQN1BBbzNvRTQzb2h6b29CazY1blJ2S3RCTDRNMzBBUkU2WnppZE5HODVNOUNrMDRsZlpleDVQRUdWcW1UbnRmU2piWUNCMFdCVDVpU19PWldTSWQ5SUdxUUJxYTZSaWdaNzFHb0ZWQjQycGRtTlQw?oc=5",
-      "title": "Casting de Ginny Weasley avança: novo chamado oficial e o escudo de Hogwarts revelado",
-      "cat": "pos",
-      "time": "2 jul, 10:11",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - WAYSH? Movie Podcast",
-      "u": "https://www.youtube.com/watch?v=DuwbaX3np9w",
-      "title": "There’s Trees Everywhere! 🌳",
-      "cat": "neu",
-      "time": "7 jul, 20:26",
-      "scope": "Video/Creator - YouTube"
-    }
-  ],
-  "creators": [
-    {
-      "h": "WAYSH? Movie Podcast",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=DuwbaX3np9w"
-    },
-    {
-      "h": "Um Take Apenas",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=56MQG1-R7T8"
-    },
-    {
-      "h": "Katha Kahani",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=Mxa2xNCSDeA"
-    },
-    {
-      "h": "The Sorcerer Nerd",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=Z8mYpe_HOAg"
-    },
-    {
-      "h": "Gelecek Postası",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=qT9sJqI9-Ws"
-    }
-  ],
+  "narratives": [],
+  "coverage": [],
+  "creators": [],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Semana sem cobertura real",
+      "sev": "low",
+      "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 1-7 jul 2026.",
+      "rec": "Manter monitoramento e validar novas fontes historicas."
     }
   ],
   "heroOpp": {
-    "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 1-7 jul 2026.",
+    "title": "Sem oportunidade validada nesta semana",
+    "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
     "facts": [
       [
         "Janela",
@@ -352,42 +112,36 @@
       ],
       [
         "Marco",
-        "25/03/2026"
+        "teaser 25/03/2026"
       ],
       [
-        "Itens reais/sinais",
-        "12"
+        "Dados ficticios",
+        "nao"
       ],
       [
-        "Wikipedia",
-        "Harry Potter - 115.655 views"
+        "Status",
+        "sem cobertura/sinal real"
       ]
     ]
   },
   "opps": [
     {
-      "ico": "book",
-      "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-    },
-    {
-      "ico": "film",
-      "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+      "ico": "mail",
+      "t": "Monitorar proxima coleta",
+      "d": "A janela 1-7 jul 2026 ainda nao tem fonte real suficiente."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 0,
     "unit": "itens",
-    "net": 8,
-    "buzz": 100,
-    "news_count": 7,
-    "youtube_count": 5,
-    "wiki_score": 91,
-    "wiki_views": 115655,
-    "wiki_top_page": "Harry Potter",
-    "backfill": true,
-    "sentiment_index": 54
+    "net": 0,
+    "buzz": 0,
+    "news_count": 0,
+    "youtube_count": 0,
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
+    "backfill": true
   }
 }
