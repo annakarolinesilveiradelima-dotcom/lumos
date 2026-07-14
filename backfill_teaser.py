@@ -21,12 +21,9 @@ jobs:
 
       - name: Prepare files
         run: |
-          echo "Root files:"
           ls -la
-          echo "Backend before:"
           ls -la lumos-backend || true
           cp backfill_teaser.py lumos-backend/backfill_teaser.py
-          echo "Backend after:"
           ls -la lumos-backend
 
       - name: Install dependencies
@@ -48,19 +45,6 @@ jobs:
         run: |
           cd lumos-backend
           python backfill_teaser.py
-
-      - name: Show generated files
-        run: |
-          echo "Root files after backfill:"
-          ls -la
-          echo "History files:"
-          ls -la history || true
-          echo "YouTube debug:"
-          test -f youtube_debug.json && head -120 youtube_debug.json || echo "youtube_debug.json not found"
-          echo "X debug:"
-          test -f x_debug.json && head -120 x_debug.json || echo "x_debug.json not found"
-          echo "Trends debug:"
-          test -f trends_debug.json && head -120 trends_debug.json || echo "trends_debug.json not found"
 
       - name: Commit results
         run: |
