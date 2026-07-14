@@ -1,45 +1,46 @@
 {
   "label": "3-9 jun 2026",
-  "updated": "14 jul 2026, 14:40",
+  "updated": "14 jul 2026, 14:50",
   "kpi": {
     "mentions": {
       "v": "1 item",
       "d": 0,
-      "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 3-9 jun 2026"
+      "sub": "0 imprensa - 0 YouTube PT-BR - 1 Wikipedia - fonte: coverage"
     },
     "sentiment": {
       "v": "+0",
       "suf": "/100",
       "d": 0,
-      "sub": "indice semanal por cobertura/sinal"
+      "sub": "baseado em categorizacao dos itens coletados"
     },
     "sov": {
-      "v": "-",
+      "v": "100",
+      "suf": "%",
       "d": 0,
       "dtype": "pts",
-      "sub": "requer base multi-titulo"
+      "sub": "proxy: Wikipedia possui 100% dos sinais coletados"
     },
     "buzz": {
-      "v": "95",
+      "v": "43",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 95/100"
+      "sub": "volume + diversidade + Wikipedia + sentimento"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS BR, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    95,
-    95,
-    95,
-    95,
-    95,
-    95,
-    95
+    82,
+    82,
+    82,
+    82,
+    82,
+    45,
+    0
   ],
   "stack": [
     [
@@ -81,38 +82,52 @@
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 1,
+      "vol": 0,
+      "share": 0,
       "senti": "neu",
       "ang": -90,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
-      }
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens coletados por plataforma"
     },
     {
       "name": "YouTube PT-BR",
-      "vol": 1,
+      "vol": 0,
+      "share": 0,
       "senti": "neu",
       "ang": 70,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
-      }
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens coletados por plataforma"
     },
     {
       "name": "Wikipedia",
-      "vol": 95,
+      "vol": 1,
+      "share": 100,
       "senti": "neu",
       "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
-      }
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens coletados por plataforma"
     }
   ],
+  "platform_share": {
+    "Imprensa": 0,
+    "YouTube PT-BR": 0,
+    "Wikipedia": 100
+  },
   "narratives": [
     {
       "t": "Interesse enciclopedico por 'John Lithgow'",
@@ -151,24 +166,36 @@
     }
   ],
   "heroOpp": {
-    "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 3-9 jun 2026.",
+    "title": "Leitura semanal por sinais reais",
+    "desc": "Janela 3-9 jun 2026: 1 sinais coletados entre imprensa, YouTube PT-BR e Wikipedia.",
     "facts": [
       [
         "Janela",
         "3-9 jun 2026"
       ],
       [
-        "Marco",
-        "25/03/2026"
-      ],
-      [
         "Itens reais/sinais",
         "1"
       ],
       [
+        "Imprensa",
+        "0"
+      ],
+      [
+        "YouTube PT-BR",
+        "0"
+      ],
+      [
         "Wikipedia",
         "John Lithgow - 194.337 views"
+      ],
+      [
+        "SOV proxy",
+        "Wikipedia: 100%"
+      ],
+      [
+        "Buzz Score",
+        "43/100"
       ]
     ]
   },
@@ -185,16 +212,79 @@
     }
   ],
   "ephem": [],
+  "metricSources": [
+    {
+      "metric": "Radar de plataformas",
+      "source": "coverage[].o, coverage[].scope",
+      "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+    },
+    {
+      "metric": "Share of Voice",
+      "source": "coverage total por plataforma",
+      "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+    },
+    {
+      "metric": "Buzz Score",
+      "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
+      "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+    },
+    {
+      "metric": "Buzz últimos 7 pontos",
+      "source": "history/day-*.json",
+      "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+    }
+  ],
   "_raw": {
     "base_count": 1,
     "unit": "itens",
     "net": 0,
-    "buzz": 95,
+    "buzz": 43,
     "news_count": 0,
     "youtube_count": 0,
     "wiki_score": 95,
     "wiki_views": 194337,
     "wiki_top_page": "John Lithgow",
+    "platform_counts": {
+      "Imprensa": 0,
+      "YouTube PT-BR": 0,
+      "Wikipedia": 1
+    },
+    "platform_share": {
+      "Imprensa": 0,
+      "YouTube PT-BR": 0,
+      "Wikipedia": 100
+    },
+    "sov_proxy_top_platform": "Wikipedia",
+    "sov_proxy_top_share": 100,
+    "buzz_components": {
+      "volume_component": 9,
+      "diversity_component": 7,
+      "wiki_component": 19,
+      "sentiment_component": 8,
+      "formula": "min(45, itens*9) + min(20, plataformas_ativas*7) + min(20, wiki_score*0.20) + sentimento_liquido"
+    },
+    "sources": [
+      {
+        "metric": "Radar de plataformas",
+        "source": "coverage[].o, coverage[].scope",
+        "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+      },
+      {
+        "metric": "Share of Voice",
+        "source": "coverage total por plataforma",
+        "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+      },
+      {
+        "metric": "Buzz Score",
+        "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
+        "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+      },
+      {
+        "metric": "Buzz últimos 7 pontos",
+        "source": "history/day-*.json",
+        "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+      }
+    ],
     "backfill": true,
     "sentiment_index": 50
   }

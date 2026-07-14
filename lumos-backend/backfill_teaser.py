@@ -49,30 +49,11 @@ NEWS_QUERIES = [
 YOUTUBE_QUERIES = [
     "harry potter série brasil",
     "harry potter serie brasil",
-    "série de harry potter brasil",
-    "serie de harry potter brasil",
     "nova série harry potter brasil",
     "nova serie harry potter brasil",
-    "nova série de harry potter brasil",
-    "nova serie de harry potter brasil",
-    "harry potter série português",
-    "harry potter serie portugues",
-    "nova série harry potter português",
-    "nova serie harry potter portugues",
-    "harry potter hbo brasil",
-    "harry potter max brasil",
     "harry potter hbo max brasil",
-    "harry potter série hbo brasil",
-    "harry potter serie hbo brasil",
-    "harry potter série max brasil",
-    "harry potter serie max brasil",
-    "harry potter elenco série",
-    "harry potter elenco serie",
-    "harry potter elenco hbo",
     "harry potter hbo elenco",
-    "harry potter hbo max elenco",
-    "harry potter nova série elenco",
-    "harry potter nova serie elenco"
+    "harry potter nova série elenco"
 ]
 
 
@@ -377,6 +358,207 @@ def _dedupe_coverage(items):
 
 def _history_path(snapshot_date):
     return os.path.join(HISTORY_DIR, f"day-{snapshot_date:%Y-%m-%d}.json")
+
+
+def _parse_number(value):
+    if value is None:
+        return 0
+
+    text = str(value).replace("/100", "").replace("%", "").replace("+", "").strip()
+
+    try:
+        return int(float(text))
+    except Exception:
+        return 0
+
+
+def _platform_from_source(source):
+    source = str(source or "")
+
+    if source.startswith("YouTube"):
+        return "YouTube PT-BR"
+
+    if source.startswith("Wikipedia"):
+        return "Wikipedia"
+
+    return "Imprensa"
+
+
+def _platform_counts(coverage):
+    counts = {
+        "Imprensa": 0,
+        "YouTube PT-BR": 0,
+        "Wikipedia": 0
+    }
+
+    for item in coverage:
+        platform = _platform_from_source(item.get("o", ""))
+        counts[platform] = counts.get(platform, 0) + 1
+
+    return counts
+
+
+def _platform_shares(counts):
+    total = sum(counts.values())
+
+    if total <= 0:
+        return {
+            "Imprensa": 0,
+            "YouTube PT-BR": 0,
+            "Wikipedia": 0
+        }
+
+    shares = {}
+
+    for key, value in counts.items():
+        shares[key] = round(value / total * 100)
+
+    diff = 100 - sum(shares.values())
+
+    if diff != 0 and shares:
+        top_key = max(shares, key=shares.get)
+        shares[top_key] += diff
+
+    return shares
+
+
+def _platforms_payload(counts, shares, sentiment):
+    pos, neu, neg = sentiment
+
+    payload = []
+
+    layout = [
+        ("Imprensa", -90),
+        ("YouTube PT-BR", 70),
+        ("Wikipedia", 160)
+    ]
+
+    for name, angle in layout:
+        count = counts.get(name, 0)
+        share = shares.get(name, 0)
+
+        if count <= 0:
+            senti = "neu"
+        elif pos >= 55:
+            senti = "pos"
+        elif neg >= 35:
+            senti = "neg"
+        else:
+            senti = "neu"
+
+        payload.append({
+            "name": name,
+            "vol": count,
+            "share": share,
+            "senti": senti,
+            "ang": angle,
+            "s": {
+                "p": pos if count > 0 else 0,
+                "n": neg if count > 0 else 0,
+                "g": neu if count > 0 else 100
+            },
+            "source": "coverage[].o / coverage[].scope",
+            "method": "Contagem de itens coletados por plataforma"
+        })
+
+    return payload
+
+
+def _metric_sources():
+    return [
+        {
+            "metric": "Radar de plataformas",
+            "source": "coverage[].o, coverage[].scope",
+            "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+        },
+        {
+            "metric": "Share of Voice",
+            "source": "coverage total por plataforma",
+            "method": "Proxy de SOV: percentual de sinais coletados por fonte. Não é SOV competitivo multi-título."
+        },
+        {
+            "metric": "Buzz Score",
+            "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
+            "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+        },
+        {
+            "metric": "Buzz últimos 7 pontos",
+            "source": "history/day-*.json",
+            "method": "Últimos 7 valores de _raw.buzz salvos no histórico semanal."
+        }
+    ]
+
+
+def _buzz_score(count, counts, wiki_score, net):
+    active_platforms = sum(1 for value in counts.values() if value > 0)
+
+    volume_component = min(45, count * 9)
+    diversity_component = min(20, active_platforms * 7)
+    wiki_component = min(20, round(wiki_score * 0.20))
+    sentiment_component = max(0, min(15, 8 + round(net / 10)))
+
+    buzz = volume_component + diversity_component + wiki_component + sentiment_component
+
+    if count <= 0 and wiki_score <= 0:
+        return 0, {
+            "volume_component": 0,
+            "diversity_component": 0,
+            "wiki_component": 0,
+            "sentiment_component": 0,
+            "formula": "Sem itens coletados e sem sinal Wikipedia."
+        }
+
+    return max(1, min(100, buzz)), {
+        "volume_component": volume_component,
+        "diversity_component": diversity_component,
+        "wiki_component": wiki_component,
+        "sentiment_component": sentiment_component,
+        "formula": "min(45, itens*9) + min(20, plataformas_ativas*7) + min(20, wiki_score*0.20) + sentimento_liquido"
+    }
+
+
+def _load_buzz_history(limit=7):
+    if not os.path.exists(HISTORY_DIR):
+        return []
+
+    rows = []
+
+    for name in os.listdir(HISTORY_DIR):
+        if not name.startswith("day-") or not name.endswith(".json"):
+            continue
+
+        date_text = name.replace("day-", "").replace(".json", "")
+
+        try:
+            dt = datetime.fromisoformat(date_text).replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+
+        path = os.path.join(HISTORY_DIR, name)
+
+        try:
+            with open(path, encoding="utf-8") as file:
+                snapshot = json.load(file)
+
+            raw = snapshot.get("_raw", {}) or {}
+            buzz = raw.get("buzz")
+
+            if buzz is None:
+                buzz = (snapshot.get("kpi", {}).get("buzz", {}) or {}).get("v", 0)
+
+            rows.append((dt, _parse_number(buzz)))
+
+        except Exception:
+            continue
+
+    rows = sorted(rows, key=lambda item: item[0])
+
+    values = [value for _, value in rows[-limit:]]
+
+    while len(values) < limit:
+        values.insert(0, 0)
+
+    return values[-limit:]
 
 
 def collect_google_news_week(start, end):
@@ -733,18 +915,6 @@ def _build_sentiment(coverage):
     return p, g, n, index
 
 
-def _platform_from_source(source):
-    source = str(source or "")
-
-    if source.startswith("YouTube"):
-        return "YouTube"
-
-    if source.startswith("Wikipedia"):
-        return "Wikipedia"
-
-    return "Imprensa"
-
-
 def _narratives_from_coverage(coverage):
     narratives = []
 
@@ -853,10 +1023,11 @@ def _empty_snapshot(snapshot_date, week_label):
                 "sub": "sem base suficiente"
             },
             "sov": {
-                "v": "-",
+                "v": "0",
+                "suf": "%",
                 "d": 0,
                 "dtype": "pts",
-                "sub": "requer base multi-titulo"
+                "sub": "proxy por sinais coletados; sem base suficiente"
             },
             "buzz": {
                 "v": "0",
@@ -871,7 +1042,7 @@ def _empty_snapshot(snapshot_date, week_label):
             "neg": 0,
             "tone": "Sem cobertura ou sinal real coletado nesta janela"
         },
-        "buzz7": [0, 0, 0, 0, 0, 0, 0],
+        "buzz7": _load_buzz_history(),
         "stack": [
             [0, 100, 0],
             [0, 100, 0],
@@ -881,19 +1052,16 @@ def _empty_snapshot(snapshot_date, week_label):
             [0, 100, 0],
             [0, 100, 0]
         ],
-        "platforms": [
-            {
-                "name": "Imprensa/YouTube PT-BR/Wikipedia",
-                "vol": 1,
-                "senti": "neu",
-                "ang": -90,
-                "s": {
-                    "p": 0,
-                    "n": 0,
-                    "g": 100
-                }
-            }
-        ],
+        "platforms": _platforms_payload(
+            {"Imprensa": 0, "YouTube PT-BR": 0, "Wikipedia": 0},
+            {"Imprensa": 0, "YouTube PT-BR": 0, "Wikipedia": 0},
+            (0, 100, 0)
+        ),
+        "platform_share": {
+            "Imprensa": 0,
+            "YouTube PT-BR": 0,
+            "Wikipedia": 0
+        },
         "narratives": [],
         "coverage": [],
         "creators": [],
@@ -910,6 +1078,7 @@ def _empty_snapshot(snapshot_date, week_label):
         },
         "opps": _opps_from_coverage([], week_label),
         "ephem": [],
+        "metricSources": _metric_sources(),
         "_raw": {
             "base_count": 0,
             "unit": "itens",
@@ -920,6 +1089,23 @@ def _empty_snapshot(snapshot_date, week_label):
             "wiki_score": 0,
             "wiki_views": 0,
             "wiki_top_page": "",
+            "platform_counts": {
+                "Imprensa": 0,
+                "YouTube PT-BR": 0,
+                "Wikipedia": 0
+            },
+            "platform_share": {
+                "Imprensa": 0,
+                "YouTube PT-BR": 0,
+                "Wikipedia": 0
+            },
+            "buzz_components": {
+                "volume_component": 0,
+                "diversity_component": 0,
+                "wiki_component": 0,
+                "sentiment_component": 0
+            },
+            "sources": _metric_sources(),
             "backfill": True
         }
     }
@@ -936,12 +1122,16 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
     wiki_views = int((wiki or {}).get("total_views", 0) or 0)
     wiki_top_page = (wiki or {}).get("top_page", "")
 
-    buzz_from_coverage = 20 + count * 8 + round(max(0, net) / 2) if count else 0
-    buzz = min(100, max(buzz_from_coverage, wiki_score))
+    counts = _platform_counts(coverage)
+    shares = _platform_shares(counts)
+    buzz, buzz_components = _buzz_score(count, counts, wiki_score, net)
 
-    youtube_count = sum(1 for item in coverage if str(item.get("o", "")).startswith("YouTube"))
-    wiki_count = sum(1 for item in coverage if str(item.get("o", "")).startswith("Wikipedia"))
-    press_count = count - youtube_count - wiki_count
+    youtube_count = counts.get("YouTube PT-BR", 0)
+    wiki_count = counts.get("Wikipedia", 0)
+    press_count = counts.get("Imprensa", 0)
+
+    top_platform = max(shares, key=shares.get) if shares else "sem base"
+    top_share = shares.get(top_platform, 0) if shares else 0
 
     creators = []
 
@@ -968,34 +1158,35 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             "mentions": {
                 "v": f"{count} item" + ("" if count == 1 else "s"),
                 "d": 0,
-                "sub": f"{press_count} noticias - {youtube_count} videos YouTube PT-BR - {wiki_count} sinais Wikipedia - {week_label}"
+                "sub": f"{press_count} imprensa - {youtube_count} YouTube PT-BR - {wiki_count} Wikipedia - fonte: coverage"
             },
             "sentiment": {
                 "v": ("+" if net >= 0 else "") + str(net),
                 "suf": "/100",
                 "d": 0,
-                "sub": "indice semanal por cobertura/sinal"
+                "sub": "baseado em categorizacao dos itens coletados"
             },
             "sov": {
-                "v": "-",
+                "v": str(top_share),
+                "suf": "%",
                 "d": 0,
                 "dtype": "pts",
-                "sub": "requer base multi-titulo"
+                "sub": f"proxy: {top_platform} possui {top_share}% dos sinais coletados"
             },
             "buzz": {
                 "v": str(buzz),
                 "suf": "/100",
                 "d": 0,
-                "sub": f"buzz com Wikipedia {wiki_score}/100"
+                "sub": "volume + diversidade + Wikipedia + sentimento"
             }
         },
         "senti": {
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS BR, YouTube PT-BR e Wikipedia Pageviews"
         },
-        "buzz7": [buzz, buzz, buzz, buzz, buzz, buzz, buzz],
+        "buzz7": _load_buzz_history(),
         "stack": [
             [pos, neu, neg],
             [pos, neu, neg],
@@ -1005,45 +1196,28 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             [pos, neu, neg],
             [pos, neu, neg]
         ],
-        "platforms": [
-            {
-                "name": "Imprensa",
-                "vol": max(press_count, 1),
-                "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
-                "ang": -90,
-                "s": {"p": pos, "n": neg, "g": neu}
-            },
-            {
-                "name": "YouTube PT-BR",
-                "vol": max(youtube_count, 1),
-                "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
-                "ang": 70,
-                "s": {"p": pos, "n": neg, "g": neu}
-            },
-            {
-                "name": "Wikipedia",
-                "vol": max(wiki_score, 1),
-                "senti": "neu",
-                "ang": 160,
-                "s": {"p": 0, "n": 0, "g": 100}
-            }
-        ],
+        "platforms": _platforms_payload(counts, shares, (pos, neu, neg)),
+        "platform_share": shares,
         "narratives": _narratives_from_coverage(coverage),
         "coverage": coverage[:8],
         "creators": creators[:8],
         "risks": _risks_from_coverage(coverage, week_label),
         "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": f"Semana preenchida por fontes reais e sinais historicos. Janela: {week_label}.",
+            "title": "Leitura semanal por sinais reais",
+            "desc": f"Janela {week_label}: {count} sinais coletados entre imprensa, YouTube PT-BR e Wikipedia.",
             "facts": [
                 ["Janela", week_label],
-                ["Marco", "25/03/2026"],
                 ["Itens reais/sinais", str(count)],
-                ["Wikipedia", f"{wiki_top_page or 'sem sinal'} - {wiki_views:,} views".replace(",", ".")]
+                ["Imprensa", str(press_count)],
+                ["YouTube PT-BR", str(youtube_count)],
+                ["Wikipedia", f"{wiki_top_page or 'sem sinal'} - {wiki_views:,} views".replace(",", ".")],
+                ["SOV proxy", f"{top_platform}: {top_share}%"],
+                ["Buzz Score", f"{buzz}/100"]
             ]
         },
         "opps": _opps_from_coverage(coverage, week_label),
         "ephem": [],
+        "metricSources": _metric_sources(),
         "_raw": {
             "base_count": count,
             "unit": "itens",
@@ -1054,6 +1228,12 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             "wiki_score": wiki_score,
             "wiki_views": wiki_views,
             "wiki_top_page": wiki_top_page,
+            "platform_counts": counts,
+            "platform_share": shares,
+            "sov_proxy_top_platform": top_platform,
+            "sov_proxy_top_share": top_share,
+            "buzz_components": buzz_components,
+            "sources": _metric_sources(),
             "backfill": True,
             "sentiment_index": sentiment_index
         }
@@ -1148,6 +1328,40 @@ def _load_week_snapshots_from_history():
     return weeks
 
 
+def _inject_buzz7_into_feed(feed):
+    try:
+        title = feed["titles"][TITLE_ID]
+        weeks = title.get("weeks", {}) or {}
+
+        ordered = []
+
+        for key, snapshot in weeks.items():
+            label = snapshot.get("label", key)
+            raw = snapshot.get("_raw", {}) or {}
+            buzz = raw.get("buzz")
+
+            if buzz is None:
+                buzz = (snapshot.get("kpi", {}).get("buzz", {}) or {}).get("v", 0)
+
+            ordered.append((key, label, _parse_number(buzz)))
+
+        ordered = list(reversed(ordered))
+        series = [buzz for _, _, buzz in ordered][-7:]
+
+        while len(series) < 7:
+            series.insert(0, 0)
+
+        title["days"]["d0"]["buzz7"] = series
+
+        for _, snapshot in weeks.items():
+            snapshot["buzz7"] = series
+
+    except Exception as exc:
+        print(f"[backfill] nao consegui injetar buzz7: {exc}")
+
+    return feed
+
+
 def regenerate_feed(current_day):
     if not current_day:
         current_day = _empty_snapshot(_now_br(), _label(_now_br()))
@@ -1169,6 +1383,8 @@ def regenerate_feed(current_day):
             }
         }
     }
+
+    feed = _inject_buzz7_into_feed(feed)
 
     with open(OUTPUT_DATA, "w", encoding="utf-8") as file:
         json.dump(feed, file, ensure_ascii=False, indent=2)
