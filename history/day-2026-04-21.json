@@ -1,11 +1,11 @@
 {
   "label": "15-21 abr 2026",
-  "updated": "14 jul 2026, 14:49",
+  "updated": "14 jul 2026, 15:27",
   "kpi": {
     "mentions": {
-      "v": "2 items",
+      "v": "3 sinals",
       "d": 0,
-      "sub": "2 imprensa - 0 YouTube PT-BR - 0 Wikipedia - fonte: coverage"
+      "sub": "2 imprensa - 0 X - 0 YouTube - 0 Trends - 1 Wikipedia"
     },
     "sentiment": {
       "v": "+0",
@@ -14,24 +14,24 @@
       "sub": "baseado em categorizacao dos itens coletados"
     },
     "sov": {
-      "v": "100",
+      "v": "67",
       "suf": "%",
       "d": 0,
       "dtype": "pts",
-      "sub": "proxy: Imprensa possui 100% dos sinais coletados"
+      "sub": "proxy: Imprensa possui 67% dos sinais coletados"
     },
     "buzz": {
-      "v": "33",
+      "v": "49",
       "suf": "/100",
       "d": 0,
-      "sub": "volume + diversidade + Wikipedia + sentimento"
+      "sub": "volume + plataformas + Trends 0/100 + Wiki 84/100"
     }
   },
   "senti": {
     "pos": 0,
     "neu": 100,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS BR, YouTube PT-BR e Wikipedia Pageviews"
+    "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
   },
   "buzz7": [
     82,
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    0
+    42
   ],
   "stack": [
     [
@@ -83,7 +83,7 @@
     {
       "name": "Imprensa",
       "vol": 2,
-      "share": 100,
+      "share": 67,
       "senti": "neu",
       "ang": -90,
       "s": {
@@ -92,41 +92,71 @@
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
     },
     {
       "name": "YouTube PT-BR",
       "vol": 0,
       "share": 0,
       "senti": "neu",
-      "ang": 70,
+      "ang": 25,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
     },
     {
-      "name": "Wikipedia",
+      "name": "X",
       "vol": 0,
       "share": 0,
       "senti": "neu",
-      "ang": 160,
+      "ang": 85,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
+    },
+    {
+      "name": "Google Trends BR",
+      "vol": 0,
+      "share": 0,
+      "senti": "neu",
+      "ang": 145,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens/sinais coletados por plataforma"
+    },
+    {
+      "name": "Wikipedia",
+      "vol": 1,
+      "share": 33,
+      "senti": "neu",
+      "ang": 200,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens/sinais coletados por plataforma"
     }
   ],
   "platform_share": {
-    "Imprensa": 100,
+    "Imprensa": 67,
     "YouTube PT-BR": 0,
-    "Wikipedia": 0
+    "X": 0,
+    "Google Trends BR": 0,
+    "Wikipedia": 33
   },
   "narratives": [
     {
@@ -135,7 +165,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -151,13 +181,29 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "UOL",
           "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Interesse enciclopedico por 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Wikipedia",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
         }
       ]
     }
@@ -178,6 +224,14 @@
       "cat": "neu",
       "time": "16 abr, 04:00",
       "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
+      "cat": "neu",
+      "time": "15-21 abr 2026",
+      "scope": "Wikipedia Pageviews - 44.464 views na semana"
     }
   ],
   "creators": [],
@@ -190,8 +244,8 @@
     }
   ],
   "heroOpp": {
-    "title": "Leitura semanal por sinais reais",
-    "desc": "Janela 15-21 abr 2026: 2 sinais coletados entre imprensa, YouTube PT-BR e Wikipedia.",
+    "title": "Leitura por sinais reais",
+    "desc": "Janela 15-21 abr 2026: 3 sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
     "facts": [
       [
         "Janela",
@@ -199,27 +253,35 @@
       ],
       [
         "Itens reais/sinais",
-        "2"
+        "3"
       ],
       [
         "Imprensa",
         "2"
       ],
       [
+        "X",
+        "0"
+      ],
+      [
         "YouTube PT-BR",
         "0"
       ],
       [
+        "Google Trends BR",
+        "0/100 - sem keyword"
+      ],
+      [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter - 44.464 views"
       ],
       [
         "SOV proxy",
-        "Imprensa: 100%"
+        "Imprensa: 67%"
       ],
       [
         "Buzz Score",
-        "33/100"
+        "49/100"
       ]
     ]
   },
@@ -227,12 +289,12 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
@@ -240,7 +302,7 @@
     {
       "metric": "Radar de plataformas",
       "source": "coverage[].o, coverage[].scope",
-      "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+      "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
     },
     {
       "metric": "Share of Voice",
@@ -249,8 +311,8 @@
     },
     {
       "metric": "Buzz Score",
-      "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
-      "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+      "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+      "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
     },
     {
       "metric": "Buzz últimos 7 pontos",
@@ -259,39 +321,48 @@
     }
   ],
   "_raw": {
-    "base_count": 2,
-    "unit": "itens",
+    "base_count": 3,
+    "unit": "sinais",
     "net": 0,
-    "buzz": 33,
+    "buzz": 49,
     "news_count": 2,
     "youtube_count": 0,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "x_count": 0,
+    "trends_score": 0,
+    "trends_top_keyword": "",
+    "trends_values": {},
+    "wiki_score": 84,
+    "wiki_views": 44464,
+    "wiki_top_page": "Harry Potter",
     "platform_counts": {
       "Imprensa": 2,
       "YouTube PT-BR": 0,
-      "Wikipedia": 0
+      "X": 0,
+      "Google Trends BR": 0,
+      "Wikipedia": 1
     },
     "platform_share": {
-      "Imprensa": 100,
+      "Imprensa": 67,
       "YouTube PT-BR": 0,
-      "Wikipedia": 0
+      "X": 0,
+      "Google Trends BR": 0,
+      "Wikipedia": 33
     },
     "sov_proxy_top_platform": "Imprensa",
-    "sov_proxy_top_share": 100,
+    "sov_proxy_top_share": 67,
     "buzz_components": {
-      "volume_component": 18,
-      "diversity_component": 7,
-      "wiki_component": 0,
-      "sentiment_component": 8,
-      "formula": "min(45, itens*9) + min(20, plataformas_ativas*7) + min(20, wiki_score*0.20) + sentimento_liquido"
+      "volume_component": 21,
+      "diversity_component": 10,
+      "trend_component": 0,
+      "wiki_component": 13,
+      "sentiment_component": 5,
+      "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
     },
     "sources": [
       {
         "metric": "Radar de plataformas",
         "source": "coverage[].o, coverage[].scope",
-        "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+        "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
       },
       {
         "metric": "Share of Voice",
@@ -300,8 +371,8 @@
       },
       {
         "metric": "Buzz Score",
-        "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
-        "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+        "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+        "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
       },
       {
         "metric": "Buzz últimos 7 pontos",

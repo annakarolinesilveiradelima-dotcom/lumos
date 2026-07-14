@@ -1,6 +1,6 @@
 {
   "label": "27 mai-2 jun 2026",
-  "updated": "14 jul 2026, 14:49",
+  "updated": "14 jul 2026, 15:28",
   "kpi": {
     "mentions": {
       "v": "0 itens",
@@ -24,7 +24,7 @@
       "v": "0",
       "suf": "/100",
       "d": 0,
-      "sub": "sem cobertura ou sinal real"
+      "sub": "sem cobertura, busca ou sinal real"
     }
   },
   "senti": {
@@ -40,7 +40,7 @@
     82,
     82,
     45,
-    0
+    42
   ],
   "stack": [
     [
@@ -92,40 +92,70 @@
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
     },
     {
       "name": "YouTube PT-BR",
       "vol": 0,
       "share": 0,
       "senti": "neu",
-      "ang": 70,
+      "ang": 25,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
+    },
+    {
+      "name": "X",
+      "vol": 0,
+      "share": 0,
+      "senti": "neu",
+      "ang": 85,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens/sinais coletados por plataforma"
+    },
+    {
+      "name": "Google Trends BR",
+      "vol": 0,
+      "share": 0,
+      "senti": "neu",
+      "ang": 145,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      },
+      "source": "coverage[].o / coverage[].scope",
+      "method": "Contagem de itens/sinais coletados por plataforma"
     },
     {
       "name": "Wikipedia",
       "vol": 0,
       "share": 0,
       "senti": "neu",
-      "ang": 160,
+      "ang": 200,
       "s": {
         "p": 0,
         "n": 0,
         "g": 100
       },
       "source": "coverage[].o / coverage[].scope",
-      "method": "Contagem de itens coletados por plataforma"
+      "method": "Contagem de itens/sinais coletados por plataforma"
     }
   ],
   "platform_share": {
     "Imprensa": 0,
     "YouTube PT-BR": 0,
+    "X": 0,
+    "Google Trends BR": 0,
     "Wikipedia": 0
   },
   "narratives": [],
@@ -135,7 +165,7 @@
     {
       "t": "Semana sem cobertura real",
       "sev": "low",
-      "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 27 mai-2 jun 2026.",
+      "d": "Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela 27 mai-2 jun 2026.",
       "rec": "Manter monitoramento e validar novas fontes historicas."
     }
   ],
@@ -173,7 +203,7 @@
     {
       "metric": "Radar de plataformas",
       "source": "coverage[].o, coverage[].scope",
-      "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+      "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
     },
     {
       "metric": "Share of Voice",
@@ -182,8 +212,8 @@
     },
     {
       "metric": "Buzz Score",
-      "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
-      "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+      "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+      "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
     },
     {
       "metric": "Buzz últimos 7 pontos",
@@ -193,35 +223,36 @@
   ],
   "_raw": {
     "base_count": 0,
-    "unit": "itens",
+    "unit": "sinais",
     "net": 0,
     "buzz": 0,
     "news_count": 0,
     "youtube_count": 0,
+    "x_count": 0,
+    "trends_score": 0,
+    "trends_top_keyword": "",
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "platform_counts": {
       "Imprensa": 0,
       "YouTube PT-BR": 0,
+      "X": 0,
+      "Google Trends BR": 0,
       "Wikipedia": 0
     },
     "platform_share": {
       "Imprensa": 0,
       "YouTube PT-BR": 0,
+      "X": 0,
+      "Google Trends BR": 0,
       "Wikipedia": 0
-    },
-    "buzz_components": {
-      "volume_component": 0,
-      "diversity_component": 0,
-      "wiki_component": 0,
-      "sentiment_component": 0
     },
     "sources": [
       {
         "metric": "Radar de plataformas",
         "source": "coverage[].o, coverage[].scope",
-        "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+        "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
       },
       {
         "metric": "Share of Voice",
@@ -230,8 +261,8 @@
       },
       {
         "metric": "Buzz Score",
-        "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
-        "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+        "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+        "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
       },
       {
         "metric": "Buzz últimos 7 pontos",

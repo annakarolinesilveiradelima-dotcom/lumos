@@ -14,6 +14,11 @@ from zoneinfo import ZoneInfo
 import requests
 import config
 
+try:
+    from pytrends.request import TrendReq
+except Exception:
+    TrendReq = None
+
 
 TIMEOUT = 25
 BR_TZ = ZoneInfo("America/Sao_Paulo")
@@ -28,7 +33,6 @@ PT_MONTHS = [
     "jan", "fev", "mar", "abr", "mai", "jun",
     "jul", "ago", "set", "out", "nov", "dez"
 ]
-
 
 NEWS_QUERIES = [
     "Harry Potter HBO Brasil",
@@ -45,6 +49,13 @@ NEWS_QUERIES = [
     "Arabella Stanton Harry Potter Brasil"
 ]
 
+TRENDS_KEYWORDS = [
+    "Harry Potter série",
+    "Harry Potter HBO",
+    "Harry Potter Max",
+    "Harry Potter HBO Max",
+    "nova série Harry Potter"
+]
 
 YOUTUBE_QUERIES = [
     "harry potter série brasil",
@@ -56,6 +67,12 @@ YOUTUBE_QUERIES = [
     "harry potter nova série elenco"
 ]
 
+X_QUERIES = [
+    '(("harry potter" "série") OR ("harry potter" "serie") OR ("harry potter" "hbo") OR ("harry potter" "max")) lang:pt -is:retweet',
+    '(("nova série" "harry potter") OR ("nova serie" "harry potter")) lang:pt -is:retweet',
+    '(("harry potter" "hbo max") OR ("harry potter" "max brasil") OR ("harry potter" "hbo brasil")) lang:pt -is:retweet',
+    '(("harry potter" "elenco") OR ("harry potter" "atores") OR ("harry potter" "atriz")) lang:pt -is:retweet'
+]
 
 BR_CHANNELS = [
     "omelete",
@@ -86,20 +103,16 @@ BR_CHANNELS = [
     "coisa de nerd"
 ]
 
-
 HARRY_POTTER_SIGNALS = [
     "harry potter",
     "potter"
 ]
-
 
 SERIES_SIGNALS = [
     "série",
     "serie",
     "nova série",
     "nova serie",
-    "série de harry potter",
-    "serie de harry potter",
     "hbo",
     "hbo max",
     "max",
@@ -118,7 +131,6 @@ SERIES_SIGNALS = [
     "gravacoes",
     "temporada"
 ]
-
 
 PORTUGUESE_SIGNALS = [
     "série",
@@ -163,7 +175,6 @@ PORTUGUESE_SIGNALS = [
     "observatorio do cinema"
 ]
 
-
 BLOCKED_YOUTUBE_SIGNALS = [
     "portugal",
     "india",
@@ -189,7 +200,6 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "status",
     "whatsapp status"
 ]
-
 
 WIKI_PAGES = [
     {"project": "pt.wikipedia.org", "article": "Harry_Potter", "label": "Harry Potter PT"},
@@ -258,6 +268,7 @@ def _clean_title(title):
 
     if " - " in title:
         parts = title.rsplit(" - ", 1)
+
         if len(parts[0]) > 10:
             return parts[0].strip()
 
@@ -334,6 +345,10 @@ def _wiki_api_url(project, article, start, end):
     )
 
 
+def _history_path(snapshot_date):
+    return os.path.join(HISTORY_DIR, f"day-{snapshot_date:%Y-%m-%d}.json")
+
+
 def _dedupe_coverage(items):
     seen = set()
     out = []
@@ -356,10 +371,6 @@ def _dedupe_coverage(items):
     return out
 
 
-def _history_path(snapshot_date):
-    return os.path.join(HISTORY_DIR, f"day-{snapshot_date:%Y-%m-%d}.json")
-
-
 def _parse_number(value):
     if value is None:
         return 0
@@ -378,6 +389,12 @@ def _platform_from_source(source):
     if source.startswith("YouTube"):
         return "YouTube PT-BR"
 
+    if source.startswith("X -"):
+        return "X"
+
+    if source.startswith("Google Trends"):
+        return "Google Trends BR"
+
     if source.startswith("Wikipedia"):
         return "Wikipedia"
 
@@ -388,6 +405,8 @@ def _platform_counts(coverage):
     counts = {
         "Imprensa": 0,
         "YouTube PT-BR": 0,
+        "X": 0,
+        "Google Trends BR": 0,
         "Wikipedia": 0
     }
 
@@ -405,6 +424,8 @@ def _platform_shares(counts):
         return {
             "Imprensa": 0,
             "YouTube PT-BR": 0,
+            "X": 0,
+            "Google Trends BR": 0,
             "Wikipedia": 0
         }
 
@@ -429,8 +450,10 @@ def _platforms_payload(counts, shares, sentiment):
 
     layout = [
         ("Imprensa", -90),
-        ("YouTube PT-BR", 70),
-        ("Wikipedia", 160)
+        ("YouTube PT-BR", 25),
+        ("X", 85),
+        ("Google Trends BR", 145),
+        ("Wikipedia", 200)
     ]
 
     for name, angle in layout:
@@ -458,7 +481,7 @@ def _platforms_payload(counts, shares, sentiment):
                 "g": neu if count > 0 else 100
             },
             "source": "coverage[].o / coverage[].scope",
-            "method": "Contagem de itens coletados por plataforma"
+            "method": "Contagem de itens/sinais coletados por plataforma"
         })
 
     return payload
@@ -469,7 +492,7 @@ def _metric_sources():
         {
             "metric": "Radar de plataformas",
             "source": "coverage[].o, coverage[].scope",
-            "method": "Contagem real dos itens coletados por plataforma: Imprensa, YouTube PT-BR e Wikipedia."
+            "method": "Contagem real de sinais coletados por plataforma: Imprensa, YouTube PT-BR, X, Google Trends BR e Wikipedia."
         },
         {
             "metric": "Share of Voice",
@@ -478,8 +501,8 @@ def _metric_sources():
         },
         {
             "metric": "Buzz Score",
-            "source": "Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews",
-            "method": "Score 0-100 baseado em volume de itens, diversidade de plataformas, Wikipedia score e sentimento líquido."
+            "source": "Google News RSS BR + YouTube PT-BR + X Recent Search + Google Trends BR + Wikipedia Pageviews",
+            "method": "Score 0-100 baseado em volume, diversidade de plataformas, Google Trends, Wikipedia e sentimento líquido."
         },
         {
             "metric": "Buzz últimos 7 pontos",
@@ -489,31 +512,34 @@ def _metric_sources():
     ]
 
 
-def _buzz_score(count, counts, wiki_score, net):
+def _buzz_score(count, counts, wiki_score, trend_score, net):
     active_platforms = sum(1 for value in counts.values() if value > 0)
 
-    volume_component = min(45, count * 9)
-    diversity_component = min(20, active_platforms * 7)
-    wiki_component = min(20, round(wiki_score * 0.20))
-    sentiment_component = max(0, min(15, 8 + round(net / 10)))
+    volume_component = min(35, count * 7)
+    diversity_component = min(20, active_platforms * 5)
+    trend_component = min(20, round(trend_score * 0.20))
+    wiki_component = min(15, round(wiki_score * 0.15))
+    sentiment_component = max(0, min(10, 5 + round(net / 12)))
 
-    buzz = volume_component + diversity_component + wiki_component + sentiment_component
+    buzz = volume_component + diversity_component + trend_component + wiki_component + sentiment_component
 
-    if count <= 0 and wiki_score <= 0:
+    if count <= 0 and wiki_score <= 0 and trend_score <= 0:
         return 0, {
             "volume_component": 0,
             "diversity_component": 0,
+            "trend_component": 0,
             "wiki_component": 0,
             "sentiment_component": 0,
-            "formula": "Sem itens coletados e sem sinal Wikipedia."
+            "formula": "Sem itens coletados, sem Google Trends e sem Wikipedia."
         }
 
     return max(1, min(100, buzz)), {
         "volume_component": volume_component,
         "diversity_component": diversity_component,
+        "trend_component": trend_component,
         "wiki_component": wiki_component,
         "sentiment_component": sentiment_component,
-        "formula": "min(45, itens*9) + min(20, plataformas_ativas*7) + min(20, wiki_score*0.20) + sentimento_liquido"
+        "formula": "min(35,itens*7)+min(20,plataformas*5)+min(20,trends*0.20)+min(15,wiki*0.15)+sentimento"
     }
 
 
@@ -552,7 +578,6 @@ def _load_buzz_history(limit=7):
             continue
 
     rows = sorted(rows, key=lambda item: item[0])
-
     values = [value for _, value in rows[-limit:]]
 
     while len(values) < limit:
@@ -590,8 +615,6 @@ def collect_google_news_week(start, end):
 
             items = channel.findall("item")
 
-            print(f"[google_news] query='{query}' retornou {len(items)} itens RSS")
-
             for item in items:
                 raw_title = item.findtext("title") or ""
                 title = _clean_title(raw_title)
@@ -623,10 +646,205 @@ def collect_google_news_week(start, end):
             print(f"[google_news] falha query='{query}': {exc}")
 
     results = _dedupe_coverage(results)
-
     print(f"[google_news] {len(results)} materias reais coletadas na semana")
-
     return results
+
+
+def collect_google_trends_series(start, end):
+    if TrendReq is None:
+        print("[trends] pytrends nao instalado/importado. Pulando Google Trends.")
+        return {
+            "debug": {"status": "pytrends_missing"},
+            "points": []
+        }
+
+    debug = {
+        "status": "not_run",
+        "keywords": TRENDS_KEYWORDS,
+        "geo": "BR",
+        "timeframe": "",
+        "error": "",
+        "rows": 0
+    }
+
+    try:
+        pytrends = TrendReq(
+            hl="pt-BR",
+            tz=180,
+            timeout=(10, 25),
+            retries=2,
+            backoff_factor=0.2
+        )
+
+        timeframe = f"{start:%Y-%m-%d} {end:%Y-%m-%d}"
+        debug["timeframe"] = timeframe
+
+        pytrends.build_payload(
+            TRENDS_KEYWORDS,
+            cat=0,
+            timeframe=timeframe,
+            geo="BR",
+            gprop=""
+        )
+
+        df = pytrends.interest_over_time()
+
+        if df is None or df.empty:
+            debug["status"] = "empty"
+            return {
+                "debug": debug,
+                "points": []
+            }
+
+        if "isPartial" in df.columns:
+            df = df.drop(columns=["isPartial"])
+
+        points = []
+
+        for idx, row in df.iterrows():
+            try:
+                dt = idx.to_pydatetime().replace(tzinfo=BR_TZ)
+            except Exception:
+                continue
+
+            values = {}
+
+            for kw in TRENDS_KEYWORDS:
+                try:
+                    values[kw] = int(row.get(kw, 0) or 0)
+                except Exception:
+                    values[kw] = 0
+
+            score = max(values.values()) if values else 0
+            top_keyword = max(values, key=values.get) if values else ""
+
+            points.append({
+                "date": dt,
+                "score": score,
+                "top_keyword": top_keyword,
+                "values": values
+            })
+
+        debug["status"] = "ok"
+        debug["rows"] = len(points)
+
+        debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "trends_debug.json")
+
+        with open(debug_path, "w", encoding="utf-8") as file:
+            json.dump({
+                "generated_at": _stamp(),
+                "status": debug["status"],
+                "keywords": TRENDS_KEYWORDS,
+                "geo": "BR",
+                "timeframe": timeframe,
+                "rows": len(points),
+                "sample": [
+                    {
+                        "date": point["date"].isoformat(),
+                        "score": point["score"],
+                        "top_keyword": point["top_keyword"],
+                        "values": point["values"]
+                    }
+                    for point in points[-20:]
+                ]
+            }, file, ensure_ascii=False, indent=2)
+
+        print(f"[trends] {len(points)} pontos coletados para Google Trends BR")
+
+        return {
+            "debug": debug,
+            "points": points
+        }
+
+    except Exception as exc:
+        debug["status"] = "error"
+        debug["error"] = str(exc)
+        print(f"[trends] falha Google Trends: {exc}")
+
+        try:
+            debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "trends_debug.json")
+
+            with open(debug_path, "w", encoding="utf-8") as file:
+                json.dump({
+                    "generated_at": _stamp(),
+                    "status": "error",
+                    "error": str(exc),
+                    "keywords": TRENDS_KEYWORDS,
+                    "geo": "BR"
+                }, file, ensure_ascii=False, indent=2)
+
+        except Exception:
+            pass
+
+        return {
+            "debug": debug,
+            "points": []
+        }
+
+
+def _trend_for_range(trends_data, start, end):
+    points = (trends_data or {}).get("points", []) or []
+
+    if not points:
+        return {
+            "score": 0,
+            "top_keyword": "",
+            "values": {},
+            "coverage": []
+        }
+
+    selected = []
+
+    for point in points:
+        dt = point.get("date")
+
+        if not dt:
+            continue
+
+        if start <= dt <= end:
+            selected.append(point)
+
+    if not selected:
+        return {
+            "score": 0,
+            "top_keyword": "",
+            "values": {},
+            "coverage": []
+        }
+
+    avg_score = round(sum(point.get("score", 0) for point in selected) / len(selected))
+
+    keyword_totals = {}
+
+    for point in selected:
+        for kw, value in (point.get("values", {}) or {}).items():
+            keyword_totals[kw] = keyword_totals.get(kw, 0) + int(value or 0)
+
+    top_keyword = max(keyword_totals, key=keyword_totals.get) if keyword_totals else ""
+
+    avg_values = {}
+
+    for kw, total in keyword_totals.items():
+        avg_values[kw] = round(total / len(selected))
+
+    coverage = []
+
+    if avg_score > 0:
+        coverage.append({
+            "o": "Google Trends BR",
+            "u": "https://trends.google.com/trends/",
+            "title": f"Interesse de busca BR: {top_keyword or 'Harry Potter série'}",
+            "cat": "neu",
+            "time": _range_label(start, end),
+            "scope": f"Google Trends BR - score medio {avg_score}/100"
+        })
+
+    return {
+        "score": avg_score,
+        "top_keyword": top_keyword,
+        "values": avg_values,
+        "coverage": coverage
+    }
 
 
 def collect_youtube_current(api_key):
@@ -662,11 +880,6 @@ def collect_youtube_current(api_key):
                 "error": ""
             }
 
-            print(
-                f"[youtube] query='{query}' "
-                f"current-only sem data/region/lang status={response.status_code}"
-            )
-
             if response.status_code != 200:
                 query_log["error"] = response.text[:500]
                 query_logs.append(query_log)
@@ -678,8 +891,6 @@ def collect_youtube_current(api_key):
 
             query_log["returned"] = len(items)
             query_logs.append(query_log)
-
-            print(f"[youtube] query='{query}' retornou {len(items)} videos brutos")
 
             raw_items.extend(items)
 
@@ -739,35 +950,13 @@ def collect_youtube_current(api_key):
         if not title:
             continue
 
-        title_lower = title.lower()
-        description_lower = description.lower()
-        channel_lower = channel.lower()
-        combined_text = f"{title_lower} {description_lower} {channel_lower}"
+        combined_text = f"{title.lower()} {description.lower()} {channel.lower()}"
 
-        allowed_channel = any(
-            br_channel in channel_lower
-            for br_channel in BR_CHANNELS
-        )
-
-        has_hp_signal = any(
-            signal in combined_text
-            for signal in HARRY_POTTER_SIGNALS
-        )
-
-        has_series_signal = any(
-            signal in combined_text
-            for signal in SERIES_SIGNALS
-        )
-
-        has_pt_signal = any(
-            signal in combined_text
-            for signal in PORTUGUESE_SIGNALS
-        )
-
-        is_blocked = any(
-            blocked in combined_text
-            for blocked in BLOCKED_YOUTUBE_SIGNALS
-        )
+        allowed_channel = any(br_channel in channel.lower() for br_channel in BR_CHANNELS)
+        has_hp_signal = any(signal in combined_text for signal in HARRY_POTTER_SIGNALS)
+        has_series_signal = any(signal in combined_text for signal in SERIES_SIGNALS)
+        has_pt_signal = any(signal in combined_text for signal in PORTUGUESE_SIGNALS)
+        is_blocked = any(blocked in combined_text for blocked in BLOCKED_YOUTUBE_SIGNALS)
 
         if allowed_channel:
             if not (has_hp_signal and has_series_signal):
@@ -807,6 +996,134 @@ def collect_youtube_current(api_key):
     return results
 
 
+def collect_x_current(bearer_token):
+    if not bearer_token:
+        print("[x] X_BEARER_TOKEN nao configurado. Pulando X.")
+        return []
+
+    headers = {
+        "Authorization": f"Bearer {bearer_token}"
+    }
+
+    results = []
+    debug_rows = []
+
+    for query in X_QUERIES:
+        params = {
+            "query": query,
+            "max_results": 25,
+            "sort_order": "recency",
+            "tweet.fields": "created_at,public_metrics,lang,author_id,conversation_id",
+            "expansions": "author_id",
+            "user.fields": "username,name,verified,public_metrics,location"
+        }
+
+        try:
+            response = requests.get(
+                "https://api.x.com/2/tweets/search/recent",
+                headers=headers,
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(f"[x] query='{query}' status={response.status_code}")
+
+            debug_item = {
+                "query": query,
+                "status": response.status_code,
+                "returned": 0,
+                "error": ""
+            }
+
+            if response.status_code != 200:
+                debug_item["error"] = response.text[:700]
+                debug_rows.append(debug_item)
+                print("[x] resposta:", response.text[:700])
+                continue
+
+            data = response.json()
+            tweets = data.get("data", []) or []
+            users = {
+                user.get("id"): user
+                for user in (data.get("includes", {}) or {}).get("users", [])
+            }
+
+            debug_item["returned"] = len(tweets)
+            debug_rows.append(debug_item)
+
+            for tweet in tweets:
+                text = tweet.get("text", "")
+                tweet_id = tweet.get("id", "")
+                author_id = tweet.get("author_id", "")
+                created_at = tweet.get("created_at", "")
+                metrics = tweet.get("public_metrics", {}) or {}
+                user = users.get(author_id, {}) or {}
+
+                if not tweet_id or not text:
+                    continue
+
+                combined = text.lower()
+
+                if "harry potter" not in combined:
+                    continue
+
+                if not any(sig in combined for sig in ["série", "serie", "hbo", "max", "elenco", "reboot"]):
+                    continue
+
+                username = user.get("username", "x")
+                url = f"https://x.com/{username}/status/{tweet_id}"
+
+                engagement = (
+                    int(metrics.get("like_count", 0) or 0)
+                    + int(metrics.get("retweet_count", 0) or 0)
+                    + int(metrics.get("reply_count", 0) or 0)
+                    + int(metrics.get("quote_count", 0) or 0)
+                )
+
+                cat = _cat(text)
+
+                results.append({
+                    "o": f"X - @{username}",
+                    "u": url,
+                    "title": text[:220],
+                    "cat": cat,
+                    "time": created_at,
+                    "scope": f"X Recent Search PT-BR - engagement {engagement}",
+                    "_engagement": engagement
+                })
+
+            time.sleep(0.5)
+
+        except Exception as exc:
+            debug_rows.append({
+                "query": query,
+                "status": "exception",
+                "returned": 0,
+                "error": str(exc)
+            })
+            print(f"[x] falha query='{query}': {exc}")
+
+    try:
+        debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "x_debug.json")
+
+        with open(debug_path, "w", encoding="utf-8") as file:
+            json.dump({
+                "generated_at": _stamp(),
+                "queries": debug_rows,
+                "result_count": len(results)
+            }, file, ensure_ascii=False, indent=2)
+
+        print(f"[x] debug salvo em {debug_path}")
+    except Exception as exc:
+        print(f"[x] nao consegui salvar debug: {exc}")
+
+    results = _dedupe_coverage(results)
+
+    print(f"[x] {len(results)} posts X coletados")
+
+    return results
+
+
 def _wiki_score_from_views(total_views):
     if total_views <= 0:
         return 0
@@ -833,11 +1150,6 @@ def collect_wikipedia_pageviews_week(start, end):
         try:
             response = requests.get(url, headers=headers, timeout=TIMEOUT)
 
-            print(
-                f"[wiki] project='{project}' article='{article}' "
-                f"{start.date()} to {end.date()} status={response.status_code}"
-            )
-
             if response.status_code != 200:
                 print("[wiki] resposta:", response.text[:300])
                 continue
@@ -845,10 +1157,7 @@ def collect_wikipedia_pageviews_week(start, end):
             data = response.json()
             items = data.get("items", [])
 
-            views = sum(
-                int(item.get("views", 0) or 0)
-                for item in items
-            )
+            views = sum(int(item.get("views", 0) or 0) for item in items)
 
             if views <= 0:
                 continue
@@ -884,11 +1193,6 @@ def collect_wikipedia_pageviews_week(start, end):
             "time": _range_label(start, end),
             "scope": f"Wikipedia Pageviews - {total_views:,} views na semana".replace(",", ".")
         })
-
-    print(
-        f"[wiki] total_views={total_views} score={score} "
-        f"top='{top_page['label'] if top_page else ''}'"
-    )
 
     return {
         "score": score,
@@ -927,7 +1231,7 @@ def _narratives_from_coverage(coverage):
             "senti": _senti_from_cat(item.get("cat", "neu")),
             "pf": platform,
             "trend": "flat",
-            "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+            "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
             "q": "",
             "pct": 50,
             "src": [
@@ -947,7 +1251,7 @@ def _risks_from_coverage(coverage, week_label):
             {
                 "t": "Semana sem cobertura real",
                 "sev": "low",
-                "d": f"Nao foram encontradas materias, videos em portugues ou sinais para a janela {week_label}.",
+                "d": f"Nao foram encontradas materias, posts, videos, buscas ou sinais para a janela {week_label}.",
                 "rec": "Manter monitoramento e validar novas fontes historicas."
             }
         ]
@@ -967,7 +1271,7 @@ def _risks_from_coverage(coverage, week_label):
         risks.append({
             "t": "Sensibilidade em torno de elenco",
             "sev": "mid",
-            "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+            "d": "Materias, videos ou posts sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
             "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
         })
 
@@ -996,17 +1300,27 @@ def _opps_from_coverage(coverage, week_label):
         {
             "ico": "book",
             "t": "Explorar fidelidade aos livros",
-            "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            "d": "Quando existe cobertura, post social, busca, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
         },
         {
             "ico": "film",
             "t": "Organizar narrativa de comparacao",
-            "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            "d": "Usar videos, posts, buscas, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
         }
     ]
 
 
 def _empty_snapshot(snapshot_date, week_label):
+    counts = {
+        "Imprensa": 0,
+        "YouTube PT-BR": 0,
+        "X": 0,
+        "Google Trends BR": 0,
+        "Wikipedia": 0
+    }
+
+    shares = _platform_shares(counts)
+
     return {
         "label": week_label,
         "updated": _stamp(),
@@ -1033,7 +1347,7 @@ def _empty_snapshot(snapshot_date, week_label):
                 "v": "0",
                 "suf": "/100",
                 "d": 0,
-                "sub": "sem cobertura ou sinal real"
+                "sub": "sem cobertura, busca ou sinal real"
             }
         },
         "senti": {
@@ -1052,16 +1366,8 @@ def _empty_snapshot(snapshot_date, week_label):
             [0, 100, 0],
             [0, 100, 0]
         ],
-        "platforms": _platforms_payload(
-            {"Imprensa": 0, "YouTube PT-BR": 0, "Wikipedia": 0},
-            {"Imprensa": 0, "YouTube PT-BR": 0, "Wikipedia": 0},
-            (0, 100, 0)
-        ),
-        "platform_share": {
-            "Imprensa": 0,
-            "YouTube PT-BR": 0,
-            "Wikipedia": 0
-        },
+        "platforms": _platforms_payload(counts, shares, (0, 100, 0)),
+        "platform_share": shares,
         "narratives": [],
         "coverage": [],
         "creators": [],
@@ -1081,38 +1387,34 @@ def _empty_snapshot(snapshot_date, week_label):
         "metricSources": _metric_sources(),
         "_raw": {
             "base_count": 0,
-            "unit": "itens",
+            "unit": "sinais",
             "net": 0,
             "buzz": 0,
             "news_count": 0,
             "youtube_count": 0,
+            "x_count": 0,
+            "trends_score": 0,
+            "trends_top_keyword": "",
             "wiki_score": 0,
             "wiki_views": 0,
             "wiki_top_page": "",
-            "platform_counts": {
-                "Imprensa": 0,
-                "YouTube PT-BR": 0,
-                "Wikipedia": 0
-            },
-            "platform_share": {
-                "Imprensa": 0,
-                "YouTube PT-BR": 0,
-                "Wikipedia": 0
-            },
-            "buzz_components": {
-                "volume_component": 0,
-                "diversity_component": 0,
-                "wiki_component": 0,
-                "sentiment_component": 0
-            },
+            "platform_counts": counts,
+            "platform_share": shares,
             "sources": _metric_sources(),
             "backfill": True
         }
     }
 
 
-def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
-    coverage = _dedupe_coverage(coverage)[:12]
+def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki, trend_info=None):
+    coverage = _dedupe_coverage(coverage)[:18]
+
+    trend_info = trend_info or {
+        "score": 0,
+        "top_keyword": "",
+        "values": {},
+        "coverage": []
+    }
 
     pos, neu, neg, sentiment_index = _build_sentiment(coverage)
     net = pos - neg
@@ -1122,11 +1424,17 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
     wiki_views = int((wiki or {}).get("total_views", 0) or 0)
     wiki_top_page = (wiki or {}).get("top_page", "")
 
+    trend_score = int(trend_info.get("score", 0) or 0)
+    trend_top_keyword = trend_info.get("top_keyword", "")
+    trend_values = trend_info.get("values", {}) or {}
+
     counts = _platform_counts(coverage)
     shares = _platform_shares(counts)
-    buzz, buzz_components = _buzz_score(count, counts, wiki_score, net)
+    buzz, buzz_components = _buzz_score(count, counts, wiki_score, trend_score, net)
 
     youtube_count = counts.get("YouTube PT-BR", 0)
+    x_count = counts.get("X", 0)
+    trends_count = counts.get("Google Trends BR", 0)
     wiki_count = counts.get("Wikipedia", 0)
     press_count = counts.get("Imprensa", 0)
 
@@ -1151,14 +1459,27 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
                 "u": item.get("u", "#")
             })
 
+        if outlet.startswith("X -"):
+            creators.append({
+                "h": outlet.replace("X - ", ""),
+                "pf": "X",
+                "type": "Post sobre a série de Harry Potter",
+                "senti": _senti_from_cat(item.get("cat", "neu")),
+                "reach": "engajamento coletado no post",
+                "rel": 70,
+                "risk": "mid" if item.get("cat") == "neg" else "low",
+                "c": "#1D9BF0",
+                "u": item.get("u", "#")
+            })
+
     return {
         "label": week_label,
         "updated": _stamp(),
         "kpi": {
             "mentions": {
-                "v": f"{count} item" + ("" if count == 1 else "s"),
+                "v": f"{count} sinal" + ("" if count == 1 else "s"),
                 "d": 0,
-                "sub": f"{press_count} imprensa - {youtube_count} YouTube PT-BR - {wiki_count} Wikipedia - fonte: coverage"
+                "sub": f"{press_count} imprensa - {x_count} X - {youtube_count} YouTube - {trends_count} Trends - {wiki_count} Wikipedia"
             },
             "sentiment": {
                 "v": ("+" if net >= 0 else "") + str(net),
@@ -1177,14 +1498,14 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
                 "v": str(buzz),
                 "suf": "/100",
                 "d": 0,
-                "sub": "volume + diversidade + Wikipedia + sentimento"
+                "sub": f"volume + plataformas + Trends {trend_score}/100 + Wiki {wiki_score}/100"
             }
         },
         "senti": {
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em Google News RSS BR, YouTube PT-BR e Wikipedia Pageviews"
+            "tone": "Baseado em Google News RSS BR, Google Trends BR, YouTube PT-BR, X Recent Search e Wikipedia Pageviews"
         },
         "buzz7": _load_buzz_history(),
         "stack": [
@@ -1199,17 +1520,19 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
         "platforms": _platforms_payload(counts, shares, (pos, neu, neg)),
         "platform_share": shares,
         "narratives": _narratives_from_coverage(coverage),
-        "coverage": coverage[:8],
-        "creators": creators[:8],
+        "coverage": coverage[:10],
+        "creators": creators[:10],
         "risks": _risks_from_coverage(coverage, week_label),
         "heroOpp": {
-            "title": "Leitura semanal por sinais reais",
-            "desc": f"Janela {week_label}: {count} sinais coletados entre imprensa, YouTube PT-BR e Wikipedia.",
+            "title": "Leitura por sinais reais",
+            "desc": f"Janela {week_label}: {count} sinais coletados entre imprensa, X, YouTube, Google Trends e Wikipedia.",
             "facts": [
                 ["Janela", week_label],
                 ["Itens reais/sinais", str(count)],
                 ["Imprensa", str(press_count)],
+                ["X", str(x_count)],
                 ["YouTube PT-BR", str(youtube_count)],
+                ["Google Trends BR", f"{trend_score}/100 - {trend_top_keyword or 'sem keyword'}"],
                 ["Wikipedia", f"{wiki_top_page or 'sem sinal'} - {wiki_views:,} views".replace(",", ".")],
                 ["SOV proxy", f"{top_platform}: {top_share}%"],
                 ["Buzz Score", f"{buzz}/100"]
@@ -1220,11 +1543,15 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
         "metricSources": _metric_sources(),
         "_raw": {
             "base_count": count,
-            "unit": "itens",
+            "unit": "sinais",
             "net": net,
             "buzz": buzz,
             "news_count": press_count,
             "youtube_count": youtube_count,
+            "x_count": x_count,
+            "trends_score": trend_score,
+            "trends_top_keyword": trend_top_keyword,
+            "trends_values": trend_values,
             "wiki_score": wiki_score,
             "wiki_views": wiki_views,
             "wiki_top_page": wiki_top_page,
@@ -1240,11 +1567,16 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
     }
 
 
-def _collect_sources_for_range(start, end, youtube_key, include_youtube=False):
+def _collect_sources_for_range(start, end, youtube_key, x_token, trends_data, include_youtube=False, include_x=False):
     coverage = []
 
     google_news_coverage = collect_google_news_week(start, end)
     coverage.extend(google_news_coverage)
+
+    trend_info = _trend_for_range(trends_data, start, end)
+
+    if trend_info.get("coverage"):
+        coverage.extend(trend_info.get("coverage", []))
 
     if include_youtube:
         youtube_coverage = collect_youtube_current(youtube_key)
@@ -1252,12 +1584,18 @@ def _collect_sources_for_range(start, end, youtube_key, include_youtube=False):
     else:
         print("[youtube] pulando YouTube no backfill historico para economizar quota")
 
+    if include_x:
+        x_coverage = collect_x_current(x_token)
+        coverage.extend(x_coverage)
+    else:
+        print("[x] pulando X no backfill historico para usar apenas busca recente no current")
+
     wiki = collect_wikipedia_pageviews_week(start, end)
 
     if wiki.get("coverage"):
         coverage.extend(wiki.get("coverage", []))
 
-    return _dedupe_coverage(coverage), wiki
+    return _dedupe_coverage(coverage), wiki, trend_info
 
 
 def _save_snapshot(snapshot_date, snapshot):
@@ -1271,17 +1609,25 @@ def _save_snapshot(snapshot_date, snapshot):
     print(f"[backfill] snapshot salvo: {path}")
 
 
-def _build_current_day(youtube_key):
+def _build_current_day(youtube_key, x_token, trends_data):
     now = _now_br()
 
     start = datetime(now.year, now.month, now.day, 0, 0, 0, tzinfo=BR_TZ)
     end = now
     label = _label(now)
 
-    coverage, wiki = _collect_sources_for_range(start, end, youtube_key, include_youtube=True)
+    coverage, wiki, trend_info = _collect_sources_for_range(
+        start,
+        end,
+        youtube_key,
+        x_token,
+        trends_data,
+        include_youtube=True,
+        include_x=True
+    )
 
     if coverage:
-        snapshot = _snapshot_from_coverage(end, label, coverage, wiki)
+        snapshot = _snapshot_from_coverage(end, label, coverage, wiki, trend_info)
         snapshot["label"] = label
         return snapshot
 
@@ -1336,17 +1682,16 @@ def _inject_buzz7_into_feed(feed):
         ordered = []
 
         for key, snapshot in weeks.items():
-            label = snapshot.get("label", key)
             raw = snapshot.get("_raw", {}) or {}
             buzz = raw.get("buzz")
 
             if buzz is None:
                 buzz = (snapshot.get("kpi", {}).get("buzz", {}) or {}).get("v", 0)
 
-            ordered.append((key, label, _parse_number(buzz)))
+            ordered.append((key, _parse_number(buzz)))
 
         ordered = list(reversed(ordered))
-        series = [buzz for _, _, buzz in ordered][-7:]
+        series = [buzz for _, buzz in ordered][-7:]
 
         while len(series) < 7:
             series.insert(0, 0)
@@ -1394,19 +1739,27 @@ def regenerate_feed(current_day):
 
 def main():
     youtube_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    x_token = os.environ.get("X_BEARER_TOKEN", "").strip()
 
     if youtube_key:
         print(f"[backfill] YouTube key detectada com {len(youtube_key)} caracteres")
     else:
         print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
 
+    if x_token:
+        print(f"[backfill] X bearer token detectado com {len(x_token)} caracteres")
+    else:
+        print("[backfill] X_BEARER_TOKEN nao configurado. X sera ignorado.")
+
     print("[backfill] inicio")
-    print("[backfill] fonte historica: Google News RSS BR + Wikipedia Pageviews")
-    print("[backfill] fonte diaria: Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews")
+    print("[backfill] fonte historica: Google News RSS BR + Google Trends BR + Wikipedia Pageviews")
+    print("[backfill] fonte diaria: Google News RSS BR + Google Trends BR + YouTube PT-BR + X + Wikipedia Pageviews")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 
     now = _now_br()
+
+    trends_data = collect_google_trends_series(TEASER_DATE, now)
 
     start = TEASER_DATE
     week_index = 1
@@ -1422,12 +1775,20 @@ def main():
         print(f"[backfill] Semana {week_index}: {week_label}")
 
         try:
-            coverage, wiki = _collect_sources_for_range(start, end, youtube_key, include_youtube=False)
+            coverage, wiki, trend_info = _collect_sources_for_range(
+                start,
+                end,
+                youtube_key,
+                x_token,
+                trends_data,
+                include_youtube=False,
+                include_x=False
+            )
 
-            print(f"[backfill] {len(coverage)} itens reais/sinais na semana {week_label}")
+            print(f"[backfill] {len(coverage)} sinais reais na semana {week_label}")
 
             if coverage:
-                snapshot = _snapshot_from_coverage(end, week_label, coverage, wiki)
+                snapshot = _snapshot_from_coverage(end, week_label, coverage, wiki, trend_info)
                 _save_snapshot(end, snapshot)
             else:
                 snapshot = _empty_snapshot(end, week_label)
@@ -1444,7 +1805,7 @@ def main():
         start = start + timedelta(days=7)
         week_index += 1
 
-    current_day = _build_current_day(youtube_key)
+    current_day = _build_current_day(youtube_key, x_token, trends_data)
     regenerate_feed(current_day)
 
     print("[backfill] concluido")
