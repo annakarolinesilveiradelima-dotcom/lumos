@@ -1,6 +1,6 @@
 {
   "label": "1-7 abr 2026",
-  "updated": "14 jul 2026, 16:25",
+  "updated": "14 jul 2026, 16:49",
   "kpi": {
     "mentions": {
       "v": "18 sinals",
@@ -224,6 +224,22 @@
       ]
     },
     {
+      "t": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Rolling Stone Brasil",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5"
+        }
+      ]
+    },
+    {
       "t": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
       "vol": 1,
       "senti": "neu",
@@ -236,22 +252,6 @@
         {
           "o": "O GLOBO",
           "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "É possível separar a obra do autor? Série de Harry Potter reacende debate",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, Google Trends BR, YouTube PT-BR, X ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "CNN Brasil",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNWkyNzdYd3NpNFNxeU5qUGV6TGtkQ2lzWHJlUW5RMkpudXIyYmRFcUx3aDUwWFRVbHZDTVV0TDZTV0VZTTZCbllEcW5mS1JsSUVHQUw0LUh3d2pZQWlCUlhVY1F5cHA2QnFVNU5POTBCN2Y0LTV6Rmw0ODVrNG9kcVhtSTJmdElXaWVwaVJnTmVNeTR4UFZKbTRxMEFLNTJSaktnTURtN1FhNHY2SWlOa1dVd1pucVB1QWFOV1NR?oc=5"
         }
       ]
     }
@@ -287,6 +287,14 @@
       "title": "Que horas estreia ‘À Procura de Harry’, especial sobre a série de ‘Harry Potter’?",
       "cat": "pos",
       "time": "5 abr, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Rolling Stone Brasil",
+      "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
+      "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
+      "cat": "pos",
+      "time": "2 abr, 04:00",
       "scope": "Google News RSS BR"
     },
     {
@@ -326,14 +334,6 @@
       "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVWxNU0tweks0a3JfS3JIT2tqa280Q0tSa2dHMElydzNBOEZXekJVb2llRVJPR0F0U2hjQkEtRkJBV3JQaUpCY3cwM09zMUhKaG1iWlVJem1yUkcycFQwc1dQLUdmVlFicU1vQmdmempJVHd5SWV0NlRtUlA0SXJvMmFqWk1lM25HcUxXOExxN1g1Q2FnQUE?oc=5",
       "title": "Série de \"Harry Potter\" lança trailer de novo especial, veja",
       "cat": "neu",
-      "time": "2 abr, 04:00",
-      "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Rolling Stone Brasil",
-      "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
-      "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
-      "cat": "pos",
       "time": "2 abr, 04:00",
       "scope": "Google News RSS BR"
     }
