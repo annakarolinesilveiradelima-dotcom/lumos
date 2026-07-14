@@ -1,14 +1,14 @@
 {
   "label": "29 abr-5 mai 2026",
-  "updated": "14 jul 2026, 14:14",
+  "updated": "14 jul 2026, 14:22",
   "kpi": {
     "mentions": {
-      "v": "2 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 29 abr-5 mai 2026"
+      "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 29 abr-5 mai 2026"
     },
     "sentiment": {
-      "v": "+50",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "93",
+      "v": "78",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 93/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 50,
-    "neu": 50,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    93,
-    93,
-    93,
-    93,
-    93,
-    93,
-    93
+    78,
+    78,
+    78,
+    78,
+    78,
+    78,
+    78
   ],
   "stack": [
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ],
     [
-      50,
-      50,
+      100,
+      0,
       0
     ]
   ],
@@ -82,28 +82,28 @@
     {
       "name": "Imprensa",
       "vol": 1,
-      "senti": "neu",
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 50,
+        "p": 100,
         "n": 0,
-        "g": 50
+        "g": 0
       }
     },
     {
       "name": "YouTube PT-BR",
       "vol": 1,
-      "senti": "neu",
+      "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 50,
+        "p": 100,
         "n": 0,
-        "g": 50
+        "g": 0
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 93,
+      "vol": 1,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -129,22 +129,6 @@
           "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5"
         }
       ]
-    },
-    {
-      "t": "Interesse enciclopedico por 'Harry Potter'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-        }
-      ]
     }
   ],
   "coverage": [
@@ -155,14 +139,6 @@
       "cat": "pos",
       "time": "30 abr, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-      "title": "Interesse enciclopedico por 'Harry Potter'",
-      "cat": "neu",
-      "time": "29 abr-5 mai 2026",
-      "scope": "Wikipedia Pageviews - 152.793 views na semana"
     }
   ],
   "creators": [],
@@ -188,11 +164,11 @@
       ],
       [
         "Itens reais/sinais",
-        "2"
+        "1"
       ],
       [
         "Wikipedia",
-        "Harry Potter - 152.793 views"
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -210,16 +186,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 2,
+    "base_count": 1,
     "unit": "itens",
-    "net": 50,
-    "buzz": 93,
+    "net": 100,
+    "buzz": 78,
     "news_count": 1,
     "youtube_count": 0,
-    "wiki_score": 93,
-    "wiki_views": 152793,
-    "wiki_top_page": "Harry Potter",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 75
+    "sentiment_index": 100
   }
 }

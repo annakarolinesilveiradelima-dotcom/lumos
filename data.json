@@ -1,5 +1,5 @@
 {
-  "generated_at": "14 jul 2026, 14:15",
+  "generated_at": "14 jul 2026, 14:24",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,12 +11,12 @@
       "days": {
         "d0": {
           "label": "14 jul 2026",
-          "updated": "14 jul 2026, 14:15",
+          "updated": "14 jul 2026, 14:24",
           "kpi": {
             "mentions": {
-              "v": "3 items",
+              "v": "4 items",
               "d": 0,
-              "sub": "3 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 14 jul 2026"
+              "sub": "3 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 14 jul 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -31,10 +31,10 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "44",
+              "v": "100",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 0/100"
+              "sub": "buzz com Wikipedia 100/100"
             }
           },
           "senti": {
@@ -44,13 +44,13 @@
             "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            44,
-            44,
-            44,
-            44,
-            44,
-            44,
-            44
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
           ],
           "stack": [
             [
@@ -114,7 +114,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
+              "vol": 100,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -172,6 +172,22 @@
                   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT0hDRmE3QlMxdTl0NEtfSXpXOElTVENMNUFaZXdfM1N4eVY0Y29Ma2ZrQkxqWjBjWEdONllJTGJYRGtITXA3RUdLYTZJcU43X2o5Qm9hVUF6T3dtX285dDZPRThlNDVhREtmS0ZDMFMzbndaa3ljcEd2R2pMVzNuV2lrZGVCRTFOLUxjTmxxRVJ6aVU?oc=5"
                 }
               ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -198,6 +214,14 @@
               "cat": "neu",
               "time": "15 jun, 18:33",
               "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "14 jun-14 jul 2026",
+              "scope": "Wikipedia Pageviews - 416.069 views na semana"
             }
           ],
           "creators": [],
@@ -223,11 +247,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "3"
+                "4"
               ],
               [
                 "Wikipedia",
-                "sem sinal - 0 views"
+                "Harry Potter - 416.069 views"
               ]
             ]
           },
@@ -245,15 +269,15 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 3,
+            "base_count": 4,
             "unit": "itens",
             "net": 0,
-            "buzz": 44,
+            "buzz": 100,
             "news_count": 3,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
+            "wiki_score": 100,
+            "wiki_views": 416069,
+            "wiki_top_page": "Harry Potter",
             "backfill": true,
             "sentiment_index": 50
           }
@@ -262,18 +286,18 @@
       "weeks": {
         "w0": {
           "label": "8-14 jul 2026",
-          "updated": "14 jul 2026, 14:15",
+          "updated": "14 jul 2026, 14:24",
           "kpi": {
             "mentions": {
-              "v": "0 itens",
+              "v": "1 item",
               "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 8-14 jul 2026"
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 8-14 jul 2026"
             },
             "sentiment": {
-              "v": "-",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "indice semanal por cobertura/sinal"
             },
             "sov": {
               "v": "-",
@@ -282,26 +306,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "0",
+              "v": "91",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura ou sinal real"
+              "sub": "buzz com Wikipedia 91/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            91,
+            91,
+            91,
+            91,
+            91,
+            91,
+            91
           ],
           "stack": [
             [
@@ -342,7 +366,7 @@
           ],
           "platforms": [
             {
-              "name": "Imprensa/YouTube PT-BR/Wikipedia",
+              "name": "Imprensa",
               "vol": 1,
               "senti": "neu",
               "ang": -90,
@@ -351,22 +375,70 @@
                 "n": 0,
                 "g": 100
               }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 91,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter film series'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+              "title": "Interesse enciclopedico por 'Harry Potter film series'",
+              "cat": "neu",
+              "time": "8-14 jul 2026",
+              "scope": "Wikipedia Pageviews - 111.241 views na semana"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na cobertura",
               "sev": "low",
-              "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 8-14 jul 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 8-14 jul 2026.",
             "facts": [
               [
                 "Janela",
@@ -374,37 +446,43 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
               ],
               [
-                "Dados ficticios",
-                "nao"
+                "Itens reais/sinais",
+                "1"
               ],
               [
-                "Status",
-                "sem cobertura/sinal real"
+                "Wikipedia",
+                "Harry Potter film series - 111.241 views"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 8-14 jul 2026 ainda nao tem fonte real suficiente."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
             }
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 0,
+            "base_count": 1,
             "unit": "itens",
             "net": 0,
-            "buzz": 0,
+            "buzz": 91,
             "news_count": 0,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
+            "wiki_score": 91,
+            "wiki_views": 111241,
+            "wiki_top_page": "Harry Potter film series",
+            "backfill": true,
+            "sentiment_index": 50
           }
         },
         "w-1": {
@@ -1572,213 +1650,12 @@
         },
         "w-7": {
           "label": "1-7 jul 2026",
-          "updated": "14 jul 2026, 14:15",
+          "updated": "14 jul 2026, 14:24",
           "kpi": {
             "mentions": {
               "v": "1 item",
               "d": 0,
               "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 1-7 jul 2026"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "indice semanal por cobertura/sinal"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "86",
-              "suf": "/100",
-              "d": 0,
-              "sub": "buzz com Wikipedia 86/100"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            86,
-            86,
-            86,
-            86,
-            86,
-            86,
-            86
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 1,
-              "senti": "neu",
-              "ang": 70,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 86,
-              "senti": "neu",
-              "ang": 160,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "1-7 jul 2026",
-              "scope": "Wikipedia Pageviews - 63.161 views na semana"
-            }
-          ],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 1-7 jul 2026.",
-            "facts": [
-              [
-                "Janela",
-                "1-7 jul 2026"
-              ],
-              [
-                "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Itens reais/sinais",
-                "1"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 63.161 views"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 1,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 86,
-            "news_count": 0,
-            "youtube_count": 0,
-            "wiki_score": 86,
-            "wiki_views": 63161,
-            "wiki_top_page": "Harry Potter",
-            "backfill": true,
-            "sentiment_index": 50
-          }
-        },
-        "w-8": {
-          "label": "24-30 jun 2026",
-          "updated": "14 jul 2026, 14:15",
-          "kpi": {
-            "mentions": {
-              "v": "2 items",
-              "d": 0,
-              "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 24-30 jun 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -1888,22 +1765,6 @@
           ],
           "narratives": [
             {
-              "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "CNN Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
-                }
-              ]
-            },
-            {
               "t": "Interesse enciclopedico por 'Harry Potter'",
               "vol": 1,
               "senti": "neu",
@@ -1922,20 +1783,213 @@
           ],
           "coverage": [
             {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "1-7 jul 2026",
+              "scope": "Wikipedia Pageviews - 115.655 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 1-7 jul 2026.",
+            "facts": [
+              [
+                "Janela",
+                "1-7 jul 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "1"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter - 115.655 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 1,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 91,
+            "news_count": 0,
+            "youtube_count": 0,
+            "wiki_score": 91,
+            "wiki_views": 115655,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-8": {
+          "label": "24-30 jun 2026",
+          "updated": "14 jul 2026, 14:23",
+          "kpi": {
+            "mentions": {
+              "v": "1 item",
+              "d": 0,
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 24-30 jun 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "28",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 0/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
               "o": "CNN Brasil",
               "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5",
               "title": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
               "cat": "neu",
               "time": "30 jun, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "24-30 jun 2026",
-              "scope": "Wikipedia Pageviews - 113.844 views na semana"
             }
           ],
           "creators": [],
@@ -1961,11 +2015,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "1"
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 113.844 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -1983,22 +2037,22 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 2,
+            "base_count": 1,
             "unit": "itens",
             "net": 0,
-            "buzz": 91,
+            "buzz": 28,
             "news_count": 1,
             "youtube_count": 0,
-            "wiki_score": 91,
-            "wiki_views": 113844,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-9": {
           "label": "17-23 jun 2026",
-          "updated": "14 jul 2026, 14:14",
+          "updated": "14 jul 2026, 14:23",
           "kpi": {
             "mentions": {
               "v": "0 itens",
@@ -2145,7 +2199,7 @@
         },
         "w-10": {
           "label": "10-16 jun 2026",
-          "updated": "14 jul 2026, 14:14",
+          "updated": "14 jul 2026, 14:23",
           "kpi": {
             "mentions": {
               "v": "3 items",
@@ -2394,306 +2448,12 @@
         },
         "w-11": {
           "label": "3-9 jun 2026",
-          "updated": "14 jul 2026, 14:14",
-          "kpi": {
-            "mentions": {
-              "v": "0 itens",
-              "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 3-9 jun 2026"
-            },
-            "sentiment": {
-              "v": "-",
-              "suf": "",
-              "d": 0,
-              "sub": "sem base suficiente"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "sem cobertura ou sinal real"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
-          },
-          "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa/YouTube PT-BR/Wikipedia",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [],
-          "coverage": [],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 3-9 jun 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
-            "facts": [
-              [
-                "Janela",
-                "3-9 jun 2026"
-              ],
-              [
-                "Marco",
-                "teaser 25/03/2026"
-              ],
-              [
-                "Dados ficticios",
-                "nao"
-              ],
-              [
-                "Status",
-                "sem cobertura/sinal real"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 3-9 jun 2026 ainda nao tem fonte real suficiente."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 0,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 0,
-            "news_count": 0,
-            "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
-          }
-        },
-        "w-12": {
-          "label": "27 mai-2 jun 2026",
-          "updated": "14 jul 2026, 14:14",
-          "kpi": {
-            "mentions": {
-              "v": "0 itens",
-              "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 27 mai-2 jun 2026"
-            },
-            "sentiment": {
-              "v": "-",
-              "suf": "",
-              "d": 0,
-              "sub": "sem base suficiente"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "sem cobertura ou sinal real"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
-          },
-          "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa/YouTube PT-BR/Wikipedia",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [],
-          "coverage": [],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 27 mai-2 jun 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
-            "facts": [
-              [
-                "Janela",
-                "27 mai-2 jun 2026"
-              ],
-              [
-                "Marco",
-                "teaser 25/03/2026"
-              ],
-              [
-                "Dados ficticios",
-                "nao"
-              ],
-              [
-                "Status",
-                "sem cobertura/sinal real"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 27 mai-2 jun 2026 ainda nao tem fonte real suficiente."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 0,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 0,
-            "news_count": 0,
-            "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
-          }
-        },
-        "w-13": {
-          "label": "20-26 mai 2026",
-          "updated": "14 jul 2026, 14:14",
+          "updated": "14 jul 2026, 14:23",
           "kpi": {
             "mentions": {
               "v": "1 item",
               "d": 0,
-              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 20-26 mai 2026"
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 3-9 jun 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -2708,10 +2468,10 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "28",
+              "v": "82",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 0/100"
+              "sub": "buzz com Wikipedia 82/100"
             }
           },
           "senti": {
@@ -2721,13 +2481,13 @@
             "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            28,
-            28,
-            28,
-            28,
-            28,
-            28,
-            28
+            82,
+            82,
+            82,
+            82,
+            82,
+            82,
+            82
           ],
           "stack": [
             [
@@ -2791,7 +2551,409 @@
             },
             {
               "name": "Wikipedia",
+              "vol": 82,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
               "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "3-9 jun 2026",
+              "scope": "Wikipedia Pageviews - 35.798 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 3-9 jun 2026.",
+            "facts": [
+              [
+                "Janela",
+                "3-9 jun 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "1"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter - 35.798 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 1,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 82,
+            "news_count": 0,
+            "youtube_count": 0,
+            "wiki_score": 82,
+            "wiki_views": 35798,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-12": {
+          "label": "27 mai-2 jun 2026",
+          "updated": "14 jul 2026, 14:23",
+          "kpi": {
+            "mentions": {
+              "v": "1 item",
+              "d": 0,
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 27 mai-2 jun 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "93",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 93/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            93,
+            93,
+            93,
+            93,
+            93,
+            93,
+            93
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 93,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "27 mai-2 jun 2026",
+              "scope": "Wikipedia Pageviews - 138.924 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 27 mai-2 jun 2026.",
+            "facts": [
+              [
+                "Janela",
+                "27 mai-2 jun 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "1"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter - 138.924 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 1,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 93,
+            "news_count": 0,
+            "youtube_count": 0,
+            "wiki_score": 93,
+            "wiki_views": 138924,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-13": {
+          "label": "20-26 mai 2026",
+          "updated": "14 jul 2026, 14:23",
+          "kpi": {
+            "mentions": {
+              "v": "2 items",
+              "d": 0,
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 20-26 mai 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "94",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 94/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 94,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -2817,6 +2979,22 @@
                   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
                 }
               ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Paapa Essiedu'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -2827,6 +3005,14 @@
               "cat": "neu",
               "time": "24 mai, 04:00",
               "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Paapa_Essiedu",
+              "title": "Interesse enciclopedico por 'Paapa Essiedu'",
+              "cat": "neu",
+              "time": "20-26 mai 2026",
+              "scope": "Wikipedia Pageviews - 161.758 views na semana"
             }
           ],
           "creators": [],
@@ -2852,7 +3038,457 @@
               ],
               [
                 "Itens reais/sinais",
-                "1"
+                "2"
+              ],
+              [
+                "Wikipedia",
+                "Paapa Essiedu - 161.758 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 2,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 94,
+            "news_count": 1,
+            "youtube_count": 0,
+            "wiki_score": 94,
+            "wiki_views": 161758,
+            "wiki_top_page": "Paapa Essiedu",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-14": {
+          "label": "13-19 mai 2026",
+          "updated": "14 jul 2026, 14:23",
+          "kpi": {
+            "mentions": {
+              "v": "2 items",
+              "d": 0,
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 13-19 mai 2026"
+            },
+            "sentiment": {
+              "v": "+50",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "90",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 90/100"
+            }
+          },
+          "senti": {
+            "pos": 50,
+            "neu": 50,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90
+          ],
+          "stack": [
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ],
+            [
+              50,
+              50,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 50,
+                "n": 0,
+                "g": 50
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 50,
+                "n": 0,
+                "g": 50
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 90,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Atriz deixa elenco da série de \"Harry Potter\"; saiba o motivo",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5",
+              "title": "Atriz deixa elenco da série de \"Harry Potter\"; saiba o motivo",
+              "cat": "pos",
+              "time": "19 mai, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "13-19 mai 2026",
+              "scope": "Wikipedia Pageviews - 104.154 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 13-19 mai 2026.",
+            "facts": [
+              [
+                "Janela",
+                "13-19 mai 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "2"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter - 104.154 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 2,
+            "unit": "itens",
+            "net": 50,
+            "buzz": 90,
+            "news_count": 1,
+            "youtube_count": 0,
+            "wiki_score": 90,
+            "wiki_views": 104154,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 75
+          }
+        },
+        "w-15": {
+          "label": "6-12 mai 2026",
+          "updated": "14 jul 2026, 14:22",
+          "kpi": {
+            "mentions": {
+              "v": "2 items",
+              "d": 0,
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 6-12 mai 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "36",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 0/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            36,
+            36,
+            36,
+            36,
+            36,
+            36,
+            36
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 2,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Quanto custou para produzir a série de Harry Potter?",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Times Brasil | CNBC",
+                  "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWjJMZTJnOEx5cktSRUZyQmphWXFmc1c0eXcxb3hhbmE0WW9UY1RSMlZtbG5jVDJ3YnhMaGxwdURXb0dTcTBVOUYzUno5bm9wYld2N29Od3ZrYjRjMDBHczVEQy1pVkFtbVhjY19Vd01HdzFSaXZzX0F5Nl80VmhqT3hQdkVtU2dzWmMtNXRn?oc=5"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5",
+              "title": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
+              "cat": "neu",
+              "time": "6 mai, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Times Brasil | CNBC",
+              "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWjJMZTJnOEx5cktSRUZyQmphWXFmc1c0eXcxb3hhbmE0WW9UY1RSMlZtbG5jVDJ3YnhMaGxwdURXb0dTcTBVOUYzUno5bm9wYld2N29Od3ZrYjRjMDBHczVEQy1pVkFtbVhjY19Vd01HdzFSaXZzX0F5Nl80VmhqT3hQdkVtU2dzWmMtNXRn?oc=5",
+              "title": "Quanto custou para produzir a série de Harry Potter?",
+              "cat": "neu",
+              "time": "12 mai, 04:00",
+              "scope": "Google News RSS BR"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 6-12 mai 2026.",
+            "facts": [
+              [
+                "Janela",
+                "6-12 mai 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "2"
               ],
               [
                 "Wikipedia",
@@ -2874,11 +3510,11 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 1,
+            "base_count": 2,
             "unit": "itens",
             "net": 0,
-            "buzz": 28,
-            "news_count": 1,
+            "buzz": 36,
+            "news_count": 2,
             "youtube_count": 0,
             "wiki_score": 0,
             "wiki_views": 0,
@@ -2887,14 +3523,14 @@
             "sentiment_index": 50
           }
         },
-        "w-14": {
-          "label": "13-19 mai 2026",
-          "updated": "14 jul 2026, 14:14",
+        "w-16": {
+          "label": "29 abr-5 mai 2026",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
               "v": "1 item",
               "d": 0,
-              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 13-19 mai 2026"
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 29 abr-5 mai 2026"
             },
             "sentiment": {
               "v": "+100",
@@ -3004,7 +3640,7 @@
           ],
           "narratives": [
             {
-              "t": "Atriz deixa elenco da série de \"Harry Potter\"; saiba o motivo",
+              "t": "HBO revela o elenco da família Weasley para série original de Harry Potter",
               "vol": 1,
               "senti": "pos",
               "pf": "Imprensa",
@@ -3014,19 +3650,19 @@
               "pct": 50,
               "src": [
                 {
-                  "o": "CNN Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
+                  "o": "R7 Entretenimento",
+                  "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5"
                 }
               ]
             }
           ],
           "coverage": [
             {
-              "o": "CNN Brasil",
-              "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5",
-              "title": "Atriz deixa elenco da série de \"Harry Potter\"; saiba o motivo",
+              "o": "R7 Entretenimento",
+              "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5",
+              "title": "HBO revela o elenco da família Weasley para série original de Harry Potter",
               "cat": "pos",
-              "time": "19 mai, 04:00",
+              "time": "30 abr, 04:00",
               "scope": "Google News RSS BR"
             }
           ],
@@ -3041,11 +3677,11 @@
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 13-19 mai 2026.",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 29 abr-5 mai 2026.",
             "facts": [
               [
                 "Janela",
-                "13-19 mai 2026"
+                "29 abr-5 mai 2026"
               ],
               [
                 "Marco",
@@ -3088,14 +3724,14 @@
             "sentiment_index": 100
           }
         },
-        "w-15": {
-          "label": "6-12 mai 2026",
-          "updated": "14 jul 2026, 14:14",
+        "w-17": {
+          "label": "22-28 abr 2026",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
               "v": "3 items",
               "d": 0,
-              "sub": "2 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 6-12 mai 2026"
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 22-28 abr 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -3110,10 +3746,10 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "91",
+              "v": "83",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 91/100"
+              "sub": "buzz com Wikipedia 83/100"
             }
           },
           "senti": {
@@ -3123,13 +3759,13 @@
             "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            91,
-            91,
-            91,
-            91,
-            91,
-            91,
-            91
+            83,
+            83,
+            83,
+            83,
+            83,
+            83,
+            83
           ],
           "stack": [
             [
@@ -3193,481 +3829,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 91,
-              "senti": "neu",
-              "ang": 160,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [
-            {
-              "t": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "CNN Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Quanto custou para produzir a série de Harry Potter?",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Times Brasil | CNBC",
-                  "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWjJMZTJnOEx5cktSRUZyQmphWXFmc1c0eXcxb3hhbmE0WW9UY1RSMlZtbG5jVDJ3YnhMaGxwdURXb0dTcTBVOUYzUno5bm9wYld2N29Od3ZrYjRjMDBHczVEQy1pVkFtbVhjY19Vd01HdzFSaXZzX0F5Nl80VmhqT3hQdkVtU2dzWmMtNXRn?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "CNN Brasil",
-              "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemJmTkNCamtzUksxckU2a2JYTnNKR3RuWlpYZ0lhams0alZnVXBQZjBRbzBkQXR6aWFKN1lqTVNwRUVvSVFVXzRfY1ltVENHTWxnMDFGTUN1eFNJdkdPLUU0SXpPTmFJcFJWTlMzYkRRbUFjc1lFRkVoOFJOemMxYTlGejRiUC1HQ2NHcmZaSDF1U19Gektzeg?oc=5",
-              "title": "\"Harry Potter\": série da HBO é renovada para segunda temporada",
-              "cat": "neu",
-              "time": "6 mai, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Times Brasil | CNBC",
-              "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWjJMZTJnOEx5cktSRUZyQmphWXFmc1c0eXcxb3hhbmE0WW9UY1RSMlZtbG5jVDJ3YnhMaGxwdURXb0dTcTBVOUYzUno5bm9wYld2N29Od3ZrYjRjMDBHczVEQy1pVkFtbVhjY19Vd01HdzFSaXZzX0F5Nl80VmhqT3hQdkVtU2dzWmMtNXRn?oc=5",
-              "title": "Quanto custou para produzir a série de Harry Potter?",
-              "cat": "neu",
-              "time": "12 mai, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "6-12 mai 2026",
-              "scope": "Wikipedia Pageviews - 111.288 views na semana"
-            }
-          ],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Risco baixo na cobertura",
-              "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 6-12 mai 2026.",
-            "facts": [
-              [
-                "Janela",
-                "6-12 mai 2026"
-              ],
-              [
-                "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Itens reais/sinais",
-                "3"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 111.288 views"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 3,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 91,
-            "news_count": 2,
-            "youtube_count": 0,
-            "wiki_score": 91,
-            "wiki_views": 111288,
-            "wiki_top_page": "Harry Potter",
-            "backfill": true,
-            "sentiment_index": 50
-          }
-        },
-        "w-16": {
-          "label": "29 abr-5 mai 2026",
-          "updated": "14 jul 2026, 14:14",
-          "kpi": {
-            "mentions": {
-              "v": "2 items",
-              "d": 0,
-              "sub": "1 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 29 abr-5 mai 2026"
-            },
-            "sentiment": {
-              "v": "+50",
-              "suf": "/100",
-              "d": 0,
-              "sub": "indice semanal por cobertura/sinal"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "93",
-              "suf": "/100",
-              "d": 0,
-              "sub": "buzz com Wikipedia 93/100"
-            }
-          },
-          "senti": {
-            "pos": 50,
-            "neu": 50,
-            "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            93,
-            93,
-            93,
-            93,
-            93,
-            93,
-            93
-          ],
-          "stack": [
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ],
-            [
-              50,
-              50,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 50,
-                "n": 0,
-                "g": 50
-              }
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 1,
-              "senti": "neu",
-              "ang": 70,
-              "s": {
-                "p": 50,
-                "n": 0,
-                "g": 50
-              }
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 93,
-              "senti": "neu",
-              "ang": 160,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [
-            {
-              "t": "HBO revela o elenco da família Weasley para série original de Harry Potter",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "R7 Entretenimento",
-                  "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "R7 Entretenimento",
-              "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5",
-              "title": "HBO revela o elenco da família Weasley para série original de Harry Potter",
-              "cat": "pos",
-              "time": "30 abr, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "29 abr-5 mai 2026",
-              "scope": "Wikipedia Pageviews - 152.793 views na semana"
-            }
-          ],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Sensibilidade em torno de elenco",
-              "sev": "mid",
-              "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
-            }
-          ],
-          "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 29 abr-5 mai 2026.",
-            "facts": [
-              [
-                "Janela",
-                "29 abr-5 mai 2026"
-              ],
-              [
-                "Marco",
-                "25/03/2026"
-              ],
-              [
-                "Itens reais/sinais",
-                "2"
-              ],
-              [
-                "Wikipedia",
-                "Harry Potter - 152.793 views"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 2,
-            "unit": "itens",
-            "net": 50,
-            "buzz": 93,
-            "news_count": 1,
-            "youtube_count": 0,
-            "wiki_score": 93,
-            "wiki_views": 152793,
-            "wiki_top_page": "Harry Potter",
-            "backfill": true,
-            "sentiment_index": 75
-          }
-        },
-        "w-17": {
-          "label": "22-28 abr 2026",
-          "updated": "14 jul 2026, 14:13",
-          "kpi": {
-            "mentions": {
-              "v": "2 items",
-              "d": 0,
-              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 22-28 abr 2026"
-            },
-            "sentiment": {
-              "v": "+0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "indice semanal por cobertura/sinal"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "36",
-              "suf": "/100",
-              "d": 0,
-              "sub": "buzz com Wikipedia 0/100"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
-          },
-          "buzz7": [
-            36,
-            36,
-            36,
-            36,
-            36,
-            36,
-            36
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa",
-              "vol": 2,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            },
-            {
-              "name": "YouTube PT-BR",
-              "vol": 1,
-              "senti": "neu",
-              "ang": 70,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 1,
+              "vol": 83,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -3709,6 +3871,22 @@
                   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
                 }
               ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -3727,6 +3905,14 @@
               "cat": "neu",
               "time": "27 abr, 04:00",
               "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "22-28 abr 2026",
+              "scope": "Wikipedia Pageviews - 42.776 views na semana"
             }
           ],
           "creators": [],
@@ -3752,11 +3938,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "3"
               ],
               [
                 "Wikipedia",
-                "sem sinal - 0 views"
+                "Harry Potter - 42.776 views"
               ]
             ]
           },
@@ -3774,27 +3960,27 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 2,
+            "base_count": 3,
             "unit": "itens",
             "net": 0,
-            "buzz": 36,
+            "buzz": 83,
             "news_count": 2,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
+            "wiki_score": 83,
+            "wiki_views": 42776,
+            "wiki_top_page": "Harry Potter",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-18": {
           "label": "15-21 abr 2026",
-          "updated": "14 jul 2026, 14:13",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
-              "v": "2 items",
+              "v": "3 items",
               "d": 0,
-              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 15-21 abr 2026"
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 15-21 abr 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -3809,10 +3995,10 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "36",
+              "v": "95",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 0/100"
+              "sub": "buzz com Wikipedia 95/100"
             }
           },
           "senti": {
@@ -3822,13 +4008,13 @@
             "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            36,
-            36,
-            36,
-            36,
-            36,
-            36,
-            36
+            95,
+            95,
+            95,
+            95,
+            95,
+            95,
+            95
           ],
           "stack": [
             [
@@ -3892,7 +4078,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
+              "vol": 95,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -3934,6 +4120,22 @@
                   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
                 }
               ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter film series'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -3952,6 +4154,14 @@
               "cat": "neu",
               "time": "16 abr, 04:00",
               "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+              "title": "Interesse enciclopedico por 'Harry Potter film series'",
+              "cat": "neu",
+              "time": "15-21 abr 2026",
+              "scope": "Wikipedia Pageviews - 185.288 views na semana"
             }
           ],
           "creators": [],
@@ -3977,11 +4187,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "3"
               ],
               [
                 "Wikipedia",
-                "sem sinal - 0 views"
+                "Harry Potter film series - 185.288 views"
               ]
             ]
           },
@@ -3999,30 +4209,30 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 2,
+            "base_count": 3,
             "unit": "itens",
             "net": 0,
-            "buzz": 36,
+            "buzz": 95,
             "news_count": 2,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
+            "wiki_score": 95,
+            "wiki_views": 185288,
+            "wiki_top_page": "Harry Potter film series",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-19": {
           "label": "8-14 abr 2026",
-          "updated": "14 jul 2026, 14:13",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
-              "v": "5 items",
+              "v": "6 items",
               "d": 0,
-              "sub": "5 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 8-14 abr 2026"
+              "sub": "5 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 8-14 abr 2026"
             },
             "sentiment": {
-              "v": "+20",
+              "v": "+17",
               "suf": "/100",
               "d": 0,
               "sub": "indice semanal por cobertura/sinal"
@@ -4034,61 +4244,61 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "70",
+              "v": "97",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 0/100"
+              "sub": "buzz com Wikipedia 97/100"
             }
           },
           "senti": {
-            "pos": 20,
-            "neu": 80,
+            "pos": 17,
+            "neu": 83,
             "neg": 0,
             "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            70,
-            70,
-            70,
-            70,
-            70,
-            70,
-            70
+            97,
+            97,
+            97,
+            97,
+            97,
+            97,
+            97
           ],
           "stack": [
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ],
             [
-              20,
-              80,
+              17,
+              83,
               0
             ]
           ],
@@ -4099,9 +4309,9 @@
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 20,
+                "p": 17,
                 "n": 0,
-                "g": 80
+                "g": 83
               }
             },
             {
@@ -4110,14 +4320,14 @@
               "senti": "neu",
               "ang": 70,
               "s": {
-                "p": 20,
+                "p": 17,
                 "n": 0,
-                "g": 80
+                "g": 83
               }
             },
             {
               "name": "Wikipedia",
-              "vol": 1,
+              "vol": 97,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -4207,6 +4417,22 @@
                   "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9GU0puSTdHUm1xcEVhNUpZVEk4Um9QenAzLXZrSWNuRHB0M3FLV3lDZ2ROaktHUWxGaWxvU1dtQTBMUVFiQ0pyQTc5TTRZdTk0eXhjLWNsdVFHb0R6X3BrSlRGdDNpTXJGWHl0Z2pnM2pyWWhU?oc=5"
                 }
               ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter film series'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -4249,6 +4475,14 @@
               "cat": "neu",
               "time": "12 abr, 04:00",
               "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+              "title": "Interesse enciclopedico por 'Harry Potter film series'",
+              "cat": "neu",
+              "time": "8-14 abr 2026",
+              "scope": "Wikipedia Pageviews - 245.923 views na semana"
             }
           ],
           "creators": [],
@@ -4274,11 +4508,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "5"
+                "6"
               ],
               [
                 "Wikipedia",
-                "sem sinal - 0 views"
+                "Harry Potter film series - 245.923 views"
               ]
             ]
           },
@@ -4296,22 +4530,22 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 5,
+            "base_count": 6,
             "unit": "itens",
-            "net": 20,
-            "buzz": 70,
+            "net": 17,
+            "buzz": 97,
             "news_count": 5,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
+            "wiki_score": 97,
+            "wiki_views": 245923,
+            "wiki_top_page": "Harry Potter film series",
             "backfill": true,
-            "sentiment_index": 60
+            "sentiment_index": 58
           }
         },
         "w-20": {
           "label": "1-7 abr 2026",
-          "updated": "14 jul 2026, 14:13",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
               "v": "12 items",
@@ -4334,7 +4568,7 @@
               "v": "100",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 97/100"
+              "sub": "buzz com Wikipedia 100/100"
             }
           },
           "senti": {
@@ -4414,7 +4648,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 97,
+              "vol": 100,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -4490,22 +4724,6 @@
               ]
             },
             {
-              "t": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Rolling Stone Brasil",
-                  "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5"
-                }
-              ]
-            },
-            {
               "t": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
               "vol": 1,
               "senti": "neu",
@@ -4518,6 +4736,22 @@
                 {
                   "o": "O GLOBO",
                   "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "É possível separar a obra do autor? Série de Harry Potter reacende debate",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNWkyNzdYd3NpNFNxeU5qUGV6TGtkQ2lzWHJlUW5RMkpudXIyYmRFcUx3aDUwWFRVbHZDTVV0TDZTV0VZTTZCbllEcW5mS1JsSUVHQUw0LUh3d2pZQWlCUlhVY1F5cHA2QnFVNU5POTBCN2Y0LTV6Rmw0ODVrNG9kcVhtSTJmdElXaWVwaVJnTmVNeTR4UFZKbTRxMEFLNTJSaktnTURtN1FhNHY2SWlOa1dVd1pucVB1QWFOV1NR?oc=5"
                 }
               ]
             }
@@ -4556,14 +4790,6 @@
               "scope": "Google News RSS BR"
             },
             {
-              "o": "Rolling Stone Brasil",
-              "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmtUa3kzWUdqQ2xJWXhYTE5yZER5X0hqejNUTmlRTnZRTEwxblNmX1hNQkozWVlzalZwbVFPQWl6Q0JteEVqZjdlQ251N3ZSNFpncmxoMFdJdVZXRXRlQzRzUXBaNGRmNlU5SVJTX2VxR2FHaXlDV2dqZDBUczB5R1h5VVZRTHlWdFVUUTZvVUpYMEx0b2wwZFFIdUFCS0V1WVdGQ1lGUlNqQm5SbkNrR2hCdHZaMThnV0FfWms0QQ?oc=5",
-              "title": "Antes da estreia, série de ‘Harry Potter’ ganha especial de bastidores na HBO Max",
-              "cat": "pos",
-              "time": "2 abr, 04:00",
-              "scope": "Google News RSS BR"
-            },
-            {
               "o": "O GLOBO",
               "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZC1EZWJfdl91SjNFeGd5cnpRdzZQTXRtaGJBWjFpekg4VzJDOUp6N3AwaGtVQXVPQWhDb1dZX2FJTWJwc2JZcFhEYUFFR0FLSDZUb3V2MEVaQ0RURkVnaHk2bmk2bDNmNDU5TTlSU2RDTzNFOHMxWVRxRVRjZHg3dlpQMnhEanlDWjZxblFidjlXTEhfeGpBckNCNmJNZWVvdi12aHVQNjAxSmlGdDVNY3dXQUE2NTlvY0hpU2hHbUFyR0N0NkNteUpicUxyT0JnZ1JzcUtuNlh2N1RSZ3h2T2MtUjEwYUdybFBXNEVKam9HX2ZaTklocGc5M2J5WEFpeFHSAZACQVVfeXFMTS1QMThfNk8yTFpuNDY2SC1OS0NHbHAxTDYtUTNZVTVUYVpkenZyX2VvZzFLeVVLNkFtMWloRWNDdnVqU2tjOVM1ekNFSUM0aVNVMnFHcVZoaXBFZ2pfb1JnYXo3VWltSnp4X1VNYzMxbFlxQ2t5d2FyVGNHVzBwWVgtLTZnSDdUSUdQRTRVSGpEbGR0eEVTTERNWm1WeF9NUnZJYk4xeEpKRjZkaWZZVU9qajNHa2pjcW9GbWhEbUJncjJrUVVNc0RxRGVESjVpT2xwa3hZMmpVVHo1R2p5dDYzNVVYS3V1bllOWktRQVByTlhqWUlJU0VSNmh6ajljd2F6c3FBUlRTRFpKaERkWUQ?oc=5",
               "title": "'À Procura de Harry': HBO Max vai exibir especial com bastidores de nova série de Harry Potter; veja trailer",
@@ -4585,6 +4811,14 @@
               "title": "Owen Cooper pode estrelar série de \"Harry Potter\"? Entenda rumores",
               "cat": "esp",
               "time": "5 abr, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "n3news.com.br",
+              "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNDBKUDRpRmlvbm9JSDhDMVBwN3pISEtRMjNSdXJjZUM4bS1PNjVZUEpJMjBuMVdxeXBzTmJ5RUx0QTA4dGhzWnRvcktDek9hWjJ4U2FPQ1FWb3ZGZVVnaE9MczVnTXplWFV3SkRpQWRHbDdKMUNxUVhhZVZJRFBYNTg4ZVBJcG8zR0VGYks5M1QxeTla?oc=5",
+              "title": "Harry Potter ganha documentário de bastidores na HBO Max",
+              "cat": "neu",
+              "time": "3 abr, 04:00",
               "scope": "Google News RSS BR"
             }
           ],
@@ -4615,7 +4849,7 @@
               ],
               [
                 "Wikipedia",
-                "Harry Potter TV series - 242.970 views"
+                "Harry Potter TV series - 339.063 views"
               ]
             ]
           },
@@ -4639,8 +4873,8 @@
             "buzz": 100,
             "news_count": 12,
             "youtube_count": 0,
-            "wiki_score": 97,
-            "wiki_views": 242970,
+            "wiki_score": 100,
+            "wiki_views": 339063,
             "wiki_top_page": "Harry Potter TV series",
             "backfill": true,
             "sentiment_index": 66
@@ -4648,7 +4882,7 @@
         },
         "w-21": {
           "label": "25-31 mar 2026",
-          "updated": "14 jul 2026, 14:13",
+          "updated": "14 jul 2026, 14:22",
           "kpi": {
             "mentions": {
               "v": "12 items",

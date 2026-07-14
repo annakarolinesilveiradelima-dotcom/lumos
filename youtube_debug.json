@@ -1,8 +1,9 @@
 {
-  "generated_at": "14 jul 2026, 14:15",
+  "generated_at": "14 jul 2026, 14:24",
   "window": {
-    "start": "2026-06-14T17:15:28.990027Z",
-    "end": "2026-07-14T17:15:28.990027Z"
+    "mode": "sem filtro de data",
+    "start": "not_used",
+    "end": "not_used"
   },
   "raw_count": 0,
   "sample": []
