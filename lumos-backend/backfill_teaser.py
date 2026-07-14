@@ -35,7 +35,9 @@ NEWS_QUERIES = [
     "Harry Potter Max Brasil",
     "Harry Potter HBO Max Brasil",
     "serie Harry Potter HBO Brasil",
+    "série Harry Potter HBO Brasil",
     "nova serie Harry Potter HBO Brasil",
+    "nova série Harry Potter HBO Brasil",
     "Harry Potter HBO elenco Brasil",
     "Paapa Essiedu Harry Potter Brasil",
     "John Lithgow Harry Potter Brasil",
@@ -44,14 +46,22 @@ NEWS_QUERIES = [
 ]
 
 YOUTUBE_QUERIES = [
+    "Harry Potter série",
+    "Harry Potter serie",
+    "Harry Potter série HBO",
+    "Harry Potter serie HBO",
+    "Harry Potter série Max",
+    "Harry Potter serie Max",
     "Harry Potter HBO Brasil",
     "Harry Potter HBO Max Brasil",
+    "Harry Potter Max Brasil",
     "Harry Potter série HBO Brasil",
-    "Harry Potter série Max Brasil",
+    "Harry Potter serie HBO Brasil",
+    "Harry Potter HBO elenco",
+    "Harry Potter série elenco",
     "Harry Potter HBO Omelete",
-    "Harry Potter HBO elenco Brasil",
-    "Harry Potter Max Brasil elenco",
-    "Harry Potter HBO Brasil Omelete"
+    "nova série Harry Potter",
+    "nova serie Harry Potter"
 ]
 
 BR_CHANNELS = [
@@ -79,6 +89,34 @@ BR_CHANNELS = [
     "adorocinema",
     "cinepop",
     "coisa de nerd"
+]
+
+BR_TEXT_SIGNALS = [
+    "brasil",
+    "hbo brasil",
+    "max brasil",
+    "hbo max brasil",
+    "harry potter série",
+    "harry potter serie",
+    "série harry potter",
+    "serie harry potter",
+    "nova série",
+    "nova serie",
+    "em português",
+    "em portugues",
+    "português",
+    "portugues",
+    "pt-br",
+    "dublado",
+    "legendado",
+    "elenco",
+    "estreia",
+    "omelete",
+    "jovem nerd",
+    "ei nerd",
+    "pipocando",
+    "observatório do cinema",
+    "observatorio do cinema"
 ]
 
 BLOCKED_YOUTUBE_SIGNALS = [
@@ -378,7 +416,7 @@ def collect_youtube_week(start, end, api_key):
             "part": "snippet",
             "type": "video",
             "q": query,
-            "maxResults": 10,
+            "maxResults": 15,
             "order": "date",
             "publishedAfter": _iso_utc(start),
             "publishedBefore": _iso_utc(end),
@@ -426,24 +464,29 @@ def collect_youtube_week(start, end, api_key):
                 title_lower = title.lower()
                 description_lower = description.lower()
                 channel_lower = channel.lower()
+                combined_text = f"{title_lower} {description_lower} {channel_lower}"
 
                 allowed_channel = any(
                     br_channel in channel_lower
                     for br_channel in BR_CHANNELS
                 )
 
+                has_br_signal = any(
+                    signal in combined_text
+                    for signal in BR_TEXT_SIGNALS
+                )
+
                 is_blocked = any(
-                    blocked in title_lower
-                    or blocked in description_lower
-                    or blocked in channel_lower
+                    blocked in combined_text
                     for blocked in BLOCKED_YOUTUBE_SIGNALS
                 )
 
-                # Filtro BR radical: só entra canal brasileiro aprovado.
-                if not allowed_channel:
+                # Entra se for canal brasileiro aprovado OU se tiver sinal forte de Brasil/português.
+                if not allowed_channel and not has_br_signal:
                     continue
 
-                if is_blocked:
+                # Bloqueia global/ruído óbvio, exceto se for canal brasileiro aprovado.
+                if is_blocked and not allowed_channel:
                     continue
 
                 pub_date = None

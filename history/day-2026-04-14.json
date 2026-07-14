@@ -1,14 +1,14 @@
 {
   "label": "8-14 abr 2026",
-  "updated": "14 jul 2026, 12:00",
+  "updated": "14 jul 2026, 12:06",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "5 items",
       "d": 0,
-      "sub": "4 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 8-14 abr 2026"
+      "sub": "5 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 8-14 abr 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+20",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,74 +20,74 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "64",
+      "v": "70",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 20,
+    "neu": 80,
     "neg": 0,
     "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    64,
-    64,
-    64,
-    64,
-    64,
-    64,
-    64
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70
   ],
   "stack": [
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ],
     [
-      25,
-      75,
+      20,
+      80,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 4,
+      "vol": 5,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 20,
         "n": 0,
-        "g": 75
+        "g": 80
       }
     },
     {
@@ -96,9 +96,9 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 20,
         "n": 0,
-        "g": 75
+        "g": 80
       }
     },
     {
@@ -143,6 +143,22 @@
         {
           "o": "Vanity Brasil",
           "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMnRKMEtYd2JidFpXdi1kSXViTnZhckxBMFdiblN6bnI2UkFwNUxONGtFR1NIbk1yY2RUODhmUGlQYU41Q1NIQTZ6N2NGeXJ6Q2tvRmlfRFdTZnIwTzZpNTZieTlKQmthVGdGWGlfZ1Y4UVY0TF9GaEk5SW5UMVdjU1FOTFVXXzZBUGlBbW5qRWk?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter faz buscas por viagens crescerem 20%",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Catraca Livre",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNc2NneGN0SE0tN2VGUTBrRnBMTFprenl0cXhtaXRpRmNUNTVnblNjem9ybTNPeWQybjN1UEF5dldoTDAtUGZISmRxQko1Z3p3SHZVMDJPQk44SjFtYXdXMVlWY3JWMEZaSUEzaTR1MjRINm55OHd0ZW11dEZIWW50YkxBTVFBNU53NXdYbWNLMElpV3VaZ1RDdHJYLU1GbUc0?oc=5"
         }
       ]
     },
@@ -197,6 +213,14 @@
       "scope": "Google News RSS BR"
     },
     {
+      "o": "Catraca Livre",
+      "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNc2NneGN0SE0tN2VGUTBrRnBMTFprenl0cXhtaXRpRmNUNTVnblNjem9ybTNPeWQybjN1UEF5dldoTDAtUGZISmRxQko1Z3p3SHZVMDJPQk44SjFtYXdXMVlWY3JWMEZaSUEzaTR1MjRINm55OHd0ZW11dEZIWW50YkxBTVFBNU53NXdYbWNLMElpV3VaZ1RDdHJYLU1GbUc0?oc=5",
+      "title": "Série de Harry Potter faz buscas por viagens crescerem 20%",
+      "cat": "neu",
+      "time": "10 abr, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
       "o": "O Vício",
       "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTlZZX3FKYmdVRmNwSGRaNVJJSEhSeExJR2xuQTU1cHdQRHNBUTl6dHFEamY3WUZ4VGI1Yi1CbVBsdHd5Vy1MX0d5UUY1eVlPLXZUbzdKeFJKT2pCTGpTcE02WFY1UC00OGdhNTJzd2V1bi1UVkt5MFNKOUdVMHJwWWxnQzYwa21oZndUa9IBkgFBVV95cUxOeHdCYkU0Q3EzRVBWME1SQnd5cEhPcWlrWV8wa1JiQnFtcGNCd2F2dHNod2JfWGhhU3BneXN0ZWFaNzhLUU1WVG1EOG8xdGZvWEFQb2JWQ1hVNFlIblktWEZvb1UzODVJQ3hRazFWbnQ1ZTFXWWp3QVZJRmdnOHZIRmYxZk1DZWFVYmlWZmE1cHRHZw?oc=5",
       "title": "Paapa Essiedu, novo Snape de Harry Potter, vence Prêmio Olivier",
@@ -236,7 +260,7 @@
       ],
       [
         "Itens reais/sinais",
-        "4"
+        "5"
       ],
       [
         "Wikipedia",
@@ -258,16 +282,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
+    "base_count": 5,
     "unit": "itens",
-    "net": 25,
-    "buzz": 64,
-    "news_count": 4,
+    "net": 20,
+    "buzz": 70,
+    "news_count": 5,
     "youtube_count": 0,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 60
   }
 }
