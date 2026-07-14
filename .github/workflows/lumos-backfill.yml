@@ -23,7 +23,6 @@ jobs:
         run: |
           echo "Root files:"
           ls -la
-
           echo ""
           echo "Backend before:"
           ls -la lumos-backend || true
@@ -56,10 +55,27 @@ jobs:
           cd lumos-backend
           python backfill_teaser.py
 
+      - name: Show generated files
+        run: |
+          echo "Root files after backfill:"
+          ls -la
+          echo ""
+          echo "History files:"
+          ls -la history || true
+          echo ""
+          echo "YouTube debug preview:"
+          if [ -f "youtube_debug.json" ]; then
+            head -120 youtube_debug.json
+          else
+            echo "youtube_debug.json not found"
+          fi
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json history/ lumos-backend/backfill_teaser.py || true
-          git diff --cached --quiet || git commit -m "stabilize google trends backfill"
+
+          git add data.json history/ youtube_debug.json lumos-backend/backfill_teaser.py || true
+
+          git diff --cached --quiet || git commit -m "update backfill data and youtube debug"
           git push
