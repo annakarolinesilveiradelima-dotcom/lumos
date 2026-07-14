@@ -1,16 +1,16 @@
 {
   "label": "14 jul 2026",
-  "updated": "14 jul 2026, 17:43",
+  "updated": "14 jul 2026, 20:38",
   "kpi": {
     "mentions": {
       "v": "4 matérias",
-      "d": 4,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+76",
       "suf": "/100",
-      "d": 76,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "80",
       "suf": "/100",
-      "d": 80,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -36,9 +36,9 @@
     82,
     82,
     82,
-    82,
     45,
     0,
+    4,
     4
   ],
   "stack": [
@@ -68,8 +68,8 @@
       0
     ],
     [
-      0,
-      100,
+      75,
+      25,
       0
     ],
     [
