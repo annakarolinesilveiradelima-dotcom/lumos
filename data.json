@@ -1,5 +1,5 @@
 {
-  "generated_at": "13 jul 2026, 19:14",
+  "generated_at": "14 jul 2026, 03:37",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "13 jul 2026",
-          "updated": "13 jul 2026, 19:14",
+          "label": "14 jul 2026",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
-              "d": -4,
+              "v": "6 matérias",
+              "d": 6,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+68",
               "suf": "/100",
-              "d": 0,
+              "d": 68,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,17 +31,17 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "45",
+              "v": "86",
               "suf": "/100",
-              "d": -7,
+              "d": 41,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
-            "tone": "Sem cobertura real coletada hoje"
+            "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             52,
@@ -49,8 +49,8 @@
             52,
             52,
             52,
-            52,
-            0
+            0,
+            6
           ],
           "stack": [
             [
@@ -84,42 +84,198 @@
               0
             ],
             [
-              0,
-              100,
+              67,
+              33,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
-              "senti": "neu",
+              "vol": 6,
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 67,
                 "n": 0,
-                "g": 100
+                "g": 33
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+                }
+              ]
+            },
+            {
+              "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+                }
+              ]
+            },
+            {
+              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+                }
+              ]
+            },
+            {
+              "t": "Série escala ator de Pirraça, personagem inédito",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+                }
+              ]
+            },
+            {
+              "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+                }
+              ]
+            },
+            {
+              "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+              "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+              "cat": "neu",
+              "time": "12 jul, 22:13",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+              "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+              "cat": "nos",
+              "time": "4 jul, 21:28",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+              "cat": "nos",
+              "time": "15 jun, 22:00",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+              "title": "Série escala ator de Pirraça, personagem inédito",
+              "cat": "nos",
+              "time": "15 jun, 17:30",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+              "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "cat": "nos",
+              "time": "16 jun, 16:15",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+              "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "cat": "neu",
+              "time": "15 jun, 19:55",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 13 jul 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "t": "Comparação com os filmes originais",
+              "sev": "mid",
+              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+            },
+            {
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada hoje",
-            "desc": "Não houve cobertura real suficiente no feed atual para recomendar ação.",
+            "title": "Acompanhar cobertura do dia",
+            "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
             "facts": [
               [
                 "Fonte",
-                "sem cobertura"
+                "notícias reais"
+              ],
+              [
+                "Matérias",
+                "6"
               ],
               [
                 "Social",
@@ -128,18 +284,19 @@
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Ação",
-                "rodar novamente"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
@@ -147,19 +304,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "8–13 jul 2026",
-          "updated": "13 jul 2026, 19:14",
+          "label": "8–14 jul 2026",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -168,26 +325,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
@@ -239,51 +396,82 @@
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+              "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+              "cat": "neu",
+              "time": "12 jul, 22:13",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na cobertura editorial",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 8–13 jul 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 8–14 jul 2026.",
             "facts": [
               [
                 "Janela",
-                "8–13 jul 2026"
+                "8–14 jul 2026"
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 8–13 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "1–7 jul 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -449,7 +637,7 @@
         },
         "w-2": {
           "label": "24–30 jun 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -584,7 +772,7 @@
         },
         "w-3": {
           "label": "17–23 jun 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -719,15 +907,15 @@
         },
         "w-4": {
           "label": "10–16 jun 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "4 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+75",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -739,74 +927,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "86",
+              "v": "90",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 75,
+            "neu": 25,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
           ],
           "stack": [
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ],
             [
-              100,
-              0,
+              75,
+              25,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 4,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 75,
                 "n": 0,
-                "g": 0
+                "g": 25
               }
             }
           ],
@@ -842,6 +1030,38 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
                 }
               ]
+            },
+            {
+              "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+                }
+              ]
+            },
+            {
+              "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -859,6 +1079,22 @@
               "title": "Série escala ator de Pirraça, personagem inédito",
               "cat": "nos",
               "time": "15 jun, 17:30",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+              "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+              "cat": "nos",
+              "time": "16 jun, 16:15",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+              "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "cat": "neu",
+              "time": "15 jun, 19:55",
               "scope": "Portal BR"
             }
           ],
@@ -891,7 +1127,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "4"
               ],
               [
                 "Dados fictícios",
@@ -915,7 +1151,7 @@
         },
         "w-5": {
           "label": "3–9 jun 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1050,7 +1286,7 @@
         },
         "w-6": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1185,7 +1421,7 @@
         },
         "w-7": {
           "label": "20–26 mai 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1320,7 +1556,7 @@
         },
         "w-8": {
           "label": "13–19 mai 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1455,7 +1691,7 @@
         },
         "w-9": {
           "label": "6–12 mai 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1590,7 +1826,7 @@
         },
         "w-10": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1725,7 +1961,7 @@
         },
         "w-11": {
           "label": "22–28 abr 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1860,7 +2096,7 @@
         },
         "w-12": {
           "label": "15–21 abr 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2026,7 +2262,7 @@
         },
         "w-13": {
           "label": "8–14 abr 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2161,7 +2397,7 @@
         },
         "w-14": {
           "label": "1–7 abr 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2296,7 +2532,7 @@
         },
         "w-15": {
           "label": "25–31 mar 2026",
-          "updated": "13 jul 2026, 19:14",
+          "updated": "14 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

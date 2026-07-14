@@ -1,0 +1,300 @@
+{
+  "label": "14 jul 2026",
+  "updated": "14 jul 2026, 03:37",
+  "kpi": {
+    "mentions": {
+      "v": "6 matérias",
+      "d": 6,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+68",
+      "suf": "/100",
+      "d": 68,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "86",
+      "suf": "/100",
+      "d": 41,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 67,
+    "neu": 33,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    52,
+    52,
+    52,
+    52,
+    52,
+    0,
+    6
+  ],
+  "stack": [
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      67,
+      33,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 6,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 67,
+        "n": 0,
+        "g": 33
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
+        }
+      ]
+    },
+    {
+      "t": "Série escala ator de Pirraça, personagem inédito",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "cat": "neu",
+      "time": "12 jul, 22:13",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 21:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
+      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
+      "cat": "nos",
+      "time": "15 jun, 22:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
+      "title": "Série escala ator de Pirraça, personagem inédito",
+      "cat": "nos",
+      "time": "15 jun, 17:30",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
+      "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
+      "cat": "nos",
+      "time": "16 jun, 16:15",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
+      "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "cat": "neu",
+      "time": "15 jun, 19:55",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "6"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 6,
+    "unit": "matérias",
+    "net": 68,
+    "buzz": 86,
+    "news_count": 6,
+    "social_mentions": 0
+  }
+}
