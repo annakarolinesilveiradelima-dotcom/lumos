@@ -45,27 +45,34 @@ NEWS_QUERIES = [
 ]
 
 YOUTUBE_QUERIES = [
-    "harry potter série",
-    "harry potter serie",
-    "série de harry potter",
-    "serie de harry potter",
-    "nova série harry potter",
-    "nova serie harry potter",
-    "nova série de harry potter",
-    "nova serie de harry potter",
-    "harry potter hbo",
-    "harry potter max",
-    "harry potter hbo max",
-    "harry potter série hbo",
-    "harry potter serie hbo",
-    "harry potter série max",
-    "harry potter serie max",
-    "harry potter elenco",
-    "harry potter elenco hbo",
-    "harry potter hbo elenco",
+    "harry potter série brasil",
+    "harry potter serie brasil",
+    "série de harry potter brasil",
+    "serie de harry potter brasil",
+    "nova série harry potter brasil",
+    "nova serie harry potter brasil",
+    "nova série de harry potter brasil",
+    "nova serie de harry potter brasil",
+    "harry potter série português",
+    "harry potter serie portugues",
+    "nova série harry potter português",
+    "nova serie harry potter portugues",
     "harry potter hbo brasil",
     "harry potter max brasil",
-    "harry potter hbo max brasil"
+    "harry potter hbo max brasil",
+    "harry potter série hbo brasil",
+    "harry potter serie hbo brasil",
+    "harry potter série max brasil",
+    "harry potter serie max brasil",
+    "harry potter elenco série",
+    "harry potter elenco serie",
+    "harry potter elenco hbo",
+    "harry potter hbo elenco",
+    "harry potter hbo max elenco",
+    "harry potter série max português",
+    "harry potter serie max portugues",
+    "harry potter nova série elenco",
+    "harry potter nova serie elenco"
 ]
 
 BR_CHANNELS = [
@@ -449,8 +456,6 @@ def collect_youtube_week(start, end, api_key):
             "q": query,
             "maxResults": 50,
             "order": "relevance",
-            "regionCode": "BR",
-            "relevanceLanguage": "pt",
             "key": api_key
         }
 
@@ -463,7 +468,7 @@ def collect_youtube_week(start, end, api_key):
 
             print(
                 f"[youtube] query='{query}' "
-                f"sem filtro de data status={response.status_code}"
+                f"sem region/relevanceLanguage/data status={response.status_code}"
             )
 
             if response.status_code != 200:
@@ -497,7 +502,7 @@ def collect_youtube_week(start, end, api_key):
             json.dump({
                 "generated_at": _stamp(),
                 "window": {
-                    "mode": "sem filtro de data",
+                    "mode": "sem filtro de data, sem regionCode, sem relevanceLanguage",
                     "start": "not_used",
                     "end": "not_used"
                 },

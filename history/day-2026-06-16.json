@@ -1,11 +1,11 @@
 {
   "label": "10-16 jun 2026",
-  "updated": "14 jul 2026, 14:23",
+  "updated": "14 jul 2026, 14:31",
   "kpi": {
     "mentions": {
-      "v": "3 items",
+      "v": "4 items",
       "d": 0,
-      "sub": "3 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 10-16 jun 2026"
+      "sub": "3 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 10-16 jun 2026"
     },
     "sentiment": {
       "v": "+0",
@@ -20,10 +20,10 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "44",
+      "v": "89",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 0/100"
+      "sub": "buzz com Wikipedia 89/100"
     }
   },
   "senti": {
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    44,
-    44,
-    44,
-    44,
-    44,
-    44,
-    44
+    89,
+    89,
+    89,
+    89,
+    89,
+    89,
+    89
   ],
   "stack": [
     [
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 1,
+      "vol": 89,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -161,6 +161,22 @@
           "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT0hDRmE3QlMxdTl0NEtfSXpXOElTVENMNUFaZXdfM1N4eVY0Y29Ma2ZrQkxqWjBjWEdONllJTGJYRGtITXA3RUdLYTZJcU43X2o5Qm9hVUF6T3dtX285dDZPRThlNDVhREtmS0ZDMFMzbndaa3ljcEd2R2pMVzNuV2lrZGVCRTFOLUxjTmxxRVJ6aVU?oc=5"
         }
       ]
+    },
+    {
+      "t": "Interesse enciclopedico por 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Wikipedia",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Wikipedia Pageviews",
+          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -187,6 +203,14 @@
       "cat": "neu",
       "time": "15 jun, 18:33",
       "scope": "Google News RSS BR"
+    },
+    {
+      "o": "Wikipedia Pageviews",
+      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+      "title": "Interesse enciclopedico por 'Harry Potter'",
+      "cat": "neu",
+      "time": "10-16 jun 2026",
+      "scope": "Wikipedia Pageviews - 85.136 views na semana"
     }
   ],
   "creators": [],
@@ -212,11 +236,11 @@
       ],
       [
         "Itens reais/sinais",
-        "3"
+        "4"
       ],
       [
         "Wikipedia",
-        "sem sinal - 0 views"
+        "Harry Potter - 85.136 views"
       ]
     ]
   },
@@ -234,15 +258,15 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 3,
+    "base_count": 4,
     "unit": "itens",
     "net": 0,
-    "buzz": 44,
+    "buzz": 89,
     "news_count": 3,
     "youtube_count": 0,
-    "wiki_score": 0,
-    "wiki_views": 0,
-    "wiki_top_page": "",
+    "wiki_score": 89,
+    "wiki_views": 85136,
+    "wiki_top_page": "Harry Potter",
     "backfill": true,
     "sentiment_index": 50
   }

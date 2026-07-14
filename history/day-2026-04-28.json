@@ -1,6 +1,6 @@
 {
   "label": "22-28 abr 2026",
-  "updated": "14 jul 2026, 14:22",
+  "updated": "14 jul 2026, 14:30",
   "kpi": {
     "mentions": {
       "v": "3 items",
@@ -20,10 +20,10 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "83",
+      "v": "91",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 83/100"
+      "sub": "buzz com Wikipedia 91/100"
     }
   },
   "senti": {
@@ -33,13 +33,13 @@
     "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    83,
-    83,
-    83,
-    83,
-    83,
-    83,
-    83
+    91,
+    91,
+    91,
+    91,
+    91,
+    91,
+    91
   ],
   "stack": [
     [
@@ -103,7 +103,7 @@
     },
     {
       "name": "Wikipedia",
-      "vol": 83,
+      "vol": 91,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -186,7 +186,7 @@
       "title": "Interesse enciclopedico por 'Harry Potter'",
       "cat": "neu",
       "time": "22-28 abr 2026",
-      "scope": "Wikipedia Pageviews - 42.776 views na semana"
+      "scope": "Wikipedia Pageviews - 107.548 views na semana"
     }
   ],
   "creators": [],
@@ -216,7 +216,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter - 42.776 views"
+        "Harry Potter - 107.548 views"
       ]
     ]
   },
@@ -237,11 +237,11 @@
     "base_count": 3,
     "unit": "itens",
     "net": 0,
-    "buzz": 83,
+    "buzz": 91,
     "news_count": 2,
     "youtube_count": 0,
-    "wiki_score": 83,
-    "wiki_views": 42776,
+    "wiki_score": 91,
+    "wiki_views": 107548,
     "wiki_top_page": "Harry Potter",
     "backfill": true,
     "sentiment_index": 50

@@ -1,6 +1,6 @@
 {
   "label": "15-21 abr 2026",
-  "updated": "14 jul 2026, 14:22",
+  "updated": "14 jul 2026, 14:30",
   "kpi": {
     "mentions": {
       "v": "3 items",
@@ -186,7 +186,7 @@
       "title": "Interesse enciclopedico por 'Harry Potter film series'",
       "cat": "neu",
       "time": "15-21 abr 2026",
-      "scope": "Wikipedia Pageviews - 185.288 views na semana"
+      "scope": "Wikipedia Pageviews - 182.277 views na semana"
     }
   ],
   "creators": [],
@@ -216,7 +216,7 @@
       ],
       [
         "Wikipedia",
-        "Harry Potter film series - 185.288 views"
+        "Harry Potter film series - 182.277 views"
       ]
     ]
   },
@@ -241,7 +241,7 @@
     "news_count": 2,
     "youtube_count": 0,
     "wiki_score": 95,
-    "wiki_views": 185288,
+    "wiki_views": 182277,
     "wiki_top_page": "Harry Potter film series",
     "backfill": true,
     "sentiment_index": 50
