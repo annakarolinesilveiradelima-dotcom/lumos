@@ -1,14 +1,14 @@
 {
-  "label": "28 abr 2026",
-  "updated": "14 jul 2026, 10:42",
+  "label": "22-28 abr 2026",
+  "updated": "14 jul 2026, 11:26",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "3 noticias - 9 videos YouTube - 0 sinais Wikipedia - 22-28 abr 2026"
+      "sub": "2 noticias - 10 videos YouTube BR - 0 sinais Wikipedia - 22-28 abr 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+17",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -27,10 +27,10 @@
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 17,
+    "neu": 83,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -43,62 +43,62 @@
   ],
   "stack": [
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 3,
+      "vol": 2,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 17,
         "n": 0,
-        "g": 75
+        "g": 83
       }
     },
     {
-      "name": "YouTube",
-      "vol": 9,
+      "name": "YouTube BR",
+      "vol": 10,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 17,
         "n": 0,
-        "g": 75
+        "g": 83
       }
     },
     {
@@ -115,66 +115,34 @@
   ],
   "narratives": [
     {
-      "t": "A série de Harry Potter confirma oficialmente sua maior mudança: É assim que ela será diferente dos filmes",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "AdoroCinema",
-          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqY2dickVSVko4NTlsa29hVVZKcHpBMUN0cXFWSnNYRjhnTkZmN3ZGWjlieldqanZDdE5YUmdiTjBvbDEzMjItNXJCUjkxVWJsZ2JlQWNfQVE2dXdhLXVsVnYyOHoyeDFfR0dlcW9SNmnSAXZBVV95cUxPdlpvRFNYZmpTcmQwN1hyRzRjZkh0dlVfWFE4cHRGcGlTcnpmNm5VWnJ6YlVST2M4cFNoa2wyZ1l0OEFWUHgtNlVFNG9TUTQ2ZGRjUGItcThveUFZUTllTU5iakRockRNWHZfRFdTRW9nLS1HNjBR?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "O novo filme de Harry Potter está à frente da série e é um sucesso estrondoso na HBO Max: Já é o número 1 na plataforma em 24 países",
+      "t": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "AdoroCinema",
-          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rUVVrLVNraFgzMUF6UG1FaF9Vc29wS1k1MkdNMUl4UGJwNDBqQXBSdHVSazRpeTdtcXg3S0U5b0N5VktPSGR6dUNZZk5PN2lRRVJtcGczMEN1UWJhc2NnOTVxWjhnUEJCYWg3d2dWcHrSAXZBVV95cUxPdS1mTVpzTW8xeWR3dUVIX1FRaTBMdnhPSUZrbHRpbVU0QUF3NWk1bENhaFRhcWdjeDA1cFIyaWxGd2hxMk96d1lDdnZBNzJhd0FMRk1fb1otX2FxOGJNYUZfR1VyczVheXNqQXF6RDlNWlBRcFV3?oc=5"
+          "o": "TudoCelular.com",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5"
         }
       ]
     },
     {
-      "t": "Em 8 meses, HBO Max pode nunca mais ser a mesma",
-      "vol": 1,
-      "senti": "div",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "UOL",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOak90eXBncXFqZTJzOWt6SHV2WXlzNXR2dlRZT3VVc0E1NlhKdVh1bDZrdFRoU1V2YkNmeDZuMl9xUUxMdllFT3IzdDhmdjdBNkxKbUF3cUpHNC13YnJuRE11WTJPNFhyNUt3SzJfYTFHM1RiRUV5SlU2VFJTUmI5MjlSSVRBV0JjeWhheGtTZnBWTkJ6?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
+      "t": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
       "vol": 1,
       "senti": "neu",
-      "pf": "YouTube",
+      "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "YouTube - Lewis Spears",
-          "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
+          "o": "Omelete",
+          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
         }
       ]
     },
@@ -184,7 +152,7 @@
       "senti": "div",
       "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +168,7 @@
       "senti": "pos",
       "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -209,40 +177,56 @@
           "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
         }
       ]
+    },
+    {
+      "t": "HBO&#39;s Harry Potter: New Scenes or Book Betrayal? #shorts",
+      "vol": 1,
+      "senti": "div",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - The Spellbook Chronicles",
+          "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA"
+        }
+      ]
+    },
+    {
+      "t": "¿Esta Intentando Apartar la Serie de Harry Potter a Rowling de Ella?",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Rotia",
+          "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo"
+        }
+      ]
     }
   ],
   "coverage": [
     {
-      "o": "AdoroCinema",
-      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqY2dickVSVko4NTlsa29hVVZKcHpBMUN0cXFWSnNYRjhnTkZmN3ZGWjlieldqanZDdE5YUmdiTjBvbDEzMjItNXJCUjkxVWJsZ2JlQWNfQVE2dXdhLXVsVnYyOHoyeDFfR0dlcW9SNmnSAXZBVV95cUxPdlpvRFNYZmpTcmQwN1hyRzRjZkh0dlVfWFE4cHRGcGlTcnpmNm5VWnJ6YlVST2M4cFNoa2wyZ1l0OEFWUHgtNlVFNG9TUTQ2ZGRjUGItcThveUFZUTllTU5iakRockRNWHZfRFdTRW9nLS1HNjBR?oc=5",
-      "title": "A série de Harry Potter confirma oficialmente sua maior mudança: É assim que ela será diferente dos filmes",
-      "cat": "nos",
-      "time": "22 abr, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "AdoroCinema",
-      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rUVVrLVNraFgzMUF6UG1FaF9Vc29wS1k1MkdNMUl4UGJwNDBqQXBSdHVSazRpeTdtcXg3S0U5b0N5VktPSGR6dUNZZk5PN2lRRVJtcGczMEN1UWJhc2NnOTVxWjhnUEJCYWg3d2dWcHrSAXZBVV95cUxPdS1mTVpzTW8xeWR3dUVIX1FRaTBMdnhPSUZrbHRpbVU0QUF3NWk1bENhaFRhcWdjeDA1cFIyaWxGd2hxMk96d1lDdnZBNzJhd0FMRk1fb1otX2FxOGJNYUZfR1VyczVheXNqQXF6RDlNWlBRcFV3?oc=5",
-      "title": "O novo filme de Harry Potter está à frente da série e é um sucesso estrondoso na HBO Max: Já é o número 1 na plataforma em 24 países",
+      "o": "TudoCelular.com",
+      "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3RGTWJoeUdndldZOUZoNkk5cEhCOVRSbTcxdHRwdWl4dUxOMEctRjVNZ0J2SGJ1MHlpWmtuMDRxTElKZzFWV1pqNFEyVVRQVXVHcm5JQWtTa1pJS0x6bHB2MlR2Z2xsTnVaSllZREtrbUE2SWYtS0JDSGpfNmNBdUx0aUJDd2ZBYWxvVXo5cXpHOXlNOHMxaXBLYWNhUQ?oc=5",
+      "title": "HBO Max começa a bloquear compartilhamento de senha e cobra por membro extra no Brasil",
       "cat": "neu",
       "time": "23 abr, 04:00",
-      "scope": "Google News RSS"
+      "scope": "Google News RSS BR"
     },
     {
-      "o": "UOL",
-      "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOak90eXBncXFqZTJzOWt6SHV2WXlzNXR2dlRZT3VVc0E1NlhKdVh1bDZrdFRoU1V2YkNmeDZuMl9xUUxMdllFT3IzdDhmdjdBNkxKbUF3cUpHNC13YnJuRE11WTJPNFhyNUt3SzJfYTFHM1RiRUV5SlU2VFJTUmI5MjlSSVRBV0JjeWhheGtTZnBWTkJ6?oc=5",
-      "title": "Em 8 meses, HBO Max pode nunca mais ser a mesma",
-      "cat": "esp",
-      "time": "23 abr, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Lewis Spears",
-      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs",
-      "title": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5",
+      "title": "Harry Potter | LATAM anuncia venda de passagens para voo temático, confira",
       "cat": "neu",
-      "time": "28 abr, 23:18",
-      "scope": "Video/Creator - YouTube"
+      "time": "27 abr, 04:00",
+      "scope": "Google News RSS BR"
     },
     {
       "o": "YouTube - Sowick",
@@ -250,7 +234,7 @@
       "title": "100 Cosas Raras en Harry Potter (serie HBO) ⚡",
       "cat": "esp",
       "time": "28 abr, 16:43",
-      "scope": "Video/Creator - YouTube"
+      "scope": "Video/Creator - YouTube BR"
     },
     {
       "o": "YouTube - Narrative Notch",
@@ -258,7 +242,7 @@
       "title": "Why HBO&#39;s Harry Potter Will Be BETTER Than the Movies",
       "cat": "nos",
       "time": "28 abr, 16:00",
-      "scope": "Video/Creator - YouTube"
+      "scope": "Video/Creator - YouTube BR"
     },
     {
       "o": "YouTube - The Spellbook Chronicles",
@@ -266,36 +250,41 @@
       "title": "HBO&#39;s Harry Potter: New Scenes or Book Betrayal? #shorts",
       "cat": "esp",
       "time": "28 abr, 13:02",
-      "scope": "Video/Creator - YouTube"
+      "scope": "Video/Creator - YouTube BR"
     },
     {
-      "o": "YouTube - Mr.Potterr1",
-      "u": "https://www.youtube.com/watch?v=6s5-5L64c5I",
-      "title": "✨Emma Watson or🧹 Hermione Granger edit #harrypotter #hbo #hogwarts #highlyintelligent",
+      "o": "YouTube - Rotia",
+      "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo",
+      "title": "¿Esta Intentando Apartar la Serie de Harry Potter a Rowling de Ella?",
       "cat": "neu",
-      "time": "28 abr, 11:16",
-      "scope": "Video/Creator - YouTube"
+      "time": "26 abr, 13:00",
+      "scope": "Video/Creator - YouTube BR"
+    },
+    {
+      "o": "YouTube - Radio Mike",
+      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM",
+      "title": "Why Tilda Swinton WON&#39;T BE Voldemort in HBO&#39;s Harry Potter",
+      "cat": "neu",
+      "time": "26 abr, 10:45",
+      "scope": "Video/Creator - YouTube BR"
+    },
+    {
+      "o": "YouTube - Hogwarts Theory",
+      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc",
+      "title": "Why HBO’s New Voldemort Is Finally Book Accurate #harrypotter",
+      "cat": "nos",
+      "time": "26 abr, 10:00",
+      "scope": "Video/Creator - YouTube BR"
     }
   ],
   "creators": [
     {
-      "h": "Lewis Spears",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
-    },
-    {
       "h": "Sowick",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "div",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
       "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
@@ -303,10 +292,10 @@
     {
       "h": "Narrative Notch",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "pos",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
       "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
@@ -314,57 +303,68 @@
     {
       "h": "The Spellbook Chronicles",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "div",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
       "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA"
     },
     {
-      "h": "Mr.Potterr1",
+      "h": "Rotia",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "neu",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=6s5-5L64c5I"
+      "u": "https://www.youtube.com/watch?v=M0O5QGaoLqo"
     },
     {
-      "h": "The Marauder's Map",
+      "h": "Radio Mike",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "neu",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=JNYisaDal3k"
+      "u": "https://www.youtube.com/watch?v=qDIGx7V-4jM"
     },
     {
-      "h": "Hamza Boujelouah",
+      "h": "Hogwarts Theory",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
+      "type": "Video BR sobre Harry Potter HBO",
+      "senti": "pos",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=GD5bC8ILuCA"
+      "u": "https://www.youtube.com/watch?v=0SdsNK1QSFc"
     },
     {
-      "h": "Eve Edmunds",
+      "h": "BBC News Brasil",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "neu",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=jR-2oHD8zG0"
+      "u": "https://www.youtube.com/watch?v=mi3VLUssWn4"
+    },
+    {
+      "h": "Lewis Spears",
+      "pf": "YouTube",
+      "type": "Video BR sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 70,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
     }
   ],
   "risks": [
@@ -373,6 +373,12 @@
       "sev": "mid",
       "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
@@ -401,7 +407,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -413,14 +419,14 @@
   "_raw": {
     "base_count": 12,
     "unit": "itens",
-    "net": 25,
+    "net": 17,
     "buzz": 100,
-    "news_count": 3,
-    "youtube_count": 9,
+    "news_count": 2,
+    "youtube_count": 10,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 58
   }
 }

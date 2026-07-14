@@ -1,14 +1,14 @@
 {
-  "label": "30 jun 2026",
-  "updated": "14 jul 2026, 10:42",
+  "label": "24-30 jun 2026",
+  "updated": "14 jul 2026, 11:27",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "2 noticias - 10 videos YouTube - 0 sinais Wikipedia - 24-30 jun 2026"
+      "sub": "1 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 24-30 jun 2026"
     },
     "sentiment": {
-      "v": "+9",
+      "v": "+0",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,85 +20,85 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "28",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 17,
-    "neu": 75,
-    "neg": 8,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "pos": 0,
+    "neu": 100,
+    "neg": 0,
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    28,
+    28,
+    28,
+    28,
+    28,
+    28,
+    28
   ],
   "stack": [
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ],
     [
-      17,
-      75,
-      8
+      0,
+      100,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 2,
+      "vol": 1,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 17,
-        "n": 8,
-        "g": 75
+        "p": 0,
+        "n": 0,
+        "g": 100
       }
     },
     {
-      "name": "YouTube",
-      "vol": 10,
+      "name": "YouTube BR",
+      "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 17,
-        "n": 8,
-        "g": 75
+        "p": 0,
+        "n": 0,
+        "g": 100
       }
     },
     {
@@ -115,258 +115,33 @@
   ],
   "narratives": [
     {
-      "t": "HBO Reveals First Look at ‘Harry Potter’ TV Series, Trailer Coming Wednesday",
+      "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "IMDb",
-          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BWDhCRlI3Q1dmbGZIdWVkeGlVMFBURDRQRUs0N2gzWHMtcDQ2SkU5Yk9yaGxaVllwR010dFN5T3dLQ19RTWZUYWNYZlVWYlFWMEE?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: HBO Reveals First Official Image From TV Series",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "IMDb",
-          "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03RTQxZDF4elZPcW9BaEFKY0h4aFJZWmxQN2gtOWRaRzZJSnh6dERCTzFuLS0xLXBFVXdQajltbERhTGdvWVd6TXJFbEU0VUtKU3c?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "HBO Is About To Change Everything You Thought You Knew About Harry Potter",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Monkeys",
-          "u": "https://www.youtube.com/watch?v=hg75YZJSP8s"
-        }
-      ]
-    },
-    {
-      "t": "Is HBO&#39;s Harry Potter too gray!?",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Seigher Brown",
-          "u": "https://www.youtube.com/watch?v=G26S9HhQTyM"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter HBO Series: Ginny Weasley Season 2 Casting Call Details!",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Wizards Rest",
-          "u": "https://www.youtube.com/watch?v=rX_GAvE72sA"
-        }
-      ]
-    },
-    {
-      "t": "The Five Favorite Moments in Harry Potter and The Philosopher&#39;s Stone",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "YouTube",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "YouTube - Marvelous Marauders",
-          "u": "https://www.youtube.com/watch?v=BuMAogQBo60"
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "IMDb",
-      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BWDhCRlI3Q1dmbGZIdWVkeGlVMFBURDRQRUs0N2gzWHMtcDQ2SkU5Yk9yaGxaVllwR010dFN5T3dLQ19RTWZUYWNYZlVWYlFWMEE?oc=5",
-      "title": "HBO Reveals First Look at ‘Harry Potter’ TV Series, Trailer Coming Wednesday",
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5",
+      "title": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
       "cat": "neu",
-      "time": "30 jun, 16:13",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "IMDb",
-      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03RTQxZDF4elZPcW9BaEFKY0h4aFJZWmxQN2gtOWRaRzZJSnh6dERCTzFuLS0xLXBFVXdQajltbERhTGdvWVd6TXJFbEU0VUtKU3c?oc=5",
-      "title": "Harry Potter: HBO Reveals First Official Image From TV Series",
-      "cat": "neu",
-      "time": "30 jun, 14:33",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Monkeys",
-      "u": "https://www.youtube.com/watch?v=hg75YZJSP8s",
-      "title": "HBO Is About To Change Everything You Thought You Knew About Harry Potter",
-      "cat": "pos",
-      "time": "30 jun, 19:45",
-      "scope": "Video/Creator - YouTube"
-    },
-    {
-      "o": "YouTube - Seigher Brown",
-      "u": "https://www.youtube.com/watch?v=G26S9HhQTyM",
-      "title": "Is HBO&#39;s Harry Potter too gray!?",
-      "cat": "neu",
-      "time": "30 jun, 19:28",
-      "scope": "Video/Creator - YouTube"
-    },
-    {
-      "o": "YouTube - Wizards Rest",
-      "u": "https://www.youtube.com/watch?v=rX_GAvE72sA",
-      "title": "Harry Potter HBO Series: Ginny Weasley Season 2 Casting Call Details!",
-      "cat": "neu",
-      "time": "30 jun, 16:49",
-      "scope": "Video/Creator - YouTube"
-    },
-    {
-      "o": "YouTube - Marvelous Marauders",
-      "u": "https://www.youtube.com/watch?v=BuMAogQBo60",
-      "title": "The Five Favorite Moments in Harry Potter and The Philosopher&#39;s Stone",
-      "cat": "neu",
-      "time": "30 jun, 15:46",
-      "scope": "Video/Creator - YouTube"
-    },
-    {
-      "o": "YouTube - Marvelous Marauders",
-      "u": "https://www.youtube.com/watch?v=DiWcnH44Q3U",
-      "title": "What Are Some Of The Other Magical Moments In Harry Potter",
-      "cat": "neu",
-      "time": "30 jun, 14:46",
-      "scope": "Video/Creator - YouTube"
-    },
-    {
-      "o": "YouTube - Marvelous Marauders",
-      "u": "https://www.youtube.com/watch?v=l2E9cjvgAs8",
-      "title": "Why Harry Potter Has Lasteed For Over 30 Years",
-      "cat": "neu",
-      "time": "30 jun, 12:46",
-      "scope": "Video/Creator - YouTube"
+      "time": "30 jun, 04:00",
+      "scope": "Google News RSS BR"
     }
   ],
-  "creators": [
-    {
-      "h": "Monkeys",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=hg75YZJSP8s"
-    },
-    {
-      "h": "Seigher Brown",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=G26S9HhQTyM"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=rX_GAvE72sA"
-    },
-    {
-      "h": "Marvelous Marauders",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=BuMAogQBo60"
-    },
-    {
-      "h": "Marvelous Marauders",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=DiWcnH44Q3U"
-    },
-    {
-      "h": "Marvelous Marauders",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=l2E9cjvgAs8"
-    },
-    {
-      "h": "Marvelous Marauders",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=rkCofOMm_k4"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=uPz7wG97qgA"
-    }
-  ],
+  "creators": [],
   "risks": [
     {
       "t": "Sensibilidade em torno de elenco",
@@ -389,7 +164,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "1"
       ],
       [
         "Wikipedia",
@@ -401,7 +176,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -411,16 +186,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 1,
     "unit": "itens",
-    "net": 9,
-    "buzz": 100,
-    "news_count": 2,
-    "youtube_count": 10,
+    "net": 0,
+    "buzz": 28,
+    "news_count": 1,
+    "youtube_count": 0,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 54
+    "sentiment_index": 50
   }
 }

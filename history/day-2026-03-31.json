@@ -1,14 +1,14 @@
 {
-  "label": "31 mar 2026",
-  "updated": "14 jul 2026, 10:42",
+  "label": "25-31 mar 2026",
+  "updated": "14 jul 2026, 11:26",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 sinais Wikipedia - 25-31 mar 2026"
+      "sub": "12 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 25-31 mar 2026"
     },
     "sentiment": {
-      "v": "+8",
+      "v": "+33",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -27,10 +27,10 @@
     }
   },
   "senti": {
-    "pos": 8,
-    "neu": 92,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -43,38 +43,38 @@
   ],
   "stack": [
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ],
     [
-      8,
-      92,
+      33,
+      67,
       0
     ]
   ],
@@ -85,20 +85,20 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 8,
+        "p": 33,
         "n": 0,
-        "g": 92
+        "g": 67
       }
     },
     {
-      "name": "YouTube",
+      "name": "YouTube BR",
       "vol": 1,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 8,
+        "p": 33,
         "n": 0,
-        "g": 92
+        "g": 67
       }
     },
     {
@@ -115,76 +115,12 @@
   ],
   "narratives": [
     {
-      "t": "Série de 'Harry Potter' para TV tem trailer divulgado: o que já se sabe sobre ela",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "BBC",
-          "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNy1nY2dwaGRSaDZvemh5NnhrdjhrYjZzYVlyU21Hcm95ajhWSTNPTjN1SHgtS1RmUjVsT2ZpSEticEY0bkpnc0tycUxQczhFYkR1QVVSRXlrNHU2dkZ1OWxB?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "'Harry Potter': tudo o que se sabe sobre a série da HBO",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Exame",
-          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS2JWaHhPaUgweUNVbUtSWThUNmkzTk9ZU3pwQ0tjS1RCWHRzZWVEel9YVE90X3J2Wi1fUzB3VjBtUG52MERsa0xtelEwa1dtNm5XOElIRndMTW43YktJUU04elRwYk1JaHV0M3d1X2ZSb05QTXQ1SzViaWRyZ3BSdw?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Quando estreia a nova série de \"Harry Potter\"?",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "CNN Brasil",
-          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkcwSE9OSDNWdV93em9RT3NsYXZmdzl2am1IS0JlcVMtN3Q2Y01zZmFHQ25pTTVMLWZNWEk0MHQtSTdUdGI5MUw4R01KS0lTUUZCNVQwMl9wVG1vZHgwTi16X1lhY0RFZXZnbW9VQk1XZWQ2eDlqT1E4Si1zUzZZMVNPRQ?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "\"Harry Potter\": veja fotos da 1ª temporada da série",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "CNN Brasil",
-          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5"
-        }
-      ]
-    },
-    {
       "t": "HBO divulga primeiro teaser oficial da nova série de \"Harry Potter\"; veja",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -195,38 +131,102 @@
       ]
     },
     {
-      "t": "Trailer da série de ‘Harry Potter’ bate 277 milhões de views e se torna o mais assistido da história da HBO",
+      "t": "Série de 'Harry Potter' para TV tem trailer divulgado: o que já se sabe sobre ela",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "O GLOBO",
-          "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSUtqVW8yWGkwWVo1aUFac1RzSGRGWHNVdUtpMzVuamNCTlhoWXY4OXRNN0NqVFlJNzdSTWJ3WXJKakpLWHZIQXhYeXFkWHVYRDVaTjRyTk5jYUk2WW1YbXk0MHNOQUY3SVdiTDk0cWc4cl9xWTN0MktDbGhlV1VFWEZZZzN0NDNsckhhbVB5czNLVWZuMG1uUDZrbHkyWmgwV3pfMG1kQ2ZoR2VwdWNrSjlwc0pwOE1GaHBPajZjUmRXaTJ4Wm8xNlA0dWVWOFJVa0lQd1EyMzNJcXU4aTB5TENxT2lodHJwSno2Zk01QWVFY2JoS2lKczdDMUVROUFtckg40gGSAkFVX3lxTFBFaEd0b1R2TDJwV2dtSmJTbDhOd3F0NTFhUUFoalZDaXRhN21jSWo0ZVllT0x0TWVaTGpyNjAxNk95ME1iY1FTWVZ3QVJ4ZE9kRDhwT1ljNDhXSUp3aE16Y3pJdXV4WkwzX01OdnBSMFpmdU5RSmlxaWF1UWRpTGpFT0Z2M1VRaWk5UnRIcWF6Qmp0Q0xBWG43MjJ2ZGYzZ0s4dF9HaWxiWGNUNVV1cnhaVWpoUnlCd01UdFNoRkZMeGl5ajA0bWFOSEEtcVU3RDcyTEpRMnNzMU54Sno1RndXYVUxV3N6eFF5YXdJLTRQS251OW4wcDQ4OENNc3BxcnZnazhSaWNJNFdzU2Z3UkF4TXc?oc=5"
+          "o": "BBC",
+          "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNy1nY2dwaGRSaDZvemh5NnhrdjhrYjZzYVlyU21Hcm95ajhWSTNPTjN1SHgtS1RmUjVsT2ZpSEticEY0bkpnc0tycUxQczhFYkR1QVVSRXlrNHU2dkZ1OWxB?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Quando estreia a nova série de \"Harry Potter\"?",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkcwSE9OSDNWdV93em9RT3NsYXZmdzl2am1IS0JlcVMtN3Q2Y01zZmFHQ25pTTVMLWZNWEk0MHQtSTdUdGI5MUw4R01KS0lTUUZCNVQwMl9wVG1vZHgwTi16X1lhY0RFZXZnbW9VQk1XZWQ2eDlqT1E4Si1zUzZZMVNPRQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": qual a relação de J. K. Rowling com nova série do bruxo",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSTB4eGdObmltNGJZZ1RNWUhBVVltekpRaUEtWS1Vc3cxQVhrLUl5X3poYUhxNHhpMnk0NHczaHlmUTZ1blR2cnpicVpQaWVtcTZpd0VCSVBoZDI1VkYyZDdzU2NTYnBuTWZ4ck9INzJvZEFycUh0ekhCUVBtcWh1TlBzNjhVVGVDcVlWRGtLV0VsVXNUb0ZmVEI3UjlXY2YxQWc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": veja fotos da 1ª temporada da série",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "2ª temporada da série \"Harry Potter\" já está sendo escrita, diz site",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT1VpR3hNZHdZMmFfZ19VSkJ0RU92NFNHRy0wOW5Fb0Qzak1YRUlyMnQtRUFMbDBVR2IxREgyLTR1UGVQMmJPS3NBX25mX2dyRzR0THgxQl9fWUk0cGc1dlF1MlpiX3dhVlBROVZHRkw4MUVLVG9NZ1pFQy1YaDBIcjd2cHRGR3JVTEM0WVZOeDR4Ni1HU3hadG9BVDVSMDVO?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNHZCWklkRFJZNDA2OURVYmVhWWhxbGVHXzFuUUp2akdxMGh1YVVPdFQwZmkyVHBzalplM2FlSVVib3NsN29JLThFbVBhYkRqWlMyREVmVkFpbHhfemtKSjFZR0s2WmlEcjl0ZUNRcXVLRWNMU3dNYnhUbVVyVU4zUFZBbUVDSXRoZkNkb3pCU3VGZ1VWcDRxWmpTX2lNbXRVR001X2tyUQ?oc=5",
+      "title": "HBO divulga primeiro teaser oficial da nova série de \"Harry Potter\"; veja",
+      "cat": "neu",
+      "time": "27 mar, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
       "o": "BBC",
       "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FNy1nY2dwaGRSaDZvemh5NnhrdjhrYjZzYVlyU21Hcm95ajhWSTNPTjN1SHgtS1RmUjVsT2ZpSEticEY0bkpnc0tycUxQczhFYkR1QVVSRXlrNHU2dkZ1OWxB?oc=5",
       "title": "Série de 'Harry Potter' para TV tem trailer divulgado: o que já se sabe sobre ela",
       "cat": "neu",
       "time": "26 mar, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Exame",
-      "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS2JWaHhPaUgweUNVbUtSWThUNmkzTk9ZU3pwQ0tjS1RCWHRzZWVEel9YVE90X3J2Wi1fUzB3VjBtUG52MERsa0xtelEwa1dtNm5XOElIRndMTW43YktJUU04elRwYk1JaHV0M3d1X2ZSb05QTXQ1SzViaWRyZ3BSdw?oc=5",
-      "title": "'Harry Potter': tudo o que se sabe sobre a série da HBO",
-      "cat": "neu",
-      "time": "27 mar, 04:00",
-      "scope": "Google News RSS"
+      "scope": "Google News RSS BR"
     },
     {
       "o": "CNN Brasil",
@@ -234,39 +234,7 @@
       "title": "Quando estreia a nova série de \"Harry Potter\"?",
       "cat": "pos",
       "time": "26 mar, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "CNN Brasil",
-      "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5",
-      "title": "\"Harry Potter\": veja fotos da 1ª temporada da série",
-      "cat": "neu",
-      "time": "25 mar, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "CNN Brasil",
-      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNHZCWklkRFJZNDA2OURVYmVhWWhxbGVHXzFuUUp2akdxMGh1YVVPdFQwZmkyVHBzalplM2FlSVVib3NsN29JLThFbVBhYkRqWlMyREVmVkFpbHhfemtKSjFZR0s2WmlEcjl0ZUNRcXVLRWNMU3dNYnhUbVVyVU4zUFZBbUVDSXRoZkNkb3pCU3VGZ1VWcDRxWmpTX2lNbXRVR001X2tyUQ?oc=5",
-      "title": "HBO divulga primeiro teaser oficial da nova série de \"Harry Potter\"; veja",
-      "cat": "neu",
-      "time": "27 mar, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "O GLOBO",
-      "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSUtqVW8yWGkwWVo1aUFac1RzSGRGWHNVdUtpMzVuamNCTlhoWXY4OXRNN0NqVFlJNzdSTWJ3WXJKakpLWHZIQXhYeXFkWHVYRDVaTjRyTk5jYUk2WW1YbXk0MHNOQUY3SVdiTDk0cWc4cl9xWTN0MktDbGhlV1VFWEZZZzN0NDNsckhhbVB5czNLVWZuMG1uUDZrbHkyWmgwV3pfMG1kQ2ZoR2VwdWNrSjlwc0pwOE1GaHBPajZjUmRXaTJ4Wm8xNlA0dWVWOFJVa0lQd1EyMzNJcXU4aTB5TENxT2lodHJwSno2Zk01QWVFY2JoS2lKczdDMUVROUFtckg40gGSAkFVX3lxTFBFaEd0b1R2TDJwV2dtSmJTbDhOd3F0NTFhUUFoalZDaXRhN21jSWo0ZVllT0x0TWVaTGpyNjAxNk95ME1iY1FTWVZ3QVJ4ZE9kRDhwT1ljNDhXSUp3aE16Y3pJdXV4WkwzX01OdnBSMFpmdU5RSmlxaWF1UWRpTGpFT0Z2M1VRaWk5UnRIcWF6Qmp0Q0xBWG43MjJ2ZGYzZ0s4dF9HaWxiWGNUNVV1cnhaVWpoUnlCd01UdFNoRkZMeGl5ajA0bWFOSEEtcVU3RDcyTEpRMnNzMU54Sno1RndXYVUxV3N6eFF5YXdJLTRQS251OW4wcDQ4OENNc3BxcnZnazhSaWNJNFdzU2Z3UkF4TXc?oc=5",
-      "title": "Trailer da série de ‘Harry Potter’ bate 277 milhões de views e se torna o mais assistido da história da HBO",
-      "cat": "neu",
-      "time": "28 mar, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Estadão",
-      "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQXl0UFhuY1FWdnlyQ0xhUWdibzJ5ZktDTkhLNzVwc0hfQXhJNWVfUDFJaUpHYUcwR1RGalZkYWFlczlTQ3pIamFGQXMtMVFpRnRQTFN3SnNQT3pnWTFJcGE5akE3TW9ONVpSeU5EZWx5ZkZEbU9tZW45aS1ndS1FRE5KRmVoa2NnWGdYblhBaGJVM0ZFcDBaYVljSEp0bngtdUV4R3lPcFhSb2dWTTJnYk5tUdIBuAFBVV95cUxPY2JoMVczYzIwa0RwVjBpNFVrTmhzWFRIb09jbXJLZ29zZ0hidVROOGI5cEdxZzJkQ29RVVY1ZlZpZW01bVhpdmlyUXJxSEI4QXJaN0txS29ESGdjaEoyZ1JkaERsbHNmZG51UTZFcjR3V2lCeWd4ZGQwMW5MVzVkR0dDeDAyUFNfVTBDZENVYjVzNk4wQWk3T21udTVJOUI5d1M1aWZURXYxNXZFaWZQSFJ2ZHBBeElN?oc=5",
-      "title": "Teaser da série ‘Harry Potter’ já é o mais visto da história da HBO; assista",
-      "cat": "neu",
-      "time": "28 mar, 04:00",
-      "scope": "Google News RSS"
+      "scope": "Google News RSS BR"
     },
     {
       "o": "CNN Brasil",
@@ -274,7 +242,39 @@
       "title": "\"Harry Potter\": qual a relação de J. K. Rowling com nova série do bruxo",
       "cat": "neu",
       "time": "26 mar, 04:00",
-      "scope": "Google News RSS"
+      "scope": "Google News RSS BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOem5EdHdQXzdVdFVDdGQxNTRsUGlpWGJGQm81OFo4ZkFhOElqZkdLa1MtbVd2NHdkSFNFQ2VIWGxZX0lRWC01b05IRHRzaEs0UHJZUkptQ09OWDF2emJMTHhmaExHUmliRFRCemNtb01jdTR6S1RKYnhncGFLbU9VOEcxak1QWWI4aHc?oc=5",
+      "title": "\"Harry Potter\": veja fotos da 1ª temporada da série",
+      "cat": "neu",
+      "time": "25 mar, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT1VpR3hNZHdZMmFfZ19VSkJ0RU92NFNHRy0wOW5Fb0Qzak1YRUlyMnQtRUFMbDBVR2IxREgyLTR1UGVQMmJPS3NBX25mX2dyRzR0THgxQl9fWUk0cGc1dlF1MlpiX3dhVlBROVZHRkw4MUVLVG9NZ1pFQy1YaDBIcjd2cHRGR3JVTEM0WVZOeDR4Ni1HU3hadG9BVDVSMDVO?oc=5",
+      "title": "2ª temporada da série \"Harry Potter\" já está sendo escrita, diz site",
+      "cat": "neu",
+      "time": "30 mar, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVGlneVAyMXpveGw5OGtkUy1tVmozTmMzLXp3Q3lZd1F5amFjM2ltelBTZk9QbkZMUkhNNWYxblFOWGdfN1o1bFpYMU1pcHRFakZDWmt3R0hBQ2Y3YTRMdDFHNmJ3OVRFRlVsV2VIdl9FUDNMelV1a1drLUhFTGJHcXVMbVE5Q0VwOHRvTFkwVVpjSTQ?oc=5",
+      "title": "\"Harry Potter\": 5 detalhes especiais no 1º teaser da série",
+      "cat": "neu",
+      "time": "25 mar, 04:00",
+      "scope": "Google News RSS BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3EtaDFMMmFnWFgwYUktd1ROYTJsUkJhZnczV0Uwai1FemxXQ2NSa0ZmeFBBLXVtdmNXc3prNUFVUE1WeHFXTTRsMkI2WGpjYURpZWw1NU9rb291VVlfcTRNaGhWemlReC1jTmtobTlVVDJMbXhuRzZ1UXduUl9lYjl5SlZSOVR0WGFfQjRvMThadE42ZmlV?oc=5",
+      "title": "\"Harry Potter\": trailer da série movimenta a web; veja reações",
+      "cat": "neu",
+      "time": "27 mar, 04:00",
+      "scope": "Google News RSS BR"
     }
   ],
   "creators": [],
@@ -312,7 +312,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -324,7 +324,7 @@
   "_raw": {
     "base_count": 12,
     "unit": "itens",
-    "net": 8,
+    "net": 33,
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
@@ -332,6 +332,6 @@
     "wiki_views": 838236,
     "wiki_top_page": "Harry Potter TV series",
     "backfill": true,
-    "sentiment_index": 54
+    "sentiment_index": 66
   }
 }

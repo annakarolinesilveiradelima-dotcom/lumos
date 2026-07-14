@@ -1,14 +1,14 @@
 {
-  "label": "9 jun 2026",
-  "updated": "14 jul 2026, 10:42",
+  "label": "3-9 jun 2026",
+  "updated": "14 jul 2026, 11:27",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "4 items",
       "d": 0,
-      "sub": "7 noticias - 5 videos YouTube - 0 sinais Wikipedia - 3-9 jun 2026"
+      "sub": "0 noticias - 4 videos YouTube BR - 0 sinais Wikipedia - 3-9 jun 2026"
     },
     "sentiment": {
-      "v": "+33",
+      "v": "+25",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,85 +20,85 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "64",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 67,
+    "pos": 25,
+    "neu": 75,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
   ],
   "stack": [
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ],
     [
-      33,
-      67,
+      25,
+      75,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 7,
+      "vol": 1,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
+        "p": 25,
         "n": 0,
-        "g": 67
+        "g": 75
       }
     },
     {
-      "name": "YouTube",
-      "vol": 5,
+      "name": "YouTube BR",
+      "vol": 4,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 33,
+        "p": 25,
         "n": 0,
-        "g": 67
+        "g": 75
       }
     },
     {
@@ -115,231 +115,156 @@
   ],
   "narratives": [
     {
-      "t": "Harry Potter: A série da HBO enfrenta dificuldades inesperadas nas filmagens de sua 1ª temporada",
+      "t": "Only 199 days to go until the new Harry Potter HBOMAX series is out. #returntohogwarts",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "AdoroCinema",
-          "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSWh6bjdzTC00Ui1tXy1yLTFyV1I2T3RxWjZMR05QcWNKUU43MHNZakhYSTdJZmN5QlJ2b3I5RncyLXR2X3l6V2pSM1RJWFJ0UlZqbENlaGFMeEdVcEdweTRWMWVnRzFZVzFuVEVRSEjSAXZBVV95cUxPSTgtbkRMM3hDUk50LVZNLXJBUjRfR2dSZjVoLXVMc0ZDSVY1Ym1lRENvak1YeTk1V3dXNFBwYjAwS0U0NDFDSDN2c1RiX2ZWOGpoTEFaQmcxMVNDaWYySEhNREZmYTFVaGxFanhicU9jWW5UNE9B?oc=5"
+          "o": "YouTube - Hufflepuff For Life",
+          "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U"
         }
       ]
     },
     {
-      "t": "Harry Potter terá personagem icônico na 2ª temporada; veja quem",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPLVVRampCelJkTEVxV1BOUEhqUnlFa3lZOUpXLTgtODgwV1VHNGFCeVpNbXRGSmlnS0lzcUx2R3JLU3J4RVRkS2d0NGFKVUs4X21wWEpqT2ZYWjd3SUhxNmFMRVVGZ2VDdkQ2Y0tHVlNnYXU0UWpYX0NxaldLZXlsRDV1ejdDdmN0Z1B4TU9BYzROR3hjQlE?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "HBO revela 1ª imagem da nova série de Harry Potter e reacende a magia para 2027",
+      "t": "Nicolas Flamel es el personaje MÁS IMPORTANTE en Harry Potter... y tengo pruebas",
       "vol": 1,
       "senti": "pos",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "Jovem Pan",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDhuNmhSd0hOdnpXQXlNdHVHN0JnNDhBZmNnODdPaVdONUJ0TlpZMUVuN3JIeU9nMXQ1eWtNS2F3a1hfSXJhNW1RaURzUlZCcWF0UkhWb2w2N0NQT185RF94emJTWFliSDN2YzlGc0xuc2ZvZFBmQTFrY0NKc2hYSlZvc01wZXdmUmxGbjRSbzhickVFVHdYU1R1NGxHZFNsS0JuYkRlVUVUWWhpTWhYa3I2MGlIOHhEa3c5YVJuLTVqYmNvSlpndXRFZw?oc=5"
+          "o": "YouTube - El Aquelarre de Dany",
+          "u": "https://www.youtube.com/watch?v=pTrgihP9gSM"
         }
       ]
     },
     {
-      "t": "\"Harry Potter\": HBO está em busca de ator para o personagem Colin Creevey",
+      "t": "HBO&#39;s Harry Potter: John Lithgow on &#39;Thrilling&#39; New Series and Meeting OG Star Daniel Radcliffe",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "Rádio Mix FM",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxORnRTMGdqdnk4alV1YkpwNm9rTks3NG5VNk1PTnduU21SSndLMlhMUFBWeF8ycUFhQnBDVEw1NEF0R1lGZ0RSempyOGxPeDhFMzZvSXBFLWhDd2diajdBLWtvcE5nb2JNTjZqVlBadGRqcFhibWVVLVZyNmZJQjZfdmlGS3pzUGJFcEdCQzh4TlVMQnFlZmZfQTQ3UE5idw?oc=5"
+          "o": "YouTube - Entertainment Tonight",
+          "u": "https://www.youtube.com/watch?v=gQO3x1mazO0"
         }
       ]
     },
     {
-      "t": "Novo personagem de Harry Potter é confirmado para a 2ª temporada da série; saiba quem",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Rede Atlântida",
-          "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPbVh5WW9XTTAyVEhmalZXVTlrR0FrZjFWM1hoVWlxbzVFbDFhOHN5cXVSbGtQSFN6eE1TNXJOeDROQlFFeEJiczI4RVM1OUx4YWl3MDJMNExicGZNRVdVNGszbkN3LVllNEI0T2MyUnhER1Zvdk1wbU5Yd1UtdWZ0YkVMeU9rNlJaMXh3YVNaUnFkTXk2Y0pycS1RWUxyM3VoVFpOMk04MjRvMXRlN2lwU04tR1dIcGlyejlfVVduOGRNT3V0QXNLbmM1b2hiZjZ2dVh4WVBueGk2dFg2bUpOeXhEdWlONUREam1BZkhaVXo5VlNTU09qQi04bWFZWER5SVhB?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Série Harry Potter: O que já sabemos sobre a produção?",
+      "t": "Nuevos Uniformes | Nuevas Minifiguras | LEGO Harry Potter",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "Jovem Pan",
-          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX1VSMVlfbHNaXzFBQ0ZVQ0FkNFh5RmEyTkc1cVlxQVBfM09oRmYwWkNJdUZRNkNHQWFqendWM0oyT3ZOUmlTYkhoZ3N2NnhUS3RoT0JnMkNhZzdDVXVCNkJuRmdSakdvVUVScHNaQ08zU1hvOFh2NDJaR0kxaGtkWTZOeEtERjU1QnlpelJUaVJNTzJ5TkRXSnljMUlzbHlXdGFMeWJkQQ?oc=5"
+          "o": "YouTube - memo.bricks",
+          "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "AdoroCinema",
-      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSWh6bjdzTC00Ui1tXy1yLTFyV1I2T3RxWjZMR05QcWNKUU43MHNZakhYSTdJZmN5QlJ2b3I5RncyLXR2X3l6V2pSM1RJWFJ0UlZqbENlaGFMeEdVcEdweTRWMWVnRzFZVzFuVEVRSEjSAXZBVV95cUxPSTgtbkRMM3hDUk50LVZNLXJBUjRfR2dSZjVoLXVMc0ZDSVY1Ym1lRENvak1YeTk1V3dXNFBwYjAwS0U0NDFDSDN2c1RiX2ZWOGpoTEFaQmcxMVNDaWYySEhNREZmYTFVaGxFanhicU9jWW5UNE9B?oc=5",
-      "title": "Harry Potter: A série da HBO enfrenta dificuldades inesperadas nas filmagens de sua 1ª temporada",
+      "o": "YouTube - Hufflepuff For Life",
+      "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U",
+      "title": "Only 199 days to go until the new Harry Potter HBOMAX series is out. #returntohogwarts",
       "cat": "neu",
-      "time": "7 jun, 04:00",
-      "scope": "Google News RSS"
+      "time": "9 jun, 13:24",
+      "scope": "Video/Creator - YouTube BR"
     },
     {
-      "o": "Omelete",
-      "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPLVVRampCelJkTEVxV1BOUEhqUnlFa3lZOUpXLTgtODgwV1VHNGFCeVpNbXRGSmlnS0lzcUx2R3JLU3J4RVRkS2d0NGFKVUs4X21wWEpqT2ZYWjd3SUhxNmFMRVVGZ2VDdkQ2Y0tHVlNnYXU0UWpYX0NxaldLZXlsRDV1ejdDdmN0Z1B4TU9BYzROR3hjQlE?oc=5",
-      "title": "Harry Potter terá personagem icônico na 2ª temporada; veja quem",
+      "o": "YouTube - El Aquelarre de Dany",
+      "u": "https://www.youtube.com/watch?v=pTrgihP9gSM",
+      "title": "Nicolas Flamel es el personaje MÁS IMPORTANTE en Harry Potter... y tengo pruebas",
+      "cat": "pos",
+      "time": "8 jun, 15:00",
+      "scope": "Video/Creator - YouTube BR"
+    },
+    {
+      "o": "YouTube - Entertainment Tonight",
+      "u": "https://www.youtube.com/watch?v=gQO3x1mazO0",
+      "title": "HBO&#39;s Harry Potter: John Lithgow on &#39;Thrilling&#39; New Series and Meeting OG Star Daniel Radcliffe",
       "cat": "neu",
-      "time": "5 jun, 04:00",
-      "scope": "Google News RSS"
+      "time": "8 jun, 13:00",
+      "scope": "Video/Creator - YouTube BR"
     },
     {
-      "o": "Jovem Pan",
-      "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDhuNmhSd0hOdnpXQXlNdHVHN0JnNDhBZmNnODdPaVdONUJ0TlpZMUVuN3JIeU9nMXQ1eWtNS2F3a1hfSXJhNW1RaURzUlZCcWF0UkhWb2w2N0NQT185RF94emJTWFliSDN2YzlGc0xuc2ZvZFBmQTFrY0NKc2hYSlZvc01wZXdmUmxGbjRSbzhickVFVHdYU1R1NGxHZFNsS0JuYkRlVUVUWWhpTWhYa3I2MGlIOHhEa3c5YVJuLTVqYmNvSlpndXRFZw?oc=5",
-      "title": "HBO revela 1ª imagem da nova série de Harry Potter e reacende a magia para 2027",
-      "cat": "pos",
-      "time": "6 jun, 06:47",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Rádio Mix FM",
-      "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxORnRTMGdqdnk4alV1YkpwNm9rTks3NG5VNk1PTnduU21SSndLMlhMUFBWeF8ycUFhQnBDVEw1NEF0R1lGZ0RSempyOGxPeDhFMzZvSXBFLWhDd2diajdBLWtvcE5nb2JNTjZqVlBadGRqcFhibWVVLVZyNmZJQjZfdmlGS3pzUGJFcEdCQzh4TlVMQnFlZmZfQTQ3UE5idw?oc=5",
-      "title": "\"Harry Potter\": HBO está em busca de ator para o personagem Colin Creevey",
+      "o": "YouTube - memo.bricks",
+      "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0",
+      "title": "Nuevos Uniformes | Nuevas Minifiguras | LEGO Harry Potter",
       "cat": "neu",
-      "time": "8 jun, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Rede Atlântida",
-      "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPbVh5WW9XTTAyVEhmalZXVTlrR0FrZjFWM1hoVWlxbzVFbDFhOHN5cXVSbGtQSFN6eE1TNXJOeDROQlFFeEJiczI4RVM1OUx4YWl3MDJMNExicGZNRVdVNGszbkN3LVllNEI0T2MyUnhER1Zvdk1wbU5Yd1UtdWZ0YkVMeU9rNlJaMXh3YVNaUnFkTXk2Y0pycS1RWUxyM3VoVFpOMk04MjRvMXRlN2lwU04tR1dIcGlyejlfVVduOGRNT3V0QXNLbmM1b2hiZjZ2dVh4WVBueGk2dFg2bUpOeXhEdWlONUREam1BZkhaVXo5VlNTU09qQi04bWFZWER5SVhB?oc=5",
-      "title": "Novo personagem de Harry Potter é confirmado para a 2ª temporada da série; saiba quem",
-      "cat": "pos",
-      "time": "5 jun, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Jovem Pan",
-      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX1VSMVlfbHNaXzFBQ0ZVQ0FkNFh5RmEyTkc1cVlxQVBfM09oRmYwWkNJdUZRNkNHQWFqendWM0oyT3ZOUmlTYkhoZ3N2NnhUS3RoT0JnMkNhZzdDVXVCNkJuRmdSakdvVUVScHNaQ08zU1hvOFh2NDJaR0kxaGtkWTZOeEtERjU1QnlpelJUaVJNTzJ5TkRXSnljMUlzbHlXdGFMeWJkQQ?oc=5",
-      "title": "Série Harry Potter: O que já sabemos sobre a produção?",
-      "cat": "neu",
-      "time": "6 jun, 06:19",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Capricho",
-      "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYThLMXF0RFRWUHJsUHl0am9fTVh6U1lsVzlCU1RzdGpHLXhjdjlSSGlTa003TkVRRFRYZ1FGTmtUeWVKTU9GV29fMnRndjVGbklUTU1FbjR0N1pLLTgteGhSYnNDT1NYaFk4SnpxdmU0Rm5QQmtLV1lBMmxJek5fMEF2dkxYamNvZ0hLRjJLSTFMOEZ6MWtvUURlbG9QenRUYVBFdUVHZ3FCeklI?oc=5",
-      "title": "Série de Harry Potter ganha primeiro trailer e data de estreia",
-      "cat": "pos",
-      "time": "8 jun, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - The Sorcerer Nerd",
-      "u": "https://www.youtube.com/watch?v=oqGkDPDeoWc",
-      "title": "Harry Potter HBO Cast vs Movie Cast: Who Matches the Books Better?",
-      "cat": "pos",
-      "time": "9 jun, 21:00",
-      "scope": "Video/Creator - YouTube"
+      "time": "8 jun, 12:00",
+      "scope": "Video/Creator - YouTube BR"
     }
   ],
   "creators": [
     {
-      "h": "The Sorcerer Nerd",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=oqGkDPDeoWc"
-    },
-    {
-      "h": "WesWorld",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "div",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=-F6dX8XupmQ"
-    },
-    {
-      "h": "John Renard",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=p6xdi0NlrbQ"
-    },
-    {
-      "h": "PotterFiles",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=MulJXEWuoL0"
-    },
-    {
       "h": "Hufflepuff For Life",
       "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
+      "type": "Video BR sobre Harry Potter HBO",
       "senti": "neu",
       "reach": "nao coletado",
-      "rel": 60,
+      "rel": 70,
       "risk": "low",
       "c": "#E7A94B",
       "u": "https://www.youtube.com/watch?v=Vq4RwJmup7U"
+    },
+    {
+      "h": "El Aquelarre de Dany",
+      "pf": "YouTube",
+      "type": "Video BR sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 70,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=pTrgihP9gSM"
+    },
+    {
+      "h": "Entertainment Tonight",
+      "pf": "YouTube",
+      "type": "Video BR sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 70,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=gQO3x1mazO0"
+    },
+    {
+      "h": "memo.bricks",
+      "pf": "YouTube",
+      "type": "Video BR sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 70,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=yBCv4v1vXq0"
     }
   ],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
@@ -356,7 +281,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "4"
       ],
       [
         "Wikipedia",
@@ -368,7 +293,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -378,16 +303,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 4,
     "unit": "itens",
-    "net": 33,
-    "buzz": 100,
-    "news_count": 7,
-    "youtube_count": 5,
+    "net": 25,
+    "buzz": 64,
+    "news_count": 0,
+    "youtube_count": 4,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 66
+    "sentiment_index": 62
   }
 }

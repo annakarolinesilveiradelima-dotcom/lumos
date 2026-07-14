@@ -1,14 +1,14 @@
 {
-  "label": "5 mai 2026",
-  "updated": "14 jul 2026, 10:42",
+  "label": "29 abr-5 mai 2026",
+  "updated": "14 jul 2026, 11:26",
   "kpi": {
     "mentions": {
-      "v": "12 items",
+      "v": "1 item",
       "d": 0,
-      "sub": "8 noticias - 4 videos YouTube - 0 sinais Wikipedia - 29 abr-5 mai 2026"
+      "sub": "1 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 29 abr-5 mai 2026"
     },
     "sentiment": {
-      "v": "+42",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,85 +20,85 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "100",
+      "v": "78",
       "suf": "/100",
       "d": 0,
       "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 42,
-    "neu": 58,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100
+    78,
+    78,
+    78,
+    78,
+    78,
+    78,
+    78
   ],
   "stack": [
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ],
     [
-      42,
-      58,
+      100,
+      0,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 8,
-      "senti": "neu",
+      "vol": 1,
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 42,
+        "p": 100,
         "n": 0,
-        "g": 58
+        "g": 0
       }
     },
     {
-      "name": "YouTube",
-      "vol": 4,
-      "senti": "neu",
+      "name": "YouTube BR",
+      "vol": 1,
+      "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 42,
+        "p": 100,
         "n": 0,
-        "g": 58
+        "g": 0
       }
     },
     {
@@ -115,221 +115,34 @@
   ],
   "narratives": [
     {
-      "t": "Harry Potter | HBO anuncia novo projeto com conexão com os filmes",
+      "t": "HBO revela o elenco da família Weasley para série original de Harry Potter",
       "vol": 1,
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "Omelete",
-          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMUVlZTltX2ZNYS1tUTZ3X2NaNk1ZdTFCc191NkRoekxzYVFaQ3VPamNjVUxZUGlBXzVNYnVFMEhzZy1ZcGRHZnUyUUh2a1VIdnhCTjNQMUxyNkNudFFYTEVibElNNlRDVV9aS1ZqWkt3cmJGUVE3c3UtMEVZQVk0M29fdw?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: Série vai acabar com tradição de 28 anos da HBO",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O TEMPO",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGZRWVc1VEVDQlRRb0N6TmpMTmFhQ3BhMW9FSG51WlFuTEpocXR0QjR6Z25mU0hIRmoyU1dnSWV3UUQwNHNYV0c0UlhOZng0YWphZXRiaTJzTGJKaF81NkJ5Q3JDSElfVU9aVklNMVQ5QnpMdmFZTENONTYta1YtQ1F6aWFqZzR5VHBnSlpoZWwzd3Vka09ya3FPSkN5ZFN4S2YwTk1SYm5FSXpjN1k1R2pLZ0tOdnlG0gG-AUFVX3lxTE1rNEI3dVhoVkxUamlnQVhzM2dod2dwSnk4eFYzVzRXdl95V3hvZFNIV0hrNHIyTjVYREhTYzQtcXhUZ2FrODFMX0w4bzNKTENsZHpxZmVmdWh1VXFGVDdPLWVXTnF3bXpFRTE0SkQwZ0RtbE55WUdweExSaEtNUk5HSXRQVTBSREs4Z1pFS2Fzb3BsUG4yaTJUVExlTXZscWQ4TkZHUUlEeGlscWhiTmd6STU3b2xOLXlHMkdENEE?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter quebra tradição da HBO e escolha surpreende",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Legião dos Heróis",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVBveHBMeHEtdmo2YnRPSVhvMjJHVExKenJZeEtNbUNEeWhfMm9WTDdacEhMbU9SUmRDekxHdzR1VnRCeXM3SGtOY0lFUllIS1I1QkJoQ1VmSGV4MnF6bU5zclFvZFFzQjEzRElSeDFZaGwtcW1iSTNYR1BOQmRtTV9Yb2g0YXJ0UXJlaUtHa2dhVzRaLVc5V0pFOTRDNWJncXVr?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Antes da nova série, HBO lança podcast sobre os filmes de 'Harry Potter'",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Exame",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM2pxanBTejlLS0Q1S0REMkphNTF6VXBlbUdjcFNpdUJnOUVoUHVDV05xWkxYbjhMa21fUzB4VWM2X3Y5cUFTQ3d6NlQ2ZFlQT2JORktEakdjb2lVZUlheDBqYkd4cVlnUlVEM0ZaVGZqMzNRYjRORjI4aWdXYlN5dTRyOUJlbVdBdDhVMGNLSjJtcFB5bDVB?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter: Data de estreia da série é definida pela HBO (Saiba qual!)",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Universo Sagas",
-          "u": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuRS12R0MtVHdpMkVWMFJUZ1FMRnVBMGpkN29nekVvemtfSk9qTWtsamd0MkhLQWdJR3BCWElSNGw0bXUyZFdicG9MS1F4NV94ajdnQVZWSmlmeTMweGw3Sk9rU2prN2dYU0JkNlRWSDFWQQ?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter terá projeto com 16 episódios antes da nova série",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Legião dos Heróis",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaExiV0Z4OUJobnY4NXNDSUtSazJUcjNCRk5odUZnM0JFbjBpY1hxSEd5RThRcjlBc3dSdVJ2QmowN1phdWh6SXpzYkltT2FKNUcwbW5WWGt1UlBram91NE9RNUJfWWwwYzJ0Rmg5TGIyNlpDM2o0dWxYdUJNLWk5LUtuU3dId3FPRXU3YXN2WS0xUkprX1kxNmlsQUFWbHRzZEVhT0pxS0ZBeTg?oc=5"
+          "o": "R7 Entretenimento",
+          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "Omelete",
-      "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMUVlZTltX2ZNYS1tUTZ3X2NaNk1ZdTFCc191NkRoekxzYVFaQ3VPamNjVUxZUGlBXzVNYnVFMEhzZy1ZcGRHZnUyUUh2a1VIdnhCTjNQMUxyNkNudFFYTEVibElNNlRDVV9aS1ZqWkt3cmJGUVE3c3UtMEVZQVk0M29fdw?oc=5",
-      "title": "Harry Potter | HBO anuncia novo projeto com conexão com os filmes",
-      "cat": "nos",
-      "time": "5 mai, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "O TEMPO",
-      "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGZRWVc1VEVDQlRRb0N6TmpMTmFhQ3BhMW9FSG51WlFuTEpocXR0QjR6Z25mU0hIRmoyU1dnSWV3UUQwNHNYV0c0UlhOZng0YWphZXRiaTJzTGJKaF81NkJ5Q3JDSElfVU9aVklNMVQ5QnpMdmFZTENONTYta1YtQ1F6aWFqZzR5VHBnSlpoZWwzd3Vka09ya3FPSkN5ZFN4S2YwTk1SYm5FSXpjN1k1R2pLZ0tOdnlG0gG-AUFVX3lxTE1rNEI3dVhoVkxUamlnQVhzM2dod2dwSnk4eFYzVzRXdl95V3hvZFNIV0hrNHIyTjVYREhTYzQtcXhUZ2FrODFMX0w4bzNKTENsZHpxZmVmdWh1VXFGVDdPLWVXTnF3bXpFRTE0SkQwZ0RtbE55WUdweExSaEtNUk5HSXRQVTBSREs4Z1pFS2Fzb3BsUG4yaTJUVExlTXZscWQ4TkZHUUlEeGlscWhiTmd6STU3b2xOLXlHMkdENEE?oc=5",
-      "title": "Harry Potter: Série vai acabar com tradição de 28 anos da HBO",
-      "cat": "neu",
-      "time": "5 mai, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Legião dos Heróis",
-      "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVBveHBMeHEtdmo2YnRPSVhvMjJHVExKenJZeEtNbUNEeWhfMm9WTDdacEhMbU9SUmRDekxHdzR1VnRCeXM3SGtOY0lFUllIS1I1QkJoQ1VmSGV4MnF6bU5zclFvZFFzQjEzRElSeDFZaGwtcW1iSTNYR1BOQmRtTV9Yb2g0YXJ0UXJlaUtHa2dhVzRaLVc5V0pFOTRDNWJncXVr?oc=5",
-      "title": "Harry Potter quebra tradição da HBO e escolha surpreende",
-      "cat": "neu",
-      "time": "3 mai, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Exame",
-      "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM2pxanBTejlLS0Q1S0REMkphNTF6VXBlbUdjcFNpdUJnOUVoUHVDV05xWkxYbjhMa21fUzB4VWM2X3Y5cUFTQ3d6NlQ2ZFlQT2JORktEakdjb2lVZUlheDBqYkd4cVlnUlVEM0ZaVGZqMzNRYjRORjI4aWdXYlN5dTRyOUJlbVdBdDhVMGNLSjJtcFB5bDVB?oc=5",
-      "title": "Antes da nova série, HBO lança podcast sobre os filmes de 'Harry Potter'",
-      "cat": "nos",
-      "time": "5 mai, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Universo Sagas",
-      "u": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuRS12R0MtVHdpMkVWMFJUZ1FMRnVBMGpkN29nekVvemtfSk9qTWtsamd0MkhLQWdJR3BCWElSNGw0bXUyZFdicG9MS1F4NV94ajdnQVZWSmlmeTMweGw3Sk9rU2prN2dYU0JkNlRWSDFWQQ?oc=5",
-      "title": "Harry Potter: Data de estreia da série é definida pela HBO (Saiba qual!)",
+      "o": "R7 Entretenimento",
+      "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWk0bEJXeDA3dHQ4LVA2eERiREN4RXR6akVQUWFTRmt5ci1obEFDRnh3TjRfV3hINXhidXNOa0tQX0lQTnJ5OGFyUEhROEVEZnhDY0QzUDZuUVZDVkFQbEZDd3k1RjdmdkczanhWNlpFX3lxZVk4OS1FLWg5Yy1rSFREb2p6NVJTOEQwNW5ESnB3b3dOZjQyclVCMDNuRHhtWkhWdm15aE4xbzJ3UWNwanB2bWVVN1Z5MXFySjFaeGxZMnpIRkJyTnhrNDM3cVF5?oc=5",
+      "title": "HBO revela o elenco da família Weasley para série original de Harry Potter",
       "cat": "pos",
-      "time": "30 abr, 04:24",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Legião dos Heróis",
-      "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaExiV0Z4OUJobnY4NXNDSUtSazJUcjNCRk5odUZnM0JFbjBpY1hxSEd5RThRcjlBc3dSdVJ2QmowN1phdWh6SXpzYkltT2FKNUcwbW5WWGt1UlBram91NE9RNUJfWWwwYzJ0Rmg5TGIyNlpDM2o0dWxYdUJNLWk5LUtuU3dId3FPRXU3YXN2WS0xUkprX1kxNmlsQUFWbHRzZEVhT0pxS0ZBeTg?oc=5",
-      "title": "Harry Potter terá projeto com 16 episódios antes da nova série",
-      "cat": "neu",
-      "time": "5 mai, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "IMDb",
-      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15TjhEamxMT2cwald2dEpBSVFKaXF3MUdBZEFJRl9kZW5xX1NXVmEyeDFUTHdjRktqV0hidVY5ck1kYWttZ1VkNmk2cHpXTU5falE?oc=5",
-      "title": "HBO’s Harry Potter Series Lead Cast Salaries Revealed: How They Compare To Daniel Radcliffe, Rupert Grint & Emma Watson",
-      "cat": "neu",
-      "time": "4 mai, 04:54",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "O Vício",
-      "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNWxiQUx5R1FwdUVKN1lBRmdFNE9iWjdqQU1tcGZLYURSaW1rVDN4S3NRV0U0Tmxxc3praVg4NklKeF9NZDBXLUk2MkNYNE5yYzllY2FTMDMxdUFja29CVDhzS2lxN2JjUEs5STdaS1NySWJaa240Y1pkNmszUC1qMk9UN19WbEZU0gGOAUFVX3lxTE10UGJWSjFNdUdTNUQyRTg5SWJVN0Zybk55bDFYd0E0S1ZKQUN5MWluNWd5TU1ucFJvdU9Fc3R2WjNfOXlKOE5aWVRGZ0szanBZYWpFY1lwQUVKTFc1SlI3Q0lKLU82Q3Qta0dHbFNIWHh2OUJzcFhhMDY3UElDY3RLYUpqbWZWRlJMWTk5T1E?oc=5",
-      "title": "Harry Potter: Fotos do set revelam possível pai de Hermione",
-      "cat": "pos",
-      "time": "3 mai, 04:00",
-      "scope": "Google News RSS"
+      "time": "30 abr, 04:00",
+      "scope": "Google News RSS BR"
     }
   ],
-  "creators": [
-    {
-      "h": "NextWorld Reaction",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=FS_ikxovqqs"
-    },
-    {
-      "h": "Cine Curiosidades",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=-cnZ-970k4g"
-    },
-    {
-      "h": "Capa Invisible",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=sozrgc9xn2w"
-    },
-    {
-      "h": "Wizards Rest",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neu",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=Fv_Co2r2UtY"
-    }
-  ],
+  "creators": [],
   "risks": [
-    {
-      "t": "Comparacao com os filmes originais",
-      "sev": "mid",
-      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
-    },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
@@ -351,7 +164,7 @@
       ],
       [
         "Itens reais/sinais",
-        "12"
+        "1"
       ],
       [
         "Wikipedia",
@@ -363,7 +176,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -373,16 +186,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 1,
     "unit": "itens",
-    "net": 42,
-    "buzz": 100,
-    "news_count": 8,
-    "youtube_count": 4,
+    "net": 100,
+    "buzz": 78,
+    "news_count": 1,
+    "youtube_count": 0,
     "wiki_score": 0,
     "wiki_views": 0,
     "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 71
+    "sentiment_index": 100
   }
 }
