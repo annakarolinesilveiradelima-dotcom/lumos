@@ -364,3 +364,73 @@ def collect_youtube_week(start, end, api_key):
             "order": "date",
             "publishedAfter": _iso_utc(start),
             "publishedBefore": _iso_utc(end),
+            "regionCode": "BR",
+            "relevanceLanguage": "pt",
+            "key": api_key
+        }
+
+        try:
+            response = requests.get(
+                "https://www.googleapis.com/youtube/v3/search",
+                params=params,
+                timeout=TIMEOUT
+            )
+
+            print(
+                f"[youtube] query='{query}' "
+                f"{start.date()} to {end.date()} status={response.status_code}"
+            )
+
+            if response.status_code != 200:
+                print("[youtube] resposta:", response.text[:500])
+                continue
+
+            data = response.json()
+            items = data.get("items", [])
+
+            print(f"[youtube] query='{query}' retornou {len(items)} videos")
+
+            for item in items:
+                video_id = (item.get("id") or {}).get("videoId")
+                snippet = item.get("snippet") or {}
+
+                if not video_id:
+                    continue
+
+                title = (snippet.get("title") or "").strip()
+                description = snippet.get("description") or ""
+                channel = snippet.get("channelTitle") or "YouTube"
+                published = snippet.get("publishedAt") or ""
+
+                if not title:
+                    continue
+
+                pub_date = None
+
+                try:
+                    pub_date = datetime.fromisoformat(
+                        published.replace("Z", "+00:00")
+                    ).astimezone(timezone.utc)
+                except Exception:
+                    pub_date = None
+
+                url = f"https://www.youtube.com/watch?v={video_id}"
+                cat = _cat(title + " " + description)
+
+                results.append({
+                    "o": f"YouTube - {channel}",
+                    "u": url,
+                    "title": title,
+                    "cat": cat,
+                    "time": _format_time_br(pub_date),
+                    "scope": "Video/Creator - YouTube"
+                })
+
+        except Exception as exc:
+            print(f"[youtube] falha query='{query}': {exc}")
+
+    results = _dedupe_coverage(results)
+
+    print(f"[youtube] {len(results)} videos reais coletados na semana")
+
+    return results
