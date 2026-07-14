@@ -1,6 +1,6 @@
 {
   "label": "1-7 jul 2026",
-  "updated": "14 jul 2026, 12:25",
+  "updated": "14 jul 2026, 12:32",
   "kpi": {
     "mentions": {
       "v": "0 itens",
@@ -80,7 +80,7 @@
   ],
   "platforms": [
     {
-      "name": "Imprensa/YouTube BR/Wikipedia",
+      "name": "Imprensa/YouTube PT-BR/Wikipedia",
       "vol": 1,
       "senti": "neu",
       "ang": -90,
@@ -98,7 +98,7 @@
     {
       "t": "Semana sem cobertura real",
       "sev": "low",
-      "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 1-7 jul 2026.",
+      "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 1-7 jul 2026.",
       "rec": "Manter monitoramento e validar novas fontes historicas."
     }
   ],

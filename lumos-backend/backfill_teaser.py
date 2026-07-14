@@ -52,6 +52,10 @@ YOUTUBE_QUERIES = [
     "serie harry potter",
     "nova série harry potter",
     "nova serie harry potter",
+    "série de harry potter",
+    "serie de harry potter",
+    "nova série de harry potter",
+    "nova serie de harry potter",
     "harry potter hbo",
     "harry potter max",
     "harry potter hbo max",
@@ -61,6 +65,8 @@ YOUTUBE_QUERIES = [
     "harry potter serie max",
     "harry potter elenco hbo",
     "harry potter hbo elenco",
+    "harry potter série elenco",
+    "harry potter serie elenco",
     "harry potter hbo brasil",
     "harry potter max brasil",
     "série harry potter hbo max",
@@ -96,34 +102,78 @@ BR_CHANNELS = [
     "coisa de nerd"
 ]
 
-BR_TEXT_SIGNALS = [
-    "brasil",
-    "hbo brasil",
-    "max brasil",
-    "hbo max brasil",
-    "harry potter série",
-    "harry potter serie",
-    "série harry potter",
-    "serie harry potter",
+HARRY_POTTER_SIGNALS = [
+    "harry potter",
+    "potter"
+]
+
+SERIES_SIGNALS = [
+    "série",
+    "serie",
     "nova série",
     "nova serie",
-    "em português",
-    "em portugues",
+    "série de harry potter",
+    "serie de harry potter",
+    "hbo",
+    "hbo max",
+    "max",
+    "streaming",
+    "reboot",
+    "adaptação",
+    "adaptacao",
+    "elenco",
+    "atores",
+    "ator",
+    "atriz",
+    "estreia",
+    "produção",
+    "producao",
+    "gravações",
+    "gravacoes",
+    "temporada"
+]
+
+PORTUGUESE_SIGNALS = [
+    "série",
+    "serie",
+    "nova",
+    "sobre",
+    "elenco",
+    "estreia",
+    "adaptação",
+    "adaptacao",
+    "produção",
+    "producao",
+    "gravações",
+    "gravacoes",
+    "brasil",
+    "brasileiro",
+    "brasileira",
     "português",
     "portugues",
     "pt-br",
     "dublado",
     "legendado",
-    "elenco",
-    "estreia",
+    "o que",
+    "por que",
+    "porque",
+    "vai ser",
+    "vai ter",
+    "foi confirmado",
+    "confirmado",
+    "entenda",
+    "notícia",
+    "noticia",
+    "trailer",
+    "hbo brasil",
+    "max brasil",
+    "warner brasil",
     "omelete",
     "jovem nerd",
     "ei nerd",
     "pipocando",
     "observatório do cinema",
-    "observatorio do cinema",
-    "warner brasil",
-    "max brasil"
+    "observatorio do cinema"
 ]
 
 BLOCKED_YOUTUBE_SIGNALS = [
@@ -143,7 +193,13 @@ BLOCKED_YOUTUBE_SIGNALS = [
     "draco owns me",
     "flash_viral",
     "rave kishorre",
-    "harrypotter_portugal"
+    "harrypotter_portugal",
+    "edit",
+    "edits",
+    "fyp",
+    "viral",
+    "status",
+    "whatsapp status"
 ]
 
 WIKI_PAGES = [
@@ -389,6 +445,7 @@ def collect_youtube_week(start, end, api_key):
         return []
 
     raw_items = []
+    debug_rows = []
 
     for query in YOUTUBE_QUERIES:
         params = {
@@ -396,7 +453,7 @@ def collect_youtube_week(start, end, api_key):
             "type": "video",
             "q": query,
             "maxResults": 50,
-            "order": "date",
+            "order": "relevance",
             "publishedAfter": _iso_utc(start),
             "publishedBefore": _iso_utc(end),
             "regionCode": "BR",
@@ -423,12 +480,40 @@ def collect_youtube_week(start, end, api_key):
             data = response.json()
             items = data.get("items", [])
 
-            print(f"[youtube] query='{query}' retornou {len(items)} videos")
+            print(f"[youtube] query='{query}' retornou {len(items)} videos brutos")
 
             raw_items.extend(items)
 
+            for item in items[:5]:
+                snippet = item.get("snippet") or {}
+                debug_rows.append({
+                    "query": query,
+                    "title": snippet.get("title", ""),
+                    "channel": snippet.get("channelTitle", ""),
+                    "publishedAt": snippet.get("publishedAt", ""),
+                    "description": (snippet.get("description", "") or "")[:220]
+                })
+
         except Exception as exc:
             print(f"[youtube] falha query='{query}': {exc}")
+
+    try:
+        debug_path = os.path.join(os.path.dirname(OUTPUT_DATA) or ".", "youtube_debug.json")
+
+        with open(debug_path, "w", encoding="utf-8") as file:
+            json.dump({
+                "generated_at": _stamp(),
+                "window": {
+                    "start": _iso_utc(start),
+                    "end": _iso_utc(end)
+                },
+                "raw_count": len(raw_items),
+                "sample": debug_rows[:80]
+            }, file, ensure_ascii=False, indent=2)
+
+        print(f"[youtube] debug salvo em {debug_path}")
+    except Exception as exc:
+        print(f"[youtube] nao consegui salvar debug: {exc}")
 
     results = []
 
@@ -457,9 +542,19 @@ def collect_youtube_week(start, end, api_key):
             for br_channel in BR_CHANNELS
         )
 
-        has_br_signal = any(
+        has_hp_signal = any(
             signal in combined_text
-            for signal in BR_TEXT_SIGNALS
+            for signal in HARRY_POTTER_SIGNALS
+        )
+
+        has_series_signal = any(
+            signal in combined_text
+            for signal in SERIES_SIGNALS
+        )
+
+        has_pt_signal = any(
+            signal in combined_text
+            for signal in PORTUGUESE_SIGNALS
         )
 
         is_blocked = any(
@@ -467,11 +562,17 @@ def collect_youtube_week(start, end, api_key):
             for blocked in BLOCKED_YOUTUBE_SIGNALS
         )
 
-        # Aceita canal brasileiro OU texto com sinal forte de português/BR.
-        if not allowed_channel and not has_br_signal:
-            continue
+        # Regra principal:
+        # Só entra se falar de Harry Potter + série/HBO/Max/elenco + português/BR.
+        # Canais da whitelist BR também passam, desde que falem de Harry Potter e série/HBO/Max.
+        if allowed_channel:
+            if not (has_hp_signal and has_series_signal):
+                continue
+        else:
+            if not (has_hp_signal and has_series_signal and has_pt_signal):
+                continue
 
-        # Bloqueia ruído óbvio, exceto whitelist.
+        # Bloqueia ruído global/aleatório se não for canal BR aprovado.
         if is_blocked and not allowed_channel:
             continue
 
@@ -493,12 +594,12 @@ def collect_youtube_week(start, end, api_key):
             "title": title,
             "cat": cat,
             "time": _format_time_br(pub_date),
-            "scope": "Video/Creator - YouTube BR"
+            "scope": "Video/Creator - YouTube PT-BR Série"
         })
 
     results = _dedupe_coverage(results)
 
-    print(f"[youtube] {len(results)} videos BR coletados na semana")
+    print(f"[youtube] {len(results)} videos em portugues sobre a serie coletados na semana")
 
     return results
 
@@ -568,11 +669,7 @@ def collect_wikipedia_pageviews_week(start, end):
         except Exception as exc:
             print(f"[wiki] falha project='{project}' article='{article}': {exc}")
 
-    page_results = sorted(
-        page_results,
-        key=lambda item: item["views"],
-        reverse=True
-    )
+    page_results = sorted(page_results, key=lambda item: item["views"], reverse=True)
 
     top_page = page_results[0] if page_results else None
     score = _wiki_score_from_views(total_views)
@@ -643,7 +740,7 @@ def _narratives_from_coverage(coverage):
             "senti": _senti_from_cat(item.get("cat", "neu")),
             "pf": platform,
             "trend": "flat",
-            "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+            "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
             "q": "",
             "pct": 50,
             "src": [
@@ -663,7 +760,7 @@ def _risks_from_coverage(coverage, week_label):
             {
                 "t": "Semana sem cobertura real",
                 "sev": "low",
-                "d": f"Nao foram encontradas materias, videos BR ou sinais para a janela {week_label}.",
+                "d": f"Nao foram encontradas materias, videos em portugues ou sinais para a janela {week_label}.",
                 "rec": "Manter monitoramento e validar novas fontes historicas."
             }
         ]
@@ -712,7 +809,7 @@ def _opps_from_coverage(coverage, week_label):
         {
             "ico": "book",
             "t": "Explorar fidelidade aos livros",
-            "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
         },
         {
             "ico": "film",
@@ -769,7 +866,7 @@ def _empty_snapshot(snapshot_date, week_label):
         ],
         "platforms": [
             {
-                "name": "Imprensa/YouTube BR/Wikipedia",
+                "name": "Imprensa/YouTube PT-BR/Wikipedia",
                 "vol": 1,
                 "senti": "neu",
                 "ang": -90,
@@ -846,10 +943,10 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             creators.append({
                 "h": outlet.replace("YouTube - ", ""),
                 "pf": "YouTube",
-                "type": "Video BR sobre Harry Potter HBO",
+                "type": "Video em português sobre a série de Harry Potter",
                 "senti": _senti_from_cat(item.get("cat", "neu")),
                 "reach": "nao coletado",
-                "rel": 70,
+                "rel": 75,
                 "risk": "low",
                 "c": "#E7A94B",
                 "u": item.get("u", "#")
@@ -862,7 +959,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             "mentions": {
                 "v": f"{count} item" + ("" if count == 1 else "s"),
                 "d": 0,
-                "sub": f"{press_count} noticias - {youtube_count} videos YouTube BR - {wiki_count} sinais Wikipedia - {week_label}"
+                "sub": f"{press_count} noticias - {youtube_count} videos YouTube PT-BR - {wiki_count} sinais Wikipedia - {week_label}"
             },
             "sentiment": {
                 "v": ("+" if net >= 0 else "") + str(net),
@@ -887,7 +984,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
             "pos": pos,
             "neu": neu,
             "neg": neg,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
         },
         "buzz7": [buzz, buzz, buzz, buzz, buzz, buzz, buzz],
         "stack": [
@@ -912,7 +1009,7 @@ def _snapshot_from_coverage(snapshot_date, week_label, coverage, wiki):
                 }
             },
             {
-                "name": "YouTube BR",
+                "name": "YouTube PT-BR",
                 "vol": max(youtube_count, 1),
                 "senti": "pos" if pos >= 55 else "neg" if neg >= 35 else "neu",
                 "ang": 70,
@@ -997,8 +1094,8 @@ def _save_snapshot(snapshot_date, snapshot):
 def _build_current_day(youtube_key):
     now = _now_br()
 
-    # Diario busca ultimos 7 dias para nao ficar vazio.
-    start = now - timedelta(days=7)
+    # Diario busca ultimos 30 dias para achar videos em portugues.
+    start = now - timedelta(days=30)
     end = now
     label = _label(now)
 
@@ -1091,7 +1188,7 @@ def main():
         print("[backfill] YOUTUBE_API_KEY nao configurada. YouTube sera ignorado.")
 
     print("[backfill] inicio")
-    print("[backfill] fonte principal: Google News RSS BR + YouTube BR + Wikipedia Pageviews")
+    print("[backfill] fonte principal: Google News RSS BR + YouTube PT-BR + Wikipedia Pageviews")
     print("[backfill] marco: teaser em 25/03/2026")
     print(f"[backfill] hoje: {_now_br():%Y-%m-%d %H:%M}")
 

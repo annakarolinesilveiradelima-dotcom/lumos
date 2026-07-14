@@ -1,5 +1,5 @@
 {
-  "generated_at": "14 jul 2026, 12:25",
+  "generated_at": "14 jul 2026, 12:33",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,18 +11,18 @@
       "days": {
         "d0": {
           "label": "14 jul 2026",
-          "updated": "14 jul 2026, 12:25",
+          "updated": "14 jul 2026, 12:33",
           "kpi": {
             "mentions": {
-              "v": "0 itens",
+              "v": "4 items",
               "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 14 jul 2026"
+              "sub": "3 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 14 jul 2026"
             },
             "sentiment": {
-              "v": "-",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "indice semanal por cobertura/sinal"
             },
             "sov": {
               "v": "-",
@@ -31,26 +31,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "0",
+              "v": "100",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura ou sinal real"
+              "sub": "buzz com Wikipedia 100/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
           ],
           "stack": [
             [
@@ -91,8 +91,8 @@
           ],
           "platforms": [
             {
-              "name": "Imprensa/YouTube BR/Wikipedia",
-              "vol": 1,
+              "name": "Imprensa",
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
@@ -100,22 +100,142 @@
                 "n": 0,
                 "g": 100
               }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 100,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaEJ3dGRmZExtS0dYRkJDSUJmNUpRWkdXa3BhRTFJdloxZXJ3dlhiM2FtdXhGc1VmWGFiaW9rTFVjQW5ZQ1RmWXFEeWxweXVxaGtSTlVVeWEtSG9EYzVUd3NhM2Jid0RkeXlOeXJkNTZjeVg1bFlEbi05Qzh6elh5b3AyWFB4dkVnYWhXMnhXWWw5S296VjIzSE40S2F2VnVFNGl3MDhYdlVzUXRlWW9WR2J3?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Pirraça ganha vida na série Harry Potter da HBO",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Alternativa Nerd",
+                  "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT0hDRmE3QlMxdTl0NEtfSXpXOElTVENMNUFaZXdfM1N4eVY0Y29Ma2ZrQkxqWjBjWEdONllJTGJYRGtITXA3RUdLYTZJcU43X2o5Qm9hVUF6T3dtX285dDZPRThlNDVhREtmS0ZDMFMzbndaa3ljcEd2R2pMVzNuV2lrZGVCRTFOLUxjTmxxRVJ6aVU?oc=5"
+                }
+              ]
+            },
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5",
+              "title": "Michael Byrne, ator de “Harry Potter”, morre aos 82 anos",
+              "cat": "neu",
+              "time": "30 jun, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaEJ3dGRmZExtS0dYRkJDSUJmNUpRWkdXa3BhRTFJdloxZXJ3dlhiM2FtdXhGc1VmWGFiaW9rTFVjQW5ZQ1RmWXFEeWxweXVxaGtSTlVVeWEtSG9EYzVUd3NhM2Jid0RkeXlOeXJkNTZjeVg1bFlEbi05Qzh6elh5b3AyWFB4dkVnYWhXMnhXWWw5S296VjIzSE40S2F2VnVFNGl3MDhYdlVzUXRlWW9WR2J3?oc=5",
+              "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+              "cat": "neu",
+              "time": "15 jun, 04:00",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Alternativa Nerd",
+              "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT0hDRmE3QlMxdTl0NEtfSXpXOElTVENMNUFaZXdfM1N4eVY0Y29Ma2ZrQkxqWjBjWEdONllJTGJYRGtITXA3RUdLYTZJcU43X2o5Qm9hVUF6T3dtX285dDZPRThlNDVhREtmS0ZDMFMzbndaa3ljcEd2R2pMVzNuV2lrZGVCRTFOLUxjTmxxRVJ6aVU?oc=5",
+              "title": "Pirraça ganha vida na série Harry Potter da HBO",
+              "cat": "neu",
+              "time": "15 jun, 18:33",
+              "scope": "Google News RSS BR"
+            },
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "14 jun-14 jul 2026",
+              "scope": "Wikipedia Pageviews - 382.479 views na semana"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 14 jul 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+              "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 14 jul 2026.",
             "facts": [
               [
                 "Janela",
@@ -123,55 +243,61 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
               ],
               [
-                "Dados ficticios",
-                "nao"
+                "Itens reais/sinais",
+                "4"
               ],
               [
-                "Status",
-                "sem cobertura/sinal real"
+                "Wikipedia",
+                "Harry Potter - 382.479 views"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 14 jul 2026 ainda nao tem fonte real suficiente."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
             }
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 0,
+            "base_count": 4,
             "unit": "itens",
             "net": 0,
-            "buzz": 0,
-            "news_count": 0,
+            "buzz": 100,
+            "news_count": 3,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
+            "wiki_score": 100,
+            "wiki_views": 382479,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 50
           }
         }
       },
       "weeks": {
         "w0": {
           "label": "8-14 jul 2026",
-          "updated": "14 jul 2026, 12:25",
+          "updated": "14 jul 2026, 12:33",
           "kpi": {
             "mentions": {
-              "v": "0 itens",
+              "v": "1 item",
               "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 8-14 jul 2026"
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 8-14 jul 2026"
             },
             "sentiment": {
-              "v": "-",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "indice semanal por cobertura/sinal"
             },
             "sov": {
               "v": "-",
@@ -180,26 +306,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "0",
+              "v": "91",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura ou sinal real"
+              "sub": "buzz com Wikipedia 91/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            91,
+            91,
+            91,
+            91,
+            91,
+            91,
+            91
           ],
           "stack": [
             [
@@ -240,7 +366,7 @@
           ],
           "platforms": [
             {
-              "name": "Imprensa/YouTube BR/Wikipedia",
+              "name": "Imprensa",
               "vol": 1,
               "senti": "neu",
               "ang": -90,
@@ -249,22 +375,70 @@
                 "n": 0,
                 "g": 100
               }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 91,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter film series'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+              "title": "Interesse enciclopedico por 'Harry Potter film series'",
+              "cat": "neu",
+              "time": "8-14 jul 2026",
+              "scope": "Wikipedia Pageviews - 111.241 views na semana"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na cobertura",
               "sev": "low",
-              "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 8-14 jul 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 8-14 jul 2026.",
             "facts": [
               [
                 "Janela",
@@ -272,37 +446,43 @@
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
               ],
               [
-                "Dados ficticios",
-                "nao"
+                "Itens reais/sinais",
+                "1"
               ],
               [
-                "Status",
-                "sem cobertura/sinal real"
+                "Wikipedia",
+                "Harry Potter film series - 111.241 views"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 8-14 jul 2026 ainda nao tem fonte real suficiente."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
             }
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 0,
+            "base_count": 1,
             "unit": "itens",
             "net": 0,
-            "buzz": 0,
+            "buzz": 91,
             "news_count": 0,
             "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
+            "wiki_score": 91,
+            "wiki_views": 111241,
+            "wiki_top_page": "Harry Potter film series",
+            "backfill": true,
+            "sentiment_index": 50
           }
         },
         "w-1": {
@@ -1470,7 +1650,7 @@
         },
         "w-7": {
           "label": "1-7 jul 2026",
-          "updated": "14 jul 2026, 12:25",
+          "updated": "14 jul 2026, 12:32",
           "kpi": {
             "mentions": {
               "v": "0 itens",
@@ -1550,7 +1730,7 @@
           ],
           "platforms": [
             {
-              "name": "Imprensa/YouTube BR/Wikipedia",
+              "name": "Imprensa/YouTube PT-BR/Wikipedia",
               "vol": 1,
               "senti": "neu",
               "ang": -90,
@@ -1568,7 +1748,7 @@
             {
               "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 1-7 jul 2026.",
+              "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 1-7 jul 2026.",
               "rec": "Manter monitoramento e validar novas fontes historicas."
             }
           ],
@@ -1617,12 +1797,12 @@
         },
         "w-8": {
           "label": "24-30 jun 2026",
-          "updated": "14 jul 2026, 12:25",
+          "updated": "14 jul 2026, 12:32",
           "kpi": {
             "mentions": {
-              "v": "2 items",
+              "v": "1 item",
               "d": 0,
-              "sub": "1 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 24-30 jun 2026"
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 24-30 jun 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -1637,26 +1817,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "89",
+              "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 89/100"
+              "sub": "buzz com Wikipedia 0/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            89,
-            89,
-            89,
-            89,
-            89,
-            89,
-            89
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
           ],
           "stack": [
             [
@@ -1708,7 +1888,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -1720,7 +1900,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 89,
+              "vol": 1,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -1737,29 +1917,13 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
                   "o": "CNN Brasil",
                   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFZMWdTeXFZOTF2U2ZJV3o1ZUVWOEZnY0hFZGVuY0l3YVhMTmR4QnMtcE1sLXM3WnBoY0tBdWlQRHdsSnJ1TjdvUHM0RTlZTUtuNVk2WkZqbkZpQTMyWXZVcWctUk5aaHl6dkNIYVRvZi1pUTVZSXZvalM3TElrS3pMTlFRcmFORlZmQmlQNHZNNF9wN2dVT19TSVBrOVZz?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             }
@@ -1772,14 +1936,6 @@
               "cat": "neu",
               "time": "30 jun, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "24-30 jun 2026",
-              "scope": "Wikipedia Pageviews - 85.866 views na semana"
             }
           ],
           "creators": [],
@@ -1805,11 +1961,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "1"
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 85.866 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -1817,7 +1973,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -1827,33 +1983,33 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 2,
+            "base_count": 1,
             "unit": "itens",
             "net": 0,
-            "buzz": 89,
+            "buzz": 28,
             "news_count": 1,
             "youtube_count": 0,
-            "wiki_score": 89,
-            "wiki_views": 85866,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-9": {
           "label": "17-23 jun 2026",
-          "updated": "14 jul 2026, 12:25",
+          "updated": "14 jul 2026, 12:32",
           "kpi": {
             "mentions": {
-              "v": "1 item",
+              "v": "0 itens",
               "d": 0,
-              "sub": "0 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 17-23 jun 2026"
+              "sub": "sem cobertura/sinal real nesta semana - 17-23 jun 2026"
             },
             "sentiment": {
-              "v": "+0",
-              "suf": "/100",
+              "v": "-",
+              "suf": "",
               "d": 0,
-              "sub": "indice semanal por cobertura/sinal"
+              "sub": "sem base suficiente"
             },
             "sov": {
               "v": "-",
@@ -1862,26 +2018,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "91",
+              "v": "0",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 91/100"
+              "sub": "sem cobertura ou sinal real"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Sem cobertura ou sinal real coletado nesta janela"
           },
           "buzz7": [
-            91,
-            91,
-            91,
-            91,
-            91,
-            91,
-            91
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "stack": [
             [
@@ -1922,7 +2078,7 @@
           ],
           "platforms": [
             {
-              "name": "Imprensa",
+              "name": "Imprensa/YouTube PT-BR/Wikipedia",
               "vol": 1,
               "senti": "neu",
               "ang": -90,
@@ -1931,70 +2087,22 @@
                 "n": 0,
                 "g": 100
               }
-            },
-            {
-              "name": "YouTube BR",
-              "vol": 1,
-              "senti": "neu",
-              "ang": 70,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            },
-            {
-              "name": "Wikipedia",
-              "vol": 91,
-              "senti": "neu",
-              "ang": 160,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
             }
           ],
-          "narratives": [
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
-                }
-              ]
-            }
-          ],
-          "coverage": [
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "17-23 jun 2026",
-              "scope": "Wikipedia Pageviews - 116.766 views na semana"
-            }
-          ],
+          "narratives": [],
+          "coverage": [],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura",
+              "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
-              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+              "d": "Nao foram encontradas materias, videos em portugues ou sinais para a janela 17-23 jun 2026.",
+              "rec": "Manter monitoramento e validar novas fontes historicas."
             }
           ],
           "heroOpp": {
-            "title": "Leitura semanal desde o teaser",
-            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 17-23 jun 2026.",
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
             "facts": [
               [
                 "Janela",
@@ -2002,53 +2110,47 @@
               ],
               [
                 "Marco",
-                "25/03/2026"
+                "teaser 25/03/2026"
               ],
               [
-                "Itens reais/sinais",
-                "1"
+                "Dados ficticios",
+                "nao"
               ],
               [
-                "Wikipedia",
-                "Harry Potter - 116.766 views"
+                "Status",
+                "sem cobertura/sinal real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "book",
-              "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
-            },
-            {
-              "ico": "film",
-              "t": "Organizar narrativa de comparacao",
-              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+              "ico": "mail",
+              "t": "Monitorar proxima coleta",
+              "d": "A janela 17-23 jun 2026 ainda nao tem fonte real suficiente."
             }
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 1,
+            "base_count": 0,
             "unit": "itens",
             "net": 0,
-            "buzz": 91,
+            "buzz": 0,
             "news_count": 0,
             "youtube_count": 0,
-            "wiki_score": 91,
-            "wiki_views": 116766,
-            "wiki_top_page": "Harry Potter",
-            "backfill": true,
-            "sentiment_index": 50
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
+            "backfill": true
           }
         },
         "w-10": {
           "label": "10-16 jun 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:32",
           "kpi": {
             "mentions": {
               "v": "3 items",
               "d": 0,
-              "sub": "3 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 10-16 jun 2026"
+              "sub": "3 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 10-16 jun 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -2073,7 +2175,7 @@
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
             44,
@@ -2134,7 +2236,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -2163,7 +2265,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -2179,7 +2281,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -2195,7 +2297,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -2267,7 +2369,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -2292,306 +2394,12 @@
         },
         "w-11": {
           "label": "3-9 jun 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:32",
           "kpi": {
             "mentions": {
-              "v": "0 itens",
+              "v": "1 item",
               "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 3-9 jun 2026"
-            },
-            "sentiment": {
-              "v": "-",
-              "suf": "",
-              "d": 0,
-              "sub": "sem base suficiente"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "sem cobertura ou sinal real"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
-          },
-          "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa/YouTube BR/Wikipedia",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [],
-          "coverage": [],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 3-9 jun 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
-            "facts": [
-              [
-                "Janela",
-                "3-9 jun 2026"
-              ],
-              [
-                "Marco",
-                "teaser 25/03/2026"
-              ],
-              [
-                "Dados ficticios",
-                "nao"
-              ],
-              [
-                "Status",
-                "sem cobertura/sinal real"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 3-9 jun 2026 ainda nao tem fonte real suficiente."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 0,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 0,
-            "news_count": 0,
-            "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
-          }
-        },
-        "w-12": {
-          "label": "27 mai-2 jun 2026",
-          "updated": "14 jul 2026, 12:24",
-          "kpi": {
-            "mentions": {
-              "v": "0 itens",
-              "d": 0,
-              "sub": "sem cobertura/sinal real nesta semana - 27 mai-2 jun 2026"
-            },
-            "sentiment": {
-              "v": "-",
-              "suf": "",
-              "d": 0,
-              "sub": "sem base suficiente"
-            },
-            "sov": {
-              "v": "-",
-              "d": 0,
-              "dtype": "pts",
-              "sub": "requer base multi-titulo"
-            },
-            "buzz": {
-              "v": "0",
-              "suf": "/100",
-              "d": 0,
-              "sub": "sem cobertura ou sinal real"
-            }
-          },
-          "senti": {
-            "pos": 0,
-            "neu": 100,
-            "neg": 0,
-            "tone": "Sem cobertura ou sinal real coletado nesta janela"
-          },
-          "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "stack": [
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ],
-            [
-              0,
-              100,
-              0
-            ]
-          ],
-          "platforms": [
-            {
-              "name": "Imprensa/YouTube BR/Wikipedia",
-              "vol": 1,
-              "senti": "neu",
-              "ang": -90,
-              "s": {
-                "p": 0,
-                "n": 0,
-                "g": 100
-              }
-            }
-          ],
-          "narratives": [],
-          "coverage": [],
-          "creators": [],
-          "risks": [
-            {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Nao foram encontradas materias, videos BR ou sinais para a janela 27 mai-2 jun 2026.",
-              "rec": "Manter monitoramento e validar novas fontes historicas."
-            }
-          ],
-          "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Nao houve cobertura real suficiente nesta janela semanal.",
-            "facts": [
-              [
-                "Janela",
-                "27 mai-2 jun 2026"
-              ],
-              [
-                "Marco",
-                "teaser 25/03/2026"
-              ],
-              [
-                "Dados ficticios",
-                "nao"
-              ],
-              [
-                "Status",
-                "sem cobertura/sinal real"
-              ]
-            ]
-          },
-          "opps": [
-            {
-              "ico": "mail",
-              "t": "Monitorar proxima coleta",
-              "d": "A janela 27 mai-2 jun 2026 ainda nao tem fonte real suficiente."
-            }
-          ],
-          "ephem": [],
-          "_raw": {
-            "base_count": 0,
-            "unit": "itens",
-            "net": 0,
-            "buzz": 0,
-            "news_count": 0,
-            "youtube_count": 0,
-            "wiki_score": 0,
-            "wiki_views": 0,
-            "wiki_top_page": "",
-            "backfill": true
-          }
-        },
-        "w-13": {
-          "label": "20-26 mai 2026",
-          "updated": "14 jul 2026, 12:24",
-          "kpi": {
-            "mentions": {
-              "v": "2 items",
-              "d": 0,
-              "sub": "1 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 20-26 mai 2026"
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 3-9 jun 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -2606,26 +2414,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "90",
+              "v": "89",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 90/100"
+              "sub": "buzz com Wikipedia 89/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            90,
-            90,
-            90,
-            90,
-            90,
-            90,
-            90
+            89,
+            89,
+            89,
+            89,
+            89,
+            89,
+            89
           ],
           "stack": [
             [
@@ -2677,7 +2485,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -2689,7 +2497,409 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 90,
+              "vol": 89,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter film series'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
+              "title": "Interesse enciclopedico por 'Harry Potter film series'",
+              "cat": "neu",
+              "time": "3-9 jun 2026",
+              "scope": "Wikipedia Pageviews - 91.851 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 3-9 jun 2026.",
+            "facts": [
+              [
+                "Janela",
+                "3-9 jun 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "1"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter film series - 91.851 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 1,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 89,
+            "news_count": 0,
+            "youtube_count": 0,
+            "wiki_score": 89,
+            "wiki_views": 91851,
+            "wiki_top_page": "Harry Potter film series",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-12": {
+          "label": "27 mai-2 jun 2026",
+          "updated": "14 jul 2026, 12:32",
+          "kpi": {
+            "mentions": {
+              "v": "1 item",
+              "d": 0,
+              "sub": "0 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 27 mai-2 jun 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "93",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 93/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            93,
+            93,
+            93,
+            93,
+            93,
+            93,
+            93
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 93,
+              "senti": "neu",
+              "ang": 160,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [
+            {
+              "t": "Interesse enciclopedico por 'Harry Potter'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Wikipedia",
+              "trend": "flat",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Wikipedia Pageviews",
+                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Wikipedia Pageviews",
+              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
+              "title": "Interesse enciclopedico por 'Harry Potter'",
+              "cat": "neu",
+              "time": "27 mai-2 jun 2026",
+              "scope": "Wikipedia Pageviews - 138.924 views na semana"
+            }
+          ],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Risco baixo na cobertura",
+              "sev": "low",
+              "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+              "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
+            }
+          ],
+          "heroOpp": {
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 27 mai-2 jun 2026.",
+            "facts": [
+              [
+                "Janela",
+                "27 mai-2 jun 2026"
+              ],
+              [
+                "Marco",
+                "25/03/2026"
+              ],
+              [
+                "Itens reais/sinais",
+                "1"
+              ],
+              [
+                "Wikipedia",
+                "Harry Potter - 138.924 views"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparacao",
+              "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
+            }
+          ],
+          "ephem": [],
+          "_raw": {
+            "base_count": 1,
+            "unit": "itens",
+            "net": 0,
+            "buzz": 93,
+            "news_count": 0,
+            "youtube_count": 0,
+            "wiki_score": 93,
+            "wiki_views": 138924,
+            "wiki_top_page": "Harry Potter",
+            "backfill": true,
+            "sentiment_index": 50
+          }
+        },
+        "w-13": {
+          "label": "20-26 mai 2026",
+          "updated": "14 jul 2026, 12:31",
+          "kpi": {
+            "mentions": {
+              "v": "1 item",
+              "d": 0,
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 20-26 mai 2026"
+            },
+            "sentiment": {
+              "v": "+0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "indice semanal por cobertura/sinal"
+            },
+            "sov": {
+              "v": "-",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-titulo"
+            },
+            "buzz": {
+              "v": "28",
+              "suf": "/100",
+              "d": 0,
+              "sub": "buzz com Wikipedia 0/100"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
+          },
+          "buzz7": [
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "YouTube PT-BR",
+              "vol": 1,
+              "senti": "neu",
+              "ang": 70,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            },
+            {
+              "name": "Wikipedia",
+              "vol": 1,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -2706,29 +2916,13 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
                   "o": "CNN Brasil",
                   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeWs1M3p5NlpTSlY2eFVUWXZmM3J0QXhoakk0UkRvRktkeVFWMVlxYm9pYmk1Q1VHU0NBc0EtUEg3T1ozRndNVnNaVE5qZ3ppSXU0VGpocDY5ejJnTXR6Nm5iRGlUbUhmOTBRX3pQSE54YUNIeHgxa3lPVjRtRWpJZVUwUFZDMXBScldPRUxtbU0tRE9sU0JlaGVJV1k5V0FORGdPZ3NFZi03UQ?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             }
@@ -2741,14 +2935,6 @@
               "cat": "neu",
               "time": "24 mai, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "20-26 mai 2026",
-              "scope": "Wikipedia Pageviews - 100.101 views na semana"
             }
           ],
           "creators": [],
@@ -2774,11 +2960,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "2"
+                "1"
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 100.101 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -2786,7 +2972,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -2796,30 +2982,30 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 2,
+            "base_count": 1,
             "unit": "itens",
             "net": 0,
-            "buzz": 90,
+            "buzz": 28,
             "news_count": 1,
             "youtube_count": 0,
-            "wiki_score": 90,
-            "wiki_views": 100101,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-14": {
           "label": "13-19 mai 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
-              "v": "3 items",
+              "v": "2 items",
               "d": 0,
-              "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 13-19 mai 2026"
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 13-19 mai 2026"
             },
             "sentiment": {
-              "v": "+67",
+              "v": "+100",
               "suf": "/100",
               "d": 0,
               "sub": "indice semanal por cobertura/sinal"
@@ -2831,61 +3017,61 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "94",
+              "v": "86",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 94/100"
+              "sub": "buzz com Wikipedia 0/100"
             }
           },
           "senti": {
-            "pos": 67,
-            "neu": 33,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            94,
-            94,
-            94,
-            94,
-            94,
-            94,
-            94
+            86,
+            86,
+            86,
+            86,
+            86,
+            86,
+            86
           ],
           "stack": [
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ],
             [
-              67,
-              33,
+              100,
+              0,
               0
             ]
           ],
@@ -2896,25 +3082,25 @@
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 67,
+                "p": 100,
                 "n": 0,
-                "g": 33
+                "g": 0
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "pos",
               "ang": 70,
               "s": {
-                "p": 67,
+                "p": 100,
                 "n": 0,
-                "g": 33
+                "g": 0
               }
             },
             {
               "name": "Wikipedia",
-              "vol": 94,
+              "vol": 1,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -2931,7 +3117,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -2947,29 +3133,13 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
                   "o": "CNN Brasil",
                   "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             }
@@ -2990,14 +3160,6 @@
               "cat": "pos",
               "time": "19 mai, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "13-19 mai 2026",
-              "scope": "Wikipedia Pageviews - 166.953 views na semana"
             }
           ],
           "creators": [],
@@ -3023,11 +3185,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "3"
+                "2"
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 166.953 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -3035,7 +3197,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -3045,27 +3207,27 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 3,
+            "base_count": 2,
             "unit": "itens",
-            "net": 67,
-            "buzz": 94,
+            "net": 100,
+            "buzz": 86,
             "news_count": 2,
             "youtube_count": 0,
-            "wiki_score": 94,
-            "wiki_views": 166953,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
-            "sentiment_index": 84
+            "sentiment_index": 100
           }
         },
         "w-15": {
           "label": "6-12 mai 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
               "v": "3 items",
               "d": 0,
-              "sub": "3 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 6-12 mai 2026"
+              "sub": "3 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 6-12 mai 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -3090,7 +3252,7 @@
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
             44,
@@ -3151,7 +3313,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -3180,7 +3342,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3196,7 +3358,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3212,7 +3374,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3284,7 +3446,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -3309,12 +3471,12 @@
         },
         "w-16": {
           "label": "29 abr-5 mai 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
               "v": "1 item",
               "d": 0,
-              "sub": "1 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 29 abr-5 mai 2026"
+              "sub": "1 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 29 abr-5 mai 2026"
             },
             "sentiment": {
               "v": "+100",
@@ -3339,7 +3501,7 @@
             "pos": 100,
             "neu": 0,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
             78,
@@ -3400,7 +3562,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "pos",
               "ang": 70,
@@ -3429,7 +3591,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3485,7 +3647,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -3510,12 +3672,12 @@
         },
         "w-17": {
           "label": "22-28 abr 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
-              "v": "3 items",
+              "v": "2 items",
               "d": 0,
-              "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 22-28 abr 2026"
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 22-28 abr 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -3530,26 +3692,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "91",
+              "v": "36",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 91/100"
+              "sub": "buzz com Wikipedia 0/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            91,
-            91,
-            91,
-            91,
-            91,
-            91,
-            91
+            36,
+            36,
+            36,
+            36,
+            36,
+            36,
+            36
           ],
           "stack": [
             [
@@ -3601,7 +3763,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -3613,7 +3775,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 91,
+              "vol": 1,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -3630,7 +3792,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3646,29 +3808,13 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
                   "o": "Omelete",
                   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR0RVQkt3VG5ROWVtS2JKQWZFWU1zbVpndXpwOUtrZkh4TnlmTDNYS3oya1NVNzVCc2l4NVdsS010X3lFeWNvakswRjVOaWd2WFd5VkY5bzhRd28zMmphblV3cEI1QlF4bXcwbkNfV21STFpmeG9BZHdSV3lRSHpkWkNmbFhaakVZUHFHTG1yRmNwVXc?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter"
                 }
               ]
             }
@@ -3689,14 +3835,6 @@
               "cat": "neu",
               "time": "27 abr, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-              "title": "Interesse enciclopedico por 'Harry Potter'",
-              "cat": "neu",
-              "time": "22-28 abr 2026",
-              "scope": "Wikipedia Pageviews - 110.183 views na semana"
             }
           ],
           "creators": [],
@@ -3722,11 +3860,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "3"
+                "2"
               ],
               [
                 "Wikipedia",
-                "Harry Potter - 110.183 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -3734,7 +3872,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -3744,27 +3882,27 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 3,
+            "base_count": 2,
             "unit": "itens",
             "net": 0,
-            "buzz": 91,
+            "buzz": 36,
             "news_count": 2,
             "youtube_count": 0,
-            "wiki_score": 91,
-            "wiki_views": 110183,
-            "wiki_top_page": "Harry Potter",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-18": {
           "label": "15-21 abr 2026",
-          "updated": "14 jul 2026, 12:24",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
-              "v": "3 items",
+              "v": "2 items",
               "d": 0,
-              "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 15-21 abr 2026"
+              "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 15-21 abr 2026"
             },
             "sentiment": {
               "v": "+0",
@@ -3779,26 +3917,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "95",
+              "v": "36",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 95/100"
+              "sub": "buzz com Wikipedia 0/100"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            95,
-            95,
-            95,
-            95,
-            95,
-            95,
-            95
+            36,
+            36,
+            36,
+            36,
+            36,
+            36,
+            36
           ],
           "stack": [
             [
@@ -3850,7 +3988,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -3862,7 +4000,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 95,
+              "vol": 1,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -3879,7 +4017,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -3895,29 +4033,13 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
                 {
                   "o": "UOL",
                   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHByaGw2M0tkczNlR3ZsQzcxeFlFNmpfMzVXcGhsNDFYY3hMbVA2OWpGNnhaZXJwd1h5cm82bGpXOWg3bFA4bmNoTm10OFVHUE8wZkRrTDlITGd5ZTZvMTMxUGR2ZzBNQ1NzaFp6VnkwOXBRekFhUUFESG9qUnRuRkR1OTJLb1RRTzFiVzlOeEN2cXpPMVU3cFRVMHJTLS12ZTQ1S0pwVWNPZFFCV0hLV2R1VDBpcmdwaU02bEZ3?oc=5"
-                }
-              ]
-            },
-            {
-              "t": "Interesse enciclopedico por 'Harry Potter film series'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Wikipedia",
-              "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Wikipedia Pageviews",
-                  "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29"
                 }
               ]
             }
@@ -3938,14 +4060,6 @@
               "cat": "neu",
               "time": "16 abr, 04:00",
               "scope": "Google News RSS BR"
-            },
-            {
-              "o": "Wikipedia Pageviews",
-              "u": "https://en.wikipedia.org/wiki/Harry_Potter_%28film_series%29",
-              "title": "Interesse enciclopedico por 'Harry Potter film series'",
-              "cat": "neu",
-              "time": "15-21 abr 2026",
-              "scope": "Wikipedia Pageviews - 185.288 views na semana"
             }
           ],
           "creators": [],
@@ -3971,11 +4085,11 @@
               ],
               [
                 "Itens reais/sinais",
-                "3"
+                "2"
               ],
               [
                 "Wikipedia",
-                "Harry Potter film series - 185.288 views"
+                "sem sinal - 0 views"
               ]
             ]
           },
@@ -3983,7 +4097,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -3993,27 +4107,27 @@
           ],
           "ephem": [],
           "_raw": {
-            "base_count": 3,
+            "base_count": 2,
             "unit": "itens",
             "net": 0,
-            "buzz": 95,
+            "buzz": 36,
             "news_count": 2,
             "youtube_count": 0,
-            "wiki_score": 95,
-            "wiki_views": 185288,
-            "wiki_top_page": "Harry Potter film series",
+            "wiki_score": 0,
+            "wiki_views": 0,
+            "wiki_top_page": "",
             "backfill": true,
             "sentiment_index": 50
           }
         },
         "w-19": {
           "label": "8-14 abr 2026",
-          "updated": "14 jul 2026, 12:23",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
               "v": "6 items",
               "d": 0,
-              "sub": "5 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 8-14 abr 2026"
+              "sub": "5 noticias - 0 videos YouTube PT-BR - 1 sinais Wikipedia - 8-14 abr 2026"
             },
             "sentiment": {
               "v": "+17",
@@ -4028,26 +4142,26 @@
               "sub": "requer base multi-titulo"
             },
             "buzz": {
-              "v": "97",
+              "v": "95",
               "suf": "/100",
               "d": 0,
-              "sub": "buzz com Wikipedia 97/100"
+              "sub": "buzz com Wikipedia 95/100"
             }
           },
           "senti": {
             "pos": 17,
             "neu": 83,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
-            97,
-            97,
-            97,
-            97,
-            97,
-            97,
-            97
+            95,
+            95,
+            95,
+            95,
+            95,
+            95,
+            95
           ],
           "stack": [
             [
@@ -4099,7 +4213,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -4111,7 +4225,7 @@
             },
             {
               "name": "Wikipedia",
-              "vol": 97,
+              "vol": 95,
               "senti": "neu",
               "ang": 160,
               "s": {
@@ -4128,7 +4242,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4144,7 +4258,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4160,7 +4274,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4176,7 +4290,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4192,7 +4306,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4208,7 +4322,7 @@
               "senti": "neu",
               "pf": "Wikipedia",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4266,7 +4380,7 @@
               "title": "Interesse enciclopedico por 'Harry Potter film series'",
               "cat": "neu",
               "time": "8-14 abr 2026",
-              "scope": "Wikipedia Pageviews - 245.923 views na semana"
+              "scope": "Wikipedia Pageviews - 179.825 views na semana"
             }
           ],
           "creators": [],
@@ -4296,7 +4410,7 @@
               ],
               [
                 "Wikipedia",
-                "Harry Potter film series - 245.923 views"
+                "Harry Potter film series - 179.825 views"
               ]
             ]
           },
@@ -4304,7 +4418,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -4317,11 +4431,11 @@
             "base_count": 6,
             "unit": "itens",
             "net": 17,
-            "buzz": 97,
+            "buzz": 95,
             "news_count": 5,
             "youtube_count": 0,
-            "wiki_score": 97,
-            "wiki_views": 245923,
+            "wiki_score": 95,
+            "wiki_views": 179825,
             "wiki_top_page": "Harry Potter film series",
             "backfill": true,
             "sentiment_index": 58
@@ -4329,12 +4443,12 @@
         },
         "w-20": {
           "label": "1-7 abr 2026",
-          "updated": "14 jul 2026, 12:23",
+          "updated": "14 jul 2026, 12:31",
           "kpi": {
             "mentions": {
               "v": "12 items",
               "d": 0,
-              "sub": "12 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 1-7 abr 2026"
+              "sub": "12 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 1-7 abr 2026"
             },
             "sentiment": {
               "v": "+33",
@@ -4359,7 +4473,7 @@
             "pos": 33,
             "neu": 67,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
             100,
@@ -4420,7 +4534,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -4449,7 +4563,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4465,7 +4579,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4481,7 +4595,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4497,7 +4611,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4513,7 +4627,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4529,7 +4643,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4641,7 +4755,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",
@@ -4666,12 +4780,12 @@
         },
         "w-21": {
           "label": "25-31 mar 2026",
-          "updated": "14 jul 2026, 12:23",
+          "updated": "14 jul 2026, 12:30",
           "kpi": {
             "mentions": {
               "v": "12 items",
               "d": 0,
-              "sub": "12 noticias - 0 videos YouTube BR - 0 sinais Wikipedia - 25-31 mar 2026"
+              "sub": "12 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 25-31 mar 2026"
             },
             "sentiment": {
               "v": "+33",
@@ -4696,7 +4810,7 @@
             "pos": 33,
             "neu": 67,
             "neg": 0,
-            "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+            "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
           },
           "buzz7": [
             100,
@@ -4757,7 +4871,7 @@
               }
             },
             {
-              "name": "YouTube BR",
+              "name": "YouTube PT-BR",
               "vol": 1,
               "senti": "neu",
               "ang": 70,
@@ -4786,7 +4900,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4802,7 +4916,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4818,7 +4932,7 @@
               "senti": "pos",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4834,7 +4948,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4850,7 +4964,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4866,7 +4980,7 @@
               "senti": "neu",
               "pf": "Imprensa",
               "trend": "flat",
-              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+              "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
               "q": "",
               "pct": 50,
               "src": [
@@ -4978,7 +5092,7 @@
             {
               "ico": "book",
               "t": "Explorar fidelidade aos livros",
-              "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+              "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
             },
             {
               "ico": "film",

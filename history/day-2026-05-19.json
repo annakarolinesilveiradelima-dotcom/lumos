@@ -1,14 +1,14 @@
 {
   "label": "13-19 mai 2026",
-  "updated": "14 jul 2026, 12:24",
+  "updated": "14 jul 2026, 12:31",
   "kpi": {
     "mentions": {
-      "v": "3 items",
+      "v": "2 items",
       "d": 0,
-      "sub": "2 noticias - 0 videos YouTube BR - 1 sinais Wikipedia - 13-19 mai 2026"
+      "sub": "2 noticias - 0 videos YouTube PT-BR - 0 sinais Wikipedia - 13-19 mai 2026"
     },
     "sentiment": {
-      "v": "+67",
+      "v": "+100",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,61 +20,61 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "94",
+      "v": "86",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz com Wikipedia 94/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 67,
-    "neu": 33,
+    "pos": 100,
+    "neu": 0,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube BR e Wikipedia Pageviews"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube PT-BR e Wikipedia Pageviews"
   },
   "buzz7": [
-    94,
-    94,
-    94,
-    94,
-    94,
-    94,
-    94
+    86,
+    86,
+    86,
+    86,
+    86,
+    86,
+    86
   ],
   "stack": [
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ],
     [
-      67,
-      33,
+      100,
+      0,
       0
     ]
   ],
@@ -85,25 +85,25 @@
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 67,
+        "p": 100,
         "n": 0,
-        "g": 33
+        "g": 0
       }
     },
     {
-      "name": "YouTube BR",
+      "name": "YouTube PT-BR",
       "vol": 1,
       "senti": "pos",
       "ang": 70,
       "s": {
-        "p": 67,
+        "p": 100,
         "n": 0,
-        "g": 33
+        "g": 0
       }
     },
     {
       "name": "Wikipedia",
-      "vol": 94,
+      "vol": 1,
       "senti": "neu",
       "ang": 160,
       "s": {
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,29 +136,13 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube PT-BR ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
           "o": "CNN Brasil",
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmJfV0g2XzFoMjQ0OVplYTV5RFMwMm94Y0RsRVZ3S3NZUTNvYVlFR0xkamlSRkp5ekJMU1JmcFR5Vm5aTjdVbXdwekFUNVNONVZXaXB1Z2lxMUxoM3BNN2tUTHZyUXdtaEtfem04WllPLUdPa0ljbWdaUHZCc1hqeVNkeFlJMlZWWFh4SWxMcTJ0aUl6UVNj?oc=5"
-        }
-      ]
-    },
-    {
-      "t": "Interesse enciclopedico por 'Harry Potter'",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Wikipedia",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube BR ou Wikipedia Pageviews",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Wikipedia Pageviews",
-          "u": "https://en.wikipedia.org/wiki/Harry_Potter"
         }
       ]
     }
@@ -179,14 +163,6 @@
       "cat": "pos",
       "time": "19 mai, 04:00",
       "scope": "Google News RSS BR"
-    },
-    {
-      "o": "Wikipedia Pageviews",
-      "u": "https://en.wikipedia.org/wiki/Harry_Potter",
-      "title": "Interesse enciclopedico por 'Harry Potter'",
-      "cat": "neu",
-      "time": "13-19 mai 2026",
-      "scope": "Wikipedia Pageviews - 166.953 views na semana"
     }
   ],
   "creators": [],
@@ -212,11 +188,11 @@
       ],
       [
         "Itens reais/sinais",
-        "3"
+        "2"
       ],
       [
         "Wikipedia",
-        "Harry Potter - 166.953 views"
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -224,7 +200,7 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video BR ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video em portugues ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
@@ -234,16 +210,16 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 3,
+    "base_count": 2,
     "unit": "itens",
-    "net": 67,
-    "buzz": 94,
+    "net": 100,
+    "buzz": 86,
     "news_count": 2,
     "youtube_count": 0,
-    "wiki_score": 94,
-    "wiki_views": 166953,
-    "wiki_top_page": "Harry Potter",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 84
+    "sentiment_index": 100
   }
 }
