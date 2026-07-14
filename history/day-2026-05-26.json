@@ -1,14 +1,14 @@
 {
   "label": "26 mai 2026",
-  "updated": "13 jul 2026, 16:45",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
-      "v": "3 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "3 noticias - 0 videos YouTube - 0 sinais Trends - 20-26 mai 2026"
+      "sub": "1 noticias - 11 videos YouTube - 0 sinais Wikipedia - 20-26 mai 2026"
     },
     "sentiment": {
-      "v": "+0",
+      "v": "+25",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,92 +20,92 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "44",
+      "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 0,
-    "neu": 100,
+    "pos": 25,
+    "neu": 75,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
-    44,
-    44,
-    44,
-    44,
-    44,
-    44,
-    44
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ],
     [
-      0,
-      100,
+      25,
+      75,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 3,
+      "vol": 1,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 0,
+        "p": 25,
         "n": 0,
-        "g": 100
+        "g": 75
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
+      "vol": 11,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 0,
+        "p": 25,
         "n": 0,
-        "g": 100
+        "g": 75
       }
     },
     {
-      "name": "Google Trends",
+      "name": "Wikipedia",
       "vol": 1,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -131,34 +131,82 @@
       ]
     },
     {
-      "t": "‘Harry Potter’ se prepara para grandes AVENTURAS nas cenas inéditas da série da HBO; Confira!",
+      "t": "Everything HBO&#39;s New Harry Potter Show Will Change About The Wizarding World",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "CinePOP Cinema",
-          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQazZwTDVBcEJlR2YweHMzX0hCOEY0WkVpaUVWM3pOaDFmMENZV0ppeW5ZS3kzenV2aDBBM0lhQ05sanNwOXkzOWRxVnBGbzJXZ3FuNDMxZ2NtNDZ0eWxkenh1ZzhweklkTXdoMEhYeDFnZVdxM0UxclJzM2VPVDlaVmJZX1Z0eWJZY2ttUDB0T0VBSGlwbjJCektNbHZBSDJ0WTFhbXFISzFLYnhyaC1Wd2ZlZG9USjVYdnNfLQ?oc=5"
+          "o": "YouTube - Hedwig's Hollow",
+          "u": "https://www.youtube.com/watch?v=a5oskxDpZBw"
         }
       ]
     },
     {
-      "t": "Família incompleta: atriz abandona nova série de Harry Potter na HBO",
+      "t": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "NSC Total",
-          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1B3MjYzMzRiRnhRTmwxX0tqOFU2eG1ibER2MFNUY3R5YmloMFhqNHhqMjdVWUFyWDFheGd0eldNaDVNcV9lSFlVR2Yzc0hLUUlmNm9uQnpXWnBxV2NpenRHOGNDMGtBdXZLcms5QmJiTjN2UTNIZWpFVGZkX05uXzByMUhpMndLN2tqRmlGbFB6LTJxR3NBWnhoVEtUbUZtNWlVcmFkNA?oc=5"
+          "o": "YouTube - Harry Potter HBO Updates ⚡️",
+          "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter&#39;s New Color Grading",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - ReliableNarrator",
+          "u": "https://www.youtube.com/watch?v=tuTp81IJPyo"
+        }
+      ]
+    },
+    {
+      "t": "A nova série de Harry Potter vai confundir MUITA gente",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - A Ordem de Merlin ",
+          "u": "https://www.youtube.com/watch?v=pZj8DLedIHU"
+        }
+      ]
+    },
+    {
+      "t": "MOST AURA - Moments in Harry Potter || Part 3 - Harry Potter Edit",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Valx",
+          "u": "https://www.youtube.com/watch?v=uUqSfGKnFBU"
         }
       ]
     }
@@ -173,34 +221,163 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "CinePOP Cinema",
-      "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQazZwTDVBcEJlR2YweHMzX0hCOEY0WkVpaUVWM3pOaDFmMENZV0ppeW5ZS3kzenV2aDBBM0lhQ05sanNwOXkzOWRxVnBGbzJXZ3FuNDMxZ2NtNDZ0eWxkenh1ZzhweklkTXdoMEhYeDFnZVdxM0UxclJzM2VPVDlaVmJZX1Z0eWJZY2ttUDB0T0VBSGlwbjJCektNbHZBSDJ0WTFhbXFISzFLYnhyaC1Wd2ZlZG9USjVYdnNfLQ?oc=5",
-      "title": "‘Harry Potter’ se prepara para grandes AVENTURAS nas cenas inéditas da série da HBO; Confira!",
+      "o": "YouTube - Hedwig's Hollow",
+      "u": "https://www.youtube.com/watch?v=a5oskxDpZBw",
+      "title": "Everything HBO&#39;s New Harry Potter Show Will Change About The Wizarding World",
       "cat": "neu",
-      "time": "24 mai, 04:00",
-      "scope": "Google News RSS"
+      "time": "26 mai, 21:45",
+      "scope": "Video/Creator - YouTube"
     },
     {
-      "o": "NSC Total",
-      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1B3MjYzMzRiRnhRTmwxX0tqOFU2eG1ibER2MFNUY3R5YmloMFhqNHhqMjdVWUFyWDFheGd0eldNaDVNcV9lSFlVR2Yzc0hLUUlmNm9uQnpXWnBxV2NpenRHOGNDMGtBdXZLcms5QmJiTjN2UTNIZWpFVGZkX05uXzByMUhpMndLN2tqRmlGbFB6LTJxR3NBWnhoVEtUbUZtNWlVcmFkNA?oc=5",
-      "title": "Família incompleta: atriz abandona nova série de Harry Potter na HBO",
+      "o": "YouTube - Harry Potter HBO Updates ⚡️",
+      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs",
+      "title": "Ron Weasley 26 Years Apart: Rupert Grint vs Alastair Stout #harrypotterhbo #harrypotter #ronweasley",
       "cat": "neu",
-      "time": "20 mai, 04:00",
-      "scope": "Google News RSS"
+      "time": "26 mai, 21:00",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - ReliableNarrator",
+      "u": "https://www.youtube.com/watch?v=tuTp81IJPyo",
+      "title": "Harry Potter&#39;s New Color Grading",
+      "cat": "nos",
+      "time": "26 mai, 20:47",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - A Ordem de Merlin ",
+      "u": "https://www.youtube.com/watch?v=pZj8DLedIHU",
+      "title": "A nova série de Harry Potter vai confundir MUITA gente",
+      "cat": "nos",
+      "time": "26 mai, 19:10",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Valx",
+      "u": "https://www.youtube.com/watch?v=uUqSfGKnFBU",
+      "title": "MOST AURA - Moments in Harry Potter || Part 3 - Harry Potter Edit",
+      "cat": "neu",
+      "time": "26 mai, 19:00",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - CooperativaFM",
+      "u": "https://www.youtube.com/watch?v=Jhiv30t8OgI",
+      "title": "Nuevo avance de la serie de Harry Potter de HBO",
+      "cat": "pos",
+      "time": "26 mai, 17:21",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Senta Que Lá Vem Spoiler!",
+      "u": "https://www.youtube.com/watch?v=ejGQdVvC81I",
+      "title": "⚡️ HARRY POTTER: O FANDOM ADULTO E O FUTURO DA SAGA! | Fandômico - EPISÓDIO 01",
+      "cat": "neu",
+      "time": "26 mai, 16:05",
+      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "Hedwig's Hollow",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=a5oskxDpZBw"
+    },
+    {
+      "h": "Harry Potter HBO Updates ⚡️",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=O-E5X3vgQQs"
+    },
+    {
+      "h": "ReliableNarrator",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=tuTp81IJPyo"
+    },
+    {
+      "h": "A Ordem de Merlin ",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=pZj8DLedIHU"
+    },
+    {
+      "h": "Valx",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=uUqSfGKnFBU"
+    },
+    {
+      "h": "CooperativaFM",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=Jhiv30t8OgI"
+    },
+    {
+      "h": "Senta Que Lá Vem Spoiler!",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=ejGQdVvC81I"
+    },
+    {
+      "h": "AliasNeto",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=z2ydRdmonSg"
+    }
+  ],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 20-26 mai 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 20-26 mai 2026.",
     "facts": [
       [
         "Janela",
@@ -211,12 +388,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
-        "3"
+        "Itens reais/sinais",
+        "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -224,25 +401,26 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 3,
+    "base_count": 12,
     "unit": "itens",
-    "net": 0,
-    "buzz": 44,
-    "news_count": 3,
-    "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "net": 25,
+    "buzz": 100,
+    "news_count": 1,
+    "youtube_count": 11,
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 50
+    "sentiment_index": 62
   }
 }

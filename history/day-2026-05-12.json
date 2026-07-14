@@ -1,11 +1,11 @@
 {
   "label": "12 mai 2026",
-  "updated": "13 jul 2026, 16:45",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 sinais Trends - 6-12 mai 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 sinais Wikipedia - 6-12 mai 2026"
     },
     "sentiment": {
       "v": "+33",
@@ -23,14 +23,14 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
     "pos": 33,
     "neu": 67,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -102,10 +102,10 @@
       }
     },
     {
-      "name": "Google Trends",
+      "name": "Wikipedia",
       "vol": 1,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -261,17 +261,17 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "Rádio Mix FM",
-      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRXFpbHFJN2h3T1VpdUFtNUhyMkhYYzcxeE0tbTJ4VUdUYVY4Mk1zQ05RdGxveE9FOXBVTHJQSVZoeXhnMVBDb3VOcXlJekVITW83MTZ6YnJzVXg5VlhCNmczZjBLcnhqNzBtNUNXSHhIQWhoLUdmemFlUnJWX0xMR1Z0Z2tLOUt3ZFdkeThpYjZ3eHc?oc=5",
-      "title": "Série “Harry Potter” é oficialmente renovada para a 2ª temporada",
+      "o": "GZH",
+      "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNOVhVeDd4TFFLNUNTeDAtZnc1eHRGcjZFdjNONHhIaERoX20zbEZ1T1V6dGpjSXhnNW1lUWNrdGlKZlRzYUY3bzAxWVZKRHEyNjZZM3NkelEtS3p2YnVrUERqbnRQME1ab05FTUhBQ0Z3bkZhRWJBWnBZWXFJUFFzWlZzQi12SnZEZlFZZE9aLXJqaUg4XzBnUTJ0b1Vic1l2OHNUQ0dYenJwSmFYMkJxM3hhZlU0My05amZvZmFjd2xKM2owR0VGTGpLWnc2SGRlSUZuX3lOUkN3THRMaVIyaUVsMEdmXzdkOUpXSXRJaGpHVmZ4MHdoRA?oc=5",
+      "title": "Série \"Harry Potter\" é renovada para a segunda temporada pela HBO Max",
       "cat": "neu",
       "time": "6 mai, 04:00",
       "scope": "Google News RSS"
     },
     {
-      "o": "GZH",
-      "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNOVhVeDd4TFFLNUNTeDAtZnc1eHRGcjZFdjNONHhIaERoX20zbEZ1T1V6dGpjSXhnNW1lUWNrdGlKZlRzYUY3bzAxWVZKRHEyNjZZM3NkelEtS3p2YnVrUERqbnRQME1ab05FTUhBQ0Z3bkZhRWJBWnBZWXFJUFFzWlZzQi12SnZEZlFZZE9aLXJqaUg4XzBnUTJ0b1Vic1l2OHNUQ0dYenJwSmFYMkJxM3hhZlU0My05amZvZmFjd2xKM2owR0VGTGpLWnc2SGRlSUZuX3lOUkN3THRMaVIyaUVsMEdmXzdkOUpXSXRJaGpHVmZ4MHdoRA?oc=5",
-      "title": "Série \"Harry Potter\" é renovada para a segunda temporada pela HBO Max",
+      "o": "Sortir à Paris",
+      "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMlhaM01EbkpETDNRa0VRVjRaZTI0clE0dzJfWVlwbzFfSVU2WjJJVGNlSlRWcVFsNjVuSzlKOHR3bzJOZmF3c3BTMGU4OWFiRkprRVJqa283dWNnYkxMQ19jX2MzbV9FbnRjc1kxOVd3SVF3bmJhbmo1WFRXYmh1aGtiZ2ZIaVdUcjJaQUJ5bllkck8xQ3ZWVmRXVGtPVHZSZTJZZUtlME1XNUJtRU13dWxNWWZzOG5sNGdneVBtZTdybkRvSzlaTnZoOFFHc2cxT2txMFJJakYzUk9oNjlISFdBcGw?oc=5",
+      "title": "Harry Potter: a série da HBO já foi renovada para a segunda temporada",
       "cat": "neu",
       "time": "6 mai, 04:00",
       "scope": "Google News RSS"
@@ -282,13 +282,13 @@
     {
       "t": "Risco baixo na cobertura",
       "sev": "low",
-      "d": "A janela teve fonte real ou sinal de busca coletado, mas sem sinais criticos fortes.",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
       "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 6-12 mai 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 6-12 mai 2026.",
     "facts": [
       [
         "Janela",
@@ -299,12 +299,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
+        "Itens reais/sinais",
         "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -312,12 +312,12 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
@@ -328,8 +328,9 @@
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
     "sentiment_index": 66
   }

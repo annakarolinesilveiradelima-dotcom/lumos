@@ -1,11 +1,11 @@
 {
   "label": "7 abr 2026",
-  "updated": "13 jul 2026, 16:43",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 sinais Trends - 1-7 abr 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 sinais Wikipedia - 1-7 abr 2026"
     },
     "sentiment": {
       "v": "+33",
@@ -23,14 +23,14 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 98/100"
     }
   },
   "senti": {
     "pos": 33,
     "neu": 67,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -102,10 +102,10 @@
       }
     },
     {
-      "name": "Google Trends",
-      "vol": 1,
+      "name": "Wikipedia",
+      "vol": 98,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -270,10 +270,10 @@
     },
     {
       "o": "Omelete",
-      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOTRESWN1OXJidmlEY3BCSGJTZDZTdmNoaXhiVUJlR1dhODBJaDByVDh1S1gwekpURkN6TTRVUVY5bmpsdEVkeGppOXc3MjFsQzdHcmI3bkU4bURzMEN5LWVkVkdWeHFqeEctMUNFc3dJbVJWYmJuZ2NIQ1RaM3dMNUpvWlJWbTNJOFRhOXQwM3h6ZUk?oc=5",
-      "title": "Harry Potter | Série da HBO lança novo trailer anunciando especial",
+      "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTXR1R3VYQkd1OTRNd0RGSUZya253LWdNTlVxeVBOZng4RjFBdWhxWGNMNUpEd1BCcTlBRkJQRUoxSExadjJQTXJDcUxyVTNPMDR2THZLbjJtV2xrTTlaMVBGYUlJOGxaeGQ1eDF0NkpQcUU4cS01aVM0SUpfS1ZhS0k1V21ITzJoZlczUA?oc=5",
+      "title": "Harry Potter | Documentário sobre nova série é lançado; veja trailer",
       "cat": "neu",
-      "time": "2 abr, 04:00",
+      "time": "5 abr, 04:00",
       "scope": "Google News RSS"
     }
   ],
@@ -282,13 +282,13 @@
     {
       "t": "Risco baixo na cobertura",
       "sev": "low",
-      "d": "A janela teve fonte real ou sinal de busca coletado, mas sem sinais criticos fortes.",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
       "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 1-7 abr 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 1-7 abr 2026.",
     "facts": [
       [
         "Janela",
@@ -299,12 +299,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
+        "Itens reais/sinais",
         "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "Harry Potter TV series - 288.556 views"
       ]
     ]
   },
@@ -312,12 +312,12 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
@@ -328,8 +328,9 @@
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "wiki_score": 98,
+    "wiki_views": 288556,
+    "wiki_top_page": "Harry Potter TV series",
     "backfill": true,
     "sentiment_index": 66
   }

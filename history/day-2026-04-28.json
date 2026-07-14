@@ -1,11 +1,11 @@
 {
   "label": "28 abr 2026",
-  "updated": "13 jul 2026, 16:44",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "6 noticias - 6 videos YouTube - 0 sinais Trends - 22-28 abr 2026"
+      "sub": "3 noticias - 9 videos YouTube - 0 sinais Wikipedia - 22-28 abr 2026"
     },
     "sentiment": {
       "v": "+25",
@@ -23,14 +23,14 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 59,
-    "neg": 8,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "pos": 25,
+    "neu": 75,
+    "neg": 0,
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -43,69 +43,69 @@
   ],
   "stack": [
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ],
     [
-      33,
-      59,
-      8
+      25,
+      75,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 6,
+      "vol": 3,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
-        "n": 8,
-        "g": 59
+        "p": 25,
+        "n": 0,
+        "g": 75
       }
     },
     {
       "name": "YouTube",
-      "vol": 6,
+      "vol": 9,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 33,
-        "n": 8,
-        "g": 59
+        "p": 25,
+        "n": 0,
+        "g": 75
       }
     },
     {
-      "name": "Google Trends",
+      "name": "Wikipedia",
       "vol": 1,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -131,28 +131,12 @@
       ]
     },
     {
-      "t": "Harry Potter na HBO: Quantos episódios terá a 1ª temporadas da série?",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Universo Sagas",
-          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTzFlRDNPV3VzRTBmelQwclZJT00taEZsQThzS1NPZE1FUER2VEZhcmktaVFCQmVLOW9taDlqS2UwZGF5S09uZmF0bEpDeE9qYVpuMUoya01qRm1LdU5VbzY1S2lFZkJHU0laRFNIT1RDSzY5bUpieHRwS0pUOEE3MHVyVHRSZw?oc=5"
-        }
-      ]
-    },
-    {
       "t": "O novo filme de Harry Potter está à frente da série e é um sucesso estrondoso na HBO Max: Já é o número 1 na plataforma em 24 países",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +152,7 @@
       "senti": "div",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -179,34 +163,50 @@
       ]
     },
     {
-      "t": "‘Tyrant’: Paapa Essiedu é escalado para o novo THRILLER culinário estrelado por Charlize Theron",
+      "t": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "CinePOP Cinema",
-          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbm1lay1uakphTVREMTA5UXRDQmJwYnRMMi1idDFMamUyaklQWWFxWkZwYWZIX1lpSWNsZ0MxLXZrRXQ2dEVUZTBVZ2tsTFpGZV9Yc3AtREpKY1JzZkRzc3NVd0VYTWtlWjhVTTIwOHZXWWNxb1dOOXV6SXhCNmh4ZG9qVUF2TGFSQmc3cWJHcnVJV1dBeXlkRUYzakRrbkpoTnVLY0o0SFVvQ2xtNXRtc1BYRmtQNU1Ib21Oa29IbzQ?oc=5"
+          "o": "YouTube - Lewis Spears",
+          "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
         }
       ]
     },
     {
-      "t": "‘Harry Potter’: Daniel Radcliffe revela seu filme FAVORITO da franquia",
+      "t": "100 Cosas Raras en Harry Potter (serie HBO) ⚡",
       "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
+      "senti": "div",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "CinePOP Cinema",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWS1ycE9Qd1ZXREpBM3o0ZDRlcC1FOHMxc1Nxc0FwaVhrblZNclpaNUpnb19PenhXV2ZFY3lGOHhpazNWZi1GZk9yS2RLMldwbElUNWxjNlZDVXk4SlF2cEtaT20yX0IzamxZdlpIQWlFRGRUNUlSSDl6RGRIQ1NrOGp0Zm5LSGNMWlZzN21pUnpkYjUzT2Vwcm9OQVdySkE?oc=5"
+          "o": "YouTube - Sowick",
+          "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
+        }
+      ]
+    },
+    {
+      "t": "Why HBO&#39;s Harry Potter Will Be BETTER Than the Movies",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Narrative Notch",
+          "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
         }
       ]
     }
@@ -218,14 +218,6 @@
       "title": "A série de Harry Potter confirma oficialmente sua maior mudança: É assim que ela será diferente dos filmes",
       "cat": "nos",
       "time": "22 abr, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "Universo Sagas",
-      "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTzFlRDNPV3VzRTBmelQwclZJT00taEZsQThzS1NPZE1FUER2VEZhcmktaVFCQmVLOW9taDlqS2UwZGF5S09uZmF0bEpDeE9qYVpuMUoya01qRm1LdU5VbzY1S2lFZkJHU0laRFNIT1RDSzY5bUpieHRwS0pUOEE3MHVyVHRSZw?oc=5",
-      "title": "Harry Potter na HBO: Quantos episódios terá a 1ª temporadas da série?",
-      "cat": "neu",
-      "time": "28 abr, 18:17",
       "scope": "Google News RSS"
     },
     {
@@ -245,63 +237,49 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "CinePOP Cinema",
-      "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbm1lay1uakphTVREMTA5UXRDQmJwYnRMMi1idDFMamUyaklQWWFxWkZwYWZIX1lpSWNsZ0MxLXZrRXQ2dEVUZTBVZ2tsTFpGZV9Yc3AtREpKY1JzZkRzc3NVd0VYTWtlWjhVTTIwOHZXWWNxb1dOOXV6SXhCNmh4ZG9qVUF2TGFSQmc3cWJHcnVJV1dBeXlkRUYzakRrbkpoTnVLY0o0SFVvQ2xtNXRtc1BYRmtQNU1Ib21Oa29IbzQ?oc=5",
-      "title": "‘Tyrant’: Paapa Essiedu é escalado para o novo THRILLER culinário estrelado por Charlize Theron",
+      "o": "YouTube - Lewis Spears",
+      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs",
+      "title": "The Problem With Black Snape | Lewis Spears | Stand Up Comedy",
       "cat": "neu",
-      "time": "27 abr, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "CinePOP Cinema",
-      "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWS1ycE9Qd1ZXREpBM3o0ZDRlcC1FOHMxc1Nxc0FwaVhrblZNclpaNUpnb19PenhXV2ZFY3lGOHhpazNWZi1GZk9yS2RLMldwbElUNWxjNlZDVXk4SlF2cEtaT20yX0IzamxZdlpIQWlFRGRUNUlSSDl6RGRIQ1NrOGp0Zm5LSGNMWlZzN21pUnpkYjUzT2Vwcm9OQVdySkE?oc=5",
-      "title": "‘Harry Potter’: Daniel Radcliffe revela seu filme FAVORITO da franquia",
-      "cat": "pos",
-      "time": "23 abr, 04:00",
-      "scope": "Google News RSS"
-    },
-    {
-      "o": "YouTube - Holly Flash ",
-      "u": "https://www.youtube.com/watch?v=yRo90HRlIvk",
-      "title": "Harry Potter Returns (2026) - First Look | HBO Max Reboot &amp; Podcast | Magic Begins Again",
-      "cat": "nos",
-      "time": "28 abr, 22:59",
+      "time": "28 abr, 23:18",
       "scope": "Video/Creator - YouTube"
     },
     {
-      "o": "YouTube - Mixiverso",
-      "u": "https://www.youtube.com/watch?v=AhwEAyfHdiU",
-      "title": "Nueva serie de Harry Potter 🤯  #harrypotter #series #hbomax",
-      "cat": "neg",
-      "time": "28 abr, 22:30",
+      "o": "YouTube - Sowick",
+      "u": "https://www.youtube.com/watch?v=0wClsrHi6VE",
+      "title": "100 Cosas Raras en Harry Potter (serie HBO) ⚡",
+      "cat": "esp",
+      "time": "28 abr, 16:43",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Narrative Notch",
+      "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0",
+      "title": "Why HBO&#39;s Harry Potter Will Be BETTER Than the Movies",
+      "cat": "nos",
+      "time": "28 abr, 16:00",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - The Spellbook Chronicles",
+      "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA",
+      "title": "HBO&#39;s Harry Potter: New Scenes or Book Betrayal? #shorts",
+      "cat": "esp",
+      "time": "28 abr, 13:02",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Mr.Potterr1",
+      "u": "https://www.youtube.com/watch?v=6s5-5L64c5I",
+      "title": "✨Emma Watson or🧹 Hermione Granger edit #harrypotter #hbo #hogwarts #highlyintelligent",
+      "cat": "neu",
+      "time": "28 abr, 11:16",
       "scope": "Video/Creator - YouTube"
     }
   ],
   "creators": [
     {
-      "h": "Holly Flash ",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=yRo90HRlIvk"
-    },
-    {
-      "h": "Mixiverso",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "neg",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=AhwEAyfHdiU"
-    },
-    {
-      "h": "BOX TRAILERS WILD",
+      "h": "Lewis Spears",
       "pf": "YouTube",
       "type": "Video sobre Harry Potter HBO",
       "senti": "neu",
@@ -309,18 +287,7 @@
       "rel": 60,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=6ESXyuO0Hyk"
-    },
-    {
-      "h": "Hamza Boujelouah",
-      "pf": "YouTube",
-      "type": "Video sobre Harry Potter HBO",
-      "senti": "pos",
-      "reach": "nao coletado",
-      "rel": 60,
-      "risk": "low",
-      "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=6SfRKm9-zfM"
+      "u": "https://www.youtube.com/watch?v=UpFpIzbuuUs"
     },
     {
       "h": "Sowick",
@@ -334,7 +301,29 @@
       "u": "https://www.youtube.com/watch?v=0wClsrHi6VE"
     },
     {
-      "h": "AdriScope",
+      "h": "Narrative Notch",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=M2P8ycXPQR0"
+    },
+    {
+      "h": "The Spellbook Chronicles",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "div",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=EXTOt-7VqjA"
+    },
+    {
+      "h": "Mr.Potterr1",
       "pf": "YouTube",
       "type": "Video sobre Harry Potter HBO",
       "senti": "neu",
@@ -342,7 +331,40 @@
       "rel": 60,
       "risk": "low",
       "c": "#E7A94B",
-      "u": "https://www.youtube.com/watch?v=XJfZ4Z8_rU8"
+      "u": "https://www.youtube.com/watch?v=6s5-5L64c5I"
+    },
+    {
+      "h": "The Marauder's Map",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=JNYisaDal3k"
+    },
+    {
+      "h": "Hamza Boujelouah",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=GD5bC8ILuCA"
+    },
+    {
+      "h": "Eve Edmunds",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=jR-2oHD8zG0"
     }
   ],
   "risks": [
@@ -351,17 +373,11 @@
       "sev": "mid",
       "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
-    },
-    {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 22-28 abr 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 22-28 abr 2026.",
     "facts": [
       [
         "Janela",
@@ -372,12 +388,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
+        "Itens reais/sinais",
         "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -385,12 +401,12 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
@@ -399,10 +415,11 @@
     "unit": "itens",
     "net": 25,
     "buzz": 100,
-    "news_count": 6,
-    "youtube_count": 6,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "news_count": 3,
+    "youtube_count": 9,
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
     "sentiment_index": 62
   }

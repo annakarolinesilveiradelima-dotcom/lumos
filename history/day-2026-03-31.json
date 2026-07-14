@@ -1,11 +1,11 @@
 {
   "label": "31 mar 2026",
-  "updated": "13 jul 2026, 16:43",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 sinais Trends - 25-31 mar 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 sinais Wikipedia - 25-31 mar 2026"
     },
     "sentiment": {
       "v": "+8",
@@ -23,14 +23,14 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 100/100"
     }
   },
   "senti": {
     "pos": 8,
     "neu": 92,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -102,10 +102,10 @@
       }
     },
     {
-      "name": "Google Trends",
-      "vol": 1,
+      "name": "Wikipedia",
+      "vol": 100,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -152,7 +152,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -269,26 +269,26 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "Omelete",
-      "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56NTN2UkkwTjJpMV9KTmpQWDVqUHc5SlRHd2htenc1aVB2Sk1sTmwtVFNwNXdTQkNxNEx5UktsWEVMcXhzMXRXSG9GeWktMFVjbHZDbmdiME1Hcm9tTWc0T0dwNFhhVDFhV3ZOY1Z2dWFyT2la?oc=5",
-      "title": "Harry Potter não vai seguir a fórmula do MCU, diz HBO",
+      "o": "CNN Brasil",
+      "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSTB4eGdObmltNGJZZ1RNWUhBVVltekpRaUEtWS1Vc3cxQVhrLUl5X3poYUhxNHhpMnk0NHczaHlmUTZ1blR2cnpicVpQaWVtcTZpd0VCSVBoZDI1VkYyZDdzU2NTYnBuTWZ4ck9INzJvZEFycUh0ekhCUVBtcWh1TlBzNjhVVGVDcVlWRGtLV0VsVXNUb0ZmVEI3UjlXY2YxQWc?oc=5",
+      "title": "\"Harry Potter\": qual a relação de J. K. Rowling com nova série do bruxo",
       "cat": "neu",
-      "time": "30 mar, 04:00",
+      "time": "26 mar, 04:00",
       "scope": "Google News RSS"
     }
   ],
   "creators": [],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
-      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
+      "t": "Risco baixo na cobertura",
+      "sev": "low",
+      "d": "A janela teve fonte real ou sinal historico coletado, mas sem sinais criticos fortes.",
+      "rec": "Manter monitoramento e registrar mudancas de tom nas proximas coletas."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 25-31 mar 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 25-31 mar 2026.",
     "facts": [
       [
         "Janela",
@@ -299,12 +299,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
+        "Itens reais/sinais",
         "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "Harry Potter TV series - 838.236 views"
       ]
     ]
   },
@@ -312,12 +312,12 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
@@ -328,8 +328,9 @@
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "wiki_score": 100,
+    "wiki_views": 838236,
+    "wiki_top_page": "Harry Potter TV series",
     "backfill": true,
     "sentiment_index": 54
   }

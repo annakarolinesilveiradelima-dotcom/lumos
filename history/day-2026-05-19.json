@@ -1,14 +1,14 @@
 {
   "label": "19 mai 2026",
-  "updated": "13 jul 2026, 16:45",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
       "v": "12 items",
       "d": 0,
-      "sub": "12 noticias - 0 videos YouTube - 0 sinais Trends - 13-19 mai 2026"
+      "sub": "12 noticias - 0 videos YouTube - 0 sinais Wikipedia - 13-19 mai 2026"
     },
     "sentiment": {
-      "v": "+42",
+      "v": "+33",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -23,14 +23,14 @@
       "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 42,
-    "neu": 58,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
     100,
@@ -43,38 +43,38 @@
   ],
   "stack": [
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ],
     [
-      42,
-      58,
+      33,
+      67,
       0
     ]
   ],
@@ -85,9 +85,9 @@
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 42,
+        "p": 33,
         "n": 0,
-        "g": 58
+        "g": 67
       }
     },
     {
@@ -96,16 +96,16 @@
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 42,
+        "p": 33,
         "n": 0,
-        "g": 58
+        "g": 67
       }
     },
     {
-      "name": "Google Trends",
+      "name": "Wikipedia",
       "vol": 1,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,12 +136,12 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "f5.folha.uol.com.br",
+          "o": "UOL",
           "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaWVoTTlDME51SVJVaHdBcWQ1allDVm4yTUhoOXc4YXFJTXIyUUtoWUJraWpwQkt3MldsUnd3VnNWTjFLdGkxZmhjcUx4WDVqOTJZUEdJbWM2RzVZUTdKLXVPZW5lemFaekZ3RWc5enpOMkFjY3dYUWNSZkJJZEZ5VGlLQjVldzNSWWs4M1VBVDZFd2pqS0hpdXhSdFU4WDFSTjlkVjdFLVhPVHdHTDhfRDFBRVJiQWs5bE0tT2FIT3JqMG_SAcgBQVVfeXFMTkZsSm82a2dSbk80VldjVWZES0FIMm9oUVVoXzdWM01SXzdlMDFrM3ZtWUwtQm5ZZmRXdVRkWVVjNUszckw4aHRGTThhUzVwam4zZXJ6d3E0cm5UVWtXVFllNHFUN3FBVWdlMUVmWlZ3UExzS0t6WmRkenRpOHRNMGJUQjY1bHAycnl0bFE0QmU1MURPWjR6dS1hdDlWMDFvN0RHZWcxbjd2STFidmNmUDE4QzRSWjhkTzFGZ0lJNjZsc0trc0xIaXY?oc=5"
         }
       ]
@@ -152,7 +152,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -168,7 +168,7 @@
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -184,7 +184,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -200,7 +200,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -221,7 +221,7 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "f5.folha.uol.com.br",
+      "o": "UOL",
       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaWVoTTlDME51SVJVaHdBcWQ1allDVm4yTUhoOXc4YXFJTXIyUUtoWUJraWpwQkt3MldsUnd3VnNWTjFLdGkxZmhjcUx4WDVqOTJZUEdJbWM2RzVZUTdKLXVPZW5lemFaekZ3RWc5enpOMkFjY3dYUWNSZkJJZEZ5VGlLQjVldzNSWWs4M1VBVDZFd2pqS0hpdXhSdFU4WDFSTjlkVjdFLVhPVHdHTDhfRDFBRVJiQWs5bE0tT2FIT3JqMG_SAcgBQVVfeXFMTkZsSm82a2dSbk80VldjVWZES0FIMm9oUVVoXzdWM01SXzdlMDFrM3ZtWUwtQm5ZZmRXdVRkWVVjNUszckw4aHRGTThhUzVwam4zZXJ6d3E0cm5UVWtXVFllNHFUN3FBVWdlMUVmWlZ3UExzS0t6WmRkenRpOHRNMGJUQjY1bHAycnl0bFE0QmU1MURPWjR6dS1hdDlWMDFvN0RHZWcxbjd2STFidmNmUDE4QzRSWjhkTzFGZ0lJNjZsc0trc0xIaXY?oc=5",
       "title": "HBO diz que substituirá atriz que faz Gina Weasley na série de 'Harry Potter'",
       "cat": "neu",
@@ -261,17 +261,17 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "Omelete",
-      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa3FKTGhnUW9oa0JLeHJYYV9OQWJDM0FFaGNGSm8tWm9Rd0RQaDNxWFdhb09HT1hhY2l6Q1pyTkViNkczcW9PZ0p5cDdGVHJXTWVvUEZLamowV2x2V19UajRTVGgwRnVvckR0NFVMSkpta3Q1OHBLOEdub2lrUTk1NFduRWRRVTZPaUcwak5MTVdodkk?oc=5",
-      "title": "Harry Potter | Série terá troca de atriz devido \"imprevisto\"; entenda",
+      "o": "Estadão",
+      "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU1h5d3JtZHdXRUFmdjZBeDFoMTFVZkxQUTFvcW9KbjdnNjZsdVh1blNTTEtwUmhGcDZXeTg1Nm9udVF2d1R0Z0JnVVVEZlhHT1pCSFJubVF1QnNpd0NVdjNodnQwMWwwM2JZbG02SFhZZjB0a1dVcE5UbDRZMk9fSjNxMm5pSEl6TDFKWjlkWmFva3dJdjhkVFRtLURBM0czVWljcUlIamVFdU1MT0FlX3FhYlhkMHRqeXfSAb8BQVVfeXFMT0E5dmxFbHNmUk9SZmM0enU1elNpdWI3VmMwakVfSHdZd2IxMU5KUlV2Nl9GbkhhYUFEa0JNNUw2d2ZHU2t2VmFFX3gxanA0VUVOUWxEUUFZWHZDRmkweUxvQ0xSWFIzOG55SmFkZWdlSDFRcnhoaF9SY3dTN1c0bGtBTzA5aTdubmRLN0VaQlo0NWxiZjJadURoWUVTTGVyNlUyd2Z5Tnk2QUFScU9LdVFpVFMxbklEaUEwY0Q4Mms?oc=5",
+      "title": "Atriz deixa nova série de ‘Harry Potter’ por ‘circunstâncias imprevistas’",
       "cat": "neu",
       "time": "18 mai, 04:00",
       "scope": "Google News RSS"
     },
     {
-      "o": "Estadão",
-      "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU1h5d3JtZHdXRUFmdjZBeDFoMTFVZkxQUTFvcW9KbjdnNjZsdVh1blNTTEtwUmhGcDZXeTg1Nm9udVF2d1R0Z0JnVVVEZlhHT1pCSFJubVF1QnNpd0NVdjNodnQwMWwwM2JZbG02SFhZZjB0a1dVcE5UbDRZMk9fSjNxMm5pSEl6TDFKWjlkWmFva3dJdjhkVFRtLURBM0czVWljcUlIamVFdU1MT0FlX3FhYlhkMHRqeXfSAb8BQVVfeXFMT0E5dmxFbHNmUk9SZmM0enU1elNpdWI3VmMwakVfSHdZd2IxMU5KUlV2Nl9GbkhhYUFEa0JNNUw2d2ZHU2t2VmFFX3gxanA0VUVOUWxEUUFZWHZDRmkweUxvQ0xSWFIzOG55SmFkZWdlSDFRcnhoaF9SY3dTN1c0bGtBTzA5aTdubmRLN0VaQlo0NWxiZjJadURoWUVTTGVyNlUyd2Z5Tnk2QUFScU9LdVFpVFMxbklEaUEwY0Q4Mms?oc=5",
-      "title": "Atriz deixa nova série de ‘Harry Potter’ por ‘circunstâncias imprevistas’",
+      "o": "Omelete",
+      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa3FKTGhnUW9oa0JLeHJYYV9OQWJDM0FFaGNGSm8tWm9Rd0RQaDNxWFdhb09HT1hhY2l6Q1pyTkViNkczcW9PZ0p5cDdGVHJXTWVvUEZLamowV2x2V19UajRTVGgwRnVvckR0NFVMSkpta3Q1OHBLOEdub2lrUTk1NFduRWRRVTZPaUcwak5MTVdodkk?oc=5",
+      "title": "Harry Potter | Série terá troca de atriz devido \"imprevisto\"; entenda",
       "cat": "neu",
       "time": "18 mai, 04:00",
       "scope": "Google News RSS"
@@ -294,7 +294,7 @@
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 13-19 mai 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 13-19 mai 2026.",
     "facts": [
       [
         "Janela",
@@ -305,12 +305,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
+        "Itens reais/sinais",
         "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -318,25 +318,26 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
     "base_count": 12,
     "unit": "itens",
-    "net": 42,
+    "net": 33,
     "buzz": 100,
     "news_count": 12,
     "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 71
+    "sentiment_index": 66
   }
 }

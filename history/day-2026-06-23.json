@@ -1,14 +1,14 @@
 {
   "label": "23 jun 2026",
-  "updated": "13 jul 2026, 16:46",
+  "updated": "14 jul 2026, 10:42",
   "kpi": {
     "mentions": {
-      "v": "4 items",
+      "v": "12 items",
       "d": 0,
-      "sub": "4 noticias - 0 videos YouTube - 0 sinais Trends - 17-23 jun 2026"
+      "sub": "2 noticias - 10 videos YouTube - 0 sinais Wikipedia - 17-23 jun 2026"
     },
     "sentiment": {
-      "v": "+25",
+      "v": "+17",
       "suf": "/100",
       "d": 0,
       "sub": "indice semanal por cobertura/sinal"
@@ -20,92 +20,92 @@
       "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "64",
+      "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "buzz semanal com Google Trends 0/100"
+      "sub": "buzz com Wikipedia 0/100"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 17,
+    "neu": 83,
     "neg": 0,
-    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Google Trends"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
-    64,
-    64,
-    64,
-    64,
-    64,
-    64,
-    64
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ],
     [
-      25,
-      75,
+      17,
+      83,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 4,
+      "vol": 2,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 17,
         "n": 0,
-        "g": 75
+        "g": 83
       }
     },
     {
       "name": "YouTube",
-      "vol": 1,
+      "vol": 10,
       "senti": "neu",
       "ang": 70,
       "s": {
-        "p": 25,
+        "p": 17,
         "n": 0,
-        "g": 75
+        "g": 83
       }
     },
     {
-      "name": "Google Trends",
+      "name": "Wikipedia",
       "vol": 1,
       "senti": "neu",
-      "ang": 128,
+      "ang": 160,
       "s": {
         "p": 0,
         "n": 0,
@@ -120,7 +120,7 @@
       "senti": "pos",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -136,7 +136,7 @@
       "senti": "div",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
@@ -147,34 +147,66 @@
       ]
     },
     {
-      "t": "Saiba quem viverá o poltergeist Pirraça na 1ª temporada de ‘Harry Potter’!",
+      "t": "It&#39;s tearing me apart trend 💔( hp edition) #iknowwhatyoudidlastsummer #shawnmendes #harrypotter#yt",
       "vol": 1,
       "senti": "neu",
-      "pf": "Imprensa",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "CinePOP Cinema",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmxjZEs5TFE4N0FvZlpxMVV1ckpjb2o1TjNmM29nMG02STBIc3pWeUhOUDJtQkUzaGczWEJfRUNyclg4Sm9tbGpTS2oxd1FWYlFDV19za1VwQ0tiVlpwZWI3TmUzazhvUXdjdXVIRnZSUExOZ1d3QTJnT0Rva19HTDN1Q0FSSEQyV3JmYW9JMWhnamJURWlndnowQkI1ME4zNVZEdQ?oc=5"
+          "o": "YouTube - Potter--head---The boy who lived",
+          "u": "https://www.youtube.com/watch?v=6loE3Mcbu8g"
         }
       ]
     },
     {
-      "t": "Harry Potter: Fãs podem não gostar do novo Hagrid, diz Nick Frost",
+      "t": "Harry Potter Arrives This Christmas. MForja&#39;s Magic Is Available Right Now.",
       "vol": 1,
-      "senti": "div",
-      "pf": "Imprensa",
+      "senti": "neu",
+      "pf": "YouTube",
       "trend": "flat",
-      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Google Trends",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "O Vício",
-          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdHBId0FPcmNtMDhmX2ZGREdFOHlHT0V2S0c3UVNTSUdJaHhoNG0wZW9IZ2RSUUMxVUUySnpPN3k3d2luLXN4MXc1clVXQlFoNHpwNml0QzZHd2J2Vkd1a3NrMlpmLWxJMGI3eGVBc1BnaFBjZGV2cmJxTmtzNktkbjBGREZ4Wk04MF9FZ1NKRdIBlAFBVV95cUxOMEJSQ3hTWHFzdjFkZzFWSl9rWkROTTRZNmtURkMxcGs2dC03cmFzNHFfVGlGMS1OTTZ3ZXk2SVVTTjBUR3lYUk1WMkZpcUNyWWtqUGg4TExLNEdGUkc0NHpZbVJ1ZTduakxDY3B0TXhXNHNKcXJXWFdMRlRaVlZvRlk3S1lvV1JpTWd1WXJ3TS1yMm9i?oc=5"
+          "o": "YouTube - MForja",
+          "u": "https://www.youtube.com/watch?v=QLVeDIp42gE"
+        }
+      ]
+    },
+    {
+      "t": "HBO new show about LORD VOLDEMORT",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Muleskinho",
+          "u": "https://www.youtube.com/watch?v=NDh47Q53ILg"
+        }
+      ]
+    },
+    {
+      "t": "🎬 Harry Potter (Film Series) | Fantasy Adventure ⚡#harrypotter #emmawatson #danielradcliffe #hbo",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Poptime Prime",
+          "u": "https://www.youtube.com/watch?v=KTG_Th8HZro"
         }
       ]
     }
@@ -197,34 +229,161 @@
       "scope": "Google News RSS"
     },
     {
-      "o": "CinePOP Cinema",
-      "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmxjZEs5TFE4N0FvZlpxMVV1ckpjb2o1TjNmM29nMG02STBIc3pWeUhOUDJtQkUzaGczWEJfRUNyclg4Sm9tbGpTS2oxd1FWYlFDV19za1VwQ0tiVlpwZWI3TmUzazhvUXdjdXVIRnZSUExOZ1d3QTJnT0Rva19HTDN1Q0FSSEQyV3JmYW9JMWhnamJURWlndnowQkI1ME4zNVZEdQ?oc=5",
-      "title": "Saiba quem viverá o poltergeist Pirraça na 1ª temporada de ‘Harry Potter’!",
+      "o": "YouTube - Potter--head---The boy who lived",
+      "u": "https://www.youtube.com/watch?v=6loE3Mcbu8g",
+      "title": "It&#39;s tearing me apart trend 💔( hp edition) #iknowwhatyoudidlastsummer #shawnmendes #harrypotter#yt",
       "cat": "neu",
-      "time": "17 jun, 04:00",
-      "scope": "Google News RSS"
+      "time": "23 jun, 21:32",
+      "scope": "Video/Creator - YouTube"
     },
     {
-      "o": "O Vício",
-      "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdHBId0FPcmNtMDhmX2ZGREdFOHlHT0V2S0c3UVNTSUdJaHhoNG0wZW9IZ2RSUUMxVUUySnpPN3k3d2luLXN4MXc1clVXQlFoNHpwNml0QzZHd2J2Vkd1a3NrMlpmLWxJMGI3eGVBc1BnaFBjZGV2cmJxTmtzNktkbjBGREZ4Wk04MF9FZ1NKRdIBlAFBVV95cUxOMEJSQ3hTWHFzdjFkZzFWSl9rWkROTTRZNmtURkMxcGs2dC03cmFzNHFfVGlGMS1OTTZ3ZXk2SVVTTjBUR3lYUk1WMkZpcUNyWWtqUGg4TExLNEdGUkc0NHpZbVJ1ZTduakxDY3B0TXhXNHNKcXJXWFdMRlRaVlZvRlk3S1lvV1JpTWd1WXJ3TS1yMm9i?oc=5",
-      "title": "Harry Potter: Fãs podem não gostar do novo Hagrid, diz Nick Frost",
-      "cat": "esp",
-      "time": "22 jun, 04:00",
-      "scope": "Google News RSS"
+      "o": "YouTube - MForja",
+      "u": "https://www.youtube.com/watch?v=QLVeDIp42gE",
+      "title": "Harry Potter Arrives This Christmas. MForja&#39;s Magic Is Available Right Now.",
+      "cat": "neu",
+      "time": "23 jun, 19:15",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Muleskinho",
+      "u": "https://www.youtube.com/watch?v=NDh47Q53ILg",
+      "title": "HBO new show about LORD VOLDEMORT",
+      "cat": "neu",
+      "time": "23 jun, 16:57",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Poptime Prime",
+      "u": "https://www.youtube.com/watch?v=KTG_Th8HZro",
+      "title": "🎬 Harry Potter (Film Series) | Fantasy Adventure ⚡#harrypotter #emmawatson #danielradcliffe #hbo",
+      "cat": "neu",
+      "time": "23 jun, 14:20",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - HBO",
+      "u": "https://www.youtube.com/watch?v=kRhUYPtp6Ao",
+      "title": "The Man Will Burn | Official Trailer | HBO",
+      "cat": "neu",
+      "time": "23 jun, 13:58",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - HBO Max",
+      "u": "https://www.youtube.com/watch?v=_blrWb1yZiY",
+      "title": "Stuart Fails to Save the Universe | Official Trailer | HBO Max",
+      "cat": "neu",
+      "time": "23 jun, 13:00",
+      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [],
+  "creators": [
+    {
+      "h": "Potter--head---The boy who lived",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=6loE3Mcbu8g"
+    },
+    {
+      "h": "MForja",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=QLVeDIp42gE"
+    },
+    {
+      "h": "Muleskinho",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=NDh47Q53ILg"
+    },
+    {
+      "h": "Poptime Prime",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=KTG_Th8HZro"
+    },
+    {
+      "h": "HBO",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=kRhUYPtp6Ao"
+    },
+    {
+      "h": "HBO Max",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=_blrWb1yZiY"
+    },
+    {
+      "h": "Hufflepuff For Life",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=rHsP4eUeORI"
+    },
+    {
+      "h": "Lumos Lore",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=b2XRElNag2U"
+    }
+  ],
   "risks": [
     {
       "t": "Comparacao com os filmes originais",
       "sev": "mid",
       "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Materias, videos ou buscas sobre escalacao podem gerar discussao sobre aderencia ao imaginario dos fas.",
+      "rec": "Acompanhar comentarios e preparar mensagens sobre intencao criativa e construcao de personagens."
     }
   ],
   "heroOpp": {
     "title": "Leitura semanal desde o teaser",
-    "desc": "Semana preenchida por fontes reais e sinais de busca. Janela: 17-23 jun 2026.",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 17-23 jun 2026.",
     "facts": [
       [
         "Janela",
@@ -235,12 +394,12 @@
         "25/03/2026"
       ],
       [
-        "Itens reais",
-        "4"
+        "Itens reais/sinais",
+        "12"
       ],
       [
-        "Trends",
-        "sem sinal · 0/100"
+        "Wikipedia",
+        "sem sinal - 0 views"
       ]
     ]
   },
@@ -248,25 +407,26 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando existe cobertura, video ou interesse de busca, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
       "t": "Organizar narrativa de comparacao",
-      "d": "Usar videos, conteudos editoriais e sinais de busca para posicionar a serie como nova leitura para streaming."
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 4,
+    "base_count": 12,
     "unit": "itens",
-    "net": 25,
-    "buzz": 64,
-    "news_count": 4,
-    "youtube_count": 0,
-    "trends_score": 0,
-    "trends_keyword": "",
+    "net": 17,
+    "buzz": 100,
+    "news_count": 2,
+    "youtube_count": 10,
+    "wiki_score": 0,
+    "wiki_views": 0,
+    "wiki_top_page": "",
     "backfill": true,
-    "sentiment_index": 62
+    "sentiment_index": 58
   }
 }

@@ -1,278 +1,388 @@
 {
   "label": "14 jul 2026",
-  "updated": "14 jul 2026, 09:00",
+  "updated": "14 jul 2026, 10:43",
   "kpi": {
     "mentions": {
-      "v": "6 matérias",
+      "v": "12 items",
       "d": 0,
-      "sub": "cobertura real coletada"
+      "sub": "5 noticias - 7 videos YouTube - 0 sinais Wikipedia - 8-14 jul 2026"
     },
     "sentiment": {
-      "v": "+68",
+      "v": "+8",
       "suf": "/100",
       "d": 0,
-      "sub": "índice líquido do dia"
+      "sub": "indice semanal por cobertura/sinal"
     },
     "sov": {
-      "v": "—",
+      "v": "-",
       "d": 0,
       "dtype": "pts",
-      "sub": "requer base multi-título"
+      "sub": "requer base multi-titulo"
     },
     "buzz": {
-      "v": "86",
+      "v": "100",
       "suf": "/100",
       "d": 0,
-      "sub": "índice de buzz do dia"
+      "sub": "buzz com Wikipedia 90/100"
     }
   },
   "senti": {
-    "pos": 67,
-    "neu": 33,
+    "pos": 8,
+    "neu": 92,
     "neg": 0,
-    "tone": "Cobertura real coletada; social não conectado"
+    "tone": "Backfill semanal baseado em Google News RSS, YouTube e Wikipedia Pageviews"
   },
   "buzz7": [
-    52,
-    52,
-    52,
-    52,
-    0,
-    6,
-    6
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
   ],
   "stack": [
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      0,
-      100,
+      8,
+      92,
       0
     ],
     [
-      67,
-      33,
+      8,
+      92,
       0
     ],
     [
-      67,
-      33,
+      8,
+      92,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 6,
-      "senti": "pos",
+      "vol": 5,
+      "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 67,
+        "p": 8,
         "n": 0,
-        "g": 33
+        "g": 92
+      }
+    },
+    {
+      "name": "YouTube",
+      "vol": 7,
+      "senti": "neu",
+      "ang": 70,
+      "s": {
+        "p": 8,
+        "n": 0,
+        "g": 92
+      }
+    },
+    {
+      "name": "Wikipedia",
+      "vol": 90,
+      "senti": "neu",
+      "ang": 160,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter: série da HBO vai mudar a origem de Severus Snape?",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "einerd.com",
+          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5STlJVaDhrcHg2b09YUndtZm5Yc1ZjQU0yRDRJNDRCb2I1N3VMNFc1WldnTmZmYlBEOGZicC1QZEo4bVUwa29qel9DcUpSdHh6Yzd4eC14M3EwNGZBejQ0Ymk4T0RIdTdBWHc0TlhPOXZpQkNLanc?oc=5"
+        }
+      ]
+    },
     {
       "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5"
         }
       ]
     },
     {
-      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
-        }
-      ]
-    },
-    {
-      "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
-        }
-      ]
-    },
-    {
-      "t": "Série escala ator de Pirraça, personagem inédito",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
-        }
-      ]
-    },
-    {
-      "t": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Canaltech",
-          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/"
-        }
-      ]
-    },
-    {
-      "t": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
       "vol": 1,
       "senti": "neu",
       "pf": "Imprensa",
       "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
       "q": "",
       "pct": 50,
       "src": [
         {
-          "o": "CNN Brasil",
-          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/"
+          "o": "O TEMPO",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ21ZLVRVcFB6eHNwdUJObjB1dGMtVmxPeDVFdlRVRERuaWhoX25OMkRmeWcwZnpTQzBad0lJOXNOajEtaTJ0Qzd3dkJFMkRnaXZKRzk3aHhLY1NFV2F3bUk2WGZQMUgyZjdZWVpqWEtsMTFVQWNWMGE0MnhmZHo3UUN6LTlEU2V0T2laRXpXaUZDdktSaGQ5eGxVZzhXenVoUU15b18wT3ppMDkxOHpCaUZ4RE5NUThENU5lc9IBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Observatório do Cinema",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRGlpcUFabHRFN0w4Q0V1eHdHVktxQWFzM3Bxc21vTGFwd182UUNxLVJZbXlNYkI3dUk5cEZpd0JvTWdud0Z3OThOaGY1OWtvMEJHVzdHdDJZTWhGbmlHWlBXMlhxeVFibVFwd2NCWEY5b2c4X0lpVGc2azRrV3F6elN0Tk9VWE1LdFAtNE11Vi1teGNDc05Ba1AxdGdhRkxIeGZuRm8xZ0R1d9IBrwFBVV95cUxOUm11LUVTbkNZZnBVdUlPQ1JhMENTR3VjUTQwc0poMjItV2ZuTVJKUzRLeXB4MFNKT0hGZm5PUGRLQWpVeXFKbVdudkNIeV9aNVk5cDMtSnhJRnVYZDBtbHF1c1FFZkVvU00xWlBzM3JuVk80ZXZOVk9kRG9SSy1xSGNnUkNBa1YxQ1d4cVlSUVdoWWtnMzQtV0Y3RmE0bTFLT0NFcDBWM21PeHNnYWJF?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "Bertie Carvel Finally Breaks Down His Take On Cornelius Fudge For HBO’s ‘Harry Potter’",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IMDb",
+          "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFNmo4N0xKQjVpQmRxVHplcURMM0pvdjdGdHQ1WFFEUlpLcF9uMDRXbmJfeHpIaHp5MjNpNW9ONDNJSFkxakl5MnhaRXR0al9zZFhoRWV1enJPWDlvTUgwTjFCWHQ?oc=5"
+        }
+      ]
+    },
+    {
+      "t": "The Harry Potter Reboot Can Expand The Story",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "YouTube",
+      "trend": "flat",
+      "growth": "Baseado em fonte real coletada via Google News RSS, YouTube ou Wikipedia Pageviews",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "YouTube - Marvelous Marauders",
+          "u": "https://www.youtube.com/watch?v=99ACk8GsRTE"
         }
       ]
     }
   ],
   "coverage": [
     {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+      "o": "einerd.com",
+      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5STlJVaDhrcHg2b09YUndtZm5Yc1ZjQU0yRDRJNDRCb2I1N3VMNFc1WldnTmZmYlBEOGZicC1QZEo4bVUwa29qel9DcUpSdHh6Yzd4eC14M3EwNGZBejQ0Ymk4T0RIdTdBWHc0TlhPOXZpQkNLanc?oc=5",
+      "title": "Harry Potter: série da HBO vai mudar a origem de Severus Snape?",
+      "cat": "neu",
+      "time": "10 jul, 14:30",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUdIBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5",
       "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
       "cat": "neu",
-      "time": "12 jul, 22:13",
-      "scope": "Portal BR"
+      "time": "12 jul, 19:13",
+      "scope": "Google News RSS"
     },
     {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
-      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
-      "cat": "nos",
-      "time": "4 jul, 21:28",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
-      "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-      "cat": "nos",
-      "time": "15 jun, 22:00",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
-      "title": "Série escala ator de Pirraça, personagem inédito",
-      "cat": "nos",
-      "time": "15 jun, 17:30",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Canaltech",
-      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-escala-ator-para-personagem-que-ficou-fora-dos-filmes/",
-      "title": "Série de Harry Potter escala ator para personagem que ficou fora dos filmes",
-      "cat": "nos",
-      "time": "16 jun, 16:15",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "CNN Brasil",
-      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-serie-tera-peter-serafinowicz-como-fantasma-de-hogwarts/",
-      "title": "\"Harry Potter\": série terá Peter Serafinowicz como fantasma de Hogwarts",
+      "o": "O TEMPO",
+      "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ21ZLVRVcFB6eHNwdUJObjB1dGMtVmxPeDVFdlRVRERuaWhoX25OMkRmeWcwZnpTQzBad0lJOXNOajEtaTJ0Qzd3dkJFMkRnaXZKRzk3aHhLY1NFV2F3bUk2WGZQMUgyZjdZWVpqWEtsMTFVQWNWMGE0MnhmZHo3UUN6LTlEU2V0T2laRXpXaUZDdktSaGQ5eGxVZzhXenVoUU15b18wT3ppMDkxOHpCaUZ4RE5NUThENU5lc9IBwgFBVV95cUxQMnZvM0E5eENxcmtUbGhWRjJIZzlTRFp0YS1qdG04ay1EQUhZd3VEc3lISG9xdGQ5ZlcxYm9IZTFzbVNFTUR5clBINFI2Z0xVTk1DUUxOTFY2RnRIdmFaalBpQUFhQjI5V2dUOEVmOU9tTXd5UVcyb05kVk01Q1RQUlpnMDI4dGpaSUpXOF8tOUphQXBPTzNtWWNVZjlKSTRabV96SC13S0VHNzdIQllUUFYtb3l2OVZ2UzVIVjZQU09FUQ?oc=5",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
       "cat": "neu",
-      "time": "15 jun, 19:55",
-      "scope": "Portal BR"
+      "time": "12 jul, 19:13",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "Observatório do Cinema",
+      "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRGlpcUFabHRFN0w4Q0V1eHdHVktxQWFzM3Bxc21vTGFwd182UUNxLVJZbXlNYkI3dUk5cEZpd0JvTWdud0Z3OThOaGY1OWtvMEJHVzdHdDJZTWhGbmlHWlBXMlhxeVFibVFwd2NCWEY5b2c4X0lpVGc2azRrV3F6elN0Tk9VWE1LdFAtNE11Vi1teGNDc05Ba1AxdGdhRkxIeGZuRm8xZ0R1d9IBrwFBVV95cUxOUm11LUVTbkNZZnBVdUlPQ1JhMENTR3VjUTQwc0poMjItV2ZuTVJKUzRLeXB4MFNKT0hGZm5PUGRLQWpVeXFKbVdudkNIeV9aNVk5cDMtSnhJRnVYZDBtbHF1c1FFZkVvU00xWlBzM3JuVk80ZXZOVk9kRG9SSy1xSGNnUkNBa1YxQ1d4cVlSUVdoWWtnMzQtV0Y3RmE0bTFLT0NFcDBWM21PeHNnYWJF?oc=5",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "cat": "neu",
+      "time": "12 jul, 19:00",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "IMDb",
+      "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFNmo4N0xKQjVpQmRxVHplcURMM0pvdjdGdHQ1WFFEUlpLcF9uMDRXbmJfeHpIaHp5MjNpNW9ONDNJSFkxakl5MnhaRXR0al9zZFhoRWV1enJPWDlvTUgwTjFCWHQ?oc=5",
+      "title": "Bertie Carvel Finally Breaks Down His Take On Cornelius Fudge For HBO’s ‘Harry Potter’",
+      "cat": "neu",
+      "time": "13 jul, 06:15",
+      "scope": "Google News RSS"
+    },
+    {
+      "o": "YouTube - Marvelous Marauders",
+      "u": "https://www.youtube.com/watch?v=99ACk8GsRTE",
+      "title": "The Harry Potter Reboot Can Expand The Story",
+      "cat": "nos",
+      "time": "14 jul, 09:47",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Draco Owns Me <3",
+      "u": "https://www.youtube.com/watch?v=bOiSidKYejs",
+      "title": "Hurts so good ❤️‍🩹#harrypotter #potterhead #breakup #sad #fyp #trending #viral #explore #hogwarts",
+      "cat": "neu",
+      "time": "14 jul, 08:19",
+      "scope": "Video/Creator - YouTube"
+    },
+    {
+      "o": "YouTube - Harrypotter_portugal",
+      "u": "https://www.youtube.com/watch?v=3NaWquAHlzk",
+      "title": "New series HBO harry potter and cursed child subscribe this channel #dumbledore #harrypotter",
+      "cat": "neu",
+      "time": "14 jul, 05:10",
+      "scope": "Video/Creator - YouTube"
     }
   ],
-  "creators": [],
-  "risks": [
+  "creators": [
     {
-      "t": "Comparação com os filmes originais",
-      "sev": "mid",
-      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+      "h": "Marvelous Marauders",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "pos",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=99ACk8GsRTE"
     },
     {
-      "t": "Sensibilidade em torno de elenco",
+      "h": "Draco Owns Me <3",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=bOiSidKYejs"
+    },
+    {
+      "h": "Harrypotter_portugal",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=3NaWquAHlzk"
+    },
+    {
+      "h": "Rave Kishorre Talks ",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=tWhqO_oJLQY"
+    },
+    {
+      "h": "Why Wasn't It Better?",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=keoHrI9sx-w"
+    },
+    {
+      "h": "The Daily Prophet Vault",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=QJzXXR5iPVQ"
+    },
+    {
+      "h": "Flash_Viral",
+      "pf": "YouTube",
+      "type": "Video sobre Harry Potter HBO",
+      "senti": "neu",
+      "reach": "nao coletado",
+      "rel": 60,
+      "risk": "low",
+      "c": "#E7A94B",
+      "u": "https://www.youtube.com/watch?v=xs3NX0TrsxQ"
+    }
+  ],
+  "risks": [
+    {
+      "t": "Comparacao com os filmes originais",
       "sev": "mid",
-      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
-      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+      "d": "A conversa pode reacender comparacao com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforcar que a serie e uma nova adaptacao com espaco para aprofundamento narrativo."
     }
   ],
   "heroOpp": {
-    "title": "Acompanhar cobertura do dia",
-    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "title": "Leitura semanal desde o teaser",
+    "desc": "Semana preenchida por fontes reais e sinais historicos. Janela: 8-14 jul 2026.",
     "facts": [
       [
-        "Fonte",
-        "notícias reais"
+        "Janela",
+        "8-14 jul 2026"
       ],
       [
-        "Matérias",
-        "6"
+        "Marco",
+        "25/03/2026"
       ],
       [
-        "Social",
-        "não conectado"
+        "Itens reais/sinais",
+        "12"
       ],
       [
-        "Dados fictícios",
-        "não"
+        "Wikipedia",
+        "Harry Potter film series - 102.308 views"
       ]
     ]
   },
@@ -280,21 +390,26 @@
     {
       "ico": "book",
       "t": "Explorar fidelidade aos livros",
-      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+      "d": "Quando existe cobertura, video ou pageview, ha oportunidade de explicar como a serie pode aprofundar pontos nao explorados nos filmes."
     },
     {
       "ico": "film",
-      "t": "Organizar narrativa de comparação",
-      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+      "t": "Organizar narrativa de comparacao",
+      "d": "Usar videos, conteudos editoriais e sinais historicos para posicionar a serie como nova leitura para streaming."
     }
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
-    "unit": "matérias",
-    "net": 68,
-    "buzz": 86,
-    "news_count": 6,
-    "social_mentions": 0
+    "base_count": 12,
+    "unit": "itens",
+    "net": 8,
+    "buzz": 100,
+    "news_count": 5,
+    "youtube_count": 7,
+    "wiki_score": 90,
+    "wiki_views": 102308,
+    "wiki_top_page": "Harry Potter film series",
+    "backfill": true,
+    "sentiment_index": 54
   }
 }
