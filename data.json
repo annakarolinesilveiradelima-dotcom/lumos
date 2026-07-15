@@ -1,5 +1,5 @@
 {
-  "generated_at": "14 jul 2026, 20:38",
+  "generated_at": "15 jul 2026, 04:30",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,8 +10,8 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "14 jul 2026",
-          "updated": "14 jul 2026, 20:38",
+          "label": "15 jul 2026",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "4 matérias",
@@ -46,9 +46,9 @@
           "buzz7": [
             82,
             82,
-            82,
             45,
             0,
+            4,
             4,
             4
           ],
@@ -74,8 +74,8 @@
               0
             ],
             [
-              0,
-              100,
+              75,
+              25,
               0
             ],
             [
@@ -256,8 +256,143 @@
       },
       "weeks": {
         "w0": {
+          "label": "15–15 jul 2026",
+          "updated": "15 jul 2026, 04:30",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Não foram encontradas matérias reais para a janela 15–15 jul 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+            }
+          ],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "15–15 jul 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 15–15 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+            }
+          ],
+          "ephem": []
+        },
+        "w-1": {
           "label": "8–14 jul 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -421,9 +556,9 @@
           ],
           "ephem": []
         },
-        "w-1": {
+        "w-2": {
           "label": "1–7 jul 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -587,9 +722,9 @@
           ],
           "ephem": []
         },
-        "w-2": {
+        "w-3": {
           "label": "24–30 jun 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -722,9 +857,9 @@
           ],
           "ephem": []
         },
-        "w-3": {
+        "w-4": {
           "label": "17–23 jun 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -857,9 +992,9 @@
           ],
           "ephem": []
         },
-        "w-4": {
+        "w-5": {
           "label": "10–16 jun 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1053,9 +1188,9 @@
           ],
           "ephem": []
         },
-        "w-5": {
+        "w-6": {
           "label": "3–9 jun 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1188,9 +1323,9 @@
           ],
           "ephem": []
         },
-        "w-6": {
+        "w-7": {
           "label": "27 mai–2 jun 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1323,9 +1458,9 @@
           ],
           "ephem": []
         },
-        "w-7": {
+        "w-8": {
           "label": "20–26 mai 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1458,9 +1593,9 @@
           ],
           "ephem": []
         },
-        "w-8": {
+        "w-9": {
           "label": "13–19 mai 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1593,9 +1728,9 @@
           ],
           "ephem": []
         },
-        "w-9": {
+        "w-10": {
           "label": "6–12 mai 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1728,9 +1863,9 @@
           ],
           "ephem": []
         },
-        "w-10": {
+        "w-11": {
           "label": "29 abr–5 mai 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1863,9 +1998,9 @@
           ],
           "ephem": []
         },
-        "w-11": {
+        "w-12": {
           "label": "22–28 abr 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1998,9 +2133,9 @@
           ],
           "ephem": []
         },
-        "w-12": {
+        "w-13": {
           "label": "15–21 abr 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2133,9 +2268,9 @@
           ],
           "ephem": []
         },
-        "w-13": {
+        "w-14": {
           "label": "8–14 abr 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2268,9 +2403,9 @@
           ],
           "ephem": []
         },
-        "w-14": {
+        "w-15": {
           "label": "1–7 abr 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2403,9 +2538,9 @@
           ],
           "ephem": []
         },
-        "w-15": {
+        "w-16": {
           "label": "25–31 mar 2026",
-          "updated": "14 jul 2026, 20:38",
+          "updated": "15 jul 2026, 04:30",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
