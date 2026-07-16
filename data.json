@@ -1,5 +1,5 @@
 {
-  "generated_at": "15 jul 2026, 18:31",
+  "generated_at": "16 jul 2026, 03:37",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "15 jul 2026",
-          "updated": "15 jul 2026, 18:31",
+          "label": "16 jul 2026",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
-              "v": "4 matérias",
-              "d": 0,
+              "v": "2 matérias",
+              "d": -2,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+76",
+              "v": "+50",
               "suf": "/100",
-              "d": 0,
+              "d": -26,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,34 +31,29 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "80",
+              "v": "66",
               "suf": "/100",
-              "d": 0,
+              "d": -14,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 75,
-            "neu": 25,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            0,
             4,
             4,
             4,
             4,
             4,
-            4
+            4,
+            2
           ],
           "stack": [
             [
-              0,
-              100,
-              0
-            ],
-            [
               75,
               25,
               0
@@ -86,19 +81,24 @@
             [
               75,
               25,
+              0
+            ],
+            [
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 4,
-              "senti": "pos",
+              "vol": 2,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 75,
+                "p": 50,
                 "n": 0,
-                "g": 25
+                "g": 50
               }
             }
           ],
@@ -134,38 +134,6 @@
                   "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
                 }
               ]
-            },
-            {
-              "t": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara"
-                }
-              ]
-            },
-            {
-              "t": "Série escala ator de Pirraça, personagem inédito",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -184,37 +152,15 @@
               "cat": "nos",
               "time": "4 jul, 21:28",
               "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/6/15/serie-de-harry-potter-resgata-personagem-que-ficou-de-fora-dos-filmes-e-anuncia-ator-que-o-interpretara",
-              "title": "Série de Harry Potter resgata personagem que ficou de fora dos filmes e anuncia ator que o interpretará",
-              "cat": "nos",
-              "time": "15 jun, 22:00",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-peter-serafinowicz-pirraca-poltergeist",
-              "title": "Série escala ator de Pirraça, personagem inédito",
-              "cat": "nos",
-              "time": "15 jun, 17:30",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [
             {
-              "t": "Comparação com os filmes originais",
-              "sev": "mid",
-              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-            },
-            {
-              "t": "Sensibilidade em torno de elenco",
-              "sev": "mid",
-              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
-              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+              "t": "Risco baixo na cobertura editorial",
+              "sev": "low",
+              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
             }
           ],
           "heroOpp": {
@@ -227,7 +173,7 @@
               ],
               [
                 "Matérias",
-                "4"
+                "2"
               ],
               [
                 "Social",
@@ -256,8 +202,8 @@
       },
       "weeks": {
         "w0": {
-          "label": "15–15 jul 2026",
-          "updated": "15 jul 2026, 18:31",
+          "label": "15–16 jul 2026",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -355,7 +301,7 @@
             {
               "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 15–15 jul 2026.",
+              "d": "Não foram encontradas matérias reais para a janela 15–16 jul 2026.",
               "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
             }
           ],
@@ -365,7 +311,7 @@
             "facts": [
               [
                 "Janela",
-                "15–15 jul 2026"
+                "15–16 jul 2026"
               ],
               [
                 "Marco",
@@ -385,14 +331,14 @@
             {
               "ico": "mail",
               "t": "Monitorar próxima coleta",
-              "d": "A janela 15–15 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "d": "A janela 15–16 jul 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "8–14 jul 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -558,7 +504,7 @@
         },
         "w-2": {
           "label": "1–7 jul 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -724,7 +670,7 @@
         },
         "w-3": {
           "label": "24–30 jun 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -859,7 +805,7 @@
         },
         "w-4": {
           "label": "17–23 jun 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -994,7 +940,7 @@
         },
         "w-5": {
           "label": "10–16 jun 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1190,7 +1136,7 @@
         },
         "w-6": {
           "label": "3–9 jun 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1325,7 +1271,7 @@
         },
         "w-7": {
           "label": "27 mai–2 jun 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1460,7 +1406,7 @@
         },
         "w-8": {
           "label": "20–26 mai 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1595,7 +1541,7 @@
         },
         "w-9": {
           "label": "13–19 mai 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1730,7 +1676,7 @@
         },
         "w-10": {
           "label": "6–12 mai 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1865,7 +1811,7 @@
         },
         "w-11": {
           "label": "29 abr–5 mai 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2000,7 +1946,7 @@
         },
         "w-12": {
           "label": "22–28 abr 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2135,7 +2081,7 @@
         },
         "w-13": {
           "label": "15–21 abr 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2270,7 +2216,7 @@
         },
         "w-14": {
           "label": "8–14 abr 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2405,7 +2351,7 @@
         },
         "w-15": {
           "label": "1–7 abr 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2540,7 +2486,7 @@
         },
         "w-16": {
           "label": "25–31 mar 2026",
-          "updated": "15 jul 2026, 18:31",
+          "updated": "16 jul 2026, 03:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
