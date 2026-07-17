@@ -1,0 +1,198 @@
+{
+  "label": "17 jul 2026",
+  "updated": "17 jul 2026, 06:19",
+  "kpi": {
+    "mentions": {
+      "v": "2 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+50",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "66",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 50,
+    "neu": 50,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    4,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "stack": [
+    [
+      75,
+      25,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 2,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
+      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
+      "cat": "neu",
+      "time": "12 jul, 22:13",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/4/harry-potter-serie-da-hbo-vai-corrigir-erro-da-familia-weasley-apos-15-anos",
+      "title": "Harry Potter: Série da HBO vai corrigir erro da família Weasley após 15 anos",
+      "cat": "nos",
+      "time": "4 jul, 21:28",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Risco baixo na cobertura editorial",
+      "sev": "low",
+      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "2"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 2,
+    "unit": "matérias",
+    "net": 50,
+    "buzz": 66,
+    "news_count": 2,
+    "social_mentions": 0
+  }
+}
