@@ -1,16 +1,16 @@
 {
   "label": "21 jul 2026",
-  "updated": "21 jul 2026, 13:06",
+  "updated": "21 jul 2026, 17:49",
   "kpi": {
     "mentions": {
-      "v": "3 matérias",
-      "d": 0,
+      "v": "4 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+32",
+      "v": "+50",
       "suf": "/100",
-      "d": 0,
+      "d": 18,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "65",
+      "v": "74",
       "suf": "/100",
-      "d": 0,
+      "d": 9,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 67,
+    "pos": 50,
+    "neu": 50,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -37,9 +37,9 @@
     2,
     2,
     2,
-    2,
     3,
-    3
+    3,
+    4
   ],
   "stack": [
     [
@@ -63,11 +63,6 @@
       0
     ],
     [
-      50,
-      50,
-      0
-    ],
-    [
       33,
       67,
       0
@@ -75,23 +70,44 @@
     [
       33,
       67,
+      0
+    ],
+    [
+      50,
+      50,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 3,
+      "vol": 4,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
+        "p": 50,
         "n": 0,
-        "g": 67
+        "g": 50
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Tribuna Independente",
+          "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
+        }
+      ]
+    },
     {
       "t": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
       "vol": 1,
@@ -143,6 +159,14 @@
   ],
   "coverage": [
     {
+      "o": "Tribuna Independente",
+      "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max",
+      "title": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+      "cat": "pos",
+      "time": "21 jul, 00:00",
+      "scope": "Portal BR"
+    },
+    {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia",
       "title": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
@@ -186,7 +210,7 @@
       ],
       [
         "Matérias",
-        "3"
+        "4"
       ],
       [
         "Social",
@@ -212,11 +236,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 3,
+    "base_count": 4,
     "unit": "matérias",
-    "net": 32,
-    "buzz": 65,
-    "news_count": 3,
+    "net": 50,
+    "buzz": 74,
+    "news_count": 4,
     "social_mentions": 0
   }
 }

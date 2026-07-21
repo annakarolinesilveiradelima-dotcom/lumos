@@ -1,5 +1,5 @@
 {
-  "generated_at": "21 jul 2026, 13:06",
+  "generated_at": "21 jul 2026, 17:49",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "21 jul 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
-              "v": "3 matérias",
-              "d": 0,
+              "v": "4 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+32",
+              "v": "+50",
               "suf": "/100",
-              "d": 0,
+              "d": 18,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "65",
+              "v": "74",
               "suf": "/100",
-              "d": 0,
+              "d": 9,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 33,
-            "neu": 67,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -48,9 +48,9 @@
             2,
             2,
             2,
-            2,
             3,
-            3
+            3,
+            4
           ],
           "stack": [
             [
@@ -74,11 +74,6 @@
               0
             ],
             [
-              50,
-              50,
-              0
-            ],
-            [
               33,
               67,
               0
@@ -86,23 +81,44 @@
             [
               33,
               67,
+              0
+            ],
+            [
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 3,
+              "vol": 4,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 33,
+                "p": 50,
                 "n": 0,
-                "g": 67
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Tribuna Independente",
+                  "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
+                }
+              ]
+            },
             {
               "t": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
               "vol": 1,
@@ -154,6 +170,14 @@
           ],
           "coverage": [
             {
+              "o": "Tribuna Independente",
+              "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max",
+              "title": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+              "cat": "pos",
+              "time": "21 jul, 00:00",
+              "scope": "Portal BR"
+            },
+            {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia",
               "title": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
@@ -197,7 +221,7 @@
               ],
               [
                 "Matérias",
-                "3"
+                "4"
               ],
               [
                 "Social",
@@ -227,15 +251,15 @@
       "weeks": {
         "w0": {
           "label": "15–21 jul 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "2 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -247,78 +271,94 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "28",
+              "v": "61",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
+              "vol": 2,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Tribuna Independente",
+                  "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
+                }
+              ]
+            },
             {
               "t": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
               "vol": 1,
@@ -337,6 +377,14 @@
             }
           ],
           "coverage": [
+            {
+              "o": "Tribuna Independente",
+              "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max",
+              "title": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
+              "cat": "pos",
+              "time": "21 jul, 00:00",
+              "scope": "Portal BR"
+            },
             {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia",
@@ -369,7 +417,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "2"
               ],
               [
                 "Dados fictícios",
@@ -393,7 +441,7 @@
         },
         "w-1": {
           "label": "8–14 jul 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -559,7 +607,7 @@
         },
         "w-2": {
           "label": "1–7 jul 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -725,7 +773,7 @@
         },
         "w-3": {
           "label": "24–30 jun 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -860,7 +908,7 @@
         },
         "w-4": {
           "label": "17–23 jun 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -995,7 +1043,7 @@
         },
         "w-5": {
           "label": "10–16 jun 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1191,7 +1239,7 @@
         },
         "w-6": {
           "label": "3–9 jun 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1326,7 +1374,7 @@
         },
         "w-7": {
           "label": "27 mai–2 jun 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1461,7 +1509,7 @@
         },
         "w-8": {
           "label": "20–26 mai 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1596,7 +1644,7 @@
         },
         "w-9": {
           "label": "13–19 mai 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1731,7 +1779,7 @@
         },
         "w-10": {
           "label": "6–12 mai 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1866,7 +1914,7 @@
         },
         "w-11": {
           "label": "29 abr–5 mai 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2001,7 +2049,7 @@
         },
         "w-12": {
           "label": "22–28 abr 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2136,7 +2184,7 @@
         },
         "w-13": {
           "label": "15–21 abr 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2271,7 +2319,7 @@
         },
         "w-14": {
           "label": "8–14 abr 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2406,7 +2454,7 @@
         },
         "w-15": {
           "label": "1–7 abr 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2541,7 +2589,7 @@
         },
         "w-16": {
           "label": "25–31 mar 2026",
-          "updated": "21 jul 2026, 13:06",
+          "updated": "21 jul 2026, 17:49",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
