@@ -1,5 +1,5 @@
 {
-  "generated_at": "4 ago 2026, 17:59",
+  "generated_at": "5 ago 2026, 03:14",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "4 ago 2026",
-          "updated": "4 ago 2026, 17:59",
+          "label": "5 ago 2026",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
-              "v": "5 matérias",
-              "d": 0,
+              "v": "6 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+20",
+              "v": "+32",
               "suf": "/100",
-              "d": 0,
+              "d": 12,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "70",
+              "v": "77",
               "suf": "/100",
-              "d": 0,
+              "d": 7,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 20,
-            "neu": 80,
+            "pos": 33,
+            "neu": 67,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -47,10 +47,10 @@
             6,
             6,
             6,
-            6,
             5,
             5,
-            5
+            5,
+            6
           ],
           "stack": [
             [
@@ -69,40 +69,56 @@
               0
             ],
             [
+              20,
+              80,
+              0
+            ],
+            [
+              20,
+              80,
+              0
+            ],
+            [
+              20,
+              80,
+              0
+            ],
+            [
               33,
               67,
-              0
-            ],
-            [
-              20,
-              80,
-              0
-            ],
-            [
-              20,
-              80,
-              0
-            ],
-            [
-              20,
-              80,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 5,
+              "vol": 6,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 20,
+                "p": 33,
                 "n": 0,
-                "g": 80
+                "g": 67
               }
             }
           ],
           "narratives": [
+            {
+              "t": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "TechTudo",
+                  "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml"
+                }
+              ]
+            },
             {
               "t": "\"Brutal\": a pior parte do novo Harry Potter da HBO foi trabalhar com os atores mirins (e a escola), afirma diretor de fotografia",
               "vol": 1,
@@ -186,6 +202,14 @@
           ],
           "coverage": [
             {
+              "o": "TechTudo",
+              "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
+              "title": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
+              "cat": "nos",
+              "time": "28 jul, 14:31",
+              "scope": "Portal BR"
+            },
+            {
               "o": "IGN Brasil",
               "u": "https://br.ign.com/harry-potter-the-series/154757/brutal-a-pior-parte-do-novo-harry-potter-da-hbo-foi-trabalhar-com-os-atores-mirins-e-a-escola-afirma",
               "title": "\"Brutal\": a pior parte do novo Harry Potter da HBO foi trabalhar com os atores mirins (e a escola), afirma diretor de fotografia",
@@ -229,6 +253,12 @@
           "creators": [],
           "risks": [
             {
+              "t": "Comparação com os filmes originais",
+              "sev": "mid",
+              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+            },
+            {
               "t": "Sensibilidade em torno de elenco",
               "sev": "mid",
               "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
@@ -245,7 +275,7 @@
               ],
               [
                 "Matérias",
-                "5"
+                "6"
               ],
               [
                 "Social",
@@ -274,8 +304,143 @@
       },
       "weeks": {
         "w0": {
+          "label": "5–5 ago 2026",
+          "updated": "5 ago 2026, 03:14",
+          "kpi": {
+            "mentions": {
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Não foram encontradas matérias reais para a janela 5–5 ago 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+            }
+          ],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "5–5 ago 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 5–5 ago 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+            }
+          ],
+          "ephem": []
+        },
+        "w-1": {
           "label": "29 jul–4 ago 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -408,17 +573,17 @@
           ],
           "ephem": []
         },
-        "w-1": {
+        "w-2": {
           "label": "22–28 jul 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+33",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -430,74 +595,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "36",
+              "v": "60",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 33,
+            "neu": 67,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 33,
                 "n": 0,
-                "g": 100
+                "g": 67
               }
             }
           ],
@@ -533,6 +698,22 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-evento-londres-setembro"
                 }
               ]
+            },
+            {
+              "t": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "TechTudo",
+                  "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -551,10 +732,24 @@
               "cat": "neu",
               "time": "22 jul, 12:18",
               "scope": "Portal BR"
+            },
+            {
+              "o": "TechTudo",
+              "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
+              "title": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
+              "cat": "nos",
+              "time": "28 jul, 14:31",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [
+            {
+              "t": "Comparação com os filmes originais",
+              "sev": "mid",
+              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+            },
             {
               "t": "Sensibilidade em torno de elenco",
               "sev": "mid",
@@ -576,7 +771,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -598,9 +793,9 @@
           ],
           "ephem": []
         },
-        "w-2": {
+        "w-3": {
           "label": "15–21 jul 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -788,9 +983,9 @@
           ],
           "ephem": []
         },
-        "w-3": {
+        "w-4": {
           "label": "8–14 jul 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -954,9 +1149,9 @@
           ],
           "ephem": []
         },
-        "w-4": {
+        "w-5": {
           "label": "1–7 jul 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1120,9 +1315,9 @@
           ],
           "ephem": []
         },
-        "w-5": {
+        "w-6": {
           "label": "24–30 jun 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1255,9 +1450,9 @@
           ],
           "ephem": []
         },
-        "w-6": {
+        "w-7": {
           "label": "17–23 jun 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1390,9 +1585,9 @@
           ],
           "ephem": []
         },
-        "w-7": {
+        "w-8": {
           "label": "10–16 jun 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1586,9 +1781,9 @@
           ],
           "ephem": []
         },
-        "w-8": {
+        "w-9": {
           "label": "3–9 jun 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1721,9 +1916,9 @@
           ],
           "ephem": []
         },
-        "w-9": {
+        "w-10": {
           "label": "27 mai–2 jun 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1856,9 +2051,9 @@
           ],
           "ephem": []
         },
-        "w-10": {
+        "w-11": {
           "label": "20–26 mai 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1991,9 +2186,9 @@
           ],
           "ephem": []
         },
-        "w-11": {
+        "w-12": {
           "label": "13–19 mai 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2126,9 +2321,9 @@
           ],
           "ephem": []
         },
-        "w-12": {
+        "w-13": {
           "label": "6–12 mai 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2261,9 +2456,9 @@
           ],
           "ephem": []
         },
-        "w-13": {
+        "w-14": {
           "label": "29 abr–5 mai 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2396,9 +2591,9 @@
           ],
           "ephem": []
         },
-        "w-14": {
+        "w-15": {
           "label": "22–28 abr 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2531,9 +2726,9 @@
           ],
           "ephem": []
         },
-        "w-15": {
+        "w-16": {
           "label": "15–21 abr 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2666,9 +2861,9 @@
           ],
           "ephem": []
         },
-        "w-16": {
+        "w-17": {
           "label": "8–14 abr 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2801,9 +2996,9 @@
           ],
           "ephem": []
         },
-        "w-17": {
+        "w-18": {
           "label": "1–7 abr 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2936,9 +3131,9 @@
           ],
           "ephem": []
         },
-        "w-18": {
+        "w-19": {
           "label": "25–31 mar 2026",
-          "updated": "4 ago 2026, 17:59",
+          "updated": "5 ago 2026, 03:14",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
