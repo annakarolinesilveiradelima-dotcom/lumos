@@ -1,16 +1,16 @@
 {
   "label": "11 ago 2026",
-  "updated": "11 ago 2026, 02:07",
+  "updated": "11 ago 2026, 04:06",
   "kpi": {
     "mentions": {
-      "v": "6 matérias",
-      "d": 0,
+      "v": "7 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+32",
+      "v": "+28",
       "suf": "/100",
-      "d": 0,
+      "d": -4,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "77",
+      "v": "80",
       "suf": "/100",
-      "d": 0,
+      "d": 3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 67,
+    "pos": 29,
+    "neu": 71,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -39,7 +39,7 @@
     6,
     6,
     6,
-    6
+    7
   ],
   "stack": [
     [
@@ -73,25 +73,41 @@
       0
     ],
     [
-      33,
-      67,
+      29,
+      71,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 6,
+      "vol": 7,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
+        "p": 29,
         "n": 0,
-        "g": 67
+        "g": 71
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling"
+        }
+      ]
+    },
     {
       "t": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia"
         }
       ]
-    },
-    {
-      "t": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling",
+      "title": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
+      "cat": "neu",
+      "time": "10 ago, 17:31",
+      "scope": "Portal BR"
+    },
     {
       "o": "TechTudo",
       "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
@@ -264,7 +272,7 @@
       ],
       [
         "Matérias",
-        "6"
+        "7"
       ],
       [
         "Social",
@@ -290,11 +298,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
+    "base_count": 7,
     "unit": "matérias",
-    "net": 32,
-    "buzz": 77,
-    "news_count": 6,
+    "net": 28,
+    "buzz": 80,
+    "news_count": 7,
     "social_mentions": 0
   }
 }
