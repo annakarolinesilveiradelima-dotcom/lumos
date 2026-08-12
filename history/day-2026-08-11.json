@@ -1,16 +1,16 @@
 {
   "label": "11 ago 2026",
-  "updated": "11 ago 2026, 20:39",
+  "updated": "11 ago 2026, 22:54",
   "kpi": {
     "mentions": {
-      "v": "7 matérias",
-      "d": 0,
+      "v": "6 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+28",
+      "v": "+32",
       "suf": "/100",
-      "d": 0,
+      "d": 4,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "80",
+      "v": "77",
       "suf": "/100",
-      "d": 0,
+      "d": -3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 29,
-    "neu": 71,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -39,7 +39,7 @@
     7,
     7,
     7,
-    7
+    6
   ],
   "stack": [
     [
@@ -73,21 +73,21 @@
       0
     ],
     [
-      29,
-      71,
+      33,
+      67,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 7,
+      "vol": 6,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 29,
+        "p": 33,
         "n": 0,
-        "g": 71
+        "g": 67
       }
     }
   ],
@@ -237,14 +237,6 @@
       "cat": "esp",
       "time": "20 jul, 19:31",
       "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/7/12/harry-potter-serie-vai-mudar-a-hbo-para-sempre-entenda-por-que",
-      "title": "Harry Potter: Série vai mudar a HBO para sempre; entenda por quê",
-      "cat": "neu",
-      "time": "12 jul, 22:13",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -272,7 +264,7 @@
       ],
       [
         "Matérias",
-        "7"
+        "6"
       ],
       [
         "Social",
@@ -298,11 +290,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 7,
+    "base_count": 6,
     "unit": "matérias",
-    "net": 28,
-    "buzz": 80,
-    "news_count": 7,
+    "net": 32,
+    "buzz": 77,
+    "news_count": 6,
     "social_mentions": 0
   }
 }
