@@ -1,5 +1,5 @@
 {
-  "generated_at": "12 ago 2026, 05:16",
+  "generated_at": "12 ago 2026, 07:04",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "12 ago 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
-              "v": "6 matérias",
-              "d": 0,
+              "v": "7 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+32",
+              "v": "+28",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,26 +31,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "77",
+              "v": "80",
               "suf": "/100",
-              "d": 0,
+              "d": 3,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 33,
-            "neu": 67,
+            "pos": 29,
+            "neu": 71,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             7,
             7,
-            7,
             6,
             6,
             6,
-            6
+            6,
+            7
           ],
           "stack": [
             [
@@ -64,45 +64,61 @@
               0
             ],
             [
+              33,
+              67,
+              0
+            ],
+            [
+              33,
+              67,
+              0
+            ],
+            [
+              33,
+              67,
+              0
+            ],
+            [
+              33,
+              67,
+              0
+            ],
+            [
               29,
               71,
-              0
-            ],
-            [
-              33,
-              67,
-              0
-            ],
-            [
-              33,
-              67,
-              0
-            ],
-            [
-              33,
-              67,
-              0
-            ],
-            [
-              33,
-              67,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 6,
+              "vol": 7,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 33,
+                "p": 29,
                 "n": 0,
-                "g": 67
+                "g": 71
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
                 }
               ]
-            },
-            {
-              "t": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
-              "vol": 1,
-              "senti": "div",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
+              "title": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "cat": "neu",
+              "time": "11 ago, 21:49",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling",
@@ -275,7 +283,7 @@
               ],
               [
                 "Matérias",
-                "6"
+                "7"
               ],
               [
                 "Social",
@@ -305,7 +313,7 @@
       "weeks": {
         "w0": {
           "label": "12–12 ago 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -440,10 +448,10 @@
         },
         "w-1": {
           "label": "5–11 ago 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "2 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
@@ -460,7 +468,7 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "28",
+              "v": "36",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
@@ -473,13 +481,13 @@
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
@@ -521,7 +529,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
+              "vol": 2,
               "senti": "neu",
               "ang": -90,
               "s": {
@@ -547,6 +555,22 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling"
                 }
               ]
+            },
+            {
+              "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -556,6 +580,14 @@
               "title": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
               "cat": "neu",
               "time": "10 ago, 17:31",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
+              "title": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "cat": "neu",
+              "time": "11 ago, 21:49",
               "scope": "Portal BR"
             }
           ],
@@ -582,7 +614,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "2"
               ],
               [
                 "Dados fictícios",
@@ -606,7 +638,7 @@
         },
         "w-2": {
           "label": "29 jul–4 ago 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -741,7 +773,7 @@
         },
         "w-3": {
           "label": "22–28 jul 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -961,7 +993,7 @@
         },
         "w-4": {
           "label": "15–21 jul 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1151,7 +1183,7 @@
         },
         "w-5": {
           "label": "8–14 jul 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1317,7 +1349,7 @@
         },
         "w-6": {
           "label": "1–7 jul 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1483,7 +1515,7 @@
         },
         "w-7": {
           "label": "24–30 jun 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1618,7 +1650,7 @@
         },
         "w-8": {
           "label": "17–23 jun 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1753,7 +1785,7 @@
         },
         "w-9": {
           "label": "10–16 jun 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1949,7 +1981,7 @@
         },
         "w-10": {
           "label": "3–9 jun 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2084,7 +2116,7 @@
         },
         "w-11": {
           "label": "27 mai–2 jun 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2219,7 +2251,7 @@
         },
         "w-12": {
           "label": "20–26 mai 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2354,7 +2386,7 @@
         },
         "w-13": {
           "label": "13–19 mai 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2489,7 +2521,7 @@
         },
         "w-14": {
           "label": "6–12 mai 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2624,7 +2656,7 @@
         },
         "w-15": {
           "label": "29 abr–5 mai 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2759,7 +2791,7 @@
         },
         "w-16": {
           "label": "22–28 abr 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2894,7 +2926,7 @@
         },
         "w-17": {
           "label": "15–21 abr 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3029,7 +3061,7 @@
         },
         "w-18": {
           "label": "8–14 abr 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3164,7 +3196,7 @@
         },
         "w-19": {
           "label": "1–7 abr 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3299,7 +3331,7 @@
         },
         "w-20": {
           "label": "25–31 mar 2026",
-          "updated": "12 ago 2026, 05:16",
+          "updated": "12 ago 2026, 07:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

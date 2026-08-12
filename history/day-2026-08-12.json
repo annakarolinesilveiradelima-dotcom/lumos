@@ -1,16 +1,16 @@
 {
   "label": "12 ago 2026",
-  "updated": "12 ago 2026, 05:16",
+  "updated": "12 ago 2026, 07:04",
   "kpi": {
     "mentions": {
-      "v": "6 matérias",
-      "d": 0,
+      "v": "7 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+32",
+      "v": "+28",
       "suf": "/100",
-      "d": 0,
+      "d": -4,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,26 +20,26 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "77",
+      "v": "80",
       "suf": "/100",
-      "d": 0,
+      "d": 3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 67,
+    "pos": 29,
+    "neu": 71,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     7,
     7,
-    7,
     6,
     6,
     6,
-    6
+    6,
+    7
   ],
   "stack": [
     [
@@ -53,45 +53,61 @@
       0
     ],
     [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
       29,
       71,
-      0
-    ],
-    [
-      33,
-      67,
-      0
-    ],
-    [
-      33,
-      67,
-      0
-    ],
-    [
-      33,
-      67,
-      0
-    ],
-    [
-      33,
-      67,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 6,
+      "vol": 7,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
+        "p": 29,
         "n": 0,
-        "g": 67
+        "g": 71
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
+        }
+      ]
+    },
     {
       "t": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
         }
       ]
-    },
-    {
-      "t": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
-      "vol": 1,
-      "senti": "div",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
+      "title": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "cat": "neu",
+      "time": "11 ago, 21:49",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling",
@@ -264,7 +272,7 @@
       ],
       [
         "Matérias",
-        "6"
+        "7"
       ],
       [
         "Social",
@@ -290,11 +298,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 6,
+    "base_count": 7,
     "unit": "matérias",
-    "net": 32,
-    "buzz": 77,
-    "news_count": 6,
+    "net": 28,
+    "buzz": 80,
+    "news_count": 7,
     "social_mentions": 0
   }
 }
