@@ -1,5 +1,5 @@
 {
-  "generated_at": "12 ago 2026, 22:56",
+  "generated_at": "13 ago 2026, 01:15",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "12 ago 2026",
-          "updated": "12 ago 2026, 22:56",
+          "label": "13 ago 2026",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
-              "v": "7 matérias",
-              "d": 0,
+              "v": "8 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+28",
+              "v": "+24",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "80",
+              "v": "83",
               "suf": "/100",
-              "d": 0,
+              "d": 3,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 29,
-            "neu": 71,
+            "pos": 25,
+            "neu": 75,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             7,
             7,
             7,
-            7
+            8
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              29,
-              71,
+              25,
+              75,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 7,
+              "vol": 8,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 29,
+                "p": 25,
                 "n": 0,
-                "g": 71
+                "g": 75
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
+                }
+              ]
+            },
             {
               "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-evento-londres-setembro"
                 }
               ]
-            },
-            {
-              "t": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Tribuna Independente",
-                  "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
+              "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "cat": "neu",
+              "time": "12 ago, 16:14",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
@@ -283,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "7"
+                "8"
               ],
               [
                 "Social",
@@ -312,19 +320,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "12–12 ago 2026",
-          "updated": "12 ago 2026, 22:56",
+          "label": "12–13 ago 2026",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -333,26 +341,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
@@ -404,51 +412,82 @@
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
+              "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+              "cat": "neu",
+              "time": "12 ago, 16:14",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 12–12 ago 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 12–13 ago 2026.",
             "facts": [
               [
                 "Janela",
-                "12–12 ago 2026"
+                "12–13 ago 2026"
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 12–12 ago 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "5–11 ago 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -638,7 +677,7 @@
         },
         "w-2": {
           "label": "29 jul–4 ago 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -773,7 +812,7 @@
         },
         "w-3": {
           "label": "22–28 jul 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -993,7 +1032,7 @@
         },
         "w-4": {
           "label": "15–21 jul 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1183,7 +1222,7 @@
         },
         "w-5": {
           "label": "8–14 jul 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1349,7 +1388,7 @@
         },
         "w-6": {
           "label": "1–7 jul 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1515,7 +1554,7 @@
         },
         "w-7": {
           "label": "24–30 jun 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1650,7 +1689,7 @@
         },
         "w-8": {
           "label": "17–23 jun 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1785,7 +1824,7 @@
         },
         "w-9": {
           "label": "10–16 jun 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1981,7 +2020,7 @@
         },
         "w-10": {
           "label": "3–9 jun 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2116,7 +2155,7 @@
         },
         "w-11": {
           "label": "27 mai–2 jun 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2251,7 +2290,7 @@
         },
         "w-12": {
           "label": "20–26 mai 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2386,7 +2425,7 @@
         },
         "w-13": {
           "label": "13–19 mai 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2521,7 +2560,7 @@
         },
         "w-14": {
           "label": "6–12 mai 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2656,7 +2695,7 @@
         },
         "w-15": {
           "label": "29 abr–5 mai 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2791,7 +2830,7 @@
         },
         "w-16": {
           "label": "22–28 abr 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2926,7 +2965,7 @@
         },
         "w-17": {
           "label": "15–21 abr 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3061,7 +3100,7 @@
         },
         "w-18": {
           "label": "8–14 abr 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3196,7 +3235,7 @@
         },
         "w-19": {
           "label": "1–7 abr 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3331,7 +3370,7 @@
         },
         "w-20": {
           "label": "25–31 mar 2026",
-          "updated": "12 ago 2026, 22:56",
+          "updated": "13 ago 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
