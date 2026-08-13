@@ -1,16 +1,16 @@
 {
   "label": "13 ago 2026",
-  "updated": "13 ago 2026, 01:15",
+  "updated": "13 ago 2026, 03:16",
   "kpi": {
     "mentions": {
-      "v": "8 matérias",
+      "v": "9 matérias",
       "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+24",
+      "v": "+22",
       "suf": "/100",
-      "d": -4,
+      "d": -2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "83",
+      "v": "86",
       "suf": "/100",
       "d": 3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 22,
+    "neu": 78,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -38,15 +38,10 @@
     7,
     7,
     7,
-    7,
-    8
+    8,
+    9
   ],
   "stack": [
-    [
-      29,
-      71,
-      0
-    ],
     [
       29,
       71,
@@ -76,22 +71,43 @@
       25,
       75,
       0
+    ],
+    [
+      22,
+      78,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 8,
+      "vol": 9,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 22,
         "n": 0,
-        "g": 75
+        "g": 78
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O DIA",
+          "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html"
+        }
+      ]
+    },
     {
       "t": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://br.ign.com/harry-potter-the-series/154757/brutal-a-pior-parte-do-novo-harry-potter-da-hbo-foi-trabalhar-com-os-atores-mirins-e-a-escola-afirma"
         }
       ]
-    },
-    {
-      "t": "Harry Potter | HBO anuncia primeiro evento da série, veja data e mais",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-evento-londres-setembro"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "O DIA",
+      "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html",
+      "title": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
+      "cat": "neu",
+      "time": "12 ago, 16:55",
+      "scope": "Portal BR"
+    },
     {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "21 jul, 00:00",
       "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/luan-henrique/2026/7/20/serie-de-harry-potter-pode-se-tornar-a-producao-de-tv-mais-cara-da-historia-afirma-diretor-de-fotografia",
-      "title": "Série de Harry Potter pode se tornar a produção de TV mais cara da história, afirma diretor de fotografia",
-      "cat": "esp",
-      "time": "20 jul, 19:31",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "8"
+        "9"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 8,
+    "base_count": 9,
     "unit": "matérias",
-    "net": 24,
-    "buzz": 83,
-    "news_count": 8,
+    "net": 22,
+    "buzz": 86,
+    "news_count": 9,
     "social_mentions": 0
   }
 }
