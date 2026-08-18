@@ -1,5 +1,5 @@
 {
-  "generated_at": "17 ago 2026, 20:21",
+  "generated_at": "17 ago 2026, 22:11",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "17 ago 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
-              "v": "9 matérias",
-              "d": 0,
+              "v": "10 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+22",
+              "v": "+30",
               "suf": "/100",
-              "d": 0,
+              "d": 8,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "86",
+              "v": "92",
               "suf": "/100",
-              "d": 0,
+              "d": 6,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 22,
-            "neu": 78,
+            "pos": 30,
+            "neu": 70,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             9,
             9,
             9,
-            9
+            10
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              22,
-              78,
+              30,
+              70,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 9,
+              "vol": 10,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 22,
+                "p": 30,
                 "n": 0,
-                "g": 78
+                "g": 70
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
+                }
+              ]
+            },
             {
               "t": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml"
                 }
               ]
-            },
-            {
-              "t": "\"Brutal\": a pior parte do novo Harry Potter da HBO foi trabalhar com os atores mirins (e a escola), afirma diretor de fotografia",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "IGN Brasil",
-                  "u": "https://br.ign.com/harry-potter-the-series/154757/brutal-a-pior-parte-do-novo-harry-potter-da-hbo-foi-trabalhar-com-os-atores-mirins-e-a-escola-afirma"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo",
+              "title": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+              "cat": "pos",
+              "time": "17 ago, 12:17",
+              "scope": "Portal BR"
+            },
             {
               "o": "O DIA",
               "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "22 jul, 12:18",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Tribuna Independente",
-              "u": "https://tribunahoje.com/noticias/entretenimento/2026/07/21/189589-sucesso-serie-de-harry-potter-quebra-recorde-seis-meses-antes-de-estreia-na-hbo-max",
-              "title": "Sucesso! Série de Harry Potter quebra recorde seis meses antes de estreia na HBO Max",
-              "cat": "pos",
-              "time": "21 jul, 00:00",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "9"
+                "10"
               ],
               [
                 "Social",
@@ -321,15 +321,15 @@
       "weeks": {
         "w0": {
           "label": "12–17 ago 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+33",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -341,74 +341,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "36",
+              "v": "60",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 33,
+            "neu": 67,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ],
             [
-              0,
-              100,
+              33,
+              67,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 33,
                 "n": 0,
-                "g": 100
+                "g": 67
               }
             }
           ],
@@ -444,6 +444,22 @@
                   "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
                 }
               ]
+            },
+            {
+              "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -461,6 +477,14 @@
               "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
               "cat": "neu",
               "time": "12 ago, 16:14",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo",
+              "title": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+              "cat": "pos",
+              "time": "17 ago, 12:17",
               "scope": "Portal BR"
             }
           ],
@@ -487,7 +511,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -511,7 +535,7 @@
         },
         "w-1": {
           "label": "5–11 ago 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -701,7 +725,7 @@
         },
         "w-2": {
           "label": "29 jul–4 ago 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -836,7 +860,7 @@
         },
         "w-3": {
           "label": "22–28 jul 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1056,7 +1080,7 @@
         },
         "w-4": {
           "label": "15–21 jul 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1246,7 +1270,7 @@
         },
         "w-5": {
           "label": "8–14 jul 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1412,7 +1436,7 @@
         },
         "w-6": {
           "label": "1–7 jul 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1578,7 +1602,7 @@
         },
         "w-7": {
           "label": "24–30 jun 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1713,7 +1737,7 @@
         },
         "w-8": {
           "label": "17–23 jun 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1848,7 +1872,7 @@
         },
         "w-9": {
           "label": "10–16 jun 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2044,7 +2068,7 @@
         },
         "w-10": {
           "label": "3–9 jun 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2179,7 +2203,7 @@
         },
         "w-11": {
           "label": "27 mai–2 jun 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2314,7 +2338,7 @@
         },
         "w-12": {
           "label": "20–26 mai 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2449,7 +2473,7 @@
         },
         "w-13": {
           "label": "13–19 mai 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2584,7 +2608,7 @@
         },
         "w-14": {
           "label": "6–12 mai 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2719,7 +2743,7 @@
         },
         "w-15": {
           "label": "29 abr–5 mai 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2854,7 +2878,7 @@
         },
         "w-16": {
           "label": "22–28 abr 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2989,7 +3013,7 @@
         },
         "w-17": {
           "label": "15–21 abr 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3124,7 +3148,7 @@
         },
         "w-18": {
           "label": "8–14 abr 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3259,7 +3283,7 @@
         },
         "w-19": {
           "label": "1–7 abr 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3394,7 +3418,7 @@
         },
         "w-20": {
           "label": "25–31 mar 2026",
-          "updated": "17 ago 2026, 20:21",
+          "updated": "17 ago 2026, 22:11",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
