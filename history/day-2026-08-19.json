@@ -1,16 +1,16 @@
 {
   "label": "19 ago 2026",
-  "updated": "19 ago 2026, 20:21",
+  "updated": "19 ago 2026, 22:11",
   "kpi": {
     "mentions": {
-      "v": "10 matérias",
-      "d": 0,
+      "v": "9 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+30",
+      "v": "+32",
       "suf": "/100",
-      "d": 0,
+      "d": 2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "92",
+      "v": "89",
       "suf": "/100",
-      "d": 0,
+      "d": -3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 30,
-    "neu": 70,
+    "pos": 33,
+    "neu": 67,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -39,7 +39,7 @@
     10,
     10,
     10,
-    10
+    9
   ],
   "stack": [
     [
@@ -73,21 +73,21 @@
       0
     ],
     [
-      30,
-      70,
+      33,
+      67,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 10,
+      "vol": 9,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 30,
+        "p": 33,
         "n": 0,
-        "g": 70
+        "g": 67
       }
     }
   ],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "10"
+        "9"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 10,
+    "base_count": 9,
     "unit": "matérias",
-    "net": 30,
-    "buzz": 92,
-    "news_count": 10,
+    "net": 32,
+    "buzz": 89,
+    "news_count": 9,
     "social_mentions": 0
   }
 }
