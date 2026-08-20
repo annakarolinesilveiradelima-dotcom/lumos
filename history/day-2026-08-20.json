@@ -1,16 +1,16 @@
 {
   "label": "20 ago 2026",
-  "updated": "20 ago 2026, 03:43",
+  "updated": "20 ago 2026, 04:40",
   "kpi": {
     "mentions": {
-      "v": "9 matérias",
-      "d": 0,
+      "v": "10 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+32",
+      "v": "+40",
       "suf": "/100",
-      "d": 0,
+      "d": 8,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,34 +20,29 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "89",
+      "v": "95",
       "suf": "/100",
-      "d": 0,
+      "d": 6,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 33,
-    "neu": 67,
+    "pos": 40,
+    "neu": 60,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     9,
     9,
     9,
     9,
     9,
-    9
+    9,
+    10
   ],
   "stack": [
     [
-      30,
-      70,
-      0
-    ],
-    [
       33,
       67,
       0
@@ -75,23 +70,44 @@
     [
       33,
       67,
+      0
+    ],
+    [
+      40,
+      60,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 9,
+      "vol": 10,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 33,
+        "p": 40,
         "n": 0,
-        "g": 67
+        "g": 60
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo"
+        }
+      ]
+    },
     {
       "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling"
         }
       ]
-    },
-    {
-      "t": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "TechTudo",
-          "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo",
+      "title": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "cat": "nos",
+      "time": "19 ago, 19:28",
+      "scope": "Portal BR"
+    },
     {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo",
@@ -245,14 +253,6 @@
       "cat": "neu",
       "time": "22 jul, 15:04",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-evento-londres-setembro",
-      "title": "Harry Potter | HBO anuncia primeiro evento da série, veja data e mais",
-      "cat": "neu",
-      "time": "22 jul, 12:18",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "9"
+        "10"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 9,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 32,
-    "buzz": 89,
-    "news_count": 9,
+    "net": 40,
+    "buzz": 95,
+    "news_count": 10,
     "social_mentions": 0
   }
 }
