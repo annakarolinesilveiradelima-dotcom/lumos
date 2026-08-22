@@ -1,0 +1,308 @@
+{
+  "label": "22 ago 2026",
+  "updated": "22 ago 2026, 00:40",
+  "kpi": {
+    "mentions": {
+      "v": "7 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+44",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "84",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 43,
+    "neu": 57,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    9,
+    9,
+    9,
+    9,
+    7,
+    7,
+    7
+  ],
+  "stack": [
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      33,
+      67,
+      0
+    ],
+    [
+      43,
+      57,
+      0
+    ],
+    [
+      43,
+      57,
+      0
+    ],
+    [
+      43,
+      57,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 7,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 43,
+        "n": 0,
+        "g": 57
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo"
+        }
+      ]
+    },
+    {
+      "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
+        }
+      ]
+    },
+    {
+      "t": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O DIA",
+          "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html"
+        }
+      ]
+    },
+    {
+      "t": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
+        }
+      ]
+    },
+    {
+      "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo",
+      "title": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "cat": "nos",
+      "time": "19 ago, 19:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo",
+      "title": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+      "cat": "pos",
+      "time": "17 ago, 12:17",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O DIA",
+      "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html",
+      "title": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
+      "cat": "neu",
+      "time": "12 ago, 16:55",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
+      "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "cat": "neu",
+      "time": "12 ago, 16:14",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
+      "title": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "cat": "neu",
+      "time": "11 ago, 21:49",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling",
+      "title": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
+      "cat": "neu",
+      "time": "10 ago, 17:31",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "TechTudo",
+      "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
+      "title": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
+      "cat": "nos",
+      "time": "28 jul, 14:31",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "7"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 7,
+    "unit": "matérias",
+    "net": 44,
+    "buzz": 84,
+    "news_count": 7,
+    "social_mentions": 0
+  }
+}
