@@ -1,16 +1,16 @@
 {
   "label": "21 ago 2026",
-  "updated": "21 ago 2026, 22:11",
+  "updated": "21 ago 2026, 23:53",
   "kpi": {
     "mentions": {
       "v": "7 matérias",
-      "d": -2,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+44",
       "suf": "/100",
-      "d": 12,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "84",
       "suf": "/100",
-      "d": -5,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -38,7 +38,7 @@
     9,
     9,
     9,
-    9,
+    7,
     7
   ],
   "stack": [
@@ -68,8 +68,8 @@
       0
     ],
     [
-      33,
-      67,
+      43,
+      57,
       0
     ],
     [
