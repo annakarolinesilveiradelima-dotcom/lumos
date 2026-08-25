@@ -1,16 +1,16 @@
 {
   "label": "25 ago 2026",
-  "updated": "25 ago 2026, 04:42",
+  "updated": "25 ago 2026, 05:40",
   "kpi": {
     "mentions": {
-      "v": "8 matérias",
-      "d": 0,
+      "v": "9 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+50",
+      "v": "+56",
       "suf": "/100",
-      "d": 0,
+      "d": 6,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "90",
+      "v": "95",
       "suf": "/100",
-      "d": 0,
+      "d": 5,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 50,
-    "neu": 50,
+    "pos": 56,
+    "neu": 44,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -39,7 +39,7 @@
     8,
     8,
     8,
-    8
+    9
   ],
   "stack": [
     [
@@ -73,25 +73,41 @@
       0
     ],
     [
-      50,
-      50,
+      56,
+      44,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 8,
-      "senti": "neu",
+      "vol": 9,
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 50,
+        "p": 56,
         "n": 0,
-        "g": 50
+        "g": 44
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Correio",
+          "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826"
+        }
+      ]
+    },
     {
       "t": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
         }
       ]
-    },
-    {
-      "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Correio",
+      "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
+      "title": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+      "cat": "pos",
+      "time": "24 ago, 20:28",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual",
@@ -245,24 +253,10 @@
       "cat": "neu",
       "time": "10 ago, 17:31",
       "scope": "Portal BR"
-    },
-    {
-      "o": "TechTudo",
-      "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
-      "title": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
-      "cat": "nos",
-      "time": "28 jul, 14:31",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
-    {
-      "t": "Comparação com os filmes originais",
-      "sev": "mid",
-      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-    },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
@@ -280,7 +274,7 @@
       ],
       [
         "Matérias",
-        "8"
+        "9"
       ],
       [
         "Social",
@@ -306,11 +300,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 8,
+    "base_count": 9,
     "unit": "matérias",
-    "net": 50,
-    "buzz": 90,
-    "news_count": 8,
+    "net": 56,
+    "buzz": 95,
+    "news_count": 9,
     "social_mentions": 0
   }
 }

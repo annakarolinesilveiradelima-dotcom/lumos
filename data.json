@@ -1,5 +1,5 @@
 {
-  "generated_at": "25 ago 2026, 04:42",
+  "generated_at": "25 ago 2026, 05:40",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "25 ago 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
-              "v": "8 matérias",
-              "d": 0,
+              "v": "9 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+56",
               "suf": "/100",
-              "d": 0,
+              "d": 6,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "90",
+              "v": "95",
               "suf": "/100",
-              "d": 0,
+              "d": 5,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 56,
+            "neu": 44,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             8,
             8,
             8,
-            8
+            9
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              50,
-              50,
+              56,
+              44,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 8,
-              "senti": "neu",
+              "vol": 9,
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 56,
                 "n": 0,
-                "g": 50
+                "g": 44
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Correio",
+                  "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
                 }
               ]
-            },
-            {
-              "t": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Correio",
+              "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
+              "title": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+              "cat": "pos",
+              "time": "24 ago, 20:28",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual",
@@ -256,24 +264,10 @@
               "cat": "neu",
               "time": "10 ago, 17:31",
               "scope": "Portal BR"
-            },
-            {
-              "o": "TechTudo",
-              "u": "https://www.techtudo.com.br/noticias/2026/08/15-bons-filmes-baseados-em-livros-para-assistir-na-hbo-max-em-2026-streaming.ghtml",
-              "title": "15 bons filmes baseados em livros para assistir na HBO Max em 2026",
-              "cat": "nos",
-              "time": "28 jul, 14:31",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [
-            {
-              "t": "Comparação com os filmes originais",
-              "sev": "mid",
-              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-            },
             {
               "t": "Sensibilidade em torno de elenco",
               "sev": "mid",
@@ -291,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "8"
+                "9"
               ],
               [
                 "Social",
@@ -321,10 +315,10 @@
       "weeks": {
         "w0": {
           "label": "19–25 ago 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
@@ -341,7 +335,7 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "86",
+              "v": "94",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
@@ -354,13 +348,13 @@
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
@@ -402,7 +396,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "pos",
               "ang": -90,
               "s": {
@@ -444,6 +438,22 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual"
                 }
               ]
+            },
+            {
+              "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Correio",
+                  "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -461,6 +471,14 @@
               "title": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
               "cat": "pos",
               "time": "22 ago, 21:42",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Correio",
+              "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
+              "title": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+              "cat": "pos",
+              "time": "24 ago, 20:28",
               "scope": "Portal BR"
             }
           ],
@@ -487,7 +505,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -511,7 +529,7 @@
         },
         "w-1": {
           "label": "12–18 ago 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -725,7 +743,7 @@
         },
         "w-2": {
           "label": "5–11 ago 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -915,7 +933,7 @@
         },
         "w-3": {
           "label": "29 jul–4 ago 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1050,7 +1068,7 @@
         },
         "w-4": {
           "label": "22–28 jul 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1270,7 +1288,7 @@
         },
         "w-5": {
           "label": "15–21 jul 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1460,7 +1478,7 @@
         },
         "w-6": {
           "label": "8–14 jul 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1626,7 +1644,7 @@
         },
         "w-7": {
           "label": "1–7 jul 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1792,7 +1810,7 @@
         },
         "w-8": {
           "label": "24–30 jun 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1927,7 +1945,7 @@
         },
         "w-9": {
           "label": "17–23 jun 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2062,7 +2080,7 @@
         },
         "w-10": {
           "label": "10–16 jun 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2258,7 +2276,7 @@
         },
         "w-11": {
           "label": "3–9 jun 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2393,7 +2411,7 @@
         },
         "w-12": {
           "label": "27 mai–2 jun 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2528,7 +2546,7 @@
         },
         "w-13": {
           "label": "20–26 mai 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2663,7 +2681,7 @@
         },
         "w-14": {
           "label": "13–19 mai 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2798,7 +2816,7 @@
         },
         "w-15": {
           "label": "6–12 mai 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2933,7 +2951,7 @@
         },
         "w-16": {
           "label": "29 abr–5 mai 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3068,7 +3086,7 @@
         },
         "w-17": {
           "label": "22–28 abr 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3203,7 +3221,7 @@
         },
         "w-18": {
           "label": "15–21 abr 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3338,7 +3356,7 @@
         },
         "w-19": {
           "label": "8–14 abr 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3473,7 +3491,7 @@
         },
         "w-20": {
           "label": "1–7 abr 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3608,7 +3626,7 @@
         },
         "w-21": {
           "label": "25–31 mar 2026",
-          "updated": "25 ago 2026, 04:42",
+          "updated": "25 ago 2026, 05:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
