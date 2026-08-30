@@ -1,5 +1,5 @@
 {
-  "generated_at": "30 ago 2026, 04:55",
+  "generated_at": "30 ago 2026, 10:37",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "30 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
-              "v": "9 matérias",
+              "v": "10 matérias",
               "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+44",
+              "v": "+50",
               "suf": "/100",
-              "d": -6,
+              "d": 6,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "92",
+              "v": "98",
               "suf": "/100",
-              "d": 2,
+              "d": 6,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 44,
-            "neu": 56,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -49,15 +49,10 @@
             8,
             8,
             8,
-            8,
-            9
+            9,
+            10
           ],
           "stack": [
-            [
-              50,
-              50,
-              0
-            ],
             [
               50,
               50,
@@ -87,22 +82,43 @@
               44,
               56,
               0
+            ],
+            [
+              50,
+              50,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 9,
+              "vol": 10,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 44,
+                "p": 50,
                 "n": 0,
-                "g": 56
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira"
+                }
+              ]
+            },
             {
               "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
                 }
               ]
-            },
-            {
-              "t": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O DIA",
-                  "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira",
+              "title": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+              "cat": "pos",
+              "time": "29 ago, 21:06",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "12 ago, 16:14",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/nicholas-hoult-gilderoy-lockhart-2-temporada-harry-potter-hbo",
-              "title": "Nicholas Hoult é escalado como Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
-              "cat": "neu",
-              "time": "11 ago, 21:49",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "9"
+                "10"
               ],
               [
                 "Social",
@@ -315,15 +315,15 @@
       "weeks": {
         "w0": {
           "label": "26–30 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "2 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+0",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -335,78 +335,94 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "28",
+              "v": "61",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ],
             [
-              0,
-              100,
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
+              "vol": 2,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 50,
                 "n": 0,
-                "g": 100
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira"
+                }
+              ]
+            },
             {
               "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
               "vol": 1,
@@ -425,6 +441,14 @@
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira",
+              "title": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+              "cat": "pos",
+              "time": "29 ago, 21:06",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
@@ -457,7 +481,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "2"
               ],
               [
                 "Dados fictícios",
@@ -481,7 +505,7 @@
         },
         "w-1": {
           "label": "19–25 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -695,7 +719,7 @@
         },
         "w-2": {
           "label": "12–18 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -909,7 +933,7 @@
         },
         "w-3": {
           "label": "5–11 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1099,7 +1123,7 @@
         },
         "w-4": {
           "label": "29 jul–4 ago 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1234,7 +1258,7 @@
         },
         "w-5": {
           "label": "22–28 jul 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1454,7 +1478,7 @@
         },
         "w-6": {
           "label": "15–21 jul 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1644,7 +1668,7 @@
         },
         "w-7": {
           "label": "8–14 jul 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1810,7 +1834,7 @@
         },
         "w-8": {
           "label": "1–7 jul 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1976,7 +2000,7 @@
         },
         "w-9": {
           "label": "24–30 jun 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2111,7 +2135,7 @@
         },
         "w-10": {
           "label": "17–23 jun 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2246,7 +2270,7 @@
         },
         "w-11": {
           "label": "10–16 jun 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2442,7 +2466,7 @@
         },
         "w-12": {
           "label": "3–9 jun 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2577,7 +2601,7 @@
         },
         "w-13": {
           "label": "27 mai–2 jun 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2712,7 +2736,7 @@
         },
         "w-14": {
           "label": "20–26 mai 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2847,7 +2871,7 @@
         },
         "w-15": {
           "label": "13–19 mai 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2982,7 +3006,7 @@
         },
         "w-16": {
           "label": "6–12 mai 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3117,7 +3141,7 @@
         },
         "w-17": {
           "label": "29 abr–5 mai 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3252,7 +3276,7 @@
         },
         "w-18": {
           "label": "22–28 abr 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3387,7 +3411,7 @@
         },
         "w-19": {
           "label": "15–21 abr 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3522,7 +3546,7 @@
         },
         "w-20": {
           "label": "8–14 abr 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3657,7 +3681,7 @@
         },
         "w-21": {
           "label": "1–7 abr 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3792,7 +3816,7 @@
         },
         "w-22": {
           "label": "25–31 mar 2026",
-          "updated": "30 ago 2026, 04:55",
+          "updated": "30 ago 2026, 10:37",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
