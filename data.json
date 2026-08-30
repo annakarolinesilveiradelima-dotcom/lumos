@@ -1,5 +1,5 @@
 {
-  "generated_at": "29 ago 2026, 22:05",
+  "generated_at": "30 ago 2026, 04:55",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "29 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "label": "30 ago 2026",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
-              "v": "8 matérias",
-              "d": 0,
+              "v": "9 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+44",
               "suf": "/100",
-              "d": 0,
+              "d": -6,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "90",
+              "v": "92",
               "suf": "/100",
-              "d": 0,
+              "d": 2,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 44,
+            "neu": 56,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             8,
             8,
             8,
-            8
+            9
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              50,
-              50,
+              44,
+              56,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 8,
+              "vol": 9,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 44,
                 "n": 0,
-                "g": 50
+                "g": 56
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
+                }
+              ]
+            },
             {
               "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html"
                 }
               ]
-            },
-            {
-              "t": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
+              "title": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+              "cat": "neu",
+              "time": "29 ago, 15:21",
+              "scope": "Portal BR"
+            },
             {
               "o": "Correio",
               "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "11 ago, 21:49",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-bel-powley-reage-declaracoes-genero-trans-jw-rowling",
-              "title": "Harry Potter | Atriz da série da HBO diz que \"discorda completamente\" de J.K. Rowling sobre gêneros",
-              "cat": "neu",
-              "time": "10 ago, 17:31",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "8"
+                "9"
               ],
               [
                 "Social",
@@ -314,19 +314,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "26–29 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "label": "26–30 ago 2026",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -335,26 +335,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
@@ -406,51 +406,82 @@
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
+              "title": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+              "cat": "neu",
+              "time": "29 ago, 15:21",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na cobertura editorial",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 26–29 ago 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 26–30 ago 2026.",
             "facts": [
               [
                 "Janela",
-                "26–29 ago 2026"
+                "26–30 ago 2026"
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 26–29 ago 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "19–25 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -664,7 +695,7 @@
         },
         "w-2": {
           "label": "12–18 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -878,7 +909,7 @@
         },
         "w-3": {
           "label": "5–11 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1068,7 +1099,7 @@
         },
         "w-4": {
           "label": "29 jul–4 ago 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1203,7 +1234,7 @@
         },
         "w-5": {
           "label": "22–28 jul 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1423,7 +1454,7 @@
         },
         "w-6": {
           "label": "15–21 jul 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1613,7 +1644,7 @@
         },
         "w-7": {
           "label": "8–14 jul 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1779,7 +1810,7 @@
         },
         "w-8": {
           "label": "1–7 jul 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1945,7 +1976,7 @@
         },
         "w-9": {
           "label": "24–30 jun 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2080,7 +2111,7 @@
         },
         "w-10": {
           "label": "17–23 jun 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2215,7 +2246,7 @@
         },
         "w-11": {
           "label": "10–16 jun 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2411,7 +2442,7 @@
         },
         "w-12": {
           "label": "3–9 jun 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2546,7 +2577,7 @@
         },
         "w-13": {
           "label": "27 mai–2 jun 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2681,7 +2712,7 @@
         },
         "w-14": {
           "label": "20–26 mai 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2816,7 +2847,7 @@
         },
         "w-15": {
           "label": "13–19 mai 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2951,7 +2982,7 @@
         },
         "w-16": {
           "label": "6–12 mai 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3086,7 +3117,7 @@
         },
         "w-17": {
           "label": "29 abr–5 mai 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3221,7 +3252,7 @@
         },
         "w-18": {
           "label": "22–28 abr 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3356,7 +3387,7 @@
         },
         "w-19": {
           "label": "15–21 abr 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3491,7 +3522,7 @@
         },
         "w-20": {
           "label": "8–14 abr 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3626,7 +3657,7 @@
         },
         "w-21": {
           "label": "1–7 abr 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3761,7 +3792,7 @@
         },
         "w-22": {
           "label": "25–31 mar 2026",
-          "updated": "29 ago 2026, 22:05",
+          "updated": "30 ago 2026, 04:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
