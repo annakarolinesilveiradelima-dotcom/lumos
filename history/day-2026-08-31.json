@@ -1,0 +1,310 @@
+{
+  "label": "31 ago 2026",
+  "updated": "31 ago 2026, 00:57",
+  "kpi": {
+    "mentions": {
+      "v": "10 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+50",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "98",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 50,
+    "neu": 50,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    8,
+    9,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "stack": [
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      44,
+      56,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 10,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
+        }
+      ]
+    },
+    {
+      "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Correio",
+          "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo"
+        }
+      ]
+    },
+    {
+      "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira",
+      "title": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+      "cat": "pos",
+      "time": "29 ago, 21:06",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
+      "title": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+      "cat": "neu",
+      "time": "29 ago, 15:21",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Correio",
+      "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
+      "title": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
+      "cat": "pos",
+      "time": "24 ago, 20:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual",
+      "title": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
+      "cat": "pos",
+      "time": "22 ago, 21:42",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo",
+      "title": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
+      "cat": "nos",
+      "time": "19 ago, 19:28",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo",
+      "title": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
+      "cat": "pos",
+      "time": "17 ago, 12:17",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O DIA",
+      "u": "https://odia.ig.com.br/diversao/televisao/2026/08/7289814-nicholas-hoult-e-escalado-para-segunda-temporada-de-harry-potter.html",
+      "title": "Nicholas Hoult é escalado para segunda temporada de 'Harry Potter'",
+      "cat": "neu",
+      "time": "12 ago, 16:55",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
+      "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
+      "cat": "neu",
+      "time": "12 ago, 16:14",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "10"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 10,
+    "unit": "matérias",
+    "net": 50,
+    "buzz": 98,
+    "news_count": 10,
+    "social_mentions": 0
+  }
+}
