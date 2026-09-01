@@ -1,5 +1,5 @@
 {
-  "generated_at": "31 ago 2026, 22:40",
+  "generated_at": "1 set 2026, 04:20",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,8 +10,8 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "31 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "label": "1 set 2026",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "10 matérias",
@@ -104,6 +104,22 @@
           ],
           "narratives": [
             {
+              "t": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "IGN Brasil",
+                  "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax"
+                }
+              ]
+            },
+            {
               "t": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
               "vol": 1,
               "senti": "pos",
@@ -182,25 +198,17 @@
                   "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo"
                 }
               ]
-            },
-            {
-              "t": "Diretoras expõe que recusaram nova série de Harry Potter por transfobia: \"Nem f*dendo!\"",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/comportamento/2026/8/17/diretoras-expoe-que-recusaram-nova-serie-de-harry-potter-por-transfobia-nem-fdendo"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "IGN Brasil",
+              "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax",
+              "title": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
+              "cat": "neu",
+              "time": "31 ago, 14:02",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "12 ago, 16:55",
               "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/entretenimento/2026/8/12/ator-de-superman-e-escalado-para-interpretar-gilderoy-lockhart-na-2-temporada-de-harry-potter-da-hbo",
-              "title": "Ator de Superman é escalado para interpretar Gilderoy Lockhart na 2ª temporada de Harry Potter da HBO",
-              "cat": "neu",
-              "time": "12 ago, 16:14",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -314,16 +314,16 @@
       },
       "weeks": {
         "w0": {
-          "label": "26–31 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "label": "26 ago–1 set 2026",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+33",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -335,74 +335,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "61",
+              "v": "60",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 33,
+            "neu": 67,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 33,
                 "n": 0,
-                "g": 50
+                "g": 67
               }
             }
           ],
@@ -438,6 +438,22 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
                 }
               ]
+            },
+            {
+              "t": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "IGN Brasil",
+                  "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -456,6 +472,14 @@
               "cat": "neu",
               "time": "29 ago, 15:21",
               "scope": "Portal BR"
+            },
+            {
+              "o": "IGN Brasil",
+              "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax",
+              "title": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
+              "cat": "neu",
+              "time": "31 ago, 14:02",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -469,11 +493,11 @@
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 26–31 ago 2026.",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 26 ago–1 set 2026.",
             "facts": [
               [
                 "Janela",
-                "26–31 ago 2026"
+                "26 ago–1 set 2026"
               ],
               [
                 "Marco",
@@ -481,7 +505,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -505,7 +529,7 @@
         },
         "w-1": {
           "label": "19–25 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -719,7 +743,7 @@
         },
         "w-2": {
           "label": "12–18 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -933,7 +957,7 @@
         },
         "w-3": {
           "label": "5–11 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1123,7 +1147,7 @@
         },
         "w-4": {
           "label": "29 jul–4 ago 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1258,7 +1282,7 @@
         },
         "w-5": {
           "label": "22–28 jul 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1478,7 +1502,7 @@
         },
         "w-6": {
           "label": "15–21 jul 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1668,7 +1692,7 @@
         },
         "w-7": {
           "label": "8–14 jul 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1834,7 +1858,7 @@
         },
         "w-8": {
           "label": "1–7 jul 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2000,7 +2024,7 @@
         },
         "w-9": {
           "label": "24–30 jun 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2135,7 +2159,7 @@
         },
         "w-10": {
           "label": "17–23 jun 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2270,7 +2294,7 @@
         },
         "w-11": {
           "label": "10–16 jun 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2466,7 +2490,7 @@
         },
         "w-12": {
           "label": "3–9 jun 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2601,7 +2625,7 @@
         },
         "w-13": {
           "label": "27 mai–2 jun 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2736,7 +2760,7 @@
         },
         "w-14": {
           "label": "20–26 mai 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2871,7 +2895,7 @@
         },
         "w-15": {
           "label": "13–19 mai 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3006,7 +3030,7 @@
         },
         "w-16": {
           "label": "6–12 mai 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3141,7 +3165,7 @@
         },
         "w-17": {
           "label": "29 abr–5 mai 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3276,7 +3300,7 @@
         },
         "w-18": {
           "label": "22–28 abr 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3411,7 +3435,7 @@
         },
         "w-19": {
           "label": "15–21 abr 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3546,7 +3570,7 @@
         },
         "w-20": {
           "label": "8–14 abr 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3681,7 +3705,7 @@
         },
         "w-21": {
           "label": "1–7 abr 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3816,7 +3840,7 @@
         },
         "w-22": {
           "label": "25–31 mar 2026",
-          "updated": "31 ago 2026, 22:40",
+          "updated": "1 set 2026, 04:20",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
