@@ -1,16 +1,16 @@
 {
   "label": "2 set 2026",
-  "updated": "2 set 2026, 14:37",
+  "updated": "2 set 2026, 17:34",
   "kpi": {
     "mentions": {
-      "v": "11 matérias",
-      "d": 1,
+      "v": "10 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+64",
+      "v": "+80",
       "suf": "/100",
-      "d": -6,
+      "d": 16,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 64,
-    "neu": 36,
+    "pos": 80,
+    "neu": 20,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     10,
-    10,
     11,
     10,
     10,
     10,
-    11
+    11,
+    10
   ],
   "stack": [
-    [
-      50,
-      50,
-      0
-    ],
     [
       50,
       50,
@@ -76,22 +71,43 @@
       64,
       36,
       0
+    ],
+    [
+      80,
+      20,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 11,
+      "vol": 10,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 64,
+        "p": 80,
         "n": 0,
-        "g": 36
+        "g": 20
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter: série da HBO Max ganha trailer inédito; assista",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Tribuna Independente",
+          "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista"
+        }
+      ]
+    },
     {
       "t": "Harry Potter | Varinha do protagonista na série da HBO é revelada, veja vídeo",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
         }
       ]
-    },
-    {
-      "t": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Correio",
-          "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Tribuna Independente",
+      "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista",
+      "title": "Harry Potter: série da HBO Max ganha trailer inédito; assista",
+      "cat": "pos",
+      "time": "2 set, 00:00",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-varinha-do-protagonista-na-serie-da-hbo-e-revelada-veja-video",
@@ -245,23 +253,15 @@
       "cat": "pos",
       "time": "22 ago, 21:42",
       "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/8/19/harry-potter-serie-da-hbo-faz-grande-mudanca-na-cicatriz-do-bruxo",
-      "title": "Harry Potter: Série da HBO faz grande mudança na cicatriz do bruxo",
-      "cat": "nos",
-      "time": "19 ago, 19:28",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
     {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
-      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+      "t": "Risco baixo na cobertura editorial",
+      "sev": "low",
+      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
     }
   ],
   "heroOpp": {
@@ -274,7 +274,7 @@
       ],
       [
         "Matérias",
-        "11"
+        "10"
       ],
       [
         "Social",
@@ -300,11 +300,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 11,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 64,
+    "net": 80,
     "buzz": 100,
-    "news_count": 11,
+    "news_count": 10,
     "social_mentions": 0
   }
 }
