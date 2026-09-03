@@ -1,5 +1,5 @@
 {
-  "generated_at": "2 set 2026, 22:04",
+  "generated_at": "3 set 2026, 03:54",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "2 set 2026",
-          "updated": "2 set 2026, 22:04",
+          "label": "3 set 2026",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
-              "v": "10 matérias",
-              "d": -1,
+              "v": "12 matérias",
+              "d": 2,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+80",
+              "v": "+68",
               "suf": "/100",
-              "d": 8,
+              "d": -12,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,26 +38,21 @@
             }
           },
           "senti": {
-            "pos": 80,
-            "neu": 20,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             10,
             10,
-            10,
             11,
             10,
             11,
-            10
+            10,
+            12
           ],
           "stack": [
-            [
-              70,
-              30,
-              0
-            ],
             [
               70,
               30,
@@ -87,24 +82,29 @@
               80,
               20,
               0
+            ],
+            [
+              67,
+              33,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 10,
+              "vol": 12,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 80,
+                "p": 67,
                 "n": 0,
-                "g": 20
+                "g": 33
               }
             }
           ],
           "narratives": [
             {
-              "t": "Harry Potter: série da HBO Max ganha trailer inédito; assista",
+              "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
               "vol": 1,
               "senti": "pos",
               "pf": "Imprensa",
@@ -114,45 +114,13 @@
               "pct": 50,
               "src": [
                 {
-                  "o": "Tribuna Independente",
-                  "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista"
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas"
                 }
               ]
             },
             {
-              "t": "Harry Potter | Varinha do protagonista na série da HBO é revelada, veja vídeo",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-varinha-do-protagonista-na-serie-da-hbo-e-revelada-veja-video"
-                }
-              ]
-            },
-            {
-              "t": "Harry Potter | Brasões e mascotes das casas na série da HBO são revelados",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-brasoes-e-mascotes-das-casas-na-serie-da-hbo-sao-revelados"
-                }
-              ]
-            },
-            {
-              "t": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
+              "t": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
               "vol": 1,
               "senti": "neu",
               "pf": "Imprensa",
@@ -162,13 +130,13 @@
               "pct": 50,
               "src": [
                 {
-                  "o": "IGN Brasil",
-                  "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax"
+                  "o": "ISTOÉ Independente",
+                  "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme"
                 }
               ]
             },
             {
-              "t": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
+              "t": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
               "vol": 1,
               "senti": "pos",
               "pf": "Imprensa",
@@ -178,13 +146,45 @@
               "pct": 50,
               "src": [
                 {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira"
+                  "o": "Olhar Digital",
+                  "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/"
                 }
               ]
             },
             {
-              "t": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
+              "t": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/"
+                }
+              ]
+            },
+            {
+              "t": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Veja",
+                  "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/"
+                }
+              ]
+            },
+            {
+              "t": "Harry Potter: veja o trailer da nova série da HBO Max",
               "vol": 1,
               "senti": "neu",
               "pf": "Imprensa",
@@ -194,13 +194,61 @@
               "pct": 50,
               "src": [
                 {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer"
+                  "o": "Metrópoles",
+                  "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max"
                 }
               ]
             }
           ],
           "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
+              "title": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
+              "cat": "pos",
+              "time": "2 set, 17:54",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "ISTOÉ Independente",
+              "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme",
+              "title": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
+              "cat": "neu",
+              "time": "2 set, 17:50",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Olhar Digital",
+              "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/",
+              "title": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
+              "cat": "pos",
+              "time": "2 set, 17:35",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/",
+              "title": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
+              "cat": "pos",
+              "time": "2 set, 17:10",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Veja",
+              "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/",
+              "title": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
+              "cat": "nos",
+              "time": "2 set, 16:30",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Metrópoles",
+              "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max",
+              "title": "Harry Potter: veja o trailer da nova série da HBO Max",
+              "cat": "neu",
+              "time": "2 set, 15:16",
+              "scope": "Portal BR"
+            },
             {
               "o": "Tribuna Independente",
               "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista",
@@ -215,54 +263,6 @@
               "title": "Harry Potter | Varinha do protagonista na série da HBO é revelada, veja vídeo",
               "cat": "pos",
               "time": "1 set, 12:30",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-brasoes-e-mascotes-das-casas-na-serie-da-hbo-sao-revelados",
-              "title": "Harry Potter | Brasões e mascotes das casas na série da HBO são revelados",
-              "cat": "pos",
-              "time": "1 set, 12:09",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "IGN Brasil",
-              "u": "https://br.ign.com/harry-potter-the-series/155784/hbo-reformula-oficialmente-brasoes-das-casas-de-hogwarts-para-nova-serie-de-harry-potter-mas-fas-tax",
-              "title": "HBO reformula oficialmente brasões das casas de Hogwarts para nova série de Harry Potter, mas fãs taxam designs como \"baratos e malfeitos\"",
-              "cat": "neu",
-              "time": "31 ago, 14:02",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-novo-trailer-terca-feira",
-              "title": "Harry Potter | Série da HBO ganhará novo trailer na terça-feira (1), confirma insider",
-              "cat": "pos",
-              "time": "29 ago, 21:06",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-novo-trailer",
-              "title": "Série de Harry Potter ganha trailer com cenas inéditas; assista",
-              "cat": "neu",
-              "time": "29 ago, 15:21",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Correio",
-              "u": "https://www.correio24horas.com.br/em-alta/apos-saida-de-nicholas-hoult-de-harry-potter-astro-de-game-of-thrones-assume-o-papel-de-gilderoy-lockhart-0826",
-              "title": "Após saída de Nicholas Hoult de Harry Potter, astro de Game of Thrones assume papel no projeto",
-              "cat": "pos",
-              "time": "24 ago, 20:28",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-carta-hogwarts-serie-visual",
-              "title": "Harry Potter | Visual da carta de admissão de Hogwarts na série é revelado",
-              "cat": "pos",
-              "time": "22 ago, 21:42",
               "scope": "Portal BR"
             }
           ],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "10"
+                "12"
               ],
               [
                 "Social",
@@ -314,16 +314,16 @@
       },
       "weeks": {
         "w0": {
-          "label": "2–2 set 2026",
-          "updated": "2 set 2026, 22:04",
+          "label": "2–3 set 2026",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "7 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+71",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -335,74 +335,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "78",
+              "v": "100",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 71,
+            "neu": 29,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
           ],
           "stack": [
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ],
             [
-              100,
-              0,
+              71,
+              29,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
+              "vol": 7,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 71,
                 "n": 0,
-                "g": 0
+                "g": 29
               }
             }
           ],
@@ -422,6 +422,86 @@
                   "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista"
                 }
               ]
+            },
+            {
+              "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas"
+                }
+              ]
+            },
+            {
+              "t": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "ISTOÉ Independente",
+                  "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme"
+                }
+              ]
+            },
+            {
+              "t": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Olhar Digital",
+                  "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/"
+                }
+              ]
+            },
+            {
+              "t": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/"
+                }
+              ]
+            },
+            {
+              "t": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Veja",
+                  "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -431,6 +511,54 @@
               "title": "Harry Potter: série da HBO Max ganha trailer inédito; assista",
               "cat": "pos",
               "time": "2 set, 00:00",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
+              "title": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
+              "cat": "pos",
+              "time": "2 set, 17:54",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "ISTOÉ Independente",
+              "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme",
+              "title": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
+              "cat": "neu",
+              "time": "2 set, 17:50",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Olhar Digital",
+              "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/",
+              "title": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
+              "cat": "pos",
+              "time": "2 set, 17:35",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/",
+              "title": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
+              "cat": "pos",
+              "time": "2 set, 17:10",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Veja",
+              "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/",
+              "title": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
+              "cat": "nos",
+              "time": "2 set, 16:30",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Metrópoles",
+              "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max",
+              "title": "Harry Potter: veja o trailer da nova série da HBO Max",
+              "cat": "neu",
+              "time": "2 set, 15:16",
               "scope": "Portal BR"
             }
           ],
@@ -445,11 +573,11 @@
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 2–2 set 2026.",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 2–3 set 2026.",
             "facts": [
               [
                 "Janela",
-                "2–2 set 2026"
+                "2–3 set 2026"
               ],
               [
                 "Marco",
@@ -457,7 +585,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "7"
               ],
               [
                 "Dados fictícios",
@@ -481,7 +609,7 @@
         },
         "w-1": {
           "label": "26 ago–1 set 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -743,7 +871,7 @@
         },
         "w-2": {
           "label": "19–25 ago 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -957,7 +1085,7 @@
         },
         "w-3": {
           "label": "12–18 ago 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1171,7 +1299,7 @@
         },
         "w-4": {
           "label": "5–11 ago 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1361,7 +1489,7 @@
         },
         "w-5": {
           "label": "29 jul–4 ago 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1496,7 +1624,7 @@
         },
         "w-6": {
           "label": "22–28 jul 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1716,7 +1844,7 @@
         },
         "w-7": {
           "label": "15–21 jul 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1906,7 +2034,7 @@
         },
         "w-8": {
           "label": "8–14 jul 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2072,7 +2200,7 @@
         },
         "w-9": {
           "label": "1–7 jul 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2238,7 +2366,7 @@
         },
         "w-10": {
           "label": "24–30 jun 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2373,7 +2501,7 @@
         },
         "w-11": {
           "label": "17–23 jun 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2508,7 +2636,7 @@
         },
         "w-12": {
           "label": "10–16 jun 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2704,7 +2832,7 @@
         },
         "w-13": {
           "label": "3–9 jun 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2839,7 +2967,7 @@
         },
         "w-14": {
           "label": "27 mai–2 jun 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2974,7 +3102,7 @@
         },
         "w-15": {
           "label": "20–26 mai 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3109,7 +3237,7 @@
         },
         "w-16": {
           "label": "13–19 mai 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3244,7 +3372,7 @@
         },
         "w-17": {
           "label": "6–12 mai 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3379,7 +3507,7 @@
         },
         "w-18": {
           "label": "29 abr–5 mai 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3514,7 +3642,7 @@
         },
         "w-19": {
           "label": "22–28 abr 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3649,7 +3777,7 @@
         },
         "w-20": {
           "label": "15–21 abr 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3784,7 +3912,7 @@
         },
         "w-21": {
           "label": "8–14 abr 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3919,7 +4047,7 @@
         },
         "w-22": {
           "label": "1–7 abr 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4054,7 +4182,7 @@
         },
         "w-23": {
           "label": "25–31 mar 2026",
-          "updated": "2 set 2026, 22:04",
+          "updated": "3 set 2026, 03:54",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
