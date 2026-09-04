@@ -1,5 +1,5 @@
 {
-  "generated_at": "3 set 2026, 19:19",
+  "generated_at": "3 set 2026, 21:48",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "3 set 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
-              "v": "10 matérias",
-              "d": 0,
+              "v": "13 matérias",
+              "d": 3,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+70",
+              "v": "+68",
               "suf": "/100",
-              "d": 0,
+              "d": -2,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,26 +38,21 @@
             }
           },
           "senti": {
-            "pos": 70,
-            "neu": 30,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            11,
             10,
             12,
             12,
             10,
             10,
-            10
+            10,
+            13
           ],
           "stack": [
-            [
-              73,
-              27,
-              0
-            ],
             [
               80,
               20,
@@ -87,22 +82,43 @@
               70,
               30,
               0
+            ],
+            [
+              67,
+              33,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 10,
+              "vol": 13,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 70,
+                "p": 67,
                 "n": 0,
-                "g": 30
+                "g": 33
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Folha de S.Paulo",
+                  "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
+                }
+              ]
+            },
             {
               "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/"
                 }
               ]
-            },
-            {
-              "t": "Harry Potter: veja o trailer da nova série da HBO Max",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Metrópoles",
-                  "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Folha de S.Paulo",
+              "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
+              "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+              "cat": "pos",
+              "time": "3 set, 10:38",
+              "scope": "Portal BR"
+            },
             {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
@@ -256,14 +264,6 @@
               "cat": "pos",
               "time": "2 set, 00:00",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-varinha-do-protagonista-na-serie-da-hbo-e-revelada-veja-video",
-              "title": "Harry Potter | Varinha do protagonista na série da HBO é revelada, veja vídeo",
-              "cat": "pos",
-              "time": "1 set, 12:30",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "10"
+                "12"
               ],
               [
                 "Social",
@@ -315,15 +315,15 @@
       "weeks": {
         "w0": {
           "label": "2–3 set 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
-              "v": "7 matérias",
+              "v": "8 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+71",
+              "v": "+75",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -342,67 +342,67 @@
             }
           },
           "senti": {
-            "pos": 71,
-            "neu": 29,
+            "pos": 75,
+            "neu": 25,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
           ],
           "stack": [
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ],
             [
-              71,
-              29,
+              75,
+              25,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 7,
+              "vol": 8,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 71,
+                "p": 75,
                 "n": 0,
-                "g": 29
+                "g": 25
               }
             }
           ],
@@ -420,6 +420,22 @@
                 {
                   "o": "Tribuna Independente",
                   "u": "https://tribunahoje.com/noticias/entretenimento/2026/09/02/192800-harry-potter-serie-da-hbo-max-ganha-trailer-inedito-assista"
+                }
+              ]
+            },
+            {
+              "t": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Folha de S.Paulo",
+                  "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
                 }
               ]
             },
@@ -486,22 +502,6 @@
                   "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/"
                 }
               ]
-            },
-            {
-              "t": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Veja",
-                  "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -511,6 +511,14 @@
               "title": "Harry Potter: série da HBO Max ganha trailer inédito; assista",
               "cat": "pos",
               "time": "2 set, 00:00",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Folha de S.Paulo",
+              "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
+              "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+              "cat": "pos",
+              "time": "3 set, 10:38",
               "scope": "Portal BR"
             },
             {
@@ -585,7 +593,7 @@
               ],
               [
                 "Matérias",
-                "7"
+                "8"
               ],
               [
                 "Dados fictícios",
@@ -609,7 +617,7 @@
         },
         "w-1": {
           "label": "26 ago–1 set 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -871,7 +879,7 @@
         },
         "w-2": {
           "label": "19–25 ago 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1085,7 +1093,7 @@
         },
         "w-3": {
           "label": "12–18 ago 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1299,7 +1307,7 @@
         },
         "w-4": {
           "label": "5–11 ago 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1489,7 +1497,7 @@
         },
         "w-5": {
           "label": "29 jul–4 ago 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1624,7 +1632,7 @@
         },
         "w-6": {
           "label": "22–28 jul 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1844,7 +1852,7 @@
         },
         "w-7": {
           "label": "15–21 jul 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2034,7 +2042,7 @@
         },
         "w-8": {
           "label": "8–14 jul 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2200,7 +2208,7 @@
         },
         "w-9": {
           "label": "1–7 jul 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2366,7 +2374,7 @@
         },
         "w-10": {
           "label": "24–30 jun 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2501,7 +2509,7 @@
         },
         "w-11": {
           "label": "17–23 jun 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2636,7 +2644,7 @@
         },
         "w-12": {
           "label": "10–16 jun 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2832,7 +2840,7 @@
         },
         "w-13": {
           "label": "3–9 jun 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2967,7 +2975,7 @@
         },
         "w-14": {
           "label": "27 mai–2 jun 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3102,7 +3110,7 @@
         },
         "w-15": {
           "label": "20–26 mai 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3237,7 +3245,7 @@
         },
         "w-16": {
           "label": "13–19 mai 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3372,7 +3380,7 @@
         },
         "w-17": {
           "label": "6–12 mai 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3507,7 +3515,7 @@
         },
         "w-18": {
           "label": "29 abr–5 mai 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3642,7 +3650,7 @@
         },
         "w-19": {
           "label": "22–28 abr 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3777,7 +3785,7 @@
         },
         "w-20": {
           "label": "15–21 abr 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3912,7 +3920,7 @@
         },
         "w-21": {
           "label": "8–14 abr 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4047,7 +4055,7 @@
         },
         "w-22": {
           "label": "1–7 abr 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4182,7 +4190,7 @@
         },
         "w-23": {
           "label": "25–31 mar 2026",
-          "updated": "3 set 2026, 19:19",
+          "updated": "3 set 2026, 21:48",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

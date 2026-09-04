@@ -1,16 +1,16 @@
 {
   "label": "3 set 2026",
-  "updated": "3 set 2026, 19:19",
+  "updated": "3 set 2026, 21:48",
   "kpi": {
     "mentions": {
-      "v": "10 matérias",
-      "d": 0,
+      "v": "13 matérias",
+      "d": 3,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+70",
+      "v": "+68",
       "suf": "/100",
-      "d": 0,
+      "d": -2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 70,
-    "neu": 30,
+    "pos": 67,
+    "neu": 33,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    11,
     10,
     12,
     12,
     10,
     10,
-    10
+    10,
+    13
   ],
   "stack": [
-    [
-      73,
-      27,
-      0
-    ],
     [
       80,
       20,
@@ -76,22 +71,43 @@
       70,
       30,
       0
+    ],
+    [
+      67,
+      33,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 10,
+      "vol": 13,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 70,
+        "p": 67,
         "n": 0,
-        "g": 30
+        "g": 33
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Folha de S.Paulo",
+          "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
+        }
+      ]
+    },
     {
       "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/"
         }
       ]
-    },
-    {
-      "t": "Harry Potter: veja o trailer da nova série da HBO Max",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Metrópoles",
-          "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Folha de S.Paulo",
+      "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
+      "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+      "cat": "pos",
+      "time": "3 set, 10:38",
+      "scope": "Portal BR"
+    },
     {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "2 set, 00:00",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-varinha-do-protagonista-na-serie-da-hbo-e-revelada-veja-video",
-      "title": "Harry Potter | Varinha do protagonista na série da HBO é revelada, veja vídeo",
-      "cat": "pos",
-      "time": "1 set, 12:30",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -274,7 +274,7 @@
       ],
       [
         "Matérias",
-        "10"
+        "12"
       ],
       [
         "Social",
@@ -300,11 +300,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 10,
+    "base_count": 13,
     "unit": "matérias",
-    "net": 70,
+    "net": 68,
     "buzz": 100,
-    "news_count": 10,
+    "news_count": 13,
     "social_mentions": 0
   }
 }
