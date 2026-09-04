@@ -1,6 +1,6 @@
 {
   "label": "4 set 2026",
-  "updated": "4 set 2026, 02:33",
+  "updated": "4 set 2026, 07:42",
   "kpi": {
     "mentions": {
       "v": "13 matérias",
@@ -34,10 +34,10 @@
   },
   "buzz7": [
     12,
-    12,
     10,
     10,
     10,
+    13,
     13,
     13
   ],
@@ -48,23 +48,23 @@
       0
     ],
     [
+      70,
+      30,
+      0
+    ],
+    [
+      70,
+      30,
+      0
+    ],
+    [
+      70,
+      30,
+      0
+    ],
+    [
       67,
       33,
-      0
-    ],
-    [
-      70,
-      30,
-      0
-    ],
-    [
-      70,
-      30,
-      0
-    ],
-    [
-      70,
-      30,
       0
     ],
     [
@@ -92,6 +92,22 @@
     }
   ],
   "narratives": [
+    {
+      "t": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "OFuxico",
+          "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/"
+        }
+      ]
+    },
     {
       "t": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/"
         }
       ]
-    },
-    {
-      "t": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Canaltech",
-          "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "OFuxico",
+      "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/",
+      "title": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "cat": "pos",
+      "time": "3 set, 21:51",
+      "scope": "Portal BR"
+    },
     {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts",
@@ -244,14 +252,6 @@
       "title": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
       "cat": "nos",
       "time": "2 set, 16:30",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Metrópoles",
-      "u": "https://www.metropoles.com/entretenimento/harry-potter-veja-o-trailer-da-nova-serie-da-hbo-max",
-      "title": "Harry Potter: veja o trailer da nova série da HBO Max",
-      "cat": "neu",
-      "time": "2 set, 15:16",
       "scope": "Portal BR"
     }
   ],
