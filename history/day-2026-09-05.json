@@ -1,16 +1,16 @@
 {
   "label": "5 set 2026",
-  "updated": "5 set 2026, 00:11",
+  "updated": "5 set 2026, 05:05",
   "kpi": {
     "mentions": {
-      "v": "13 matérias",
-      "d": 0,
+      "v": "11 matérias",
+      "d": -2,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+68",
+      "v": "+72",
       "suf": "/100",
-      "d": 0,
+      "d": 4,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 67,
-    "neu": 33,
+    "pos": 73,
+    "neu": 27,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     13,
-    13,
     11,
     10,
     11,
     13,
-    13
+    13,
+    11
   ],
   "stack": [
-    [
-      67,
-      33,
-      0
-    ],
     [
       67,
       33,
@@ -76,22 +71,59 @@
       67,
       33,
       0
+    ],
+    [
+      73,
+      27,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 13,
+      "vol": 11,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 67,
+        "p": 73,
         "n": 0,
-        "g": 33
+        "g": 27
       }
     }
   ],
   "narratives": [
+    {
+      "t": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Veja",
+          "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter tem bastidores caóticos na segunda temporada",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada"
+        }
+      ]
+    },
     {
       "t": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
       "vol": 1,
@@ -155,41 +187,25 @@
           "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas"
         }
       ]
-    },
-    {
-      "t": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "ISTOÉ Independente",
-          "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme"
-        }
-      ]
-    },
-    {
-      "t": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Olhar Digital",
-          "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Veja",
+      "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/",
+      "title": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
+      "cat": "pos",
+      "time": "4 set, 17:03",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada",
+      "title": "Harry Potter tem bastidores caóticos na segunda temporada",
+      "cat": "neu",
+      "time": "4 set, 16:04",
+      "scope": "Portal BR"
+    },
     {
       "o": "OFuxico",
       "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/",
@@ -237,22 +253,6 @@
       "cat": "pos",
       "time": "2 set, 17:35",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Canaltech",
-      "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/",
-      "title": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
-      "cat": "pos",
-      "time": "2 set, 17:10",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Veja",
-      "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/",
-      "title": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
-      "cat": "nos",
-      "time": "2 set, 16:30",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -262,6 +262,12 @@
       "sev": "mid",
       "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
     }
   ],
   "heroOpp": {
@@ -274,7 +280,7 @@
       ],
       [
         "Matérias",
-        "12"
+        "11"
       ],
       [
         "Social",
@@ -300,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 13,
+    "base_count": 11,
     "unit": "matérias",
-    "net": 68,
+    "net": 72,
     "buzz": 100,
-    "news_count": 13,
+    "news_count": 11,
     "social_mentions": 0
   }
 }
