@@ -1,0 +1,310 @@
+{
+  "label": "5 set 2026",
+  "updated": "5 set 2026, 00:11",
+  "kpi": {
+    "mentions": {
+      "v": "13 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+68",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 67,
+    "neu": 33,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    13,
+    13,
+    11,
+    10,
+    11,
+    13,
+    13
+  ],
+  "stack": [
+    [
+      67,
+      33,
+      0
+    ],
+    [
+      67,
+      33,
+      0
+    ],
+    [
+      82,
+      18,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      82,
+      18,
+      0
+    ],
+    [
+      67,
+      33,
+      0
+    ],
+    [
+      67,
+      33,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 13,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 67,
+        "n": 0,
+        "g": 33
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "OFuxico",
+          "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts"
+        }
+      ]
+    },
+    {
+      "t": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Folha de S.Paulo",
+          "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
+        }
+      ]
+    },
+    {
+      "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas"
+        }
+      ]
+    },
+    {
+      "t": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "ISTOÉ Independente",
+          "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Olhar Digital",
+          "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "OFuxico",
+      "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/",
+      "title": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "cat": "pos",
+      "time": "3 set, 21:51",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts",
+      "title": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
+      "cat": "nos",
+      "time": "3 set, 14:43",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Folha de S.Paulo",
+      "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
+      "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+      "cat": "pos",
+      "time": "3 set, 10:38",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
+      "title": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
+      "cat": "pos",
+      "time": "2 set, 17:54",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "ISTOÉ Independente",
+      "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme",
+      "title": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
+      "cat": "neu",
+      "time": "2 set, 17:50",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Olhar Digital",
+      "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/",
+      "title": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
+      "cat": "pos",
+      "time": "2 set, 17:35",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/novo-trailer-da-serie-de-harry-potter-tem-chapeu-seletor-e-cenas-em-hogwarts-assista/",
+      "title": "Novo trailer da série de Harry Potter tem Chapéu Seletor e cenas em Hogwarts; assista",
+      "cat": "pos",
+      "time": "2 set, 17:10",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Veja",
+      "u": "https://veja.abril.com.br/cultura/hbo-max-revela-novo-trailer-da-serie-harry-potter-e-a-pedra-filosofal/",
+      "title": "HBO Max revela novo trailer da série ‘Harry Potter e a Pedra Filosofal’",
+      "cat": "nos",
+      "time": "2 set, 16:30",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "12"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 13,
+    "unit": "matérias",
+    "net": 68,
+    "buzz": 100,
+    "news_count": 13,
+    "social_mentions": 0
+  }
+}
