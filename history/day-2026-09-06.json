@@ -1,16 +1,16 @@
 {
   "label": "6 set 2026",
-  "updated": "6 set 2026, 15:52",
+  "updated": "6 set 2026, 18:04",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -2,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+80",
       "suf": "/100",
-      "d": 4,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -33,20 +33,15 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     15,
     11,
     10,
     11,
     12,
+    10,
     10
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       67,
       33,
@@ -70,6 +65,11 @@
     [
       75,
       25,
+      0
+    ],
+    [
+      80,
+      20,
       0
     ],
     [
