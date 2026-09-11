@@ -1,16 +1,16 @@
 {
   "label": "11 set 2026",
-  "updated": "11 set 2026, 05:37",
+  "updated": "11 set 2026, 10:16",
   "kpi": {
     "mentions": {
-      "v": "10 matérias",
-      "d": -1,
+      "v": "11 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+80",
+      "v": "+82",
       "suf": "/100",
-      "d": 8,
+      "d": 2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,27 +27,22 @@
     }
   },
   "senti": {
-    "pos": 80,
-    "neu": 20,
+    "pos": 82,
+    "neu": 18,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     11,
     15,
     15,
     10,
     11,
-    10
+    10,
+    11
   ],
   "stack": [
     [
-      80,
-      20,
-      0
-    ],
-    [
       73,
       27,
       0
@@ -75,23 +70,44 @@
     [
       80,
       20,
+      0
+    ],
+    [
+      82,
+      18,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 10,
+      "vol": 11,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 80,
+        "p": 82,
         "n": 0,
-        "g": 20
+        "g": 18
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/"
+        }
+      ]
+    },
     {
       "t": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
         }
       ]
-    },
-    {
-      "t": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/",
+      "title": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
+      "cat": "pos",
+      "time": "10 set, 22:01",
+      "scope": "Portal BR"
+    },
     {
       "o": "Veja",
       "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/",
@@ -245,14 +253,6 @@
       "cat": "neu",
       "time": "2 set, 17:50",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Olhar Digital",
-      "u": "https://olhardigital.com.br/2026/09/02/cinema-e-streaming/serie-de-harry-potter-ganha-novo-trailer-e-fotos-ineditas-veja/",
-      "title": "Série de Harry Potter ganha novo trailer e fotos inéditas; veja",
-      "cat": "pos",
-      "time": "2 set, 17:35",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "10"
+        "11"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 10,
+    "base_count": 11,
     "unit": "matérias",
-    "net": 80,
+    "net": 82,
     "buzz": 100,
-    "news_count": 10,
+    "news_count": 11,
     "social_mentions": 0
   }
 }
