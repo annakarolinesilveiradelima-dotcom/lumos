@@ -1,16 +1,16 @@
 {
   "label": "11 set 2026",
-  "updated": "11 set 2026, 20:00",
+  "updated": "11 set 2026, 22:02",
   "kpi": {
     "mentions": {
-      "v": "15 matérias",
-      "d": 0,
+      "v": "11 matérias",
+      "d": -4,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+68",
+      "v": "+82",
       "suf": "/100",
-      "d": 0,
+      "d": 14,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 67,
-    "neu": 33,
+    "pos": 82,
+    "neu": 18,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     11,
     10,
     11,
     10,
     15,
-    15
+    15,
+    11
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       73,
       27,
@@ -76,22 +71,43 @@
       67,
       33,
       0
+    ],
+    [
+      82,
+      18,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 15,
+      "vol": 11,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 67,
+        "p": 82,
         "n": 0,
-        "g": 33
+        "g": 18
       }
     }
   ],
   "narratives": [
+    {
+      "t": "\"Harry Potter\": o que os Potterheads acham da nova série?",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/"
+        }
+      ]
+    },
     {
       "t": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts"
         }
       ]
-    },
-    {
-      "t": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Folha de S.Paulo",
-          "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/",
+      "title": "\"Harry Potter\": o que os Potterheads acham da nova série?",
+      "cat": "pos",
+      "time": "11 set, 12:15",
+      "scope": "Portal BR"
+    },
     {
       "o": "Canaltech",
       "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "2 set, 17:54",
       "scope": "Portal BR"
-    },
-    {
-      "o": "ISTOÉ Independente",
-      "u": "https://istoe.com.br/evento-harry-potter-veneza-25-anos-filme",
-      "title": "Evento de Harry Potter em Veneza celebra 25 anos do primeiro filme",
-      "cat": "neu",
-      "time": "2 set, 17:50",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "12"
+        "11"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 15,
+    "base_count": 11,
     "unit": "matérias",
-    "net": 68,
+    "net": 82,
     "buzz": 100,
-    "news_count": 15,
+    "news_count": 11,
     "social_mentions": 0
   }
 }
