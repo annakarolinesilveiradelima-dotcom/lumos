@@ -1,5 +1,5 @@
 {
-  "generated_at": "12 set 2026, 20:46",
+  "generated_at": "13 set 2026, 00:26",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "12 set 2026",
-          "updated": "12 set 2026, 20:46",
+          "label": "13 set 2026",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
-              "v": "11 matérias",
-              "d": 1,
+              "v": "10 matérias",
+              "d": -1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+82",
+              "v": "+70",
               "suf": "/100",
-              "d": 2,
+              "d": -12,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,26 +38,21 @@
             }
           },
           "senti": {
-            "pos": 82,
-            "neu": 18,
+            "pos": 70,
+            "neu": 30,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            11,
             10,
             10,
             15,
             10,
             10,
-            11
+            11,
+            10
           ],
           "stack": [
-            [
-              82,
-              18,
-              0
-            ],
             [
               80,
               20,
@@ -87,22 +82,43 @@
               82,
               18,
               0
+            ],
+            [
+              70,
+              30,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 11,
+              "vol": 10,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 82,
+                "p": 70,
                 "n": 0,
-                "g": 18
+                "g": 30
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
+                }
+              ]
+            },
             {
               "t": "\"Harry Potter\": o que os Potterheads acham da nova série?",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/"
                 }
               ]
-            },
-            {
-              "t": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Tempo",
-                  "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
+              "title": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+              "cat": "neu",
+              "time": "12 set, 14:47",
+              "scope": "Portal BR"
+            },
             {
               "o": "CNN Brasil",
               "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/",
@@ -256,14 +264,6 @@
               "cat": "pos",
               "time": "3 set, 10:38",
               "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/2/nova-serie-da-hbo-harry-potter-e-a-pedra-filosofal-ganha-trailer-com-cenas-ineditas",
-              "title": "Nova série de Harry Potter na HBO ganha trailer e cenas inéditas",
-              "cat": "pos",
-              "time": "2 set, 17:54",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "11"
+                "10"
               ],
               [
                 "Social",
@@ -320,16 +320,16 @@
       },
       "weeks": {
         "w0": {
-          "label": "9–12 set 2026",
-          "updated": "12 set 2026, 20:46",
+          "label": "9–13 set 2026",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+67",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -341,74 +341,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "86",
+              "v": "78",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 67,
                 "n": 0,
-                "g": 0
+                "g": 33
               }
             }
           ],
@@ -444,6 +444,22 @@
                   "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/"
                 }
               ]
+            },
+            {
+              "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -462,6 +478,14 @@
               "cat": "pos",
               "time": "10 set, 22:01",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
+              "title": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+              "cat": "neu",
+              "time": "12 set, 14:47",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -475,11 +499,11 @@
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 9–12 set 2026.",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 9–13 set 2026.",
             "facts": [
               [
                 "Janela",
-                "9–12 set 2026"
+                "9–13 set 2026"
               ],
               [
                 "Marco",
@@ -487,7 +511,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -511,7 +535,7 @@
         },
         "w-1": {
           "label": "2–8 set 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -819,7 +843,7 @@
         },
         "w-2": {
           "label": "26 ago–1 set 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1081,7 +1105,7 @@
         },
         "w-3": {
           "label": "19–25 ago 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1295,7 +1319,7 @@
         },
         "w-4": {
           "label": "12–18 ago 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1509,7 +1533,7 @@
         },
         "w-5": {
           "label": "5–11 ago 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1699,7 +1723,7 @@
         },
         "w-6": {
           "label": "29 jul–4 ago 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1834,7 +1858,7 @@
         },
         "w-7": {
           "label": "22–28 jul 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2054,7 +2078,7 @@
         },
         "w-8": {
           "label": "15–21 jul 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2244,7 +2268,7 @@
         },
         "w-9": {
           "label": "8–14 jul 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2410,7 +2434,7 @@
         },
         "w-10": {
           "label": "1–7 jul 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2576,7 +2600,7 @@
         },
         "w-11": {
           "label": "24–30 jun 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2711,7 +2735,7 @@
         },
         "w-12": {
           "label": "17–23 jun 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2846,7 +2870,7 @@
         },
         "w-13": {
           "label": "10–16 jun 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3042,7 +3066,7 @@
         },
         "w-14": {
           "label": "3–9 jun 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3177,7 +3201,7 @@
         },
         "w-15": {
           "label": "27 mai–2 jun 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3312,7 +3336,7 @@
         },
         "w-16": {
           "label": "20–26 mai 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3447,7 +3471,7 @@
         },
         "w-17": {
           "label": "13–19 mai 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3582,7 +3606,7 @@
         },
         "w-18": {
           "label": "6–12 mai 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3717,7 +3741,7 @@
         },
         "w-19": {
           "label": "29 abr–5 mai 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3852,7 +3876,7 @@
         },
         "w-20": {
           "label": "22–28 abr 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3987,7 +4011,7 @@
         },
         "w-21": {
           "label": "15–21 abr 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4122,7 +4146,7 @@
         },
         "w-22": {
           "label": "8–14 abr 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4257,7 +4281,7 @@
         },
         "w-23": {
           "label": "1–7 abr 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4392,7 +4416,7 @@
         },
         "w-24": {
           "label": "25–31 mar 2026",
-          "updated": "12 set 2026, 20:46",
+          "updated": "13 set 2026, 00:26",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
