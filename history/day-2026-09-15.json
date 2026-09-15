@@ -1,16 +1,16 @@
 {
   "label": "15 set 2026",
-  "updated": "15 set 2026, 02:53",
+  "updated": "15 set 2026, 08:12",
   "kpi": {
     "mentions": {
-      "v": "15 matérias",
-      "d": 0,
+      "v": "16 matérias",
+      "d": 1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+58",
+      "v": "+68",
       "suf": "/100",
-      "d": 0,
+      "d": 10,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 58,
-    "neu": 42,
+    "pos": 67,
+    "neu": 33,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     11,
     10,
     10,
     15,
     15,
-    15
+    15,
+    16
   ],
   "stack": [
-    [
-      70,
-      30,
-      0
-    ],
     [
       73,
       27,
@@ -76,22 +71,43 @@
       58,
       42,
       0
+    ],
+    [
+      67,
+      33,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 15,
+      "vol": 16,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 58,
+        "p": 67,
         "n": 0,
-        "g": 42
+        "g": 33
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/"
+        }
+      ]
+    },
     {
       "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada"
         }
       ]
-    },
-    {
-      "t": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "OFuxico",
-          "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/",
+      "title": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
+      "cat": "nos",
+      "time": "14 set, 18:38",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
@@ -245,14 +253,6 @@
       "cat": "nos",
       "time": "3 set, 14:43",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Folha de S.Paulo",
-      "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
-      "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
-      "cat": "pos",
-      "time": "3 set, 10:38",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 15,
+    "base_count": 16,
     "unit": "matérias",
-    "net": 58,
+    "net": 68,
     "buzz": 100,
-    "news_count": 15,
+    "news_count": 16,
     "social_mentions": 0
   }
 }
