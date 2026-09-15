@@ -1,0 +1,316 @@
+{
+  "label": "15 set 2026",
+  "updated": "15 set 2026, 02:53",
+  "kpi": {
+    "mentions": {
+      "v": "15 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+58",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 58,
+    "neu": 42,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    10,
+    11,
+    10,
+    10,
+    15,
+    15,
+    15
+  ],
+  "stack": [
+    [
+      70,
+      30,
+      0
+    ],
+    [
+      73,
+      27,
+      0
+    ],
+    [
+      70,
+      30,
+      0
+    ],
+    [
+      70,
+      30,
+      0
+    ],
+    [
+      58,
+      42,
+      0
+    ],
+    [
+      58,
+      42,
+      0
+    ],
+    [
+      58,
+      42,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 15,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 58,
+        "n": 0,
+        "g": 42
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": o que os Potterheads acham da nova série?",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/"
+        }
+      ]
+    },
+    {
+      "t": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Veja",
+          "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter tem bastidores caóticos na segunda temporada",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "OFuxico",
+          "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
+      "title": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+      "cat": "neu",
+      "time": "12 set, 14:47",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/",
+      "title": "\"Harry Potter\": o que os Potterheads acham da nova série?",
+      "cat": "pos",
+      "time": "11 set, 12:15",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/",
+      "title": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
+      "cat": "pos",
+      "time": "10 set, 22:01",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Veja",
+      "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/",
+      "title": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
+      "cat": "pos",
+      "time": "4 set, 17:03",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada",
+      "title": "Harry Potter tem bastidores caóticos na segunda temporada",
+      "cat": "neu",
+      "time": "4 set, 16:04",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "OFuxico",
+      "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/",
+      "title": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
+      "cat": "pos",
+      "time": "3 set, 21:51",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts",
+      "title": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
+      "cat": "nos",
+      "time": "3 set, 14:43",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Folha de S.Paulo",
+      "u": "https://www1.folha.uol.com.br/folhateen/2026/09/trailer-da-serie-harry-potter-divide-publico-entre-nostalgia-e-vergonha-alheia.shtml",
+      "title": "Trailer de 'Harry Potter' divide entre nostagia e vergonha",
+      "cat": "pos",
+      "time": "3 set, 10:38",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "12"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 15,
+    "unit": "matérias",
+    "net": 58,
+    "buzz": 100,
+    "news_count": 15,
+    "social_mentions": 0
+  }
+}
