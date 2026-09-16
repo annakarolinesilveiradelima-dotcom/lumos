@@ -1,16 +1,16 @@
 {
   "label": "16 set 2026",
-  "updated": "16 set 2026, 00:35",
+  "updated": "16 set 2026, 06:06",
   "kpi": {
     "mentions": {
-      "v": "16 matérias",
-      "d": 0,
+      "v": "10 matérias",
+      "d": -6,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+68",
+      "v": "+70",
       "suf": "/100",
-      "d": 0,
+      "d": 2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 67,
-    "neu": 33,
+    "pos": 70,
+    "neu": 30,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     15,
-    15,
     16,
     16,
     10,
     16,
-    16
+    16,
+    10
   ],
   "stack": [
-    [
-      58,
-      42,
-      0
-    ],
     [
       58,
       42,
@@ -76,22 +71,43 @@
       67,
       33,
       0
+    ],
+    [
+      70,
+      30,
+      0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 16,
+      "vol": 10,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 67,
+        "p": 70,
         "n": 0,
-        "g": 33
+        "g": 30
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas"
+        }
+      ]
+    },
     {
       "t": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/"
         }
       ]
-    },
-    {
-      "t": "Harry Potter tem bastidores caóticos na segunda temporada",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O Tempo",
-          "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas",
+      "title": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
+      "cat": "esp",
+      "time": "15 set, 18:16",
+      "scope": "Portal BR"
+    },
     {
       "o": "CNN Brasil",
       "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "3 set, 21:51",
       "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/9/3/harry-potter-serie-corrige-grande-erro-dos-filmes-com-novos-brasoes-de-hogwarts",
-      "title": "Harry Potter: Série corrige grande erro dos filmes com novos brasões de Hogwarts",
-      "cat": "nos",
-      "time": "3 set, 14:43",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "12"
+        "10"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 16,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 68,
+    "net": 70,
     "buzz": 100,
-    "news_count": 16,
+    "news_count": 10,
     "social_mentions": 0
   }
 }
