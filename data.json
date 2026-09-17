@@ -1,5 +1,5 @@
 {
-  "generated_at": "16 set 2026, 21:08",
+  "generated_at": "17 set 2026, 02:47",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "16 set 2026",
-          "updated": "16 set 2026, 21:08",
+          "label": "17 set 2026",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
-              "v": "10 matérias",
-              "d": 0,
+              "v": "11 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+70",
+              "v": "+72",
               "suf": "/100",
-              "d": 0,
+              "d": 2,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,19 +38,19 @@
             }
           },
           "senti": {
-            "pos": 70,
-            "neu": 30,
+            "pos": 73,
+            "neu": 27,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             16,
-            16,
             10,
             17,
             10,
             10,
-            10
+            10,
+            11
           ],
           "stack": [
             [
@@ -59,11 +59,6 @@
               0
             ],
             [
-              67,
-              33,
-              0
-            ],
-            [
               70,
               30,
               0
@@ -86,23 +81,44 @@
             [
               70,
               30,
+              0
+            ],
+            [
+              73,
+              27,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 10,
+              "vol": 11,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 70,
+                "p": 73,
                 "n": 0,
-                "g": 30
+                "g": 27
               }
             }
           ],
           "narratives": [
+            {
+              "t": "HBO revela elenco da segunda temporada",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/"
                 }
               ]
-            },
-            {
-              "t": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Veja",
-                  "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey",
+              "title": "HBO revela elenco da segunda temporada",
+              "cat": "pos",
+              "time": "16 set, 16:42",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "4 set, 16:04",
               "scope": "Portal BR"
-            },
-            {
-              "o": "OFuxico",
-              "u": "https://ofuxico.com.br/cinema-e-serie/serie-de-harry-potter-ganha-novo-teaser-confira-as-novidades/",
-              "title": "Série de Harry Potter ganha novo teaser. Confira as novidades!",
-              "cat": "pos",
-              "time": "3 set, 21:51",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "10"
+                "11"
               ],
               [
                 "Social",
@@ -320,19 +320,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "16–16 set 2026",
-          "updated": "16 set 2026, 21:08",
+          "label": "16–17 set 2026",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+100",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -341,61 +341,61 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "78",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 0,
-            "neu": 100,
+            "pos": 100,
+            "neu": 0,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ],
             [
-              0,
               100,
+              0,
               0
             ]
           ],
@@ -403,60 +403,91 @@
             {
               "name": "Imprensa",
               "vol": 1,
-              "senti": "neu",
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 0,
+                "p": 100,
                 "n": 0,
-                "g": 100
+                "g": 0
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "HBO revela elenco da segunda temporada",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey",
+              "title": "HBO revela elenco da segunda temporada",
+              "cat": "pos",
+              "time": "16 set, 16:42",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
-              "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 16–16 set 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 16–17 set 2026.",
             "facts": [
               [
                 "Janela",
-                "16–16 set 2026"
+                "16–17 set 2026"
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 16–16 set 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "9–15 set 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -724,7 +755,7 @@
         },
         "w-2": {
           "label": "2–8 set 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1032,7 +1063,7 @@
         },
         "w-3": {
           "label": "26 ago–1 set 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1294,7 +1325,7 @@
         },
         "w-4": {
           "label": "19–25 ago 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1508,7 +1539,7 @@
         },
         "w-5": {
           "label": "12–18 ago 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1722,7 +1753,7 @@
         },
         "w-6": {
           "label": "5–11 ago 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1912,7 +1943,7 @@
         },
         "w-7": {
           "label": "29 jul–4 ago 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2047,7 +2078,7 @@
         },
         "w-8": {
           "label": "22–28 jul 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2267,7 +2298,7 @@
         },
         "w-9": {
           "label": "15–21 jul 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2457,7 +2488,7 @@
         },
         "w-10": {
           "label": "8–14 jul 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2623,7 +2654,7 @@
         },
         "w-11": {
           "label": "1–7 jul 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2789,7 +2820,7 @@
         },
         "w-12": {
           "label": "24–30 jun 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2924,7 +2955,7 @@
         },
         "w-13": {
           "label": "17–23 jun 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3059,7 +3090,7 @@
         },
         "w-14": {
           "label": "10–16 jun 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3255,7 +3286,7 @@
         },
         "w-15": {
           "label": "3–9 jun 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3390,7 +3421,7 @@
         },
         "w-16": {
           "label": "27 mai–2 jun 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3525,7 +3556,7 @@
         },
         "w-17": {
           "label": "20–26 mai 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3660,7 +3691,7 @@
         },
         "w-18": {
           "label": "13–19 mai 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3795,7 +3826,7 @@
         },
         "w-19": {
           "label": "6–12 mai 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3930,7 +3961,7 @@
         },
         "w-20": {
           "label": "29 abr–5 mai 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4065,7 +4096,7 @@
         },
         "w-21": {
           "label": "22–28 abr 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4200,7 +4231,7 @@
         },
         "w-22": {
           "label": "15–21 abr 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4335,7 +4366,7 @@
         },
         "w-23": {
           "label": "8–14 abr 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4470,7 +4501,7 @@
         },
         "w-24": {
           "label": "1–7 abr 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4605,7 +4636,7 @@
         },
         "w-25": {
           "label": "25–31 mar 2026",
-          "updated": "16 set 2026, 21:08",
+          "updated": "17 set 2026, 02:47",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
