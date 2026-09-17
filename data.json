@@ -1,5 +1,5 @@
 {
-  "generated_at": "17 set 2026, 02:47",
+  "generated_at": "17 set 2026, 08:04",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "17 set 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
-              "v": "11 matérias",
-              "d": 1,
+              "v": "10 matérias",
+              "d": -1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+72",
+              "v": "+60",
               "suf": "/100",
-              "d": 2,
+              "d": -12,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,26 +38,21 @@
             }
           },
           "senti": {
-            "pos": 73,
-            "neu": 27,
+            "pos": 60,
+            "neu": 40,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            16,
             10,
             17,
             10,
             10,
             10,
-            11
+            11,
+            10
           ],
           "stack": [
-            [
-              67,
-              33,
-              0
-            ],
             [
               70,
               30,
@@ -87,22 +82,43 @@
               73,
               27,
               0
+            ],
+            [
+              60,
+              40,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 11,
+              "vol": 10,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 73,
+                "p": 60,
                 "n": 0,
-                "g": 27
+                "g": 40
               }
             }
           ],
           "narratives": [
+            {
+              "t": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/"
+                }
+              ]
+            },
             {
               "t": "HBO revela elenco da segunda temporada",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/"
                 }
               ]
-            },
-            {
-              "t": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Canaltech",
-                  "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/",
+              "title": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+              "cat": "neu",
+              "time": "16 set, 20:00",
+              "scope": "Portal BR"
+            },
             {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey",
@@ -256,14 +264,6 @@
               "cat": "pos",
               "time": "4 set, 17:03",
               "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/entretenimento/2026/9/4/harry-potter-tem-bastidores-caoticos-na-segunda-temporada",
-              "title": "Harry Potter tem bastidores caóticos na segunda temporada",
-              "cat": "neu",
-              "time": "4 set, 16:04",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "11"
+                "10"
               ],
               [
                 "Social",
@@ -321,15 +321,15 @@
       "weeks": {
         "w0": {
           "label": "16–17 set 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "2 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -341,78 +341,94 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "78",
+              "v": "61",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
-              "senti": "pos",
+              "vol": 2,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 50,
                 "n": 0,
-                "g": 0
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/"
+                }
+              ]
+            },
             {
               "t": "HBO revela elenco da segunda temporada",
               "vol": 1,
@@ -431,6 +447,14 @@
             }
           ],
           "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/",
+              "title": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+              "cat": "neu",
+              "time": "16 set, 20:00",
+              "scope": "Portal BR"
+            },
             {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey",
@@ -463,7 +487,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "2"
               ],
               [
                 "Dados fictícios",
@@ -487,7 +511,7 @@
         },
         "w-1": {
           "label": "9–15 set 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -755,7 +779,7 @@
         },
         "w-2": {
           "label": "2–8 set 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1063,7 +1087,7 @@
         },
         "w-3": {
           "label": "26 ago–1 set 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1325,7 +1349,7 @@
         },
         "w-4": {
           "label": "19–25 ago 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1539,7 +1563,7 @@
         },
         "w-5": {
           "label": "12–18 ago 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1753,7 +1777,7 @@
         },
         "w-6": {
           "label": "5–11 ago 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1943,7 +1967,7 @@
         },
         "w-7": {
           "label": "29 jul–4 ago 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2078,7 +2102,7 @@
         },
         "w-8": {
           "label": "22–28 jul 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2298,7 +2322,7 @@
         },
         "w-9": {
           "label": "15–21 jul 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2488,7 +2512,7 @@
         },
         "w-10": {
           "label": "8–14 jul 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2654,7 +2678,7 @@
         },
         "w-11": {
           "label": "1–7 jul 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2820,7 +2844,7 @@
         },
         "w-12": {
           "label": "24–30 jun 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2955,7 +2979,7 @@
         },
         "w-13": {
           "label": "17–23 jun 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3090,7 +3114,7 @@
         },
         "w-14": {
           "label": "10–16 jun 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3286,7 +3310,7 @@
         },
         "w-15": {
           "label": "3–9 jun 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3421,7 +3445,7 @@
         },
         "w-16": {
           "label": "27 mai–2 jun 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3556,7 +3580,7 @@
         },
         "w-17": {
           "label": "20–26 mai 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3691,7 +3715,7 @@
         },
         "w-18": {
           "label": "13–19 mai 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3826,7 +3850,7 @@
         },
         "w-19": {
           "label": "6–12 mai 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3961,7 +3985,7 @@
         },
         "w-20": {
           "label": "29 abr–5 mai 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4096,7 +4120,7 @@
         },
         "w-21": {
           "label": "22–28 abr 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4231,7 +4255,7 @@
         },
         "w-22": {
           "label": "15–21 abr 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4366,7 +4390,7 @@
         },
         "w-23": {
           "label": "8–14 abr 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4501,7 +4525,7 @@
         },
         "w-24": {
           "label": "1–7 abr 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4636,7 +4660,7 @@
         },
         "w-25": {
           "label": "25–31 mar 2026",
-          "updated": "17 set 2026, 02:47",
+          "updated": "17 set 2026, 08:04",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
