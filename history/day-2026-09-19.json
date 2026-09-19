@@ -1,16 +1,16 @@
 {
   "label": "19 set 2026",
-  "updated": "19 set 2026, 05:34",
+  "updated": "19 set 2026, 09:53",
   "kpi": {
     "mentions": {
-      "v": "16 matérias",
-      "d": 0,
+      "v": "10 matérias",
+      "d": -6,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+58",
+      "v": "+50",
       "suf": "/100",
-      "d": 0,
+      "d": -8,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,26 +20,26 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "100",
+      "v": "98",
       "suf": "/100",
-      "d": 0,
+      "d": -2,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 58,
-    "neu": 42,
+    "pos": 50,
+    "neu": 50,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     10,
-    10,
     16,
     10,
     10,
     16,
-    16
+    16,
+    10
   ],
   "stack": [
     [
@@ -48,11 +48,6 @@
       0
     ],
     [
-      60,
-      40,
-      0
-    ],
-    [
       58,
       42,
       0
@@ -75,23 +70,44 @@
     [
       58,
       42,
+      0
+    ],
+    [
+      50,
+      50,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 16,
-      "senti": "pos",
+      "vol": 10,
+      "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 58,
+        "p": 50,
         "n": 0,
-        "g": 42
+        "g": 50
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/"
+        }
+      ]
+    },
     {
       "t": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
         }
       ]
-    },
-    {
-      "t": "\"Harry Potter\": o que os Potterheads acham da nova série?",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "CNN Brasil",
-          "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
+      "title": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+      "cat": "esp",
+      "time": "19 set, 00:04",
+      "scope": "Portal BR"
+    },
     {
       "o": "CNN Brasil",
       "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "10 set, 22:01",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Veja",
-      "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/",
-      "title": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
-      "cat": "pos",
-      "time": "4 set, 17:03",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "12"
+        "10"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 16,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 58,
-    "buzz": 100,
-    "news_count": 16,
+    "net": 50,
+    "buzz": 98,
+    "news_count": 10,
     "social_mentions": 0
   }
 }

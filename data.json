@@ -1,5 +1,5 @@
 {
-  "generated_at": "19 set 2026, 05:34",
+  "generated_at": "19 set 2026, 09:53",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "19 set 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
-              "v": "16 matérias",
-              "d": 0,
+              "v": "10 matérias",
+              "d": -6,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+58",
+              "v": "+50",
               "suf": "/100",
-              "d": 0,
+              "d": -8,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,26 +31,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "100",
+              "v": "98",
               "suf": "/100",
-              "d": 0,
+              "d": -2,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 58,
-            "neu": 42,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             10,
-            10,
             16,
             10,
             10,
             16,
-            16
+            16,
+            10
           ],
           "stack": [
             [
@@ -59,11 +59,6 @@
               0
             ],
             [
-              60,
-              40,
-              0
-            ],
-            [
               58,
               42,
               0
@@ -86,23 +81,44 @@
             [
               58,
               42,
+              0
+            ],
+            [
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 16,
-              "senti": "pos",
+              "vol": 10,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 58,
+                "p": 50,
                 "n": 0,
-                "g": 42
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+              "vol": 1,
+              "senti": "div",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/"
+                }
+              ]
+            },
             {
               "t": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
                 }
               ]
-            },
-            {
-              "t": "\"Harry Potter\": o que os Potterheads acham da nova série?",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "CNN Brasil",
-                  "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
+              "title": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+              "cat": "esp",
+              "time": "19 set, 00:04",
+              "scope": "Portal BR"
+            },
             {
               "o": "CNN Brasil",
               "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/",
@@ -256,14 +264,6 @@
               "cat": "pos",
               "time": "10 set, 22:01",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Veja",
-              "u": "https://veja.abril.com.br/cultura/hbo-revela-novos-atores-para-segunda-temporada-da-serie-harry-potter/",
-              "title": "HBO revela novos atores para segunda temporada da série ‘Harry Potter’",
-              "cat": "pos",
-              "time": "4 set, 17:03",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "12"
+                "10"
               ],
               [
                 "Social",
@@ -321,15 +321,15 @@
       "weeks": {
         "w0": {
           "label": "16–19 set 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+33",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -341,74 +341,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "61",
+              "v": "60",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 33,
+            "neu": 67,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ],
             [
-              50,
-              50,
+              33,
+              67,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 33,
                 "n": 0,
-                "g": 50
+                "g": 67
               }
             }
           ],
@@ -444,6 +444,22 @@
                   "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey"
                 }
               ]
+            },
+            {
+              "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+              "vol": 1,
+              "senti": "div",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "CNN Brasil",
+                  "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -461,6 +477,14 @@
               "title": "HBO revela elenco da segunda temporada",
               "cat": "pos",
               "time": "16 set, 16:42",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "CNN Brasil",
+              "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
+              "title": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+              "cat": "esp",
+              "time": "19 set, 00:04",
               "scope": "Portal BR"
             }
           ],
@@ -487,7 +511,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -511,7 +535,7 @@
         },
         "w-1": {
           "label": "9–15 set 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -779,7 +803,7 @@
         },
         "w-2": {
           "label": "2–8 set 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1087,7 +1111,7 @@
         },
         "w-3": {
           "label": "26 ago–1 set 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1349,7 +1373,7 @@
         },
         "w-4": {
           "label": "19–25 ago 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1563,7 +1587,7 @@
         },
         "w-5": {
           "label": "12–18 ago 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1777,7 +1801,7 @@
         },
         "w-6": {
           "label": "5–11 ago 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1967,7 +1991,7 @@
         },
         "w-7": {
           "label": "29 jul–4 ago 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2102,7 +2126,7 @@
         },
         "w-8": {
           "label": "22–28 jul 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2322,7 +2346,7 @@
         },
         "w-9": {
           "label": "15–21 jul 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2512,7 +2536,7 @@
         },
         "w-10": {
           "label": "8–14 jul 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2678,7 +2702,7 @@
         },
         "w-11": {
           "label": "1–7 jul 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -2844,7 +2868,7 @@
         },
         "w-12": {
           "label": "24–30 jun 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2979,7 +3003,7 @@
         },
         "w-13": {
           "label": "17–23 jun 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3114,7 +3138,7 @@
         },
         "w-14": {
           "label": "10–16 jun 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3310,7 +3334,7 @@
         },
         "w-15": {
           "label": "3–9 jun 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3445,7 +3469,7 @@
         },
         "w-16": {
           "label": "27 mai–2 jun 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3580,7 +3604,7 @@
         },
         "w-17": {
           "label": "20–26 mai 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3715,7 +3739,7 @@
         },
         "w-18": {
           "label": "13–19 mai 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3850,7 +3874,7 @@
         },
         "w-19": {
           "label": "6–12 mai 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3985,7 +4009,7 @@
         },
         "w-20": {
           "label": "29 abr–5 mai 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4120,7 +4144,7 @@
         },
         "w-21": {
           "label": "22–28 abr 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4255,7 +4279,7 @@
         },
         "w-22": {
           "label": "15–21 abr 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4390,7 +4414,7 @@
         },
         "w-23": {
           "label": "8–14 abr 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4525,7 +4549,7 @@
         },
         "w-24": {
           "label": "1–7 abr 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4660,7 +4684,7 @@
         },
         "w-25": {
           "label": "25–31 mar 2026",
-          "updated": "19 set 2026, 05:34",
+          "updated": "19 set 2026, 09:53",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
