@@ -1,16 +1,16 @@
 {
   "label": "20 set 2026",
-  "updated": "20 set 2026, 17:42",
+  "updated": "20 set 2026, 20:00",
   "kpi": {
     "mentions": {
       "v": "16 matérias",
-      "d": 5,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+50",
       "suf": "/100",
-      "d": -6,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "98",
       "suf": "/100",
-      "d": -1,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -33,21 +33,16 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
+    11,
+    10,
+    10,
+    10,
+    11,
     16,
-    11,
-    10,
-    10,
-    10,
-    11,
     16
   ],
   "stack": [
     [
-      50,
-      50,
-      0
-    ],
-    [
       55,
       45,
       0
@@ -70,6 +65,11 @@
     [
       55,
       45,
+      0
+    ],
+    [
+      50,
+      50,
       0
     ],
     [
