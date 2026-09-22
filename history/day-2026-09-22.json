@@ -1,0 +1,316 @@
+{
+  "label": "22 set 2026",
+  "updated": "22 set 2026, 00:33",
+  "kpi": {
+    "mentions": {
+      "v": "10 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+50",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "98",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 50,
+    "neu": 50,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    16,
+    10,
+    10,
+    10,
+    11,
+    10,
+    10
+  ],
+  "stack": [
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      55,
+      45,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ],
+    [
+      50,
+      50,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 10,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 50,
+        "n": 0,
+        "g": 50
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/"
+        }
+      ]
+    },
+    {
+      "t": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/"
+        }
+      ]
+    },
+    {
+      "t": "HBO revela elenco da segunda temporada",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
+      "vol": 1,
+      "senti": "div",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas"
+        }
+      ]
+    },
+    {
+      "t": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "CNN Brasil",
+          "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
+      "title": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
+      "cat": "esp",
+      "time": "19 set, 00:04",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/style/moda/harry-potter-marca-lanca-colecao-de-pulseiras-inspirada-na-franquia/",
+      "title": "\"Harry Potter\": marca lança coleção de pulseiras inspirada na franquia",
+      "cat": "neu",
+      "time": "16 set, 20:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey",
+      "title": "HBO revela elenco da segunda temporada",
+      "cat": "pos",
+      "time": "16 set, 16:42",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas",
+      "title": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
+      "cat": "esp",
+      "time": "15 set, 18:16",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/",
+      "title": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
+      "cat": "nos",
+      "time": "14 set, 18:38",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
+      "title": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
+      "cat": "neu",
+      "time": "12 set, 14:47",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "CNN Brasil",
+      "u": "https://www.cnnbrasil.com.br/pop/streaming/harry-potter-o-que-os-potterheads-acham-da-nova-serie/",
+      "title": "\"Harry Potter\": o que os Potterheads acham da nova série?",
+      "cat": "pos",
+      "time": "11 set, 12:15",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/",
+      "title": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
+      "cat": "pos",
+      "time": "10 set, 22:01",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "10"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 10,
+    "unit": "matérias",
+    "net": 50,
+    "buzz": 98,
+    "news_count": 10,
+    "social_mentions": 0
+  }
+}
