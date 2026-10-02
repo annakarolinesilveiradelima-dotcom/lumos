@@ -1,10 +1,10 @@
 {
   "label": "2 out 2026",
-  "updated": "2 out 2026, 10:37",
+  "updated": "2 out 2026, 16:00",
   "kpi": {
     "mentions": {
-      "v": "10 matérias",
-      "d": 0,
+      "v": "17 matérias",
+      "d": 7,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
@@ -33,13 +33,13 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     15,
     11,
     11,
     15,
     10,
-    10
+    10,
+    17
   ],
   "stack": [
     [
@@ -48,11 +48,6 @@
       0
     ],
     [
-      50,
-      50,
-      0
-    ],
-    [
       55,
       45,
       0
@@ -60,6 +55,11 @@
     [
       55,
       45,
+      0
+    ],
+    [
+      50,
+      50,
       0
     ],
     [
@@ -81,7 +81,7 @@
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 10,
+      "vol": 17,
       "senti": "neu",
       "ang": -90,
       "s": {
@@ -92,6 +92,22 @@
     }
   ],
   "narratives": [
+    {
+      "t": "Fusão entre Paramount e Warner Bros. vai se chamar Skydance",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Correio Do Povo",
+          "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705"
+        }
+      ]
+    },
     {
       "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/"
         }
       ]
-    },
-    {
-      "t": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Correio Do Povo",
+      "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705",
+      "title": "Fusão entre Paramount e Warner Bros. vai se chamar Skydance",
+      "cat": "neu",
+      "time": "2 out, 00:00",
+      "scope": "Portal BR"
+    },
     {
       "o": "CNN Brasil",
       "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "11 set, 12:15",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Canaltech",
-      "u": "https://canaltech.com.br/entretenimento/serie-de-harry-potter-na-hbo-mergulha-em-crise-e-atrasa-estreia-da-2-temporada/",
-      "title": "Série de Harry Potter na HBO mergulha em crise e atrasa estreia da 2ª temporada",
-      "cat": "pos",
-      "time": "10 set, 22:01",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "10"
+        "12"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 10,
+    "base_count": 17,
     "unit": "matérias",
     "net": 50,
     "buzz": 98,
-    "news_count": 10,
+    "news_count": 17,
     "social_mentions": 0
   }
 }
