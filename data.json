@@ -1,5 +1,5 @@
 {
-  "generated_at": "8 out 2026, 23:53",
+  "generated_at": "9 out 2026, 07:07",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "8 out 2026",
-          "updated": "8 out 2026, 23:53",
+          "label": "9 out 2026",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
-              "v": "10 matérias",
-              "d": 0,
+              "v": "11 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+40",
+              "v": "+36",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "95",
+              "v": "94",
               "suf": "/100",
-              "d": 0,
+              "d": -1,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 40,
-            "neu": 60,
+            "pos": 36,
+            "neu": 64,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             10,
             10,
             10,
-            10
+            11
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              40,
-              60,
+              36,
+              64,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 10,
+              "vol": 11,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 40,
+                "p": 36,
                 "n": 0,
-                "g": 60
+                "g": 64
               }
             }
           ],
           "narratives": [
+            {
+              "t": "5 motivos para assistir à nova série no Natal",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Perfil de Dominic McLaughlin no Instagram é desativado",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/9/16/harry-potter-hbo-anuncia-atores-de-arthur-weasley-murta-que-geme-e-colin-creevey"
                 }
               ]
-            },
-            {
-              "t": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
-              "vol": 1,
-              "senti": "div",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Omelete",
-                  "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal",
+              "title": "5 motivos para assistir à nova série no Natal",
+              "cat": "neu",
+              "time": "8 out, 18:08",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-perfil-dominic-mclaughlin-instagram",
@@ -256,14 +264,6 @@
               "cat": "nos",
               "time": "14 set, 18:38",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-gary-oldman-diz-serie-hbo-sera-mais-satisfatoria-fas",
-              "title": "Harry Potter | Gary Oldman diz que série da HBO será mais satisfatória para fãs",
-              "cat": "neu",
-              "time": "12 set, 14:47",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -291,7 +291,7 @@
               ],
               [
                 "Matérias",
-                "10"
+                "11"
               ],
               [
                 "Social",
@@ -320,19 +320,19 @@
       },
       "weeks": {
         "w0": {
-          "label": "7–8 out 2026",
-          "updated": "8 out 2026, 23:53",
+          "label": "7–9 out 2026",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
-              "v": "0 matérias",
+              "v": "1 matéria",
               "d": 0,
-              "sub": "sem cobertura real nesta semana"
+              "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "—",
-              "suf": "",
+              "v": "+0",
+              "suf": "/100",
               "d": 0,
-              "sub": "sem base suficiente"
+              "sub": "índice semanal"
             },
             "sov": {
               "v": "—",
@@ -341,26 +341,26 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "0",
+              "v": "28",
               "suf": "/100",
               "d": 0,
-              "sub": "sem cobertura real"
+              "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
             "pos": 0,
             "neu": 100,
             "neg": 0,
-            "tone": "Sem cobertura real coletada nesta semana"
+            "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
           "stack": [
             [
@@ -412,51 +412,82 @@
               }
             }
           ],
-          "narratives": [],
-          "coverage": [],
+          "narratives": [
+            {
+              "t": "5 motivos para assistir à nova série no Natal",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "O Tempo",
+                  "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal"
+                }
+              ]
+            }
+          ],
+          "coverage": [
+            {
+              "o": "O Tempo",
+              "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal",
+              "title": "5 motivos para assistir à nova série no Natal",
+              "cat": "neu",
+              "time": "8 out, 18:08",
+              "scope": "Portal BR"
+            }
+          ],
           "creators": [],
           "risks": [
             {
-              "t": "Semana sem cobertura real",
+              "t": "Risco baixo na cobertura editorial",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 7–8 out 2026.",
-              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
             }
           ],
           "heroOpp": {
-            "title": "Sem oportunidade validada nesta semana",
-            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "title": "Leitura semanal desde o teaser",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 7–9 out 2026.",
             "facts": [
               [
                 "Janela",
-                "7–8 out 2026"
+                "7–9 out 2026"
               ],
               [
                 "Marco",
-                "teaser 25/03/2026"
+                "25/03/2026"
+              ],
+              [
+                "Matérias",
+                "1"
               ],
               [
                 "Dados fictícios",
                 "não"
-              ],
-              [
-                "Status",
-                "sem cobertura real"
               ]
             ]
           },
           "opps": [
             {
-              "ico": "mail",
-              "t": "Monitorar próxima coleta",
-              "d": "A janela 7–8 out 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "ico": "book",
+              "t": "Explorar fidelidade aos livros",
+              "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+            },
+            {
+              "ico": "film",
+              "t": "Organizar narrativa de comparação",
+              "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "30 set–6 out 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -646,7 +677,7 @@
         },
         "w-2": {
           "label": "23–29 set 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -781,7 +812,7 @@
         },
         "w-3": {
           "label": "16–22 set 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -995,7 +1026,7 @@
         },
         "w-4": {
           "label": "9–15 set 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1263,7 +1294,7 @@
         },
         "w-5": {
           "label": "2–8 set 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1571,7 +1602,7 @@
         },
         "w-6": {
           "label": "26 ago–1 set 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1833,7 +1864,7 @@
         },
         "w-7": {
           "label": "19–25 ago 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2047,7 +2078,7 @@
         },
         "w-8": {
           "label": "12–18 ago 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2261,7 +2292,7 @@
         },
         "w-9": {
           "label": "5–11 ago 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2451,7 +2482,7 @@
         },
         "w-10": {
           "label": "29 jul–4 ago 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2586,7 +2617,7 @@
         },
         "w-11": {
           "label": "22–28 jul 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2806,7 +2837,7 @@
         },
         "w-12": {
           "label": "15–21 jul 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2996,7 +3027,7 @@
         },
         "w-13": {
           "label": "8–14 jul 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3162,7 +3193,7 @@
         },
         "w-14": {
           "label": "1–7 jul 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3328,7 +3359,7 @@
         },
         "w-15": {
           "label": "24–30 jun 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3463,7 +3494,7 @@
         },
         "w-16": {
           "label": "17–23 jun 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3598,7 +3629,7 @@
         },
         "w-17": {
           "label": "10–16 jun 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3794,7 +3825,7 @@
         },
         "w-18": {
           "label": "3–9 jun 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3929,7 +3960,7 @@
         },
         "w-19": {
           "label": "27 mai–2 jun 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4064,7 +4095,7 @@
         },
         "w-20": {
           "label": "20–26 mai 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4199,7 +4230,7 @@
         },
         "w-21": {
           "label": "13–19 mai 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4334,7 +4365,7 @@
         },
         "w-22": {
           "label": "6–12 mai 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4469,7 +4500,7 @@
         },
         "w-23": {
           "label": "29 abr–5 mai 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4604,7 +4635,7 @@
         },
         "w-24": {
           "label": "22–28 abr 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4739,7 +4770,7 @@
         },
         "w-25": {
           "label": "15–21 abr 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4874,7 +4905,7 @@
         },
         "w-26": {
           "label": "8–14 abr 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5009,7 +5040,7 @@
         },
         "w-27": {
           "label": "1–7 abr 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5144,7 +5175,7 @@
         },
         "w-28": {
           "label": "25–31 mar 2026",
-          "updated": "8 out 2026, 23:53",
+          "updated": "9 out 2026, 07:07",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
