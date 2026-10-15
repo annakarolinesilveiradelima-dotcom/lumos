@@ -1,16 +1,16 @@
 {
   "label": "14 out 2026",
-  "updated": "14 out 2026, 19:03",
+  "updated": "14 out 2026, 22:13",
   "kpi": {
     "mentions": {
-      "v": "8 matérias",
-      "d": 0,
+      "v": "7 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+24",
+      "v": "+14",
       "suf": "/100",
-      "d": 0,
+      "d": -10,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,15 +20,15 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "83",
+      "v": "76",
       "suf": "/100",
-      "d": 0,
+      "d": -7,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 25,
-    "neu": 75,
+    "pos": 14,
+    "neu": 86,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
@@ -39,7 +39,7 @@
     8,
     8,
     8,
-    8
+    7
   ],
   "stack": [
     [
@@ -73,21 +73,21 @@
       0
     ],
     [
-      25,
-      75,
+      14,
+      86,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 8,
+      "vol": 7,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 25,
+        "p": 14,
         "n": 0,
-        "g": 75
+        "g": 86
       }
     }
   ],
@@ -245,24 +245,10 @@
       "cat": "esp",
       "time": "15 set, 18:16",
       "scope": "Portal BR"
-    },
-    {
-      "o": "CNN Brasil",
-      "u": "https://www.cnnbrasil.com.br/pop/celebridades/ator-deharry-potter-diz-que-serie-sera-mais-satisfatoria-do-que-filmes/",
-      "title": "Ator de \"Harry Potter\" diz que série será \"mais satisfatória\" do que filmes",
-      "cat": "nos",
-      "time": "14 set, 18:38",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
-    {
-      "t": "Comparação com os filmes originais",
-      "sev": "mid",
-      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-    },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
@@ -280,7 +266,7 @@
       ],
       [
         "Matérias",
-        "8"
+        "7"
       ],
       [
         "Social",
@@ -306,11 +292,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 8,
+    "base_count": 7,
     "unit": "matérias",
-    "net": 24,
-    "buzz": 83,
-    "news_count": 8,
+    "net": 14,
+    "buzz": 76,
+    "news_count": 7,
     "social_mentions": 0
   }
 }
