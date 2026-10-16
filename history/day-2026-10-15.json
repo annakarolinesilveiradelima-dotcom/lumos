@@ -1,16 +1,16 @@
 {
   "label": "15 out 2026",
-  "updated": "15 out 2026, 18:57",
+  "updated": "15 out 2026, 21:10",
   "kpi": {
     "mentions": {
-      "v": "7 matérias",
-      "d": 0,
+      "v": "6 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+14",
+      "v": "+16",
       "suf": "/100",
-      "d": 0,
+      "d": 2,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,26 +20,26 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "76",
+      "v": "73",
       "suf": "/100",
-      "d": 0,
+      "d": -3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 14,
-    "neu": 86,
+    "pos": 17,
+    "neu": 83,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     8,
-    8,
     7,
     7,
     7,
     7,
-    7
+    7,
+    6
   ],
   "stack": [
     [
@@ -48,11 +48,6 @@
       0
     ],
     [
-      25,
-      75,
-      0
-    ],
-    [
       14,
       86,
       0
@@ -75,19 +70,24 @@
     [
       14,
       86,
+      0
+    ],
+    [
+      17,
+      83,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 7,
+      "vol": 6,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 14,
+        "p": 17,
         "n": 0,
-        "g": 86
+        "g": 83
       }
     }
   ],
@@ -237,14 +237,6 @@
       "cat": "pos",
       "time": "16 set, 16:42",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-serie-hbo-10-anos-temporadas",
-      "title": "Harry Potter | Série da HBO pode durar mais de 10 anos: \"Quem sabe?\", diz CEO",
-      "cat": "esp",
-      "time": "15 set, 18:16",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -266,7 +258,7 @@
       ],
       [
         "Matérias",
-        "7"
+        "6"
       ],
       [
         "Social",
@@ -292,11 +284,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 7,
+    "base_count": 6,
     "unit": "matérias",
-    "net": 14,
-    "buzz": 76,
-    "news_count": 7,
+    "net": 16,
+    "buzz": 73,
+    "news_count": 6,
     "social_mentions": 0
   }
 }
