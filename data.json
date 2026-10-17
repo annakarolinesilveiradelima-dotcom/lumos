@@ -1,5 +1,5 @@
 {
-  "generated_at": "17 out 2026, 15:11",
+  "generated_at": "17 out 2026, 18:15",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,7 +11,7 @@
       "days": {
         "d0": {
           "label": "17 out 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "4 matérias",
@@ -45,7 +45,7 @@
           },
           "buzz7": [
             6,
-            6,
+            4,
             4,
             4,
             4,
@@ -59,8 +59,8 @@
               0
             ],
             [
-              17,
-              83,
+              0,
+              100,
               0
             ],
             [
@@ -251,7 +251,7 @@
       "weeks": {
         "w0": {
           "label": "14–17 out 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -386,7 +386,7 @@
         },
         "w-1": {
           "label": "7–13 out 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -552,7 +552,7 @@
         },
         "w-2": {
           "label": "30 set–6 out 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -742,7 +742,7 @@
         },
         "w-3": {
           "label": "23–29 set 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -877,7 +877,7 @@
         },
         "w-4": {
           "label": "16–22 set 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1091,7 +1091,7 @@
         },
         "w-5": {
           "label": "9–15 set 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1359,7 +1359,7 @@
         },
         "w-6": {
           "label": "2–8 set 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1667,7 +1667,7 @@
         },
         "w-7": {
           "label": "26 ago–1 set 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1929,7 +1929,7 @@
         },
         "w-8": {
           "label": "19–25 ago 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2143,7 +2143,7 @@
         },
         "w-9": {
           "label": "12–18 ago 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2357,7 +2357,7 @@
         },
         "w-10": {
           "label": "5–11 ago 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2547,7 +2547,7 @@
         },
         "w-11": {
           "label": "29 jul–4 ago 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2682,7 +2682,7 @@
         },
         "w-12": {
           "label": "22–28 jul 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2902,7 +2902,7 @@
         },
         "w-13": {
           "label": "15–21 jul 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3092,7 +3092,7 @@
         },
         "w-14": {
           "label": "8–14 jul 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3258,7 +3258,7 @@
         },
         "w-15": {
           "label": "1–7 jul 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3424,7 +3424,7 @@
         },
         "w-16": {
           "label": "24–30 jun 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3559,7 +3559,7 @@
         },
         "w-17": {
           "label": "17–23 jun 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3694,7 +3694,7 @@
         },
         "w-18": {
           "label": "10–16 jun 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3890,7 +3890,7 @@
         },
         "w-19": {
           "label": "3–9 jun 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4025,7 +4025,7 @@
         },
         "w-20": {
           "label": "27 mai–2 jun 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4160,7 +4160,7 @@
         },
         "w-21": {
           "label": "20–26 mai 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4295,7 +4295,7 @@
         },
         "w-22": {
           "label": "13–19 mai 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4430,7 +4430,7 @@
         },
         "w-23": {
           "label": "6–12 mai 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4565,7 +4565,7 @@
         },
         "w-24": {
           "label": "29 abr–5 mai 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4700,7 +4700,7 @@
         },
         "w-25": {
           "label": "22–28 abr 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4835,7 +4835,7 @@
         },
         "w-26": {
           "label": "15–21 abr 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4970,7 +4970,7 @@
         },
         "w-27": {
           "label": "8–14 abr 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5105,7 +5105,7 @@
         },
         "w-28": {
           "label": "1–7 abr 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5240,7 +5240,7 @@
         },
         "w-29": {
           "label": "25–31 mar 2026",
-          "updated": "17 out 2026, 15:11",
+          "updated": "17 out 2026, 18:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
