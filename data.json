@@ -1,5 +1,5 @@
 {
-  "generated_at": "19 out 2026, 20:20",
+  "generated_at": "20 out 2026, 00:38",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,12 +10,12 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "19 out 2026",
-          "updated": "19 out 2026, 20:20",
+          "label": "20 out 2026",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
-              "v": "4 matérias",
-              "d": 0,
+              "v": "3 matérias",
+              "d": -1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
@@ -31,9 +31,9 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "61",
+              "v": "57",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice de buzz do dia"
             }
           },
@@ -50,7 +50,7 @@
             4,
             4,
             4,
-            4
+            3
           ],
           "stack": [
             [
@@ -92,7 +92,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 4,
+              "vol": 3,
               "senti": "neu",
               "ang": -90,
               "s": {
@@ -150,22 +150,6 @@
                   "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705"
                 }
               ]
-            },
-            {
-              "t": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
-              "vol": 1,
-              "senti": "div",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "CNN Brasil",
-                  "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -192,14 +176,6 @@
               "cat": "neu",
               "time": "2 out, 00:00",
               "scope": "Portal BR"
-            },
-            {
-              "o": "CNN Brasil",
-              "u": "https://www.cnnbrasil.com.br/pop/streaming/veja-as-novas-varinhas-da-serie-de-harry-potter-da-hbo-max/",
-              "title": "Veja as novas varinhas da série de \"Harry Potter\" da HBO Max",
-              "cat": "esp",
-              "time": "19 set, 00:04",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -221,7 +197,7 @@
               ],
               [
                 "Matérias",
-                "4"
+                "3"
               ],
               [
                 "Social",
@@ -250,8 +226,8 @@
       },
       "weeks": {
         "w0": {
-          "label": "14–19 out 2026",
-          "updated": "19 out 2026, 20:20",
+          "label": "14–20 out 2026",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -349,7 +325,7 @@
             {
               "t": "Semana sem cobertura real",
               "sev": "low",
-              "d": "Não foram encontradas matérias reais para a janela 14–19 out 2026.",
+              "d": "Não foram encontradas matérias reais para a janela 14–20 out 2026.",
               "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
             }
           ],
@@ -359,7 +335,7 @@
             "facts": [
               [
                 "Janela",
-                "14–19 out 2026"
+                "14–20 out 2026"
               ],
               [
                 "Marco",
@@ -379,14 +355,14 @@
             {
               "ico": "mail",
               "t": "Monitorar próxima coleta",
-              "d": "A janela 14–19 out 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+              "d": "A janela 14–20 out 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
             }
           ],
           "ephem": []
         },
         "w-1": {
           "label": "7–13 out 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -552,7 +528,7 @@
         },
         "w-2": {
           "label": "30 set–6 out 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -742,7 +718,7 @@
         },
         "w-3": {
           "label": "23–29 set 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -877,7 +853,7 @@
         },
         "w-4": {
           "label": "16–22 set 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1091,7 +1067,7 @@
         },
         "w-5": {
           "label": "9–15 set 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1359,7 +1335,7 @@
         },
         "w-6": {
           "label": "2–8 set 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1667,7 +1643,7 @@
         },
         "w-7": {
           "label": "26 ago–1 set 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1929,7 +1905,7 @@
         },
         "w-8": {
           "label": "19–25 ago 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2143,7 +2119,7 @@
         },
         "w-9": {
           "label": "12–18 ago 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2357,7 +2333,7 @@
         },
         "w-10": {
           "label": "5–11 ago 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2547,7 +2523,7 @@
         },
         "w-11": {
           "label": "29 jul–4 ago 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2682,7 +2658,7 @@
         },
         "w-12": {
           "label": "22–28 jul 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2902,7 +2878,7 @@
         },
         "w-13": {
           "label": "15–21 jul 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3092,7 +3068,7 @@
         },
         "w-14": {
           "label": "8–14 jul 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3258,7 +3234,7 @@
         },
         "w-15": {
           "label": "1–7 jul 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3424,7 +3400,7 @@
         },
         "w-16": {
           "label": "24–30 jun 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3559,7 +3535,7 @@
         },
         "w-17": {
           "label": "17–23 jun 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3694,7 +3670,7 @@
         },
         "w-18": {
           "label": "10–16 jun 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3890,7 +3866,7 @@
         },
         "w-19": {
           "label": "3–9 jun 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4025,7 +4001,7 @@
         },
         "w-20": {
           "label": "27 mai–2 jun 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4160,7 +4136,7 @@
         },
         "w-21": {
           "label": "20–26 mai 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4295,7 +4271,7 @@
         },
         "w-22": {
           "label": "13–19 mai 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4430,7 +4406,7 @@
         },
         "w-23": {
           "label": "6–12 mai 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4565,7 +4541,7 @@
         },
         "w-24": {
           "label": "29 abr–5 mai 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4700,7 +4676,7 @@
         },
         "w-25": {
           "label": "22–28 abr 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4835,7 +4811,7 @@
         },
         "w-26": {
           "label": "15–21 abr 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4970,7 +4946,7 @@
         },
         "w-27": {
           "label": "8–14 abr 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5105,7 +5081,7 @@
         },
         "w-28": {
           "label": "1–7 abr 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5240,7 +5216,7 @@
         },
         "w-29": {
           "label": "25–31 mar 2026",
-          "updated": "19 out 2026, 20:20",
+          "updated": "20 out 2026, 00:38",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
