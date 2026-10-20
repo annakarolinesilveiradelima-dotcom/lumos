@@ -1,10 +1,10 @@
 {
   "label": "20 out 2026",
-  "updated": "20 out 2026, 00:38",
+  "updated": "20 out 2026, 06:10",
   "kpi": {
     "mentions": {
       "v": "3 matérias",
-      "d": -1,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "57",
       "suf": "/100",
-      "d": -4,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -38,7 +38,7 @@
     4,
     4,
     4,
-    4,
+    3,
     3
   ],
   "stack": [
