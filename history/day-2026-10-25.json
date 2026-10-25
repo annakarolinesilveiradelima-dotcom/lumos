@@ -1,0 +1,222 @@
+{
+  "label": "25 out 2026",
+  "updated": "25 out 2026, 02:44",
+  "kpi": {
+    "mentions": {
+      "v": "3 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+0",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "57",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 0,
+    "neu": 100,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "stack": [
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 3,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 0,
+        "n": 0,
+        "g": 100
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "5 motivos para assistir à nova série no Natal",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Perfil de Dominic McLaughlin no Instagram é desativado",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-perfil-dominic-mclaughlin-instagram"
+        }
+      ]
+    },
+    {
+      "t": "Fusão entre Paramount e Warner Bros. vai se chamar Skydance",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Correio Do Povo",
+          "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/filmes-e-series/2026/10/8/harry-potter-5-motivos-para-assistir-a-nova-serie-da-hbo-no-natal",
+      "title": "5 motivos para assistir à nova série no Natal",
+      "cat": "neu",
+      "time": "8 out, 18:08",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-perfil-dominic-mclaughlin-instagram",
+      "title": "Harry Potter | Perfil de Dominic McLaughlin no Instagram é desativado",
+      "cat": "neu",
+      "time": "3 out, 16:31",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Correio Do Povo",
+      "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705",
+      "title": "Fusão entre Paramount e Warner Bros. vai se chamar Skydance",
+      "cat": "neu",
+      "time": "2 out, 00:00",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Risco baixo na cobertura editorial",
+      "sev": "low",
+      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "3"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 3,
+    "unit": "matérias",
+    "net": 0,
+    "buzz": 57,
+    "news_count": 3,
+    "social_mentions": 0
+  }
+}
