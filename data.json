@@ -1,5 +1,5 @@
 {
-  "generated_at": "27 out 2026, 20:31",
+  "generated_at": "28 out 2026, 01:15",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "27 out 2026",
-          "updated": "27 out 2026, 20:31",
+          "label": "28 out 2026",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
-              "v": "4 matérias",
-              "d": 0,
+              "v": "5 matérias",
+              "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+24",
+              "v": "+20",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,15 +31,15 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "67",
+              "v": "70",
               "suf": "/100",
-              "d": 0,
+              "d": 3,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 25,
-            "neu": 75,
+            "pos": 20,
+            "neu": 80,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -50,7 +50,7 @@
             4,
             4,
             4,
-            4
+            5
           ],
           "stack": [
             [
@@ -84,25 +84,41 @@
               0
             ],
             [
-              25,
-              75,
+              20,
+              80,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 4,
+              "vol": 5,
               "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 25,
+                "p": 20,
                 "n": 0,
-                "g": 75
+                "g": 80
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira"
+                }
+              ]
+            },
             {
               "t": "Esqueça A Casa do Dragão: maior série de 2026 da HBO Max estreia em dois meses",
               "vol": 1,
@@ -170,6 +186,14 @@
           ],
           "coverage": [
             {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira",
+              "title": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
+              "cat": "neu",
+              "time": "27 out, 12:08",
+              "scope": "Portal BR"
+            },
+            {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/10/25/esqueca-a-casa-do-dragao-maior-serie-de-2026-da-hbo-max-estreia-em-dois-meses",
               "title": "Esqueça A Casa do Dragão: maior série de 2026 da HBO Max estreia em dois meses",
@@ -205,10 +229,10 @@
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura editorial",
-              "sev": "low",
-              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
@@ -221,7 +245,7 @@
               ],
               [
                 "Matérias",
-                "4"
+                "5"
               ],
               [
                 "Social",
@@ -250,16 +274,151 @@
       },
       "weeks": {
         "w0": {
-          "label": "21–27 out 2026",
-          "updated": "27 out 2026, 20:31",
+          "label": "28–28 out 2026",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "0 matérias",
+              "d": 0,
+              "sub": "sem cobertura real nesta semana"
+            },
+            "sentiment": {
+              "v": "—",
+              "suf": "",
+              "d": 0,
+              "sub": "sem base suficiente"
+            },
+            "sov": {
+              "v": "—",
+              "d": 0,
+              "dtype": "pts",
+              "sub": "requer base multi-título"
+            },
+            "buzz": {
+              "v": "0",
+              "suf": "/100",
+              "d": 0,
+              "sub": "sem cobertura real"
+            }
+          },
+          "senti": {
+            "pos": 0,
+            "neu": 100,
+            "neg": 0,
+            "tone": "Sem cobertura real coletada nesta semana"
+          },
+          "buzz7": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stack": [
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ],
+            [
+              0,
+              100,
+              0
+            ]
+          ],
+          "platforms": [
+            {
+              "name": "Imprensa",
+              "vol": 1,
+              "senti": "neu",
+              "ang": -90,
+              "s": {
+                "p": 0,
+                "n": 0,
+                "g": 100
+              }
+            }
+          ],
+          "narratives": [],
+          "coverage": [],
+          "creators": [],
+          "risks": [
+            {
+              "t": "Semana sem cobertura real",
+              "sev": "low",
+              "d": "Não foram encontradas matérias reais para a janela 28–28 out 2026.",
+              "rec": "Manter monitoramento e validar se a API possui histórico disponível para essa semana."
+            }
+          ],
+          "heroOpp": {
+            "title": "Sem oportunidade validada nesta semana",
+            "desc": "Não houve cobertura real suficiente nesta janela semanal.",
+            "facts": [
+              [
+                "Janela",
+                "28–28 out 2026"
+              ],
+              [
+                "Marco",
+                "teaser 25/03/2026"
+              ],
+              [
+                "Dados fictícios",
+                "não"
+              ],
+              [
+                "Status",
+                "sem cobertura real"
+              ]
+            ]
+          },
+          "opps": [
+            {
+              "ico": "mail",
+              "t": "Monitorar próxima coleta",
+              "d": "A janela 28–28 out 2026 ainda não tem matérias reais na fonte conectada. Próximo passo: manter backfill/monitoramento."
+            }
+          ],
+          "ephem": []
+        },
+        "w-1": {
+          "label": "21–27 out 2026",
+          "updated": "28 out 2026, 01:15",
+          "kpi": {
+            "mentions": {
+              "v": "2 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -271,74 +430,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "78",
+              "v": "61",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "stack": [
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ],
             [
-              100,
-              0,
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
-              "senti": "pos",
+              "vol": 2,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 50,
                 "n": 0,
-                "g": 0
+                "g": 50
               }
             }
           ],
@@ -358,6 +517,22 @@
                   "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/10/25/esqueca-a-casa-do-dragao-maior-serie-de-2026-da-hbo-max-estreia-em-dois-meses"
                 }
               ]
+            },
+            {
+              "t": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -368,15 +543,23 @@
               "cat": "pos",
               "time": "25 out, 11:28",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira",
+              "title": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
+              "cat": "neu",
+              "time": "27 out, 12:08",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura editorial",
-              "sev": "low",
-              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+              "t": "Sensibilidade em torno de elenco",
+              "sev": "mid",
+              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
@@ -393,7 +576,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "2"
               ],
               [
                 "Dados fictícios",
@@ -415,9 +598,9 @@
           ],
           "ephem": []
         },
-        "w-1": {
+        "w-2": {
           "label": "14–20 out 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -550,9 +733,9 @@
           ],
           "ephem": []
         },
-        "w-2": {
+        "w-3": {
           "label": "7–13 out 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -716,9 +899,9 @@
           ],
           "ephem": []
         },
-        "w-3": {
+        "w-4": {
           "label": "30 set–6 out 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -906,9 +1089,9 @@
           ],
           "ephem": []
         },
-        "w-4": {
+        "w-5": {
           "label": "23–29 set 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1041,9 +1224,9 @@
           ],
           "ephem": []
         },
-        "w-5": {
+        "w-6": {
           "label": "16–22 set 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1255,9 +1438,9 @@
           ],
           "ephem": []
         },
-        "w-6": {
+        "w-7": {
           "label": "9–15 set 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1523,9 +1706,9 @@
           ],
           "ephem": []
         },
-        "w-7": {
+        "w-8": {
           "label": "2–8 set 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -1831,9 +2014,9 @@
           ],
           "ephem": []
         },
-        "w-8": {
+        "w-9": {
           "label": "26 ago–1 set 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2093,9 +2276,9 @@
           ],
           "ephem": []
         },
-        "w-9": {
+        "w-10": {
           "label": "19–25 ago 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2307,9 +2490,9 @@
           ],
           "ephem": []
         },
-        "w-10": {
+        "w-11": {
           "label": "12–18 ago 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2521,9 +2704,9 @@
           ],
           "ephem": []
         },
-        "w-11": {
+        "w-12": {
           "label": "5–11 ago 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2711,9 +2894,9 @@
           ],
           "ephem": []
         },
-        "w-12": {
+        "w-13": {
           "label": "29 jul–4 ago 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2846,9 +3029,9 @@
           ],
           "ephem": []
         },
-        "w-13": {
+        "w-14": {
           "label": "22–28 jul 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3066,9 +3249,9 @@
           ],
           "ephem": []
         },
-        "w-14": {
+        "w-15": {
           "label": "15–21 jul 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3256,9 +3439,9 @@
           ],
           "ephem": []
         },
-        "w-15": {
+        "w-16": {
           "label": "8–14 jul 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3422,9 +3605,9 @@
           ],
           "ephem": []
         },
-        "w-16": {
+        "w-17": {
           "label": "1–7 jul 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3588,9 +3771,9 @@
           ],
           "ephem": []
         },
-        "w-17": {
+        "w-18": {
           "label": "24–30 jun 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3723,9 +3906,9 @@
           ],
           "ephem": []
         },
-        "w-18": {
+        "w-19": {
           "label": "17–23 jun 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3858,9 +4041,9 @@
           ],
           "ephem": []
         },
-        "w-19": {
+        "w-20": {
           "label": "10–16 jun 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4054,9 +4237,9 @@
           ],
           "ephem": []
         },
-        "w-20": {
+        "w-21": {
           "label": "3–9 jun 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4189,9 +4372,9 @@
           ],
           "ephem": []
         },
-        "w-21": {
+        "w-22": {
           "label": "27 mai–2 jun 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4324,9 +4507,9 @@
           ],
           "ephem": []
         },
-        "w-22": {
+        "w-23": {
           "label": "20–26 mai 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4459,9 +4642,9 @@
           ],
           "ephem": []
         },
-        "w-23": {
+        "w-24": {
           "label": "13–19 mai 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4594,9 +4777,9 @@
           ],
           "ephem": []
         },
-        "w-24": {
+        "w-25": {
           "label": "6–12 mai 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4729,9 +4912,9 @@
           ],
           "ephem": []
         },
-        "w-25": {
+        "w-26": {
           "label": "29 abr–5 mai 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4864,9 +5047,9 @@
           ],
           "ephem": []
         },
-        "w-26": {
+        "w-27": {
           "label": "22–28 abr 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4999,9 +5182,9 @@
           ],
           "ephem": []
         },
-        "w-27": {
+        "w-28": {
           "label": "15–21 abr 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5134,9 +5317,9 @@
           ],
           "ephem": []
         },
-        "w-28": {
+        "w-29": {
           "label": "8–14 abr 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5269,9 +5452,9 @@
           ],
           "ephem": []
         },
-        "w-29": {
+        "w-30": {
           "label": "1–7 abr 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5404,9 +5587,9 @@
           ],
           "ephem": []
         },
-        "w-30": {
+        "w-31": {
           "label": "25–31 mar 2026",
-          "updated": "27 out 2026, 20:31",
+          "updated": "28 out 2026, 01:15",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
