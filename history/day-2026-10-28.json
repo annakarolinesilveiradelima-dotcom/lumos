@@ -1,16 +1,16 @@
 {
   "label": "28 out 2026",
-  "updated": "28 out 2026, 19:14",
+  "updated": "28 out 2026, 23:08",
   "kpi": {
     "mentions": {
-      "v": "5 matérias",
-      "d": 0,
+      "v": "7 matérias",
+      "d": 2,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+20",
+      "v": "+44",
       "suf": "/100",
-      "d": 0,
+      "d": 24,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,26 +20,26 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "70",
+      "v": "84",
       "suf": "/100",
-      "d": 0,
+      "d": 14,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 20,
-    "neu": 80,
+    "pos": 43,
+    "neu": 57,
     "neg": 0,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     4,
     4,
-    4,
     5,
     5,
     5,
-    5
+    5,
+    7
   ],
   "stack": [
     [
@@ -53,11 +53,6 @@
       0
     ],
     [
-      25,
-      75,
-      0
-    ],
-    [
       20,
       80,
       0
@@ -75,23 +70,60 @@
     [
       20,
       80,
+      0
+    ],
+    [
+      43,
+      57,
       0
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 5,
+      "vol": 7,
       "senti": "neu",
       "ang": -90,
       "s": {
-        "p": 20,
+        "p": 43,
         "n": 0,
-        "g": 80
+        "g": 57
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter na HBO: definidos os atores dos pais do protagonista",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Estado de S. Paulo,",
+          "u": "https://www.estadao.com.br/minha-serie/radar-pop/serie-de-harry-potter-da-hbo-escolhe-atores-que-vao-fazer-os-pais-do-protagonista/"
+        }
+      ]
+    },
+    {
+      "t": "HBO revela novos nomes do elenco de Harry Potter; saiba quem são",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "A Tarde",
+          "u": "https://atarde.com.br/cineinsite/hbo-revela-novos-nomes-do-elenco-de-harry-potter-saiba-quem-sao-1407404"
+        }
+      ]
+    },
     {
       "t": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
       "vol": 1,
@@ -155,25 +187,25 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-perfil-dominic-mclaughlin-instagram"
         }
       ]
-    },
-    {
-      "t": "Fusão entre Paramount e Warner Bros. vai se chamar Skydance",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Correio Do Povo",
-          "u": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/fusao-entre-paramount-e-warner-bros-vai-se-chamar-skydance-1.1752705"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "O Estado de S. Paulo,",
+      "u": "https://www.estadao.com.br/minha-serie/radar-pop/serie-de-harry-potter-da-hbo-escolhe-atores-que-vao-fazer-os-pais-do-protagonista/",
+      "title": "Harry Potter na HBO: definidos os atores dos pais do protagonista",
+      "cat": "pos",
+      "time": "28 out, 12:45",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "A Tarde",
+      "u": "https://atarde.com.br/cineinsite/hbo-revela-novos-nomes-do-elenco-de-harry-potter-saiba-quem-sao-1407404",
+      "title": "HBO revela novos nomes do elenco de Harry Potter; saiba quem são",
+      "cat": "pos",
+      "time": "28 out, 11:04",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira",
@@ -234,7 +266,7 @@
       ],
       [
         "Matérias",
-        "5"
+        "7"
       ],
       [
         "Social",
@@ -260,11 +292,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 5,
+    "base_count": 7,
     "unit": "matérias",
-    "net": 20,
-    "buzz": 70,
-    "news_count": 5,
+    "net": 44,
+    "buzz": 84,
+    "news_count": 7,
     "social_mentions": 0
   }
 }
