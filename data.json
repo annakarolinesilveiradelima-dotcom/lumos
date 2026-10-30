@@ -1,5 +1,5 @@
 {
-  "generated_at": "29 out 2026, 18:33",
+  "generated_at": "29 out 2026, 22:35",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,7 +11,7 @@
       "days": {
         "d0": {
           "label": "29 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "10 matérias",
@@ -19,9 +19,9 @@
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+70",
+              "v": "+80",
               "suf": "/100",
-              "d": 0,
+              "d": 10,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,26 +38,21 @@
             }
           },
           "senti": {
-            "pos": 70,
-            "neu": 30,
+            "pos": 80,
+            "neu": 20,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             5,
             5,
-            5,
             7,
+            10,
             10,
             10,
             10
           ],
           "stack": [
-            [
-              20,
-              80,
-              0
-            ],
             [
               20,
               80,
@@ -87,6 +82,11 @@
               70,
               30,
               0
+            ],
+            [
+              80,
+              20,
+              0
             ]
           ],
           "platforms": [
@@ -96,13 +96,29 @@
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 70,
+                "p": 80,
                 "n": 0,
-                "g": 30
+                "g": 20
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Catraca Livre - Notícias",
+                  "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Conheça o elenco da série da HBO",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.estadao.com.br/minha-serie/radar-pop/serie-de-harry-potter-da-hbo-escolhe-atores-que-vao-fazer-os-pais-do-protagonista/"
                 }
               ]
-            },
-            {
-              "t": "HBO revela novos nomes do elenco de Harry Potter; saiba quem são",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "A Tarde",
-                  "u": "https://atarde.com.br/cineinsite/hbo-revela-novos-nomes-do-elenco-de-harry-potter-saiba-quem-sao-1407404"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Catraca Livre - Notícias",
+              "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/",
+              "title": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+              "cat": "pos",
+              "time": "29 out, 13:12",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-elenco-serie-hbo",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "27 out, 12:08",
               "scope": "Portal BR"
-            },
-            {
-              "o": "O Tempo",
-              "u": "https://www.otempo.com.br/opiniao/diego-almeida/2026/10/25/esqueca-a-casa-do-dragao-maior-serie-de-2026-da-hbo-max-estreia-em-dois-meses",
-              "title": "Esqueça A Casa do Dragão: maior série de 2026 da HBO Max estreia em dois meses",
-              "cat": "pos",
-              "time": "25 out, 11:28",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -315,10 +315,10 @@
       "weeks": {
         "w0": {
           "label": "28–29 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
-              "v": "6 matérias",
+              "v": "7 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
@@ -348,13 +348,13 @@
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
           ],
           "stack": [
             [
@@ -396,7 +396,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 6,
+              "vol": 7,
               "senti": "pos",
               "ang": -90,
               "s": {
@@ -436,6 +436,22 @@
                 {
                   "o": "A Tarde",
                   "u": "https://atarde.com.br/cineinsite/hbo-revela-novos-nomes-do-elenco-de-harry-potter-saiba-quem-sao-1407404"
+                }
+              ]
+            },
+            {
+              "t": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Catraca Livre - Notícias",
+                  "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/"
                 }
               ]
             },
@@ -486,22 +502,6 @@
                   "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-confirma-presenca-na-ccxp-2026-"
                 }
               ]
-            },
-            {
-              "t": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Diario Do Grande Abc",
-                  "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026-"
-                }
-              ]
             }
           ],
           "coverage": [
@@ -519,6 +519,14 @@
               "title": "HBO revela novos nomes do elenco de Harry Potter; saiba quem são",
               "cat": "pos",
               "time": "28 out, 11:04",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Catraca Livre - Notícias",
+              "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/",
+              "title": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+              "cat": "pos",
+              "time": "29 out, 13:12",
               "scope": "Portal BR"
             },
             {
@@ -577,7 +585,7 @@
               ],
               [
                 "Matérias",
-                "6"
+                "7"
               ],
               [
                 "Dados fictícios",
@@ -601,7 +609,7 @@
         },
         "w-1": {
           "label": "21–27 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -791,7 +799,7 @@
         },
         "w-2": {
           "label": "14–20 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -926,7 +934,7 @@
         },
         "w-3": {
           "label": "7–13 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1092,7 +1100,7 @@
         },
         "w-4": {
           "label": "30 set–6 out 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1282,7 +1290,7 @@
         },
         "w-5": {
           "label": "23–29 set 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1417,7 +1425,7 @@
         },
         "w-6": {
           "label": "16–22 set 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1631,7 +1639,7 @@
         },
         "w-7": {
           "label": "9–15 set 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1899,7 +1907,7 @@
         },
         "w-8": {
           "label": "2–8 set 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -2207,7 +2215,7 @@
         },
         "w-9": {
           "label": "26 ago–1 set 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2469,7 +2477,7 @@
         },
         "w-10": {
           "label": "19–25 ago 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2683,7 +2691,7 @@
         },
         "w-11": {
           "label": "12–18 ago 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2897,7 +2905,7 @@
         },
         "w-12": {
           "label": "5–11 ago 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3087,7 +3095,7 @@
         },
         "w-13": {
           "label": "29 jul–4 ago 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3222,7 +3230,7 @@
         },
         "w-14": {
           "label": "22–28 jul 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3442,7 +3450,7 @@
         },
         "w-15": {
           "label": "15–21 jul 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3632,7 +3640,7 @@
         },
         "w-16": {
           "label": "8–14 jul 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3798,7 +3806,7 @@
         },
         "w-17": {
           "label": "1–7 jul 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3964,7 +3972,7 @@
         },
         "w-18": {
           "label": "24–30 jun 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4099,7 +4107,7 @@
         },
         "w-19": {
           "label": "17–23 jun 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4234,7 +4242,7 @@
         },
         "w-20": {
           "label": "10–16 jun 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4430,7 +4438,7 @@
         },
         "w-21": {
           "label": "3–9 jun 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4565,7 +4573,7 @@
         },
         "w-22": {
           "label": "27 mai–2 jun 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4700,7 +4708,7 @@
         },
         "w-23": {
           "label": "20–26 mai 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4835,7 +4843,7 @@
         },
         "w-24": {
           "label": "13–19 mai 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4970,7 +4978,7 @@
         },
         "w-25": {
           "label": "6–12 mai 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5105,7 +5113,7 @@
         },
         "w-26": {
           "label": "29 abr–5 mai 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5240,7 +5248,7 @@
         },
         "w-27": {
           "label": "22–28 abr 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5375,7 +5383,7 @@
         },
         "w-28": {
           "label": "15–21 abr 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5510,7 +5518,7 @@
         },
         "w-29": {
           "label": "8–14 abr 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5645,7 +5653,7 @@
         },
         "w-30": {
           "label": "1–7 abr 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5780,7 +5788,7 @@
         },
         "w-31": {
           "label": "25–31 mar 2026",
-          "updated": "29 out 2026, 18:33",
+          "updated": "29 out 2026, 22:35",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
