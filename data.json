@@ -1,5 +1,5 @@
 {
-  "generated_at": "30 out 2026, 21:25",
+  "generated_at": "31 out 2026, 03:40",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -10,18 +10,18 @@
       "topSub": "Daily Intelligence · mercado brasileiro",
       "days": {
         "d0": {
-          "label": "30 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "label": "31 out 2026",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
-              "v": "11 matérias",
+              "v": "12 matérias",
               "d": 1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+72",
+              "v": "+68",
               "suf": "/100",
-              "d": -8,
+              "d": -4,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -38,8 +38,8 @@
             }
           },
           "senti": {
-            "pos": 73,
-            "neu": 27,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Cobertura real coletada; social não conectado"
           },
@@ -49,15 +49,10 @@
             10,
             10,
             10,
-            10,
-            11
+            11,
+            12
           ],
           "stack": [
-            [
-              70,
-              30,
-              0
-            ],
             [
               70,
               30,
@@ -87,22 +82,43 @@
               73,
               27,
               0
+            ],
+            [
+              67,
+              33,
+              0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 11,
+              "vol": 12,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 73,
+                "p": 67,
                 "n": 0,
-                "g": 27
+                "g": 33
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor"
+                }
+              ]
+            },
             {
               "t": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026-"
                 }
               ]
-            },
-            {
-              "t": "Harry Potter na HBO: definidos os atores dos pais do protagonista",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "O Estado de S. Paulo,",
-                  "u": "https://www.estadao.com.br/minha-serie/radar-pop/serie-de-harry-potter-da-hbo-escolhe-atores-que-vao-fazer-os-pais-do-protagonista/"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor",
+              "title": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
+              "cat": "neu",
+              "time": "30 out, 15:25",
+              "scope": "Portal BR"
+            },
             {
               "o": "Catraca Livre - Notícias",
               "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/",
@@ -256,14 +264,6 @@
               "cat": "pos",
               "time": "28 out, 11:04",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-da-hbo-anuncia-atores-que-viverao-tiago-e-lilian-potter-confira",
-              "title": "Harry Potter da HBO anuncia atores que viverão Tiago e Lílian Potter, confira",
-              "cat": "neu",
-              "time": "27 out, 12:08",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "11"
+                "12"
               ],
               [
                 "Social",
@@ -314,16 +314,16 @@
       },
       "weeks": {
         "w0": {
-          "label": "28–30 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "label": "28–31 out 2026",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
-              "v": "7 matérias",
+              "v": "8 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+88",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -342,67 +342,67 @@
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 88,
+            "neu": 12,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
           ],
           "stack": [
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ],
             [
-              100,
-              0,
+              88,
+              12,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 7,
+              "vol": 8,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 88,
                 "n": 0,
-                "g": 0
+                "g": 12
               }
             }
           ],
@@ -560,6 +560,14 @@
               "cat": "pos",
               "time": "28 out, 14:33",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor",
+              "title": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
+              "cat": "neu",
+              "time": "30 out, 15:25",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -573,11 +581,11 @@
           ],
           "heroOpp": {
             "title": "Leitura semanal desde o teaser",
-            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 28–30 out 2026.",
+            "desc": "Semana consolidada por data real de publicação das matérias. Janela: 28–31 out 2026.",
             "facts": [
               [
                 "Janela",
-                "28–30 out 2026"
+                "28–31 out 2026"
               ],
               [
                 "Marco",
@@ -585,7 +593,7 @@
               ],
               [
                 "Matérias",
-                "7"
+                "8"
               ],
               [
                 "Dados fictícios",
@@ -609,7 +617,7 @@
         },
         "w-1": {
           "label": "21–27 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -799,7 +807,7 @@
         },
         "w-2": {
           "label": "14–20 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -934,7 +942,7 @@
         },
         "w-3": {
           "label": "7–13 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1100,7 +1108,7 @@
         },
         "w-4": {
           "label": "30 set–6 out 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1290,7 +1298,7 @@
         },
         "w-5": {
           "label": "23–29 set 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1425,7 +1433,7 @@
         },
         "w-6": {
           "label": "16–22 set 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -1639,7 +1647,7 @@
         },
         "w-7": {
           "label": "9–15 set 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1907,7 +1915,7 @@
         },
         "w-8": {
           "label": "2–8 set 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -2215,7 +2223,7 @@
         },
         "w-9": {
           "label": "26 ago–1 set 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2477,7 +2485,7 @@
         },
         "w-10": {
           "label": "19–25 ago 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2691,7 +2699,7 @@
         },
         "w-11": {
           "label": "12–18 ago 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2905,7 +2913,7 @@
         },
         "w-12": {
           "label": "5–11 ago 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3095,7 +3103,7 @@
         },
         "w-13": {
           "label": "29 jul–4 ago 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3230,7 +3238,7 @@
         },
         "w-14": {
           "label": "22–28 jul 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3450,7 +3458,7 @@
         },
         "w-15": {
           "label": "15–21 jul 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3640,7 +3648,7 @@
         },
         "w-16": {
           "label": "8–14 jul 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3806,7 +3814,7 @@
         },
         "w-17": {
           "label": "1–7 jul 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -3972,7 +3980,7 @@
         },
         "w-18": {
           "label": "24–30 jun 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4107,7 +4115,7 @@
         },
         "w-19": {
           "label": "17–23 jun 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4242,7 +4250,7 @@
         },
         "w-20": {
           "label": "10–16 jun 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4438,7 +4446,7 @@
         },
         "w-21": {
           "label": "3–9 jun 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4573,7 +4581,7 @@
         },
         "w-22": {
           "label": "27 mai–2 jun 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4708,7 +4716,7 @@
         },
         "w-23": {
           "label": "20–26 mai 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4843,7 +4851,7 @@
         },
         "w-24": {
           "label": "13–19 mai 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4978,7 +4986,7 @@
         },
         "w-25": {
           "label": "6–12 mai 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5113,7 +5121,7 @@
         },
         "w-26": {
           "label": "29 abr–5 mai 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5248,7 +5256,7 @@
         },
         "w-27": {
           "label": "22–28 abr 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5383,7 +5391,7 @@
         },
         "w-28": {
           "label": "15–21 abr 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5518,7 +5526,7 @@
         },
         "w-29": {
           "label": "8–14 abr 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5653,7 +5661,7 @@
         },
         "w-30": {
           "label": "1–7 abr 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5788,7 +5796,7 @@
         },
         "w-31": {
           "label": "25–31 mar 2026",
-          "updated": "30 out 2026, 21:25",
+          "updated": "31 out 2026, 03:40",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

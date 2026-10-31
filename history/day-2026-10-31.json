@@ -1,0 +1,310 @@
+{
+  "label": "31 out 2026",
+  "updated": "31 out 2026, 03:40",
+  "kpi": {
+    "mentions": {
+      "v": "12 matérias",
+      "d": 1,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+68",
+      "suf": "/100",
+      "d": -4,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "100",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 67,
+    "neu": 33,
+    "neg": 0,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    11,
+    12
+  ],
+  "stack": [
+    [
+      70,
+      30,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      80,
+      20,
+      0
+    ],
+    [
+      73,
+      27,
+      0
+    ],
+    [
+      67,
+      33,
+      0
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 12,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 67,
+        "n": 0,
+        "g": 33
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Catraca Livre - Notícias",
+          "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Conheça o elenco da série da HBO",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-elenco-serie-hbo"
+        }
+      ]
+    },
+    {
+      "t": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diario Do Grande Abc",
+          "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026"
+        }
+      ]
+    },
+    {
+      "t": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diario Do Grande Abc",
+          "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-confirma-presenca-na-ccxp-2026-"
+        }
+      ]
+    },
+    {
+      "t": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diario Do Grande Abc",
+          "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026-"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor",
+      "title": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
+      "cat": "neu",
+      "time": "30 out, 15:25",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Catraca Livre - Notícias",
+      "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/",
+      "title": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
+      "cat": "pos",
+      "time": "29 out, 13:12",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-elenco-serie-hbo",
+      "title": "Harry Potter | Conheça o elenco da série da HBO",
+      "cat": "pos",
+      "time": "28 out, 20:16",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Diario Do Grande Abc",
+      "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026",
+      "title": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "cat": "pos",
+      "time": "28 out, 15:32",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Diario Do Grande Abc",
+      "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-confirma-presenca-na-ccxp-2026-",
+      "title": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "cat": "pos",
+      "time": "28 out, 15:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Diario Do Grande Abc",
+      "u": "https://www.dgabc.com.br/Noticia/4365540/serie-de-harry-potter-e-a-pedra-filosofal-confirma-presenca-na-ccxp-2026-",
+      "title": "Série de 'Harry Potter e a Pedra Filosofal' confirma presença na CCXP 2026",
+      "cat": "pos",
+      "time": "28 out, 14:33",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Estado de S. Paulo,",
+      "u": "https://www.estadao.com.br/minha-serie/radar-pop/serie-de-harry-potter-da-hbo-escolhe-atores-que-vao-fazer-os-pais-do-protagonista/",
+      "title": "Harry Potter na HBO: definidos os atores dos pais do protagonista",
+      "cat": "pos",
+      "time": "28 out, 12:45",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "A Tarde",
+      "u": "https://atarde.com.br/cineinsite/hbo-revela-novos-nomes-do-elenco-de-harry-potter-saiba-quem-sao-1407404",
+      "title": "HBO revela novos nomes do elenco de Harry Potter; saiba quem são",
+      "cat": "pos",
+      "time": "28 out, 11:04",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "12"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 12,
+    "unit": "matérias",
+    "net": 68,
+    "buzz": 100,
+    "news_count": 12,
+    "social_mentions": 0
+  }
+}
