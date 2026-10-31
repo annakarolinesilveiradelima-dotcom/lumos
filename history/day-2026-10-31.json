@@ -1,16 +1,16 @@
 {
   "label": "31 out 2026",
-  "updated": "31 out 2026, 10:20",
+  "updated": "31 out 2026, 15:13",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -2,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+80",
       "suf": "/100",
-      "d": 12,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -36,17 +36,12 @@
     10,
     10,
     10,
-    10,
     11,
     12,
+    10,
     10
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       80,
       20,
@@ -70,6 +65,11 @@
     [
       67,
       33,
+      0
+    ],
+    [
+      80,
+      20,
       0
     ],
     [
