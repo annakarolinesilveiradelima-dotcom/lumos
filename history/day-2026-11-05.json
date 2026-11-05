@@ -1,16 +1,16 @@
 {
   "label": "5 nov 2026",
-  "updated": "5 nov 2026, 00:12",
+  "updated": "5 nov 2026, 08:53",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -2,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+80",
       "suf": "/100",
-      "d": 4,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -34,19 +34,14 @@
   },
   "buzz7": [
     10,
-    10,
     11,
     11,
     10,
     12,
+    10,
     10
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       80,
       20,
@@ -70,6 +65,11 @@
     [
       75,
       25,
+      0
+    ],
+    [
+      80,
+      20,
       0
     ],
     [
