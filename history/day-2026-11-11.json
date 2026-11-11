@@ -1,16 +1,16 @@
 {
   "label": "11 nov 2026",
-  "updated": "11 nov 2026, 05:54",
+  "updated": "11 nov 2026, 13:54",
   "kpi": {
     "mentions": {
-      "v": "11 matérias",
-      "d": 1,
+      "v": "10 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+82",
+      "v": "+60",
       "suf": "/100",
-      "d": 2,
+      "d": -22,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -27,26 +27,21 @@
     }
   },
   "senti": {
-    "pos": 82,
-    "neu": 18,
-    "neg": 0,
+    "pos": 70,
+    "neu": 20,
+    "neg": 10,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
     10,
     10,
     10,
-    10,
     12,
     10,
-    11
+    11,
+    10
   ],
   "stack": [
-    [
-      90,
-      10,
-      0
-    ],
     [
       90,
       10,
@@ -76,22 +71,43 @@
       82,
       18,
       0
+    ],
+    [
+      70,
+      20,
+      10
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 11,
+      "vol": 10,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 82,
-        "n": 0,
-        "g": 18
+        "p": 70,
+        "n": 10,
+        "g": 20
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
+      "vol": 1,
+      "senti": "neg",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "G1",
+          "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml"
+        }
+      ]
+    },
     {
       "t": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.metropoles.com/colunas/metropoles-games/hbo-acertou-na-escolha-dos-pais-de-harry-potter"
         }
       ]
-    },
-    {
-      "t": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "G1",
+      "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml",
+      "title": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
+      "cat": "neg",
+      "time": "10 nov, 22:22",
+      "scope": "Portal BR"
+    },
     {
       "o": "IGN Brasil",
       "u": "https://br.ign.com/harry-potter-the-series/157512/ja-participei-de-muitos-filmes-daniel-radcliffe-nao-tem-certeza-se-vai-assistir-a-serie-de-harry-pot",
@@ -245,14 +253,6 @@
       "cat": "pos",
       "time": "29 out, 13:12",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-elenco-serie-hbo",
-      "title": "Harry Potter | Conheça o elenco da série da HBO",
-      "cat": "pos",
-      "time": "28 out, 20:16",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "11"
+        "10"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 11,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 82,
+    "net": 60,
     "buzz": 100,
-    "news_count": 11,
+    "news_count": 10,
     "social_mentions": 0
   }
 }
