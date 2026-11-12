@@ -1,16 +1,16 @@
 {
   "label": "12 nov 2026",
-  "updated": "12 nov 2026, 02:56",
+  "updated": "12 nov 2026, 11:52",
   "kpi": {
     "mentions": {
-      "v": "12 matérias",
-      "d": 0,
+      "v": "10 matérias",
+      "d": -2,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+68",
+      "v": "+50",
       "suf": "/100",
-      "d": 0,
+      "d": -18,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,33 +20,28 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "100",
+      "v": "98",
       "suf": "/100",
-      "d": 0,
+      "d": -2,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 75,
-    "neu": 17,
-    "neg": 8,
+    "pos": 60,
+    "neu": 30,
+    "neg": 10,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     12,
     10,
     11,
     10,
     12,
-    12
+    12,
+    10
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       83,
       17,
@@ -76,22 +71,59 @@
       75,
       17,
       8
+    ],
+    [
+      60,
+      30,
+      10
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 12,
+      "vol": 10,
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 75,
-        "n": 8,
-        "g": 17
+        "p": 60,
+        "n": 10,
+        "g": 30
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diário de Pernambuco",
+          "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html"
+        }
+      ]
+    },
+    {
+      "t": "Daniel Radcliffe diz que não irá assistir à nova adaptação de Harry Potter para a televisão",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Folha De Pernambuco",
+          "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/"
+        }
+      ]
+    },
     {
       "t": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
       "vol": 1,
@@ -155,41 +187,25 @@
           "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/"
         }
       ]
-    },
-    {
-      "t": "A ruptura é oficial: reboot de Harry Potter revela o castelo de Hogwarts e ele não se parece mais com o dos filmes",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "IGN Brasil",
-          "u": "https://br.ign.com/harry-potter-the-series/157330/a-ruptura-e-oficial-reboot-de-harry-potter-revela-o-castelo-de-hogwarts-e-ele-nao-se-parece-mais-com"
-        }
-      ]
-    },
-    {
-      "t": "HBO acertou na escolha dos pais de Harry Potter?",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Metrópoles",
-          "u": "https://www.metropoles.com/colunas/metropoles-games/hbo-acertou-na-escolha-dos-pais-de-harry-potter"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Diário de Pernambuco",
+      "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html",
+      "title": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
+      "cat": "pos",
+      "time": "11 nov, 19:01",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Folha De Pernambuco",
+      "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/",
+      "title": "Daniel Radcliffe diz que não irá assistir à nova adaptação de Harry Potter para a televisão",
+      "cat": "neu",
+      "time": "11 nov, 18:13",
+      "scope": "Portal BR"
+    },
     {
       "o": "G1",
       "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml",
@@ -237,22 +253,6 @@
       "cat": "pos",
       "time": "2 nov, 12:52",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-escalaccoes-fantasmas-chapeu-seletor",
-      "title": "Harry Potter | HBO anuncia atores que farão fantasmas e Chapéu Seletor na série",
-      "cat": "neu",
-      "time": "30 out, 15:25",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Catraca Livre - Notícias",
-      "u": "https://catracalivre.com.br/futuro-geek/harry-potter-e-a-pedra-filosofal-ccxp26/",
-      "title": "Harry Potter e a Pedra Filosofal, série da HBO, estará na CCXP26",
-      "cat": "pos",
-      "time": "29 out, 13:12",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -280,7 +280,7 @@
       ],
       [
         "Matérias",
-        "12"
+        "10"
       ],
       [
         "Social",
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 12,
+    "base_count": 10,
     "unit": "matérias",
-    "net": 68,
-    "buzz": 100,
-    "news_count": 12,
+    "net": 50,
+    "buzz": 98,
+    "news_count": 10,
     "social_mentions": 0
   }
 }
