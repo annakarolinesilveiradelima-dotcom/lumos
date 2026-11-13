@@ -1,0 +1,316 @@
+{
+  "label": "13 nov 2026",
+  "updated": "13 nov 2026, 07:36",
+  "kpi": {
+    "mentions": {
+      "v": "10 matérias",
+      "d": -3,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+50",
+      "suf": "/100",
+      "d": -10,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "98",
+      "suf": "/100",
+      "d": -2,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 60,
+    "neu": 30,
+    "neg": 10,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    10,
+    12,
+    12,
+    10,
+    14,
+    13,
+    10
+  ],
+  "stack": [
+    [
+      70,
+      20,
+      10
+    ],
+    [
+      75,
+      17,
+      8
+    ],
+    [
+      75,
+      17,
+      8
+    ],
+    [
+      60,
+      30,
+      10
+    ],
+    [
+      67,
+      25,
+      8
+    ],
+    [
+      67,
+      25,
+      8
+    ],
+    [
+      60,
+      30,
+      10
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 10,
+      "senti": "pos",
+      "ang": -90,
+      "s": {
+        "p": 60,
+        "n": 10,
+        "g": 30
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diário de Pernambuco",
+          "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html"
+        }
+      ]
+    },
+    {
+      "t": "Daniel Radcliffe diz que não irá assistir à nova adaptação de Harry Potter para a televisão",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Folha De Pernambuco",
+          "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/"
+        }
+      ]
+    },
+    {
+      "t": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
+      "vol": 1,
+      "senti": "neg",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "G1",
+          "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml"
+        }
+      ]
+    },
+    {
+      "t": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "IGN Brasil",
+          "u": "https://br.ign.com/harry-potter-the-series/157512/ja-participei-de-muitos-filmes-daniel-radcliffe-nao-tem-certeza-se-vai-assistir-a-serie-de-harry-pot"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Daniel Radcliffe não sabe se verá a série da HBO",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-daniel-radcliffe-nao-sabe-se-vera-serie-da-hbo"
+        }
+      ]
+    },
+    {
+      "t": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Olhar Digital",
+          "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Diário de Pernambuco",
+      "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html",
+      "title": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
+      "cat": "pos",
+      "time": "11 nov, 19:01",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Folha De Pernambuco",
+      "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/",
+      "title": "Daniel Radcliffe diz que não irá assistir à nova adaptação de Harry Potter para a televisão",
+      "cat": "neu",
+      "time": "11 nov, 18:13",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "G1",
+      "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml",
+      "title": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
+      "cat": "neg",
+      "time": "10 nov, 22:22",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "IGN Brasil",
+      "u": "https://br.ign.com/harry-potter-the-series/157512/ja-participei-de-muitos-filmes-daniel-radcliffe-nao-tem-certeza-se-vai-assistir-a-serie-de-harry-pot",
+      "title": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
+      "cat": "nos",
+      "time": "10 nov, 17:32",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-daniel-radcliffe-nao-sabe-se-vera-serie-da-hbo",
+      "title": "Harry Potter | Daniel Radcliffe não sabe se verá a série da HBO",
+      "cat": "neu",
+      "time": "9 nov, 22:02",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Olhar Digital",
+      "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/",
+      "title": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
+      "cat": "nos",
+      "time": "6 nov, 14:17",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "IGN Brasil",
+      "u": "https://br.ign.com/harry-potter-the-series/157330/a-ruptura-e-oficial-reboot-de-harry-potter-revela-o-castelo-de-hogwarts-e-ele-nao-se-parece-mais-com",
+      "title": "A ruptura é oficial: reboot de Harry Potter revela o castelo de Hogwarts e ele não se parece mais com o dos filmes",
+      "cat": "nos",
+      "time": "5 nov, 15:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Metrópoles",
+      "u": "https://www.metropoles.com/colunas/metropoles-games/hbo-acertou-na-escolha-dos-pais-de-harry-potter",
+      "title": "HBO acertou na escolha dos pais de Harry Potter?",
+      "cat": "pos",
+      "time": "2 nov, 12:52",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "10"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 10,
+    "unit": "matérias",
+    "net": 50,
+    "buzz": 98,
+    "news_count": 10,
+    "social_mentions": 0
+  }
+}
