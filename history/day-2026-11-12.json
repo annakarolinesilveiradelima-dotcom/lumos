@@ -1,16 +1,16 @@
 {
   "label": "12 nov 2026",
-  "updated": "12 nov 2026, 18:44",
+  "updated": "12 nov 2026, 23:25",
   "kpi": {
     "mentions": {
-      "v": "14 matérias",
-      "d": 4,
+      "v": "13 matérias",
+      "d": -1,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+60",
       "suf": "/100",
-      "d": 10,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "100",
       "suf": "/100",
-      "d": 2,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -33,20 +33,15 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     11,
     10,
     12,
     12,
     10,
-    14
+    14,
+    13
   ],
   "stack": [
-    [
-      80,
-      20,
-      0
-    ],
     [
       82,
       18,
@@ -76,12 +71,17 @@
       67,
       25,
       8
+    ],
+    [
+      67,
+      25,
+      8
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 14,
+      "vol": 13,
       "senti": "pos",
       "ang": -90,
       "s": {
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 14,
+    "base_count": 13,
     "unit": "matérias",
     "net": 60,
     "buzz": 100,
-    "news_count": 14,
+    "news_count": 13,
     "social_mentions": 0
   }
 }
