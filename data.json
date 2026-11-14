@@ -1,5 +1,5 @@
 {
-  "generated_at": "13 nov 2026, 15:24",
+  "generated_at": "13 nov 2026, 21:12",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "13 nov 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
-              "v": "13 matérias",
+              "v": "16 matérias",
               "d": 3,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
               "v": "+60",
               "suf": "/100",
-              "d": 10,
+              "d": 0,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -33,7 +33,7 @@
             "buzz": {
               "v": "100",
               "suf": "/100",
-              "d": 2,
+              "d": 0,
               "sub": "índice de buzz do dia"
             }
           },
@@ -45,12 +45,12 @@
           },
           "buzz7": [
             12,
-            12,
             10,
             14,
             13,
             10,
-            13
+            13,
+            16
           ],
           "stack": [
             [
@@ -59,11 +59,6 @@
               8
             ],
             [
-              75,
-              17,
-              8
-            ],
-            [
               60,
               30,
               10
@@ -82,6 +77,11 @@
               60,
               30,
               10
+            ],
+            [
+              67,
+              25,
+              8
             ],
             [
               67,
@@ -92,7 +92,7 @@
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 13,
+              "vol": 16,
               "senti": "pos",
               "ang": -90,
               "s": {
@@ -103,6 +103,22 @@
             }
           ],
           "narratives": [
+            {
+              "t": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Diário do Centro do Mundo",
+                  "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/"
+                }
+              ]
+            },
             {
               "t": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-daniel-radcliffe-nao-sabe-se-vera-serie-da-hbo"
                 }
               ]
-            },
-            {
-              "t": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Olhar Digital",
-                  "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Diário do Centro do Mundo",
+              "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/",
+              "title": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+              "cat": "nos",
+              "time": "13 nov, 08:17",
+              "scope": "Portal BR"
+            },
             {
               "o": "Diário de Pernambuco",
               "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html",
@@ -255,14 +263,6 @@
               "title": "A ruptura é oficial: reboot de Harry Potter revela o castelo de Hogwarts e ele não se parece mais com o dos filmes",
               "cat": "nos",
               "time": "5 nov, 15:00",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Metrópoles",
-              "u": "https://www.metropoles.com/colunas/metropoles-games/hbo-acertou-na-escolha-dos-pais-de-harry-potter",
-              "title": "HBO acertou na escolha dos pais de Harry Potter?",
-              "cat": "pos",
-              "time": "2 nov, 12:52",
               "scope": "Portal BR"
             }
           ],
@@ -321,15 +321,15 @@
       "weeks": {
         "w0": {
           "label": "11–13 nov 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
-              "v": "2 matérias",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+67",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -341,74 +341,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "61",
+              "v": "78",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 50,
-            "neu": 50,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ],
             [
-              50,
-              50,
+              67,
+              33,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 2,
-              "senti": "neu",
+              "vol": 3,
+              "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 50,
+                "p": 67,
                 "n": 0,
-                "g": 50
+                "g": 33
               }
             }
           ],
@@ -444,6 +444,22 @@
                   "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/"
                 }
               ]
+            },
+            {
+              "t": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Diário do Centro do Mundo",
+                  "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -462,15 +478,23 @@
               "cat": "neu",
               "time": "11 nov, 18:13",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Diário do Centro do Mundo",
+              "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/",
+              "title": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+              "cat": "nos",
+              "time": "13 nov, 08:17",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
           "risks": [
             {
-              "t": "Risco baixo na cobertura editorial",
-              "sev": "low",
-              "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-              "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+              "t": "Comparação com os filmes originais",
+              "sev": "mid",
+              "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+              "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
             }
           ],
           "heroOpp": {
@@ -487,7 +511,7 @@
               ],
               [
                 "Matérias",
-                "2"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -511,7 +535,7 @@
         },
         "w-1": {
           "label": "4–10 nov 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -779,7 +803,7 @@
         },
         "w-2": {
           "label": "28 out–3 nov 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "9 matérias",
@@ -1081,7 +1105,7 @@
         },
         "w-3": {
           "label": "21–27 out 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1271,7 +1295,7 @@
         },
         "w-4": {
           "label": "14–20 out 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1406,7 +1430,7 @@
         },
         "w-5": {
           "label": "7–13 out 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1572,7 +1596,7 @@
         },
         "w-6": {
           "label": "30 set–6 out 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1762,7 +1786,7 @@
         },
         "w-7": {
           "label": "23–29 set 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1897,7 +1921,7 @@
         },
         "w-8": {
           "label": "16–22 set 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2111,7 +2135,7 @@
         },
         "w-9": {
           "label": "9–15 set 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2379,7 +2403,7 @@
         },
         "w-10": {
           "label": "2–8 set 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -2687,7 +2711,7 @@
         },
         "w-11": {
           "label": "26 ago–1 set 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2949,7 +2973,7 @@
         },
         "w-12": {
           "label": "19–25 ago 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3163,7 +3187,7 @@
         },
         "w-13": {
           "label": "12–18 ago 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3377,7 +3401,7 @@
         },
         "w-14": {
           "label": "5–11 ago 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3567,7 +3591,7 @@
         },
         "w-15": {
           "label": "29 jul–4 ago 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3702,7 +3726,7 @@
         },
         "w-16": {
           "label": "22–28 jul 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3922,7 +3946,7 @@
         },
         "w-17": {
           "label": "15–21 jul 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4112,7 +4136,7 @@
         },
         "w-18": {
           "label": "8–14 jul 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4278,7 +4302,7 @@
         },
         "w-19": {
           "label": "1–7 jul 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4444,7 +4468,7 @@
         },
         "w-20": {
           "label": "24–30 jun 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4579,7 +4603,7 @@
         },
         "w-21": {
           "label": "17–23 jun 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4714,7 +4738,7 @@
         },
         "w-22": {
           "label": "10–16 jun 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4910,7 +4934,7 @@
         },
         "w-23": {
           "label": "3–9 jun 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5045,7 +5069,7 @@
         },
         "w-24": {
           "label": "27 mai–2 jun 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5180,7 +5204,7 @@
         },
         "w-25": {
           "label": "20–26 mai 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5315,7 +5339,7 @@
         },
         "w-26": {
           "label": "13–19 mai 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5450,7 +5474,7 @@
         },
         "w-27": {
           "label": "6–12 mai 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5585,7 +5609,7 @@
         },
         "w-28": {
           "label": "29 abr–5 mai 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5720,7 +5744,7 @@
         },
         "w-29": {
           "label": "22–28 abr 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5855,7 +5879,7 @@
         },
         "w-30": {
           "label": "15–21 abr 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5990,7 +6014,7 @@
         },
         "w-31": {
           "label": "8–14 abr 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6125,7 +6149,7 @@
         },
         "w-32": {
           "label": "1–7 abr 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6260,7 +6284,7 @@
         },
         "w-33": {
           "label": "25–31 mar 2026",
-          "updated": "13 nov 2026, 15:24",
+          "updated": "13 nov 2026, 21:12",
           "kpi": {
             "mentions": {
               "v": "0 matérias",

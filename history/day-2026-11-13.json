@@ -1,16 +1,16 @@
 {
   "label": "13 nov 2026",
-  "updated": "13 nov 2026, 15:24",
+  "updated": "13 nov 2026, 21:12",
   "kpi": {
     "mentions": {
-      "v": "13 matérias",
+      "v": "16 matérias",
       "d": 3,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+60",
       "suf": "/100",
-      "d": 10,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "100",
       "suf": "/100",
-      "d": 2,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -34,12 +34,12 @@
   },
   "buzz7": [
     12,
-    12,
     10,
     14,
     13,
     10,
-    13
+    13,
+    16
   ],
   "stack": [
     [
@@ -48,11 +48,6 @@
       8
     ],
     [
-      75,
-      17,
-      8
-    ],
-    [
       60,
       30,
       10
@@ -71,6 +66,11 @@
       60,
       30,
       10
+    ],
+    [
+      67,
+      25,
+      8
     ],
     [
       67,
@@ -81,7 +81,7 @@
   "platforms": [
     {
       "name": "Imprensa",
-      "vol": 13,
+      "vol": 16,
       "senti": "pos",
       "ang": -90,
       "s": {
@@ -92,6 +92,22 @@
     }
   ],
   "narratives": [
+    {
+      "t": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Diário do Centro do Mundo",
+          "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/"
+        }
+      ]
+    },
     {
       "t": "Daniel Radcliffe explica por que não assistirá a novo 'Harry Potter'",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-daniel-radcliffe-nao-sabe-se-vera-serie-da-hbo"
         }
       ]
-    },
-    {
-      "t": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Olhar Digital",
-          "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Diário do Centro do Mundo",
+      "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/",
+      "title": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
+      "cat": "nos",
+      "time": "13 nov, 08:17",
+      "scope": "Portal BR"
+    },
     {
       "o": "Diário de Pernambuco",
       "u": "https://www.diariodepernambuco.com.br/viver/2026/11/11728885-daniel-radcliffe-explica-por-que-nao-assistira-a-novo-harry-potter.html",
@@ -245,14 +253,6 @@
       "cat": "nos",
       "time": "5 nov, 15:00",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Metrópoles",
-      "u": "https://www.metropoles.com/colunas/metropoles-games/hbo-acertou-na-escolha-dos-pais-de-harry-potter",
-      "title": "HBO acertou na escolha dos pais de Harry Potter?",
-      "cat": "pos",
-      "time": "2 nov, 12:52",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -306,11 +306,11 @@
   ],
   "ephem": [],
   "_raw": {
-    "base_count": 13,
+    "base_count": 16,
     "unit": "matérias",
     "net": 60,
     "buzz": 100,
-    "news_count": 13,
+    "news_count": 16,
     "social_mentions": 0
   }
 }
