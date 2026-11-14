@@ -1,10 +1,10 @@
 {
   "label": "14 nov 2026",
-  "updated": "14 nov 2026, 04:22",
+  "updated": "14 nov 2026, 11:47",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -6,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
@@ -33,21 +33,16 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     14,
     13,
     10,
     13,
     16,
+    10,
     10
   ],
   "stack": [
     [
-      60,
-      30,
-      10
-    ],
-    [
       67,
       25,
       8
@@ -71,6 +66,11 @@
       67,
       25,
       8
+    ],
+    [
+      70,
+      20,
+      10
     ],
     [
       70,
