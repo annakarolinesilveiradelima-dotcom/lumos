@@ -1,5 +1,5 @@
 {
-  "generated_at": "15 nov 2026, 10:29",
+  "generated_at": "15 nov 2026, 16:33",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,7 +11,7 @@
       "days": {
         "d0": {
           "label": "15 nov 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "10 matérias",
@@ -19,7 +19,7 @@
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+50",
+              "v": "+40",
               "suf": "/100",
               "d": -10,
               "sub": "índice líquido do dia"
@@ -31,33 +31,28 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "98",
+              "v": "95",
               "suf": "/100",
-              "d": -2,
+              "d": -3,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 60,
-            "neu": 30,
+            "pos": 50,
+            "neu": 40,
             "neg": 10,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            16,
             10,
             10,
             13,
             15,
             10,
+            10,
             10
           ],
           "stack": [
-            [
-              67,
-              25,
-              8
-            ],
             [
               70,
               20,
@@ -87,22 +82,43 @@
               60,
               30,
               10
+            ],
+            [
+              50,
+              40,
+              10
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
               "vol": 10,
-              "senti": "pos",
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 60,
+                "p": 50,
                 "n": 10,
-                "g": 30
+                "g": 40
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts"
+                }
+              ]
+            },
             {
               "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://www.folhape.com.br/cultura/daniel-radcliffe-diz-que-nao-ira-assistir-a-nova-adaptacao-de-harry/523692/"
                 }
               ]
-            },
-            {
-              "t": "Snape em Harry Potter: Paapa Essiedu aponta racismo em críticas",
-              "vol": 1,
-              "senti": "neg",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "G1",
-                  "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts",
+              "title": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+              "cat": "neu",
+              "time": "15 nov, 01:43",
+              "scope": "Portal BR"
+            },
             {
               "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
@@ -256,14 +264,6 @@
               "cat": "nos",
               "time": "10 nov, 17:32",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-daniel-radcliffe-nao-sabe-se-vera-serie-da-hbo",
-              "title": "Harry Potter | Daniel Radcliffe não sabe se verá a série da HBO",
-              "cat": "neu",
-              "time": "9 nov, 22:02",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -315,15 +315,15 @@
       "weeks": {
         "w0": {
           "label": "11–15 nov 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
-              "v": "5 matérias",
+              "v": "6 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+60",
+              "v": "+50",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -335,74 +335,74 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "90",
+              "v": "93",
               "suf": "/100",
               "d": 0,
               "sub": "buzz semanal desde o teaser"
             }
           },
           "senti": {
-            "pos": 60,
-            "neu": 40,
+            "pos": 50,
+            "neu": 50,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
           ],
           "stack": [
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ],
             [
-              60,
-              40,
+              50,
+              50,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 5,
-              "senti": "pos",
+              "vol": 6,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 60,
+                "p": 50,
                 "n": 0,
-                "g": 40
+                "g": 50
               }
             }
           ],
@@ -472,6 +472,22 @@
               ]
             },
             {
+              "t": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts"
+                }
+              ]
+            },
+            {
               "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
               "vol": 1,
               "senti": "neu",
@@ -523,6 +539,14 @@
             },
             {
               "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts",
+              "title": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+              "cat": "neu",
+              "time": "15 nov, 01:43",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
               "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
               "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
               "cat": "neu",
@@ -553,7 +577,7 @@
               ],
               [
                 "Matérias",
-                "5"
+                "6"
               ],
               [
                 "Dados fictícios",
@@ -577,7 +601,7 @@
         },
         "w-1": {
           "label": "4–10 nov 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -845,7 +869,7 @@
         },
         "w-2": {
           "label": "28 out–3 nov 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "9 matérias",
@@ -1147,7 +1171,7 @@
         },
         "w-3": {
           "label": "21–27 out 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1337,7 +1361,7 @@
         },
         "w-4": {
           "label": "14–20 out 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1472,7 +1496,7 @@
         },
         "w-5": {
           "label": "7–13 out 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1638,7 +1662,7 @@
         },
         "w-6": {
           "label": "30 set–6 out 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1828,7 +1852,7 @@
         },
         "w-7": {
           "label": "23–29 set 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1963,7 +1987,7 @@
         },
         "w-8": {
           "label": "16–22 set 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2177,7 +2201,7 @@
         },
         "w-9": {
           "label": "9–15 set 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2445,7 +2469,7 @@
         },
         "w-10": {
           "label": "2–8 set 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -2753,7 +2777,7 @@
         },
         "w-11": {
           "label": "26 ago–1 set 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -3015,7 +3039,7 @@
         },
         "w-12": {
           "label": "19–25 ago 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3229,7 +3253,7 @@
         },
         "w-13": {
           "label": "12–18 ago 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3443,7 +3467,7 @@
         },
         "w-14": {
           "label": "5–11 ago 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3633,7 +3657,7 @@
         },
         "w-15": {
           "label": "29 jul–4 ago 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3768,7 +3792,7 @@
         },
         "w-16": {
           "label": "22–28 jul 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3988,7 +4012,7 @@
         },
         "w-17": {
           "label": "15–21 jul 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4178,7 +4202,7 @@
         },
         "w-18": {
           "label": "8–14 jul 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4344,7 +4368,7 @@
         },
         "w-19": {
           "label": "1–7 jul 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4510,7 +4534,7 @@
         },
         "w-20": {
           "label": "24–30 jun 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4645,7 +4669,7 @@
         },
         "w-21": {
           "label": "17–23 jun 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4780,7 +4804,7 @@
         },
         "w-22": {
           "label": "10–16 jun 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4976,7 +5000,7 @@
         },
         "w-23": {
           "label": "3–9 jun 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5111,7 +5135,7 @@
         },
         "w-24": {
           "label": "27 mai–2 jun 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5246,7 +5270,7 @@
         },
         "w-25": {
           "label": "20–26 mai 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5381,7 +5405,7 @@
         },
         "w-26": {
           "label": "13–19 mai 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5516,7 +5540,7 @@
         },
         "w-27": {
           "label": "6–12 mai 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5651,7 +5675,7 @@
         },
         "w-28": {
           "label": "29 abr–5 mai 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5786,7 +5810,7 @@
         },
         "w-29": {
           "label": "22–28 abr 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5921,7 +5945,7 @@
         },
         "w-30": {
           "label": "15–21 abr 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6056,7 +6080,7 @@
         },
         "w-31": {
           "label": "8–14 abr 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6191,7 +6215,7 @@
         },
         "w-32": {
           "label": "1–7 abr 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6326,7 +6350,7 @@
         },
         "w-33": {
           "label": "25–31 mar 2026",
-          "updated": "15 nov 2026, 10:29",
+          "updated": "15 nov 2026, 16:33",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
