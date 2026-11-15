@@ -1,16 +1,16 @@
 {
   "label": "15 nov 2026",
-  "updated": "15 nov 2026, 02:01",
+  "updated": "15 nov 2026, 10:29",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -5,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+60",
+      "v": "+50",
       "suf": "/100",
-      "d": 0,
+      "d": -10,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,25 +20,25 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "100",
+      "v": "98",
       "suf": "/100",
-      "d": 0,
+      "d": -2,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 70,
-    "neu": 20,
+    "pos": 60,
+    "neu": 30,
     "neg": 10,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    13,
     16,
     10,
     10,
     13,
     15,
+    10,
     10
   ],
   "stack": [
@@ -48,11 +48,6 @@
       8
     ],
     [
-      67,
-      25,
-      8
-    ],
-    [
       70,
       20,
       10
@@ -75,6 +70,11 @@
     [
       70,
       20,
+      10
+    ],
+    [
+      60,
+      30,
       10
     ]
   ],
@@ -85,13 +85,29 @@
       "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 70,
+        "p": 60,
         "n": 10,
-        "g": 20
+        "g": 30
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao"
+        }
+      ]
+    },
     {
       "t": "Daniel Radcliffe revela que não verá nova série de Harry Potter",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml"
         }
       ]
-    },
-    {
-      "t": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
-      "vol": 1,
-      "senti": "pos",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "IGN Brasil",
-          "u": "https://br.ign.com/harry-potter-the-series/157512/ja-participei-de-muitos-filmes-daniel-radcliffe-nao-tem-certeza-se-vai-assistir-a-serie-de-harry-pot"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
+      "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+      "cat": "neu",
+      "time": "14 nov, 18:40",
+      "scope": "Portal BR"
+    },
     {
       "o": "O Tempo",
       "u": "https://www.otempo.com.br/entretenimento/2026/11/13/daniel-radcliffe-revela-que-nao-vera-nova-serie-de-harry-potter",
@@ -245,14 +253,6 @@
       "cat": "neu",
       "time": "9 nov, 22:02",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Olhar Digital",
-      "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/",
-      "title": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
-      "cat": "nos",
-      "time": "6 nov, 14:17",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
@@ -262,12 +262,6 @@
       "sev": "mid",
       "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
       "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-    },
-    {
-      "t": "Sensibilidade em torno de elenco",
-      "sev": "mid",
-      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
-      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
     }
   ],
   "heroOpp": {
@@ -308,8 +302,8 @@
   "_raw": {
     "base_count": 10,
     "unit": "matérias",
-    "net": 60,
-    "buzz": 100,
+    "net": 50,
+    "buzz": 98,
     "news_count": 10,
     "social_mentions": 0
   }

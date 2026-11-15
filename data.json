@@ -1,5 +1,5 @@
 {
-  "generated_at": "15 nov 2026, 02:01",
+  "generated_at": "15 nov 2026, 10:29",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "15 nov 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "10 matérias",
-              "d": -5,
+              "d": 0,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+60",
+              "v": "+50",
               "suf": "/100",
-              "d": 0,
+              "d": -10,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,25 +31,25 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "100",
+              "v": "98",
               "suf": "/100",
-              "d": 0,
+              "d": -2,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 70,
-            "neu": 20,
+            "pos": 60,
+            "neu": 30,
             "neg": 10,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
-            13,
             16,
             10,
             10,
             13,
             15,
+            10,
             10
           ],
           "stack": [
@@ -59,11 +59,6 @@
               8
             ],
             [
-              67,
-              25,
-              8
-            ],
-            [
               70,
               20,
               10
@@ -86,6 +81,11 @@
             [
               70,
               20,
+              10
+            ],
+            [
+              60,
+              30,
               10
             ]
           ],
@@ -96,13 +96,29 @@
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 70,
+                "p": 60,
                 "n": 10,
-                "g": 20
+                "g": 30
               }
             }
           ],
           "narratives": [
+            {
+              "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao"
+                }
+              ]
+            },
             {
               "t": "Daniel Radcliffe revela que não verá nova série de Harry Potter",
               "vol": 1,
@@ -182,25 +198,17 @@
                   "u": "https://g1.globo.com/pop-arte/noticia/2026/11/10/escalado-como-severo-snape-em-harry-potter-ator-aponta-racismo-em-criticas-existe-uma-antipatia.ghtml"
                 }
               ]
-            },
-            {
-              "t": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "IGN Brasil",
-                  "u": "https://br.ign.com/harry-potter-the-series/157512/ja-participei-de-muitos-filmes-daniel-radcliffe-nao-tem-certeza-se-vai-assistir-a-serie-de-harry-pot"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
+              "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+              "cat": "neu",
+              "time": "14 nov, 18:40",
+              "scope": "Portal BR"
+            },
             {
               "o": "O Tempo",
               "u": "https://www.otempo.com.br/entretenimento/2026/11/13/daniel-radcliffe-revela-que-nao-vera-nova-serie-de-harry-potter",
@@ -256,14 +264,6 @@
               "cat": "neu",
               "time": "9 nov, 22:02",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Olhar Digital",
-              "u": "https://olhardigital.com.br/curiosidades/2026/11/06/serie-de-harry-potter-estreia-em-25-de-dezembro-com-um-ator-dos-filmes-de-volta-ao-elenco/",
-              "title": "Série de Harry Potter estreia em 25 de dezembro com um ator dos filmes de volta ao elenco",
-              "cat": "nos",
-              "time": "6 nov, 14:17",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -273,12 +273,6 @@
               "sev": "mid",
               "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
               "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
-            },
-            {
-              "t": "Sensibilidade em torno de elenco",
-              "sev": "mid",
-              "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
-              "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
             }
           ],
           "heroOpp": {
@@ -321,15 +315,15 @@
       "weeks": {
         "w0": {
           "label": "11–15 nov 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
-              "v": "4 matérias",
+              "v": "5 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+75",
+              "v": "+60",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -348,67 +342,67 @@
             }
           },
           "senti": {
-            "pos": 75,
-            "neu": 25,
+            "pos": 60,
+            "neu": 40,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ],
           "stack": [
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ],
             [
-              75,
-              25,
+              60,
+              40,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 4,
+              "vol": 5,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 75,
+                "p": 60,
                 "n": 0,
-                "g": 25
+                "g": 40
               }
             }
           ],
@@ -476,6 +470,22 @@
                   "u": "https://www.otempo.com.br/entretenimento/2026/11/13/daniel-radcliffe-revela-que-nao-vera-nova-serie-de-harry-potter"
                 }
               ]
+            },
+            {
+              "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Omelete",
+                  "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -510,6 +520,14 @@
               "cat": "pos",
               "time": "13 nov, 15:50",
               "scope": "Portal BR"
+            },
+            {
+              "o": "Omelete",
+              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
+              "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+              "cat": "neu",
+              "time": "14 nov, 18:40",
+              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -535,7 +553,7 @@
               ],
               [
                 "Matérias",
-                "4"
+                "5"
               ],
               [
                 "Dados fictícios",
@@ -559,7 +577,7 @@
         },
         "w-1": {
           "label": "4–10 nov 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -827,7 +845,7 @@
         },
         "w-2": {
           "label": "28 out–3 nov 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "9 matérias",
@@ -1129,7 +1147,7 @@
         },
         "w-3": {
           "label": "21–27 out 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1319,7 +1337,7 @@
         },
         "w-4": {
           "label": "14–20 out 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1454,7 +1472,7 @@
         },
         "w-5": {
           "label": "7–13 out 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1620,7 +1638,7 @@
         },
         "w-6": {
           "label": "30 set–6 out 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1810,7 +1828,7 @@
         },
         "w-7": {
           "label": "23–29 set 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1945,7 +1963,7 @@
         },
         "w-8": {
           "label": "16–22 set 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2159,7 +2177,7 @@
         },
         "w-9": {
           "label": "9–15 set 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2427,7 +2445,7 @@
         },
         "w-10": {
           "label": "2–8 set 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -2735,7 +2753,7 @@
         },
         "w-11": {
           "label": "26 ago–1 set 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2997,7 +3015,7 @@
         },
         "w-12": {
           "label": "19–25 ago 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3211,7 +3229,7 @@
         },
         "w-13": {
           "label": "12–18 ago 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3425,7 +3443,7 @@
         },
         "w-14": {
           "label": "5–11 ago 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3615,7 +3633,7 @@
         },
         "w-15": {
           "label": "29 jul–4 ago 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -3750,7 +3768,7 @@
         },
         "w-16": {
           "label": "22–28 jul 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3970,7 +3988,7 @@
         },
         "w-17": {
           "label": "15–21 jul 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4160,7 +4178,7 @@
         },
         "w-18": {
           "label": "8–14 jul 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4326,7 +4344,7 @@
         },
         "w-19": {
           "label": "1–7 jul 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4492,7 +4510,7 @@
         },
         "w-20": {
           "label": "24–30 jun 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4627,7 +4645,7 @@
         },
         "w-21": {
           "label": "17–23 jun 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4762,7 +4780,7 @@
         },
         "w-22": {
           "label": "10–16 jun 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4958,7 +4976,7 @@
         },
         "w-23": {
           "label": "3–9 jun 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5093,7 +5111,7 @@
         },
         "w-24": {
           "label": "27 mai–2 jun 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5228,7 +5246,7 @@
         },
         "w-25": {
           "label": "20–26 mai 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5363,7 +5381,7 @@
         },
         "w-26": {
           "label": "13–19 mai 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5498,7 +5516,7 @@
         },
         "w-27": {
           "label": "6–12 mai 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5633,7 +5651,7 @@
         },
         "w-28": {
           "label": "29 abr–5 mai 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5768,7 +5786,7 @@
         },
         "w-29": {
           "label": "22–28 abr 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5903,7 +5921,7 @@
         },
         "w-30": {
           "label": "15–21 abr 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6038,7 +6056,7 @@
         },
         "w-31": {
           "label": "8–14 abr 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6173,7 +6191,7 @@
         },
         "w-32": {
           "label": "1–7 abr 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6308,7 +6326,7 @@
         },
         "w-33": {
           "label": "25–31 mar 2026",
-          "updated": "15 nov 2026, 02:01",
+          "updated": "15 nov 2026, 10:29",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
