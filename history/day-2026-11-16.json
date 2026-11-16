@@ -1,16 +1,16 @@
 {
   "label": "16 nov 2026",
-  "updated": "16 nov 2026, 10:30",
+  "updated": "16 nov 2026, 20:13",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -4,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
       "v": "+40",
       "suf": "/100",
-      "d": -2,
+      "d": 0,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -22,7 +22,7 @@
     "buzz": {
       "v": "95",
       "suf": "/100",
-      "d": -1,
+      "d": 0,
       "sub": "índice de buzz do dia"
     }
   },
@@ -33,20 +33,15 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    15,
     10,
     10,
     10,
     14,
     14,
+    10,
     10
   ],
   "stack": [
-    [
-      67,
-      25,
-      8
-    ],
     [
       70,
       20,
@@ -71,6 +66,11 @@
       50,
       42,
       8
+    ],
+    [
+      50,
+      40,
+      10
     ],
     [
       50,
