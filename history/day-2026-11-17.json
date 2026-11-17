@@ -1,16 +1,16 @@
 {
   "label": "17 nov 2026",
-  "updated": "17 nov 2026, 13:42",
+  "updated": "17 nov 2026, 20:45",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
-      "d": -1,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+50",
+      "v": "+40",
       "suf": "/100",
-      "d": 14,
+      "d": -10,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,33 +20,28 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "98",
+      "v": "95",
       "suf": "/100",
-      "d": 4,
+      "d": -3,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
     "pos": 50,
-    "neu": 50,
-    "neg": 0,
+    "neu": 40,
+    "neg": 10,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    10,
     14,
     14,
     10,
     10,
     11,
+    10,
     10
   ],
   "stack": [
-    [
-      50,
-      40,
-      10
-    ],
     [
       42,
       50,
@@ -76,6 +71,11 @@
       50,
       50,
       0
+    ],
+    [
+      50,
+      40,
+      10
     ]
   ],
   "platforms": [
@@ -86,12 +86,28 @@
       "ang": -90,
       "s": {
         "p": 50,
-        "n": 0,
-        "g": 50
+        "n": 10,
+        "g": 40
       }
     }
   ],
   "narratives": [
+    {
+      "t": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "vol": 1,
+      "senti": "neg",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O GLOBO",
+          "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml"
+        }
+      ]
+    },
     {
       "t": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts"
         }
       ]
-    },
-    {
-      "t": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "O GLOBO",
+      "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml",
+      "title": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "cat": "neg",
+      "time": "17 nov, 06:00",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts",
@@ -245,23 +253,15 @@
       "cat": "pos",
       "time": "13 nov, 15:50",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Diário do Centro do Mundo",
-      "u": "https://www.diariodocentrodomundo.com.br/essencial/astro-dos-filmes-de-harry-potter-diz-que-nao-pretende-assistir-a-nova-serie-da-hbo/",
-      "title": "Astro dos filmes de “Harry Potter” diz que não pretende assistir à nova série da HBO",
-      "cat": "nos",
-      "time": "13 nov, 08:17",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
     {
-      "t": "Comparação com os filmes originais",
-      "sev": "mid",
-      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
-      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+      "t": "Risco baixo na cobertura editorial",
+      "sev": "low",
+      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
     }
   ],
   "heroOpp": {
@@ -302,8 +302,8 @@
   "_raw": {
     "base_count": 10,
     "unit": "matérias",
-    "net": 50,
-    "buzz": 98,
+    "net": 40,
+    "buzz": 95,
     "news_count": 10,
     "social_mentions": 0
   }
