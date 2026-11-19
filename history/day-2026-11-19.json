@@ -1,6 +1,6 @@
 {
   "label": "19 nov 2026",
-  "updated": "19 nov 2026, 03:07",
+  "updated": "19 nov 2026, 13:19",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
@@ -33,20 +33,15 @@
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    11,
     10,
     10,
     15,
     10,
     10,
+    10,
     10
   ],
   "stack": [
-    [
-      45,
-      46,
-      9
-    ],
     [
       50,
       50,
@@ -61,6 +56,11 @@
       50,
       42,
       8
+    ],
+    [
+      50,
+      40,
+      10
     ],
     [
       50,
