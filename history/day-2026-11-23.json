@@ -1,0 +1,310 @@
+{
+  "label": "23 nov 2026",
+  "updated": "23 nov 2026, 08:51",
+  "kpi": {
+    "mentions": {
+      "v": "10 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+40",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "95",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 50,
+    "neu": 40,
+    "neg": 10,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    10,
+    20,
+    11,
+    10,
+    10,
+    10,
+    10
+  ],
+  "stack": [
+    [
+      50,
+      40,
+      10
+    ],
+    [
+      50,
+      33,
+      17
+    ],
+    [
+      45,
+      37,
+      18
+    ],
+    [
+      50,
+      40,
+      10
+    ],
+    [
+      50,
+      40,
+      10
+    ],
+    [
+      50,
+      40,
+      10
+    ],
+    [
+      50,
+      40,
+      10
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 10,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 50,
+        "n": 10,
+        "g": 40
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "vol": 1,
+      "senti": "neg",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O GLOBO",
+          "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | Confira o primeiro trecho da trilha de Hans Zimmer para a série da HBO",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-previa-trilha-sonora-hans-zimmer-primeiro-trecho"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter: cena inédita da série é divulgada pela HBO; assista",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Metrópoles",
+          "u": "https://www.metropoles.com/entretenimento/harry-potter-cena-inedita-da-serie-e-divulgada-pela-hbo-assista"
+        }
+      ]
+    },
+    {
+      "t": "HBO divulga nova cena da série 'Harry Potter'; veja vídeo",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Folha de S.Paulo",
+          "u": "https://www1.folha.uol.com.br/ilustrada/2026/11/hbo-divulga-novo-clipe-do-banquete-de-hogwarts-em-harry-potter-veja-video.shtml"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "O GLOBO",
+      "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml",
+      "title": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "cat": "neg",
+      "time": "17 nov, 06:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts",
+      "title": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
+      "cat": "neu",
+      "time": "16 nov, 14:50",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-previa-trilha-sonora-hans-zimmer-primeiro-trecho",
+      "title": "Harry Potter | Confira o primeiro trecho da trilha de Hans Zimmer para a série da HBO",
+      "cat": "nos",
+      "time": "16 nov, 13:19",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Metrópoles",
+      "u": "https://www.metropoles.com/entretenimento/harry-potter-cena-inedita-da-serie-e-divulgada-pela-hbo-assista",
+      "title": "Harry Potter: cena inédita da série é divulgada pela HBO; assista",
+      "cat": "pos",
+      "time": "15 nov, 14:32",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Folha de S.Paulo",
+      "u": "https://www1.folha.uol.com.br/ilustrada/2026/11/hbo-divulga-novo-clipe-do-banquete-de-hogwarts-em-harry-potter-veja-video.shtml",
+      "title": "HBO divulga nova cena da série 'Harry Potter'; veja vídeo",
+      "cat": "neu",
+      "time": "15 nov, 09:33",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts",
+      "title": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
+      "cat": "neu",
+      "time": "15 nov, 01:43",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
+      "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
+      "cat": "neu",
+      "time": "14 nov, 18:40",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/11/13/daniel-radcliffe-revela-que-nao-vera-nova-serie-de-harry-potter",
+      "title": "Daniel Radcliffe revela que não verá nova série de Harry Potter",
+      "cat": "pos",
+      "time": "13 nov, 15:50",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Risco baixo na cobertura editorial",
+      "sev": "low",
+      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
+      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "10"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 10,
+    "unit": "matérias",
+    "net": 40,
+    "buzz": 95,
+    "news_count": 10,
+    "social_mentions": 0
+  }
+}
