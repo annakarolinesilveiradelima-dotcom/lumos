@@ -1,16 +1,16 @@
 {
   "label": "24 nov 2026",
-  "updated": "24 nov 2026, 05:38",
+  "updated": "24 nov 2026, 16:57",
   "kpi": {
     "mentions": {
       "v": "11 matérias",
-      "d": 1,
+      "d": 0,
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+28",
+      "v": "+46",
       "suf": "/100",
-      "d": -12,
+      "d": 18,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,34 +20,29 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "92",
+      "v": "96",
       "suf": "/100",
-      "d": -3,
+      "d": 4,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 45,
-    "neu": 37,
-    "neg": 18,
+    "pos": 55,
+    "neu": 36,
+    "neg": 9,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
+    10,
+    10,
+    10,
+    10,
+    10,
     11,
-    10,
-    10,
-    10,
-    10,
-    10,
     11
   ],
   "stack": [
     [
-      45,
-      37,
-      18
-    ],
-    [
       50,
       40,
       10
@@ -76,22 +71,43 @@
       45,
       37,
       18
+    ],
+    [
+      55,
+      36,
+      9
     ]
   ],
   "platforms": [
     {
       "name": "Imprensa",
       "vol": 11,
-      "senti": "neu",
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 45,
-        "n": 18,
-        "g": 37
+        "p": 55,
+        "n": 9,
+        "g": 36
       }
     }
   ],
   "narratives": [
+    {
+      "t": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Capricho",
+          "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/"
+        }
+      ]
+    },
     {
       "t": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
       "vol": 1,
@@ -171,25 +187,17 @@
           "u": "https://www1.folha.uol.com.br/ilustrada/2026/11/hbo-divulga-novo-clipe-do-banquete-de-hogwarts-em-harry-potter-veja-video.shtml"
         }
       ]
-    },
-    {
-      "t": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "Capricho",
+      "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/",
+      "title": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
+      "cat": "pos",
+      "time": "23 nov, 21:20",
+      "scope": "Portal BR"
+    },
     {
       "o": "O GLOBO",
       "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml",
@@ -245,23 +253,15 @@
       "cat": "neu",
       "time": "14 nov, 18:40",
       "scope": "Portal BR"
-    },
-    {
-      "o": "O Tempo",
-      "u": "https://www.otempo.com.br/entretenimento/2026/11/13/daniel-radcliffe-revela-que-nao-vera-nova-serie-de-harry-potter",
-      "title": "Daniel Radcliffe revela que não verá nova série de Harry Potter",
-      "cat": "pos",
-      "time": "13 nov, 15:50",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
     {
-      "t": "Risco baixo na cobertura editorial",
-      "sev": "low",
-      "d": "A semana teve cobertura real, mas sem sinais críticos fortes na camada de notícias.",
-      "rec": "Manter monitoramento e registrar mudanças de tom nas próximas coletas."
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
     }
   ],
   "heroOpp": {
@@ -302,8 +302,8 @@
   "_raw": {
     "base_count": 11,
     "unit": "matérias",
-    "net": 28,
-    "buzz": 92,
+    "net": 46,
+    "buzz": 96,
     "news_count": 11,
     "social_mentions": 0
   }
