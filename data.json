@@ -1,5 +1,5 @@
 {
-  "generated_at": "25 nov 2026, 00:27",
+  "generated_at": "25 nov 2026, 10:55",
   "source": "backend automático",
   "tracking_start": "2026-03-25",
   "tracking_label": "Desde o lançamento do teaser",
@@ -11,17 +11,17 @@
       "days": {
         "d0": {
           "label": "25 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
-              "v": "11 matérias",
-              "d": 0,
+              "v": "10 matérias",
+              "d": -1,
               "sub": "cobertura real coletada"
             },
             "sentiment": {
-              "v": "+46",
+              "v": "+30",
               "suf": "/100",
-              "d": 0,
+              "d": -16,
               "sub": "índice líquido do dia"
             },
             "sov": {
@@ -31,33 +31,28 @@
               "sub": "requer base multi-título"
             },
             "buzz": {
-              "v": "96",
+              "v": "92",
               "suf": "/100",
-              "d": 0,
+              "d": -4,
               "sub": "índice de buzz do dia"
             }
           },
           "senti": {
-            "pos": 55,
-            "neu": 36,
-            "neg": 9,
+            "pos": 40,
+            "neu": 50,
+            "neg": 10,
             "tone": "Cobertura real coletada; social não conectado"
           },
           "buzz7": [
             10,
             10,
             10,
-            10,
             11,
             11,
-            11
+            11,
+            10
           ],
           "stack": [
-            [
-              50,
-              40,
-              10
-            ],
             [
               50,
               40,
@@ -87,22 +82,59 @@
               55,
               36,
               9
+            ],
+            [
+              40,
+              50,
+              10
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 11,
-              "senti": "pos",
+              "vol": 10,
+              "senti": "neu",
               "ang": -90,
               "s": {
-                "p": 55,
-                "n": 9,
-                "g": 36
+                "p": 40,
+                "n": 10,
+                "g": 50
               }
             }
           ],
           "narratives": [
+            {
+              "t": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/"
+                }
+              ]
+            },
+            {
+              "t": "'Todo mundo é fã de alguma coisa'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Notícias da TV",
+                  "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848"
+                }
+              ]
+            },
             {
               "t": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
               "vol": 1,
@@ -166,41 +198,25 @@
                   "u": "https://www.omelete.com.br/series-tv/harry-potter-previa-trilha-sonora-hans-zimmer-primeiro-trecho"
                 }
               ]
-            },
-            {
-              "t": "Harry Potter: cena inédita da série é divulgada pela HBO; assista",
-              "vol": 1,
-              "senti": "pos",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Metrópoles",
-                  "u": "https://www.metropoles.com/entretenimento/harry-potter-cena-inedita-da-serie-e-divulgada-pela-hbo-assista"
-                }
-              ]
-            },
-            {
-              "t": "HBO divulga nova cena da série 'Harry Potter'; veja vídeo",
-              "vol": 1,
-              "senti": "neu",
-              "pf": "Imprensa",
-              "trend": "flat",
-              "growth": "Baseado em cobertura real da semana; social listening não conectado",
-              "q": "",
-              "pct": 50,
-              "src": [
-                {
-                  "o": "Folha de S.Paulo",
-                  "u": "https://www1.folha.uol.com.br/ilustrada/2026/11/hbo-divulga-novo-clipe-do-banquete-de-hogwarts-em-harry-potter-veja-video.shtml"
-                }
-              ]
             }
           ],
           "coverage": [
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/",
+              "title": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+              "cat": "pos",
+              "time": "24 nov, 19:34",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Notícias da TV",
+              "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848",
+              "title": "'Todo mundo é fã de alguma coisa'",
+              "cat": "neu",
+              "time": "24 nov, 17:00",
+              "scope": "Portal BR"
+            },
             {
               "o": "Capricho",
               "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/",
@@ -248,22 +264,6 @@
               "cat": "neu",
               "time": "15 nov, 09:33",
               "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-e-a-pedra-filosofal-nova-cena-hbo-jantar-hogwarts",
-              "title": "Harry Potter e a Pedra Filosofal | Nova cena da série da HBO mostra primeiro jantar de Harry em Hogwarts",
-              "cat": "neu",
-              "time": "15 nov, 01:43",
-              "scope": "Portal BR"
-            },
-            {
-              "o": "Omelete",
-              "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-vegetais-gigantes-reais-producao",
-              "title": "Harry Potter | Série da HBO usou vegetais gigantes reais durante as gravações",
-              "cat": "neu",
-              "time": "14 nov, 18:40",
-              "scope": "Portal BR"
             }
           ],
           "creators": [],
@@ -285,7 +285,7 @@
               ],
               [
                 "Matérias",
-                "11"
+                "10"
               ],
               [
                 "Social",
@@ -315,7 +315,7 @@
       "weeks": {
         "w0": {
           "label": "25–25 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -450,15 +450,15 @@
         },
         "w-1": {
           "label": "18–24 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
-              "v": "1 matéria",
+              "v": "3 matérias",
               "d": 0,
               "sub": "semana desde o teaser"
             },
             "sentiment": {
-              "v": "+100",
+              "v": "+67",
               "suf": "/100",
               "d": 0,
               "sub": "índice semanal"
@@ -477,67 +477,67 @@
             }
           },
           "senti": {
-            "pos": 100,
-            "neu": 0,
+            "pos": 67,
+            "neu": 33,
             "neg": 0,
             "tone": "Consolidação semanal por data real das matérias"
           },
           "buzz7": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "stack": [
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ],
             [
-              100,
-              0,
+              67,
+              33,
               0
             ]
           ],
           "platforms": [
             {
               "name": "Imprensa",
-              "vol": 1,
+              "vol": 3,
               "senti": "pos",
               "ang": -90,
               "s": {
-                "p": 100,
+                "p": 67,
                 "n": 0,
-                "g": 0
+                "g": 33
               }
             }
           ],
@@ -557,6 +557,38 @@
                   "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/"
                 }
               ]
+            },
+            {
+              "t": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+              "vol": 1,
+              "senti": "pos",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Canaltech",
+                  "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/"
+                }
+              ]
+            },
+            {
+              "t": "'Todo mundo é fã de alguma coisa'",
+              "vol": 1,
+              "senti": "neu",
+              "pf": "Imprensa",
+              "trend": "flat",
+              "growth": "Baseado em cobertura real da semana; social listening não conectado",
+              "q": "",
+              "pct": 50,
+              "src": [
+                {
+                  "o": "Notícias da TV",
+                  "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848"
+                }
+              ]
             }
           ],
           "coverage": [
@@ -566,6 +598,22 @@
               "title": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
               "cat": "pos",
               "time": "23 nov, 21:20",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Canaltech",
+              "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/",
+              "title": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+              "cat": "pos",
+              "time": "24 nov, 19:34",
+              "scope": "Portal BR"
+            },
+            {
+              "o": "Notícias da TV",
+              "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848",
+              "title": "'Todo mundo é fã de alguma coisa'",
+              "cat": "neu",
+              "time": "24 nov, 17:00",
               "scope": "Portal BR"
             }
           ],
@@ -592,7 +640,7 @@
               ],
               [
                 "Matérias",
-                "1"
+                "3"
               ],
               [
                 "Dados fictícios",
@@ -616,7 +664,7 @@
         },
         "w-2": {
           "label": "11–17 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "11 matérias",
@@ -918,7 +966,7 @@
         },
         "w-3": {
           "label": "4–10 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -1186,7 +1234,7 @@
         },
         "w-4": {
           "label": "28 out–3 nov 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "9 matérias",
@@ -1488,7 +1536,7 @@
         },
         "w-5": {
           "label": "21–27 out 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -1678,7 +1726,7 @@
         },
         "w-6": {
           "label": "14–20 out 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -1813,7 +1861,7 @@
         },
         "w-7": {
           "label": "7–13 out 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -1979,7 +2027,7 @@
         },
         "w-8": {
           "label": "30 set–6 out 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -2169,7 +2217,7 @@
         },
         "w-9": {
           "label": "23–29 set 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -2304,7 +2352,7 @@
         },
         "w-10": {
           "label": "16–22 set 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -2518,7 +2566,7 @@
         },
         "w-11": {
           "label": "9–15 set 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -2786,7 +2834,7 @@
         },
         "w-12": {
           "label": "2–8 set 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "12 matérias",
@@ -3094,7 +3142,7 @@
         },
         "w-13": {
           "label": "26 ago–1 set 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "5 matérias",
@@ -3356,7 +3404,7 @@
         },
         "w-14": {
           "label": "19–25 ago 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3570,7 +3618,7 @@
         },
         "w-15": {
           "label": "12–18 ago 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -3784,7 +3832,7 @@
         },
         "w-16": {
           "label": "5–11 ago 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -3974,7 +4022,7 @@
         },
         "w-17": {
           "label": "29 jul–4 ago 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4109,7 +4157,7 @@
         },
         "w-18": {
           "label": "22–28 jul 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "3 matérias",
@@ -4329,7 +4377,7 @@
         },
         "w-19": {
           "label": "15–21 jul 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -4519,7 +4567,7 @@
         },
         "w-20": {
           "label": "8–14 jul 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4685,7 +4733,7 @@
         },
         "w-21": {
           "label": "1–7 jul 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "1 matéria",
@@ -4851,7 +4899,7 @@
         },
         "w-22": {
           "label": "24–30 jun 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -4986,7 +5034,7 @@
         },
         "w-23": {
           "label": "17–23 jun 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5121,7 +5169,7 @@
         },
         "w-24": {
           "label": "10–16 jun 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "2 matérias",
@@ -5317,7 +5365,7 @@
         },
         "w-25": {
           "label": "3–9 jun 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5452,7 +5500,7 @@
         },
         "w-26": {
           "label": "27 mai–2 jun 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5587,7 +5635,7 @@
         },
         "w-27": {
           "label": "20–26 mai 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5722,7 +5770,7 @@
         },
         "w-28": {
           "label": "13–19 mai 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5857,7 +5905,7 @@
         },
         "w-29": {
           "label": "6–12 mai 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -5992,7 +6040,7 @@
         },
         "w-30": {
           "label": "29 abr–5 mai 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6127,7 +6175,7 @@
         },
         "w-31": {
           "label": "22–28 abr 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6262,7 +6310,7 @@
         },
         "w-32": {
           "label": "15–21 abr 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6397,7 +6445,7 @@
         },
         "w-33": {
           "label": "8–14 abr 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6532,7 +6580,7 @@
         },
         "w-34": {
           "label": "1–7 abr 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
@@ -6667,7 +6715,7 @@
         },
         "w-35": {
           "label": "25–31 mar 2026",
-          "updated": "25 nov 2026, 00:27",
+          "updated": "25 nov 2026, 10:55",
           "kpi": {
             "mentions": {
               "v": "0 matérias",
