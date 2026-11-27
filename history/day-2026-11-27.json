@@ -1,6 +1,6 @@
 {
   "label": "27 nov 2026",
-  "updated": "27 nov 2026, 03:57",
+  "updated": "27 nov 2026, 14:20",
   "kpi": {
     "mentions": {
       "v": "10 matérias",
@@ -8,9 +8,9 @@
       "sub": "cobertura real coletada"
     },
     "sentiment": {
-      "v": "+30",
+      "v": "+50",
       "suf": "/100",
-      "d": 0,
+      "d": 20,
       "sub": "índice líquido do dia"
     },
     "sov": {
@@ -20,34 +20,29 @@
       "sub": "requer base multi-título"
     },
     "buzz": {
-      "v": "92",
+      "v": "98",
       "suf": "/100",
-      "d": 0,
+      "d": 6,
       "sub": "índice de buzz do dia"
     }
   },
   "senti": {
-    "pos": 40,
-    "neu": 50,
+    "pos": 60,
+    "neu": 30,
     "neg": 10,
     "tone": "Cobertura real coletada; social não conectado"
   },
   "buzz7": [
-    11,
     10,
     10,
     19,
     17,
     10,
+    10,
     10
   ],
   "stack": [
     [
-      55,
-      36,
-      9
-    ],
-    [
       40,
       50,
       10
@@ -75,6 +70,11 @@
     [
       40,
       50,
+      10
+    ],
+    [
+      60,
+      30,
       10
     ]
   ],
@@ -82,16 +82,48 @@
     {
       "name": "Imprensa",
       "vol": 10,
-      "senti": "neu",
+      "senti": "pos",
       "ang": -90,
       "s": {
-        "p": 40,
+        "p": 60,
         "n": 10,
-        "g": 50
+        "g": 30
       }
     }
   ],
   "narratives": [
+    {
+      "t": "HBO Max: confira 5 filmes e séries que chegam ao catálogo em dezembro",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O Tempo",
+          "u": "https://www.otempo.com.br/entretenimento/2026/11/26/hbo-max-confira-5-filmes-e-series-que-chegam-ao-catalogo-em-dezembro"
+        }
+      ]
+    },
+    {
+      "t": "HBO Max: confira 5 filmes e séries que chegam ao catálogo em dezembro",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "TNH1",
+          "u": "https://www.tnh1.com.br/noticia/nid/hbo-max-confira-5-filmes-e-series-que-chegam-ao-catalogo-em-dezembro-9899/"
+        }
+      ]
+    },
     {
       "t": "Harry Potter e a Pedra Filosofal | HBO lança novo teaser trailer da série; assista",
       "vol": 1,
@@ -155,41 +187,25 @@
           "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/"
         }
       ]
-    },
-    {
-      "t": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
-      "vol": 1,
-      "senti": "neg",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "O GLOBO",
-          "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml"
-        }
-      ]
-    },
-    {
-      "t": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
-      "vol": 1,
-      "senti": "neu",
-      "pf": "Imprensa",
-      "trend": "flat",
-      "growth": "Baseado em cobertura real da semana; social listening não conectado",
-      "q": "",
-      "pct": 50,
-      "src": [
-        {
-          "o": "Omelete",
-          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts"
-        }
-      ]
     }
   ],
   "coverage": [
+    {
+      "o": "O Tempo",
+      "u": "https://www.otempo.com.br/entretenimento/2026/11/26/hbo-max-confira-5-filmes-e-series-que-chegam-ao-catalogo-em-dezembro",
+      "title": "HBO Max: confira 5 filmes e séries que chegam ao catálogo em dezembro",
+      "cat": "nos",
+      "time": "26 nov, 20:44",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "TNH1",
+      "u": "https://www.tnh1.com.br/noticia/nid/hbo-max-confira-5-filmes-e-series-que-chegam-ao-catalogo-em-dezembro-9899/",
+      "title": "HBO Max: confira 5 filmes e séries que chegam ao catálogo em dezembro",
+      "cat": "nos",
+      "time": "26 nov, 19:30",
+      "scope": "Portal BR"
+    },
     {
       "o": "Omelete",
       "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-teaser-trailer-1-mes",
@@ -237,26 +253,16 @@
       "cat": "neu",
       "time": "16 nov, 14:50",
       "scope": "Portal BR"
-    },
-    {
-      "o": "Omelete",
-      "u": "https://www.omelete.com.br/series-tv/harry-potter-previa-trilha-sonora-hans-zimmer-primeiro-trecho",
-      "title": "Harry Potter | Confira o primeiro trecho da trilha de Hans Zimmer para a série da HBO",
-      "cat": "nos",
-      "time": "16 nov, 13:19",
-      "scope": "Portal BR"
-    },
-    {
-      "o": "Metrópoles",
-      "u": "https://www.metropoles.com/entretenimento/harry-potter-cena-inedita-da-serie-e-divulgada-pela-hbo-assista",
-      "title": "Harry Potter: cena inédita da série é divulgada pela HBO; assista",
-      "cat": "pos",
-      "time": "15 nov, 14:32",
-      "scope": "Portal BR"
     }
   ],
   "creators": [],
   "risks": [
+    {
+      "t": "Comparação com os filmes originais",
+      "sev": "mid",
+      "d": "A cobertura pode reacender comparação com a saga original e expectativa de fidelidade aos livros.",
+      "rec": "Reforçar que a série é uma nova adaptação com espaço para aprofundamento narrativo."
+    },
     {
       "t": "Sensibilidade em torno de elenco",
       "sev": "mid",
@@ -302,8 +308,8 @@
   "_raw": {
     "base_count": 10,
     "unit": "matérias",
-    "net": 30,
-    "buzz": 92,
+    "net": 50,
+    "buzz": 98,
     "news_count": 10,
     "social_mentions": 0
   }
