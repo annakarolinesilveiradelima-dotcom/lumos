@@ -1,0 +1,310 @@
+{
+  "label": "27 nov 2026",
+  "updated": "27 nov 2026, 03:57",
+  "kpi": {
+    "mentions": {
+      "v": "10 matérias",
+      "d": 0,
+      "sub": "cobertura real coletada"
+    },
+    "sentiment": {
+      "v": "+30",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice líquido do dia"
+    },
+    "sov": {
+      "v": "—",
+      "d": 0,
+      "dtype": "pts",
+      "sub": "requer base multi-título"
+    },
+    "buzz": {
+      "v": "92",
+      "suf": "/100",
+      "d": 0,
+      "sub": "índice de buzz do dia"
+    }
+  },
+  "senti": {
+    "pos": 40,
+    "neu": 50,
+    "neg": 10,
+    "tone": "Cobertura real coletada; social não conectado"
+  },
+  "buzz7": [
+    11,
+    10,
+    10,
+    19,
+    17,
+    10,
+    10
+  ],
+  "stack": [
+    [
+      55,
+      36,
+      9
+    ],
+    [
+      40,
+      50,
+      10
+    ],
+    [
+      40,
+      50,
+      10
+    ],
+    [
+      42,
+      50,
+      8
+    ],
+    [
+      42,
+      50,
+      8
+    ],
+    [
+      40,
+      50,
+      10
+    ],
+    [
+      40,
+      50,
+      10
+    ]
+  ],
+  "platforms": [
+    {
+      "name": "Imprensa",
+      "vol": 10,
+      "senti": "neu",
+      "ang": -90,
+      "s": {
+        "p": 40,
+        "n": 10,
+        "g": 50
+      }
+    }
+  ],
+  "narratives": [
+    {
+      "t": "Harry Potter e a Pedra Filosofal | HBO lança novo teaser trailer da série; assista",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-teaser-trailer-1-mes"
+        }
+      ]
+    },
+    {
+      "t": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Canaltech",
+          "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/"
+        }
+      ]
+    },
+    {
+      "t": "'Todo mundo é fã de alguma coisa'",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Notícias da TV",
+          "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848"
+        }
+      ]
+    },
+    {
+      "t": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
+      "vol": 1,
+      "senti": "pos",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Capricho",
+          "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/"
+        }
+      ]
+    },
+    {
+      "t": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "vol": 1,
+      "senti": "neg",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "O GLOBO",
+          "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml"
+        }
+      ]
+    },
+    {
+      "t": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
+      "vol": 1,
+      "senti": "neu",
+      "pf": "Imprensa",
+      "trend": "flat",
+      "growth": "Baseado em cobertura real da semana; social listening não conectado",
+      "q": "",
+      "pct": 50,
+      "src": [
+        {
+          "o": "Omelete",
+          "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-serie-teaser-trailer-1-mes",
+      "title": "Harry Potter e a Pedra Filosofal | HBO lança novo teaser trailer da série; assista",
+      "cat": "neu",
+      "time": "25 nov, 12:58",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Canaltech",
+      "u": "https://canaltech.com.br/entretenimento/ccxp26-confirma-elenco-da-serie-de-harry-potter-com-novo-hagrid-e-estande-gigantesco/",
+      "title": "CCXP26 confirma elenco da série de Harry Potter com novo Hagrid e estande gigantesco",
+      "cat": "pos",
+      "time": "24 nov, 19:34",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Notícias da TV",
+      "u": "https://noticiasdatv.uol.com.br/noticia/televisao/tiago-abravanel-expoe-colecionadores-na-tv-sem-zoeira-muda-a-vida-das-pessoas-159848",
+      "title": "'Todo mundo é fã de alguma coisa'",
+      "cat": "neu",
+      "time": "24 nov, 17:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Capricho",
+      "u": "https://capricho.abril.com.br/entretenimento/hbo-revela-atores-de-harry-potter-que-virao-ao-brasil-para-ccxp/",
+      "title": "HBO revela atores de Harry Potter que virão ao Brasil para CCXP",
+      "cat": "pos",
+      "time": "23 nov, 21:20",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "O GLOBO",
+      "u": "https://oglobo.globo.com/cultura/noticia/2026/11/17/nova-adaptacao-de-harry-potter-divide-opinioes-nas-redes-veja-as-principais-criticas.ghtml",
+      "title": "Nova adaptação de 'Harry Potter' divide opiniões nas redes; veja as principais críticas",
+      "cat": "neg",
+      "time": "17 nov, 06:00",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-hbo-divulga-novos-posteres-da-serie-com-jovens-bruxos-de-hogwarts",
+      "title": "Harry Potter | HBO divulga novos pôsteres da série com Draco Malfoy e jovens bruxos de Hogwarts",
+      "cat": "neu",
+      "time": "16 nov, 14:50",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Omelete",
+      "u": "https://www.omelete.com.br/series-tv/harry-potter-previa-trilha-sonora-hans-zimmer-primeiro-trecho",
+      "title": "Harry Potter | Confira o primeiro trecho da trilha de Hans Zimmer para a série da HBO",
+      "cat": "nos",
+      "time": "16 nov, 13:19",
+      "scope": "Portal BR"
+    },
+    {
+      "o": "Metrópoles",
+      "u": "https://www.metropoles.com/entretenimento/harry-potter-cena-inedita-da-serie-e-divulgada-pela-hbo-assista",
+      "title": "Harry Potter: cena inédita da série é divulgada pela HBO; assista",
+      "cat": "pos",
+      "time": "15 nov, 14:32",
+      "scope": "Portal BR"
+    }
+  ],
+  "creators": [],
+  "risks": [
+    {
+      "t": "Sensibilidade em torno de elenco",
+      "sev": "mid",
+      "d": "Matérias sobre escalação podem gerar discussão sobre aderência ao imaginário dos fãs.",
+      "rec": "Acompanhar comentários e preparar mensagens sobre intenção criativa e construção de personagens."
+    }
+  ],
+  "heroOpp": {
+    "title": "Acompanhar cobertura do dia",
+    "desc": "A leitura atual usa apenas matérias reais coletadas. Para recomendações sociais e creators, conecte Brandwatch/Meltwater/Stilingue/Sprinklr via export.",
+    "facts": [
+      [
+        "Fonte",
+        "notícias reais"
+      ],
+      [
+        "Matérias",
+        "10"
+      ],
+      [
+        "Social",
+        "não conectado"
+      ],
+      [
+        "Dados fictícios",
+        "não"
+      ]
+    ]
+  },
+  "opps": [
+    {
+      "ico": "book",
+      "t": "Explorar fidelidade aos livros",
+      "d": "Quando a cobertura cita adaptação, personagens ou elenco, existe oportunidade de explicar como a série pode aprofundar pontos não explorados nos filmes."
+    },
+    {
+      "ico": "film",
+      "t": "Organizar narrativa de comparação",
+      "d": "Usar conteúdos editoriais para posicionar a série como uma nova leitura para streaming, não como substituição direta dos filmes."
+    }
+  ],
+  "ephem": [],
+  "_raw": {
+    "base_count": 10,
+    "unit": "matérias",
+    "net": 30,
+    "buzz": 92,
+    "news_count": 10,
+    "social_mentions": 0
+  }
+}
